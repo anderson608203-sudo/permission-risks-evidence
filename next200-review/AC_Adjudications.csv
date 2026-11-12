@@ -1,0 +1,94 @@
+﻿index,member,finding,function,target,group,ref,outcome,review
+0,RQ1_0bcbefea1890,finding_834feeae84ec36968872,selfdestructs(),units/program.sol:EncryptedToken,ref:D2:614:S1,D2:614:S1,TP,公开终止操作缺少调用者授权，位置、敏感效果及参考原因一致。
+1,RQ1_0bcbefea1890,finding_3b8fca1a963534e84f8b,"burnFrom(address,uint256)",units/program.sol:EncryptedToken,extra:units/program.sol:2834,,FP,冻结对销毁/委托销毁的适用范围，与此成员作者标记的独立权限根因不同；自有余额或委托和冻结政策要分别核查。
+2,RQ1_0bcbefea1890,finding_7762733f137cd273e2c7,"transfer(address,uint256)",units/program.sol:EncryptedToken,extra:units/program.sol:1644,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+3,RQ1_0bcbefea1890,finding_4007ab50bbfcfe02ed8b,burn(uint256),units/program.sol:EncryptedToken,extra:units/program.sol:2548,,FP,冻结对销毁/委托销毁的适用范围，与此成员作者标记的独立权限根因不同；自有余额或委托和冻结政策要分别核查。
+4,RQ1_0fa374173417,finding_9875fac5ed71e9cd2668,"mintTo(address,uint256)",units/program.sol:DMToken,ref:D2:311:author:1,D2:311:author:1,TP,所指发行入口允许无相应发行权限的主体改变余额。
+5,RQ1_0fa374173417,finding_e84454d89b48d52aa248,killContract(),units/program.sol:DMToken,extra:units/program.sol:1535,,FP,付费或所有者触发的终止权限是另一项主张，不能冲抵公开发行根因。
+6,RQ1_1007b4fc52ca,finding_7f9516ccd09374339530,selfdestructs(),units/program.sol:EncryptedToken,ref:D2:236:S1,D2:236:S1,TP,公开终止操作缺少调用者授权，位置、敏感效果及参考原因一致。
+7,RQ1_1007b4fc52ca,finding_3c51d6fb579085878f43,fallback(),units/program.sol:EncryptedToken,extra:units/program.sol:4812,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+8,RQ1_1f156ef466b1,finding_99321288b3167fda1589,"freezeAccount(address,bool)",units/program.sol:KairosToken,extra:units/program.sol:6069,,FP,源码支持对管理入口的质疑，但冻结参考在此成员没有相应根因，按参考外报警保留。
+9,RQ1_1f156ef466b1,finding_31617616394c30ec18c3,"setPrices(uint256,uint256)",units/program.sol:KairosToken,extra:units/program.sol:4516,,FP,源码支持对管理入口的质疑，但冻结参考在此成员没有相应根因，按参考外报警保留。
+10,RQ1_1f156ef466b1,finding_709c77e27e7c9af81c76,buy(),units/program.sol:KairosToken,extra:units/program.sol:3960,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+11,RQ1_1f156ef466b1,finding_095b24c0a065fa955adb,"transfer(address,uint256)",units/program.sol:KairosToken,extra:units/program.sol:4643,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+12,RQ1_28fd11561fa6,finding_6f128d584c748e0667e9,transferDelegation(address),units/program.sol:Delegatable,extra:units/program.sol:417,,FP,主张独立目标 owner 缺少初始化而使调用不可用；未指出作者所标 initialize 可被无资格主体调用。
+13,RQ1_2a3f29f582b8,finding_dc794c4718246eceaf88,end_redeem_period(),units/program.sol:PPBC_Ether_Claim,ref:D2:412:author:1,D2:412:author:1,TP,同一公开结束入口和销毁效果；两条分支解释计同一作者销毁根因。
+14,RQ1_2a3f29f582b8,finding_9aebe1f1aba9f5fc7a1c,end_redeem_period(),units/program.sol:PPBC_Ether_Claim,ref:D2:412:author:1,D2:412:author:1,TP,同一公开结束入口和销毁效果；两条分支解释计同一作者销毁根因。
+15,RQ1_2c07fdcf80d4,finding_3b348068a0c65a391561,setAllowedAddress(address),units/program.sol:ERC20Token,ref:D2:458:author:1,D2:458:author:1,TP,公开改写授权地址，部署目标继承基类声明。
+16,RQ1_2c07fdcf80d4,finding_1d23c2e5c47e77c56925,"approve(address,uint256)",units/program.sol:Asset,extra:units/program.sol:2983,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+17,RQ1_2c07fdcf80d4,finding_69b87219c53084b5043d,"approve(address,uint256)",units/program.sol:ERC20Token,extra:units/program.sol:2983,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+18,RQ1_2e5ccd7b4bd2,finding_5faca06b709dc38d7a77,fallback(),units/program.sol:DonutChain,ref:D2:363:original:1,D2:363:original:1,TP,定位到到期分支公开销毁，并明确说明该操作与持有人剩余权益的关系。
+19,RQ1_31450a049444,finding_ffbeb81b7e7545c4faf5,fin(),units/program.sol:MultiPay,ref:D2:360:original:1,D2:360:original:1,TP,明确说明 fin 使用 tx.origin 的权限边界；未给 pay 另记命中。
+20,RQ1_34ab8e0115aa,finding_bd7d7d8f643020010af2,PonziTokenV3(),units/program.sol:NumberToken3,ref:D2:359:S1,D2:359:S1,TP,错误构造器名使原初始化行为成为公开普通函数。
+21,RQ1_34ab8e0115aa,finding_12c404df2478348ab521,destroy(),units/program.sol:NumberToken3,ref:D2:359:S2,D2:359:S2,TP,缺少授权即可执行终止操作，未将初始化与终止合成一处。
+22,RQ1_3b975bee1104,finding_8b6188d56684d5554151,balance(),units/program.sol:x32323,extra:units/program.sol:1503,,FP,领取/分发逻辑问题与公开初始化器的授权边界不同。
+23,RQ1_3b975bee1104,finding_53b6f04150964466321e,buy(),units/program.sol:x32323,extra:units/program.sol:4144,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+24,RQ1_3b975bee1104,finding_78c8ab3b687b0790dfc6,"TokenERC20(uint256,string,string)",units/program.sol:x32323,ref:D2:44:author:1,D2:44:author:1,TP,公开的错误命名初始化器；24/25的实质解释在用于合成性质的授权短答中。
+25,RQ1_4580c60aec2d,finding_15fe46a6f520983e1ad9,"TokenERC20(uint256,string,string)",units/program.sol:x32323,ref:D2:619:author:1,D2:619:author:1,TP,公开的错误命名初始化器；24/25的实质解释在用于合成性质的授权短答中。
+26,RQ1_5add5c765bae,finding_d7f19c3d7377868e3554,"setupMiniGame(uint256,uint256)",units/program.sol:CrystalDeposit,ref:D2:513:original:2,D2:513:original:2,TP,公开修改阶段截止状态，未将同成员 disableContract 自动计入。
+27,RQ1_5e9adf3cda8c,finding_01f0f1bc8b9f18f4e64e,seed_base_token(),units/program.sol:BancorKillerContract,extra:units/program.sol:3425,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+28,RQ1_62bedd2d4a5a,finding_368bc851b19e000e6620,Constructor(),units/program.sol:StandardToken,ref:D2:111:author:1,D2:111:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+29,RQ1_62bedd2d4a5a,finding_b72ba58a90c429776a19,Constructor(),units/program.sol:ToxbtcToken,ref:D2:111:author:1,D2:111:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+30,RQ1_62bedd2d4a5a,finding_107f063ab1963dcd9975,Constructor(),units/program.sol:Owned,ref:D2:111:author:1,D2:111:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+31,RQ1_62bedd2d4a5a,finding_ce9226124103f42cdbfb,"transfer(address,uint256)",units/program.sol:ToxbtcToken,extra:units/program.sol:2337,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+32,RQ1_62bedd2d4a5a,finding_9186570e266caa1f32bd,transferOwnership(address),units/program.sol:Owned,ref:D2:111:author:1,D2:111:author:1,TP,下游转移入口本身有权限检查，但被采纳的短答明确指向同一个公开 owner 重设入口，归入同一取得权限根因。
+33,RQ1_62bedd2d4a5a,finding_3aa3d48caea30b1cae83,transferOwnership(address),units/program.sol:StandardToken,ref:D2:111:author:1,D2:111:author:1,TP,下游转移入口本身有权限检查，但被采纳的短答明确指向同一个公开 owner 重设入口，归入同一取得权限根因。
+34,RQ1_62bedd2d4a5a,finding_efd4c267bbe7578f1965,transferOwnership(address),units/program.sol:ToxbtcToken,ref:D2:111:author:1,D2:111:author:1,TP,下游转移入口本身有权限检查，但被采纳的短答明确指向同一个公开 owner 重设入口，归入同一取得权限根因。
+35,RQ1_6674f42c37b9,finding_e5a309023c04b8075c2f,"approve(address,uint256)",units/program.sol:kn0Token,extra:units/program.sol:1796,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+36,RQ1_6674f42c37b9,finding_9705148b237f40aaa764,Ownable(),units/program.sol:kn0Token,ref:D2:113:author:1,D2:113:author:1,TP,Ownable 为公开普通初始化入口，根因是无授权重设 owner。
+37,RQ1_679bfbe1c927,finding_eb5b6880bbf2ad1a6e11,Constructor(),units/program.sol:StandardToken,ref:D2:334:author:1,D2:334:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+38,RQ1_679bfbe1c927,finding_4d88817f757c0bf1b069,Constructor(),units/program.sol:Owned,ref:D2:334:author:1,D2:334:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+39,RQ1_679bfbe1c927,finding_b8a55ad70ff6ead23371,Constructor(),units/program.sol:TOBToken,ref:D2:334:author:1,D2:334:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+40,RQ1_679bfbe1c927,finding_968dd5d6802bf4e907f7,"transfer(address,uint256)",units/program.sol:StandardToken,extra:units/program.sol:2337,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+41,RQ1_679bfbe1c927,finding_7ee28b794092d03b9349,"transfer(address,uint256)",units/program.sol:TOBToken,extra:units/program.sol:2337,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+42,RQ1_84ed7052a606,finding_abdb81b05f23df9e4eae,init(),units/program.sol:DepositContract,ref:D2:418:author:1,D2:418:author:1,TP,init 公开设置 Holder。下游特权用途不另计。
+43,RQ1_84ed7052a606,finding_44ec54153fd1b1661686,ToLend(),units/program.sol:DepositContract,extra:units/program.sol:2178,,FP,出资后的权益与兑付主张，未指向公开重设 Holder。
+44,RQ1_84ed7052a606,finding_686972734b7103912606,Deposit(),units/program.sol:DepositContract,extra:units/program.sol:1822,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+45,RQ1_868007cf433c,finding_d2dad93ac9ee93c50ea0,fallback(),units/program.sol:PiggyBank,ref:D2:222:original:1,D2:222:original:1,TP,作者原说明为达指定余额后 fallback 销毁。本条最终报警、公开调用及终止条件对应；原答称按设计可正常触发，保留业务解释争议，不据此证明模型正确。
+46,RQ1_868007cf433c,finding_473e99ae6d8749c857ec,fallback(),units/program.sol:PiggyBank,extra:units/program.sol:799,,FP,同一 fallback 的部署参数可为零引起不可用，区别于作者的达阈值销毁；看似同位置仍须单独记参考外。
+47,RQ1_947273fa2eef,finding_84153239c8059e672825,selfdestructs(),units/program.sol:MyAdvancedToken,ref:D2:20:S1,D2:20:S1,TP,公开终止操作缺少调用者授权，位置、敏感效果及参考原因一致。
+48,RQ1_947273fa2eef,finding_41a5eb78244cf59f219e,fallback(),units/program.sol:MyAdvancedToken,extra:units/program.sol:5201,,FP,定价或售卖造成的储备变动，与同成员公开销毁根因不同。
+49,RQ1_947273fa2eef,finding_259dbc72b46e16d68857,"transfer(address,uint256)",units/program.sol:MyAdvancedToken,extra:units/program.sol:1672,,FP,实际解释为本人授权支出；阈值可满足不能证明出现此成员作者所标的公开销毁。
+50,RQ1_9aafb6cd1add,finding_3144b161e4c4bf19eacd,transferOwnership(address),units/program.sol:Owned,ref:D2:587:author:1,D2:587:author:1,TP,明确识别普通公开 Owned2 可设置 owner。50 是转移入口经授权短答明确指向该取得权限根因。
+51,RQ1_9d9d397fa18e,finding_89414f32edbd57af9e78,Owned2(),units/program.sol:Owned,ref:D2:310:author:1,D2:310:author:1,TP,明确识别普通公开 Owned2 可设置 owner。50 是转移入口经授权短答明确指向该取得权限根因。
+52,RQ1_9d9d397fa18e,finding_9ac96bee0cd2337086cb,Owned2(),units/program.sol:RBC,ref:D2:310:author:1,D2:310:author:1,TP,明确识别普通公开 Owned2 可设置 owner。50 是转移入口经授权短答明确指向该取得权限根因。
+53,RQ1_9fea8632716d,finding_4145535ca3e80de5b786,delegate(address),units/program.sol:BTC666,extra:units/program.sol:641:premature_vote,,FP,提前置 voted 导致资格分配受阻，独立于委托环，也不同于公开重设 chairperson。
+54,RQ1_9fea8632716d,finding_01e8ddfb702ba0d854ce,delegate(address),units/program.sol:BTC666,extra:units/program.sol:641:delegation_cycle,,FP,委托环导致票权流转异常，与同位置的提前置 voted 原因及作者初始化根因均不同。
+55,RQ1_9fea8632716d,finding_5cce76c517346afd577b,vote(uint8),units/program.sol:BTC666,extra:units/program.sol:1203,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+56,RQ1_9fea8632716d,finding_ba912209a9bc4319f9a9,Ballot(uint8),units/program.sol:BTC666,ref:D2:510:author:1,D2:510:author:1,TP,短答明确指出普通 Ballot 入口可重置 chairperson，与源代码及作者位置一致。
+57,RQ1_ae0fe8386d33,finding_fd07ad8b6991f3acb772,LittleCactus(),units/program.sol:Goodfellas,ref:D2:224:author:1,D2:224:author:1,TP,普通公开入口与当前合约名不一致，初始化授权缺失。
+58,RQ1_afa801e14aca,finding_b5e5d8e6516561ce02e9,QMQCoin(),units/program.sol:BFTToken,ref:D2:393:author:1,D2:393:author:1,TP,普通公开初始化缺少角色/一次性边界。
+59,RQ1_afa801e14aca,finding_c39b49ec2b606b13e591,fallback(),units/program.sol:BFTToken,extra:units/program.sol:5379,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+60,RQ1_afa801e14aca,finding_321280c5378c3060fba6,"transfer(address,uint256)",units/program.sol:BFTToken,extra:units/program.sol:6182,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+61,RQ1_b11b4b1e0dc3,finding_b47cbb24cc124c896ade,recordName(),units/program.sol:Nine,extra:shared_terminal_action,,FP,两个外部入口通向同一内部终止逻辑，根因相同；作者在此成员无参考。
+62,RQ1_b11b4b1e0dc3,finding_5f93c297d5d7272697f3,fallback(),units/program.sol:Nine,extra:shared_terminal_action,,FP,两个外部入口通向同一内部终止逻辑，根因相同；作者在此成员无参考。
+63,RQ1_b4fca92c3262,finding_2627e4becfabadc778ca,STARTMETADOLLAR(),units/program.sol:METADOLLAR,ref:D2:97:S2,D2:97:S2,TP,未授权重复初始化和状态写入，和 owned 引起的角色重设分开计。
+64,RQ1_b4fca92c3262,finding_3c9789b3b3313951e558,owned(),units/program.sol:METADOLLAR,ref:D2:97:S1,D2:97:S1,TP,普通公开声明写入 owner，独立于初始化经济状态。
+65,RQ1_b809aa517821,finding_ad50b4825175d76bb0ee,"mintTo(address,uint256)",units/program.sol:DecentralandToken,ref:D2:416:author:1,D2:416:author:1,TP,所指发行入口允许无相应发行权限的主体改变余额。
+66,RQ1_b809aa517821,finding_0e0b43a14e245ba4bf48,killContract(),units/program.sol:DecentralandToken,extra:units/program.sol:1561,,FP,付费或所有者触发的终止权限是另一项主张，不能冲抵公开发行根因。
+67,RQ1_bbf6634a1913,finding_33f5092424927615bbaf,fallback(),units/program.sol:EncryptedToken,extra:units/program.sol:4812,,FP,定价或售卖造成的储备变动，与同成员公开销毁根因不同。
+68,RQ1_bbf6634a1913,finding_81558456e6f50e72e626,selfdestructs(),units/program.sol:EncryptedToken,ref:D2:3:S1,D2:3:S1,TP,公开终止操作缺少调用者授权，位置、敏感效果及参考原因一致。
+69,RQ1_bbf6634a1913,finding_60b60d3340797d93949c,"transfer(address,uint256)",units/program.sol:EncryptedToken,extra:units/program.sol:1644,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+70,RQ1_bc34a2568a3c,finding_ef5d1380b8eace2e22f2,"TokenERC20(uint256,string,string)",units/program.sol:x32323,ref:D2:173:author:1,D2:173:author:1,TP,公开的错误命名初始化器；24/25的实质解释在用于合成性质的授权短答中。
+71,RQ1_c9a2d9b618a7,finding_7eaf4d7b9db420c51abb,"FirstBloodToken(address,address,uint256,uint256)",units/program.sol:GooglierToken,ref:D2:93:author:1,D2:93:author:1,TP,普通公开函数能重设创始人、签名主体及起始状态。
+72,RQ1_c9a2d9b618a7,finding_3f3c1e13443a1a0e7d35,"transferFrom(address,address,uint256)",units/program.sol:GooglierToken,extra:units/program.sol:7054,,FP,锁定期内 sender/from 资格差异，不是同成员错误命名构造器。
+73,RQ1_c9a2d9b618a7,finding_39e8efeec5ce6bf5c50f,"transfer(address,uint256)",units/program.sol:GooglierToken,extra:units/program.sol:6843,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+74,RQ1_ce214e96568d,finding_754e8da8667b4fe513fb,Constructor(),units/program.sol:Owned,ref:D2:157:author:1,D2:157:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+75,RQ1_ce214e96568d,finding_54f8e8426092eb269e39,"transfer(address,uint256)",units/program.sol:T0XToken,extra:units/program.sol:2337,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+76,RQ1_ce214e96568d,finding_121477e90165e4402cbe,Constructor(),units/program.sol:T0XToken,ref:D2:157:author:1,D2:157:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+77,RQ1_ce214e96568d,finding_e7058a732d3d76241767,"approve(address,uint256)",units/program.sol:StandardToken,extra:units/program.sol:3237,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+78,RQ1_ce214e96568d,finding_35ea1a509cafcf4eb9e9,"transferFrom(address,address,uint256)",units/program.sol:T0XToken,extra:units/program.sol:2776,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+79,RQ1_ce214e96568d,finding_28c4c85a7b2c2c6b1a96,Constructor(),units/program.sol:StandardToken,ref:D2:157:author:1,D2:157:author:1,TP,基类普通公开函数可覆盖 owner，继承目标和重复报警合并。
+80,RQ1_d4aefd2e1bfc,finding_0b74ac5ef7b09dfee9d4,fallback(),units/program.sol:Multiple3x,extra:units/program.sol:1103,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+81,RQ1_da88771c652e,finding_dd7fb2b9f575ec87fe9e,"upgrade(address,bytes)",units/program.sol:Proxy,ref:D2:139:original:2,D2:139:original:2,TP,对应作者 upgrade 声明的未授权替换；限制在实际分析的 Proxy 目标，不把 fallback/delegatedFwd 另计为第二个根因。
+82,RQ1_dadf1b436e9d,finding_83aa57b9980248df37e9,selfdestructs(),units/program.sol:MyAdvancedToken,ref:D2:484:S1,D2:484:S1,TP,公开终止操作缺少调用者授权，位置、敏感效果及参考原因一致。
+83,RQ1_dadf1b436e9d,finding_4f1596c4f4b6604d9e2b,fallback(),units/program.sol:MyAdvancedToken,extra:units/program.sol:5202,,FP,定价或售卖造成的储备变动，与同成员公开销毁根因不同。
+84,RQ1_de08a43a1826,finding_395a0562e56ff8fc2c1d,kill(address),units/program.sol:Controller,extra:units/program.sol:12798,,FP,有特权角色可在特定阶段终止，尚未说明无相应资格者可行动；参考外。
+85,RQ1_e5e40ec6feca,finding_b4198815ec171602004d,destroy(),units/program.sol:ReverseBugBounty,ref:D2:572:author:1,D2:572:author:1,TP,缺少授权即可执行终止操作，未将初始化与终止合成一处。
+86,RQ1_e6f04047bff4,finding_d01629e724b44c0bca08,RegisterDevice(),units/program.sol:CafeMaker,ref:D2:37:original:1,D2:37:original:1,TP,已结算原答和补充报告均指向设备身份的公开重设；CollectMoney 未被这条根因覆盖。
+87,RQ1_e6f04047bff4,finding_39502ce7d81c7dcffbd0,fallback(),units/program.sol:CafeMaker,extra:units/program.sol:519,,FP,按价格取整后的余款处理，与 RegisterDevice 或 CollectMoney 的授权原因不同。
+88,RQ1_e97f2d279ad9,finding_198e21d1c689a9f8503a,Prosperity(),units/program.sol:eZWay,ref:D2:47:S1,D2:47:S1,TP,同名普通入口重设定价状态，属于作者错误构造器根因。
+89,RQ1_e97f2d279ad9,finding_eabc68f4c25fe7a62e0c,burn(uint256),units/program.sol:eZWay,extra:units/program.sol:2739,,FP,冻结对销毁/委托销毁的适用范围，与此成员作者标记的独立权限根因不同；自有余额或委托和冻结政策要分别核查。
+90,RQ1_e97f2d279ad9,finding_405b4b7daa4c9e2ed947,"transfer(address,uint256)",units/program.sol:eZWay,extra:units/program.sol:1888,,FP,本人余额、本人授权、出资或有门控的普通业务被送入 AC 主报警；该入口与授权说明未建立作者所标的另一处越权根因。
+91,RQ1_f91e2b168fdf,finding_4d7b49235056faa2544e,Rasthen(),units/program.sol:RasthenToken,extra:units/program.sol:2625,,FP,虽与参考同名，主张把 Rasthen 当成正常部署构造过程，未识别作者 Incorrect Constructor 的可调用初始化根因。
+92,RQ1_fc71e6703f0d,finding_9f3873ffca359d445bc1,fin(),units/program.sol:WeekendPay,ref:D2:253:original:2,D2:253:original:2,TP,明确说明 fin 使用 tx.origin 的权限边界；未给 pay 另记命中。
