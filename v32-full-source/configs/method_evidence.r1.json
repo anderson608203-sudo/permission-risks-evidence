@@ -1,0 +1,289 @@
+{
+  "schema": "method-evidence-profile-r1",
+  "approval": "PR_NEXT_METHOD_REQUIREMENTS_AMENDMENT_20261022_R1",
+  "report_schema": "m03-p-report-v2",
+  "rules": [
+    {
+      "id": "AC-01",
+      "name_cn": "缺少或绕过授权保护",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "适用策略禁止该主体且成功产生受保护效果",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "implementation_scope": "bounded source permissions, program relationship candidates and selective SMT implication; preserves disjunctive authority, callback/caller context; arbitrary dynamic self-calls remain a gap; independently referenced native payout and selfdestruct native disposition; opaque delegatecall effect retained unknown",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "AC-02",
+      "name_cn": "权限状态与管理流程被不当控制",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "不具管理资格的受控主体非法修改权限并取得控制",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "implementation_scope": "source-bound role management, scoped grants, bulk-key qualification, nomination and actual successor binding; proxy upgrades and opaque policy modules remain gaps",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "AC-03",
+      "name_cn": "身份资源作用对象错配",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "被检查凭据与实际作用对象不匹配且无合法委托",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "implementation_scope": "source resource/subject/delegation/alias and conditionally source-typed read-call relations; unknown proxies and business action-bit interpretation remain gaps",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "AC-04",
+      "name_cn": "条件和生命周期过宽",
+      "P": "implemented_bounded",
+      "implementation_scope": "same-record boolean validity; issued future expiry and ordered timestamps; epoch snapshots; controlled per-subject additive usage quotas; same-manager enumeration phase exit with persistent issued credential. Arbitrary reopening protocols, nonlinear consumption and cross-contract lifecycles remain gaps",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "撤销/过期/未生效凭据仍被接受并产生效果",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "AC-05",
+      "name_cn": "签名凭据使用错误",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "合法来源凭据被错误重放或跨域/主体/资源使用，或明确坏签名被接受",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "implementation_scope": "source-bound credential replay/domain/subject/resource/validity models; ordinary random hash excluded; opaque validators retain decisive gaps",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "FCR-TRANSFER",
+      "name_cn": "任意转移",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "源码中的特权他人资产/账本权益处分机制，核查持有人同意",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "definition_revision": "fcr-mechanism-r1-20261027",
+      "feasibility_reporting": "separate; source mechanism does not prove actual funded exploitability",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "implementation_scope": "bounded asset/transferable-ledger model, explicit amount consumption, independent privilege and source holder consent; arbitrary compensation and opaque cross-contract assets remain unknown",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "FCR-MINT",
+      "name_cn": "任意增发",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "源码中的特权资产或可转移账本权益创建机制",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "implementation_scope": "source-bound native redeemable additive ledgers and exact floor proportional native shares; direct privilege and consumed issuance allowance; bounded administrator-set backing multiplier and same-holder scaled reward-index checkpoint; distinguish equal-value native deposits, correctly priced share deposits and same-holder equal-unit conversion. Record-based notes, cross-contract asset ledgers, arbitrary nonlinear arithmetic and solvency remain gaps; scalar getter-linked migration and holder/face/liability-bound redeemable records; complex cross-contract ledgers and proof-controlled issuance remain gaps",
+      "definition_revision": "fcr-mechanism-r1-20261027",
+      "feasibility_reporting": "separate; source mechanism does not prove actual funded exploitability",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "FCR-DESTROY",
+      "name_cn": "任意销毁",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "特权消减或销毁他人资产权益或可定位主体与数量的抽象账户账本；排除有效同意与已匹配守恒转换",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "definition_revision": "v20-approved-abstract-account-ledger",
+      "feasibility_reporting": "separate; source mechanism does not prove actual funded exploitability",
+      "qualification_scope": "financial and abstract account mechanisms distinguished; conditional positive prestate not deployment proof",
+      "implementation_scope": "bounded asset/transferable-ledger model, explicit amount consumption, independent privilege and source holder consent; arbitrary compensation and opaque cross-contract assets remain unknown",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof",
+      "rollback_profile": "strict_financial changes this branch only"
+    },
+    {
+      "id": "FCR-PAUSE",
+      "name_cn": "暂停转移",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "源码中的特权普通转移阻断机制，声明入口与例外",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "definition_revision": "fcr-mechanism-r1-20261027",
+      "feasibility_reporting": "separate; source mechanism does not prove actual funded exploitability",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "implementation_scope": "same ordinary holder request under privileged control transition, with entry/holder/exception scope; pure issuance/burn excluded from transfer pairing; admin-only service not main FREEZE",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    },
+    {
+      "id": "FCR-FREEZE",
+      "name_cn": "冻结账户",
+      "P": "implemented_bounded",
+      "M": "implemented_bounded_source_models_engineering_verified",
+      "E": "not_executed_in_v7_no_uniform_requirement",
+      "main_target": "源码中的特权指定持有人转出阻断机制，声明对象与例外",
+      "evidence_requirement": "applicable program-based rule conditions through P/M/E, no uniform E prerequisite",
+      "report_scope": "conditional prediction, not whole-program safety",
+      "definition_revision": "fcr-mechanism-r1-20261027",
+      "feasibility_reporting": "separate; source mechanism does not prove actual funded exploitability",
+      "qualification_scope": "compiler/model engineering contrasts only; new real-pilot performance pending",
+      "implementation_scope": "same ordinary holder request under privileged control transition, with entry/holder/exception scope; pure issuance/burn excluded from transfer pairing; admin-only service not main FREEZE",
+      "P_detail": "source-bound candidates/checks and operation-scoped necessary-condition exclusions; no whole-program proof"
+    }
+  ],
+  "P": {
+    "max_source_paths": 48,
+    "required": [
+      "program_id",
+      "build_id",
+      "rule",
+      "function",
+      "required_policy_candidate",
+      "effect",
+      "conditions",
+      "status",
+      "route"
+    ],
+    "forbidden_claims": [
+      "actual_execution",
+      "whole_program_safety",
+      "business_intention_proven"
+    ],
+    "no_execution_required": true,
+    "analyzer": "compiler-source-declaration-and-path-relations",
+    "source_loop_scope": "for-loop source expansion 0..2 complete iterations; longer continuation explicit named gap; not whole-loop proof"
+  },
+  "conditional_fields": {
+    "P": [
+      "source_identity",
+      "analyzer",
+      "policy_basis",
+      "scope"
+    ],
+    "M": [
+      "model_identity",
+      "bounds",
+      "approximations"
+    ],
+    "E": [
+      "runtime_identity",
+      "execution_plan",
+      "backend_identity",
+      "actual_execution",
+      "replay_when_required"
+    ]
+  },
+  "acceptance": {
+    "three_structures": [
+      "global_address",
+      "per_object_owner",
+      "role_membership"
+    ],
+    "real_analysis_and_synthetic_separated": true,
+    "no_name_only_matching": true,
+    "no_raw_sat_or_llm_self_certification": true,
+    "local_effect_sufficient": true,
+    "unknown_not_safe": true,
+    "cases_200_all_actual_analysis_not_all_dynamic": true,
+    "fixed_normal_risk_ratio_or_zero_errors": false
+  },
+  "version_boundary": "Task B/C2 originals and prior reports unchanged; only new analysis uses this profile",
+  "implementation_revision": "joint-operation-scoped-r1-rq1-v7-20261028",
+  "project_input": {
+    "mode": "P --targets project",
+    "targets": "all concrete compiled contracts; each analyzed in separate storage context",
+    "entry_optional_in_project_mode": true,
+    "unresolved_external_wiring": "retained, not inferred",
+    "compiler_scope": "0.8.20 development input; arbitrary build systems/versions not added"
+  },
+  "m04_relations_r2": {
+    "shared_consumer": true,
+    "source_labels_or_case_ids_used": false,
+    "hash_terms": "ordered typed encoding, no inversion; dynamic packed encoding unsupported",
+    "casts": "unsigned narrowing preserved, erased only when source bound establishes identity",
+    "unresolved_controls": "named inconclusive, not public-entry safety",
+    "dynamic_execution": "not_required_for_P_and_not_claimed"
+  },
+  "m04_assets_lifecycle_r3": {
+    "proportional_model": "exact structural floor expression, no reassociation or rational cancellation",
+    "controlled_arithmetic": "bounded multiplier or same-holder scaled index delta; positive rounded reward explicitly conditional",
+    "phase_and_expiry": "program-inferred policy; original definitions unchanged",
+    "evidence_route": "P, no new compiler/native/API/EVM"
+  },
+  "local_tools": {
+    "relationship_graph": "networkx 3.4.2",
+    "permission_predicates": "z3-solver 4.15.3.0",
+    "route": "P",
+    "scope": "source predicate checks under declared pre-state; no EVM execution or whole-program reachability"
+  },
+  "definition_revisions": {
+    "FCR": "fcr-mechanism-r1-20261027",
+    "AC": "ac-five-directions-r1-20261028"
+  },
+  "v7_scope": {
+    "AC04D_removed": true,
+    "active_ac_rules": [
+      "AC-01",
+      "AC-02",
+      "AC-03",
+      "AC-04",
+      "AC-05"
+    ],
+    "constant_loop_max": 32,
+    "variable_loop_frontier": 2,
+    "all_unmodeled_semantics": "decisive local unknown, never safety",
+    "real_pilot_status": "not_started",
+    "source_evaluations_per_operation_max": 2048,
+    "expression_nodes_max": 50000,
+    "expression_depth_max": 100,
+    "expression_string_bytes_max": 1048576,
+    "expression_key_characters_max": 262144
+  },
+  "effective_parameters": {
+    "normalization_visits_per_operation_max": 150000,
+    "max_source_paths": 48,
+    "expression_nodes_max": 50000,
+    "expression_depth_max": 100,
+    "expression_string_bytes_max": 1048576,
+    "expression_key_characters_max": 262144,
+    "source_evaluations_per_operation_max": 2048,
+    "call_depth_max": 8,
+    "solver_timeout_ms": 3000,
+    "variable_loop_frontier": 2,
+    "constant_loop_max": 32,
+    "fcr_execution_environment": "janus_comparison_pre_eip_6780",
+    "arithmetic_query_scope": "explicit nonwrapping uint256 subcases; typed narrow/signed arithmetic encoded separately"
+  },
+  "current_approved_revision": "joint-concentrated-redesign-rq1-v20-20261031",
+  "v20_authorization": "user approved V20_CONCENTRATED_REDESIGN_PLAN_R1_CN and subsequent execution",
+  "v20_limits": {
+    "maximum_external_operations": 3,
+    "sequence_checks_per_sample": 24,
+    "composition_paths_per_stage": 8,
+    "solver_initial_ms": 3000,
+    "solver_one_upgrade_ms": 10000,
+    "solver_total_seconds": 120,
+    "source_dependency_closure_nodes": 4096
+  },
+  "v20_scope_notes": {
+    "other_FCR_definitions_unchanged": true,
+    "LLM_final_classification": false,
+    "LLM_formulas": false,
+    "default_semantic_followup": 0,
+    "additional_training": false
+  }
+}
