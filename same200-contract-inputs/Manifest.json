@@ -1,0 +1,5287 @@
+{
+  "RQ1_e5f934bea8ec": {
+    "file": "AC80/RQ1_e5f934bea8ec.sol",
+    "source_sha256": "8ba0470d1b92056a6fa53ceb3360fe778f69a39570c3e3e3deb856ea39feb2d3",
+    "standard_input_sha256": "47dbf96790df542aff74d172b3a715d23a03ee09abd83c535f3afac5d4380521",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AppealableArbitrator",
+      "units/program.sol:CentralizedArbitrator",
+      "units/program.sol:MultipleArbitrableTransaction"
+    ],
+    "program_id": "7d25ce3ffa79667fd88ffcac1818495375fae7581bb20bd61620672d3d00620d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_2c07fdcf80d4": {
+    "file": "AC80/RQ1_2c07fdcf80d4.sol",
+    "source_sha256": "bb8444804847b45e8c79c1d401f7e8f9a25aedb58df31ed0a9f366766231af59",
+    "standard_input_sha256": "b25c07e272e089cca7a48dfaa0b7240d1c5283bf9e181df2297f183b68895f50",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Asset",
+      "units/program.sol:ERC20Token"
+    ],
+    "program_id": "46e11631a8a1d9b4348dc5b4f15e02dba2ebcaf16fe6f998a4a6f1f59b19c52e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:458:author:1",
+        "function": "setAllowedAddress"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_ce214e96568d": {
+    "file": "AC80/RQ1_ce214e96568d.sol",
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "standard_input_sha256": "24eebcfc327b5d2cc558cd04999318bf3ceecac045db8fc007b4befcf022aca9",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken",
+      "units/program.sol:T0XToken"
+    ],
+    "program_id": "838db37dbca4e4e81cda04416d63fc4a1952642af0c68f42b92d0c65491c01c4",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:157:author:1",
+        "function": "Constructor"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_cb8c3fafbda1": {
+    "file": "FCR-risk60/RQ1_cb8c3fafbda1.sol",
+    "source_sha256": "11a5bd6979302010e22f21bc3a8312d5e05f8132abeea11011d6bd2669c4cecf",
+    "standard_input_sha256": "94e1df20eb3529d2d158bb8d05e0a086bf91f69e50ef066c129ea8f3d6e9e9c7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "92efd822843eba7112e6f814c827534a26bc06a372c4fed80d376b6364b6e233",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x7cd489aea7952d5b66c90eb8894d47cc698967c0_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_7bfd58ffb1ae"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_afb609e0053e": {
+    "file": "FCR-risk60/RQ1_afb609e0053e.sol",
+    "source_sha256": "6bbde1fd2d9f912f358040d3cb8c94242f5438355a0b77fb2e77da93121aa77f",
+    "standard_input_sha256": "be132c137665dc757f848f9bd89f507c39d238c7324079d4e7da656cb4e36bf6",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CryptoRoulette"
+    ],
+    "program_id": "28015f506dcd9cecb7a103dd4f16f03be7fa300fc0e70f0874d786788e97e90c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/3_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_7405f0959142"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b649070a92c3": {
+    "file": "FCR-repair60/RQ1_b649070a92c3.sol",
+    "source_sha256": "3991cdd54a60e4df049be1751226d324a9b2d1b4ef18c6b95107fc456073c7b2",
+    "standard_input_sha256": "9a22dc8951ca30d8048cf841932ad0d7ad4fe26735047253bce5d2136186e5e0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:KFCToken"
+    ],
+    "program_id": "6cc1cdef9b8765aec70f373ef0656ad1c2b281ecd9ecc44e5b2e4a09d9042198",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/0x17d30c85376bc2c39edc1da179162d308559a3c4_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_cd39ae0d15a5"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_0fa374173417": {
+    "file": "AC80/RQ1_0fa374173417.sol",
+    "source_sha256": "68bafe295421dbbb94628566ba812d7005c77fbb8adab62263e18c80f5c6f4d6",
+    "standard_input_sha256": "422de950557c3eb9788f058dc10267f50637c2c39044b2136fa8f52cbc75e1d0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DMToken"
+    ],
+    "program_id": "13f67e422eba4731190e5acf3911483c97b66dd97851b1a48b1c8be750c523b1",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:311:author:1",
+        "function": "mintTo"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_62bedd2d4a5a": {
+    "file": "AC80/RQ1_62bedd2d4a5a.sol",
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "standard_input_sha256": "efe7a1494181a4e6bade06b49fd1860eba415d826277c5467bc79a2aec472db2",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken",
+      "units/program.sol:ToxbtcToken"
+    ],
+    "program_id": "2abc8793778bea549ca753448378d3ea1067716422d2bdd5b10c0976d22b7171",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:111:author:1",
+        "function": "Constructor"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_b4fca92c3262": {
+    "file": "AC80/RQ1_b4fca92c3262.sol",
+    "source_sha256": "d9c82c872b5e9a9d5bc1e68f83cdc0b27c18365d8c204b976d1bab4f668131f8",
+    "standard_input_sha256": "d79c02799e38b41fd2b0d5490b9f0836bd8eede084c5c987dff5da4ccd8dd235",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:METADOLLAR",
+      "units/program.sol:SafeMath"
+    ],
+    "program_id": "c0d4bcf5830b182f7687979822d534064f3ce2dc6ec2730d8fa140dc18b7043f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:97:S1",
+        "function": "owned"
+      },
+      {
+        "id": "D2:97:S2",
+        "function": "STARTMETADOLLAR"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_770b64940b4d": {
+    "file": "AC80/RQ1_770b64940b4d.sol",
+    "source_sha256": "dc58ee9b9f02f4fa89686fe17ad9acc8c1345ab9dcb89d9829d67cd726d0d4db",
+    "standard_input_sha256": "b32569eae106e8c15a606d5458818501995599e702c00fa90053bb8f84e78ccc",
+    "compiler": "0.5.8",
+    "targets": [
+      "units/program.sol:TwoYearDreamTokensVesting"
+    ],
+    "program_id": "1b926c7b474bc3a1c6bff0e67c8643468d7d891abd01420cc3d051cb48da36e2",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:293:author:1",
+        "function": "withdrawTokens"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b809aa517821": {
+    "file": "AC80/RQ1_b809aa517821.sol",
+    "source_sha256": "c9511ccccf05235aefe1f0f59b7acf00a3c7450a5f9936ceabffe0c095010c80",
+    "standard_input_sha256": "fbbf2d324fe54c57153eaca1d1e9d786b24c11101967a524af8f08166f00b630",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DecentralandToken"
+    ],
+    "program_id": "794d6ff1a7223818820a81ab4e0d344a9aebacb3a5b866049695059672a783cf",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:416:author:1",
+        "function": "mintTo"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_868007cf433c": {
+    "file": "AC80/RQ1_868007cf433c.sol",
+    "source_sha256": "badc0414b07f66107777e04ade897e277d858ea20c517ec98b34cf46dc5701d1",
+    "standard_input_sha256": "f9a4e1271ec01c36667593ae1f9b3c868206bc32698a992c74ba3463726fad29",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:PiggyBank"
+    ],
+    "program_id": "463a940b0f80dc25d86cdec0ea697d1115fa7a059d77a5448837dd059bad5093",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:222:original:1",
+        "function": "fallback"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_96012699cf50": {
+    "file": "AC80/RQ1_96012699cf50.sol",
+    "source_sha256": "a76c2346c3fa01a93bfa9a2dffbaa96ef513dd6385460d704f9b913a899df68d",
+    "standard_input_sha256": "df37b930d7d0d9e6953eb919f32bff8d1be4c55ecaea25054e7077e2e942ce3b",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:BaseSwap",
+      "units/program.sol:ERC20Swap"
+    ],
+    "program_id": "aca106a549e35d93c75eedf88c31997bf8dd8695d541c0492ebbad95d6894a2f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_51a9713a1934": {
+    "file": "AC80/RQ1_51a9713a1934.sol",
+    "source_sha256": "843187e930aab0d43bbf864fc90fd45fe5d2e430545b473cd1874ad4c1a59703",
+    "standard_input_sha256": "6640dc01e4b1d85cb5ec5642c0f3a12a8d1af8a686b7e33744ffc32db05fe9b9",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Mines",
+      "units/program.sol:MinesFactory",
+      "units/program.sol:Ownable",
+      "units/program.sol:Payments",
+      "units/program.sol:Resources",
+      "units/program.sol:Trading"
+    ],
+    "program_id": "a3ba5453df14c57959097919eb2e28b88ca448b8a718f66848963e05c0014019",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_afa801e14aca": {
+    "file": "AC80/RQ1_afa801e14aca.sol",
+    "source_sha256": "f3f6801bd64368d43cccc4ebd3af093530f1598c7a7b5c1218daa3c42eba75a6",
+    "standard_input_sha256": "58b87d3f51c0c1b283457cd52bdf3ba2e84c1cf7bd75ba2239570ce1762562c0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BFTToken"
+    ],
+    "program_id": "596d01c61b94001b6e0d73675e0a32ebe107d2d0fb69b44869dfee004d85ff65",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:393:author:1",
+        "function": "QMQCoin"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_adc795eb2050": {
+    "file": "AC80/RQ1_adc795eb2050.sol",
+    "source_sha256": "081b4fb6bdf4733633d612fabf1affa3e8d00f9f6c3aaf61ce688fde8871b99e",
+    "standard_input_sha256": "b893bdd4dacdc41b24cfa59a6483d3c21385b00bf9976cb967903340d0da14f5",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:AvatarNameRegistry",
+      "units/program.sol:AvatarNameStorage",
+      "units/program.sol:Initializable"
+    ],
+    "program_id": "a84fa8aae3676e01a19eaf189fd5e645181d8449471a2c2bb8356562d9de2d9f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:108:original:1",
+        "function": "initialize"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_a4bb8d18e79b": {
+    "file": "AC80/RQ1_a4bb8d18e79b.sol",
+    "source_sha256": "988a64ea6e5cbe6ca57fae010b7944fb92bd811680bcb26c949caefc05848198",
+    "standard_input_sha256": "bab870262525bb8e81eeb6402e30a2a78671b61bd49827fb080ff61425c07945",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EtherShare"
+    ],
+    "program_id": "2b79a41586ed702f38d8ddd7e1656adc6a6a281538c10c327434e85f9c0f10cb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_6674f42c37b9": {
+    "file": "AC80/RQ1_6674f42c37b9.sol",
+    "source_sha256": "735cd00265b10b7541a98fb75205dbda3295bc529d6d70c4d1f04747bb6f47a4",
+    "standard_input_sha256": "a84138923c4a955f116db0c40f00989c28318a4082f4ff1d95b8037d778cdd86",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:kn0Token"
+    ],
+    "program_id": "c7f2d73166a49a8bfdbd88a398e339e5f4f9ed84f343fa12d958996c92fbe11d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:113:author:1",
+        "function": "Ownable"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_2a3f29f582b8": {
+    "file": "AC80/RQ1_2a3f29f582b8.sol",
+    "source_sha256": "a198a551d6ea80743de507e73577d266da7802d4b85d7d39a958ec1df91471e1",
+    "standard_input_sha256": "edc8e8ae94b935f55878d82a60009b183c1886992ea8c5704f98a1a15e59cee8",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:PPBC_Ether_Claim"
+    ],
+    "program_id": "573c1c29c08b47aa47336462ab16dcecc9abedf6b8009444b7be5cae0d08b85f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:412:author:1",
+        "function": "end_redeem_period"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_053265dda42e": {
+    "file": "AC80/RQ1_053265dda42e.sol",
+    "source_sha256": "fd0090415eb98ee048de2fee8083d61743a02237e32ce21967fd34573aa416cf",
+    "standard_input_sha256": "20bd7ffd3c32accb9c1968ac9d4ee296f88ec6cf008cb98aaf6a66fb629cec5d",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Matthew"
+    ],
+    "program_id": "e93b6ff1c6349d539e30c6a1dbd221f8df44a20356396f7e53c7ff4e0e5949b6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_e85ac4a50ee4": {
+    "file": "AC80/RQ1_e85ac4a50ee4.sol",
+    "source_sha256": "1f6fd1a7865acb5ce76fa9c651c6494dc49a3a7f162de7800b21ef5a5056c9f0",
+    "standard_input_sha256": "23023728e5cb8fe60857bded8320a428e7490f2cde583f6a83ca2d897a35210d",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:TestNetworkToken"
+    ],
+    "program_id": "1227b50be8e6b8fa5a548338b1f9b5c2a6393fd323848fec1f1b1ae7ff96013f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:57:author:1",
+        "function": "kill"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_cfe97b8f7250": {
+    "file": "AC80/RQ1_cfe97b8f7250.sol",
+    "source_sha256": "cb63391f3aabf74afb058473d8c01bb5af2e5fc2e7e23c8f20cf8f359dd32a6f",
+    "standard_input_sha256": "2c41f26daddea1a7580341a75e13c1b54201c577f153b032248a83724a578ebf",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BiometricLockable",
+      "units/program.sol:BiometricToken",
+      "units/program.sol:CompliantToken",
+      "units/program.sol:MintableToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:RISENCoin",
+      "units/program.sol:SimpleToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "f7f9562d8049d41e998aef3376f85d21159b0232428f231a3ca9a1afb1d55f66",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:43:author:1",
+        "function": "bioLock"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_dadf1b436e9d": {
+    "file": "AC80/RQ1_dadf1b436e9d.sol",
+    "source_sha256": "946be02ddab6982899fcc12d927dbdcc5de6ce797862fc2e9c82c68dd9dd8e5d",
+    "standard_input_sha256": "af7d79c86e139dd8f16fd74c4166256ab6b28b397412112094199f00f7e50995",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "6404ef35a0d2cbc2950b9320febab5234b018cc0f89bd5e80e148605c194db7b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:484:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_293812debd13": {
+    "file": "AC80/RQ1_293812debd13.sol",
+    "source_sha256": "a1ef303fcafccb75595444a941aa17bf3b063b80610bce0e688b4a6f59cbd0a1",
+    "standard_input_sha256": "9aac7cdde155f30db7d578358820be3c6dc1434434aedfbb5788bad90a59b40b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CryptoSprites"
+    ],
+    "program_id": "b484fa7480f545d0afe7560eae332e48c4d8dad8adc0cad7b5da5edf02531363",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_de08a43a1826": {
+    "file": "AC80/RQ1_de08a43a1826.sol",
+    "source_sha256": "e93586dbc836e67b2b4460b1f7ad8b0d1772cb87601de65cff9f23c864042f22",
+    "standard_input_sha256": "b3ac439a46c93219578214ba467ece19cb47c64bacb3e1e61a56db867a0e1bfd",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Controller",
+      "units/program.sol:CrowdsaleControl",
+      "units/program.sol:DataCentre",
+      "units/program.sol:DataManager",
+      "units/program.sol:Governable",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:SimpleControl",
+      "units/program.sol:Token"
+    ],
+    "program_id": "142cb9ad03884ae564cd588ec6c124c27f940065a65df96ce8cdc6a10cff7881",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_67706b288d9c": {
+    "file": "AC80/RQ1_67706b288d9c.sol",
+    "source_sha256": "29b75cc954962d060182e0848048161d0960a18a756a9f9e839845d570286ca0",
+    "standard_input_sha256": "c4282180766ae0edf189a4e97837c6c884b731580f4c8d8d4c6aa0ca8a1f1c52",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:SkinBase",
+      "units/program.sol:SkinMarket",
+      "units/program.sol:SkinMinting",
+      "units/program.sol:SkinMix"
+    ],
+    "program_id": "645e351fba966d731e908467c3d51112e7395e55daae3b902388b94ad99b5dc4",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_fccabbab2795": {
+    "file": "AC80/RQ1_fccabbab2795.sol",
+    "source_sha256": "5abcf1c52569b6b26f5908e22a5c8112d4f3195034b67747ebd3f9589e59c7dc",
+    "standard_input_sha256": "c9c593971e80c8e83ebafac5f759e3a7e41d1d54c53c75b3f21a5694d6436e6b",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:Registry"
+    ],
+    "program_id": "e1bf351dead79227f28741832fb3b3c2e15d9a6263e8d83cbe2a80e6ab6b9d5f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_e7801f3e61cb": {
+    "file": "AC80/RQ1_e7801f3e61cb.sol",
+    "source_sha256": "cdf1bfc603f350d951e7ff9604f3f0cae50f0a99c0bca9e6948a396fe327cfe0",
+    "standard_input_sha256": "3168816a1ca233cb8a0846f950cf8271a55847f52770153c4539d00ebd63ed4c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Controlled",
+      "units/program.sol:Escapable",
+      "units/program.sol:LPPDacs",
+      "units/program.sol:LiquidPledging",
+      "units/program.sol:LiquidPledgingBase",
+      "units/program.sol:MiniMeToken",
+      "units/program.sol:MiniMeTokenFactory",
+      "units/program.sol:Owned"
+    ],
+    "program_id": "f09fae760708fb2abf8ef82da6ee97b4d0f1924474db6e0ab7462d0af43122f6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_e97f2d279ad9": {
+    "file": "AC80/RQ1_e97f2d279ad9.sol",
+    "source_sha256": "db10bf3a44f5721126b9e941077f1c4a5440573589776d50599d18135e92e8af",
+    "standard_input_sha256": "bb9e73c939290ac26619c79e6bad9b528fc63d95cd922b297c532a3687973adf",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:eZWay",
+      "units/program.sol:owned"
+    ],
+    "program_id": "8b4850b6d30e317391888d12a63e580bd968b94d48596199f3ef6d7e0d61151f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:47:S1",
+        "function": "Prosperity"
+      },
+      {
+        "id": "D2:47:S2",
+        "function": "giveBlockReward"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_1007b4fc52ca": {
+    "file": "AC80/RQ1_1007b4fc52ca.sol",
+    "source_sha256": "644289eda397c8a2bd67a571d9112c91fb3eaf49542c16002a1ffa690c32da29",
+    "standard_input_sha256": "ef89836e88d19b804c04161f4ee3b2a3c2efb1564e193e5ff85b4ca45c7119c3",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EncryptedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "da8a0ffa6e35131f5702d743fd8c5128ef165625c4e86909c3efd492c10ac6eb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:236:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_e5e40ec6feca": {
+    "file": "AC80/RQ1_e5e40ec6feca.sol",
+    "source_sha256": "2756ed6f4df948c9c34dbf8e57241e05ecc33a5caa1503b3fb1e71e7959e5165",
+    "standard_input_sha256": "bcda4b0583e510581c1808814934b0891f47f2c26649aa3b34681f2934b55c0d",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ReverseBugBounty"
+    ],
+    "program_id": "cb1e2ea2ac6f37d3b38b93cf670c9348b46682f3ec36bbd5a425355f766dc9af",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:572:author:1",
+        "function": "destroy"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_f91e2b168fdf": {
+    "file": "AC80/RQ1_f91e2b168fdf.sol",
+    "source_sha256": "9033cc8155a3b937bbbc4042e1be1e6aa7f206af9755d7ff902c1bc533e8f0fd",
+    "standard_input_sha256": "d6862c61b4c6e31a0691c6fad44a212ffa6929f1851dd469b5fa75c3561520d3",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:RasthenToken"
+    ],
+    "program_id": "5756f21eb44a017a6fc8cb51cc5435f549ed23f05b5e15286a0d724efc0663a7",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:490:author:1",
+        "function": "Rasthen"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_31450a049444": {
+    "file": "AC80/RQ1_31450a049444.sol",
+    "source_sha256": "c2a2caa3407ab77f8ad8ee572bc16ddc2820b2b5490b1cff016a15450530d21f",
+    "standard_input_sha256": "f719be56097300f44282f147242ce2a81d2694ee116d56ec3ffad1cf9e0144a6",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MultiPay"
+    ],
+    "program_id": "412f6256459bbdef84bb47a5a330f5b089e4de9a10eb26c912993cbf123321db",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:360:original:1",
+        "function": "fin"
+      },
+      {
+        "id": "D2:360:original:2",
+        "function": "pay"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_5e9adf3cda8c": {
+    "file": "AC80/RQ1_5e9adf3cda8c.sol",
+    "source_sha256": "8ed5562b8ba0ede40b0163665428fff6a3832f10d778d0b46a33d65d2b4b9733",
+    "standard_input_sha256": "16d7da99b9f377831099ee638707e98254c4ca44a852f40cffe3e7fad9d2be07",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BancorKillerContract"
+    ],
+    "program_id": "3426cc5cab8bea81c3d22c70dfcfceeee423b8f7405c827bbad75590d584dffa",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:625:original:1",
+        "function": "constructor"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_7dd1efe175e6": {
+    "file": "AC80/RQ1_7dd1efe175e6.sol",
+    "source_sha256": "5da0919d8adee863084e6a2abc4345f349bef2156a66c7ee5c2314df5e924e33",
+    "standard_input_sha256": "cf6790c19e35b32835c8210f0a1dd980a1e6bb904987ae4ac8b92b113e573914",
+    "compiler": "0.5.6",
+    "targets": [
+      "units/program.sol:Exchange"
+    ],
+    "program_id": "1a90b9fc1eedac0b6272ef8182da2aeae81ff3dc2042d0c57940b84d30b91989",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_f696b703e8e8": {
+    "file": "AC80/RQ1_f696b703e8e8.sol",
+    "source_sha256": "1a1fc0e94555ffd6e1a43d9a5cba63b1578c212ccc043040c5e1f4382806a2bf",
+    "standard_input_sha256": "086be4950d5b1814adfaf38539aef75a87d90bf1202d398ab5600a82020d7745",
+    "compiler": "0.4.15",
+    "targets": [
+      "units/program.sol:AccessRoles",
+      "units/program.sol:BasicToken",
+      "units/program.sol:EtherToken",
+      "units/program.sol:IsContract",
+      "units/program.sol:LockedAccount",
+      "units/program.sol:Math",
+      "units/program.sol:Neumark",
+      "units/program.sol:NeumarkIssuanceCurve",
+      "units/program.sol:StandardRoles",
+      "units/program.sol:StandardToken",
+      "units/program.sol:TimeSource",
+      "units/program.sol:TokenMetadata"
+    ],
+    "program_id": "b18fcde9c769e7a1b2716f733001103b221a170bd3307ca297b1a822e6bac132",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_4580c60aec2d": {
+    "file": "AC80/RQ1_4580c60aec2d.sol",
+    "source_sha256": "8e9f6ef1e9f9b1cd674802c9a8618957f3c4caf1d1da2a775ccd42b24e0f9e1e",
+    "standard_input_sha256": "b94e4dc719b3278fd67d4bc68d6214e9999540695440ef512f5cf33b9d6a7ef5",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:owned",
+      "units/program.sol:x32323"
+    ],
+    "program_id": "f287d3c0908f6500742367a4eb08a2b4948e3cff66b2c44bd88e1f3d43a8fc9f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:619:author:1",
+        "function": "TokenERC20"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_ad8d0ac6a104": {
+    "file": "AC80/RQ1_ad8d0ac6a104.sol",
+    "source_sha256": "10fa1891e39411f2feb509d2c47356c2aec671a74067ec4e2d8dade088b0b8e0",
+    "standard_input_sha256": "e8bb02190c08df03faf318c5179e53d9e6f4d1b7e965d687ab5a36f668e41ba8",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:KnowledgeProxy",
+      "units/program.sol:Ownable",
+      "units/program.sol:Upgradable",
+      "units/program.sol:UpgradableStorage"
+    ],
+    "program_id": "faec4f405934dfcfa223d20d0231ac4b809ecff5308bbd89ea28b679661c67b3",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:90:original:1",
+        "function": "fallback"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_bb9523a9c423": {
+    "file": "AC80/RQ1_bb9523a9c423.sol",
+    "source_sha256": "9f6bab03eeda97b0e65615acb1b3805bbb5bef6e2ca11d7f8d252ef2061a9873",
+    "standard_input_sha256": "efa2bf8d0222e19b90ec9abc840d1ca43a1d5168dc14caa8419f3a682021a9c7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SHA3_512",
+      "units/program.sol:TeikhosBounty"
+    ],
+    "program_id": "4095df13c493f900b204d976f7849440d7dec454c25e86fb00c0f00d4547a4ed",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:364:author:1",
+        "function": "reward"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_1f156ef466b1": {
+    "file": "AC80/RQ1_1f156ef466b1.sol",
+    "source_sha256": "bd291db050ad9450ff3b2063b2abb63754ba3e1a57500cf17e6077a67590df4b",
+    "standard_input_sha256": "ed18640b343be31bfe76a489a28e002e94e1d967b2857fe74b7a9e4827cf0d03",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:KairosToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "1d31e58f9e3642527b7bb717eea3be78dbad97b8f15566e3860a8c842ffef92b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_2e5ccd7b4bd2": {
+    "file": "AC80/RQ1_2e5ccd7b4bd2.sol",
+    "source_sha256": "d81e112bfe11e29995c7b694c17ebff17594ba22687919d10d843f95cc38f137",
+    "standard_input_sha256": "7359ee4b617478959ac6e0ddab046543017856643c6a962fe1ae29fdf17b5974",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DonutChain",
+      "units/program.sol:ERC20"
+    ],
+    "program_id": "2cefc8b085fb4731a1eba21de13df939590e2e43ea0c438c5d0bb6be1654ee34",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:363:original:1",
+        "function": "fallback"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_283c96463274": {
+    "file": "AC80/RQ1_283c96463274.sol",
+    "source_sha256": "42ac89d27285f9befd581ce56da12203c152fbe8c2d5ff1d46e24a5ebbb80e98",
+    "standard_input_sha256": "515a375a852da9e1c051708263ab479e458ef9ee5daab8d0a1e2e89a991237aa",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:KryptoArmy"
+    ],
+    "program_id": "8c225c70af3903e9cb29a194e0bd631af2321376e2e7a9394c6c98e04c96e8cb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_511b9f30f4b7": {
+    "file": "AC80/RQ1_511b9f30f4b7.sol",
+    "source_sha256": "bd7bde8a0b5f5ff4b257c08e5a7017c7bdbe1399753ace332de944cc12a8b4a1",
+    "standard_input_sha256": "2ce17b53879ed7928ffde6640342e976b35beb8027ecca158a9caa35c10f578b",
+    "compiler": "0.4.24",
+    "targets": [
+      "units/program.sol:OneYearDreamTokensVestingAdvisors"
+    ],
+    "program_id": "02c8ef5597171ccf2f3c08c19410b5f210501980e9ecc508feba5dac9a7ba4bf",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:38:author:1",
+        "function": "withdrawTokens"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_e6f04047bff4": {
+    "file": "AC80/RQ1_e6f04047bff4.sol",
+    "source_sha256": "5c6a307b3121b20be1580fba3bba19129f77a33da27eab1b44d844de40941e5b",
+    "standard_input_sha256": "5af5c57d8a10a55713aaf3a4e92646df7d0bc48a1efe0f1f69f2eed5b6df93c7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CafeMaker"
+    ],
+    "program_id": "75a3ac48c539efa3bf060da1065f6c3b3ac5e5de9db081790d612e557d5cf433",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:37:original:1",
+        "function": "RegisterDevice"
+      },
+      {
+        "id": "D2:37:original:2",
+        "function": "CollectMoney"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_bbf6634a1913": {
+    "file": "AC80/RQ1_bbf6634a1913.sol",
+    "source_sha256": "ce5d74bd65908863282d67fb34be8d88b5434b933e07a56321648e0369db6eb3",
+    "standard_input_sha256": "102e69384b269ae47022c0e43dd7b1ec29eb0588186d9dad7969d13ccc84c3de",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EncryptedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "f8923cac3068e402ae1401e29903806ae53fac4e43c423b3457ec907726762b6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:3:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_4c2921d39474": {
+    "file": "AC80/RQ1_4c2921d39474.sol",
+    "source_sha256": "bf832b5a670b5a3f42bfdb615ba75db003e65cbfc8d2fc79ac1275a09b3ed9c4",
+    "standard_input_sha256": "46122aad5605f15d10554054e713e783eb21e6efb61bb62eb79fecedbcf51ace",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EthDeposit",
+      "units/program.sol:Owned"
+    ],
+    "program_id": "2614f127aff61a7a5c7fa809aaf8c27eb6b99221e28db077d7c8ba59d16bdc6b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:535:author:1",
+        "function": "init"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_d4aefd2e1bfc": {
+    "file": "AC80/RQ1_d4aefd2e1bfc.sol",
+    "source_sha256": "eb6bc3d03663b1391390db551582aca8565cfb7cbb1113167c955f4995177f6a",
+    "standard_input_sha256": "d7f1fe08e3aa9ac44b63728065a368450f0b61ab14a1b8eeee91c7de3b2c423b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Multiple3x",
+      "units/program.sol:Ownable"
+    ],
+    "program_id": "45a1f339f47fa91bb72be364c71d4f1ce3132047893c5c1df10f90c38851e2d0",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:522:author:1",
+        "function": "refundOwner"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_2490e07356b6": {
+    "file": "AC80/RQ1_2490e07356b6.sol",
+    "source_sha256": "c64498109280d3e5cc54418ef779abd4b51af055c8f0e701cf12af4544b18d61",
+    "standard_input_sha256": "5793088b77551404fe7c6bc35b297451c4c51e11841c84130d4c6eb0e6cd28f3",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SHA3_512",
+      "units/program.sol:TeikhosBounty"
+    ],
+    "program_id": "531161cb15b447708585bdc0183673bd90e3a0f2c4dc411231d07dc7111e19af",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:19:author:1",
+        "function": "reward"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_c9a2d9b618a7": {
+    "file": "AC80/RQ1_c9a2d9b618a7.sol",
+    "source_sha256": "fc06a0d67768aa374430d543efa148592b6356296282652000837d51995f7438",
+    "standard_input_sha256": "8e7c38537d767d1a4d3c355e628f88856232d1969e9c43d346caadbbe45d6fae",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:GooglierToken",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken",
+      "units/program.sol:Token"
+    ],
+    "program_id": "0974ee43b333f67a3ec9986da2c4dfc83473600f0ad92c3b9b041cb7a7e30b89",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:93:author:1",
+        "function": "FirstBloodToken"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_b2a2fc36e6b8": {
+    "file": "AC80/RQ1_b2a2fc36e6b8.sol",
+    "source_sha256": "2e12c7d2f28f3b2c2b4e25faeecb36f0ae026735ccf1a401a776204583e2a51d",
+    "standard_input_sha256": "fd576aa8b04b8348717dbff8423ce4dd783e6a848b847f2c599bc1d67c8f080d",
+    "compiler": "0.5.2",
+    "targets": [
+      "units/program.sol:TokenRecurringBilling"
+    ],
+    "program_id": "4488392d41b343a85e73333910bc10f067fc265eedbb6886562117b35047acd4",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_3f952af67006": {
+    "file": "AC80/RQ1_3f952af67006.sol",
+    "source_sha256": "2123580d36a9f3d3b54c1e09ed7064792ea923a75f7298cdc0310c53400140e2",
+    "standard_input_sha256": "dbe3e0b9c5f033cd00af30a51d551001a5189775a7015d3822aa0fe4c813cd81",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Wallet",
+      "units/program.sol:multiowned"
+    ],
+    "program_id": "d4079729755a5bbc929b8999cc62480a7ed23ae0dc318c600e4721cd79497d74",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_a3aff7048f13": {
+    "file": "AC80/RQ1_a3aff7048f13.sol",
+    "source_sha256": "3a1ea4c1b486e8ba672a8948142da9d374de21b0a4130244272e31f5ec1a7d4c",
+    "standard_input_sha256": "a0b156d4ffc88d69a7d949928c847984e01e5681d8a8567810529167f7bedbe9",
+    "compiler": "0.4.24",
+    "targets": [
+      "units/program.sol:Azimuth",
+      "units/program.sol:Claims",
+      "units/program.sol:Ecliptic",
+      "units/program.sol:Ownable",
+      "units/program.sol:Polls",
+      "units/program.sol:ReadsAzimuth",
+      "units/program.sol:SupportsInterfaceWithLookup"
+    ],
+    "program_id": "33b96cf4ee16dd62329872b6a40e81a6e35a96c650732ccddf1e1fa7aaef320a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_fc71e6703f0d": {
+    "file": "AC80/RQ1_fc71e6703f0d.sol",
+    "source_sha256": "bf43b6ed5ca2b625a9de217ac06e7ea4ddf63acadeee0d64d0c562d6ce1710e5",
+    "standard_input_sha256": "a14bc7c6e5fabd79e002dba845ccac822c16c6f3bcf1cba3c92f96990cb64199",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:WeekendPay"
+    ],
+    "program_id": "ca35f1b6cabccd02a404f7d9593f9c6b432cd54ee7e3d5a9564f90f77a46ecfc",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:253:original:1",
+        "function": "pay"
+      },
+      {
+        "id": "D2:253:original:2",
+        "function": "fin"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_947273fa2eef": {
+    "file": "AC80/RQ1_947273fa2eef.sol",
+    "source_sha256": "5858aa841b01556733b6d06756cafe3a3e49090aeaeabd79d7f88b533eadce9e",
+    "standard_input_sha256": "94968a6c347b4fbe4b1a8b86420de01cc2c3aaa681c9e9ac501ace644e922b69",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "3968a6e3f151ddf2c02f4a77ab9a727d1b38531f3d53b5b0ebf3cf4cdb36e4a1",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:20:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_679bfbe1c927": {
+    "file": "AC80/RQ1_679bfbe1c927.sol",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "standard_input_sha256": "936f29ea3df0fb8d7492ca0abc55ccc645599c8239711d7dd9196c35bd3e8552",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken",
+      "units/program.sol:TOBToken"
+    ],
+    "program_id": "4fcfedf66986cd3b61903c45a3cac6a2776af7acf9a11beaa77cd71007dfc014",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:334:author:1",
+        "function": "Constructor"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_28fd11561fa6": {
+    "file": "AC80/RQ1_28fd11561fa6.sol",
+    "source_sha256": "bf00d45a5a17a4acb6a8b35d7bf20f070f5b6fd12dfe991ed72dbefc49e8d66c",
+    "standard_input_sha256": "5fa3d79830f9351cfa7d5930f23cc24d7337371ac4366e690e7264919259bb76",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Delegatable",
+      "units/program.sol:DelegateProxy",
+      "units/program.sol:Proxy"
+    ],
+    "program_id": "f068faa5f6e7d86bb48dc826a200f6e8f07b174e6dc0ec9a9fa9f0cb2bb3b0cc",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:297:author:1",
+        "function": "initialize"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_b11b4b1e0dc3": {
+    "file": "AC80/RQ1_b11b4b1e0dc3.sol",
+    "source_sha256": "7ea0716f3e4d3f05ec4f8a2b008f323a30ec5dc6c635d8f9884da7ca7a5df16b",
+    "standard_input_sha256": "346a1f29a8be04850ebe85f0498d2d76095e4ef24765791f7f121c2773d843a4",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Nine"
+    ],
+    "program_id": "c9dcc10f4f11130bf6f9d3d77bbd77b3b9142287d8e212111b93dc44ebacba1f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_403e9f180228": {
+    "file": "AC80/RQ1_403e9f180228.sol",
+    "source_sha256": "409f5ad61f213cef73f9e3991bc1d87d409cffc1009d3ffa45451e287552beeb",
+    "standard_input_sha256": "9967c4888bf709dbef9fff09d1c23c075102dbf7a0036eea582e9a3332da8e84",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Documents",
+      "units/program.sol:Owned"
+    ],
+    "program_id": "d89d9728c3b339b50ff3cc9b1af592eacd03878442bfb37f395345c83149df8d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_bc34a2568a3c": {
+    "file": "AC80/RQ1_bc34a2568a3c.sol",
+    "source_sha256": "07bf15d89e24d6a6ed05328346124000b4c20b7e1fcee9f0671451070561eba3",
+    "standard_input_sha256": "578c56d8c7622b9c2cd8a9e53f6067affdb92f744f0bf99a45b6af0fbfb4d2d4",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:owned",
+      "units/program.sol:x32323"
+    ],
+    "program_id": "3083aadf415c2c24006e58429c444e3a7bf4c23441c5a5ab5fd1bc949fcf5b05",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:173:author:1",
+        "function": "TokenERC20"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_ae0fe8386d33": {
+    "file": "AC80/RQ1_ae0fe8386d33.sol",
+    "source_sha256": "30df33484a411071835ea33614c7ac847b0832f9ec738ad86ab5310479266d5a",
+    "standard_input_sha256": "f6cb3c0799c3aa8ff8bd886deb29813f5315bffcde9bd0c885a1587af55f348a",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Goodfellas"
+    ],
+    "program_id": "26e5817b73f9068f5a89b3f7304d046c1980c3f78e16f34d02bbbe764509183d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:224:author:1",
+        "function": "LittleCactus"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_3b975bee1104": {
+    "file": "AC80/RQ1_3b975bee1104.sol",
+    "source_sha256": "3a02ad0c999702dfc71662ef80d37250e0653b7d6afd8455f5d19a9a9432ff33",
+    "standard_input_sha256": "fcf7b43453cf3fae9ef170a5832de890686cecf8b914df5f604623712705436b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:owned",
+      "units/program.sol:x32323"
+    ],
+    "program_id": "9bb55ec8dd82505188b83ac353b6e4b155adeec6888b87e8289696e347a0203e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:44:author:1",
+        "function": "TokenERC20"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_8400be2dc985": {
+    "file": "AC80/RQ1_8400be2dc985.sol",
+    "source_sha256": "9ba625a5e0eae1b0820594c9a4497d398e9155efcd92caae45f42fa8a5b44a28",
+    "standard_input_sha256": "553b2989cec5d030a3673f5dffee37552a9869ca316ff866ea9da5c761200cfa",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:GodMode",
+      "units/program.sol:KingOfEth",
+      "units/program.sol:KingOfEthAuctionsReferencer",
+      "units/program.sol:KingOfEthBlindAuctionsReferencer",
+      "units/program.sol:KingOfEthBoard",
+      "units/program.sol:KingOfEthBoardReferencer",
+      "units/program.sol:KingOfEthEthExchangeReferencer",
+      "units/program.sol:KingOfEthExchangeReferencer",
+      "units/program.sol:KingOfEthHouseRealty",
+      "units/program.sol:KingOfEthHouseRealtyReferencer",
+      "units/program.sol:KingOfEthHouses",
+      "units/program.sol:KingOfEthHousesReferencer",
+      "units/program.sol:KingOfEthOpenAuctionsReferencer",
+      "units/program.sol:KingOfEthReferencer",
+      "units/program.sol:KingOfEthResource",
+      "units/program.sol:KingOfEthResourceExchangeReferencer",
+      "units/program.sol:KingOfEthResourceType",
+      "units/program.sol:KingOfEthResourcesInterface",
+      "units/program.sol:KingOfEthResourcesInterfaceReferencer",
+      "units/program.sol:KingOfEthRoadRealty",
+      "units/program.sol:KingOfEthRoadRealtyReferencer",
+      "units/program.sol:KingOfEthRoads",
+      "units/program.sol:KingOfEthRoadsReferencer"
+    ],
+    "program_id": "f5c32283260bcc4038d6b272acc2f3871dd762d01e98c137764837040a692880",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_261dcad8364d": {
+    "file": "AC80/RQ1_261dcad8364d.sol",
+    "source_sha256": "07668f11f2e3cc74ad0a6d1e1b36ff49e5125d861a61f1a1871ebc9b77c90f09",
+    "standard_input_sha256": "fe791734eedd1fd8b33307b1a29aad1803dfb08a0bfdd82c16b8892532cbe78a",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:Wallet"
+    ],
+    "program_id": "7cb770d18e08210afca3f8850c3765f5f3e077dc77096582c0769bf753c6c4a8",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_94187f5625cc": {
+    "file": "AC80/RQ1_94187f5625cc.sol",
+    "source_sha256": "8523c6a9ebaa87ac97a388e1ac25170131d79ed103b3ea255d892e8dbd2c1f74",
+    "standard_input_sha256": "08681edb20b3d0a17a574092eb3028bdb800995e4b0bc2638d7fd257a4edef10",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CryptoSprites"
+    ],
+    "program_id": "cc136e3a53fad6f440485e76ef93cfa6f694a6ee450092bd6eb9f5b727735555",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_ad46f524b21d": {
+    "file": "AC80/RQ1_ad46f524b21d.sol",
+    "source_sha256": "5d6f501f0598bbb8687894134567b76997953bd1fb0ec74a3a43a3e5a46b9f01",
+    "standard_input_sha256": "b9a8b80d04e4deaa6c348209bcac74157864b0c91edcd5866fb68a4ae1f68f71",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:TheGame"
+    ],
+    "program_id": "0d36d6c898c8838dfdda5ac468ca156210a5c96f704f22f89dea9ffb23e555f8",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_da88771c652e": {
+    "file": "AC80/RQ1_da88771c652e.sol",
+    "source_sha256": "f37d3ad4fb815cfe90addd6b375bdb66bb9528662c060b1ce33ef4063cc136d7",
+    "standard_input_sha256": "5052a5b9512c98d9fc762ee566776b3d807c8f2a2b135bdfbdd9c0004ea0d012",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AssetRegistryStorage",
+      "units/program.sol:DelegateProxy",
+      "units/program.sol:LANDProxy",
+      "units/program.sol:LANDStorage",
+      "units/program.sol:Proxy",
+      "units/program.sol:ProxyStorage",
+      "units/program.sol:Storage"
+    ],
+    "program_id": "6b43a3ff3519288bb910bce32990624a4d50679810afe3d635596a5b71420210",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:139:original:1",
+        "function": "fallback / delegatedFwd"
+      },
+      {
+        "id": "D2:139:original:2",
+        "function": "upgrade"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_6be1f4b67f6f": {
+    "file": "AC80/RQ1_6be1f4b67f6f.sol",
+    "source_sha256": "39a7f11ff6a35824394d3f1726087923ae8e153b985b26360325de9ebd596fad",
+    "standard_input_sha256": "a53895f4dc7711b5dc3c7ee523c2fc07239918d563996bb82bde276c064f929e",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IvtMultiSigWallet"
+    ],
+    "program_id": "6d5afe57ff009b455f18f1bcb45be8326c0c62c7ed6876af97d5ac0da7618fb0",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_9d9d397fa18e": {
+    "file": "AC80/RQ1_9d9d397fa18e.sol",
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "standard_input_sha256": "b9dbdff82b8eb929a5dae994a35e78d6ec20277d3101cee14a38b9c9efaafa11",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:RBC",
+      "units/program.sol:SafeMath"
+    ],
+    "program_id": "4231d77a3da13dce0182c309d05b32b7fc21eccbe9b0b32927f7c25f16f17753",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:310:author:1",
+        "function": "Owned2"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_c0ce67b52132": {
+    "file": "AC80/RQ1_c0ce67b52132.sol",
+    "source_sha256": "a89887b7fc8f140cbd0a69311025e1011729ec246c2fb3e1e88562e39fa56205",
+    "standard_input_sha256": "20e8d0fb08f14673f1c8144d4bec30372dc041a5fe0030fa1f23d87e3ddaffab",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SHA3_512",
+      "units/program.sol:TeikhosBounty"
+    ],
+    "program_id": "f5f8e9bb1db101272dc980ab50257bda9a8e349d2982b614a145324a8484505e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:267:author:1",
+        "function": "reward"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_5add5c765bae": {
+    "file": "AC80/RQ1_5add5c765bae.sol",
+    "source_sha256": "32880f06ec85fd6e9fc4a8f6da4598b76cd18a4669bddfd9a6a2c1384fab05fc",
+    "standard_input_sha256": "f9524e9e1981123ab416361b4bdb6aa6ef221085ef6ed31006ec6e87041790de",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CryptoEngineerInterface",
+      "units/program.sol:CryptoMiningWarInterface",
+      "units/program.sol:CrystalDeposit"
+    ],
+    "program_id": "8b50ca4eaf3e68699e4f7c4a4b03576c985d074c8bf88b014bce5e173e211288",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:513:original:1",
+        "function": "disableContract"
+      },
+      {
+        "id": "D2:513:original:2",
+        "function": "setupMiniGame"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_2be3e9b98fac": {
+    "file": "AC80/RQ1_2be3e9b98fac.sol",
+    "source_sha256": "38adbb5e3f84bace1ea40d1788615289615a4f78aa5e08a65e78c32fc736f795",
+    "standard_input_sha256": "3723126d85b854adc3719210f95a3fcf523a308c71b3e1342ed1186796ea30ac",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IstriumICO"
+    ],
+    "program_id": "776e16ea5e527e30028dd24e8bc3d3396de7bc686dd65e0f53b7884a7b0a3957",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:30:author:1",
+        "function": "IstriumToken"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": false
+  },
+  "RQ1_a533300b98f5": {
+    "file": "AC80/RQ1_a533300b98f5.sol",
+    "source_sha256": "2d82af742c5fc5d0fdb4e5feab69e5253b4aa092060628c94bd58d89ba18dac3",
+    "standard_input_sha256": "b505882fb59bf3a5b37b42fe5cc9908b997132374440599a2e1e9f06181e743d",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Nobody"
+    ],
+    "program_id": "43dc488f88477c5055d7ff8b5e39cbcd75377ab93dd028e8c500f45e53abc22c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:539:author:1",
+        "function": "die"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_be17ecaef698": {
+    "file": "AC80/RQ1_be17ecaef698.sol",
+    "source_sha256": "3a6cc931607fb5f3cc92ab9793d83b36c04176c5f20cf7f92ecda061ee0b0d66",
+    "standard_input_sha256": "4323bd730a0ac68bfa5d6ade0b8c9f1480b9f774c909b73fe74bbf23d042d2c7",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:WhoWillRuleWesterosAtTheEnd"
+    ],
+    "program_id": "27dd074878e871710bdbb7328318c78afce83c41a9b8b6838e2e8a728435a8a8",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:597:author:1",
+        "function": "clearBlockchain"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_0bcbefea1890": {
+    "file": "AC80/RQ1_0bcbefea1890.sol",
+    "source_sha256": "7638d6aaa273b279daeea22fee5118c9635e31c99901d028fe3eb15c4a184350",
+    "standard_input_sha256": "7ff0ce38026176d1f09fb1593ab5d507286d4412c954b87e1ee226ac3c345abe",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EncryptedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "a23f5b438c135ad9353b54993109b02cf22b25aa59c7907f7b8f8e903fa252fb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:614:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_c20b10d094d5": {
+    "file": "AC80/RQ1_c20b10d094d5.sol",
+    "source_sha256": "6f0434ab656c0291a5fd7df2fb0010f79c7a3214b325f4a753609bcb162c5034",
+    "standard_input_sha256": "ecb3179087719017935671768e812ea14bfc9f7b551773ce39d3a525b49f2441",
+    "compiler": "0.4.24",
+    "targets": [
+      "units/program.sol:ETHERberry"
+    ],
+    "program_id": "a73d94c9711cf6a51cdf8dcd8a46d37bb1d7e5bf79d6d92e161d7c0eb7359713",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:50:author:1",
+        "function": "ETHERanate"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_4f19278de7d5": {
+    "file": "AC80/RQ1_4f19278de7d5.sol",
+    "source_sha256": "9fcd6ad1fba3e8796927dfe8af6d07a55c78494d6c2c6bd78f611a082e432e23",
+    "standard_input_sha256": "f2e5edc5511cc8004cf008893e042434af7bee599899cdc7438fa34d3dcaff84",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BaseModule",
+      "units/program.sol:BaseWallet",
+      "units/program.sol:ModuleManager",
+      "units/program.sol:ModuleRegistry",
+      "units/program.sol:Owned"
+    ],
+    "program_id": "8f81290be33cbd2a8af282be4fd6574d90e41d3e629320e04a91e515c08c728e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:181:author:1",
+        "function": "init"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b6fc6e31e760": {
+    "file": "AC80/RQ1_b6fc6e31e760.sol",
+    "source_sha256": "73d8428a48c112a296f63bbcdb3a49d0e0acff491217c70d4831b51e944a3f3e",
+    "standard_input_sha256": "680f419dbd0bff3d3dfa7930de5243f3c5166549094e08b2cfe3ef954c3a657e",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EthCashonline",
+      "units/program.sol:Ownable"
+    ],
+    "program_id": "b04cf8974b1f302475434d99147c4ad67ede1ca8b59d4d809b297fda3953fa2d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:537:original:1",
+        "function": "payout"
+      },
+      {
+        "id": "D2:537:original:2",
+        "function": "payoutSelf"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_852d7abd1772": {
+    "file": "AC80/RQ1_852d7abd1772.sol",
+    "source_sha256": "a45a0501d915f22521e6abaa32ec861132ec659db1f1a20c372acbc7f26bfe5c",
+    "standard_input_sha256": "8c1ea2cc30c352d586aac6ad7c0bc13d5e97121ea3883d40da24904b0c7448f8",
+    "compiler": "0.4.25",
+    "targets": [
+      "units/program.sol:OneYearDreamTokensVestingAdvisors"
+    ],
+    "program_id": "bc3b292a36060ceba38d0ffa5728f77dfe2eb6ea6a982250288f1f6669603d15",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:321:author:1",
+        "function": "withdrawTokens"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_9fea8632716d": {
+    "file": "AC80/RQ1_9fea8632716d.sol",
+    "source_sha256": "9999f8d00a6605a7e77310106a8a37abde3b5cca04bf74b0f015ed04d3b07dfc",
+    "standard_input_sha256": "f5eaf8866098c141b9a7cab6b62996af4e0703203b24b776d8e8bf92f99c5dfd",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BTC666"
+    ],
+    "program_id": "9c5d869e2ea7ec47cc13b3d125dd26ab44aae0b01223fc6d6fe90cbba2400720",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:510:author:1",
+        "function": "Ballot"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_34ab8e0115aa": {
+    "file": "AC80/RQ1_34ab8e0115aa.sol",
+    "source_sha256": "9ca05ed0920b495a193b5aa8774696c073c6aa9bc27742a5df5bebb591cd3f5d",
+    "standard_input_sha256": "672cb672e9459e11bb30e0d8b5c2ce3b0bfaf1a5ceb580efca243516045beae9",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:NumberToken3"
+    ],
+    "program_id": "bc66c8a4dcdb532dfb2e2146eadafc648e4e6b59088c7a10c4971b098b511e7e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:359:S1",
+        "function": "PonziTokenV3"
+      },
+      {
+        "id": "D2:359:S2",
+        "function": "destroy"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_0526c008875c": {
+    "file": "AC80/RQ1_0526c008875c.sol",
+    "source_sha256": "d46f579ef9eccfc634f11e7888eb640ad18daa0e0348cdcd85b15b21913c553c",
+    "standard_input_sha256": "31dcc826123051eec119b98e2ef0c4720835a361cf3c7f090c2678fa5b1139da",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MegaPlay"
+    ],
+    "program_id": "f3d970a6599807f4433ac87fe866268adf7aac553f32199a242af0ff136eb100",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_9aafb6cd1add": {
+    "file": "AC80/RQ1_9aafb6cd1add.sol",
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "standard_input_sha256": "af26f348c04cb513b598d02e3b53d538b161e999c3015d37c00587734a343b7c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:PRTL",
+      "units/program.sol:SafeMath"
+    ],
+    "program_id": "b84c82f3c13811ad6df648491d10d60786d472a5bffef4fd5965d877ca0f2636",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:587:author:1",
+        "function": "Owned2"
+      }
+    ],
+    "prediction": {
+      "AC": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_84ed7052a606": {
+    "file": "AC80/RQ1_84ed7052a606.sol",
+    "source_sha256": "5508c1c2fdd37ff8679263626af7420ce7dfc2e8c6c5b92b6ef3c66c48a35b03",
+    "standard_input_sha256": "b5aaa981fe04576c7cd6e2678e806bfd964ac4a31594e514601abb99b47e11ff",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DepositContract",
+      "units/program.sol:SafeMath"
+    ],
+    "program_id": "979dc0f7b64ec6f46bef09644a5bc098a753525c4df1bf78b9eaf1b8ed15205a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [],
+    "reference": [
+      {
+        "id": "D2:418:author:1",
+        "function": "init"
+      }
+    ],
+    "prediction": {
+      "AC": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_770ae395781c": {
+    "file": "FCR-repair60/RQ1_770ae395781c.sol",
+    "source_sha256": "ac889626982b0ef949c76466c3260a6597a87547b8c5bc60126e3fea173d82e7",
+    "standard_input_sha256": "3cb706572923f42cebe1e9f5278e62d2d8dc1fc5e4a0efd4d9fc0e45ab05d98b",
+    "compiler": "0.6.12",
+    "targets": [
+      "units/program.sol:ARBIX",
+      "units/program.sol:ERC20"
+    ],
+    "program_id": "2b52280450c360b9e10e7bd144e029928454f6f8b86da9ceabd7dfc659b98a96",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/Arbix_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_bc5855a83e2d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_cd47d22b26a9": {
+    "file": "FCR-risk60/RQ1_cd47d22b26a9.sol",
+    "source_sha256": "7b11dd1a121ba51704fcb4dfb9bf6bd4a4ffe621d8f7bba02ff9bfd311e8e296",
+    "standard_input_sha256": "6448b66787e7a28aeb2ed8cb682b64eddea87f9b32d41fc0c120995f5bc933d7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "2be6a240f48f2ac814a229c1e82926a85fca39aa139a55e252410ea7e6ba57ee",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/0xc2be193f581f129ace32d2fe949d100dc09c2a05_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0xc2be193f581f129ace32d2fe949d100dc09c2a05_inline.sol",
+      "dataset/verified/modified/GenerateToken/0xc2be193f581f129ace32d2fe949d100dc09c2a05_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_fa2207747d01"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_0267e2a8ebb2": {
+    "file": "FCR-risk60/RQ1_0267e2a8ebb2.sol",
+    "source_sha256": "11a5bd6979302010e22f21bc3a8312d5e05f8132abeea11011d6bd2669c4cecf",
+    "standard_input_sha256": "94e1df20eb3529d2d158bb8d05e0a086bf91f69e50ef066c129ea8f3d6e9e9c7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "92efd822843eba7112e6f814c827534a26bc06a372c4fed80d376b6364b6e233",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x7cd489aea7952d5b66c90eb8894d47cc698967c0_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_3b4d9f6eb96f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_0c666ce785e8": {
+    "file": "FCR-risk60/RQ1_0c666ce785e8.sol",
+    "source_sha256": "25dc8ce13f0fd3a34755a33ac8cb0bf6c7bda2dff0477e039f41730ec653e639",
+    "standard_input_sha256": "c3d672dd783e5e8bd3883de839676bc6c8d7f151886b3c7f7de662bb729ed142",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:PrivateBank"
+    ],
+    "program_id": "7d8f36b87d150fac856648460130de679cce81fd2964b024fbac0732b0b12842",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/31_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_3455b6a9ba4f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_4be3030c4533": {
+    "file": "FCR-repair60/RQ1_4be3030c4533.sol",
+    "source_sha256": "014b04b836178ea34767ebc68116121e0178cdc00a495eb3943aaefe0dae549b",
+    "standard_input_sha256": "41434c0e35322279c31a4796360a65a6084b00476fa73d8ed7b3ab94bafb0e27",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "143abfbb54803029c5e773ea9738500924f004dbfa817c1a94d58c5060e20687",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0x7cd489aea7952d5b66c90eb8894d47cc698967c0_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_af7c473b8cca"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_206d19a8539c": {
+    "file": "FCR-repair60/RQ1_206d19a8539c.sol",
+    "source_sha256": "d3456cacf282712987aae7a6c436c0faba3d3ddcdc5a311bd4ae25e5cbfd20d2",
+    "standard_input_sha256": "7035b79a799b9328b7c2c637560fa192912af9eac9b22794e3380f20aba0e683",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowMinimal"
+    ],
+    "program_id": "f742f7a31dd12130348c3818ba876ca22850296fd75ea000ab6f2bd846bcb01a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/7_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_3a3d833ca142"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_085aaca2f412": {
+    "file": "FCR-repair60/RQ1_085aaca2f412.sol",
+    "source_sha256": "dcd1e27b231d00a54eb208addbcebb4f806d91ddb609a2067d12bd82b7986e35",
+    "standard_input_sha256": "3802dfa5c76727100317e749f574a2ae32ebecfa8d0bcd5268acc0439250fc49",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SteabitToken",
+      "units/program.sol:TOKENERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "a806ca081fde967ef89c8946fae3feeeb2f5e5888a8a39bb2983a376e72d150c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/0x56c26d3e5051bc0bae8d740304c8dcc16d5e1166_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_c9626779c857"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_c24c6c95ccbd": {
+    "file": "FCR-risk60/RQ1_c24c6c95ccbd.sol",
+    "source_sha256": "4251dbd733d06127e57e68f64dc3a0dd84a67f91ae3ab7fb113aefcb25bc41fa",
+    "standard_input_sha256": "41a09f777a803288066030784112db7250bf83e3dd3ea2883618018fd90ce955",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ACCURAL_DEPOSIT",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "89033ed12060a08e593ee0dbd8aeaf6088153a1275ff0a8ebdf5744da25ece84",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/27_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_32dbc2fa2433"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b61f163309a1": {
+    "file": "FCR-risk60/RQ1_b61f163309a1.sol",
+    "source_sha256": "1a7e4708699a2f8c2aebf9e67c33756b0a33a465c038a03ddf4394336106770e",
+    "standard_input_sha256": "aa0598815150ebc7544ff466b85f669c69de40742eaa2f881a366a87d41940cb",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DappToken",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "f8d07276076ea2853e74f0454a720194a88c902d55512c781a0f6cb741a84ba9",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/0x386cabc0b14a507a4e024dea15554342865b20de_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_81a85f242b60"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_776a6b98d18f": {
+    "file": "FCR-repair60/RQ1_776a6b98d18f.sol",
+    "source_sha256": "a5fd8a58b40ea2b694e371ccac03effdeebdbbde302bb949c6d9fdc6019fdae4",
+    "standard_input_sha256": "2e3fcb67c72928228eb39070650f695df7b6cb63cf3236784bf52868c6549601",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowMul"
+    ],
+    "program_id": "e1ca3d6f1a868468ffbad29361e92b2dd23d03db37ccacbf9f69109429589d75",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/8_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_8456d2957fff"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_a7bf9487cc3f": {
+    "file": "FCR-repair60/RQ1_a7bf9487cc3f.sol",
+    "source_sha256": "5f41712a32d4cd7bde9f1e0ef0200a812266b64a931a875bfcb2ecb29bcc676c",
+    "standard_input_sha256": "4141e3a09aa207fde45b3dbc5aa1bdf319916ad1764b7426d19e09912b523d40",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "9b554c607d9092c886980254806718ea0ab97ace58e7ff3979bbafde36de7df6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_c772c59e4a76"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_46a031a993c1": {
+    "file": "FCR-repair60/RQ1_46a031a993c1.sol",
+    "source_sha256": "31f9e291a53d099de540fafe8aa29735b52fec33be9e3149a14ff9ee8ff984fa",
+    "standard_input_sha256": "e983ea2a088f9546ae10db23a34c37dea485b9be4474f2bfe06019c0af23f780",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:City"
+    ],
+    "program_id": "7d1c49434a6513500150f1fda7408502552580ae00fd16d2bd92553dac3eba2a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x08a2246dcb48db6a5a9e1f6bc082752fceddd106_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_985c6fd1d4e4"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_7a54127ed44c": {
+    "file": "FCR-repair60/RQ1_7a54127ed44c.sol",
+    "source_sha256": "326302e72a587f26063fdccbf53952b97d3c93c494721c4c413c48982e2c9942",
+    "standard_input_sha256": "786f524b2b9cdde0401634f324fac081391c3a05d68c4e0d1912bad96ff97e97",
+    "compiler": "0.7.6",
+    "targets": [
+      "units/program.sol:D100Token",
+      "units/program.sol:ERC20"
+    ],
+    "program_id": "cb50c0b066a65089e4ca123eb5b1c422d798384f97efa67fac1e96530d8348a9",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/DeFi100_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_4d2acebaa2ff"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_ffcaa562a72d": {
+    "file": "FCR-repair60/RQ1_ffcaa562a72d.sol",
+    "source_sha256": "33205d4976d21dde6a1fc49d841bb4dad7ee7809aa55c6614449bd03272df4be",
+    "standard_input_sha256": "99ac03f63a83a1b45ad4e9a7bd62388a30a0657dc65fe7b0230700caf3293b5e",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:MY_BANK"
+    ],
+    "program_id": "527d17f07b5c29735f5eae9323229cdd3406496f60825be02fdb7964c1e33612",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/35_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_c29df435681e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_4d2acebaa2ff": {
+    "file": "FCR-risk60/RQ1_4d2acebaa2ff.sol",
+    "source_sha256": "79209172973b60b1235d9ae6c6906a0467cab683da194b9f968db2296cdac837",
+    "standard_input_sha256": "9854cb9550bbf0492473310bb8f88e5173f321b53cbb00841ea78eca88ebf23f",
+    "compiler": "0.7.6",
+    "targets": [
+      "units/program.sol:D100Token",
+      "units/program.sol:ERC20"
+    ],
+    "program_id": "5195e340505603e77d661a47b02ca901af82f6be74c6f0d58e4016555863aeb4",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/DeFi100_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_7a54127ed44c"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_37d9daf031da": {
+    "file": "FCR-risk60/RQ1_37d9daf031da.sol",
+    "source_sha256": "a2f93cdc006d2602fae439ca2f177e9d3c1a0b5c0c15896760023370f4bfc0f6",
+    "standard_input_sha256": "73e3ac069d879a864f7558f78ef3301f12679a9f3a83843278f6e50464a14ff0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:RubusFundBlackToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "57cd53d7946e77239414d8ba093029a4c7690ac15a8dc181947d96c93740c9a2",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/0xc79d4c81f87c152ba604017a7b4747232ae30280_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_1c6b43b24d4c"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_d695cf0bad2e": {
+    "file": "FCR-repair60/RQ1_d695cf0bad2e.sol",
+    "source_sha256": "6f053ad19d6562e07656fa65b7a02a89879d0d95a2acbb19ee459dc8c54d9129",
+    "standard_input_sha256": "03911142a530e0d6d84239f9097812dec8caf72c4b0e561ead087616e6bce34d",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowSingleTransaction"
+    ],
+    "program_id": "3b907d972f232c08040bedb19d229286499a684d02da0a3346166247b254ecf6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/12_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_cea156e41c29"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_e1ce695fff9e": {
+    "file": "FCR-repair60/RQ1_e1ce695fff9e.sol",
+    "source_sha256": "44fddcde9ee52936fad108b874c0eb76894c1e7298a8165765ca66a809a168cc",
+    "standard_input_sha256": "219caa8b4db34626fe444dd8564a137522d990b00298f9e91b0e734c18290f99",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:PrivateBank"
+    ],
+    "program_id": "8315330c3117e1c289cde98628b6f32652caea3154ff049dc87c94f89a8db583",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/21_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_bcafc7a40ce2"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_c9626779c857": {
+    "file": "FCR-risk60/RQ1_c9626779c857.sol",
+    "source_sha256": "872e989faa9b0c57934d2bd1d62ab1f979c421fa0cd183b94e1344ff64ad7237",
+    "standard_input_sha256": "0ad4b6ecd46ec50e51dbc847100dbae283282901562e18cc4916c1c7714af078",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SteabitToken",
+      "units/program.sol:TOKENERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "5ced786051f5a97a99c32f6e6c74ba25c10ff218a0890e017647eea8d0064247",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/0x56c26d3e5051bc0bae8d740304c8dcc16d5e1166_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x56c26d3e5051bc0bae8d740304c8dcc16d5e1166_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_085aaca2f412"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_c75d73e1c482": {
+    "file": "FCR-risk60/RQ1_c75d73e1c482.sol",
+    "source_sha256": "bebb04dc91a54d8cdf8c51a8ea788e148520dd89d37cd261f5d4fe899adf0bc0",
+    "standard_input_sha256": "d6a0cf0aa1371c9ce8a79f8094501b641f71f8d73b9353e1de8f08fbcbac4d14",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:TokenERC20",
+      "units/program.sol:mkethToken",
+      "units/program.sol:owned"
+    ],
+    "program_id": "a7a130ee59effd774d8c5be60e71684b5641cb02449fb85afa1905af6a7f8f67",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x81246a3f5fab7aa9f4f625866105f3caffc67686_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x81246a3f5fab7aa9f4f625866105f3caffc67686_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_35e0e8d95f92"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_e73c99ca23e5": {
+    "file": "FCR-risk60/RQ1_e73c99ca23e5.sol",
+    "source_sha256": "f70b930966ef8190d190ca4a0b83081aad3e5d02b78943c15b4ea0ca8865d5f3",
+    "standard_input_sha256": "e4d2f14e014798de34bfc1290f5a664b74629758141a7d021ad4cede94dda7d5",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "c5bdca9625d513d856f7ce0bd099658e36c85f85594b9ee5fcc57e7431f980fb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_1f06ce07140f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_c772c59e4a76": {
+    "file": "FCR-risk60/RQ1_c772c59e4a76.sol",
+    "source_sha256": "8eb07a674f695724bc8ce146c49cade53a5b9d958a1b05b90818ffac61373721",
+    "standard_input_sha256": "2406a9bc3c78b4c1203e3b7a2ee66132b7a42bc228f6df1063dd94d462166339",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "f58c1681b335968b8fbd8bf6ab418e3f246403c148fd87d9dbec0780700c3e0c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x174bfa6600bf90c885c7c01c7031389ed1461ab9_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x174bfa6600bf90c885c7c01c7031389ed1461ab9_inline.sol",
+      "dataset/verified/modified/GenerateToken/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_a7bf9487cc3f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_32dbc2fa2433": {
+    "file": "FCR-repair60/RQ1_32dbc2fa2433.sol",
+    "source_sha256": "4c51bbb942a859b4560af6d6bd4aebb2f5c575cc3efe64f727c644858f16ecf3",
+    "standard_input_sha256": "564b8c2ec82f049101bb813232ad5bf808c2a79511c37de9a2ef5bd574801c90",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ACCURAL_DEPOSIT",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "4f7c312da1158a7bc9757cc63ca83e7629e7ef84717ebf711fffb7cd36dfe500",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/27_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_c24c6c95ccbd"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_94d9f2cfc77c": {
+    "file": "FCR-repair60/RQ1_94d9f2cfc77c.sol",
+    "source_sha256": "a2551ff9078bd4fdc99fda028fd24b6d67786bb61efa37002b70416c10feac0c",
+    "standard_input_sha256": "83c822df5ffb2e763c14d2ce0a47bab5c8ea0a2254ff008df47ed818ec9345c0",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:ERC20",
+      "units/program.sol:wZNN"
+    ],
+    "program_id": "86f79c0066f83fb350aed56d6f545cf228aca1ed0f3afcb320cc41590a9404ab",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/wZNN_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_e13bb6580d65"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_4169c528c5e4": {
+    "file": "FCR-risk60/RQ1_4169c528c5e4.sol",
+    "source_sha256": "8eb07a674f695724bc8ce146c49cade53a5b9d958a1b05b90818ffac61373721",
+    "standard_input_sha256": "2406a9bc3c78b4c1203e3b7a2ee66132b7a42bc228f6df1063dd94d462166339",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "f58c1681b335968b8fbd8bf6ab418e3f246403c148fd87d9dbec0780700c3e0c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x174bfa6600bf90c885c7c01c7031389ed1461ab9_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x174bfa6600bf90c885c7c01c7031389ed1461ab9_inline.sol",
+      "dataset/verified/modified/GenerateToken/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_2d22977434b5"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_475c7d9ec738": {
+    "file": "FCR-repair60/RQ1_475c7d9ec738.sol",
+    "source_sha256": "95560d80f9592567cc7e556d5b481dbbc84fa482437ba1c42640de293b324004",
+    "standard_input_sha256": "b7fe50ca921a4adf291e766ec38332ba8c0edf762998a9cccd5b995aafe85607",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Token"
+    ],
+    "program_id": "311a80ec0a06a07004866b35b4f04787f823f84985bbbe9d13598573bbc562a1",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/14_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_b84042e6eefd"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_30c29cd44cad": {
+    "file": "FCR-risk60/RQ1_30c29cd44cad.sol",
+    "source_sha256": "3881dfa93c8bac66f65f41c65481c166ee4a14c7c10e851b61cf2bff7114743c",
+    "standard_input_sha256": "fd49e9f7644158b59f6c094ee1c02ca6d7f45a51d070de6ac9997566eeb25713",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BANK_SAFE",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "bccdea134c088af26f2dc6fa0768c6c9b92e34c96ea89b005f21a2343c058eaa",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/24_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_329e0d0d7a11"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_49db443acf1d": {
+    "file": "FCR-repair60/RQ1_49db443acf1d.sol",
+    "source_sha256": "12c07a82de48b94c6e2e6b2134e45cc948ebcc09bd00630ab63b7420dc5cbd74",
+    "standard_input_sha256": "c2466a797b9a8fcaf6098e415fe8a0c4c31d7995cb9065770980163f00f4532f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowAdd"
+    ],
+    "program_id": "bd2e7cb6caac39bac62b3ac927fdcc6cdc967ab3048812b6e122d42b55015393",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/4_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_4febca8bfe3b"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_7bfd58ffb1ae": {
+    "file": "FCR-repair60/RQ1_7bfd58ffb1ae.sol",
+    "source_sha256": "508dfe2a7c72f1c4aed9ee376d3a94e70e1b4235f719635e6d0497b0a98670d6",
+    "standard_input_sha256": "0b7d3eb6cddba520b6b9ff021646ccad681e594407530e2b7477daebf6070471",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "f42d97a7310cf5c863d8a9eea9e862fcf8a4285578bb955b5701e38c0060a111",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_cb8c3fafbda1"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_196284e657b0": {
+    "file": "FCR-risk60/RQ1_196284e657b0.sol",
+    "source_sha256": "d6856cbd50f9e2c7bf1dad1cfa81c8cb1a4fd7e6721d64d66fb71fd6d5795c6f",
+    "standard_input_sha256": "71ccd0e75783a5270de16310a83b1a4948fcc8d101452a3c5bf526e5b8e449df",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:MY_BANK"
+    ],
+    "program_id": "f14818aa27a1a8b96c8eb253c611f73760023bb9a9003ccf5e474c92ad897b3a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/35_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_0bf6f8bce8d9"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_7d7240a2af90": {
+    "file": "FCR-risk60/RQ1_7d7240a2af90.sol",
+    "source_sha256": "3ab5900c1681935661c139bb678e99f0b28e27b0ad8ee61ef7a24a14bd111e6e",
+    "standard_input_sha256": "7ab6fb87583414eaacaeb03def1ca833066e6d79d3ba138b11284b0bec35f03c",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:IntegerOverflowAdd"
+    ],
+    "program_id": "84f5e0fd58555066a914dae2a8069f9d9675fbe8430a892eae85b260e2fc2a3f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/2_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_8d60a47186e2"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_fbd0377ce541": {
+    "file": "FCR-repair60/RQ1_fbd0377ce541.sol",
+    "source_sha256": "8b062803e8b9421f94351ad7b481cd719440d29b09f6d97aa3c266a675f38aad",
+    "standard_input_sha256": "6d82a692c5c3559d12fa00b2c6cab73d1964f220b2c329d8811d49deb3d4fbe8",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EcoIndustrialChain",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken",
+      "units/program.sol:Utils"
+    ],
+    "program_id": "93f95e1fc0989d67bf4bdb521fc039a1783eaee5da4221807f3a354f87eb43bc",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/0x7e0d051ec68668d603c4e33255d1aed342a691b7_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_8e8598bb724e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_39fb6e7197c4": {
+    "file": "FCR-risk60/RQ1_39fb6e7197c4.sol",
+    "source_sha256": "c833646e88f0652f1715688b5c37a27ae17338375a1416774b0bf713188ee87c",
+    "standard_input_sha256": "bfd2ffd587d2e3e8d121afda3082b237e0bacd74ef2c618019c82401847beb46",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ETJ",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "2b158be1e69ca52755ba1e4aa719f3a1b4fecacbcf9162ca47b2db630c64032e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x98f777fb9139576902bf7f35956ca015ddc1569f_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_7450d39da940"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_9451d6dac4de": {
+    "file": "FCR-risk60/RQ1_9451d6dac4de.sol",
+    "source_sha256": "6807d86835dc0e74401cf14a15b95a9297378ef9d3c9a171a25788e96b7ae153",
+    "standard_input_sha256": "d47bd82601fe2a144368cbe3b7de312360ba0344306bac7da94583c73d160d9e",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:Private_Bank"
+    ],
+    "program_id": "0fdd2fc93fd3015e53061dc0c2ed43ec6703da016ed7308e221de1ecc95872db",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/30_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_e25d32acc1f7"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_353a9b0b5006": {
+    "file": "FCR-risk60/RQ1_353a9b0b5006.sol",
+    "source_sha256": "691a4ff57fc94ad7e63d73157399ae11429ec6f2fef5d4153e0b975631b229a2",
+    "standard_input_sha256": "6f05d742f9bce0c666a0fee1b6e1df8201a9b03b7fdc0163d744e7fb7943ec61",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:Token"
+    ],
+    "program_id": "52781fc8e513323792520b83216d51524b3db9a4264424fb4771d93df6798ed3",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/MINIBASKETBALL_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_db11e3e08742"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_72c6b8c6b605": {
+    "file": "FCR-repair60/RQ1_72c6b8c6b605.sol",
+    "source_sha256": "41e0160c8cf46a5d95cdea647253b18487136ff197f26d803cdc737d7ea41b60",
+    "standard_input_sha256": "9258977d033f6835727bdd0ad4af895cb3ff33c604db2032c4316bebf31cdd2f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ETH_FUND",
+      "units/program.sol:Log"
+    ],
+    "program_id": "8c8d12494aec3c0b13d94c9c7aef405b37c6bfa66ba1a8e39da3bd0c2bf4d11b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/26_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_b5217318672e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_86a0269d7608": {
+    "file": "FCR-repair60/RQ1_86a0269d7608.sol",
+    "source_sha256": "4b972f846388d1f2ee695faea18d7c244ccff6a745c3fdc47b0b5618516d4370",
+    "standard_input_sha256": "8459fe83d8a91abbb19fb4e0d41c99f5a6fb356e18f2c27c69ea662f6670fa06",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:LOOiXToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:TokenStaking",
+      "units/program.sol:owned"
+    ],
+    "program_id": "f28fc4312871d70a734030c723fa26a24690f95bc7162302e181e3bcfc72c311",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x56af6596f28d9e6f289521d31affdb95c412265e_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_a0facbcc1e38"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_81a85f242b60": {
+    "file": "FCR-repair60/RQ1_81a85f242b60.sol",
+    "source_sha256": "c282080eb99dc8faf5eb31fb86c6c419969a81c71b2ab7d527da52769810aeb8",
+    "standard_input_sha256": "7a22129adc8b99bffa9d8cea4429f97abefcfabfcebd430347b2e1b750bcc494",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DappToken",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "66d5823e761136be4f1b86836f8ce385b4cf0c4951342c7f21967cb0ce44f4ec",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x386cabc0b14a507a4e024dea15554342865b20de_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_b61f163309a1"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_6c3522e11e92": {
+    "file": "FCR-repair60/RQ1_6c3522e11e92.sol",
+    "source_sha256": "a438b81405fb582cec32605b8d8fd8548c81de345fea50a3a23745b4c702114a",
+    "standard_input_sha256": "98b8e022c37df0d55453e987774af3f9cb3576e69e0119e7168f57ca505a4071",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "777449ed72c0898320dac57dad2516e633c39e05a59200aee5f7c1b9ec9480df",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_9a61667124cf"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_5b3c7cbe3d9d": {
+    "file": "FCR-risk60/RQ1_5b3c7cbe3d9d.sol",
+    "source_sha256": "a37f0314730741c10f73cfcdd284ae1fbdd844353b3e213b0559507f1ee09b49",
+    "standard_input_sha256": "ca62204dd3a1303742992896534a7496d5355a2670ef1140e0a3a5e1bbb9782e",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AdvanceToken",
+      "units/program.sol:BaseToken",
+      "units/program.sol:Pausable",
+      "units/program.sol:owned",
+      "units/program.sol:saleOwned"
+    ],
+    "program_id": "a521dfab8f4646937e855122bcacc909c8305d3ed0439414dec871934ff403c2",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x59335080522fa941bcbdb6e15a6f2ee5a455dc5a_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_0f3c3f400f6f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_8456d2957fff": {
+    "file": "FCR-risk60/RQ1_8456d2957fff.sol",
+    "source_sha256": "25a534b087e53d5414cdf7b250bfe9ebeffea5ffdca97ca70c69d98545c7836d",
+    "standard_input_sha256": "8a280ac96495ff7e9f817f74875a99674803edf25da46cf9a95e7567c57067c8",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowMul"
+    ],
+    "program_id": "91d4f9da4b6384d8b0eb739ff1e1facf254dfbd44fa011592359eadbed8076dd",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/8_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_776a6b98d18f"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_cd39ae0d15a5": {
+    "file": "FCR-risk60/RQ1_cd39ae0d15a5.sol",
+    "source_sha256": "1fa4cf1f4befeda6d0ab7ed4127e5dd233ffe756e0d01cfd82a122aa5af2b10f",
+    "standard_input_sha256": "38f5783a758fce001ee3cb06cc8565171e79f1617bd853a26f832ca6dc5b944b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:KFCToken"
+    ],
+    "program_id": "a7bfeba708dbe0aaec3a928e4ab8b43d463a69a67f4827f67591ed249520dd4a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/0x17d30c85376bc2c39edc1da179162d308559a3c4_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_b649070a92c3"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_1f06ce07140f": {
+    "file": "FCR-repair60/RQ1_1f06ce07140f.sol",
+    "source_sha256": "9191f7babfb23edb02da749e33ebbe3160d369cd250e00914d913b2a7f98d1a5",
+    "standard_input_sha256": "675cf2d2c3aa401d923ad27418951cd098513ac9912840822633c0c5b75a29e1",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "b7cf8bc5235f8ce76d264e705f38b76ecd58952beb0ae7bd272cdfccd38a6aea",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_e73c99ca23e5"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_cf32aac41cf2": {
+    "file": "FCR-risk60/RQ1_cf32aac41cf2.sol",
+    "source_sha256": "46ebc2f5905c1af9445e770983928227a4cb86a50f6d3c5177045273163d6cfb",
+    "standard_input_sha256": "c36665e9d02d32b04b9720ce29d5deb3d8fd3734c440b8eeeaaafd140260a4a4",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:Lottery"
+    ],
+    "program_id": "1f3fc1731606ccfd9493406acbce3c21200b5269e483ab5023772cf5f8dcbd9e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/40_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_a4c5ecc3c29e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_fe7add810da5": {
+    "file": "FCR-repair60/RQ1_fe7add810da5.sol",
+    "source_sha256": "98a32959464ae66e15e84a842a7647adc6b73313a27becb9aaeed3db38d0d4d4",
+    "standard_input_sha256": "f4c8884d4fe811d2fc5e97949c054e32ae766523ede68539c0b594a53e4a6055",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:GuessTheRandomNumberChallenge"
+    ],
+    "program_id": "6e8d19ac26248d5c941f3f5d331dd0275912b7cca684286b0792b47139ef3eb5",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/39_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_15346457ba72"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_9a61667124cf": {
+    "file": "FCR-risk60/RQ1_9a61667124cf.sol",
+    "source_sha256": "8f1ff3f5f36f3435778723ea1cd0182e056c7ae701da84b58dca839ad7ba0234",
+    "standard_input_sha256": "91e681d461c4984dc8402b4d60dbaed6a83cb67a0cb2ddefb0a9cee493daa6e6",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "205e4f5b73d578a22a41b2912a9321167a3eb730b4930bc22d174089c352b55c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_6c3522e11e92"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_f322b5b8495d": {
+    "file": "FCR-repair60/RQ1_f322b5b8495d.sol",
+    "source_sha256": "87a7e4d221d97b0fe6aadd7192903ac01f1440d2edfa10789812fc7769d4cf56",
+    "standard_input_sha256": "873b8d5fd5f718829e01c9c19c2520d620081ea6faf95603a2f874db40fe628d",
+    "compiler": "0.4.25",
+    "targets": [
+      "units/program.sol:Overflow_Add"
+    ],
+    "program_id": "f3c76958d44dbddf856841208ad160e66516f7dcdd6331de9a814e1353fa4944",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/11_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_5eee31e70615"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_024b9da10799": {
+    "file": "FCR-repair60/RQ1_024b9da10799.sol",
+    "source_sha256": "0e161c29f598a0e1f413d6598d2f980a2756470b1d6435ff0eec99c88bb42b1f",
+    "standard_input_sha256": "441a501c5655deff3dca87fb641dba5ab3063e0dd7624b6b75d696692e10dfe7",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:ERC20",
+      "units/program.sol:Operator",
+      "units/program.sol:SudoRare"
+    ],
+    "program_id": "8314d1b86369239249408e01f73bf5daf16839d0e7e34b29f993e5cea3d63b81",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/SudoRare_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_73b13298e227"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_985c6fd1d4e4": {
+    "file": "FCR-risk60/RQ1_985c6fd1d4e4.sol",
+    "source_sha256": "8b5aaeaf807a2fc35a835ee53e949b9dd0e2b2264099d59a56e39632255a3c14",
+    "standard_input_sha256": "00474f1ab73e33aac47b5af4007635f70b4244d82b505f0efafd34cee6aeb2aa",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:City"
+    ],
+    "program_id": "0d282c9625c138d6ffd13119394990d350322b82a3dd7be28dd420e3fb8ece5a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x08a2246dcb48db6a5a9e1f6bc082752fceddd106_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_46a031a993c1"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_73b13298e227": {
+    "file": "FCR-risk60/RQ1_73b13298e227.sol",
+    "source_sha256": "ebef7360a095f9445eb32775d8e90f48029246ef041160eb0a5972ed5b1b719e",
+    "standard_input_sha256": "3c6802a2c3a2c838190ac6d06fafdd0707cf2046dcac8af9e1386437a0a7d83a",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:ERC20",
+      "units/program.sol:Operator",
+      "units/program.sol:SudoRare"
+    ],
+    "program_id": "7d98afb89e6258809197f2087e6341250abe6ddf7d8febb03ba62314d3da7a3a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/SudoRare_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_024b9da10799"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_a69a455c4a25": {
+    "file": "FCR-repair60/RQ1_a69a455c4a25.sol",
+    "source_sha256": "93a16a437c795d37829a1579af60652953674f06f6bf2afa931a3590edc82d91",
+    "standard_input_sha256": "9de9a6e1ee17b5761c005b0eb7616bc079ae80f625bfaa42b4dc47c1ecc3a691",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DAPPLE",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "92dfe802925a9919c3691f2259b7755cb62763ee8597f43473481d0e23312db3",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x24df76b88a2ea9ae3c3af5402ba4493226a82143_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_adf28b957352"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_4feeb0c21e60": {
+    "file": "FCR-risk60/RQ1_4feeb0c21e60.sol",
+    "source_sha256": "45190218345d73367825efc5950f71cb1f3020fcd066b3cfd9427fafbe4f9d3e",
+    "standard_input_sha256": "0640b8edad2f1ee153e7852f3ba43df484ec656176be823ff7e1a5b2deb8c30f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BANK_SAFE",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "80f3625e717deb43afeee995ff0e11d8f261880f5c7dd9a4d7a165a0c289074a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/24_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_0e202076b336"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_adf28b957352": {
+    "file": "FCR-risk60/RQ1_adf28b957352.sol",
+    "source_sha256": "beb4fd973d2a295914518e60e038115c3d0410fb7089a22f5d93e0e74b92c548",
+    "standard_input_sha256": "612f37ec6317e59405b619d71c38a24ae16ca3fd10a9166c300c61457c25330b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:DAPPLE",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "eb9822fec2dce0678018c5cae4c9af1cd5ff06c3718688086ebeed1df3e6efe2",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x24df76b88a2ea9ae3c3af5402ba4493226a82143_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_a69a455c4a25"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_980e04c92f4d": {
+    "file": "FCR-repair60/RQ1_980e04c92f4d.sol",
+    "source_sha256": "14ade56bae7b9311d2927a6360f4a98fd1e73c59f8dfd973989e405776d72454",
+    "standard_input_sha256": "c22593f3e15d13ea6be93b45a27e32a214f157c6c7e05597e08f100810b63585",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AdvanceToken",
+      "units/program.sol:BaseToken",
+      "units/program.sol:Pausable",
+      "units/program.sol:owned",
+      "units/program.sol:saleOwned"
+    ],
+    "program_id": "6e7e3a0c09bace20502f5fdd73e12497d9390fdca2a5d56d8b24ffc4c67a7080",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x2bda5b625d3b50848e8563480ed50ec782dd42ee_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_6a278772c4f3"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_e25d32acc1f7": {
+    "file": "FCR-repair60/RQ1_e25d32acc1f7.sol",
+    "source_sha256": "67020805bd216c9c081f0422728425f9983179f64663328edfcab0754eaddf0a",
+    "standard_input_sha256": "cb7b4cf4a01cb5c88a621fcbd059b84635905f6b8675a71a975052a594f51773",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:Private_Bank"
+    ],
+    "program_id": "64fb44ff1a73768102ff816c65188891714f1188e1aa80e86dfe899c0825410e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/30_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_9451d6dac4de"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_35e0e8d95f92": {
+    "file": "FCR-repair60/RQ1_35e0e8d95f92.sol",
+    "source_sha256": "39621c26b37dd6900c95260e8513c879706f2733602977a31f986bf75d958574",
+    "standard_input_sha256": "d72e3fde8e53f0a6915169cdfdbcd4576a579ea6ec9816cb7fee3ecaa22a8864",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:TokenERC20",
+      "units/program.sol:mkethToken",
+      "units/program.sol:owned"
+    ],
+    "program_id": "5a24aaeafa9ee6bfb6d0251e2f0566651e5ceb622ef31bc9cd758eb689d512cb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x81246a3f5fab7aa9f4f625866105f3caffc67686_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_c75d73e1c482"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_b0a696b11b0a": {
+    "file": "FCR-repair60/RQ1_b0a696b11b0a.sol",
+    "source_sha256": "8313d0304cfde86cfb363661ffbf40fe8b7245693b278bdccd935c31e580ef3f",
+    "standard_input_sha256": "b028de0ac6759a55a527dc692f4515b68b26f5c63d30564b9013e5718fa83767",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:TimeLock"
+    ],
+    "program_id": "8aea8d2a83447d99bc0a0ad3c9e7c5d335bc4e1c5f27f8de39bcd15bce28a34d",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/13_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_4f9f1ce04ed8"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_18c85d7f1380": {
+    "file": "FCR-risk60/RQ1_18c85d7f1380.sol",
+    "source_sha256": "d4c94fe7ab570af519da81dddb1762bbc84f9549bed9fdd7bff8ae329e520505",
+    "standard_input_sha256": "545c9c848b96d7a00ff166c6e8ff496b4fe881a693b07b5d38a62a024cd89d01",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "ab0d0cf6eda760a0b7976b2c57280c48614f6cc606bbfe2e064b5303ecd87849",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x2ba93f4cce841e5cd0da320e72e62a860cfd6333_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x2ba93f4cce841e5cd0da320e72e62a860cfd6333_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_983137cbe5d6"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_55a1e2ef0f09": {
+    "file": "FCR-risk60/RQ1_55a1e2ef0f09.sol",
+    "source_sha256": "38273375d435364629f466754106f49109a9cfd35dfe6623185cc5238af1b843",
+    "standard_input_sha256": "ad3cd2bfa39d16767761d5c9dc7c5d6baf6b60f13976d9dfd02e0aee3396857a",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:FuelToken",
+      "units/program.sol:NonZero",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable"
+    ],
+    "program_id": "6617ba2ce7732493dc853ceeab253e567b2a46a639776adb209c987d6cfb5f31",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/0xea38eaa3c86c8f9b751533ba2e562deb9acded40_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_fe4ace2cd8e5"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_2d22977434b5": {
+    "file": "FCR-repair60/RQ1_2d22977434b5.sol",
+    "source_sha256": "ee02fc90d8d1d86a0a9da06b5778eef246b893551326793ec7731f4f256148b6",
+    "standard_input_sha256": "72f0228644237ad5954ae82e68c6964218e0fb5fac7f881ae8c11624123ad98f",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "b9be7b9ecc936a9153908bed9f7d6dadbfe7a2445cc3f46c23b413666a32981e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x174bfa6600bf90c885c7c01c7031389ed1461ab9_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0xa8ba86e4a8dd2afecd6ee4e6b56d6fc8c8864f09_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_4169c528c5e4"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_4febca8bfe3b": {
+    "file": "FCR-risk60/RQ1_4febca8bfe3b.sol",
+    "source_sha256": "b9e428203284024577b2999e81bb2d3fc010315d86a93e20786c937e693fa18f",
+    "standard_input_sha256": "c46454284fff5287296909adbc87ce9660a4eb58bd731385a60a3ecf30bc921b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowAdd"
+    ],
+    "program_id": "1d3cc2e10fb3303bc789ce00054ef57f32a7b94cf7a7f0368c042d66a0c3c039",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/4_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_49db443acf1d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_3455b6a9ba4f": {
+    "file": "FCR-repair60/RQ1_3455b6a9ba4f.sol",
+    "source_sha256": "2a7ba177a94f28d486c75971e583483aa2e37cb988a46dc036165d52a3118288",
+    "standard_input_sha256": "d7644172a1c52fc8e9ac95d8e78a2db301f40798decb765728d28de993235b7f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:PrivateBank"
+    ],
+    "program_id": "a6a90b5c262b41b8610f005db132d98e0ba76f2a5b392d279fbd3d670451463e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/31_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_0c666ce785e8"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_3b4d9f6eb96f": {
+    "file": "FCR-repair60/RQ1_3b4d9f6eb96f.sol",
+    "source_sha256": "014b04b836178ea34767ebc68116121e0178cdc00a495eb3943aaefe0dae549b",
+    "standard_input_sha256": "41434c0e35322279c31a4796360a65a6084b00476fa73d8ed7b3ab94bafb0e27",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "143abfbb54803029c5e773ea9738500924f004dbfa817c1a94d58c5060e20687",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0x7cd489aea7952d5b66c90eb8894d47cc698967c0_inline.sol",
+      "dataset/verified/patched_modified/GenerateToken/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_0267e2a8ebb2"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_53f9777ccdf6": {
+    "file": "FCR-risk60/RQ1_53f9777ccdf6.sol",
+    "source_sha256": "c3eb222e869e0fbe98acf6863b32f0bad19ed1aca3ce3651b2c8bb235b8bd4ae",
+    "standard_input_sha256": "f1b09012cc12f3075896109c3dbd3894f79fafa1d9ab02854163d42c91faa079",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:LogFile",
+      "units/program.sol:PERSONAL_BANK"
+    ],
+    "program_id": "91b5a7acafa214c04cafd464bb7c397f128f886b4d1a82867718af73f381e11c",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/16_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_a7d72c1e4129"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_eb30c6dee989": {
+    "file": "FCR-risk60/RQ1_eb30c6dee989.sol",
+    "source_sha256": "06a43ece6a08bfeb47d1b2fcffd62c75d5942a3e60e59bb77025efeb7c76474c",
+    "standard_input_sha256": "7a94e19dbf712b1eff0b66f0532a4234391873540533ebc071da52eb1f0304ce",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Burner",
+      "units/program.sol:Dragon"
+    ],
+    "program_id": "cd164c53855f497c9b905bc53658a6d405387a7f53b1f12386a7c37db1bd23ee",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/0x814f67fa286f7572b041d041b1d99b432c9155ee_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_ee2aa7f32d31"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_4f9f1ce04ed8": {
+    "file": "FCR-risk60/RQ1_4f9f1ce04ed8.sol",
+    "source_sha256": "686045e787dcfcb698dcd546060ec1bfcb1eae7480f7b73e71508dfbc150a403",
+    "standard_input_sha256": "939eb14f928ed4724b35e46cd8439a5fa2224db8cd2961d3c220a15eafb9c755",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:TimeLock"
+    ],
+    "program_id": "9c570dbd32fbf91673daa15cd6e64468a0ddff45773f0124a374f8042e280426",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/13_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_b0a696b11b0a"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_329e0d0d7a11": {
+    "file": "FCR-repair60/RQ1_329e0d0d7a11.sol",
+    "source_sha256": "3bcd7e0998cffefeee73b9c8ba2a8aec94f1394672982dfce5c23b86fdac9846",
+    "standard_input_sha256": "00780d053297c4375e202391002d4f4c36ab80db16cfa8ff11e830bcbffe10d0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BANK_SAFE",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "fc7630276adbb0c17d9500196903520a82f127ef54bde123f24ef767a06dbcd6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/24_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_30c29cd44cad"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_c29df435681e": {
+    "file": "FCR-risk60/RQ1_c29df435681e.sol",
+    "source_sha256": "4551a12d7fef7523226ba25c4cf27fdb6bb0de8e78887d5050f63e4d47039bff",
+    "standard_input_sha256": "26495f6eac7348622ec28c3e2f15b30255967e2440bfeb23834229bff0ad8ee9",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:MY_BANK"
+    ],
+    "program_id": "a73fa1d2dd503b87bfdf58012593c14d9737ea2c5dc6a2d535bd742c52db3a81",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/35_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_ffcaa562a72d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_bc5855a83e2d": {
+    "file": "FCR-risk60/RQ1_bc5855a83e2d.sol",
+    "source_sha256": "a8c3b6d056eb4aeafb3bcf0151dc066a91f56ab43ef7dc8168cfb4cebd0cf3e2",
+    "standard_input_sha256": "92e402c9c519692c2926614b7b5f2550f8b16e6fbe90f477b149469495d3c8e1",
+    "compiler": "0.6.12",
+    "targets": [
+      "units/program.sol:ARBIX",
+      "units/program.sol:ERC20"
+    ],
+    "program_id": "c931e44252588606a10b1bb0a1f6130024fb4b253bdf56bf5be974928ddfce79",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/Arbix_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_770ae395781c"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_c80f7a639e42": {
+    "file": "FCR-risk60/RQ1_c80f7a639e42.sol",
+    "source_sha256": "4310e4859724a256978b6ccfdda7bba1ae2cd64dd8b1dff9e4f15e213164a0d4",
+    "standard_input_sha256": "86c090d0f5e9f1f675e6880aeadf4c0115e8c0c92055965eb911795cfda917d9",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:ERC20ext",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "978413b9ad89399cbb53c7962c7b6eebf25eae1d3ab9c414a1d9da709523426f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0xa8f5e53cf3a6122b390712d5f72fe5b10e03aab2_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_30177d564271"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_a7d72c1e4129": {
+    "file": "FCR-repair60/RQ1_a7d72c1e4129.sol",
+    "source_sha256": "35cb1fa798982badf796d2e76c7d3deaaa41f683885d72a4a5b0320b09f27d7d",
+    "standard_input_sha256": "7d8b8760b2a9618a922a5cf015fd1a7020399975e1bbf6a598c9c02c3ec5fb52",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:LogFile",
+      "units/program.sol:PERSONAL_BANK"
+    ],
+    "program_id": "4187f2db592ade02e8136808da3fe8f3708a8973cc2de995fd61350740991a9f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/16_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_53f9777ccdf6"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_15346457ba72": {
+    "file": "FCR-risk60/RQ1_15346457ba72.sol",
+    "source_sha256": "c87369c4b8dc308956636ac5ed01a4c006fc6f2e5fa850516e4d24b53b7fe9c7",
+    "standard_input_sha256": "bc769b427400efbe868c895f1af7a421e8b80e30f2bc24e9988baccd2cac0c21",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:GuessTheRandomNumberChallenge"
+    ],
+    "program_id": "2f76c2513c9c53d2015390b3d06def35613a0abb3de77da28833a753159d84c6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/39_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_fe7add810da5"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_6476444da7e8": {
+    "file": "FCR-repair60/RQ1_6476444da7e8.sol",
+    "source_sha256": "c38e42af65ae0fe1290657e91a00e37677a8d4c8fec03489d3481402d654c4e8",
+    "standard_input_sha256": "e77b31e750935c4c4b350209f0d72e2314e38f1f59b085a4628e33ee2c32a1da",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Overflow"
+    ],
+    "program_id": "77cd77750b99df1fb46408476c33e46c4fda9b62abd74557ed26ac8aaae0963f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/37_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_fe11616caf66"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_dc06d7bad0d8": {
+    "file": "FCR-repair60/RQ1_dc06d7bad0d8.sol",
+    "source_sha256": "ee2c98e3143a9180d03c8179d8cdf408d2f67c9107d558119228cf2012661ad1",
+    "standard_input_sha256": "9f07516688db89f43db2cc1c14483d8a23ff4600c3a62047713a1895fd5c5820",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:Pausable",
+      "units/program.sol:VIDToken"
+    ],
+    "program_id": "01b8ad0da4d7d241927fd2aff5d85fd453f772fcaafe543352acc8a1d655e9bb",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x445f51299ef3307dbd75036dd896565f5b4bf7a5_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_9c365cb18f95"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_9c365cb18f95": {
+    "file": "FCR-risk60/RQ1_9c365cb18f95.sol",
+    "source_sha256": "5a5c4aa930e4be8389299c023567201380a3d069def5b80277209879c8b43e09",
+    "standard_input_sha256": "52bb42eed715975506359fb7b865fff462d3a53e84277ac19fbe48412b328923",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Owned",
+      "units/program.sol:Pausable",
+      "units/program.sol:VIDToken"
+    ],
+    "program_id": "8ab1048a72c36e055cb0d8a4e87691e7b91f1de1cf451eb6251b23873cf912e0",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x445f51299ef3307dbd75036dd896565f5b4bf7a5_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_dc06d7bad0d8"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_1f932eab663d": {
+    "file": "FCR-risk60/RQ1_1f932eab663d.sol",
+    "source_sha256": "a2f7f762ce2bbac8c8b22f4fe58fd5b650d2711d545ad7e808f20b3fb9055149",
+    "standard_input_sha256": "13d44d37c3c4d171b0f717773ab76e0d254a1b20278048b5093e8357523bd13b",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken",
+      "units/program.sol:VaultToken"
+    ],
+    "program_id": "9622e332d7b8f1325a80d3512769822a883ee7fffeadce170924081610c1f496",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x1dd34b35d96f5159567ef4cad2c69c0f87c3195c_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_43103f5773b9"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_4968e56244c9": {
+    "file": "FCR-repair60/RQ1_4968e56244c9.sol",
+    "source_sha256": "acab9ba32dd67ef761d816da64011212f5c5823c53cca4b964fb9ed98e755bc8",
+    "standard_input_sha256": "5ab5265706899ced4361ae83e41ead6fed3fc80372b6694c24d7e5c7a748626c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "376c940b0ae041adaa136609ea46181d0b62f6670ec7cc5ad9341d0992498188",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_b731957fa974"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_fe4ace2cd8e5": {
+    "file": "FCR-repair60/RQ1_fe4ace2cd8e5.sol",
+    "source_sha256": "f537de54d1f71dd54cecfba56937e1b003602e03259c4921927b881b3336b5b7",
+    "standard_input_sha256": "26845040f499469fbb2c512d7f5677ab54f990f1c1ec9524655f3ef003edce6c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:FuelToken",
+      "units/program.sol:NonZero",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable"
+    ],
+    "program_id": "1cf0b62de2201a6202a73c6b01c6577e77ee9c3b6651928ff26404b6ead130ce",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/0xea38eaa3c86c8f9b751533ba2e562deb9acded40_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_55a1e2ef0f09"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_1844e5d3d18e": {
+    "file": "FCR-risk60/RQ1_1844e5d3d18e.sol",
+    "source_sha256": "122e99336d00ca2d337075d398c636b7db1b6ae93da8370e3d80976bd3915fcf",
+    "standard_input_sha256": "a2d0a19b6b342ce299d8d53ef62dcc060222936e38922a4dbf1a55f0d985bb45",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Ownable",
+      "units/program.sol:Token",
+      "units/program.sol:TokenBank"
+    ],
+    "program_id": "32dd222eecf27f96b7ac16a02c842945f95ac63846b156282a50f5b32e9795f5",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/25_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_db73c28a69c2"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_db11e3e08742": {
+    "file": "FCR-repair60/RQ1_db11e3e08742.sol",
+    "source_sha256": "1deb50bb3de587b2de721b217e557a106e185e61da15a2665cba2cd96a938583",
+    "standard_input_sha256": "4bbd72680e9b5f9a359698db949a8a8480f29fe98c013fdd62c6e6d46b73de3f",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:Token"
+    ],
+    "program_id": "9dff72d8e774262c10390725beb9d9c2dba1ea6d01c8efd7812b5df27b1cbc5e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/MINIBASKETBALL_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_353a9b0b5006"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_a906c0b62c0b": {
+    "file": "FCR-repair60/RQ1_a906c0b62c0b.sol",
+    "source_sha256": "2989eae11e0c396590d6a605a6e0e998e44a0130aa9105f683687010f7bcfe26",
+    "standard_input_sha256": "a0dcb3c68f52272393f357e28335bb61a7ac9ac24b2dc888b2259235104a65c3",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BurnableToken",
+      "units/program.sol:MOLO",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "67deacb9536f711d9be0d34d70733e3dae21ac8048b6b1b7484a4c24c99cc97f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x3de1453931b1956611786ca520b30710c5b6ae3e_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_1a94f7866801"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_ee2aa7f32d31": {
+    "file": "FCR-repair60/RQ1_ee2aa7f32d31.sol",
+    "source_sha256": "b313d2fca6adce9f3c371f7f2c0f1a83220d623de3a62f287a4f63038dd14d79",
+    "standard_input_sha256": "8fccba03e90ff1fc46949b239816aed836bee73bf98109a527dd21214e0bb44c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Burner",
+      "units/program.sol:Dragon"
+    ],
+    "program_id": "5fda186f6caa7a3ca2ded07e317ac6330c572117317e12a09e27b73e6258b107",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/0x814f67fa286f7572b041d041b1d99b432c9155ee_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_eb30c6dee989"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_33d48945207e": {
+    "file": "FCR-risk60/RQ1_33d48945207e.sol",
+    "source_sha256": "7a25b986f6471faa58f1df64b870117cd6ff562b6f59b43ab687f0e76c0b3d1e",
+    "standard_input_sha256": "534ae3ac6a9db76a9dc6352ef85ca6e55c25881eccae314fc1094c4991343a43",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CREDITS",
+      "units/program.sol:Ownable"
+    ],
+    "program_id": "ed38375ea0df3363656fb717cf9a6ae5b04529a39397786c7a77b0e8659b3e3b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/0x46b9ad944d1059450da1163511069c718f699d31_inline.sol",
+      "dataset/verified/modified/DisableTransfer/0x46b9ad944d1059450da1163511069c718f699d31_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x46b9ad944d1059450da1163511069c718f699d31_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_6ca2b0aeda43"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b84042e6eefd": {
+    "file": "FCR-risk60/RQ1_b84042e6eefd.sol",
+    "source_sha256": "9419e1bd0b9183d99f7b1fbf82c2a95f0b5df283c6619a88d35dd110a94f1529",
+    "standard_input_sha256": "31bf6f77197a5f991e3cbff06f911288df464ae66ef7c29eb8cb3954966ea680",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Token"
+    ],
+    "program_id": "06cdb56aaca02a6343b845108ce64c4643d078e37622b50014e2bb69ecfe0737",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/14_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_475c7d9ec738"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_1a94f7866801": {
+    "file": "FCR-risk60/RQ1_1a94f7866801.sol",
+    "source_sha256": "6410848f811426b6258d1a7c3313a54788bab14f2e1a5c6345e41d69b647cde0",
+    "standard_input_sha256": "f8dacd6fca25b86bc37a8fb088efccd19970ff23978e1d61f1183cc07fdd5fbf",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BurnableToken",
+      "units/program.sol:MOLO",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "4ce3436399bf62c1e2c7f9ab56ec11819dd68d046ed46756a0bf0a7055d0c722",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x3de1453931b1956611786ca520b30710c5b6ae3e_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_a906c0b62c0b"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_af7c473b8cca": {
+    "file": "FCR-risk60/RQ1_af7c473b8cca.sol",
+    "source_sha256": "11a5bd6979302010e22f21bc3a8312d5e05f8132abeea11011d6bd2669c4cecf",
+    "standard_input_sha256": "94e1df20eb3529d2d158bb8d05e0a086bf91f69e50ef066c129ea8f3d6e9e9c7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "92efd822843eba7112e6f814c827534a26bc06a372c4fed80d376b6364b6e233",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/FreezeAccount/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x130a977156102c0fe5e9075594c03c51bf1be746_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x2b32999dadfaa4c11879fcf4a6480e4d29ed15e8_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x5f80c19f63e9ee818017f830aeda36365ba184e4_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x7cd489aea7952d5b66c90eb8894d47cc698967c0_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x86e3490bfe0a042658027dc96ca975191aef7e20_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_4be3030c4533"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_35f857af5c9e": {
+    "file": "FCR-repair60/RQ1_35f857af5c9e.sol",
+    "source_sha256": "9ee13b31a742a4d0fa89fc592f4ee38a1494f2497e0d47802e8a7df2f6fc31e4",
+    "standard_input_sha256": "30ebc36ff407d9955734c8eaca095a7c469ea8c890974ab4c5c935d21a7f13ee",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SCCToken"
+    ],
+    "program_id": "d59f000eeac1d9ba7a4fbc65d9b2c8b4bddac2ca8ed7de4f3f7e7e7fb6b90d30",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/0x381beac50b9a5ea06a320a72592f7460c49a2b48_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_cda3df36df22"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_0f3c3f400f6f": {
+    "file": "FCR-repair60/RQ1_0f3c3f400f6f.sol",
+    "source_sha256": "4c4442b15592a74d6bdb8c99d180b533606e18b0c44aaa399604c63679d5d1b9",
+    "standard_input_sha256": "e9e1da68ae125de132a4c2da9bb35a728d817b00f307ddcc92e5217994f7c30f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AdvanceToken",
+      "units/program.sol:BaseToken",
+      "units/program.sol:Pausable",
+      "units/program.sol:owned",
+      "units/program.sol:saleOwned"
+    ],
+    "program_id": "58f069311085df22237e2ccef6182d193b99a174777b93160858c7ff8080874a",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x59335080522fa941bcbdb6e15a6f2ee5a455dc5a_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_5b3c7cbe3d9d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_cea156e41c29": {
+    "file": "FCR-risk60/RQ1_cea156e41c29.sol",
+    "source_sha256": "0fb692e109f56bd9c8c19f355c58f10c406664432cb32e5cf62e0278658375e0",
+    "standard_input_sha256": "0a3de478c473badb6f73cba8f8b9ae1f6b854161a0398aba19256cebfffcfc62",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowSingleTransaction"
+    ],
+    "program_id": "4fb5d9e6273aaf488d50e7afe2d9ff94d00af363d27ab9f3a790a3a94a5c72b9",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/12_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_d695cf0bad2e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_fe11616caf66": {
+    "file": "FCR-risk60/RQ1_fe11616caf66.sol",
+    "source_sha256": "7fc3cb96483249e97fcb0a6f51cc6b1616e03f172a36e1a87a0b53e36342abe3",
+    "standard_input_sha256": "3a7c4e1f27bfebde85fbcbd3fccc226d7e462cb52e16ffd4c7a1148ea7a7f033",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Overflow"
+    ],
+    "program_id": "b0335cbdaf7a313810ac94797206ead1a1d0a3169dfe96bafe5038294fdd9564",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/37_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_6476444da7e8"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_0bf6f8bce8d9": {
+    "file": "FCR-repair60/RQ1_0bf6f8bce8d9.sol",
+    "source_sha256": "bae44f0dfff68bda2e266733eb3648738c6d3a88f027bea4c36ec2ddcbe9d2bc",
+    "standard_input_sha256": "cb4a83d9ac9b34b14fcd7460644282d83d155c02a4c5e3be6e2854519cac3c12",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:MY_BANK"
+    ],
+    "program_id": "168cf84df4cc546f3b6ed9e19b8ac8aa61417da33769343498b9c9111bf661d3",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/35_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_196284e657b0"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_8d60a47186e2": {
+    "file": "FCR-repair60/RQ1_8d60a47186e2.sol",
+    "source_sha256": "fe5ab1859c30bd244acc38953bfabb36ceec4afcb2a4bc6fbb6a5453972a85e9",
+    "standard_input_sha256": "6fe35ff6817af10dd71b4ca3da320d9ebcb40206891f57f4e6f4efdf64072fa9",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:IntegerOverflowAdd"
+    ],
+    "program_id": "8b2915c2dd96fa084963438ee4a56d51151f535e7fb9572d16f2522f3a39eb66",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/2_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_7d7240a2af90"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_bcafc7a40ce2": {
+    "file": "FCR-risk60/RQ1_bcafc7a40ce2.sol",
+    "source_sha256": "1a18f20a65abf80909fc6247edc1a6aba975a3ae776a5c91018b3c8b0cbb272d",
+    "standard_input_sha256": "9cdffcf5d8c23bc64a3ee4df80269105f4fd0a8d3ae024e8145fc93cfe68f3db",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Log",
+      "units/program.sol:PrivateBank"
+    ],
+    "program_id": "cb82fa12f49607799f8b8ef6ab3580fb6639fd90f98bb2a06d7f5d6a3625d9df",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/21_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_e1ce695fff9e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b5217318672e": {
+    "file": "FCR-risk60/RQ1_b5217318672e.sol",
+    "source_sha256": "1e1fd6e171d879d00ad477be763ebcff5600c24d49174a8ab714bc6fcbe63ff7",
+    "standard_input_sha256": "3162f74196083b2bbd3f1ffb0be4f54271d7ed603e3209c744798c7aafef74f0",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ETH_FUND",
+      "units/program.sol:Log"
+    ],
+    "program_id": "853486b0b5d43df39a388406d34ba9192a15757cd4c1911c2d2e6cf046511976",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/26_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_72c6b8c6b605"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_b731957fa974": {
+    "file": "FCR-risk60/RQ1_b731957fa974.sol",
+    "source_sha256": "ad6438506a042189c82ac71d4d333ec765ae9d7cb6175406cf8fb874cf48548c",
+    "standard_input_sha256": "9d05a2a4bf9f6bc679e76e0ac6213a075cb40760adee2bfcf7137d79bcd2b470",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "8abe3355b95931b4600604a32f72b1eb75ff0429fed7034e6ae218d19acd34cf",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_4968e56244c9"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_3a3d833ca142": {
+    "file": "FCR-risk60/RQ1_3a3d833ca142.sol",
+    "source_sha256": "17a1ea5eded3a974ecdf749c58d6590015ed227d5529c7773cc87c18cde13ec0",
+    "standard_input_sha256": "45938e00f6ddbfc3a8a1d68973059d404f4934a7dececb5ed9ebf6e3bf0814a9",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:IntegerOverflowMinimal"
+    ],
+    "program_id": "e958e04d7f40c918bf092665bcdf28d9d0f31df6556791dcf008f8548f2b81b4",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/ArbitraryTransfer/7_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_206d19a8539c"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_aaeb3f57cfd0": {
+    "file": "FCR-repair60/RQ1_aaeb3f57cfd0.sol",
+    "source_sha256": "0a08ddc71966e9e132f2710060852a7a710a8702eb27013dbcc0ccc4b9bd2367",
+    "standard_input_sha256": "e0646d10659d0071a200cac6423dd9a18f8e55c1a40fb1689ab5c7c12cb2bb99",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:Controlled",
+      "units/program.sol:Currency",
+      "units/program.sol:Owned",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "cdc12d359bd07458c6e5e172b8dad07deb742c31f574b3071c389e7e9611a134",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/0x46bf6e3e2d51bc587de0e2121748fd15dec991d1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_20dfd0c54b94"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_1c6b43b24d4c": {
+    "file": "FCR-repair60/RQ1_1c6b43b24d4c.sol",
+    "source_sha256": "f3bf9d1a353c94d3b7b6a935c948fec1f5e42bb19bf310a1a3a521dae4801fef",
+    "standard_input_sha256": "5c444c1d77a35e88c9389ae5dd546e8772ddf9c49014a3ef4dfed4a628d87262",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:RubusFundBlackToken",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "c02710e043045eed45a0c702f8ed4c3a2559f72368769a83f805f8dfa0d6ac12",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/0xc79d4c81f87c152ba604017a7b4747232ae30280_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_37d9daf031da"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_983137cbe5d6": {
+    "file": "FCR-repair60/RQ1_983137cbe5d6.sol",
+    "source_sha256": "46da231ae00deb4c5860ae3527631d6337b6451c509030c400a113e8b029f06a",
+    "standard_input_sha256": "a619783ea07075a16232e277a6f9bb8290ae8b222e584e7315db1c78676c4996",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "159a2d4eb8b8c440316c23f88f40fbb84eb196da08a589e7ae35adc23d38a974",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/GenerateToken/0x2ba93f4cce841e5cd0da320e72e62a860cfd6333_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": false,
+      "paired_id": "RQ1_18c85d7f1380"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_e13bb6580d65": {
+    "file": "FCR-risk60/RQ1_e13bb6580d65.sol",
+    "source_sha256": "ccba79be4bf35206ec0e537f20c001c56f0a01eb196f6847eb7b4d59e88a0af3",
+    "standard_input_sha256": "e1c9803dfb93a9cb0f9b687a8e2ef8ac227fc6e284de8498c103b5e6b26f0350",
+    "compiler": "0.8.28",
+    "targets": [
+      "units/program.sol:ERC20",
+      "units/program.sol:wZNN"
+    ],
+    "program_id": "8f92fd4623ce969b6dc645158224160501d2f53ad4ec40e8695715f71eab399e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/wZNN_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_94d9f2cfc77c"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_7405f0959142": {
+    "file": "FCR-repair60/RQ1_7405f0959142.sol",
+    "source_sha256": "0708c45e3ed86e13203e97172efdc9fdc31c6284e554968a3e61190835b5a860",
+    "standard_input_sha256": "21dd5df4f72a7138d680144e91f8afb346706379d6785a285481fa7e14339ed7",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CryptoRoulette"
+    ],
+    "program_id": "b4bb877b8242837b5fa304c8457c9981c255a155d5c263a9a3a3c679180e20e6",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DisableTransfer/3_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_afb609e0053e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_0e202076b336": {
+    "file": "FCR-repair60/RQ1_0e202076b336.sol",
+    "source_sha256": "a27ea7c7bf57172460a5c9a1f400b8f83a4a3467e4c828e0b8a12fb6de70a1ff",
+    "standard_input_sha256": "8797de2fad17346017c9204498b34e31857bca8797ff21e029876b6dc4183d16",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BANK_SAFE",
+      "units/program.sol:LogFile"
+    ],
+    "program_id": "bf2e9524cba04ac765b3aba184ee893d0fc7bf3378697da5e54b9ce4debc7007",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/24_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_4feeb0c21e60"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_20dfd0c54b94": {
+    "file": "FCR-risk60/RQ1_20dfd0c54b94.sol",
+    "source_sha256": "68963febc7ee57224c997c6eac6880be56ff029577773c6286943120db930ec0",
+    "standard_input_sha256": "949f7840a419f782c07ad762b6cdd1ff282e0472dc853210dd0cb2c7971b3fcd",
+    "compiler": "0.5.17",
+    "targets": [
+      "units/program.sol:Controlled",
+      "units/program.sol:Currency",
+      "units/program.sol:Owned",
+      "units/program.sol:StandardToken"
+    ],
+    "program_id": "35b1631398a6953519d9bf844b8ae4c32bbd342e10a1a5a864287b2bdd3f86bd",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/0x46bf6e3e2d51bc587de0e2121748fd15dec991d1_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_aaeb3f57cfd0"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "model_available": true
+  },
+  "RQ1_6ca2b0aeda43": {
+    "file": "FCR-repair60/RQ1_6ca2b0aeda43.sol",
+    "source_sha256": "9e617d259e83c5f906973aaace8d97bf63841273474d2252d6c9dcedb9271109",
+    "standard_input_sha256": "c8c8de81d2b53ce27b036ba3a45d358e23f3e8190767afaaeb71e8de809a1c17",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:CREDITS",
+      "units/program.sol:Ownable"
+    ],
+    "program_id": "47227e1c1d7514f2cb97aaa969221dc1e62d29339de6110a7d9249050263f413",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/DestroyToken/0x46b9ad944d1059450da1163511069c718f699d31_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_33d48945207e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_43103f5773b9": {
+    "file": "FCR-repair60/RQ1_43103f5773b9.sol",
+    "source_sha256": "0b1608522fc7bc9e40046bc94cd87e7a07c848b8df3c00893e3a43ea78637aee",
+    "standard_input_sha256": "0e364d543af8b3f57e2d20373865ad14d4f4063011ad3c854e898a5b2bd16d1c",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken",
+      "units/program.sol:VaultToken"
+    ],
+    "program_id": "093a4aaf2d5871ca3cb41424237119b2c30545a084d934e6e3aec910978b816b",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x1dd34b35d96f5159567ef4cad2c69c0f87c3195c_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_1f932eab663d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_cda3df36df22": {
+    "file": "FCR-risk60/RQ1_cda3df36df22.sol",
+    "source_sha256": "bcebee263c6d102ac6af0c006062ae0e43ebf5f0a5df12b8d9ae1ae70a17a2df",
+    "standard_input_sha256": "6844b2c252b97e27d062bfae333d3296a699730376b737810e01562be09a90ef",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:SCCToken"
+    ],
+    "program_id": "3c280d16c2f08672efccbb09dafb3a456897570d0185c13f07856da9f69b2392",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/0x381beac50b9a5ea06a320a72592f7460c49a2b48_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_35f857af5c9e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_30177d564271": {
+    "file": "FCR-repair60/RQ1_30177d564271.sol",
+    "source_sha256": "c8f18026fede50a0f6d798e74e02570b26b7200dfec3d3a2f559ddd21021a7fc",
+    "standard_input_sha256": "27cf7378ad7833f5520cefa6d25fc271b56c355afcd6d8e966a6eb98cb8cd7ae",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:ERC20ext",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "fc97d055eb9e80b9262e42410d02134bf998dd8fc82b29a9329b5979cd2dcee1",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0xa8f5e53cf3a6122b390712d5f72fe5b10e03aab2_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_c80f7a639e42"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_db73c28a69c2": {
+    "file": "FCR-repair60/RQ1_db73c28a69c2.sol",
+    "source_sha256": "8fee7daf05a23ff73f4c6452a22283707cda700f8287e5309409e6b6786bc50a",
+    "standard_input_sha256": "be14b7451e8cffa3cd500f4079c30d230c11c2d8c02f1f7b98f87365b442f55f",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:Ownable",
+      "units/program.sol:Token",
+      "units/program.sol:TokenBank"
+    ],
+    "program_id": "b6fda1ed18be588a80872369a7ec69bdf21066c5d889d662ee8160396383815f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/25_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_1844e5d3d18e"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": false
+  },
+  "RQ1_5eee31e70615": {
+    "file": "FCR-risk60/RQ1_5eee31e70615.sol",
+    "source_sha256": "87ec1208622463605f5f1cd3180da60dd18ae767c6024dc7df30f920e71c6db6",
+    "standard_input_sha256": "8bd14e4aec3908aadbfc9118c1b651f7f53cf8a900f2a3dcf35debb8a2610c4d",
+    "compiler": "0.4.25",
+    "targets": [
+      "units/program.sol:Overflow_Add"
+    ],
+    "program_id": "b91b6f3d0a594973b17b3da31124562ac6ec6f758199b03f25d8265afae9c103",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DestroyToken/11_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-DESTROY",
+      "positive": true,
+      "paired_id": "RQ1_f322b5b8495d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": false
+  },
+  "RQ1_6a278772c4f3": {
+    "file": "FCR-risk60/RQ1_6a278772c4f3.sol",
+    "source_sha256": "8742486352b64b1a28fb218451111ef34294095695daf0da2e6879d2cb0769a8",
+    "standard_input_sha256": "670a6ae283df5713c5c28732ad358709186c2f22198382c1f3553435fb10f2e8",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:AdvanceToken",
+      "units/program.sol:BaseToken",
+      "units/program.sol:Pausable",
+      "units/program.sol:owned",
+      "units/program.sol:saleOwned"
+    ],
+    "program_id": "d05e4c259d1e9c9ca0a4a3125890b64ad0e3e981ad88db389b151ed5c0411370",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x2bda5b625d3b50848e8563480ed50ec782dd42ee_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_980e04c92f4d"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_7450d39da940": {
+    "file": "FCR-repair60/RQ1_7450d39da940.sol",
+    "source_sha256": "cfbd8642725d0e71a1f8bb33a179a864fbcca7eeb131be48288f6bae105a8c0d",
+    "standard_input_sha256": "805f8af482d291f3fbe09285e928e004e033e160d9d3619aefa5839988d5aece",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:ETJ",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "6f1f9dcceddfc8a978d0f7c4096af066fcca37e1ee333d5a7c93b5aa8d41e9db",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x98f777fb9139576902bf7f35956ca015ddc1569f_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_39fb6e7197c4"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_a0facbcc1e38": {
+    "file": "FCR-risk60/RQ1_a0facbcc1e38.sol",
+    "source_sha256": "4888dbe3410a90b98e265442236abcce462f0a0fa7ff4d7403587be4315aeb23",
+    "standard_input_sha256": "d751390e9ed28907869ea18de398a68e17aa3c4e204d163f9fabfbf4928d41b2",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:LOOiXToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:TokenStaking",
+      "units/program.sol:owned"
+    ],
+    "program_id": "0a162476a047f16d85d84ee68303a7529bcf4a6efee1a720a29d06261cb836c7",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/GenerateToken/0x56af6596f28d9e6f289521d31affdb95c412265e_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-MINT",
+      "positive": true,
+      "paired_id": "RQ1_86a0269d7608"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_58de46f081ec": {
+    "file": "FCR-risk60/RQ1_58de46f081ec.sol",
+    "source_sha256": "abd2c09b42893ad2efa66516dd3a6a960b55683dd261b4dbef60e21beb3aeb5c",
+    "standard_input_sha256": "145cdee90df8adba3c50ceb83f79d19825f4f569976660e5749560f76ef9f61e",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:KDA",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "85559974e39ebf317184e8e5a7391d97bd001dfc079e6bac9b507fb8f3e32b86",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/FreezeAccount/0x41b6f68950dae15242c3b35bcc9ad6446fcf0849_inline.sol",
+      "dataset/verified/modified/GenerateToken/0x41b6f68950dae15242c3b35bcc9ad6446fcf0849_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": true,
+      "paired_id": "RQ1_2046acc1c802"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_a4c5ecc3c29e": {
+    "file": "FCR-repair60/RQ1_a4c5ecc3c29e.sol",
+    "source_sha256": "1262751bcd006d5ab192c56e14bea60d237be448b863b2eae520fe1068879cd5",
+    "standard_input_sha256": "1063011388dec823e1d480f918cde2ceca1baf753839e64425e8fe12c2034248",
+    "compiler": "0.4.16",
+    "targets": [
+      "units/program.sol:Lottery"
+    ],
+    "program_id": "0064deee83c821e7f6fe74bc1fe337b7dae7bf80a74c1456cf55b406eaa74969",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/ArbitraryTransfer/40_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-TRANSFER",
+      "positive": false,
+      "paired_id": "RQ1_cf32aac41cf2"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "model_available": true
+  },
+  "RQ1_fa2207747d01": {
+    "file": "FCR-repair60/RQ1_fa2207747d01.sol",
+    "source_sha256": "cf60a9fc7571060d75984e8c8614d0ddc191db85a2c13cc19e2c9111f1577d78",
+    "standard_input_sha256": "98547ed91b933dd86106cd181701dc1d93aedd264fae5fec0ba3d25ae2fd52a6",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "0dd90cb74c067cb1a03cfab6189e39a6521163438ea7a3990bd48bd5ef489b8e",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0xc2be193f581f129ace32d2fe949d100dc09c2a05_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_cd47d22b26a9"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_2046acc1c802": {
+    "file": "FCR-repair60/RQ1_2046acc1c802.sol",
+    "source_sha256": "420837e41537a5fa4dac96e7da3668e7cb2b63ad9e326cb22b0a03243ad4f371",
+    "standard_input_sha256": "7534bf08f073b0e148bfc94d51e4f97a2c32722225f63c10631a4e6f226487a9",
+    "compiler": "0.5.0",
+    "targets": [
+      "units/program.sol:KDA",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "program_id": "daf47ba334acc021bf435e544a9504033e23809f96402de5441280423b85956f",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/patched_modified/FreezeAccount/0x41b6f68950dae15242c3b35bcc9ad6446fcf0849_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_58de46f081ec"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  },
+  "RQ1_8e8598bb724e": {
+    "file": "FCR-risk60/RQ1_8e8598bb724e.sol",
+    "source_sha256": "ef7693be3e68bd9cc55c8bfc799901777e6d8886ebd24e2c5cf3a16ef5be1b6d",
+    "standard_input_sha256": "94e3fb6d14857580a4924fb8240aea1267177be235550cfed2f0b4e0e1ebc4cf",
+    "compiler": "0.4.26",
+    "targets": [
+      "units/program.sol:EcoIndustrialChain",
+      "units/program.sol:Ownable",
+      "units/program.sol:StandardToken",
+      "units/program.sol:Utils"
+    ],
+    "program_id": "089a656f959def1c55597b787a9c4b9762094583cd6c21ac490c25fcb6623195",
+    "original_source_name": "units/program.sol",
+    "same_bytes_author_verified_paths": [
+      "dataset/verified/modified/DisableTransfer/0x7e0d051ec68668d603c4e33255d1aed342a691b7_inline.sol"
+    ],
+    "reference": {
+      "target": "FCR-PAUSE",
+      "positive": true,
+      "paired_id": "RQ1_fbd0377ce541"
+    },
+    "prediction": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "model_available": true
+  }
+}
