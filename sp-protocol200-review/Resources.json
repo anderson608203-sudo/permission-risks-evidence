@@ -1,0 +1,479 @@
+{
+  "main": {
+    "reason": "normal_completion",
+    "epoch": 1794595166.9050329,
+    "wall_seconds": 2596.8568665981293,
+    "original_deadline": 1794610969.9962306,
+    "ledger": {
+      "requests": 326,
+      "real_model_calls": 326,
+      "simulated_service_requests": 0,
+      "unknown_or_inflight_upper_usd": 0.0,
+      "unknown_cost_upper_usd": 0.0,
+      "inflight": 0,
+      "unknown": 0,
+      "settled_cost_usd_upper": 3.445548983999999,
+      "settled_cost_usd_lower": 1.7227744919999994,
+      "simulated_cost_usd_upper": 0,
+      "prompt_tokens": 1238222,
+      "completion_tokens": 2616239,
+      "service_models": [
+        "deepseek-flash"
+      ],
+      "actual_provider_billed_usd": null,
+      "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+      "per_request_money_reservation": false,
+      "halt": "",
+      "nature": "real_service",
+      "unknown_fee_is_not_zero": true
+    },
+    "result_directory": "/root/autodl-tmp/pr-next-joint-task-c/runs/sp_protocol_r1_fresh200/run",
+    "owned_processes_stopped": true,
+    "no_namespace_or_cgroup_claim": true,
+    "no_scoring": true
+  },
+  "actual_reasoning": 2411776,
+  "historical_this_batch_requests": 14,
+  "cumulative_requests": 340,
+  "cumulative_upper_usd": 3.5683675439999987,
+  "previous_history": {
+    "previous_batch_history": {
+      "B2": {
+        "real_calls": 171,
+        "cost_lower_usd": 0.9358298939999996,
+        "cost_upper_usd": 1.8716597879999992,
+        "supplier_billed_usd": null,
+        "unknown_or_inflight": 0,
+        "history": {
+          "prior_chain": {
+            "source_history_sha256": "ef8aa0a8350ac85ef9e2363af54a46591b4e287cb14e76b5973b0ca7e240be31",
+            "full1164": {
+              "source": "D:\\PR-Next\\work\\research_execution_20261110_r1\\full_review_r1\\analysis\\RESOURCES_FINAL.json",
+              "sha256": "b86f56877e24557da40f016e017656a58eb593ab22e369cae2682c5b88772fc5",
+              "historical_unknown_records": 18,
+              "current_unknown_requests": 5,
+              "old_actual_requests": 2032,
+              "old_known_usage_cost_upper_usd": 41.82773478,
+              "old_unknown_upper_usd": 0.24576,
+              "supplier_actual_billing": null,
+              "prior_30minute_chain": "D:/PR-Next/work/research_execution_20261110_r1/dispatch_compat_r1/RESOURCE.json"
+            },
+            "R3_Full100": {
+              "run": "r3_pilot100_r1",
+              "review_zip_sha256": "002f30878e26d8a6949d543c4e57ed603745b6eb220e43935835b68126bd1133",
+              "real_requests": 149,
+              "usage_cost_range_USD": [
+                0.835439862,
+                1.670879724
+              ],
+              "supplier_billed_USD": null,
+              "unknown_this_batch": 0,
+              "not_new_authorization_or_reusable_balance": true
+            },
+            "R3_Full20": {
+              "model": "4ab91281b7ca54d67557f63e0fd273f754a9e972c30315947c7e415ce79cb178",
+              "calls": 32,
+              "unknown": 0,
+              "usage_cost_range_usd": [
+                0.189926358,
+                0.379852716
+              ],
+              "invoice": null,
+              "resources_sha256": "d039a9f06f2a37050ec7ee6003e43cc8d207062561cb5c89b6efc5fbace829e1"
+            }
+          },
+          "previous_effect_Full100": {
+            "real_calls": 151,
+            "input_tokens": 452308,
+            "output_tokens_including_reasoning": 1302966,
+            "reasoning_subset": 1239165,
+            "cost_lower_usd": 0.8355890640000003,
+            "cost_upper_usd": 1.6711781280000007,
+            "supplier_billed_usd": null,
+            "unknown_or_inflight": 0,
+            "Full_wall_seconds": 1503.5833978652954
+          },
+          "previous_effect_resources_sha256": "6c0b26ad5b4cc15c55fd262005eefcdeca91ab303116d5ad0606fde4b1516c63",
+          "historic_eighteen_and_full1164_five_unknown_entries_retained_in_original_ledgers": true,
+          "new_budget_independent": true,
+          "old_balance_transferred": false
+        }
+      },
+      "parent_resource_file": "05a031bee3bffda1ff3fc794a44f15cd3526cd3f991eb65f7e2e84a2b3aa9363",
+      "full1164_history_file": "b86f56877e24557da40f016e017656a58eb593ab22e369cae2682c5b88772fc5",
+      "history_unknowns": "prior 18 and separate 5 on original full batch retained",
+      "prior_balance_transferred": false,
+      "last_actual_full1164": {
+        "source_review": "D:\\PR-Next\\local_cleanup_holding_20261111_r1\\project\\rel_revision_full1164_review_r1",
+        "resources": "D:\\PR-Next\\local_cleanup_holding_20261111_r1\\project\\rel_revision_full1164_review_r1\\analysis\\Resources.json",
+        "resources_available": true,
+        "actual_method": "b4f98eff6faa4a911e94888a391da2111bd2c1f892ac5717e7adcce820cd9f36",
+        "not_a_transferable_budget": true,
+        "resources_sha256": "731a31c6fd16f379eedb9de571b5dcbc8affd8ad00e298fe7f3f3402c5ad221a",
+        "requests": 2059,
+        "price_based_usd_lower": 14.056976006999976,
+        "price_based_usd_upper": 28.113952013999953,
+        "supplier_actual_billed_usd": null,
+        "current_unsettled_requests": 0
+      },
+      "this_preparation": {
+        "paid_calls": 0,
+        "remote_seconds": 0,
+        "prior_balance_transferred": false
+      },
+      "previous_semrepair_100": {
+        "model_requests": 191,
+        "wall_seconds": 2692.627435207367,
+        "unknown_current": 0,
+        "cost_public_price_lower_USD": 1.4682184979999993,
+        "cost_public_price_upper_USD": 2.9364369959999985,
+        "supplier_actual_billed_USD": null,
+        "source_sha256": "4b12664c4cec6b142cb91d23b17342197be429b8fc7f01abf26d2ace8d2c07b1"
+      },
+      "previous_same200_20261112_r1": {
+        "summary": {
+          "authorized": {
+            "requests": 400,
+            "per_member": 2,
+            "usd": 20,
+            "Full_seconds": 21600
+          },
+          "main_requests": 356,
+          "per_member": {
+            "1": 44,
+            "2": 156
+          },
+          "phases": {
+            "initial": 200,
+            "focused_revision": 153,
+            "protocol_recovery": 3
+          },
+          "finish": {
+            "stop": 350,
+            "length": 6
+          },
+          "empty_bodies": 5,
+          "prompt_tokens": 2211026,
+          "completion_tokens": 4283731,
+          "total_tokens": 6494757,
+          "reasoning_subset": 3993294,
+          "usage_USD_low": 2.8546831559999992,
+          "usage_USD_high": 5.7093663119999984,
+          "supplier_invoice_USD": null,
+          "inflight": 0,
+          "unknown_service_this_batch": 0,
+          "main_seconds": 4676.068981409073,
+          "main_end": "normal_completion",
+          "main_started": 1794456051.6789165,
+          "main_ended": 1794460727.7478971,
+          "service_models": [
+            "deepseek-flash"
+          ],
+          "historical_ledgers": {
+            "B2": {
+              "real_calls": 171,
+              "cost_lower_usd": 0.9358298939999996,
+              "cost_upper_usd": 1.8716597879999992,
+              "supplier_billed_usd": null,
+              "unknown_or_inflight": 0,
+              "history": {
+                "prior_chain": {
+                  "source_history_sha256": "ef8aa0a8350ac85ef9e2363af54a46591b4e287cb14e76b5973b0ca7e240be31",
+                  "full1164": {
+                    "source": "D:\\PR-Next\\work\\research_execution_20261110_r1\\full_review_r1\\analysis\\RESOURCES_FINAL.json",
+                    "sha256": "b86f56877e24557da40f016e017656a58eb593ab22e369cae2682c5b88772fc5",
+                    "historical_unknown_records": 18,
+                    "current_unknown_requests": 5,
+                    "old_actual_requests": 2032,
+                    "old_known_usage_cost_upper_usd": 41.82773478,
+                    "old_unknown_upper_usd": 0.24576,
+                    "supplier_actual_billing": null,
+                    "prior_30minute_chain": "D:/PR-Next/work/research_execution_20261110_r1/dispatch_compat_r1/RESOURCE.json"
+                  },
+                  "R3_Full100": {
+                    "run": "r3_pilot100_r1",
+                    "review_zip_sha256": "002f30878e26d8a6949d543c4e57ed603745b6eb220e43935835b68126bd1133",
+                    "real_requests": 149,
+                    "usage_cost_range_USD": [
+                      0.835439862,
+                      1.670879724
+                    ],
+                    "supplier_billed_USD": null,
+                    "unknown_this_batch": 0,
+                    "not_new_authorization_or_reusable_balance": true
+                  },
+                  "R3_Full20": {
+                    "model": "4ab91281b7ca54d67557f63e0fd273f754a9e972c30315947c7e415ce79cb178",
+                    "calls": 32,
+                    "unknown": 0,
+                    "usage_cost_range_usd": [
+                      0.189926358,
+                      0.379852716
+                    ],
+                    "invoice": null,
+                    "resources_sha256": "d039a9f06f2a37050ec7ee6003e43cc8d207062561cb5c89b6efc5fbace829e1"
+                  }
+                },
+                "previous_effect_Full100": {
+                  "real_calls": 151,
+                  "input_tokens": 452308,
+                  "output_tokens_including_reasoning": 1302966,
+                  "reasoning_subset": 1239165,
+                  "cost_lower_usd": 0.8355890640000003,
+                  "cost_upper_usd": 1.6711781280000007,
+                  "supplier_billed_usd": null,
+                  "unknown_or_inflight": 0,
+                  "Full_wall_seconds": 1503.5833978652954
+                },
+                "previous_effect_resources_sha256": "6c0b26ad5b4cc15c55fd262005eefcdeca91ab303116d5ad0606fde4b1516c63",
+                "historic_eighteen_and_full1164_five_unknown_entries_retained_in_original_ledgers": true,
+                "new_budget_independent": true,
+                "old_balance_transferred": false
+              }
+            },
+            "parent_resource_file": "05a031bee3bffda1ff3fc794a44f15cd3526cd3f991eb65f7e2e84a2b3aa9363",
+            "full1164_history_file": "b86f56877e24557da40f016e017656a58eb593ab22e369cae2682c5b88772fc5",
+            "history_unknowns": "prior 18 and separate 5 on original full batch retained",
+            "prior_balance_transferred": false,
+            "last_actual_full1164": {
+              "source_review": "D:\\PR-Next\\local_cleanup_holding_20261111_r1\\project\\rel_revision_full1164_review_r1",
+              "resources": "D:\\PR-Next\\local_cleanup_holding_20261111_r1\\project\\rel_revision_full1164_review_r1\\analysis\\Resources.json",
+              "resources_available": true,
+              "actual_method": "b4f98eff6faa4a911e94888a391da2111bd2c1f892ac5717e7adcce820cd9f36",
+              "not_a_transferable_budget": true,
+              "resources_sha256": "731a31c6fd16f379eedb9de571b5dcbc8affd8ad00e298fe7f3f3402c5ad221a",
+              "requests": 2059,
+              "price_based_usd_lower": 14.056976006999976,
+              "price_based_usd_upper": 28.113952013999953,
+              "supplier_actual_billed_usd": null,
+              "current_unsettled_requests": 0
+            },
+            "this_preparation": {
+              "paid_calls": 0,
+              "remote_seconds": 0,
+              "prior_balance_transferred": false
+            },
+            "previous_semrepair_100": {
+              "model_requests": 191,
+              "wall_seconds": 2692.627435207367,
+              "unknown_current": 0,
+              "cost_public_price_lower_USD": 1.4682184979999993,
+              "cost_public_price_upper_USD": 2.9364369959999985,
+              "supplier_actual_billed_USD": null,
+              "source_sha256": "4b12664c4cec6b142cb91d23b17342197be429b8fc7f01abf26d2ace8d2c07b1"
+            }
+          },
+          "main_report_count": 198,
+          "main_reports_with_gaps": 198,
+          "recovery": {
+            "additional_calls": 0,
+            "additional_cost_usd": 0,
+            "first_attempt_two_seconds": 138.43035531044006,
+            "second_continuation_seconds": 2.369431972503662,
+            "status_source": {
+              "main_reports": 198,
+              "zero_call_supplementary_reports": 2,
+              "main_technical_errors_preserved": 2,
+              "aggregate_saved_reports": 200,
+              "original_request_count": 356,
+              "additional_submissions": 0,
+              "unknown_main_service_receipts": 0,
+              "new_model_cost_usd": 0,
+              "main_freeze_sha256": "72fd2d74cf736e1f388bad85d7f51d4d319fb89533bbed598b469032e58e8e22",
+              "first_attempt_supplemental_freeze_sha256": "e28ad0420e61092f8e7b36cf93ed20a5273f80bde882c1f0322fb25eb98cdd3d",
+              "selection_sha256": "e7c3ea0da011b6e6fc289dd3670e1eb89f54c6d1b2c19b59e982ce3d5a383262",
+              "parent": "4974d5706d1c78a4caf9eb28dfd6ff380419faea9549252e2e8c37b66f53efe7",
+              "corrective_source": "6328276e5c9c7793baac31341811ce31b7a85ad9457d2a1afad217f66f42b812",
+              "includes_mixed_technical_recovery_not_new_200_live_run": true,
+              "scoring_performed": false,
+              "cases": [
+                {
+                  "member": "RQ1_c20b10d094d5",
+                  "findings": 0,
+                  "AC_projection": "unsupported",
+                  "unresolved_categories": [
+                    "AC"
+                  ],
+                  "gaps": {
+                    "program_gaps": 14,
+                    "unexecuted_actions": 6,
+                    "issues": 6
+                  },
+                  "report_sha256": "c2df8896820081836842d5a24329e54c1f046421571292c3f471578672a3a04c"
+                },
+                {
+                  "member": "RQ1_e6f04047bff4",
+                  "findings": 2,
+                  "AC_projection": "alarm",
+                  "unresolved_categories": [
+                    "AC"
+                  ],
+                  "gaps": {
+                    "program_gaps": 0,
+                    "unexecuted_actions": 0,
+                    "issues": 3
+                  },
+                  "report_sha256": "de3f6dfb3794b9308a6f74566e4192a95ebeba013b19bf56a429a3a7d239c5b3"
+                }
+              ],
+              "archive": "/root/autodl-tmp/pr-next-joint-task-c/runs/PR_Next200_Results.tar.gz",
+              "bytes": 482912721,
+              "sha256": "c2f772596663dc61016865f2ac860dc1269cc6f6eaea0b3aea7ae22a74431932",
+              "verified_frozen_hashes": 8222,
+              "archive_files": 8245,
+              "selected_reports_checked": 200,
+              "archive_created_seconds": 31.129702408332378,
+              "archive_verify_seconds": 64.09354625409469,
+              "usage_based_main_cost_upper": 5.7093663119999984,
+              "main_end_reason": "normal_completion",
+              "main_wall_seconds": 4676.068981409073,
+              "observed_at": "2026-11-12T13:55:03.666470+08:00"
+            }
+          },
+          "runtime_preparation": {
+            "used_seconds": 16.878700971603394,
+            "initial_time_basis": "cumulative actual instance preparation; includes package upload and preflight",
+            "runs": [
+              {
+                "kind": "clone deployment and zero-call inspection",
+                "start_epoch": 1794455587.2057366,
+                "end_epoch": 1794455590.8149548,
+                "seconds": 7,
+                "remote_check_seconds": 3.6092121601104736,
+                "includes_initial_probe_ceiling_seconds": 3,
+                "status": "PASS"
+              },
+              {
+                "start_epoch": 1794456041.7995183,
+                "end_epoch": 1794456051.6782296,
+                "seconds": 9.878700971603394,
+                "resume": false
+              }
+            ]
+          },
+          "fees_are_usage_envelope_not_invoice": true
+        },
+        "source_sha256": "fb117959028e581e53c6beaaa316d409326cc830b1f4c2b1e2400a99baed3277",
+        "main_reports": 198,
+        "zero_call_technical_supplements": 2,
+        "not_uniform_new_method_rerun": true,
+        "not_new_authorization_or_transferable_balance": true
+      },
+      "this_repair": {
+        "new_model_calls": 0,
+        "new_instance_seconds": 0,
+        "new_service_fees": 0,
+        "offline_identity": "12dd0f22574beae66784bab10a8fad378de1a7ddac026c30b9ccfc82972a8f12",
+        "historical_unsettled_records_retained": true
+      },
+      "applicable_validation_receipt": {
+        "same_validation_earlier_preparation": {
+          "passed_members": 200,
+          "verified_artifact_references": 1000,
+          "errors": [],
+          "new_model_calls": 0,
+          "detection_runs": 0,
+          "service_contacted": false,
+          "result_directory": "/root/autodl-tmp/pr-next-joint-task-c/runs/repaired_same200_r2/run",
+          "versions": {
+            "z3-solver": "4.15.3.0",
+            "tokenizers": "0.22.2",
+            "pycryptodome": "3.24.1",
+            "eth-keys": "0.7.0"
+          },
+          "environment_matches": true,
+          "tokenizer_location": "/root/autodl-tmp/pr-next-joint-task-c/runs/precomparison_nr1_usability4_r1/source/tokenizer",
+          "disk_free_bytes": 31986536448,
+          "existing_results": false,
+          "collector_verified": true,
+          "environment_pass": true,
+          "remote_seconds": 1.284,
+          "start_epoch": 1794500325.0568476,
+          "elapsed_seconds": 2.172,
+          "approved_limits": {
+            "requests": 400,
+            "per_member": 2,
+            "usd": 20,
+            "Full_seconds": 21600
+          },
+          "prep_limit_seconds": 1200,
+          "collect_limit_seconds": 1200,
+          "authority": "current conversation approval; environment and collection only performed",
+          "collector_sha256": "24df0ca1b8e1b9b581c3fbb8abb73bdf11164d7455fce41fc3ebabb02325d1e1",
+          "incoming": "D:\\PR-Next\\work\\research_execution_20261112_r1\\repaired_same200_r2\\incoming"
+        },
+        "previous_source_preparation_only": true,
+        "previous_paid_full200_is_separate": true,
+        "old_ledger_sha256": "fb117959028e581e53c6beaaa316d409326cc830b1f4c2b1e2400a99baed3277"
+      }
+    },
+    "latest_actual_ledger": {
+      "this_round": {
+        "model_requests": 0,
+        "paid_usd": 0,
+        "instance_seconds": 0,
+        "task": "本机工程夹具、编译及程序核查"
+      },
+      "inherited_frozen_ledger": {
+        "process": "本次仅工程夹具和本地程序核查",
+        "new_live_submissions": 0,
+        "new_provider_cost": 0,
+        "new_instance_seconds": 0,
+        "historical_only": {
+          "main_and_supplement": {
+            "main": {
+              "ledger_file_sha256": "cdf8a9b5d6e681299f07935df0a343de7a83eab183453a094e264376ddf42cc4",
+              "requests": 374,
+              "input": 1547503,
+              "output": 3698829,
+              "reasoning": 3520191,
+              "cost_usage_upper_USD": 4.795556868000004,
+              "cost_usage_lower_USD": 2.397778434000002
+            },
+            "supplement": {
+              "ledger_file_sha256": "a95f442bf0fb40a6f87202a5a7ac064a86235c7c4bae905095bfc9b4dab20f5c",
+              "requests": 2,
+              "input": 7337,
+              "output": 21711,
+              "reasoning": 20320,
+              "cost_usage_upper_USD": 0.026185128000000002,
+              "cost_usage_lower_USD": 0.013092564000000001
+            }
+          },
+          "totals": {
+            "requests": 376,
+            "input": 1554840,
+            "output": 3720540,
+            "reasoning": 3540511,
+            "cost_usage_upper_USD": 4.821741996000004,
+            "cost_usage_lower_USD": 2.410870998000002
+          },
+          "current_unknown": 0,
+          "supplier_actual_usd": null,
+          "historical_unknowns": "prior 18 and separate 5 on original full batch retained",
+          "prep_recorded_seconds": 15.552903482437134
+        },
+        "historic_full_member_sources": {
+          "main": 198,
+          "supplement": 2
+        },
+        "original_ledger_and_rollup": {
+          "source": "D:\\PR-Next\\work\\research_execution_20261113_r1\\prediction_integration_r1\\closeout\\HistoricalReceipts.json",
+          "bytes": 11178,
+          "sha256": "cc9722c39ef6581c9816e7f69b3e99471069c20073ba88d687852afc4fd8e4f8"
+        },
+        "original_local_ledger_index": "D:\\PR-Next\\work\\research_execution_20261112_r1\\decision_only_same200_r3\\review_local_decisiononly200_r1\\analysis\\Resources.json"
+      },
+      "parent_ledger_sha256": "95f3c16a74801980c46a76177b6c00b5543fdc466707153e0b9dcccb5044f6ee"
+    }
+  },
+  "phase_counts": {
+    "initial": 200,
+    "protocol_recovery": 46,
+    "focused_revision": 80
+  },
+  "finish_counts": {
+    "stop": 324,
+    "length": 2
+  }
+}

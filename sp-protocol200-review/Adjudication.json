@@ -1,0 +1,1260 @@
+[
+  {
+    "idx": 0,
+    "member": "RQ1_053265dda42e",
+    "finding": "finding_05c025f97b2920bbf86d",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 649,
+      "length": 714,
+      "ast_id": 159
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_053265dda42e', 'units/program.sol', 649)",
+    "source_excerpt": "function () payable{\n        if (block.number - period >= blockheight){ \n            bool isSuccess=false; \n            var nextStake = this.balance * WINNERTAX_PRECENT/100;  \n            if (isSuccess == false) \n                isSuccess = whale.send(this.balance - nextStake); \n            MatthewWon(\"Matthew won\", whale, this.balance, block.number);\n            setFacts();\n            if (mustBeDestroyed) selfdestruct(whale); \n            return;\n        }else{ \n            if (msg.value < this.balance + DELTA) throw; \n            bool isOtherSuccess = msg.sender.send(this.balance); \n            setFacts(); \n            StakeIncreased(\"stake increased\", whale, this.balance, blockheight);\n        }\n    }",
+    "source_sha256": "fd0090415eb98ee048de2fee8083d61743a02237e32ce21967fd34573aa416cf",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 649. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 649,
+          "length": 714,
+          "ast_id": 159
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E5"
+    ]
+  },
+  {
+    "idx": 1,
+    "member": "RQ1_0fa374173417",
+    "finding": "finding_74ed7a154df01398a2c9",
+    "function": "killContract()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1535,
+      "length": 184,
+      "ast_id": 161
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_0fa374173417', 'units/program.sol', 1535)",
+    "source_excerpt": "function killContract () payable external\n    {\n        if (msg.sender==owner || msg.value >=howManyEtherInWeiToKillContract)\n        {\n            selfdestruct(owner);\n        }\n    }",
+    "source_sha256": "68bafe295421dbbb94628566ba812d7005c77fbb8adab62263e18c80f5c6f4d6",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1535. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1535,
+          "length": 184,
+          "ast_id": 161
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E6"
+    ]
+  },
+  {
+    "idx": 2,
+    "member": "RQ1_1007b4fc52ca",
+    "finding": "finding_441ce6286a5c019f5f97",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4952,
+      "length": 74,
+      "ast_id": 602
+    },
+    "result": "TP",
+    "reference": "D2:236:S1",
+    "group": "D2:236:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "644289eda397c8a2bd67a571d9112c91fb3eaf49542c16002a1ffa690c32da29",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4952. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4952,
+          "length": 74,
+          "ast_id": 602
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 3,
+    "member": "RQ1_1f156ef466b1",
+    "finding": "finding_ff62190b770207032f6c",
+    "function": "freezeAccount(address,bool)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 6069,
+      "length": 128,
+      "ast_id": 837
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_1f156ef466b1', 'units/program.sol', 6069)",
+    "source_excerpt": "function freezeAccount(address _target, bool frozen){\n    frozenAccount[_target] = frozen;\n    FrozenFunds(_target, frozen);\n  }",
+    "source_sha256": "bd291db050ad9450ff3b2063b2abb63754ba3e1a57500cf17e6077a67590df4b",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 6069. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 6069,
+          "length": 128,
+          "ast_id": 837
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E10",
+      "E3"
+    ]
+  },
+  {
+    "idx": 4,
+    "member": "RQ1_1f156ef466b1",
+    "finding": "finding_58e7442d2f2057fdbad7",
+    "function": "setPrices(uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4516,
+      "length": 124,
+      "ast_id": 612
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_1f156ef466b1', 'units/program.sol', 4516)",
+    "source_excerpt": "function setPrices(uint256 newSellPrice, uint256 newBuyPrice){\n    sellPrice = newSellPrice;\n    buyPrice = newBuyPrice;\n  }",
+    "source_sha256": "bd291db050ad9450ff3b2063b2abb63754ba3e1a57500cf17e6077a67590df4b",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4516. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4516,
+          "length": 124,
+          "ast_id": 612
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E13",
+      "E8"
+    ]
+  },
+  {
+    "idx": 5,
+    "member": "RQ1_2be3e9b98fac",
+    "finding": "finding_a9ea7ba44fa7aadfc90f",
+    "function": "IstriumToken(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 755,
+      "length": 18,
+      "ast_id": 71
+    },
+    "result": "TP",
+    "reference": "D2:30:author:1",
+    "group": "D2:30:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "38adbb5e3f84bace1ea40d1788615289615a4f78aa5e08a65e78c32fc736f795",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 755 under management_role. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 755,
+          "length": 18,
+          "ast_id": 71
+        }
+      ],
+      "effects": [
+        "w_2b213285ebbc50c812a3"
+      ],
+      "rules": [],
+      "supports": [
+        "support_0d3dbdc867b2ff81bdbd"
+      ],
+      "facts": [
+        "fact_1d2252dbc0e50206b264"
+      ],
+      "meanings": [
+        "management_role"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E10"
+    ]
+  },
+  {
+    "idx": 6,
+    "member": "RQ1_31450a049444",
+    "finding": "finding_f9f7dee69ef2ed684e44",
+    "function": "fin()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 248,
+      "length": 106,
+      "ast_id": 44
+    },
+    "result": "TP",
+    "reference": "D2:360:original:1",
+    "group": "D2:360:original:1",
+    "source_excerpt": "function fin() public {\n        if (tx.origin == O) {\n            selfdestruct(tx.origin);\n        }\n    }",
+    "source_sha256": "c2a2caa3407ab77f8ad8ee572bc16ddc2820b2b5490b1cff016a15450530d21f",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 248. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 248,
+          "length": 106,
+          "ast_id": 44
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E5"
+    ]
+  },
+  {
+    "idx": 7,
+    "member": "RQ1_403e9f180228",
+    "finding": "finding_b3dafe67307522c66ae1",
+    "function": "addSignature(uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1338,
+      "length": 694,
+      "ast_id": 230
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_403e9f180228', 'units/program.sol', 1338)",
+    "source_excerpt": "function addSignature(uint id) {\n        address member = msg.sender;\n        if (documentsCount < id) throw;\n        Document d = documentsIds[id];\n        uint count = d.signsCount;\n        bool signed = false;\n        if (count != 0) {\n            for (uint i = 0; i < count; i++) {\n                if (d.signs[i].member == member) {\n                    signed = true;\n                    break;\n                }\n            }\n        }\n        if (!signed) {\n            d.signs[count] = Sign({\n                    member: member,\n                    date: now\n                });\n            documentsIds[id].signsCount = count + 1;\n            DocumentSigned(id, member);\n        }\n    }",
+    "source_sha256": "409f5ad61f213cef73f9e3991bc1d87d409cffc1009d3ffa45451e287552beeb",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1338. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1338,
+          "length": 694,
+          "ast_id": 230
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E7"
+    ]
+  },
+  {
+    "idx": 8,
+    "member": "RQ1_6674f42c37b9",
+    "finding": "finding_52c652b439565c32a476",
+    "function": "Ownable()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3214,
+      "length": 18,
+      "ast_id": 406
+    },
+    "result": "TP",
+    "reference": "D2:113:author:1",
+    "group": "D2:113:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "735cd00265b10b7541a98fb75205dbda3295bc529d6d70c4d1f04747bb6f47a4",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 3214. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 3214,
+          "length": 18,
+          "ast_id": 406
+        }
+      ],
+      "effects": [
+        "w_d1ef161e98f99ab83f54"
+      ],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": []
+    },
+    "evidence_refs": []
+  },
+  {
+    "idx": 9,
+    "member": "RQ1_67706b288d9c",
+    "finding": "finding_a33b5f83f162d402770b",
+    "function": "mix(uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4246,
+      "length": 508,
+      "ast_id": 578
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_67706b288d9c', 'units/program.sol', 4246)",
+    "source_excerpt": "function mix(uint256 skinAId, uint256 skinBId) public whenNotPaused {\n        require(_isValidSkin(msg.sender, skinAId, skinBId));\n        require(_isNotOnSale(skinAId) && _isNotOnSale(skinBId));\n        require(_isCooldownReady(skinAId, skinBId));\n        require(_isNotMixing(skinAId, skinBId));\n        _setCooldownEndTime(skinAId, skinBId);\n        skins[skinAId].mixingWithId = uint64(skinBId);\n        skins[skinBId].mixingWithId = uint64(skinAId);\n        MixStart(msg.sender, skinAId, skinBId);\n    }",
+    "source_sha256": "29b75cc954962d060182e0848048161d0960a18a756a9f9e839845d570286ca0",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4246. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4246,
+          "length": 508,
+          "ast_id": 578
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E7"
+    ]
+  },
+  {
+    "idx": 10,
+    "member": "RQ1_67706b288d9c",
+    "finding": "finding_bcf11c9fb823d74eb946",
+    "function": "mix(uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4246,
+      "length": 508,
+      "ast_id": 578
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_67706b288d9c', 'units/program.sol', 4246)",
+    "source_excerpt": "function mix(uint256 skinAId, uint256 skinBId) public whenNotPaused {\n        require(_isValidSkin(msg.sender, skinAId, skinBId));\n        require(_isNotOnSale(skinAId) && _isNotOnSale(skinBId));\n        require(_isCooldownReady(skinAId, skinBId));\n        require(_isNotMixing(skinAId, skinBId));\n        _setCooldownEndTime(skinAId, skinBId);\n        skins[skinAId].mixingWithId = uint64(skinBId);\n        skins[skinBId].mixingWithId = uint64(skinAId);\n        MixStart(msg.sender, skinAId, skinBId);\n    }",
+    "source_sha256": "29b75cc954962d060182e0848048161d0960a18a756a9f9e839845d570286ca0",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4246. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4246,
+          "length": 508,
+          "ast_id": 578
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E15",
+      "E5"
+    ]
+  },
+  {
+    "idx": 11,
+    "member": "RQ1_67706b288d9c",
+    "finding": "finding_a139225c8b462a58d2a4",
+    "function": "mix(uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4246,
+      "length": 508,
+      "ast_id": 578
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_67706b288d9c', 'units/program.sol', 4246)",
+    "source_excerpt": "function mix(uint256 skinAId, uint256 skinBId) public whenNotPaused {\n        require(_isValidSkin(msg.sender, skinAId, skinBId));\n        require(_isNotOnSale(skinAId) && _isNotOnSale(skinBId));\n        require(_isCooldownReady(skinAId, skinBId));\n        require(_isNotMixing(skinAId, skinBId));\n        _setCooldownEndTime(skinAId, skinBId);\n        skins[skinAId].mixingWithId = uint64(skinBId);\n        skins[skinBId].mixingWithId = uint64(skinAId);\n        MixStart(msg.sender, skinAId, skinBId);\n    }",
+    "source_sha256": "29b75cc954962d060182e0848048161d0960a18a756a9f9e839845d570286ca0",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4246. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4246,
+          "length": 508,
+          "ast_id": 578
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E11",
+      "E3"
+    ]
+  },
+  {
+    "idx": 12,
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_848230a6007c154a12d5",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:334:author:1",
+    "group": "D2:334:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_4868c618d8c5b556404c"
+      ],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 13,
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_84d284d3997049a13db8",
+    "function": "transferOwnership(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 899,
+      "length": 100,
+      "ast_id": 139
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_679bfbe1c927', 'units/program.sol', 899)",
+    "source_excerpt": "function transferOwnership(address _newOwner) public onlyOwner {\n        newOwner = _newOwner;\n    }",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 899 under current_authority_required, eligibility_state, management_role. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 899,
+          "length": 100,
+          "ast_id": 139
+        }
+      ],
+      "effects": [],
+      "rules": [
+        "P03",
+        "P05",
+        "P06"
+      ],
+      "supports": [
+        "source_692b0230979c5208f834",
+        "support_0825e513d4910ad2713c",
+        "support_2bf2132bbb725e2ddec5",
+        "support_6a77bc0a50c02b2ad8cf"
+      ],
+      "facts": [
+        "fact_08011df7ec0d5196fd5f",
+        "fact_433530bd4ce1dada328f",
+        "fact_c04ffe1604aaf40ae777"
+      ],
+      "meanings": [
+        "current_authority_required",
+        "eligibility_state",
+        "management_role"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "rule_derivation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E13",
+      "E17"
+    ]
+  },
+  {
+    "idx": 14,
+    "member": "RQ1_84ed7052a606",
+    "finding": "finding_ab0f2a2e94eee33891a7",
+    "function": "init()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1558,
+      "length": 56,
+      "ast_id": 180
+    },
+    "result": "TP",
+    "reference": "D2:418:author:1",
+    "group": "D2:418:author:1",
+    "source_excerpt": "function init()\n    {\n        Holder = msg.sender;\n    }",
+    "source_sha256": "5508c1c2fdd37ff8679263626af7420ce7dfc2e8c6c5b92b6ef3c66c48a35b03",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1558. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1558,
+          "length": 56,
+          "ast_id": 180
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E11",
+      "E3"
+    ]
+  },
+  {
+    "idx": 15,
+    "member": "RQ1_84ed7052a606",
+    "finding": "finding_06f43f445ef724350d39",
+    "function": "Close()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2661,
+      "length": 118,
+      "ast_id": 330
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_84ed7052a606', 'units/program.sol', 2661)",
+    "source_excerpt": "function Close() public\n    {\n        if (msg.sender == Ho1der)\n        {\n            suicide(Ho1der);\n        }\n    }",
+    "source_sha256": "5508c1c2fdd37ff8679263626af7420ce7dfc2e8c6c5b92b6ef3c66c48a35b03",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 2661. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2661,
+          "length": 118,
+          "ast_id": 330
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E9"
+    ]
+  },
+  {
+    "idx": 16,
+    "member": "RQ1_947273fa2eef",
+    "finding": "finding_a0c14dde9c1846e03a32",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5342,
+      "length": 74,
+      "ast_id": 644
+    },
+    "result": "TP",
+    "reference": "D2:20:S1",
+    "group": "D2:20:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "5858aa841b01556733b6d06756cafe3a3e49090aeaeabd79d7f88b533eadce9e",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 5342. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 5342,
+          "length": 74,
+          "ast_id": 644
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E3",
+      "E7"
+    ]
+  },
+  {
+    "idx": 17,
+    "member": "RQ1_947273fa2eef",
+    "finding": "finding_1c0ea6b73399a23fb90e",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5201,
+      "length": 135,
+      "ast_id": 636
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_947273fa2eef', 'units/program.sol', 5201)",
+    "source_excerpt": "function () payable public {\n    \t\tuint amount = msg.value * buyPrice;               \n    \t\t_transfer(owner, msg.sender, amount);\n    }",
+    "source_sha256": "5858aa841b01556733b6d06756cafe3a3e49090aeaeabd79d7f88b533eadce9e",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 5201. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 5201,
+          "length": 135,
+          "ast_id": 636
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E6"
+    ]
+  },
+  {
+    "idx": 18,
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_fa2a457ddfde37ae3a73",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "result": "TP",
+    "reference": "D2:310:author:1",
+    "group": "D2:310:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1508. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1508,
+          "length": 18,
+          "ast_id": 190
+        }
+      ],
+      "effects": [
+        "w_5fe4775cd76a51c1b03f"
+      ],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 19,
+    "member": "RQ1_9fea8632716d",
+    "finding": "finding_32453ce8cee2f12ad643",
+    "function": "Ballot(uint8)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 300,
+      "length": 167,
+      "ast_id": 46
+    },
+    "result": "TP",
+    "reference": "D2:510:author:1",
+    "group": "D2:510:author:1",
+    "source_excerpt": "function Ballot(uint8 _numProposals) public {\n        chairperson = msg.sender;\n        voters[chairperson].weight = 1;\n        proposals.length = _numProposals;\n    }",
+    "source_sha256": "9999f8d00a6605a7e77310106a8a37abde3b5cca04bf74b0f015ed04d3b07dfc",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 300. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 300,
+          "length": 167,
+          "ast_id": 46
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E4"
+    ]
+  },
+  {
+    "idx": 20,
+    "member": "RQ1_afa801e14aca",
+    "finding": "finding_a4957ac6c3ca03b38333",
+    "function": "QMQCoin()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2806,
+      "length": 126,
+      "ast_id": 330
+    },
+    "result": "TP",
+    "reference": "D2:393:author:1",
+    "group": "D2:393:author:1",
+    "source_excerpt": "function QMQCoin () public {\n        owner = msg.sender;\n        value = 5000e8;\n        distr(owner, totalDistributed);\n    }",
+    "source_sha256": "f3f6801bd64368d43cccc4ebd3af093530f1598c7a7b5c1218daa3c42eba75a6",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 2806. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2806,
+          "length": 126,
+          "ast_id": 330
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 21,
+    "member": "RQ1_b809aa517821",
+    "finding": "finding_9a09dbbce47ddaa9699e",
+    "function": "killContract()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1561,
+      "length": 184,
+      "ast_id": 161
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_b809aa517821', 'units/program.sol', 1561)",
+    "source_excerpt": "function killContract () payable external\n    {\n        if (msg.sender==owner || msg.value >=howManyEtherInWeiToKillContract)\n        {\n            selfdestruct(owner);\n        }\n    }",
+    "source_sha256": "c9511ccccf05235aefe1f0f59b7acf00a3c7450a5f9936ceabffe0c095010c80",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1561. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1561,
+          "length": 184,
+          "ast_id": 161
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E10"
+    ]
+  },
+  {
+    "idx": 22,
+    "member": "RQ1_bbf6634a1913",
+    "finding": "finding_a26c9b344a58c3fbe523",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4812,
+      "length": 135,
+      "ast_id": 594
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_bbf6634a1913', 'units/program.sol', 4812)",
+    "source_excerpt": "function () payable public {\n    \t\tuint amount = msg.value * buyPrice;               \n    \t\t_transfer(owner, msg.sender, amount);\n    }",
+    "source_sha256": "ce5d74bd65908863282d67fb34be8d88b5434b933e07a56321648e0369db6eb3",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4812. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4812,
+          "length": 135,
+          "ast_id": 594
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E7"
+    ]
+  },
+  {
+    "idx": 23,
+    "member": "RQ1_bbf6634a1913",
+    "finding": "finding_d3903f68d06f341b598f",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4952,
+      "length": 74,
+      "ast_id": 602
+    },
+    "result": "TP",
+    "reference": "D2:3:S1",
+    "group": "D2:3:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "ce5d74bd65908863282d67fb34be8d88b5434b933e07a56321648e0369db6eb3",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 4952. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4952,
+          "length": 74,
+          "ast_id": 602
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E3",
+      "E8"
+    ]
+  },
+  {
+    "idx": 24,
+    "member": "RQ1_dadf1b436e9d",
+    "finding": "finding_d2ff3747e3893a64ab4e",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5202,
+      "length": 135,
+      "ast_id": 636
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_dadf1b436e9d', 'units/program.sol', 5202)",
+    "source_excerpt": "function () payable public {\n    \t\tuint amount = msg.value * buyPrice;               \n    \t\t_transfer(owner, msg.sender, amount);\n    }",
+    "source_sha256": "946be02ddab6982899fcc12d927dbdcc5de6ce797862fc2e9c82c68dd9dd8e5d",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 5202. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 5202,
+          "length": 135,
+          "ast_id": 636
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E4"
+    ]
+  },
+  {
+    "idx": 25,
+    "member": "RQ1_dadf1b436e9d",
+    "finding": "finding_6d606fafc7803e11a87b",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5342,
+      "length": 74,
+      "ast_id": 644
+    },
+    "result": "TP",
+    "reference": "D2:484:S1",
+    "group": "D2:484:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "946be02ddab6982899fcc12d927dbdcc5de6ce797862fc2e9c82c68dd9dd8e5d",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 5342. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 5342,
+          "length": 74,
+          "ast_id": 644
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E5"
+    ]
+  },
+  {
+    "idx": 26,
+    "member": "RQ1_e5e40ec6feca",
+    "finding": "finding_fdf6996a99c20eacfc9f",
+    "function": "destroy()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 194,
+      "length": 54,
+      "ast_id": 27
+    },
+    "result": "TP",
+    "reference": "D2:572:author:1",
+    "group": "D2:572:author:1",
+    "source_excerpt": "function destroy(){\n        selfdestruct(owner);\n    }",
+    "source_sha256": "2756ed6f4df948c9c34dbf8e57241e05ecc33a5caa1503b3fb1e71e7959e5165",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 194. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 194,
+          "length": 54,
+          "ast_id": 27
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 27,
+    "member": "RQ1_fc71e6703f0d",
+    "finding": "finding_f3755ffb6f44738037d5",
+    "function": "fin()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 250,
+      "length": 106,
+      "ast_id": 44
+    },
+    "result": "TP",
+    "reference": "D2:253:original:2",
+    "group": "D2:253:original:2",
+    "source_excerpt": "function fin() public {\n        if (tx.origin == O) {\n            selfdestruct(tx.origin);\n        }\n    }",
+    "source_sha256": "bf43b6ed5ca2b625a9de217ac06e7ea4ddf63acadeee0d64d0c562d6ce1710e5",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 250. A scope-matched program check supports this effect under the recorded analysis domain.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 250,
+          "length": 106,
+          "ast_id": 44
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E4"
+    ]
+  }
+]

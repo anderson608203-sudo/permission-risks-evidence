@@ -1,0 +1,131 @@
+{
+  "current": {
+    "round": "permission-risks-decision-only-same200-20261112-r3",
+    "method_sha256": "01fe5ca16438e5c3348357613050a02609a62ba583725db68009d0fb9922b6fb",
+    "method_python_files": 97,
+    "config_sha256": "dd08d856d35677cdbda1652a846182bc48ee855c0aca26b9b9962e5c153e8c0a",
+    "parent_method_sha256": "9fddf3e985308fdcda548c2415cdbd97e30f9b44ab44ab5c0df5fefed0c16621",
+    "input_index_sha256": "0281a944c1619b3aa8c11f99f3dbe8af8bd4ff7bd692fb0cb4464fd682638c29",
+    "roster_order_sha256": "1120162358293db585ac38144264582bc6aab07fb3f88abaaed42aed4d3f820f",
+    "runtime_files": {
+      "common.py": "bf32e4663b5b3025a14654c9f028bfc80c40301fc012abe885f6e5fe6410e4bd",
+      "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+      "live_client.py": "ae247ea6ea77d281defb2fc74c3742c2b7c4196d8c8011bc50c6bec94a364b43",
+      "worker.py": "50e9babe331a0860ec0080d69aca09e13d636d3e514960087874c6ad602109a9",
+      "input_links.py": "b1b8b6d4b9895c66869fbd3d4451f7e8dfb8207f79d5bfe3f4fe00898af9e3af",
+      "supervisor.py": "d155178e3514b4c080a4e5f7ce1536ed69dc02b8361cce51e9c28f8f2351f400",
+      "chain.py": "e1f4de34e8051e794a8118ce49e63314c3ec90cb00118c6bd3fedcdc7ded41e1",
+      "start.py": "78bffe0d8aa02738cf6e96a6593093a1382f6dcf580efb31dd4a535317c6d78c"
+    },
+    "run_id": "sp_protocol_r1_fresh200"
+  },
+  "config": {
+    "method": "permission-risks-semantic-propagation-r2-protocolfix1",
+    "options": {
+      "feedback": true,
+      "attempt_limit": 2,
+      "max_paths": 48,
+      "prefix_depth": 2,
+      "max_prefixes": 24,
+      "max_actions": 64,
+      "seconds": 120,
+      "solver_timeout_ms": 3000,
+      "input_target": 16384,
+      "input_limit": 32768,
+      "output_limit": 32768
+    },
+    "live_model_authorized": false,
+    "notes": "Decision-only successor: no solver assignment extraction, replayable witness or SMT export. Risk definitions and runtime limits retained. Symbolic crypto and undecided quantified blocking remain explicit unknowns. Minimal protocol prompt+content-free normalization structure diagnostic; existing AC/FCR rules unchanged."
+  },
+  "history": {
+    "method": {
+      "": {
+        "implementation": "12dd0f22574beae66784bab10a8fad378de1a7ddac026c30b9ccfc82972a8f12",
+        "config": "319f25579ec87154b040f913ef6fb5b9e1ed16798babebc21d4a1d1d36e9793c",
+        "runtime_files": {
+          "common.py": "bf32e4663b5b3025a14654c9f028bfc80c40301fc012abe885f6e5fe6410e4bd",
+          "input_links.py": "b1b8b6d4b9895c66869fbd3d4451f7e8dfb8207f79d5bfe3f4fe00898af9e3af",
+          "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+          "live_client.py": "ae247ea6ea77d281defb2fc74c3742c2b7c4196d8c8011bc50c6bec94a364b43",
+          "start.py": "81bda67b6a4022d3a42ac22e42917560791d3b26d232e4d5793e68f4f53a0fac",
+          "supervisor.py": "88a121da62bf00b319eba575da14e720e5531e35353083de4406a30e6ef12193",
+          "worker.py": "50e9babe331a0860ec0080d69aca09e13d636d3e514960087874c6ad602109a9"
+        },
+        "method_files": 95,
+        "actual_source_file_count": 106
+      },
+      "run/technical_two/": {
+        "implementation": "221ed063b0e14c7f6abadf58725eeaa6ae11e5470f6d64bd9fc011577281f19d",
+        "config": "319f25579ec87154b040f913ef6fb5b9e1ed16798babebc21d4a1d1d36e9793c",
+        "runtime_files": {
+          "common.py": "bf32e4663b5b3025a14654c9f028bfc80c40301fc012abe885f6e5fe6410e4bd",
+          "input_links.py": "b1b8b6d4b9895c66869fbd3d4451f7e8dfb8207f79d5bfe3f4fe00898af9e3af",
+          "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+          "live_client.py": "ae247ea6ea77d281defb2fc74c3742c2b7c4196d8c8011bc50c6bec94a364b43",
+          "start.py": "81bda67b6a4022d3a42ac22e42917560791d3b26d232e4d5793e68f4f53a0fac",
+          "supervisor.py": "88a121da62bf00b319eba575da14e720e5531e35353083de4406a30e6ef12193",
+          "worker.py": "50e9babe331a0860ec0080d69aca09e13d636d3e514960087874c6ad602109a9"
+        },
+        "method_files": 95,
+        "actual_source_file_count": 106
+      }
+    },
+    "v32": {
+      "name": "joint-rights-settlement-rq1-v32-20261104",
+      "freeze_file": "v32_completed_review_r1/FROZEN_RUN.jsonl.gz",
+      "sha256": "241afdbf8eaff15201cc55ea60783e4d0f4dd32997f47664f546d8362f05c9f9",
+      "source_manifest": "d7328f3803a470676c2bcf0abb31fa8380e45a842c43c63d3a7888097328c6a8",
+      "selected_200_reports_verified": true
+    },
+    "prior200": {
+      "parent": "4974d5706d1c78a4caf9eb28dfd6ff380419faea9549252e2e8c37b66f53efe7",
+      "technical_successor": "6328276e5c9c7793baac31341811ce31b7a85ad9457d2a1afad217f66f42b812",
+      "reused_source_record": "198+2 technical corrections, including a mixed-source continuation"
+    },
+    "last1164": {
+      "round": "permission-risks-rel-revision-full1164-20261111-r1",
+      "method_sha256": "b4f98eff6faa4a911e94888a391da2111bd2c1f892ac5717e7adcce820cd9f36",
+      "config_sha256": "1395a5e713a907a9b3f3a10c075fd398543e5cc4aecbc2eed1d2bf4acd579a29"
+    },
+    "b5": {
+      "b5c58fd28304f986b170636c2754a781f305847e9f18be2279c4e27898a6c44c": 1162,
+      "aabbc29b6e9c54233abc175e42e5a8d0f1069e88d6f226594b1870511f9d2669": 2
+    },
+    "actual_service": {
+      "name": "DeepSeek-V4.1-Flash",
+      "id": "deepseek-flash",
+      "context_window": 1048576,
+      "max_output_tokens": 393216
+    },
+    "actually_returned_models": {
+      "deepseek-flash": 376
+    },
+    "model_parameters": {
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "max_tokens": 32768
+    },
+    "date": "2026-11-13",
+    "archive_sha256": "9a2daf0816d3bfa66d7716752c16b78e0d7fab09c4844f4a2e2d0c3f093bc585",
+    "primary_and_supplement_sha256": [
+      "46d6fae081ead496c886de5e00089c49c77c1a2dabc7283590c58419173965c8",
+      "bb6875565cdfdd0ba73943245f149374d0ab1bd0f40e329eef21dd5d9d3ebeeb"
+    ],
+    "comparison_is_in_sample": true,
+    "request_body_retained": false,
+    "response_body_retained": false,
+    "valuation_or_witness_retained": false
+  },
+  "archive": {
+    "archive_sha256": "779ea14d329d8bd412a7c81cac3753faa1c5914c64fdc72d6ae74fc36cb811fe",
+    "size": 11726729,
+    "files": 6719,
+    "method": "01fe5ca16438e5c3348357613050a02609a62ba583725db68009d0fb9922b6fb",
+    "selected_sha256": "77b5e2a7cb16b6fd752fc8eecf7b722b5f0042420d00c72266a76ffd568c9fed",
+    "members": 200,
+    "checks": "all three manifests and freezes, new report/projection/source/input identities"
+  }
+}
