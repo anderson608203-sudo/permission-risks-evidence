@@ -1,0 +1,1501 @@
+[
+  {
+    "idx": 0,
+    "member": "RQ1_2c07fdcf80d4",
+    "finding": "finding_f6627a0be1f5bc664c74",
+    "function": "transferFrom(address,address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2544,
+      "length": 434,
+      "ast_id": 380
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_2c07fdcf80d4', 'units/program.sol', 2544)",
+    "source_excerpt": "function transferFrom(address _from, address _to, uint256 _value) transferLock public returns (bool success) {\n        require(_to != address(0)); \n        require(frozen[_from]==false);\n        allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);\n        balances[_from] = balances[_from].sub(_value);\n        balances[_to] = balances[_to].add(_value);\n        Transfer(_from, _to, _value);\n        return true;\n    }",
+    "source_sha256": "bb8444804847b45e8c79c1d401f7e8f9a25aedb58df31ed0a9f366766231af59",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At transferFrom(address,address,uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2544,
+          "length": 434,
+          "ast_id": 380
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [
+        "support_0e507e95210534b7574e"
+      ],
+      "facts": [
+        "fact_8125f8cda37f2ebe7744"
+      ],
+      "meanings": [
+        "holder_authorization_applies"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E10",
+      "E11",
+      "E4",
+      "E6"
+    ]
+  },
+  {
+    "idx": 1,
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_1561d2510d02e680661e",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:157:author:1",
+    "group": "D2:157:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_42b02ff30cd746b2bf24"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_d2a0e4b3abe391b779c6"
+      ],
+      "facts": [
+        "fact_a40305075becba086414"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E18",
+      "E2"
+    ]
+  },
+  {
+    "idx": 2,
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_4024bf18e0a001c783d1",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:157:author:1",
+    "group": "D2:157:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_8f6d60fbad2a63c1627f"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_cfea85aab9fc359604f1"
+      ],
+      "facts": [
+        "fact_d5d2be85584ff862d27a"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E22",
+      "E3"
+    ]
+  },
+  {
+    "idx": 3,
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_310f31c73a4063ae434d",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:157:author:1",
+    "group": "D2:157:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_59a9fb8faf1b88da016e"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_facbc50075f566eb46d2"
+      ],
+      "facts": [
+        "fact_5401d0234b6cdd6f476f"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E14"
+    ]
+  },
+  {
+    "idx": 4,
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_d9ce018330b927f65545",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:111:author:1",
+    "group": "D2:111:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_268d1fcda578b620d87e"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_d57790a6525d9ec74da4"
+      ],
+      "facts": [
+        "fact_36136726732ae3516f41"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E16",
+      "E2"
+    ]
+  },
+  {
+    "idx": 5,
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_1ba2375234e10e477bbb",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:111:author:1",
+    "group": "D2:111:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_a2c49845cea2824dbbf1"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_b6509e7a2b8afc497b3a"
+      ],
+      "facts": [
+        "fact_3d66f040419addb5fd73"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E20",
+      "E3"
+    ]
+  },
+  {
+    "idx": 6,
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_914c370ddb4f19a4474c",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:111:author:1",
+    "group": "D2:111:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_0c3556f1803e76f0a70a"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_256e23ec1cc091c0ccbb"
+      ],
+      "facts": [
+        "fact_2e271fe03a4c7eb3836d"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E12"
+    ]
+  },
+  {
+    "idx": 7,
+    "member": "RQ1_2a3f29f582b8",
+    "finding": "finding_0c34aac088ab23b2cb42",
+    "function": "end_redeem_period()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3948,
+      "length": 134,
+      "ast_id": 379
+    },
+    "result": "TP",
+    "reference": "D2:412:author:1",
+    "group": "D2:412:author:1",
+    "source_excerpt": "function end_redeem_period(){ \n            if (block.number >= 2900000 || num_claimed == 0) \n               selfdestruct(ppbc);\n     }",
+    "source_sha256": "a198a551d6ea80743de507e73577d266da7802d4b85d7d39a958ec1df91471e1",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At end_redeem_period(), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 3948,
+          "length": 134,
+          "ast_id": 379
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E7"
+    ]
+  },
+  {
+    "idx": 8,
+    "member": "RQ1_dadf1b436e9d",
+    "finding": "finding_8cbbb79d4de6ae4881fe",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5342,
+      "length": 74,
+      "ast_id": 644
+    },
+    "result": "TP",
+    "reference": "D2:484:S1",
+    "group": "D2:484:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "946be02ddab6982899fcc12d927dbdcc5de6ce797862fc2e9c82c68dd9dd8e5d",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At selfdestructs(), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 5342,
+          "length": 74,
+          "ast_id": 644
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E8"
+    ]
+  },
+  {
+    "idx": 9,
+    "member": "RQ1_e7801f3e61cb",
+    "finding": "finding_695bee7ecbf3611a4d51",
+    "function": "proposeOwnership(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 836,
+      "length": 185,
+      "ast_id": 87
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_e7801f3e61cb', 'units/program.sol', 836)",
+    "source_excerpt": "function proposeOwnership(address _newOwnerCandidate) public onlyOwner {\n        newOwnerCandidate = _newOwnerCandidate;\n        OwnershipRequested(msg.sender, newOwnerCandidate);\n    }",
+    "source_sha256": "cdf1bfc603f350d951e7ff9604f3f0cae50f0a99c0bca9e6948a396fe327cfe0",
+    "note": "冻结参考无该根因，按参考外报警记录；未据此证明其业务上错误。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At proposeOwnership(address), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 836,
+          "length": 185,
+          "ast_id": 87
+        }
+      ],
+      "effects": [],
+      "rules": [
+        "P03",
+        "P05",
+        "P06"
+      ],
+      "supports": [
+        "source_3cd17b66c3b2e6d86069",
+        "support_6646414e7db19324a7b5",
+        "support_9980b6b20430e0137d42",
+        "support_b45f160894a3a807f7e1"
+      ],
+      "facts": [
+        "fact_0e030eecdb02ab8e60e6",
+        "fact_763cb0e345291e872dc3",
+        "fact_e4749ec163f8b56056b0"
+      ],
+      "meanings": [
+        "current_authority_required",
+        "eligibility_state",
+        "management_role"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "rule_derivation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E32"
+    ]
+  },
+  {
+    "idx": 10,
+    "member": "RQ1_1007b4fc52ca",
+    "finding": "finding_c18079cb898a7d9ecaf5",
+    "function": "burnFrom(address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2834,
+      "length": 441,
+      "ast_id": 395
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_1007b4fc52ca', 'units/program.sol', 2834)",
+    "source_excerpt": "function burnFrom(address _from, uint256 _value) public returns (bool success) {\n        require(balanceOf[_from] >= _value);                \n        require(_value <= allowance[_from][msg.sender]);    \n        balanceOf[_from] -= _value;                         \n        allowance[_from][msg.sender] -= _value;             \n        totalSupply -= _value;                              \n        Burn(_from, _value);\n        return true;\n    }",
+    "source_sha256": "644289eda397c8a2bd67a571d9112c91fb3eaf49542c16002a1ffa690c32da29",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At burnFrom(address,uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2834,
+          "length": 441,
+          "ast_id": 395
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [
+        "support_855b3028d4eca5e551cc"
+      ],
+      "facts": [
+        "fact_72bf14e89463b80c7182"
+      ],
+      "meanings": [
+        "holder_authorization_applies"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E10",
+      "E3",
+      "E4",
+      "E9"
+    ]
+  },
+  {
+    "idx": 11,
+    "member": "RQ1_1007b4fc52ca",
+    "finding": "finding_6200a90d57d6e6cf83fe",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4952,
+      "length": 74,
+      "ast_id": 602
+    },
+    "result": "TP",
+    "reference": "D2:236:S1",
+    "group": "D2:236:S1",
+    "source_excerpt": "function selfdestructs() payable public {\n    \t\tselfdestruct(owner);\n    }",
+    "source_sha256": "644289eda397c8a2bd67a571d9112c91fb3eaf49542c16002a1ffa690c32da29",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At selfdestructs(), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 4952,
+          "length": 74,
+          "ast_id": 602
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E7"
+    ]
+  },
+  {
+    "idx": 12,
+    "member": "RQ1_e5e40ec6feca",
+    "finding": "finding_d17a63fec3c565f2f786",
+    "function": "destroy()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 194,
+      "length": 54,
+      "ast_id": 27
+    },
+    "result": "TP",
+    "reference": "D2:572:author:1",
+    "group": "D2:572:author:1",
+    "source_excerpt": "function destroy(){\n        selfdestruct(owner);\n    }",
+    "source_sha256": "2756ed6f4df948c9c34dbf8e57241e05ecc33a5caa1503b3fb1e71e7959e5165",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At destroy(), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 194,
+          "length": 54,
+          "ast_id": 27
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  {
+    "idx": 13,
+    "member": "RQ1_31450a049444",
+    "finding": "finding_68d878d83b5c8563ba08",
+    "function": "fin()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 248,
+      "length": 106,
+      "ast_id": 44
+    },
+    "result": "TP",
+    "reference": "D2:360:original:1",
+    "group": "D2:360:original:1",
+    "source_excerpt": "function fin() public {\n        if (tx.origin == O) {\n            selfdestruct(tx.origin);\n        }\n    }",
+    "source_sha256": "c2a2caa3407ab77f8ad8ee572bc16ddc2820b2b5490b1cff016a15450530d21f",
+    "note": "实际入口及源码效果与作者独立根因对应，保留程序证据可审计性限制。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At fin(), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 248,
+          "length": 106,
+          "ast_id": 44
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [],
+      "facts": [],
+      "meanings": [],
+      "origins": [
+        "source_observation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E4"
+    ]
+  },
+  {
+    "idx": 14,
+    "member": "RQ1_5e9adf3cda8c",
+    "finding": "finding_59f007eae6690ca8ae67",
+    "function": "withdraw_eth(uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2872,
+      "length": 206,
+      "ast_id": 382
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_5e9adf3cda8c', 'units/program.sol', 2872)",
+    "source_excerpt": "function withdraw_eth(uint256 _amount) onlyAdmin public {\n      uint256 currentBalance_ = token_balance[0];\n      require(currentBalance_ >= _amount);\n      transferETHFromContract(msg.sender, _amount);\n  }",
+    "source_sha256": "8ed5562b8ba0ede40b0163665428fff6a3832f10d778d0b46a33d65d2b4b9733",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At withdraw_eth(uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2872,
+          "length": 206,
+          "ast_id": 382
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [
+        "support_cc9c73e55d659cef9a69"
+      ],
+      "facts": [
+        "fact_4fdb3abd67135cbea50d"
+      ],
+      "meanings": [
+        "financial_right"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E2",
+      "E3"
+    ]
+  },
+  {
+    "idx": 15,
+    "member": "RQ1_c9a2d9b618a7",
+    "finding": "finding_79d9af43204564b164fa",
+    "function": "FirstBloodToken(address,address,uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3827,
+      "length": 22,
+      "ast_id": 468
+    },
+    "result": "TP",
+    "reference": "D2:93:author:1",
+    "group": "D2:93:author:1",
+    "source_excerpt": "founder = founderInput",
+    "source_sha256": "fc06a0d67768aa374430d543efa148592b6356296282652000837d51995f7438",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 3827 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 3827,
+          "length": 22,
+          "ast_id": 468
+        }
+      ],
+      "effects": [
+        "w_56c1fad6f47a7152af68"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_77c23485517bf41b1b47"
+      ],
+      "facts": [
+        "fact_40b2762f847c4319c43f"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E10",
+      "E4"
+    ]
+  },
+  {
+    "idx": 16,
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_269813c86c7e5439d0c9",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:334:author:1",
+    "group": "D2:334:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_454c3a36256df9adda13"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_86376506f4c9ff05356c"
+      ],
+      "facts": [
+        "fact_70c34e11761c9dd7ef6b"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E14"
+    ]
+  },
+  {
+    "idx": 17,
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_41b843555810adfd8fa7",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:334:author:1",
+    "group": "D2:334:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_7f5a23caf2ddc9a4e830"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_03ac7fc14928a901b60b"
+      ],
+      "facts": [
+        "fact_5c27af734df9c3a25990"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E2",
+      "E20"
+    ]
+  },
+  {
+    "idx": 18,
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_7118e541c3d8bd5a242b",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "result": "TP",
+    "reference": "D2:334:author:1",
+    "group": "D2:334:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 793 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 793,
+          "length": 18,
+          "ast_id": 113
+        }
+      ],
+      "effects": [
+        "w_4868c618d8c5b556404c"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_82998f1f072843725127"
+      ],
+      "facts": [
+        "fact_8766db545f03132bcead"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E24",
+      "E3"
+    ]
+  },
+  {
+    "idx": 19,
+    "member": "RQ1_ae0fe8386d33",
+    "finding": "finding_622c229c84b59ab484c8",
+    "function": "LittleCactus()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 337,
+      "length": 18,
+      "ast_id": 34
+    },
+    "result": "TP",
+    "reference": "D2:224:author:1",
+    "group": "D2:224:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "30df33484a411071835ea33614c7ac847b0832f9ec738ad86ab5310479266d5a",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 337 under current_authority_required, management_role. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 337,
+          "length": 18,
+          "ast_id": 34
+        }
+      ],
+      "effects": [
+        "w_a8a68d1d1eb3c41a1d5b"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_65f815cbdda50c734201",
+        "support_3fec53f0ad4c14874028"
+      ],
+      "facts": [
+        "fact_0f88545e7b7b0d4597b9",
+        "fact_b95dfba55f2d6be345f8"
+      ],
+      "meanings": [
+        "current_authority_required",
+        "management_role"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "verified_service",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E4"
+    ]
+  },
+  {
+    "idx": 20,
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_f6df419a5ee402d67fa8",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "result": "TP",
+    "reference": "D2:310:author:1",
+    "group": "D2:310:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1508 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1508,
+          "length": 18,
+          "ast_id": 190
+        }
+      ],
+      "effects": [
+        "w_5fe4775cd76a51c1b03f"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_1f5e6f7d14adeb469ec6"
+      ],
+      "facts": [
+        "fact_841beaa7bd06a7507b94"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E9"
+    ]
+  },
+  {
+    "idx": 21,
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_e0358fa37f2cc72fa2bd",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "result": "TP",
+    "reference": "D2:310:author:1",
+    "group": "D2:310:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1508 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1508,
+          "length": 18,
+          "ast_id": 190
+        }
+      ],
+      "effects": [
+        "w_e3fb52ff92a99ae7ed71"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_8df849912d25ea2aa5c5"
+      ],
+      "facts": [
+        "fact_9c596ad0deff97f2f2f9"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E13",
+      "E2"
+    ]
+  },
+  {
+    "idx": 22,
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_5a124338e6634c560115",
+    "function": "transferFrom(address,address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3199,
+      "length": 347,
+      "ast_id": 457
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_9d9d397fa18e', 'units/program.sol', 3199)",
+    "source_excerpt": "function transferFrom(address from, address to, uint tokens) public returns (bool success) {\n        balances[from] = safeSub(balances[from], tokens);\n        allowed[from][msg.sender] = safeSub(allowed[from][msg.sender], tokens);\n        balances[to] = safeAdd(balances[to], tokens);\n        Transfer(from, to, tokens);\n        return true;\n    }",
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At transferFrom(address,address,uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 3199,
+          "length": 347,
+          "ast_id": 457
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [
+        "support_632b47b85e18ae70eee7"
+      ],
+      "facts": [
+        "fact_8c08309c06669f13dce0"
+      ],
+      "meanings": [
+        "holder_authorization_applies"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E15",
+      "E16",
+      "E3",
+      "E4"
+    ]
+  },
+  {
+    "idx": 23,
+    "member": "RQ1_2be3e9b98fac",
+    "finding": "finding_14567888f9272edd2af6",
+    "function": "IstriumToken(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 755,
+      "length": 18,
+      "ast_id": 71
+    },
+    "result": "TP",
+    "reference": "D2:30:author:1",
+    "group": "D2:30:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "38adbb5e3f84bace1ea40d1788615289615a4f78aa5e08a65e78c32fc736f795",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 755 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 755,
+          "length": 18,
+          "ast_id": 71
+        }
+      ],
+      "effects": [
+        "w_2b213285ebbc50c812a3"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_b6e61d78f47186055df2"
+      ],
+      "facts": [
+        "fact_1fbbcd0bc5b53db361ff"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E4"
+    ]
+  },
+  {
+    "idx": 24,
+    "member": "RQ1_0bcbefea1890",
+    "finding": "finding_24d2323edaee69200b41",
+    "function": "burnFrom(address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 2834,
+      "length": 441,
+      "ast_id": 395
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_0bcbefea1890', 'units/program.sol', 2834)",
+    "source_excerpt": "function burnFrom(address _from, uint256 _value) public returns (bool success) {\n        require(balanceOf[_from] >= _value);                \n        require(_value <= allowance[_from][msg.sender]);    \n        balanceOf[_from] -= _value;                         \n        allowance[_from][msg.sender] -= _value;             \n        totalSupply -= _value;                              \n        Burn(_from, _value);\n        return true;\n    }",
+    "source_sha256": "7638d6aaa273b279daeea22fee5118c9635e31c99901d028fe3eb15c4a184350",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At burnFrom(address,uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 2834,
+          "length": 441,
+          "ast_id": 395
+        }
+      ],
+      "effects": [],
+      "rules": [],
+      "supports": [
+        "support_c2732bfc7aa28a0ff0db"
+      ],
+      "facts": [
+        "fact_851eb6bbdd0c1553f507"
+      ],
+      "meanings": [
+        "holder_authorization_applies"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E10",
+      "E2",
+      "E4",
+      "E9"
+    ]
+  },
+  {
+    "idx": 25,
+    "member": "RQ1_9aafb6cd1add",
+    "finding": "finding_48ae61b0356c70e9c392",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "result": "TP",
+    "reference": "D2:587:author:1",
+    "group": "D2:587:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1508 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1508,
+          "length": 18,
+          "ast_id": 190
+        }
+      ],
+      "effects": [
+        "w_ba777d6faaf32796accd"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_43150109b38ac018bae6"
+      ],
+      "facts": [
+        "fact_a2bb6428034f7673ce4a"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E1",
+      "E12"
+    ]
+  },
+  {
+    "idx": 26,
+    "member": "RQ1_9aafb6cd1add",
+    "finding": "finding_55427d3ccb044a85f8be",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "result": "TP",
+    "reference": "D2:587:author:1",
+    "group": "D2:587:author:1",
+    "source_excerpt": "owner = msg.sender",
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "note": "公开资格写入位于作者标定入口，实际语义支持与资格/下游检查对应。",
+    "decision": {
+      "status": "risk",
+      "reason": "source_role_reassignment",
+      "explanation": "The assessment concerns the policy governing the protected effect at source offset 1508 under current_authority_required. An office established by the source controls a separate protected effect. The replacement of that office lacks the corresponding qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 1508,
+          "length": 18,
+          "ast_id": 190
+        }
+      ],
+      "effects": [
+        "w_d8f53ae9ca64a96898a5"
+      ],
+      "rules": [
+        "P09"
+      ],
+      "supports": [
+        "source_526aadecbb50da03f497"
+      ],
+      "facts": [
+        "fact_5a8abe814c3618f3344e"
+      ],
+      "meanings": [
+        "current_authority_required"
+      ],
+      "origins": [
+        "source_observation",
+        "source_policy_deduction",
+        "rule_derivation"
+      ]
+    },
+    "evidence_refs": [
+      "E16",
+      "E2"
+    ]
+  },
+  {
+    "idx": 27,
+    "member": "RQ1_9aafb6cd1add",
+    "finding": "finding_a4e92ef12914fc2941b7",
+    "function": "transferFrom(address,address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3218,
+      "length": 347,
+      "ast_id": 457
+    },
+    "result": "FP",
+    "reference": null,
+    "group": "('RQ1_9aafb6cd1add', 'units/program.sol', 3218)",
+    "source_excerpt": "function transferFrom(address from, address to, uint tokens) public returns (bool success) {\n        balances[from] = safeSub(balances[from], tokens);\n        allowed[from][msg.sender] = safeSub(allowed[from][msg.sender], tokens);\n        balances[to] = safeAdd(balances[to], tokens);\n        Transfer(from, to, tokens);\n        return true;\n    }",
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "note": "实际报警入口或影响与作者参考不同，不能抵销该独立根因漏检。",
+    "decision": {
+      "status": "risk",
+      "reason": "program_support",
+      "explanation": "At transferFrom(address,address,uint256), the committing effect admits a requester outside the applicable source-bound qualification. The check compares the effective guard with the bound authorization requirement, including any alternative qualification.",
+      "locations": [
+        {
+          "file": "units/program.sol",
+          "start": 3218,
+          "length": 347,
+          "ast_id": 457
+        }
+      ],
+      "effects": [],
+      "rules": [
+        "P03",
+        "P05",
+        "P06"
+      ],
+      "supports": [
+        "source_3fdd3cf31ffee401cd6a",
+        "source_487486b14bd80e4c3d33",
+        "source_f52dfbf472a06e72f142",
+        "support_37fa3b615b8c27b1f9c0",
+        "support_3d1b43a07fde152d8434",
+        "support_43800423eb80e6c8ddf5"
+      ],
+      "facts": [
+        "fact_32c4e8f220605874c042",
+        "fact_3858e3f05e414b7f5ce1",
+        "fact_38ce981e7615b413a499",
+        "fact_6fc9f9ca86c7f0cb312d",
+        "fact_a9688ef9dac481b4d017",
+        "fact_c76df43424954d18add0"
+      ],
+      "meanings": [
+        "authorization_quantity",
+        "financial_right",
+        "holder_authorization_applies"
+      ],
+      "origins": [
+        "source_observation",
+        "verified_service",
+        "rule_derivation",
+        "scoped_program_check"
+      ]
+    },
+    "evidence_refs": [
+      "E19",
+      "E5"
+    ]
+  }
+]

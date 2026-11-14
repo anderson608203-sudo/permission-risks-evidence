@@ -1,0 +1,336 @@
+{
+  "diagnostics": {
+    "unbound_or_inapplicable_seed": 1053,
+    "unrelated_or_secondary_graph_pairs_deferred": 345,
+    "semantic_answer_outside_sent_scope": 32,
+    "unknown_assessment_vocabulary": 46,
+    "shared_declaration_in_distinct_applied_contexts": 2,
+    "invalid_top_level_or_duplicate_key": 33,
+    "action_slice_exhausted": 63,
+    "noncached_action_limit": 22,
+    "yield_to_source_bound_semantic_review": 5,
+    "semantic_budget": 1,
+    "program_investigation_seconds": 16,
+    "category_ambiguous_or_outside_supported_task": 41,
+    "truncated_envelope_complete_items_only": 1,
+    "wrong_semantic_locator_kind": 9,
+    "invalid_semantic_row": 43,
+    "program_investigation_budget_exhausted": 11,
+    "no_locatable_source": 22,
+    "semantic_meaning_or_explanation_polarity_unresolved": 1,
+    "program_encoding_budget_exhausted": 1,
+    "Unsupported:source_semantics_unavailable:path_85b2849dece1deace263": 4,
+    "semantic_answer_missing_question_answer_or_basis": 1
+  },
+  "queries": [
+    {
+      "label": "local_premises_feasible",
+      "answer": "sat",
+      "count": 220
+    },
+    {
+      "label": "authorization_violation",
+      "answer": "unsat",
+      "count": 74
+    },
+    {
+      "label": "authorization_violation",
+      "answer": "sat",
+      "count": 28
+    },
+    {
+      "label": "baseline_usable",
+      "answer": "sat",
+      "count": 1262
+    },
+    {
+      "label": "opened_by_change",
+      "answer": "sat",
+      "count": 332
+    },
+    {
+      "label": "both_usable",
+      "answer": "sat",
+      "count": 464
+    },
+    {
+      "label": "direct_effect",
+      "answer": "sat",
+      "count": 46
+    },
+    {
+      "label": "financial_consent_unresolved",
+      "answer": "unsat",
+      "count": 53
+    },
+    {
+      "label": "financial_value",
+      "answer": "unsat",
+      "count": 134
+    },
+    {
+      "label": "financial_value_post_exclusion",
+      "answer": "unsat",
+      "count": 296
+    },
+    {
+      "label": "same_request_amount_change",
+      "answer": "unsat",
+      "count": 286
+    },
+    {
+      "label": "same_request_amount_change",
+      "answer": "sat",
+      "count": 22
+    },
+    {
+      "label": "control_transition_preservation",
+      "answer": "sat",
+      "count": 73
+    },
+    {
+      "label": "prefix_reachability",
+      "answer": "sat",
+      "count": 601
+    },
+    {
+      "label": "financial_block",
+      "answer": "unknown",
+      "count": 226
+    },
+    {
+      "label": "financial_block",
+      "answer": "unsat",
+      "count": 626
+    },
+    {
+      "label": "financial_block",
+      "answer": "sat",
+      "count": 94
+    },
+    {
+      "label": "control_transition_preservation",
+      "answer": "unsat",
+      "count": 91
+    },
+    {
+      "label": "prefix_reachability",
+      "answer": "unsat",
+      "count": 438
+    },
+    {
+      "label": "opened_by_change",
+      "answer": "unsat",
+      "count": 230
+    },
+    {
+      "label": "baseline_usable",
+      "answer": "unsat",
+      "count": 50
+    },
+    {
+      "label": "both_usable",
+      "answer": "unsat",
+      "count": 97
+    },
+    {
+      "label": "original_path_commit",
+      "answer": "sat",
+      "count": 26
+    },
+    {
+      "label": "direct_callback_influence",
+      "answer": "sat",
+      "count": 75
+    },
+    {
+      "label": "callback_influence",
+      "answer": "sat",
+      "count": 82
+    },
+    {
+      "label": "source_quantity_debit",
+      "answer": "unsat",
+      "count": 19
+    },
+    {
+      "label": "source_quantity_debit",
+      "answer": "sat",
+      "count": 8
+    },
+    {
+      "label": "net_state_change",
+      "answer": "sat",
+      "count": 1
+    },
+    {
+      "label": "direct_callback_influence",
+      "answer": "unsat",
+      "count": 329
+    },
+    {
+      "label": "callback_influence",
+      "answer": "unsat",
+      "count": 322
+    },
+    {
+      "label": "baseline_usable",
+      "answer": "unknown",
+      "count": 1
+    },
+    {
+      "label": "both_usable",
+      "answer": "unknown",
+      "count": 1
+    },
+    {
+      "label": "same_holder_native_settlement_counterexample",
+      "answer": "unsat",
+      "count": 3
+    },
+    {
+      "label": "actual_debit_exists",
+      "answer": "unsat",
+      "count": 3
+    },
+    {
+      "label": "requester_opens_other_holders_gate",
+      "answer": "unsat",
+      "count": 1
+    },
+    {
+      "label": "financial_value_post_exclusion",
+      "answer": "sat",
+      "count": 38
+    },
+    {
+      "label": "financial_value",
+      "answer": "sat",
+      "count": 26
+    },
+    {
+      "label": "direct_effect",
+      "answer": "unsat",
+      "count": 72
+    },
+    {
+      "label": "financial_consent_unresolved",
+      "answer": "sat",
+      "count": 2
+    }
+  ],
+  "transitions": [
+    {
+      "version": "decision_only",
+      "kind": "新增指定类命中",
+      "count": 7
+    },
+    {
+      "version": "v32",
+      "kind": "退为未知，不能当作纠正",
+      "count": 55
+    },
+    {
+      "version": "last1164",
+      "kind": "退为未知，不能当作纠正",
+      "count": 33
+    },
+    {
+      "version": "b5",
+      "kind": "退为未知，不能当作纠正",
+      "count": 53
+    },
+    {
+      "version": "decision_only",
+      "kind": "未知转有效阴性",
+      "count": 23
+    },
+    {
+      "version": "last1164",
+      "kind": "新增指定类命中",
+      "count": 16
+    },
+    {
+      "version": "b5",
+      "kind": "新增指定类命中",
+      "count": 13
+    },
+    {
+      "version": "prev200",
+      "kind": "新增指定类命中",
+      "count": 3
+    },
+    {
+      "version": "prev200",
+      "kind": "退为未知，不能当作纠正",
+      "count": 45
+    },
+    {
+      "version": "decision_only",
+      "kind": "退为未知，不能当作纠正",
+      "count": 8
+    },
+    {
+      "version": "protocol200",
+      "kind": "退为未知，不能当作纠正",
+      "count": 4
+    },
+    {
+      "version": "protocol200",
+      "kind": "新增指定类命中",
+      "count": 10
+    },
+    {
+      "version": "v32",
+      "kind": "风险版漏检",
+      "count": 3
+    },
+    {
+      "version": "last1164",
+      "kind": "风险版漏检",
+      "count": 3
+    },
+    {
+      "version": "prev200",
+      "kind": "风险版漏检",
+      "count": 3
+    },
+    {
+      "version": "decision_only",
+      "kind": "风险版漏检",
+      "count": 5
+    },
+    {
+      "version": "protocol200",
+      "kind": "风险版漏检",
+      "count": 2
+    },
+    {
+      "version": "protocol200",
+      "kind": "未知转有效阴性",
+      "count": 2
+    },
+    {
+      "version": "last1164",
+      "kind": "未知转有效阴性",
+      "count": 3
+    },
+    {
+      "version": "b5",
+      "kind": "有效阴性/误报纠正",
+      "count": 1
+    },
+    {
+      "version": "decision_only",
+      "kind": "有效阴性/误报纠正",
+      "count": 1
+    },
+    {
+      "version": "protocol200",
+      "kind": "有效阴性/误报纠正",
+      "count": 1
+    }
+  ],
+  "members": 200,
+  "all_response_available": 179
+}

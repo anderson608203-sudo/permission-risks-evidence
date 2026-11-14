@@ -1,0 +1,3273 @@
+{
+  "RQ1_f696b703e8e8": {
+    "projection": {
+      "AC": "unsupported"
+    },
+    "evaluation": {
+      "roots": [],
+      "findings": [],
+      "changes": {
+        "v32": {
+          "gained": [],
+          "lost": []
+        },
+        "last1164": {
+          "gained": [],
+          "lost": []
+        },
+        "b5": {
+          "gained": [],
+          "lost": []
+        },
+        "prev200": {
+          "gained": [],
+          "lost": []
+        },
+        "decision_only": {
+          "gained": [],
+          "lost": []
+        },
+        "protocol200": {
+          "gained": [],
+          "lost": []
+        }
+      }
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "unsupported",
+      "category": "AC",
+      "assessment": "新增根因 []；丢失根因 []。参考外报警位置：撤回 []，新增 []。",
+      "observation": "同类调查出口由 {} 变为 {}；关联开放缺口 60 → 58。",
+      "old": {
+        "reasons": {},
+        "readings": [],
+        "gaps": 60,
+        "queries": 0,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "empty_response_body": 1,
+          "invalid_semantic_row": 23,
+          "category_ambiguous_or_outside_supported_task": 2,
+          "unknown_assessment_vocabulary": 2,
+          "no_locatable_source": 2
+        }
+      },
+      "new": {
+        "reasons": {},
+        "readings": [],
+        "gaps": 58,
+        "queries": 0,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 10
+        }
+      },
+      "previous_report": "ecd759a1d424ba4bcc7d6c9369ee175fe2d8f026d278b50502057987aa379aab",
+      "current_report": "05f9a864adda67e87d8bd448f51615a09b6d541f989ea8a403e0ff17fcbabbea"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": false,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [],
+    "inspection": [],
+    "queries": [],
+    "supports": [],
+    "revisions": []
+  },
+  "RQ1_f91e2b168fdf": {
+    "projection": {
+      "AC": "unsupported"
+    },
+    "evaluation": {
+      "roots": [
+        {
+          "member": "RQ1_f91e2b168fdf",
+          "reference": "D2:490:author:1",
+          "function": "Rasthen",
+          "v32": "TP",
+          "last1164": "FN",
+          "b5": "FN",
+          "ACTaint_DeepSeek": "TP",
+          "prev200": "FN",
+          "decision_only": "TP",
+          "prev200_findings": [],
+          "decision_only_findings": [
+            "finding_c548abc3c95f2a3fd308"
+          ],
+          "protocol200": "FN",
+          "current": "FN"
+        }
+      ],
+      "findings": [],
+      "changes": {
+        "v32": {
+          "gained": [],
+          "lost": [
+            "D2:490:author:1"
+          ]
+        },
+        "last1164": {
+          "gained": [],
+          "lost": []
+        },
+        "b5": {
+          "gained": [],
+          "lost": []
+        },
+        "prev200": {
+          "gained": [],
+          "lost": []
+        },
+        "decision_only": {
+          "gained": [],
+          "lost": [
+            "D2:490:author:1"
+          ]
+        },
+        "protocol200": {
+          "gained": [],
+          "lost": []
+        }
+      }
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "unsupported",
+      "category": "AC",
+      "assessment": "新增根因 []；丢失根因 []。参考外报警位置：撤回 []，新增 []。",
+      "observation": "同类调查出口由 {'policy_missing': 8} 变为 {'policy_missing': 7, 'external_dependency': 1}；关联开放缺口 9 → 10。",
+      "old": {
+        "reasons": {
+          "policy_missing": 8
+        },
+        "readings": [],
+        "gaps": 9,
+        "queries": 48,
+        "supports": 5,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 2,
+          "category_ambiguous_or_outside_supported_task": 1,
+          "unknown_assessment_vocabulary": 1,
+          "semantic_answer_outside_sent_scope": 2,
+          "unrelated_or_secondary_graph_pairs_deferred": 7,
+          "invalid_semantic_row": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "policy_missing": 7,
+          "external_dependency": 1
+        },
+        "readings": [],
+        "gaps": 10,
+        "queries": 38,
+        "supports": 5,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 2,
+          "unrelated_or_secondary_graph_pairs_deferred": 8,
+          "invalid_top_level_or_duplicate_key": 1
+        }
+      },
+      "previous_report": "a1455fc3f12144b77a16126b0029fa19a0d6f0afabd1108b6eb4628bb7d98d24",
+      "current_report": "bb0e9b352b51e27795a6bfbb4ca26351ef6d90e8f75928bec1420aebc4097ec5"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "response_kind": "invalid_protocol",
+        "usable": false,
+        "status": "protocol_diagnostic",
+        "normalization_diagnostics": [
+          {
+            "reason": "invalid_top_level_or_duplicate_key",
+            "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+            "stage": "focused_revision"
+          }
+        ]
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "scope_25ccc83db33154e5a053",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_0ed38f9de0a1475bf7ad",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_649929641dc55503bb25",
+          "semantic_version": "a4c336bb13f3a51c1c3875de71f9e8ed644a379d7d960e893453ef021893240e",
+          "task": "AC",
+          "content_sha256": "d00cb1c2212172e309e80624b1e15755a5edfd70bbdac16a30423bf94b7f2d1a"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "3e52aed35451bf7ba5e9f976c9a21fddcb1dcb3290a0649012abad37234f80d4",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_0ed38f9de0a1475bf7ad",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_649929641dc55503bb25",
+              "semantic_version": "a4c336bb13f3a51c1c3875de71f9e8ed644a379d7d960e893453ef021893240e",
+              "task": "AC",
+              "content_sha256": "d00cb1c2212172e309e80624b1e15755a5edfd70bbdac16a30423bf94b7f2d1a"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 2919 under management_role. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2919,
+                  "length": 161,
+                  "ast_id": 340
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_20f5b5bb4ef720e3bf07",
+                "support_82293fe0568aebedf0c6"
+              ],
+              "facts": [
+                "fact_9d4aac5e6437335a6d63"
+              ],
+              "meanings": [
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E3",
+          "E12",
+          "E19",
+          "E25"
+        ]
+      },
+      {
+        "id": "scope_2e263d14f980eda6d0a7",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_79b98ea18c3bb678d4f6",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_1d0a81e4db5c20a005c2",
+          "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+          "task": "AC",
+          "content_sha256": "4c5065d571b8fc30df56f1732920aa4b9daffcb5909e36be7f17be75f35c7c35"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "77b241997802179da0081c51a34e14c32a583bc59767c4d25b8fe2c7a5857e74",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_79b98ea18c3bb678d4f6",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_1d0a81e4db5c20a005c2",
+              "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+              "task": "AC",
+              "content_sha256": "4c5065d571b8fc30df56f1732920aa4b9daffcb5909e36be7f17be75f35c7c35"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 2625 under management_role, other_source_policy. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2625,
+                  "length": 137,
+                  "ast_id": 302
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_5724ffd44a8089053a12",
+                "support_82293fe0568aebedf0c6"
+              ],
+              "facts": [
+                "fact_64ea7fd394f3145fe5a4",
+                "fact_81cc692ec142a1cf2468"
+              ],
+              "meanings": [
+                "management_role",
+                "other_source_policy"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E10",
+          "E18"
+        ]
+      },
+      {
+        "id": "scope_3243eca11478afb99814",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_e62c695b8dcd1a722040",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_1d0a81e4db5c20a005c2",
+          "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+          "task": "AC",
+          "content_sha256": "a0c7625de44c2a092ee02fb1fc682e88e5de3ba8e900cadacd9a3994005819b3"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "937f0f6ccfb69f87c11a2b2c1e4afe399a7f2981edd91a42fbcdd4f73387dd85",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_e62c695b8dcd1a722040",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_1d0a81e4db5c20a005c2",
+              "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+              "task": "AC",
+              "content_sha256": "a0c7625de44c2a092ee02fb1fc682e88e5de3ba8e900cadacd9a3994005819b3"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 2625 under financial_right, management_role, nonfinancial_counter, other_source_policy. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2625,
+                  "length": 137,
+                  "ast_id": 302
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_1a3a4d4f89c7edd8bf47",
+                "support_5724ffd44a8089053a12",
+                "support_82293fe0568aebedf0c6",
+                "support_8af4038a3e2405613bfe"
+              ],
+              "facts": [
+                "fact_64ea7fd394f3145fe5a4",
+                "fact_79a026a857366df1430f",
+                "fact_81cc692ec142a1cf2468",
+                "fact_b39ca8ae1e7dd59882ad"
+              ],
+              "meanings": [
+                "financial_right",
+                "management_role",
+                "nonfinancial_counter",
+                "other_source_policy"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E7",
+          "E9",
+          "E24"
+        ]
+      },
+      {
+        "id": "scope_33ff00e82effabb0b836",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_bb803aa1fc98d69ba223",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_94e95cb2b35b98fb53c7",
+          "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+          "task": "AC",
+          "content_sha256": "bb17dc4fa2c9568f915d2022e69ad1f692b9b7900ddf119a025f0fecdde84f7b"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "b87c163ef93ccc6af38a1d0e559082316d8dd8fe55745be1618c859c7a8f969d",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_bb803aa1fc98d69ba223",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_94e95cb2b35b98fb53c7",
+              "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+              "task": "AC",
+              "content_sha256": "bb17dc4fa2c9568f915d2022e69ad1f692b9b7900ddf119a025f0fecdde84f7b"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 6837 under financial_right, management_role, nonfinancial_counter. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 6837,
+                  "length": 331,
+                  "ast_id": 916
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_37e1a170069cb3bbd904",
+                "source_531ba3bfcec31ecedd9e",
+                "source_c62364733f8054b52551",
+                "support_1a3a4d4f89c7edd8bf47",
+                "support_82293fe0568aebedf0c6",
+                "support_8af4038a3e2405613bfe"
+              ],
+              "facts": [
+                "fact_79a026a857366df1430f",
+                "fact_ae8902acad31be84adc2",
+                "fact_b39ca8ae1e7dd59882ad",
+                "fact_cbfa3820269ae9915d4d",
+                "fact_d9cc82fd3b1a50d4716f"
+              ],
+              "meanings": [
+                "financial_right",
+                "management_role",
+                "nonfinancial_counter"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E6",
+          "E15",
+          "E22"
+        ]
+      },
+      {
+        "id": "scope_4c4d361d36e39aa8119c",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_82106fd6cbaa6955bff6",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_1247aa6b37518a332440",
+          "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+          "task": "AC",
+          "content_sha256": "19a64322225f56c442a2453b6ced17452060195f9b44d3e73559476c94e30e51"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "ef36b1d6b875630b897df6ed45bf81047508acf338f63c1e75ecf8d0eb1a612a",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_82106fd6cbaa6955bff6",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_1247aa6b37518a332440",
+              "semantic_version": "b9279375efd155f12c95368929a7d189c34c3963543da8e2b0ed91205f637c4a",
+              "task": "AC",
+              "content_sha256": "19a64322225f56c442a2453b6ced17452060195f9b44d3e73559476c94e30e51"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 3894 under financial_right, management_role, nonfinancial_counter. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 3894,
+                  "length": 137,
+                  "ast_id": 463
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_3c93ea145848fb6fafc7",
+                "source_6879891e508008bf155c",
+                "source_6d156141e1a17e4c4178",
+                "source_ddb144648c18c8def10d",
+                "source_e455b38402ac7443aefe",
+                "support_1a3a4d4f89c7edd8bf47",
+                "support_82293fe0568aebedf0c6",
+                "support_8af4038a3e2405613bfe"
+              ],
+              "facts": [
+                "fact_3d819f2ad65aa45cd4f2",
+                "fact_4c6a611bcc2cd387d7d7",
+                "fact_5a8a02207f1ff25e7b68",
+                "fact_79a026a857366df1430f",
+                "fact_b39ca8ae1e7dd59882ad",
+                "fact_b4544525da39791f151c",
+                "fact_e6f615709a7ae1db93b9"
+              ],
+              "meanings": [
+                "financial_right",
+                "management_role",
+                "nonfinancial_counter"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E4",
+          "E13",
+          "E20"
+        ]
+      },
+      {
+        "id": "scope_59652f4de5222fa4e62f",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_b7ffb4df4937098af23d",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_5c93bb237949e198ebdf",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "AC",
+          "content_sha256": "46cbe6b150100c444ce16a5a26b531fe1cf4f6292ec8ccfe649aa3c29fdf100a"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "c98c9a8085c427eab51bff541ba78f4a0418175704acc0a113869fb23ecbaa15",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_b7ffb4df4937098af23d",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_5c93bb237949e198ebdf",
+              "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "task": "AC",
+              "content_sha256": "46cbe6b150100c444ce16a5a26b531fe1cf4f6292ec8ccfe649aa3c29fdf100a"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "external_dependency",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 6666. A missing implementation or return condition can determine whether this effect commits or has the claimed meaning.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 6666,
+                  "length": 166,
+                  "ast_id": 864
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [],
+              "facts": [],
+              "meanings": [],
+              "origins": [
+                "source_observation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E8",
+          "E16",
+          "E23"
+        ]
+      },
+      {
+        "id": "scope_7bf449fad5ba705669dc",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_80cec6c2c6452ed74a9d",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_56f03738a57750071ebc",
+          "semantic_version": "e63f7dbdf08308f6f0bc58c8c60155838238b05ff8a0a9f3e609498aa5047792",
+          "task": "AC",
+          "content_sha256": "e32b40149ebc12add684997669881adf9428bfb215423531210e40625ac1e3d3"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "f17f9ff1014a554f25150bdb28e1dee5b54b7b37731ebbc9bb462f2b4d8192b2",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_80cec6c2c6452ed74a9d",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_56f03738a57750071ebc",
+              "semantic_version": "e63f7dbdf08308f6f0bc58c8c60155838238b05ff8a0a9f3e609498aa5047792",
+              "task": "AC",
+              "content_sha256": "e32b40149ebc12add684997669881adf9428bfb215423531210e40625ac1e3d3"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 2767 under current_authority_required, management_role. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2767,
+                  "length": 147,
+                  "ast_id": 321
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_54a7461dd136603a5c5c",
+                "source_9c05e7b18ac5ce5f05d7",
+                "support_82293fe0568aebedf0c6"
+              ],
+              "facts": [
+                "fact_194c2aa3ae0159a5443e",
+                "fact_81cc692ec142a1cf2468",
+                "fact_fe7f8db2393ebb25120c"
+              ],
+              "meanings": [
+                "current_authority_required",
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "source_policy_deduction",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E2",
+          "E11",
+          "E17"
+        ]
+      },
+      {
+        "id": "scope_8252e27ffd2508758689",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_015f876b62ccc5144200",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_f6f544ac3bb2666abc00",
+          "semantic_version": "65ba9a30d92e3c22eb99c86c670d28a3fa4fea7443d48d7d01c659477c782fa5",
+          "task": "AC",
+          "content_sha256": "af8704652c592957f889572f560751f712f0cbb62a9b9d8b9bea66f2760d8c3e"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "61037d8aff7a6243dc1f9641745173b55eae0da2426c917470765732046e2e8f",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_015f876b62ccc5144200",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_f6f544ac3bb2666abc00",
+              "semantic_version": "65ba9a30d92e3c22eb99c86c670d28a3fa4fea7443d48d7d01c659477c782fa5",
+              "task": "AC",
+              "content_sha256": "af8704652c592957f889572f560751f712f0cbb62a9b9d8b9bea66f2760d8c3e"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 4232 under management_role. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 4232,
+                  "length": 162,
+                  "ast_id": 509
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_330efd60b9983aac1e72",
+                "support_82293fe0568aebedf0c6"
+              ],
+              "facts": [
+                "fact_8f9823f52e3ea81e9dc3"
+              ],
+              "meanings": [
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E5",
+          "E14",
+          "E21"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "label": "baseline_usable",
+        "answer": "sat",
+        "count": 12
+      },
+      {
+        "label": "opened_by_change",
+        "answer": "sat",
+        "count": 12
+      },
+      {
+        "label": "both_usable",
+        "answer": "sat",
+        "count": 12
+      },
+      {
+        "label": "prefix_reachability",
+        "answer": "sat",
+        "count": 2
+      }
+    ],
+    "supports": [
+      {
+        "support": "source_54a7461dd136603a5c5c",
+        "fact": "fact_fe7f8db2393ebb25120c",
+        "origin": "source_policy_deduction",
+        "field": "policies",
+        "version": 1
+      },
+      {
+        "support": "support_1a3a4d4f89c7edd8bf47",
+        "fact": "fact_79a026a857366df1430f",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_5724ffd44a8089053a12",
+        "fact": "fact_64ea7fd394f3145fe5a4",
+        "origin": "verified_service",
+        "field": "policies",
+        "version": 1
+      },
+      {
+        "support": "support_82293fe0568aebedf0c6",
+        "fact": "fact_81cc692ec142a1cf2468",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_8af4038a3e2405613bfe",
+        "fact": "fact_b39ca8ae1e7dd59882ad",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fa2207747d01": {
+    "projection": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "evaluation": {
+      "target": "FCR-FREEZE",
+      "positive": false,
+      "paired_id": "RQ1_cd47d22b26a9",
+      "state": "not_detected",
+      "changes": {
+        "v32": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "last1164": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "prev200": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "decision_only": {
+          "before": "unsupported",
+          "after": "not_detected"
+        },
+        "protocol200": {
+          "before": "not_detected",
+          "after": "not_detected"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "not_detected",
+      "current": "not_detected",
+      "category": "FCR-FREEZE",
+      "assessment": "修复端，配对 RQ1_cd47d22b26a9。指定类判断不变。",
+      "observation": "同类调查出口由 {'parameter_only': 1} 变为 {}；关联开放缺口 0 → 0。 本次类别阅读依据 [['necessary_effect_absent', 'no_effect_in_scope']]。",
+      "old": {
+        "reasons": {
+          "parameter_only": 1
+        },
+        "readings": [
+          {
+            "category": "FCR-FREEZE",
+            "reason": "source_task_reading",
+            "applied_reasons": [
+              "parameter_only"
+            ],
+            "effects": [
+              "w_56494212493fc8dfdaa9"
+            ],
+            "explanation": "Judgment concerns a restriction on the designated holder's outgoing transfer. The source changes configuration without a downstream change to the relevant entitlement."
+          }
+        ],
+        "gaps": 0,
+        "queries": 3,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "invalid_semantic_row": 3,
+          "category_ambiguous_or_outside_supported_task": 1,
+          "unknown_assessment_vocabulary": 2,
+          "semantic_answer_outside_sent_scope": 1
+        }
+      },
+      "new": {
+        "reasons": {},
+        "readings": [
+          {
+            "category": "FCR-FREEZE",
+            "reason": "source_task_reading",
+            "applied_reasons": [
+              "necessary_effect_absent",
+              "no_effect_in_scope"
+            ],
+            "effects": [],
+            "explanation": "Judgment concerns a restriction on the designated holder's outgoing transfer. The source opinion and the actual effect directory support a normal reading of the inspected scope."
+          }
+        ],
+        "gaps": 0,
+        "queries": 3,
+        "supports": 2,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 5,
+          "category_ambiguous_or_outside_supported_task": 2,
+          "invalid_top_level_or_duplicate_key": 1
+        }
+      },
+      "previous_report": "79c98a16fb87ddd21ad411149f504bc53147eec45e72fd69b0c82ac19bdedce3",
+      "current_report": "f272fb5822db1028b2e07831c7969ccc38d6df2b8f82f42f3335b41124c3623c"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": [
+          {
+            "reason": "category_ambiguous_or_outside_supported_task",
+            "detail_sha256": "584fa8229627b5a9a94f08c67716c2c74fe9f2bfd5357d56476cb81c9bd3c36f",
+            "stage": "initial",
+            "list": "issues",
+            "index": 0,
+            "contract": "scoped_json_r2",
+            "issue": "freezeAccount-not-enforced"
+          },
+          {
+            "reason": "category_ambiguous_or_outside_supported_task",
+            "detail_sha256": "7f47e03920149fe24d616abae86356ffd8765ab986e4867921d86cc9abbd3482",
+            "stage": "initial",
+            "list": "issues",
+            "index": 1,
+            "contract": "scoped_json_r2",
+            "issue": "sellPrice-default-zero"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "response_kind": "invalid_protocol",
+        "usable": false,
+        "status": "protocol_diagnostic",
+        "normalization_diagnostics": [
+          {
+            "reason": "invalid_top_level_or_duplicate_key",
+            "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+            "stage": "focused_revision"
+          }
+        ]
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "freezeAccount-not-enforced",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_44a888141a20a6b22d93",
+          "original_category": "outgoing_restriction",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_d88303dfcefe67d66df5",
+          "semantic_version": "00c63677647c27c53921f5d424c030ec8d7342e433bf3384ffc0a42964131380",
+          "task": "FCR",
+          "content_sha256": "0061695c0d8be38aa1571a21547030253864ba2e110da5c0576b3c42e657e178"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "bba02c4e0b558e01d78016b308122af68aa060fb4e188f92343b605312ac863d",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_44a888141a20a6b22d93",
+              "original_category": "outgoing_restriction",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_d88303dfcefe67d66df5",
+              "semantic_version": "00c63677647c27c53921f5d424c030ec8d7342e433bf3384ffc0a42964131380",
+              "task": "FCR",
+              "content_sha256": "0061695c0d8be38aa1571a21547030253864ba2e110da5c0576b3c42e657e178"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "core_mismatch",
+              "explanation": "The assessment concerns the scoped program effect at source offset 5615. The interpretation and the underlying source object or condition do not agree.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 5615,
+                  "length": 228,
+                  "ast_id": 702
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [],
+              "facts": [],
+              "meanings": [],
+              "origins": [
+                "source_observation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E3"
+        ]
+      },
+      {
+        "id": "sellPrice-default-zero",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_918ba5060633b41237eb",
+          "category": "FCR-TRANSFER",
+          "original_category": "uncompensated_loss",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_bb99aa1343b4c15c2712",
+          "semantic_version": "264830a379a5329105e30349532e5e359f4370363651452f85d28bdf9adaf70f",
+          "task": "FCR",
+          "content_sha256": "2239f51a5af8317f289cbb8f869dd0693f10eb6d45742d230527cd2084e243a7"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-TRANSFER",
+          "reasons": [
+            "financial_property_conditions_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "5d66d2cc3054d30ade25876958c8b3bc1cf822b70df2ee92159e38cc2af674ee",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_918ba5060633b41237eb",
+              "category": "FCR-TRANSFER",
+              "original_category": "uncompensated_loss",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_bb99aa1343b4c15c2712",
+              "semantic_version": "264830a379a5329105e30349532e5e359f4370363651452f85d28bdf9adaf70f",
+              "task": "FCR",
+              "content_sha256": "2239f51a5af8317f289cbb8f869dd0693f10eb6d45742d230527cd2084e243a7"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "external_dependency",
+              "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 6389. A missing implementation or return condition can determine whether this effect commits or has the claimed meaning.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 6389,
+                  "length": 658,
+                  "ast_id": 872
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [],
+              "facts": [],
+              "meanings": [],
+              "origins": [
+                "source_observation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E2",
+          "E4",
+          "E5",
+          "E6",
+          "E7",
+          "E8",
+          "E9"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "label": "baseline_usable",
+        "answer": "sat",
+        "count": 1
+      },
+      {
+        "label": "opened_by_change",
+        "answer": "sat",
+        "count": 1
+      },
+      {
+        "label": "both_usable",
+        "answer": "sat",
+        "count": 1
+      }
+    ],
+    "supports": [
+      {
+        "support": "support_434f55bf7140a58261f1",
+        "fact": "fact_3ecab7cc615ea6e5b40e",
+        "origin": "verified_service",
+        "field": "policies",
+        "version": 1
+      },
+      {
+        "support": "support_ac9ca82e7e76c20a9d13",
+        "fact": "fact_414ef9f7d779d17d5733",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fbd0377ce541": {
+    "projection": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "evaluation": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_8e8598bb724e",
+      "state": "not_detected",
+      "changes": {
+        "v32": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "last1164": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "prev200": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "decision_only": {
+          "before": "unsupported",
+          "after": "not_detected"
+        },
+        "protocol200": {
+          "before": "unsupported",
+          "after": "not_detected"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "not_detected",
+      "category": "FCR-PAUSE",
+      "assessment": "修复端，配对 RQ1_8e8598bb724e。已作出正确阴性。",
+      "observation": "同类调查出口由 {} 变为 {}；关联开放缺口 1 → 0。 本次类别阅读依据 [['necessary_effect_absent', 'no_effect_in_scope']]。",
+      "old": {
+        "reasons": {},
+        "readings": [],
+        "gaps": 1,
+        "queries": 0,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "invalid_semantic_row": 10,
+          "category_ambiguous_or_outside_supported_task": 2,
+          "unknown_assessment_vocabulary": 2,
+          "semantic_answer_outside_sent_scope": 2,
+          "core_unresolved_retained_for_investigation": 2
+        }
+      },
+      "new": {
+        "reasons": {},
+        "readings": [
+          {
+            "category": "FCR-PAUSE",
+            "reason": "source_task_reading",
+            "applied_reasons": [
+              "necessary_effect_absent",
+              "no_effect_in_scope"
+            ],
+            "effects": [],
+            "explanation": "Judgment concerns a common restriction on ordinary outgoing transfers. The source opinion and the actual effect directory support a normal reading of the inspected scope."
+          }
+        ],
+        "gaps": 0,
+        "queries": 0,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 1,
+          "invalid_semantic_row": 2
+        }
+      },
+      "previous_report": "163a641747bfea31475d2b3eeca49e0e59f801a7e2c7934a45fee13a30efbf8e",
+      "current_report": "07424098a4e5c2315f70f7fe36fe49ecc8535abe97275a0b3b2797acd39b2a7b"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": false,
+        "status": "analysis_received",
+        "normalization_diagnostics": [
+          {
+            "reason": "invalid_semantic_row",
+            "detail_sha256": "9b9ae4f7c027198c7ad843aeeb0b3082995049d94f40197abbdbcb2e895fdd9e",
+            "stage": "initial",
+            "list": "policies",
+            "field": "meaning",
+            "subreason": "outside_facet_vocabulary",
+            "actual_type": "str",
+            "index": 0,
+            "value_length": 234,
+            "value_sha256": "1531cfe31d32285cca73e3ab9f311c54b1618569b390db5873ceda7cd843d441",
+            "contract": "scoped_json_r2",
+            "expected_type": "str"
+          },
+          {
+            "reason": "invalid_semantic_row",
+            "detail_sha256": "94be2963baab3b40364743d65f9d739397a2cf7deeecc82a2ddf29a36a25c396",
+            "stage": "initial",
+            "list": "policies",
+            "field": "meaning",
+            "subreason": "outside_facet_vocabulary",
+            "actual_type": "str",
+            "index": 1,
+            "value_length": 251,
+            "value_sha256": "38086773938f27f600555cd112a5d0d208796ab7f2bbedd4191f896a8c63723b",
+            "contract": "scoped_json_r2",
+            "expected_type": "str"
+          }
+        ]
+      }
+    ],
+    "findings": [],
+    "inspection": [],
+    "queries": [],
+    "supports": [],
+    "revisions": []
+  },
+  "RQ1_fc71e6703f0d": {
+    "projection": {
+      "AC": "unsupported"
+    },
+    "evaluation": {
+      "roots": [
+        {
+          "member": "RQ1_fc71e6703f0d",
+          "reference": "D2:253:original:1",
+          "function": "pay",
+          "v32": "FN",
+          "last1164": "FN",
+          "b5": "FN",
+          "ACTaint_DeepSeek": "FN",
+          "prev200": "FN",
+          "decision_only": "FN",
+          "prev200_findings": [],
+          "decision_only_findings": [],
+          "protocol200": "FN",
+          "current": "FN"
+        },
+        {
+          "member": "RQ1_fc71e6703f0d",
+          "reference": "D2:253:original:2",
+          "function": "fin",
+          "v32": "TP",
+          "last1164": "TP",
+          "b5": "TP",
+          "ACTaint_DeepSeek": "TP",
+          "prev200": "TP",
+          "decision_only": "TP",
+          "prev200_findings": [
+            "finding_9f3873ffca359d445bc1"
+          ],
+          "decision_only_findings": [
+            "finding_fba11e9ab9af5bf3591d"
+          ],
+          "protocol200": "TP",
+          "current": "FN"
+        }
+      ],
+      "findings": [],
+      "changes": {
+        "v32": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        },
+        "last1164": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        },
+        "b5": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        },
+        "prev200": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        },
+        "decision_only": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        },
+        "protocol200": {
+          "gained": [],
+          "lost": [
+            "D2:253:original:2"
+          ]
+        }
+      }
+    },
+    "actual": {
+      "previous": "alarm",
+      "current": "unsupported",
+      "category": "AC",
+      "assessment": "新增根因 []；丢失根因 ['D2:253:original:2']。参考外报警位置：撤回 []，新增 []。",
+      "observation": "同类调查出口由 {'program_support': 1, 'external_dependency': 1} 变为 {'policy_missing': 1, 'external_dependency': 1}；关联开放缺口 1 → 2。",
+      "old": {
+        "reasons": {
+          "program_support": 1,
+          "external_dependency": 1
+        },
+        "readings": [],
+        "gaps": 1,
+        "queries": 4,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "invalid_semantic_row": 6,
+          "unknown_assessment_vocabulary": 2,
+          "category_ambiguous_or_outside_supported_task": 1,
+          "semantic_answer_outside_sent_scope": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "policy_missing": 1,
+          "external_dependency": 1
+        },
+        "readings": [],
+        "gaps": 2,
+        "queries": 0,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 5
+        }
+      },
+      "previous_report": "7adc3bfdf58dcead50257db1db86f3ba46190b04ab3c1717bdf513f2dafc5fb8",
+      "current_report": "bed0af8fafb531f3995c27e44897e9e46515979f8ad1bcd3bc7d7a3aef507d6c"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "host_candidate_3f624ca61b642b17",
+        "version": 1,
+        "compiled_property": {
+          "id": "property_fa2f88c322aa0d1e6298",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_cc26dce499cd00f213ce",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "AC",
+          "content_sha256": "daf878337152f1461b84cc1c991ca7858e1ed022265eb8a81cd09c183520c48d"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "72b0e778cbc5e11b1c47e3a78c3d3763cf04099580185dfd6831ac0becb9b67a",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_fa2f88c322aa0d1e6298",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_cc26dce499cd00f213ce",
+              "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "task": "AC",
+              "content_sha256": "daf878337152f1461b84cc1c991ca7858e1ed022265eb8a81cd09c183520c48d"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 250. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 250,
+                  "length": 106,
+                  "ast_id": 44
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [],
+              "facts": [],
+              "meanings": [],
+              "origins": [
+                "source_observation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E4"
+        ]
+      },
+      {
+        "id": "scope_6c542ad6c8b66d7441e4",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_efa6f639a5799389aa6b",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_61a8eea0add5e9fd7dd8",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "AC",
+          "content_sha256": "3c7cd9db605be5e87fe7eeafd05b8d0970d27f586ff54a7315083384af176f77"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "7e4ba5aba09d42bc862bb440d545607afc130bbc5f86f642f0d72d3053ff1a43",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_efa6f639a5799389aa6b",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_61a8eea0add5e9fd7dd8",
+              "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "task": "AC",
+              "content_sha256": "3c7cd9db605be5e87fe7eeafd05b8d0970d27f586ff54a7315083384af176f77"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "external_dependency",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 111. A missing implementation or return condition can determine whether this effect commits or has the claimed meaning.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 111,
+                  "length": 134,
+                  "ast_id": 29
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [],
+              "facts": [],
+              "meanings": [],
+              "origins": [
+                "source_observation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E2",
+          "E3"
+        ]
+      }
+    ],
+    "queries": [],
+    "supports": [
+      {
+        "support": "support_cdba2d3b1266986e34c6",
+        "fact": "fact_a3723d49481d9b731739",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fccabbab2795": {
+    "projection": {
+      "AC": "unsupported"
+    },
+    "evaluation": {
+      "roots": [],
+      "findings": [],
+      "changes": {
+        "v32": {
+          "gained": [],
+          "lost": []
+        },
+        "last1164": {
+          "gained": [],
+          "lost": []
+        },
+        "b5": {
+          "gained": [],
+          "lost": []
+        },
+        "prev200": {
+          "gained": [],
+          "lost": []
+        },
+        "decision_only": {
+          "gained": [],
+          "lost": []
+        },
+        "protocol200": {
+          "gained": [],
+          "lost": []
+        }
+      }
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "unsupported",
+      "category": "AC",
+      "assessment": "新增根因 []；丢失根因 []。参考外报警位置：撤回 []，新增 []。",
+      "observation": "同类调查出口由 {'policy_missing': 3} 变为 {'policy_missing': 3}；关联开放缺口 4 → 4。",
+      "old": {
+        "reasons": {
+          "policy_missing": 3
+        },
+        "readings": [],
+        "gaps": 4,
+        "queries": 0,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 2,
+          "invalid_semantic_row": 2,
+          "semantic_answer_outside_sent_scope": 3,
+          "unrelated_or_secondary_graph_pairs_deferred": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "policy_missing": 3
+        },
+        "readings": [],
+        "gaps": 4,
+        "queries": 0,
+        "supports": 3,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 1,
+          "unrelated_or_secondary_graph_pairs_deferred": 2,
+          "invalid_top_level_or_duplicate_key": 1
+        }
+      },
+      "previous_report": "807ca0697230698c9e92b4ca4217521a3fd02ba0c694edeca1e3587af02d0f0c",
+      "current_report": "3fe796c664c3b007b624efd32a57e52741cd0dca2be723a0f7a0cec73f865925"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "response_kind": "invalid_protocol",
+        "usable": false,
+        "status": "protocol_diagnostic",
+        "normalization_diagnostics": [
+          {
+            "reason": "invalid_top_level_or_duplicate_key",
+            "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+            "stage": "focused_revision"
+          }
+        ]
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "scope_46518512ff27da0afc16",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_875e54078e281b3bc498",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_73b433dd0f938354e7ed",
+          "semantic_version": "18bbda1736f306aa434cefe2b73dbb0d7ff26726fb868d3039cf211613fddee3",
+          "task": "AC",
+          "content_sha256": "c6ec44a5e25f945a48aed69e387fa4d9aabc1c0479df3f3e58da7a1f5f136901"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "27b22db7ab81bfb38e22d49cef4120466decfae8747fde0247e3f4b80274cc4a",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_875e54078e281b3bc498",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_73b433dd0f938354e7ed",
+              "semantic_version": "18bbda1736f306aa434cefe2b73dbb0d7ff26726fb868d3039cf211613fddee3",
+              "task": "AC",
+              "content_sha256": "c6ec44a5e25f945a48aed69e387fa4d9aabc1c0479df3f3e58da7a1f5f136901"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 262 under management_role. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 262,
+                  "length": 186,
+                  "ast_id": 46
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_b431ee837e4867332d4d"
+              ],
+              "facts": [
+                "fact_4d968701619a49f0dd0a"
+              ],
+              "meanings": [
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E4"
+        ]
+      },
+      {
+        "id": "scope_606c53ccf1cfff86f419",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_52f2685917f8b3b6b85d",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_02d491665fb2e9ed7037",
+          "semantic_version": "72ee418feb83c5a95d5e8981fbe48d139c8245beceeb755d2d4d16115409e668",
+          "task": "AC",
+          "content_sha256": "9a0a9b0f7d008e1203fb67fd1b108e41c3c2a7e20538012c3b37d44892a8d09c"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "a771ff20eb00fb20de6e38c0a824a0191e886b0d46fb13612cf19eea5d431f7e",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_52f2685917f8b3b6b85d",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_02d491665fb2e9ed7037",
+              "semantic_version": "72ee418feb83c5a95d5e8981fbe48d139c8245beceeb755d2d4d16115409e668",
+              "task": "AC",
+              "content_sha256": "9a0a9b0f7d008e1203fb67fd1b108e41c3c2a7e20538012c3b37d44892a8d09c"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 453 under holder_authorization_applies, management_role. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 453,
+                  "length": 146,
+                  "ast_id": 69
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_d200751c533f0be80afd",
+                "support_350370ec5f1a2c7a38be",
+                "support_b431ee837e4867332d4d"
+              ],
+              "facts": [
+                "fact_1eea0625a41c5823aa8f",
+                "fact_a0f637e3620c2143ee20"
+              ],
+              "meanings": [
+                "holder_authorization_applies",
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E2",
+          "E6",
+          "E7"
+        ]
+      },
+      {
+        "id": "scope_65151981c95ec187e538",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_8fd7c148e8cd2a6dca45",
+          "category": "AC",
+          "domain": "ac_checked_prestate_r1",
+          "operation": "op_73b433dd0f938354e7ed",
+          "semantic_version": "18bbda1736f306aa434cefe2b73dbb0d7ff26726fb868d3039cf211613fddee3",
+          "task": "AC",
+          "content_sha256": "82b9d8597424885f5a9a47d8cb79521a4be3f79fee8c355d756ca37f1bf41e1b"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "AC",
+          "reasons": [
+            "expected_authorization_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "25d63949f160340f5aab16c31cab3d9a217c82680186d8b338a49fd7e4ab1240",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_8fd7c148e8cd2a6dca45",
+              "category": "AC",
+              "domain": "ac_checked_prestate_r1",
+              "operation": "op_73b433dd0f938354e7ed",
+              "semantic_version": "18bbda1736f306aa434cefe2b73dbb0d7ff26726fb868d3039cf211613fddee3",
+              "task": "AC",
+              "content_sha256": "82b9d8597424885f5a9a47d8cb79521a4be3f79fee8c355d756ca37f1bf41e1b"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "policy_missing",
+              "explanation": "The assessment concerns the policy governing the protected effect at source offset 262 under management_role, other_source_meaning. The affected effect is locatable, but its intended authority cannot be distinguished from a permitted public use.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 262,
+                  "length": 186,
+                  "ast_id": 46
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_77c37dfc4b5c8eec77a4",
+                "support_b431ee837e4867332d4d"
+              ],
+              "facts": [
+                "fact_4d968701619a49f0dd0a",
+                "fact_7e7608027a0609baa838"
+              ],
+              "meanings": [
+                "management_role",
+                "other_source_meaning"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E3",
+          "E5"
+        ]
+      }
+    ],
+    "queries": [],
+    "supports": [
+      {
+        "support": "support_350370ec5f1a2c7a38be",
+        "fact": "fact_a0f637e3620c2143ee20",
+        "origin": "verified_service",
+        "field": "policies",
+        "version": 1
+      },
+      {
+        "support": "support_77c37dfc4b5c8eec77a4",
+        "fact": "fact_7e7608027a0609baa838",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_b431ee837e4867332d4d",
+        "fact": "fact_4d968701619a49f0dd0a",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fe11616caf66": {
+    "projection": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "evaluation": {
+      "target": "FCR-TRANSFER",
+      "positive": true,
+      "paired_id": "RQ1_6476444da7e8",
+      "state": "alarm",
+      "changes": {
+        "v32": {
+          "before": "alarm",
+          "after": "alarm"
+        },
+        "last1164": {
+          "before": "unsupported",
+          "after": "alarm"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "alarm"
+        },
+        "prev200": {
+          "before": "alarm",
+          "after": "alarm"
+        },
+        "decision_only": {
+          "before": "alarm",
+          "after": "alarm"
+        },
+        "protocol200": {
+          "before": "unsupported",
+          "after": "alarm"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "alarm",
+      "category": "FCR-TRANSFER",
+      "assessment": "风险端，配对 RQ1_6476444da7e8。新增指定类命中。",
+      "observation": "同类调查出口由 {'scope_missing': 1} 变为 {'program_support': 1}；关联开放缺口 1 → 0。",
+      "old": {
+        "reasons": {
+          "scope_missing": 1
+        },
+        "readings": [],
+        "gaps": 1,
+        "queries": 0,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "invalid_semantic_row": 9,
+          "unknown_assessment_vocabulary": 2,
+          "semantic_answer_outside_sent_scope": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "program_support": 1
+        },
+        "readings": [],
+        "gaps": 0,
+        "queries": 4,
+        "supports": 2,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 8
+        }
+      },
+      "previous_report": "7e14ac4f89e123a4bfc65f0d1d5f6fa550ffe638eb67dfd211f481aa6be1b2af",
+      "current_report": "d567e0402be7e10b44cfa0a5c78c44dd87ed0d77e6268548b15e05402897118e"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [
+      {
+        "id": "finding_d7c6399862640d9d36fb",
+        "category": "FCR-TRANSFER",
+        "target": "units/program.sol:Overflow",
+        "operation": "op_3fdd7b2953cdb2ac572a",
+        "comparison_scope": "main",
+        "evidence_refs": [
+          "E1",
+          "E2"
+        ],
+        "issue_ids": [
+          "scope_251d782e0ddb95991420"
+        ],
+        "root_location": {
+          "file": "units/program.sol",
+          "start": 463,
+          "length": 476,
+          "ast_id": 106
+        },
+        "evidence_level": "source_semantic_and_program",
+        "evidence_scope": {
+          "scope_sha256": "57277808799f069d9505f83866f0974580a3b85ff4d942900506e12d4cba0a19",
+          "route_status": "supported",
+          "deployment_reachability_proved": false,
+          "entire_contract_safety_proved": false,
+          "compiled_property": {
+            "id": "property_ebf46177eb3984dc51f4",
+            "category": "FCR-TRANSFER",
+            "domain": "fcr_conditional_capability_r1",
+            "operation": "op_3fdd7b2953cdb2ac572a",
+            "semantic_version": "9586bff9388c3b427a7c3afe217543787e50292b30c1f5965e050ac3a9de9e10",
+            "task": "FCR",
+            "content_sha256": "cc4334e0188102bfff1ae06b72b3123577849fd71101df76d2c0321b600414ef"
+          },
+          "decision": {
+            "status": "risk",
+            "reason": "program_support",
+            "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.",
+            "locations": [
+              {
+                "file": "units/program.sol",
+                "start": 463,
+                "length": 476,
+                "ast_id": 106
+              }
+            ],
+            "effects": [],
+            "rules": [
+              "P03",
+              "P05",
+              "P06"
+            ],
+            "supports": [
+              "source_ae4cc1ec5ae53356654e",
+              "source_c0e3d7feb692c34b99cc",
+              "support_957b0fe4f577a228b4d0",
+              "support_ed5380a522f332dc551a"
+            ],
+            "facts": [
+              "fact_3093a41c3434039deec2",
+              "fact_88fcd9d3ededaa671a9e",
+              "fact_c084e88583a07c50173f"
+            ],
+            "meanings": [
+              "financial_right",
+              "management_role"
+            ],
+            "origins": [
+              "source_observation",
+              "verified_service",
+              "rule_derivation",
+              "scoped_program_check"
+            ]
+          }
+        },
+        "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent."
+      }
+    ],
+    "inspection": [
+      {
+        "id": "scope_251d782e0ddb95991420",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_ebf46177eb3984dc51f4",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3fdd7b2953cdb2ac572a",
+          "semantic_version": "9586bff9388c3b427a7c3afe217543787e50292b30c1f5965e050ac3a9de9e10",
+          "task": "FCR",
+          "content_sha256": "cc4334e0188102bfff1ae06b72b3123577849fd71101df76d2c0321b600414ef"
+        },
+        "assessment_result": {
+          "reportable": true,
+          "category": "FCR-TRANSFER",
+          "reasons": [],
+          "scope": {
+            "scope_sha256": "57277808799f069d9505f83866f0974580a3b85ff4d942900506e12d4cba0a19",
+            "route_status": "supported",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_ebf46177eb3984dc51f4",
+              "category": "FCR-TRANSFER",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_3fdd7b2953cdb2ac572a",
+              "semantic_version": "9586bff9388c3b427a7c3afe217543787e50292b30c1f5965e050ac3a9de9e10",
+              "task": "FCR",
+              "content_sha256": "cc4334e0188102bfff1ae06b72b3123577849fd71101df76d2c0321b600414ef"
+            },
+            "decision": {
+              "status": "risk",
+              "reason": "program_support",
+              "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 463,
+                  "length": 476,
+                  "ast_id": 106
+                }
+              ],
+              "effects": [],
+              "rules": [
+                "P03",
+                "P05",
+                "P06"
+              ],
+              "supports": [
+                "source_ae4cc1ec5ae53356654e",
+                "source_c0e3d7feb692c34b99cc",
+                "support_957b0fe4f577a228b4d0",
+                "support_ed5380a522f332dc551a"
+              ],
+              "facts": [
+                "fact_3093a41c3434039deec2",
+                "fact_88fcd9d3ededaa671a9e",
+                "fact_c084e88583a07c50173f"
+              ],
+              "meanings": [
+                "financial_right",
+                "management_role"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service",
+                "rule_derivation",
+                "scoped_program_check"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E2"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "label": "local_premises_feasible",
+        "answer": "sat",
+        "count": 2
+      },
+      {
+        "label": "direct_effect",
+        "answer": "sat",
+        "count": 1
+      },
+      {
+        "label": "direct_effect",
+        "answer": "unsat",
+        "count": 1
+      }
+    ],
+    "supports": [
+      {
+        "support": "support_957b0fe4f577a228b4d0",
+        "fact": "fact_ed5a113593c64882bfdb",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_ed5380a522f332dc551a",
+        "fact": "fact_c084e88583a07c50173f",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fe4ace2cd8e5": {
+    "projection": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "evaluation": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_55a1e2ef0f09",
+      "state": "unsupported",
+      "changes": {
+        "v32": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "last1164": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "prev200": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "decision_only": {
+          "before": "unsupported",
+          "after": "unsupported"
+        },
+        "protocol200": {
+          "before": "unsupported",
+          "after": "unsupported"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "unsupported",
+      "category": "FCR-DESTROY",
+      "assessment": "修复端，配对 RQ1_55a1e2ef0f09。指定类判断不变。",
+      "observation": "同类调查出口由 {'scope_missing': 1} 变为 {'scope_missing': 1}；关联开放缺口 2 → 1。",
+      "old": {
+        "reasons": {
+          "scope_missing": 1
+        },
+        "readings": [],
+        "gaps": 2,
+        "queries": 6,
+        "supports": 0,
+        "revisions": 0,
+        "diagnostics": {
+          "invalid_semantic_row": 6,
+          "unknown_assessment_vocabulary": 2,
+          "semantic_answer_outside_sent_scope": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "scope_missing": 1
+        },
+        "readings": [],
+        "gaps": 1,
+        "queries": 20,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 5,
+          "unrelated_or_secondary_graph_pairs_deferred": 5
+        }
+      },
+      "previous_report": "16bc6a57c27a462d546198cb9dc5d4270bb44030c40382add3b232e3b11c1b47",
+      "current_report": "0b710bb8096021d464e1edf49c8c2612f45a834929823399a97fe38bb09c0f18"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "scope_278912473c214b74e929",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_19b3566b92a46f9e6ef3",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_7d2a8507fb9f6168c2e2",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "264e7182163cfc6b78f508476c6d871c771e1cce0ba29f181c64f814a3d970fc"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-TRANSFER",
+          "reasons": [
+            "financial_property_conditions_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "12b53977b60fde896b194c7ffffa36200127a30b58d72b466544495580d21cb5",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_19b3566b92a46f9e6ef3",
+              "category": "FCR-TRANSFER",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_7d2a8507fb9f6168c2e2",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "264e7182163cfc6b78f508476c6d871c771e1cce0ba29f181c64f814a3d970fc"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 5163 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 5163,
+                  "length": 666,
+                  "ast_id": 645
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E4",
+          "E11",
+          "E18",
+          "E24",
+          "E29"
+        ]
+      },
+      {
+        "id": "scope_46c3f36e35363391db14",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_a02b950ad988b76818fb",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_49a47025499036c051f2",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "2f180cce0dcaf58787f97e77f87531ec3f1ea82621c287edcb60292e7e435143"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-TRANSFER",
+          "reasons": [
+            "covered_holder_grant"
+          ],
+          "scope": {
+            "scope_sha256": "ff924f3d067a608509067bc6e3b70b2b2222ab5c7898396f2aae0cc9ac00b6c8",
+            "route_status": "excluded",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_a02b950ad988b76818fb",
+              "category": "FCR-TRANSFER",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_49a47025499036c051f2",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "2f180cce0dcaf58787f97e77f87531ec3f1ea82621c287edcb60292e7e435143"
+            },
+            "decision": {
+              "status": "excluded",
+              "reason": "covered_holder_grant",
+              "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 5835 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 5835,
+                  "length": 754,
+                  "ast_id": 742
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E5"
+        ]
+      },
+      {
+        "id": "scope_512ea90b09e3187c80f7",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_fc3b9dc7cc240b101e13",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_b7ee06eb6d5e6131c641",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "5d54e8bebd44675e00d26148d13101e558cacc195be2b0d3a7b9d1e7132f8d8f"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "3af850b70312dbcc81e678d8c659dd09a70cde40be35cd6f9adf365e30c9bdb6",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_fc3b9dc7cc240b101e13",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_b7ee06eb6d5e6131c641",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "5d54e8bebd44675e00d26148d13101e558cacc195be2b0d3a7b9d1e7132f8d8f"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns the scoped program effect at source offset 10609 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 10609,
+                  "length": 728,
+                  "ast_id": 1264
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E9",
+          "E16",
+          "E22"
+        ]
+      },
+      {
+        "id": "scope_5705f0980a58c844a618",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_7c7c6e5683f3e3ea161e",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_6807665a77d9274c0b7f",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "ce40c3b9539cfa486ff5bd75d9d60c63f201d521a0fd24f5484d492e3654ef97"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "9bd224f881972ab4293cae24f03f94ef6bdfcbbeca2e650f171933c8e2539f34",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_7c7c6e5683f3e3ea161e",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_6807665a77d9274c0b7f",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "ce40c3b9539cfa486ff5bd75d9d60c63f201d521a0fd24f5484d492e3654ef97"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns the scoped program effect at source offset 9036 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 9036,
+                  "length": 480,
+                  "ast_id": 1080
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E7",
+          "E14",
+          "E20"
+        ]
+      },
+      {
+        "id": "scope_c238921e44470209608b",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_48cf86fbf8b921ae1014",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_deecd40cc65f9cd69931",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "34b066f7d2459ad6dccd40385fa60bbb02c52724dd0354af22a5487d5734b0b9"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "5f2f77b3e2df3709bd2fbf7d876f6caff1adbe05558b0f4ce135789880a679b7",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_48cf86fbf8b921ae1014",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_deecd40cc65f9cd69931",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "34b066f7d2459ad6dccd40385fa60bbb02c52724dd0354af22a5487d5734b0b9"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns the scoped program effect at source offset 9997 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 9997,
+                  "length": 606,
+                  "ast_id": 1187
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E8",
+          "E15",
+          "E21"
+        ]
+      },
+      {
+        "id": "scope_d381ae6a2c9bbe653f6a",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_e8f60cf4aba137565210",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3df0acff25f334b7632a",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "0e9deed58a74ae6e72138bcf5d33b95bb5f82ffd9a9c06324679fd759d275d7b"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "8d8be05de73ad290184e8a908a48dc252a2b579a82fd48515ce8471a7bdef6a5",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_e8f60cf4aba137565210",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_3df0acff25f334b7632a",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "0e9deed58a74ae6e72138bcf5d33b95bb5f82ffd9a9c06324679fd759d275d7b"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns the scoped program effect at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 8249,
+                  "length": 781,
+                  "ast_id": 1026
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E17"
+        ]
+      },
+      {
+        "id": "scope_d381ae6a2c9bbe653f6a::FCR-DESTROY",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_5ff622f557a0351750ce",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3df0acff25f334b7632a",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "9b5a37749c7fc8b71bd61a99e9e7e978775d568f8fc39d582ac7e4ec9e1935fc"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-DESTROY",
+          "reasons": [
+            "financial_property_conditions_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "5f6340b7d9653bbc93afd8c1dbb41c298b6f36e711ae23cb305ad317a6777d72",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_5ff622f557a0351750ce",
+              "category": "FCR-DESTROY",
+              "original_category": "FCR-DESTROY",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_3df0acff25f334b7632a",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "9b5a37749c7fc8b71bd61a99e9e7e978775d568f8fc39d582ac7e4ec9e1935fc"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 8249,
+                  "length": 781,
+                  "ast_id": 1026
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E2",
+          "E10",
+          "E23",
+          "E25"
+        ]
+      },
+      {
+        "id": "scope_d381ae6a2c9bbe653f6a::FCR-MINT",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_68b02a711eb8cfc4a4ee",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3df0acff25f334b7632a",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "4e718f87293557cd83cd4703a15c790552a9905eee0e95028054bf83a3ea217b"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-MINT",
+          "reasons": [
+            "financial_property_conditions_not_established"
+          ],
+          "scope": {
+            "scope_sha256": "456b14095f34fa1a02f30940d306f26b786d5fb70e45749db00a16c1c2cf5dd5",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_68b02a711eb8cfc4a4ee",
+              "category": "FCR-MINT",
+              "original_category": "FCR-MINT",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_3df0acff25f334b7632a",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "4e718f87293557cd83cd4703a15c790552a9905eee0e95028054bf83a3ea217b"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 8249,
+                  "length": 781,
+                  "ast_id": 1026
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E3",
+          "E12",
+          "E27",
+          "E28"
+        ]
+      },
+      {
+        "id": "scope_fcdc70e51a748bcb8c02",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_728549d80ac57a15c562",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_04263711fdcfe0067563",
+          "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+          "task": "FCR",
+          "content_sha256": "2341676992cc2e065c594d3914b2b2843440aa62e64cb070b1456ed5121b1fcc"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": null,
+          "reasons": [
+            "property_task_meaning_unresolved"
+          ],
+          "scope": {
+            "scope_sha256": "ee3d161f0fd17f33bdfe5bc5deb9ba8340f4a95a266fb6eadac343d67e3dcd6f",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_728549d80ac57a15c562",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_04263711fdcfe0067563",
+              "semantic_version": "122944cb959faa67c0ce9e2633bc9c4512a10796bd298c410b8fa962cd6735d3",
+              "task": "FCR",
+              "content_sha256": "2341676992cc2e065c594d3914b2b2843440aa62e64cb070b1456ed5121b1fcc"
+            },
+            "decision": {
+              "status": "open",
+              "reason": "scope_missing",
+              "explanation": "The assessment concerns the scoped program effect at source offset 9522 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 9522,
+                  "length": 469,
+                  "ast_id": 1131
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_10958688a8c3535b0572"
+              ],
+              "facts": [
+                "fact_6edefc937d8c82fb8edc"
+              ],
+              "meanings": [
+                "financial_right"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E6",
+          "E13",
+          "E19",
+          "E26"
+        ]
+      }
+    ],
+    "queries": [
+      {
+        "label": "baseline_usable",
+        "answer": "sat",
+        "count": 5
+      },
+      {
+        "label": "opened_by_change",
+        "answer": "sat",
+        "count": 4
+      },
+      {
+        "label": "both_usable",
+        "answer": "sat",
+        "count": 5
+      },
+      {
+        "label": "opened_by_change",
+        "answer": "unsat",
+        "count": 2
+      },
+      {
+        "label": "baseline_usable",
+        "answer": "unsat",
+        "count": 1
+      },
+      {
+        "label": "both_usable",
+        "answer": "unsat",
+        "count": 1
+      },
+      {
+        "label": "prefix_reachability",
+        "answer": "sat",
+        "count": 1
+      },
+      {
+        "label": "prefix_reachability",
+        "answer": "unsat",
+        "count": 1
+      }
+    ],
+    "supports": [
+      {
+        "support": "support_10958688a8c3535b0572",
+        "fact": "fact_6edefc937d8c82fb8edc",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_fe7add810da5": {
+    "projection": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "evaluation": {
+      "target": "FCR-DESTROY",
+      "positive": false,
+      "paired_id": "RQ1_15346457ba72",
+      "state": "not_detected",
+      "changes": {
+        "v32": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "last1164": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "prev200": {
+          "before": "not_detected",
+          "after": "not_detected"
+        },
+        "decision_only": {
+          "before": "unsupported",
+          "after": "not_detected"
+        },
+        "protocol200": {
+          "before": "not_detected",
+          "after": "not_detected"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "not_detected",
+      "current": "not_detected",
+      "category": "FCR-DESTROY",
+      "assessment": "修复端，配对 RQ1_15346457ba72。指定类判断不变。",
+      "observation": "同类调查出口由 {'source_check_excluded': 1} 变为 {'source_check_excluded': 1}；关联开放缺口 0 → 0。 本次类别阅读依据 [['source_check_excluded']]。",
+      "old": {
+        "reasons": {
+          "source_check_excluded": 1
+        },
+        "readings": [
+          {
+            "category": "FCR-DESTROY",
+            "reason": "source_task_reading",
+            "applied_reasons": [
+              "source_check_excluded"
+            ],
+            "effects": [
+              "w_06b2a937fa9c05378521",
+              "w_cfaba286975306072754"
+            ],
+            "explanation": "Judgment concerns an uncompensated loss of another holder's entitlement. Source or bounded program evidence excludes the relevant necessary condition in this scope."
+          }
+        ],
+        "gaps": 0,
+        "queries": 0,
+        "supports": 4,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 3,
+          "unknown_assessment_vocabulary": 3,
+          "category_ambiguous_or_outside_supported_task": 2,
+          "revision_outside_actual_feedback_scope": 1
+        }
+      },
+      "new": {
+        "reasons": {
+          "source_check_excluded": 1
+        },
+        "readings": [
+          {
+            "category": "FCR-DESTROY",
+            "reason": "source_task_reading",
+            "applied_reasons": [
+              "source_check_excluded"
+            ],
+            "effects": [
+              "w_06b2a937fa9c05378521",
+              "w_cfaba286975306072754"
+            ],
+            "explanation": "Judgment concerns an uncompensated loss of another holder's entitlement. Source or bounded program evidence excludes the relevant necessary condition in this scope."
+          }
+        ],
+        "gaps": 0,
+        "queries": 0,
+        "supports": 3,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 9
+        }
+      },
+      "previous_report": "dae993ba4f4041c49bd0c96b122b0adbb910513add27a69d4fa92680f1730758",
+      "current_report": "b265cf8a2777087f88a4e99d323ee653410e511f2e329b4af648701e4007b1c0"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [],
+    "inspection": [
+      {
+        "id": "scope_fd9d8e4569d40642ebf6",
+        "version": 0,
+        "compiled_property": {
+          "id": "property_6712f1d575c109e413c2",
+          "category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_33875552a1860148a6e9",
+          "semantic_version": "05447bbb990f3142813bfde0ca5a3891a8f2e50481d88a7780998af12bdf74c9",
+          "task": "FCR",
+          "content_sha256": "9ee38bf576e421b54e154fd3e16a7ad39b786d58ff84e608031189b6fc558ae5"
+        },
+        "assessment_result": {
+          "reportable": false,
+          "category": "FCR-DESTROY",
+          "reasons": [
+            "matched_direct_effect_impossible_on_all_applicable_positions_and_paths"
+          ],
+          "scope": {
+            "scope_sha256": "7e283b71671a3aadce308b2b596d6826aade484988a39b23f9e690df49e9ea66",
+            "route_status": "excluded",
+            "deployment_reachability_proved": false,
+            "entire_contract_safety_proved": false,
+            "compiled_property": {
+              "id": "property_6712f1d575c109e413c2",
+              "category": "FCR-DESTROY",
+              "domain": "fcr_conditional_capability_r1",
+              "operation": "op_33875552a1860148a6e9",
+              "semantic_version": "05447bbb990f3142813bfde0ca5a3891a8f2e50481d88a7780998af12bdf74c9",
+              "task": "FCR",
+              "content_sha256": "9ee38bf576e421b54e154fd3e16a7ad39b786d58ff84e608031189b6fc558ae5"
+            },
+            "decision": {
+              "status": "excluded",
+              "reason": "source_check_excluded",
+              "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 956 under financial_right, nonfinancial_counter. Source or bounded program evidence excludes the relevant necessary condition in this scope.",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 956,
+                  "length": 135,
+                  "ast_id": 124
+                }
+              ],
+              "effects": [],
+              "rules": [],
+              "supports": [
+                "support_4caacfc06ad4e39b53e9",
+                "support_bd2e4599b0dff89cd613"
+              ],
+              "facts": [
+                "fact_016df6546256062de282",
+                "fact_b9ecb0fa4b5bf09a6ff3"
+              ],
+              "meanings": [
+                "financial_right",
+                "nonfinancial_counter"
+              ],
+              "origins": [
+                "source_observation",
+                "verified_service"
+              ]
+            }
+          }
+        },
+        "evidence_refs": [
+          "E1",
+          "E2"
+        ]
+      }
+    ],
+    "queries": [],
+    "supports": [
+      {
+        "support": "support_4caacfc06ad4e39b53e9",
+        "fact": "fact_016df6546256062de282",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_bd2e4599b0dff89cd613",
+        "fact": "fact_b9ecb0fa4b5bf09a6ff3",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_d8d9433898c988db8f53",
+        "fact": "fact_e3583e8990c3b7ddf967",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  },
+  "RQ1_ffcaa562a72d": {
+    "projection": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "evaluation": {
+      "target": "FCR-PAUSE",
+      "positive": false,
+      "paired_id": "RQ1_c29df435681e",
+      "state": "unsupported",
+      "changes": {
+        "v32": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "last1164": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "b5": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "prev200": {
+          "before": "not_detected",
+          "after": "unsupported"
+        },
+        "decision_only": {
+          "before": "unsupported",
+          "after": "unsupported"
+        },
+        "protocol200": {
+          "before": "unsupported",
+          "after": "unsupported"
+        }
+      },
+      "extra_category_alarms": []
+    },
+    "actual": {
+      "previous": "unsupported",
+      "current": "unsupported",
+      "category": "FCR-PAUSE",
+      "assessment": "修复端，配对 RQ1_c29df435681e。指定类判断不变。",
+      "observation": "同类调查出口由 {} 变为 {}；关联开放缺口 3 → 3。",
+      "old": {
+        "reasons": {},
+        "readings": [],
+        "gaps": 3,
+        "queries": 0,
+        "supports": 1,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 1,
+          "invalid_semantic_row": 1,
+          "category_ambiguous_or_outside_supported_task": 4,
+          "unknown_assessment_vocabulary": 4,
+          "no_locatable_source": 4
+        }
+      },
+      "new": {
+        "reasons": {},
+        "readings": [],
+        "gaps": 3,
+        "queries": 0,
+        "supports": 2,
+        "revisions": 0,
+        "diagnostics": {
+          "unbound_or_inapplicable_seed": 10
+        }
+      },
+      "previous_report": "f0976fbfeaeb332111f92647f6b12ce1091cf13e4d84b00bfacb992206b0c22c",
+      "current_report": "8b54d2bb5e4a1cb9b14ddfb2d6b0ddfd74566a22a80dd4e15e8e1b9ef05fb0f3"
+    },
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "response_kind": "substantive",
+        "usable": true,
+        "status": "analysis_received",
+        "normalization_diagnostics": []
+      }
+    ],
+    "findings": [],
+    "inspection": [],
+    "queries": [],
+    "supports": [
+      {
+        "support": "support_2cf13a3267d7d38ea1f9",
+        "fact": "fact_255a6ba4fa168735197c",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      },
+      {
+        "support": "support_cb3f92b2b8aa9e5118a5",
+        "fact": "fact_eebc50e51923dd69066f",
+        "origin": "verified_service",
+        "field": "annotations",
+        "version": 1
+      }
+    ],
+    "revisions": []
+  }
+}
