@@ -1,0 +1,4995 @@
+[
+  {
+    "member": "RQ1_e1ce695fff9e",
+    "input_sha256": [
+      "44fddcde9ee52936fad108b874c0eb76894c1e7298a8165765ca66a809a168cc"
+    ],
+    "actual_targets": [
+      "units/program.sol:Log",
+      "units/program.sol:PrivateBank"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-repair60/RQ1_e1ce695fff9e.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-DESTROY",
+    "side_evaluation_only": "repair",
+    "prior_changes": {
+      "recallbudget200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "chatpatch200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "protocol200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "decision_only": [
+        "unsupported",
+        "unsupported"
+      ],
+      "prev200": [
+        "not_detected",
+        "unsupported"
+      ],
+      "last1164": [
+        "unsupported",
+        "unsupported"
+      ],
+      "b5": [
+        "not_detected",
+        "unsupported"
+      ],
+      "v32": [
+        "not_detected",
+        "unsupported"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_feedback": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 6,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "61dd1e64ba5cf38e2b96ac03a4c3e95f1b70eadd97c294aab812141a8638e754"
+        },
+        {
+          "index": 1,
+          "phase": "focused_revision",
+          "status": "protocol_diagnostic",
+          "usable": false,
+          "response_kind": "invalid_protocol",
+          "normalization_diagnostics": [
+            {
+              "reason": "invalid_top_level_or_duplicate_key",
+              "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+              "stage": "focused_revision"
+            }
+          ],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "edc3bce7a723cbf76aec26b777f104d69d25d5d8b71c2a2de080c6b2ae91275a"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_02a10fdae9be23c3de21"
+          ],
+          "id": "gap_3c1e6fbe1691e423",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 543,
+            "length": 262,
+            "ast_id": 95
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_8e22d4d04347d09519ac"
+          ],
+          "id": "gap_433d6f7747d82cdc",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 330,
+            "length": 207,
+            "ast_id": 56
+          }
+        }
+      ],
+      "obligation_bases": {
+        "necessary_effect_absent": 2,
+        "no_effect_in_scope": 5,
+        "external_dependency": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_28abc3663572ab82bd97",
+          "object_or_effect": "o_fe6c67b0f2e737ef6b24",
+          "meaning": "transfer_condition",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_527e2a15f361dc77e82f",
+          "object_or_effect": "o_be2b22664776d1cbaa24",
+          "meaning": "nonfinancial_counter",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_576a1db7a4700203d2f4",
+          "object_or_effect": "o_32bc5220c142fb67cc91",
+          "meaning": "nonfinancial_counter",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_81347f4d4e804359f577",
+          "object_or_effect": "o_c99804b9b3cca804b2a2",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_a95c7487b5df2ba65680",
+          "object_or_effect": "o_1ea35400baed47b35fbb",
+          "meaning": "other_source_meaning",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_bee825eae7c342c43e34",
+          "object_or_effect": "o_ac5b4ff2d307916bdc0d",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_364f1038e9a108604ed1",
+          "fact": "fact_28abc3663572ab82bd97",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_584fdcec1275aceb1bcb",
+          "fact": "fact_576a1db7a4700203d2f4",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_63dfd83707bb9be39a48",
+          "fact": "fact_bee825eae7c342c43e34",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_b600674c8e4595f3a851",
+          "fact": "fact_527e2a15f361dc77e82f",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_f1736c9b0d7e21bfafec",
+          "fact": "fact_81347f4d4e804359f577",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_fa9828383234530f78d3",
+          "fact": "fact_a95c7487b5df2ba65680",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {
+        "sent": 1
+      },
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 5,
+        "unrelated_or_secondary_graph_pairs_deferred": 1,
+        "invalid_top_level_or_duplicate_key": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 5
+      },
+      "refinement_actions": {
+        "select/basic_source_read": 4,
+        "read/shared_source_fact_acquired": 4,
+        "select/critical_guard_or_source_effect": 2,
+        "select/distinguish_bound_interpretations": 5,
+        "reuse/cached_evidence_for_independent_consumer": 1
+      },
+      "projected_queries": 5,
+      "actual_solver_calls": 6,
+      "program_seconds": 0.403,
+      "pending_actions": 0,
+      "report_sha256": "b9857ef0dfef8afa7313ea2202e6b4bbaa51215accfe95bd4586be9f317fd1e9"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "d89085634450b4bfe33c8fdc546c788de8b71d895ed3dc9a743872a4a298238c"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [
+        {
+          "issue": "scope_22d74da9eb5a0ddc1b64",
+          "op": "op_ba3dd8b1ac0c5d6e7951",
+          "entry": "destroy(address,uint256)",
+          "target": "units/program.sol:PrivateBank",
+          "property": "property_93eb91072060eab62df9",
+          "state": "excluded",
+          "reason": "source_check_excluded",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_02a10fdae9be23c3de21"
+          ],
+          "id": "gap_3c1e6fbe1691e423",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 543,
+            "length": 262,
+            "ast_id": 95
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_8e22d4d04347d09519ac"
+          ],
+          "id": "gap_433d6f7747d82cdc",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 330,
+            "length": 207,
+            "ast_id": 56
+          }
+        }
+      ],
+      "obligation_bases": {
+        "necessary_effect_absent": 1,
+        "no_effect_in_scope": 5,
+        "external_dependency": 2,
+        "source_task_reading": 1
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_866b06f970a27e512dba",
+          "object_or_effect": "o_1ea35400baed47b35fbb",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_f1e485966e9e8d2a3a58",
+          "fact": "fact_866b06f970a27e512dba",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {},
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "select/basic_source_read": 1,
+        "read/shared_source_fact_acquired": 1,
+        "select/check_effect_or_refute_same_scope": 1
+      },
+      "projected_queries": 0,
+      "actual_solver_calls": 0,
+      "program_seconds": 2.348,
+      "pending_actions": 0,
+      "report_sha256": "c15213ab1e3f2c43de11ce61ec1cbd086d279e699113e5a2cca4d7833e650911"
+    },
+    "extra_alarms": [],
+    "review": " 指定类修复端仍未形成有效阴性，本对不能据此记正确。",
+    "raw_member_prefix": "run/members/RQ1_e1ce695fff9e/attempt_1/"
+  },
+  {
+    "member": "RQ1_c9626779c857",
+    "input_sha256": [
+      "872e989faa9b0c57934d2bd1d62ab1f979c421fa0cd183b94e1344ff64ad7237"
+    ],
+    "actual_targets": [
+      "units/program.sol:SteabitToken",
+      "units/program.sol:TOKENERC20",
+      "units/program.sol:owned"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_c9626779c857.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-DESTROY",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "alarm",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "alarm",
+        "alarm"
+      ],
+      "protocol200": [
+        "alarm",
+        "alarm"
+      ],
+      "decision_only": [
+        "alarm",
+        "alarm"
+      ],
+      "prev200": [
+        "alarm",
+        "alarm"
+      ],
+      "last1164": [
+        "alarm",
+        "alarm"
+      ],
+      "b5": [
+        "alarm",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "7bf7a1d62524aa5ac90680f7550f9e9b564cd0f3d328d9307f31589473ed273a"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_b0b98c9cc4f963148638",
+          "entry": "burnFrom(address,uint256)",
+          "operation": "op_4d9e7f886273989a02dc",
+          "location": {
+            "file": "units/program.sol",
+            "start": 3797,
+            "length": 420,
+            "ast_id": 505
+          },
+          "target": "units/program.sol:SteabitToken",
+          "reason": "program_support",
+          "explanation": "At burnFrom(address,uint256), a privileged effect leaves another holder with fewer rights in the same unit after attributed transfers and applicable settlement.",
+          "effects": [],
+          "meanings": [
+            "amount_role"
+          ],
+          "supports": [
+            "source_0624e1df4251fa50fc2c",
+            "source_9b5811b8e77f1f258471",
+            "support_e2834ae6988e0794dbdb"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "rule_derivation",
+            "scoped_program_check"
+          ],
+          "property": "property_c638bf33d32a67f1f1aa",
+          "issue_ids": [
+            "scope_b8605af1323d662c534e::FCR-DESTROY"
+          ],
+          "evidence": [
+            "E10",
+            "E2",
+            "E6"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_b8605af1323d662c534e::FCR-DESTROY",
+          "op": "op_4d9e7f886273989a02dc",
+          "entry": "burnFrom(address,uint256)",
+          "target": "units/program.sol:SteabitToken",
+          "property": "property_c638bf33d32a67f1f1aa",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [
+            "amount_role"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "rule_derivation",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E2",
+            "E6",
+            "E10"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 1,
+            "direct_effect/sat": 1,
+            "financial_value_post_exclusion/unsat": 1,
+            "same_request_amount_change/unsat": 1
+          }
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c368c4356da5a277b07d"
+          ],
+          "id": "gap_b2b8ed1244eaed56",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3010,
+            "length": 531,
+            "ast_id": 418
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_f8ab9442652dad7cc7eb"
+          ],
+          "id": "gap_b872a00236f928b1",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3010,
+            "length": 531,
+            "ast_id": 418
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 17,
+        "source_task_reading": 3,
+        "necessary_effect_absent": 4,
+        "effect_range_decided": 1,
+        "external_dependency": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_81a9d6ea01c74e780c54",
+          "object_or_effect": "w_aebf21c3bcd756188026",
+          "meaning": "amount_role",
+          "role": "debit",
+          "subject": null,
+          "scope": "w_aebf21c3bcd756188026",
+          "grounded": true
+        },
+        {
+          "id": "fact_a51ff8ff0dc20ddd66d4",
+          "object_or_effect": "o_9926c5a49781b2991607",
+          "meaning": "amount_role",
+          "role": "debit",
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_d04bbca4b19297cf324b",
+          "object_or_effect": "w_6ec36234278510ac329a",
+          "meaning": "amount_role",
+          "role": "debit",
+          "subject": null,
+          "scope": "w_6ec36234278510ac329a",
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_e2834ae6988e0794dbdb",
+          "fact": "fact_a51ff8ff0dc20ddd66d4",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 9,
+        "unrelated_or_secondary_graph_pairs_deferred": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 9
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 2,
+        "select/basic_source_read": 3,
+        "read/shared_source_fact_acquired": 3,
+        "select/check_effect_or_refute_same_scope": 5,
+        "select/distinguish_bound_interpretations": 2
+      },
+      "projected_queries": 12,
+      "actual_solver_calls": 8,
+      "program_seconds": 1.362,
+      "pending_actions": 0,
+      "report_sha256": "3f21a556b7dddf04e70c6b5246e49c9ac7d41f7a989629c95a867e2bacaa4948"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "27809fd1ea216ce4dd3b1208482240470f423cd9dd6a930db4cca90176eba015"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_7d6cbe32210293557b64",
+          "entry": "burnFrom(address,uint256)",
+          "operation": "op_4d9e7f886273989a02dc",
+          "location": {
+            "file": "units/program.sol",
+            "start": 3797,
+            "length": 420,
+            "ast_id": 505
+          },
+          "target": "units/program.sol:SteabitToken",
+          "reason": "program_support",
+          "explanation": "At burnFrom(address,uint256), a privileged effect leaves another holder with fewer rights in the same unit after attributed transfers and applicable settlement.",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "supports": [
+            "support_d2c9e8fd32e61fcc135e"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "property": "property_4feb291083db8155c3e1",
+          "issue_ids": [
+            "scope_66aea8f73b0eda7e0aae",
+            "scope_9c9b903360d570925d09::FCR-DESTROY"
+          ],
+          "evidence": [
+            "E10",
+            "E19",
+            "E2",
+            "E20",
+            "E6",
+            "E9"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_66aea8f73b0eda7e0aae",
+          "op": "op_4d9e7f886273989a02dc",
+          "entry": "burnFrom(address,uint256)",
+          "target": "units/program.sol:SteabitToken",
+          "property": "property_4feb291083db8155c3e1",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E6",
+            "E10",
+            "E20"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 1,
+            "direct_effect/sat": 1,
+            "financial_value_post_exclusion/unsat": 1,
+            "same_request_amount_change/unsat": 1
+          }
+        },
+        {
+          "issue": "scope_9c9b903360d570925d09::FCR-DESTROY",
+          "op": "op_4d9e7f886273989a02dc",
+          "entry": "burnFrom(address,uint256)",
+          "target": "units/program.sol:SteabitToken",
+          "property": "property_4feb291083db8155c3e1",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E2",
+            "E9",
+            "E19"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 1,
+            "direct_effect/sat": 1,
+            "financial_value_post_exclusion/unsat": 1,
+            "same_request_amount_change/unsat": 1
+          }
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c368c4356da5a277b07d"
+          ],
+          "id": "gap_b2b8ed1244eaed56",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3010,
+            "length": 531,
+            "ast_id": 418
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_f8ab9442652dad7cc7eb"
+          ],
+          "id": "gap_b872a00236f928b1",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3010,
+            "length": 531,
+            "ast_id": 418
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 17,
+        "source_task_reading": 3,
+        "necessary_effect_absent": 4,
+        "effect_range_decided": 1,
+        "external_dependency": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_dbdfb99c3fdba29f438a",
+          "object_or_effect": "o_8c921127f0feea0cb6d6",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_d2c9e8fd32e61fcc135e",
+          "fact": "fact_dbdfb99c3fdba29f438a",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unrelated_or_secondary_graph_pairs_deferred": 1
+      },
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "join/shared_prerequisite": 2,
+        "select/basic_source_read": 3,
+        "read/shared_source_fact_acquired": 3,
+        "reuse/existing_same_source_fact": 3,
+        "select/check_effect_or_refute_same_scope": 9,
+        "reuse/cached_evidence_for_independent_consumer": 2,
+        "select/distinguish_bound_interpretations": 3
+      },
+      "projected_queries": 19,
+      "actual_solver_calls": 12,
+      "program_seconds": 4.509,
+      "pending_actions": 0,
+      "report_sha256": "aefb1ffedcb52d51c69ca1450e5d704ed429020b37fd0754a6f4628dcb064748"
+    },
+    "extra_alarms": [
+      "FCR-FREEZE"
+    ],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_c9626779c857/attempt_1/"
+  },
+  {
+    "member": "RQ1_c75d73e1c482",
+    "input_sha256": [
+      "bebb04dc91a54d8cdf8c51a8ea788e148520dd89d37cd261f5d4fe899adf0bc0"
+    ],
+    "actual_targets": [
+      "units/program.sol:TokenERC20",
+      "units/program.sol:mkethToken",
+      "units/program.sol:owned"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_c75d73e1c482.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-MINT",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "alarm",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "alarm",
+        "alarm"
+      ],
+      "protocol200": [
+        "alarm",
+        "alarm"
+      ],
+      "decision_only": [
+        "unsupported",
+        "alarm"
+      ],
+      "prev200": [
+        "alarm",
+        "alarm"
+      ],
+      "last1164": [
+        "alarm",
+        "alarm"
+      ],
+      "b5": [
+        "alarm",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 5,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "709db5bf9e03ee29e68beaace96baf25af27f777c8eba387ad4b600e2f20e67c"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_84bdfa6343bf7db6a5d3",
+          "entry": "mintToken(address,uint256)",
+          "operation": "op_37529468ae09fb9b605d",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6437,
+            "length": 33,
+            "ast_id": 799
+          },
+          "target": "units/program.sol:mkethToken",
+          "reason": "new_entitlement",
+          "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 6437. A qualified controller changes an actual financial position by a positive issuance for a controlled beneficiary.",
+          "effects": [
+            "w_e79892754aa6ff47ff96"
+          ],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation"
+          ],
+          "property": "property_b1467581d76b5df76aa6",
+          "issue_ids": [
+            "scope_f68f634f3b56de5b96f4"
+          ],
+          "evidence": [
+            "E23",
+            "E43"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_b9da178c9712565d0cd3::FCR-MINT",
+          "op": "op_2779b2033bc5833d205a",
+          "entry": "setPrices(uint256,uint256)",
+          "target": "units/program.sol:mkethToken",
+          "property": "property_c28eda775d9c25f39375",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E30",
+            "E70"
+          ],
+          "tied_queries": {
+            "financial_value_post_exclusion/unsat": 1,
+            "same_request_amount_change/unsat": 1
+          }
+        },
+        {
+          "issue": "scope_f68f634f3b56de5b96f4",
+          "op": "op_37529468ae09fb9b605d",
+          "entry": "mintToken(address,uint256)",
+          "target": "units/program.sol:mkethToken",
+          "property": "property_b1467581d76b5df76aa6",
+          "state": "risk",
+          "reason": "new_entitlement",
+          "meanings": [],
+          "effects": [
+            "w_e79892754aa6ff47ff96"
+          ],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E23",
+            "E43"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 1,
+            "direct_effect/sat": 1
+          }
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_412ee6df574c4da985ba"
+          ],
+          "id": "gap_aa22164f10156475",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3924,
+            "length": 531,
+            "ast_id": 536
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_8696dbf2542a94d0e15e"
+          ],
+          "id": "gap_be21ae26573b164d",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3924,
+            "length": 531,
+            "ast_id": 536
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 20,
+        "source_task_reading": 14,
+        "external_dependency": 2,
+        "necessary_effect_absent": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_0e1281939e8ad60f3070",
+          "object_or_effect": "w_dda4602c7ca0405fddcb",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_dda4602c7ca0405fddcb",
+          "grounded": true
+        },
+        {
+          "id": "fact_2d4190c7cad7e1836189",
+          "object_or_effect": "w_9da7fffe36c34d8f7b8c",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_9da7fffe36c34d8f7b8c",
+          "grounded": true
+        },
+        {
+          "id": "fact_37d52f21f1ddeebb9c81",
+          "object_or_effect": "w_fd3703148d6b5e7616cd",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_fd3703148d6b5e7616cd",
+          "grounded": true
+        },
+        {
+          "id": "fact_62aadccde798e122b12f",
+          "object_or_effect": "o_2d613239fbe2a989be97",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_70fe2b27364b92b1866d",
+          "object_or_effect": "w_25ca756bcf9aed36410b",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_25ca756bcf9aed36410b",
+          "grounded": true
+        },
+        {
+          "id": "fact_73fcba9624233533c92c",
+          "object_or_effect": "w_45408026ace4bd5a481a",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_45408026ace4bd5a481a",
+          "grounded": true
+        },
+        {
+          "id": "fact_7d0fce240f705636c563",
+          "object_or_effect": "w_285f142e2504c4dcfdb6",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_285f142e2504c4dcfdb6",
+          "grounded": true
+        },
+        {
+          "id": "fact_816ec9b4aeba444b192c",
+          "object_or_effect": "o_8b53dcc927e4e5c301d5",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_8787505173b4860d220f",
+          "object_or_effect": "w_6733b87dccebeda820ba",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_6733b87dccebeda820ba",
+          "grounded": true
+        },
+        {
+          "id": "fact_8e61955fdefc790a87b1",
+          "object_or_effect": "w_dcb8228780bbad3fe070",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_dcb8228780bbad3fe070",
+          "grounded": true
+        },
+        {
+          "id": "fact_941c25d87c6933afc2ef",
+          "object_or_effect": "w_48fbc245ef0a718bcef3",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_48fbc245ef0a718bcef3",
+          "grounded": true
+        },
+        {
+          "id": "fact_9f22cb20b64054fd9db2",
+          "object_or_effect": "o_3308e4df4b409508e627",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_af806d575052c4a54113",
+          "object_or_effect": "o_64404ab5200c3e4fbe5d",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_bd4db8b3db39a8e7c5b7",
+          "object_or_effect": "w_c7efbf2e4105b4205ae1",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_c7efbf2e4105b4205ae1",
+          "grounded": true
+        },
+        {
+          "id": "fact_d3aaa6e496a17ca9ab24",
+          "object_or_effect": "w_1e6913f3b0e24ca8b0fe",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_1e6913f3b0e24ca8b0fe",
+          "grounded": true
+        },
+        {
+          "id": "fact_e5e5cd8fe8e3566ad532",
+          "object_or_effect": "o_38dc4972acb6ea0f6077",
+          "meaning": "nonfinancial_counter",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_5fbd44b0a1e6da27efff",
+          "fact": "fact_62aadccde798e122b12f",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_d4eeb7b7384ac13e506d",
+          "fact": "fact_e5e5cd8fe8e3566ad532",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_d9d204563aeb65688562",
+          "fact": "fact_816ec9b4aeba444b192c",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_e60974f96498becbaffb",
+          "fact": "fact_9f22cb20b64054fd9db2",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_ede707f72ca88542ba1f",
+          "fact": "fact_af806d575052c4a54113",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 4,
+        "action_slice_exhausted": 2,
+        "unrelated_or_secondary_graph_pairs_deferred": 2,
+        "noncached_action_limit": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 4
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 25,
+        "select/basic_source_read": 14,
+        "read/shared_source_fact_acquired": 14,
+        "stop/decision_already_resolved": 4,
+        "reuse/existing_same_source_fact": 4,
+        "select/check_effect_or_refute_same_scope": 42,
+        "select/critical_guard_or_source_effect": 1,
+        "select/distinguish_bound_interpretations": 7,
+        "reuse/cached_evidence_for_independent_consumer": 1
+      },
+      "projected_queries": 220,
+      "actual_solver_calls": 263,
+      "program_seconds": 204.318,
+      "pending_actions": 43,
+      "report_sha256": "f51ce5d92111ab28c846ca0803bd8b1ec25cc42744341e1c16c63df677ff820c"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "b5b1769b3fd152dd62d3e4eb67f8fe70ea49811dee2edc53cc5c2aff8235e0fe"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_b5f79895c7ad80422c10",
+          "entry": "mintToken(address,uint256)",
+          "operation": "op_37529468ae09fb9b605d",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6437,
+            "length": 33,
+            "ast_id": 799
+          },
+          "target": "units/program.sol:mkethToken",
+          "reason": "new_entitlement",
+          "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 6437. A qualified controller changes an actual financial position by a positive issuance for a controlled beneficiary.",
+          "effects": [
+            "w_e79892754aa6ff47ff96"
+          ],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation"
+          ],
+          "property": "property_d0e792e5144a2da558b0",
+          "issue_ids": [
+            "scope_932a4c46a5fe2ee7671d"
+          ],
+          "evidence": [
+            "E14"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_67c2cf09486608f295c2::FCR-MINT",
+          "op": "op_2779b2033bc5833d205a",
+          "entry": "setPrices(uint256,uint256)",
+          "target": "units/program.sol:mkethToken",
+          "property": "property_27c44a8eb812c449fbf1",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E23",
+            "E66",
+            "E68",
+            "E70",
+            "E72",
+            "E74",
+            "E76",
+            "E78"
+          ],
+          "tied_queries": {
+            "financial_value_post_exclusion/unsat": 2,
+            "same_request_amount_change/unsat": 1,
+            "same_request_amount_change/sat": 1,
+            "financial_value/unsat": 5
+          }
+        },
+        {
+          "issue": "scope_932a4c46a5fe2ee7671d",
+          "op": "op_37529468ae09fb9b605d",
+          "entry": "mintToken(address,uint256)",
+          "target": "units/program.sol:mkethToken",
+          "property": "property_d0e792e5144a2da558b0",
+          "state": "risk",
+          "reason": "new_entitlement",
+          "meanings": [],
+          "effects": [
+            "w_e79892754aa6ff47ff96"
+          ],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_412ee6df574c4da985ba"
+          ],
+          "id": "gap_aa22164f10156475",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3924,
+            "length": 531,
+            "ast_id": 536
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_8696dbf2542a94d0e15e"
+          ],
+          "id": "gap_be21ae26573b164d",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 3924,
+            "length": 531,
+            "ast_id": 536
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 20,
+        "source_task_reading": 14,
+        "external_dependency": 2,
+        "necessary_effect_absent": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_359ad9833729128e8dbd",
+          "object_or_effect": "o_3308e4df4b409508e627",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_201e60fdb9e8782252e6",
+          "fact": "fact_359ad9833729128e8dbd",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "action_slice_exhausted": 2,
+        "noncached_action_limit": 1
+      },
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "select/basic_source_read": 11,
+        "read/shared_source_fact_acquired": 11,
+        "stop/decision_already_resolved": 4,
+        "join/shared_prerequisite": 14,
+        "select/check_effect_or_refute_same_scope": 51,
+        "select/distinguish_bound_interpretations": 2,
+        "reuse/cached_evidence_for_independent_consumer": 1
+      },
+      "projected_queries": 239,
+      "actual_solver_calls": 281,
+      "program_seconds": 233.671,
+      "pending_actions": 15,
+      "report_sha256": "1d6c856303ffca57d72cd5a087ee8c98343dba7bcca5de3a145700dd93b9cfc1"
+    },
+    "extra_alarms": [
+      "FCR-TRANSFER",
+      "FCR-FREEZE"
+    ],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_c75d73e1c482/attempt_1/"
+  },
+  {
+    "member": "RQ1_e73c99ca23e5",
+    "input_sha256": [
+      "f70b930966ef8190d190ca4a0b83081aad3e5d02b78943c15b4ea0ca8865d5f3"
+    ],
+    "actual_targets": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_e73c99ca23e5.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-TRANSFER",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "alarm",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "alarm",
+        "alarm"
+      ],
+      "protocol200": [
+        "alarm",
+        "alarm"
+      ],
+      "decision_only": [
+        "alarm",
+        "alarm"
+      ],
+      "prev200": [
+        "alarm",
+        "alarm"
+      ],
+      "last1164": [
+        "alarm",
+        "alarm"
+      ],
+      "b5": [
+        "alarm",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "alarm",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "alarm",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "2e3e7f8c02446493ea5c01c7ec68e8769f5d1b4662de3c39afbb88a92c563d38"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_03a8235a60070ca41048",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_9450df8835c6075e8ae1",
+          "location": {
+            "file": "units/program.sol",
+            "start": 4852,
+            "length": 484,
+            "ast_id": 675
+          },
+          "target": "units/program.sol:StandardToken",
+          "reason": "program_support",
+          "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "supports": [
+            "support_b6b950e97203672a1c59"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "property": "property_906c0453896a2ac8476c",
+          "issue_ids": [
+            "scope_7264895639e76f8e0b88::FCR-TRANSFER"
+          ],
+          "evidence": [
+            "E3",
+            "E42",
+            "E59",
+            "E62"
+          ]
+        },
+        {
+          "id": "finding_9ac40ed0d9fe09392bb8",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_ce2f0e14ef8065171767",
+          "location": {
+            "file": "units/program.sol",
+            "start": 4852,
+            "length": 484,
+            "ast_id": 675
+          },
+          "target": "units/program.sol:PausableToken",
+          "reason": "program_support",
+          "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.",
+          "effects": [],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "property": "property_7809feec30d14ecf05f5",
+          "issue_ids": [
+            "scope_c054620ed01177864bf2"
+          ],
+          "evidence": [
+            "E20",
+            "E44",
+            "E58",
+            "E61",
+            "E64"
+          ]
+        },
+        {
+          "id": "finding_82c35c80e4c855b198fe",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_39ee2c1bd1591da77703",
+          "location": {
+            "file": "units/program.sol",
+            "start": 4852,
+            "length": 484,
+            "ast_id": 675
+          },
+          "target": "units/program.sol:BecToken",
+          "reason": "program_support",
+          "explanation": "At zero_fee_transaction(address,address,uint256), the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.",
+          "effects": [],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "property": "property_c19d6b13c261f94e410e",
+          "issue_ids": [
+            "scope_f0aed8e0ec550752717e"
+          ],
+          "evidence": [
+            "E14",
+            "E43",
+            "E54",
+            "E60",
+            "E63"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_1550baf3208e72203f0e",
+          "op": "op_c54b176c426e48ab5ccb",
+          "entry": "transfer(address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_1088dd0c235f8c221bd9",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E4",
+            "E34",
+            "E46",
+            "E50"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_3cec588a2155d1bc820f",
+          "op": "op_04e19100708ff27aa081",
+          "entry": "transferFrom(address,address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_22e60831143ff3ffd60a",
+          "state": "excluded",
+          "reason": "covered_holder_grant",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E5"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_7264895639e76f8e0b88::FCR-TRANSFER",
+          "op": "op_9450df8835c6075e8ae1",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_906c0453896a2ac8476c",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E3",
+            "E42",
+            "E59",
+            "E62"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 2,
+            "direct_effect/sat": 1,
+            "direct_effect/unsat": 1,
+            "financial_value_post_exclusion/unsat": 4,
+            "same_request_amount_change/unsat": 4
+          }
+        },
+        {
+          "issue": "scope_c054620ed01177864bf2",
+          "op": "op_ce2f0e14ef8065171767",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:PausableToken",
+          "property": "property_7809feec30d14ecf05f5",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E20",
+            "E44",
+            "E58",
+            "E61",
+            "E64"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 2,
+            "direct_effect/sat": 1,
+            "direct_effect/unsat": 1,
+            "financial_value_post_exclusion/unsat": 6,
+            "same_request_amount_change/unsat": 6
+          }
+        },
+        {
+          "issue": "scope_f0aed8e0ec550752717e",
+          "op": "op_39ee2c1bd1591da77703",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:BecToken",
+          "property": "property_c19d6b13c261f94e410e",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E14",
+            "E43",
+            "E54",
+            "E60",
+            "E63"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 2,
+            "direct_effect/sat": 1,
+            "direct_effect/unsat": 1,
+            "financial_value_post_exclusion/unsat": 6,
+            "same_request_amount_change/unsat": 6
+          }
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c5526429768efe2e81f7"
+          ],
+          "id": "gap_ea28c6ed74a785c3",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 8071,
+            "length": 683,
+            "ast_id": 1112
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_e23ecc5024c4e56b7d7d"
+          ],
+          "id": "gap_fd76ee3f47dd3e26",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 8071,
+            "length": 683,
+            "ast_id": 1112
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 24,
+        "source_task_reading": 10,
+        "necessary_effect_absent": 11,
+        "effect_range_decided": 3,
+        "external_dependency": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_ef73d9145b52fa9c29e5",
+          "object_or_effect": "o_b817254c37a071188dc6",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_b6b950e97203672a1c59",
+          "fact": "fact_ef73d9145b52fa9c29e5",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unrelated_or_secondary_graph_pairs_deferred": 1
+      },
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "join/shared_prerequisite": 10,
+        "select/basic_source_read": 15,
+        "read/shared_source_fact_acquired": 15,
+        "stop/decision_already_resolved": 3,
+        "select/check_effect_or_refute_same_scope": 37,
+        "skip/no_remaining_decision_impact": 1,
+        "select/distinguish_bound_interpretations": 2
+      },
+      "projected_queries": 113,
+      "actual_solver_calls": 57,
+      "program_seconds": 14.334,
+      "pending_actions": 0,
+      "report_sha256": "cd5016ff437ea91eac4768993000a2928b960debd07d8cacf338335d41e9238c"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "alarm",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "alarm",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "a19a45f4b90ed190980f849ac5a159bef77d9acfbd59d976757f51f51c134441"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_b6a45523340a97de3605",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_9450df8835c6075e8ae1",
+          "location": {
+            "file": "units/program.sol",
+            "start": 5144,
+            "length": 26,
+            "ast_id": 653
+          },
+          "target": "units/program.sol:StandardToken",
+          "reason": "existing_rights_moved",
+          "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 5144 under financial_right. The qualified operation debits another holder and causally credits the same asset without an applicable holder grant.",
+          "effects": [
+            "w_8089e791b8e22699e609"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "supports": [
+            "support_730c0271121b31f30c19"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "property": "property_b2adf67bf310f8763fe2",
+          "issue_ids": [
+            "scope_0cc9acd35e66ffa30850::FCR-TRANSFER"
+          ],
+          "evidence": [
+            "E3"
+          ]
+        },
+        {
+          "id": "finding_516447586d19e600a85a",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_ce2f0e14ef8065171767",
+          "location": {
+            "file": "units/program.sol",
+            "start": 5144,
+            "length": 26,
+            "ast_id": 653
+          },
+          "target": "units/program.sol:PausableToken",
+          "reason": "existing_rights_moved",
+          "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 5144. The qualified operation debits another holder and causally credits the same asset without an applicable holder grant.",
+          "effects": [
+            "w_bfab7bfa66c9efa9f9c2"
+          ],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation"
+          ],
+          "property": "property_40b7fdcc44b3553cf9d6",
+          "issue_ids": [
+            "scope_2200e54fce4872bb001f"
+          ],
+          "evidence": [
+            "E20"
+          ]
+        },
+        {
+          "id": "finding_8d481b1186588d44baff",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "operation": "op_39ee2c1bd1591da77703",
+          "location": {
+            "file": "units/program.sol",
+            "start": 5144,
+            "length": 26,
+            "ast_id": 653
+          },
+          "target": "units/program.sol:BecToken",
+          "reason": "existing_rights_moved",
+          "explanation": "The assessment concerns a transfer of another holder's existing rights at source offset 5144. The qualified operation debits another holder and causally credits the same asset without an applicable holder grant.",
+          "effects": [
+            "w_659e865074f7009aeacf"
+          ],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation"
+          ],
+          "property": "property_c733430efcbd76bbb067",
+          "issue_ids": [
+            "scope_4fc8bd1b14ddda71df29"
+          ],
+          "evidence": [
+            "E14"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_0cc9acd35e66ffa30850::FCR-TRANSFER",
+          "op": "op_9450df8835c6075e8ae1",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_b2adf67bf310f8763fe2",
+          "state": "risk",
+          "reason": "existing_rights_moved",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [
+            "w_8089e791b8e22699e609"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E3"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_2200e54fce4872bb001f",
+          "op": "op_ce2f0e14ef8065171767",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:PausableToken",
+          "property": "property_40b7fdcc44b3553cf9d6",
+          "state": "risk",
+          "reason": "existing_rights_moved",
+          "meanings": [],
+          "effects": [
+            "w_bfab7bfa66c9efa9f9c2"
+          ],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E20"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_4f81416331ec0f756649",
+          "op": "op_c54b176c426e48ab5ccb",
+          "entry": "transfer(address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_1edaf36764d03cfdb526",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E4",
+            "E34",
+            "E43",
+            "E47"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_4fc8bd1b14ddda71df29",
+          "op": "op_39ee2c1bd1591da77703",
+          "entry": "zero_fee_transaction(address,address,uint256)",
+          "target": "units/program.sol:BecToken",
+          "property": "property_c733430efcbd76bbb067",
+          "state": "risk",
+          "reason": "existing_rights_moved",
+          "meanings": [],
+          "effects": [
+            "w_659e865074f7009aeacf"
+          ],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E14"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_8ba2ec6110e38fd5b265",
+          "op": "op_04e19100708ff27aa081",
+          "entry": "transferFrom(address,address,uint256)",
+          "target": "units/program.sol:StandardToken",
+          "property": "property_91fe404feeb964c227ec",
+          "state": "excluded",
+          "reason": "covered_holder_grant",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E5"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c5526429768efe2e81f7"
+          ],
+          "id": "gap_ea28c6ed74a785c3",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 8071,
+            "length": 683,
+            "ast_id": 1112
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_e23ecc5024c4e56b7d7d"
+          ],
+          "id": "gap_fd76ee3f47dd3e26",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 8071,
+            "length": 683,
+            "ast_id": 1112
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 24,
+        "source_task_reading": 13,
+        "necessary_effect_absent": 11,
+        "external_dependency": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_1bc9c9892ea3bfe40678",
+          "object_or_effect": "o_b817254c37a071188dc6",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_730c0271121b31f30c19",
+          "fact": "fact_1bc9c9892ea3bfe40678",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unrelated_or_secondary_graph_pairs_deferred": 1
+      },
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "join/shared_prerequisite": 10,
+        "select/basic_source_read": 15,
+        "read/shared_source_fact_acquired": 15,
+        "stop/decision_already_resolved": 3,
+        "select/check_effect_or_refute_same_scope": 26,
+        "skip/no_remaining_decision_impact": 1,
+        "select/distinguish_bound_interpretations": 2
+      },
+      "projected_queries": 69,
+      "actual_solver_calls": 38,
+      "program_seconds": 16.479,
+      "pending_actions": 0,
+      "report_sha256": "1306ff763336779e2bac775984a7c16b775a457a81233abd1bbf83f6b3c1ca04"
+    },
+    "extra_alarms": [
+      "FCR-DESTROY",
+      "FCR-PAUSE"
+    ],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_e73c99ca23e5/attempt_1/"
+  },
+  {
+    "member": "RQ1_c772c59e4a76",
+    "input_sha256": [
+      "8eb07a674f695724bc8ce146c49cade53a5b9d958a1b05b90818ffac61373721"
+    ],
+    "actual_targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_c772c59e4a76.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-FREEZE",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "alarm",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "alarm",
+        "alarm"
+      ],
+      "protocol200": [
+        "alarm",
+        "alarm"
+      ],
+      "decision_only": [
+        "alarm",
+        "alarm"
+      ],
+      "prev200": [
+        "unsupported",
+        "alarm"
+      ],
+      "last1164": [
+        "unsupported",
+        "alarm"
+      ],
+      "b5": [
+        "alarm",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 2,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "45fd8377c364dabd08a1183790148fa1e72a2452e5b5ece700158bd683539201"
+        },
+        {
+          "index": 1,
+          "phase": "focused_revision",
+          "status": "protocol_diagnostic",
+          "usable": false,
+          "response_kind": "invalid_protocol",
+          "normalization_diagnostics": [
+            {
+              "reason": "invalid_top_level_or_duplicate_key",
+              "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+              "stage": "focused_revision"
+            }
+          ],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "44e671442387ff9fddfb9e1017111c371c21df3ad68f979066aa660a13c53999"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_7b03205b829e5a972717",
+          "entry": "freezeAccount(address,bool)",
+          "operation": "op_d88303dfcefe67d66df5",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6862,
+            "length": 228,
+            "ast_id": 878
+          },
+          "target": "units/program.sol:MyAdvancedToken",
+          "reason": "program_support",
+          "explanation": "At freezeAccount(address,bool), the checked privileged change restricts the outgoing right of the designated holder for an otherwise usable request within the recorded domain.",
+          "effects": [],
+          "meanings": [
+            "other_source_policy"
+          ],
+          "supports": [
+            "support_c9790a47b2ad82d0eee2"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "property": "property_2ec3f365f34159e82253",
+          "issue_ids": [
+            "scope_0edec75e7d69a58897a5"
+          ],
+          "evidence": [
+            "E20",
+            "E21",
+            "E22",
+            "E23",
+            "E31",
+            "E32",
+            "E33"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_0edec75e7d69a58897a5",
+          "op": "op_d88303dfcefe67d66df5",
+          "entry": "freezeAccount(address,bool)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_2ec3f365f34159e82253",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [
+            "other_source_policy"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E20",
+            "E21",
+            "E22",
+            "E23",
+            "E31",
+            "E32",
+            "E33"
+          ],
+          "tied_queries": {
+            "control_transition_preservation/sat": 1,
+            "baseline_usable/sat": 24,
+            "financial_block/unsat": 23,
+            "financial_block/sat": 1
+          }
+        }
+      ],
+      "target_gaps": [],
+      "obligation_bases": {
+        "necessary_effect_absent": 16,
+        "no_effect_in_scope": 17,
+        "source_task_reading": 2,
+        "effect_range_decided": 1
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_01b4b92e5343d7086f67",
+          "object_or_effect": "w_847d094097ec31390801",
+          "meaning": "other_source_policy",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_707bac984bb70fa155ce",
+          "object_or_effect": "o_b23a2f2a9cb4c4c38857",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_6b19b0a10dbb29754247",
+          "fact": "fact_707bac984bb70fa155ce",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_c9790a47b2ad82d0eee2",
+          "fact": "fact_01b4b92e5343d7086f67",
+          "origin": "verified_service",
+          "field": "policies",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {
+        "sent": 1
+      },
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 9,
+        "action_slice_exhausted": 3,
+        "program_investigation_budget_exhausted": 1,
+        "program_investigation_seconds": 2,
+        "invalid_top_level_or_duplicate_key": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 9
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 11,
+        "select/basic_source_read": 9,
+        "read/shared_source_fact_acquired": 9,
+        "stop/decision_already_resolved": 7,
+        "reuse/existing_same_source_fact": 8,
+        "select/check_effect_or_refute_same_scope": 9
+      },
+      "projected_queries": 199,
+      "actual_solver_calls": 254,
+      "program_seconds": 299.104,
+      "pending_actions": 88,
+      "report_sha256": "e95b643134a02a56861673617e7612aedb380e5a07df2d0d8e7f3ec97fb181fc"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 1,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "d1336340726b6ba030892450731cf9505bb03e29cec0e82536203832aefd47d7"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_c46e22ebef55d770a182",
+          "entry": "freezeAccount(address,bool)",
+          "operation": "op_d88303dfcefe67d66df5",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6862,
+            "length": 228,
+            "ast_id": 878
+          },
+          "target": "units/program.sol:MyAdvancedToken",
+          "reason": "program_support",
+          "explanation": "At freezeAccount(address,bool), the checked privileged change restricts the outgoing right of the designated holder for an otherwise usable request within the recorded domain.",
+          "effects": [],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "property": "property_5482c9108bf86bc7cfb0",
+          "issue_ids": [
+            "scope_d462df8652a7940c4575"
+          ],
+          "evidence": [
+            "E20",
+            "E21",
+            "E22",
+            "E23",
+            "E31",
+            "E32",
+            "E33",
+            "E42",
+            "E50"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_d462df8652a7940c4575",
+          "op": "op_d88303dfcefe67d66df5",
+          "entry": "freezeAccount(address,bool)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_5482c9108bf86bc7cfb0",
+          "state": "risk",
+          "reason": "program_support",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ],
+          "evidence": [
+            "E20",
+            "E21",
+            "E22",
+            "E23",
+            "E31",
+            "E32",
+            "E33",
+            "E42",
+            "E50"
+          ],
+          "tied_queries": {
+            "control_transition_preservation/sat": 1,
+            "baseline_usable/sat": 24,
+            "financial_block/unsat": 23,
+            "financial_block/sat": 1
+          }
+        }
+      ],
+      "target_gaps": [],
+      "obligation_bases": {
+        "necessary_effect_absent": 16,
+        "no_effect_in_scope": 17,
+        "source_task_reading": 2,
+        "effect_range_decided": 1
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_91bef09562c0623404c2",
+          "object_or_effect": "o_b23a2f2a9cb4c4c38857",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_efa738c8d13e8d66e9f2",
+          "fact": "fact_91bef09562c0623404c2",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "action_slice_exhausted": 1,
+        "unrelated_or_secondary_graph_pairs_deferred": 1,
+        "noncached_action_limit": 1
+      },
+      "row_rejection_reasons": {},
+      "refinement_actions": {
+        "join/shared_prerequisite": 11,
+        "select/basic_source_read": 9,
+        "read/shared_source_fact_acquired": 9,
+        "stop/decision_already_resolved": 7,
+        "reuse/existing_same_source_fact": 8,
+        "select/check_effect_or_refute_same_scope": 53,
+        "select/distinguish_bound_interpretations": 2
+      },
+      "projected_queries": 217,
+      "actual_solver_calls": 251,
+      "program_seconds": 257.676,
+      "pending_actions": 39,
+      "report_sha256": "a9f183737fcc3a5e0f67227f6b818c6b627dc472b343fd2670d38f0ef1b5cc16"
+    },
+    "extra_alarms": [
+      "FCR-MINT"
+    ],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_c772c59e4a76/attempt_1/"
+  },
+  {
+    "member": "RQ1_32dbc2fa2433",
+    "input_sha256": [
+      "4c51bbb942a859b4560af6d6bd4aebb2f5c575cc3efe64f727c644858f16ecf3"
+    ],
+    "actual_targets": [
+      "units/program.sol:ACCURAL_DEPOSIT",
+      "units/program.sol:LogFile"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-repair60/RQ1_32dbc2fa2433.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-PAUSE",
+    "side_evaluation_only": "repair",
+    "prior_changes": {
+      "recallbudget200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "chatpatch200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "protocol200": [
+        "unsupported",
+        "unsupported"
+      ],
+      "decision_only": [
+        "unsupported",
+        "unsupported"
+      ],
+      "prev200": [
+        "not_detected",
+        "unsupported"
+      ],
+      "last1164": [
+        "not_detected",
+        "unsupported"
+      ],
+      "b5": [
+        "not_detected",
+        "unsupported"
+      ],
+      "v32": [
+        "not_detected",
+        "unsupported"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_feedback": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [
+            {
+              "reason": "unknown_assessment_vocabulary",
+              "detail_sha256": "f35390d32fcff013502fa730c9650514d0a80636ce77f6ac555c27aedde1f183",
+              "stage": "initial",
+              "list": "issues",
+              "index": 0,
+              "contract": "scoped_json_r2",
+              "issue": "unprotected-initialization"
+            },
+            {
+              "reason": "category_ambiguous_or_outside_supported_task",
+              "detail_sha256": "bea5397fda979d6fc904488563d4cfede5495fbb1a89589ad8d1b8672436bea5",
+              "stage": "initial",
+              "list": "issues",
+              "index": 1,
+              "contract": "scoped_json_r2",
+              "issue": "collect-external-call-before-debit"
+            },
+            {
+              "reason": "unknown_assessment_vocabulary",
+              "detail_sha256": "b466a67bb08200cda7a53d584316c7f5ae425d9f82e812bbc24da546763149d2",
+              "stage": "initial",
+              "list": "issues",
+              "index": 1,
+              "contract": "scoped_json_r2",
+              "issue": "collect-external-call-before-debit"
+            },
+            {
+              "reason": "category_ambiguous_or_outside_supported_task",
+              "detail_sha256": "680df38b58c79dd57cabccaa0220a591e905fd3ede5374a479759385269f0b94",
+              "stage": "initial",
+              "list": "issues",
+              "index": 2,
+              "contract": "scoped_json_r2",
+              "issue": "transfers-disabled"
+            },
+            {
+              "reason": "unknown_assessment_vocabulary",
+              "detail_sha256": "b68dcece39a41eda7ae781cd0ef4d8db98ed9102b334912870c009b6d2792c48",
+              "stage": "initial",
+              "list": "issues",
+              "index": 2,
+              "contract": "scoped_json_r2",
+              "issue": "transfers-disabled"
+            }
+          ],
+          "accepted_support_count": 5,
+          "committed_update_count": 0,
+          "located_issue_count": 3,
+          "located_read_count": 0,
+          "messages_sha256": "ddc362f0fd13d74a4e47b1b6f3f69073e6e3f630f188679527e6d71d845bb30b"
+        },
+        {
+          "index": 1,
+          "phase": "focused_revision",
+          "status": "protocol_diagnostic",
+          "usable": false,
+          "response_kind": "invalid_protocol",
+          "normalization_diagnostics": [
+            {
+              "reason": "invalid_top_level_or_duplicate_key",
+              "detail_sha256": "c4faf1ce43b6a2fa32ae40a1358908caf31a17830531b0b27f9882450dab9f43",
+              "stage": "focused_revision"
+            }
+          ],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "ff692e1e51d95853f9d91beb3bce567ac5617d61b47dfc1dd385437b3cd196ad"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_033e5a998dbe1dcb30ed"
+          ],
+          "id": "gap_69bc58e325483906",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 817,
+            "length": 303,
+            "ast_id": 131
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_bd2502effc3c43c42114"
+          ],
+          "id": "gap_e56f4c09d242e112",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 673,
+            "length": 138,
+            "ast_id": 85
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_97f4f92ce2cb2fe61879"
+          ],
+          "id": "gap_cf6e5ba39a879933",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1976,
+            "length": 158,
+            "ast_id": 263
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 4,
+        "necessary_effect_absent": 5,
+        "external_dependency": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_100291dd607d929c39b3",
+          "object_or_effect": "o_886e32a42284885859eb",
+          "meaning": "transfer_condition",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_7b6a35e31d4fd5f3c669",
+          "object_or_effect": "o_47515b94e1643b5d7217",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_8f9ca4aea036a1e94dea",
+          "object_or_effect": "w_de6ad8ce9627d457e457",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_de6ad8ce9627d457e457",
+          "grounded": true
+        },
+        {
+          "id": "fact_9abc72c47dc9b15b4839",
+          "object_or_effect": "w_280a271d7c1095f6d6d9",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_280a271d7c1095f6d6d9",
+          "grounded": true
+        },
+        {
+          "id": "fact_9f150aa93f2948ce8dae",
+          "object_or_effect": "o_a9d3375049a711b96056",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_ac34296f00624153c4fc",
+          "object_or_effect": "o_393247b2496e211d1624",
+          "meaning": "other_source_meaning",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_d0cb53145a0ebed8225b",
+          "object_or_effect": "o_a451969c0607bd7d785f",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_2ce69a87a5518d163fc1",
+          "fact": "fact_ac34296f00624153c4fc",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_33d93585fc417b0a09f9",
+          "fact": "fact_9f150aa93f2948ce8dae",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_437cd05ee6bf5ffbc3c1",
+          "fact": "fact_100291dd607d929c39b3",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_8f7dd8dd5ea2b0d3e356",
+          "fact": "fact_7b6a35e31d4fd5f3c669",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_c49e999227de15b8c87b",
+          "fact": "fact_d0cb53145a0ebed8225b",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {
+        "sent": 1
+      },
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 6,
+        "unknown_assessment_vocabulary": 3,
+        "category_ambiguous_or_outside_supported_task": 2,
+        "unrelated_or_secondary_graph_pairs_deferred": 6,
+        "invalid_top_level_or_duplicate_key": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 6
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 6,
+        "select/basic_source_read": 7,
+        "read/shared_source_fact_acquired": 7,
+        "stop/decision_already_resolved": 1,
+        "select/distinguish_bound_interpretations": 11,
+        "reuse/cached_evidence_for_independent_consumer": 4,
+        "select/critical_guard_or_source_effect": 4,
+        "select/joint_prerequisite": 2
+      },
+      "projected_queries": 12,
+      "actual_solver_calls": 11,
+      "program_seconds": 0.743,
+      "pending_actions": 0,
+      "report_sha256": "539dfc4e81452819017c5340d0d51c233fc1be1cd0d8ac66d833c5114f8ecfbe"
+    },
+    "actual": {
+      "model_analysis_available": false,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": false,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "fd19df56b5258ca35e756009f4d5a2014ffe235e05260fd71746609617135665"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_033e5a998dbe1dcb30ed"
+          ],
+          "id": "gap_69bc58e325483906",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 817,
+            "length": 303,
+            "ast_id": 131
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_bd2502effc3c43c42114"
+          ],
+          "id": "gap_e56f4c09d242e112",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 673,
+            "length": 138,
+            "ast_id": 85
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_97f4f92ce2cb2fe61879"
+          ],
+          "id": "gap_cf6e5ba39a879933",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1976,
+            "length": 158,
+            "ast_id": 263
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 4,
+        "necessary_effect_absent": 5,
+        "external_dependency": 3
+      },
+      "accepted_semantic_facts": [],
+      "supports": [],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 1
+      },
+      "refinement_actions": {},
+      "projected_queries": 0,
+      "actual_solver_calls": 0,
+      "program_seconds": 2.489,
+      "pending_actions": 0,
+      "report_sha256": "8c7c0494917f3e2bb3f45fe51d849b519d0da8d5dd3474b3d6310bbbe68c8dfd"
+    },
+    "extra_alarms": [],
+    "review": " 指定类修复端仍未形成有效阴性，本对不能据此记正确。",
+    "raw_member_prefix": "run/members/RQ1_32dbc2fa2433/attempt_1/"
+  },
+  {
+    "member": "RQ1_94d9f2cfc77c",
+    "input_sha256": [
+      "a2551ff9078bd4fdc99fda028fd24b6d67786bb61efa37002b70416c10feac0c"
+    ],
+    "actual_targets": [
+      "units/program.sol:ERC20",
+      "units/program.sol:wZNN"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-repair60/RQ1_94d9f2cfc77c.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-MINT",
+    "side_evaluation_only": "repair",
+    "prior_changes": {
+      "recallbudget200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "chatpatch200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "protocol200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "decision_only": [
+        "unsupported",
+        "not_detected"
+      ],
+      "prev200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "last1164": [
+        "not_detected",
+        "not_detected"
+      ],
+      "b5": [
+        "not_detected",
+        "not_detected"
+      ],
+      "v32": [
+        "not_detected",
+        "not_detected"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [
+            {
+              "reason": "category_ambiguous_or_outside_supported_task",
+              "detail_sha256": "b3203781f2aac5a9b4a6042c965cac2de1680145e370e2e0bb5b979b8454072a",
+              "stage": "initial",
+              "list": "issues",
+              "index": 0,
+              "contract": "scoped_json_r2",
+              "issue": "wZNN-burn-no-auth"
+            },
+            {
+              "reason": "unknown_assessment_vocabulary",
+              "detail_sha256": "ce126a7a984db370b8cff48a8b2a3230cfd99088f5c6062efae7635d7e94190a",
+              "stage": "initial",
+              "list": "issues",
+              "index": 0,
+              "contract": "scoped_json_r2",
+              "issue": "wZNN-burn-no-auth"
+            }
+          ],
+          "accepted_support_count": 2,
+          "committed_update_count": 0,
+          "located_issue_count": 1,
+          "located_read_count": 0,
+          "messages_sha256": "ee9b8c5f8a2c5c8a5c80af88ef31619babb0062fefacb9de48ecf5dcf8cedcc6"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [],
+      "obligation_bases": {
+        "no_effect_in_scope": 13,
+        "source_task_reading": 11,
+        "necessary_effect_absent": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_460c85af5761f065058a",
+          "object_or_effect": "w_8ba2e858229bd14a8719",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_8ba2e858229bd14a8719",
+          "grounded": true
+        },
+        {
+          "id": "fact_4a1a3a45e9cdb5f41029",
+          "object_or_effect": "o_46db191d731755c7fae4",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_88606e35ea83f3b6463e",
+          "object_or_effect": "o_8f4efb1251bd42e05683",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_946bf6a4fef5b4ad715b",
+          "object_or_effect": "w_15cee467e345ff927c11",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_15cee467e345ff927c11",
+          "grounded": true
+        },
+        {
+          "id": "fact_a93d3f0b8b7ef5eeb6ca",
+          "object_or_effect": "w_78d31df08ee51d0ccb86",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_78d31df08ee51d0ccb86",
+          "grounded": true
+        },
+        {
+          "id": "fact_a9cd47d24df20b141558",
+          "object_or_effect": "w_ee855e9169f2d984f8ec",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_ee855e9169f2d984f8ec",
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_061754dab222fb522854",
+          "fact": "fact_88606e35ea83f3b6463e",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_a5924ff6eb12bb2900be",
+          "fact": "fact_4a1a3a45e9cdb5f41029",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 2,
+        "category_ambiguous_or_outside_supported_task": 1,
+        "unknown_assessment_vocabulary": 1,
+        "unrelated_or_secondary_graph_pairs_deferred": 3
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 2
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 8,
+        "select/basic_source_read": 6,
+        "read/shared_source_fact_acquired": 6,
+        "stop/decision_already_resolved": 2,
+        "select/check_effect_or_refute_same_scope": 5,
+        "skip/no_remaining_decision_impact": 3,
+        "select/distinguish_bound_interpretations": 5
+      },
+      "projected_queries": 6,
+      "actual_solver_calls": 6,
+      "program_seconds": 3.616,
+      "pending_actions": 0,
+      "report_sha256": "db3860ae38857776bc43c26dc26395ad45164b11d03e4882d7785a0e4e884fa5"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 2,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "7d33fb61528ac160295123cb30f8659b80a2e4ecd341e9f3e768d6fe84ace809"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [],
+      "obligation_bases": {
+        "no_effect_in_scope": 13,
+        "source_task_reading": 11,
+        "necessary_effect_absent": 2
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_476e312a0a1ee4ed5a4e",
+          "object_or_effect": "w_15cee467e345ff927c11",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_15cee467e345ff927c11",
+          "grounded": true
+        },
+        {
+          "id": "fact_5840f8434eb2587ca84c",
+          "object_or_effect": "o_8f4efb1251bd42e05683",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_66bd6b6349486b34d166",
+          "object_or_effect": "o_46db191d731755c7fae4",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_8c9741b081b791ae558d",
+          "object_or_effect": "w_78d31df08ee51d0ccb86",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_78d31df08ee51d0ccb86",
+          "grounded": true
+        },
+        {
+          "id": "fact_b83d8e8cce388fa0bc18",
+          "object_or_effect": "w_8ba2e858229bd14a8719",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_8ba2e858229bd14a8719",
+          "grounded": true
+        },
+        {
+          "id": "fact_c6f1d507addba5f3966c",
+          "object_or_effect": "w_ee855e9169f2d984f8ec",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_ee855e9169f2d984f8ec",
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_3b80c69dc6990b50f4df",
+          "fact": "fact_5840f8434eb2587ca84c",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_63146fd45e78c81360e2",
+          "fact": "fact_66bd6b6349486b34d166",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 3,
+        "unrelated_or_secondary_graph_pairs_deferred": 3
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 3
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 8,
+        "select/basic_source_read": 5,
+        "read/shared_source_fact_acquired": 5,
+        "stop/decision_already_resolved": 2,
+        "select/check_effect_or_refute_same_scope": 2,
+        "skip/no_remaining_decision_impact": 2,
+        "select/distinguish_bound_interpretations": 5
+      },
+      "projected_queries": 6,
+      "actual_solver_calls": 6,
+      "program_seconds": 7.278,
+      "pending_actions": 0,
+      "report_sha256": "e340e25e11126b9c018f70795e0166f8161798391cf8af5c35666548176e2f3a"
+    },
+    "extra_alarms": [],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_94d9f2cfc77c/attempt_1/"
+  },
+  {
+    "member": "RQ1_4169c528c5e4",
+    "input_sha256": [
+      "8eb07a674f695724bc8ce146c49cade53a5b9d958a1b05b90818ffac61373721"
+    ],
+    "actual_targets": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_4169c528c5e4.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-MINT",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "alarm",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "alarm",
+        "alarm"
+      ],
+      "protocol200": [
+        "alarm",
+        "alarm"
+      ],
+      "decision_only": [
+        "unsupported",
+        "alarm"
+      ],
+      "prev200": [
+        "alarm",
+        "alarm"
+      ],
+      "last1164": [
+        "alarm",
+        "alarm"
+      ],
+      "b5": [
+        "alarm",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 6,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "45fd8377c364dabd08a1183790148fa1e72a2452e5b5ece700158bd683539201"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_efe3a25f74fb5ab1fc4d",
+          "entry": "mintToken(address,uint256)",
+          "operation": "op_e5334d4a1e082c25b6aa",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6653,
+            "length": 33,
+            "ast_id": 821
+          },
+          "target": "units/program.sol:MyAdvancedToken",
+          "reason": "new_entitlement",
+          "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 6653 under financial_right, nonfinancial_counter. A qualified controller changes an actual financial position by a positive issuance for a controlled beneficiary.",
+          "effects": [
+            "w_cade7805ded6d6dea5eb"
+          ],
+          "meanings": [
+            "financial_right",
+            "nonfinancial_counter"
+          ],
+          "supports": [
+            "support_6b19b0a10dbb29754247",
+            "support_8f6d86b6fd59dfb77ce1"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "property": "property_5b52f058431621931fa8",
+          "issue_ids": [
+            "scope_f7fafd7069fe47791608::FCR-MINT"
+          ],
+          "evidence": [
+            "E46",
+            "E7"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_81923f01ca140c43c715::FCR-MINT",
+          "op": "op_aef97f28f815421b0c5d",
+          "entry": "setPrices(uint256,uint256)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_38ee9e37a2fa1c96ef58",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [
+            "price"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E33"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_b938a2493ed7d0303bb8::FCR-MINT",
+          "op": "op_aef97f28f815421b0c5d",
+          "entry": "setPrices(uint256,uint256)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_8a9a19175aa5f6e7320e",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [
+            "price"
+          ],
+          "effects": [],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E12"
+          ],
+          "tied_queries": {}
+        },
+        {
+          "issue": "scope_f7fafd7069fe47791608::FCR-MINT",
+          "op": "op_e5334d4a1e082c25b6aa",
+          "entry": "mintToken(address,uint256)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_5b52f058431621931fa8",
+          "state": "risk",
+          "reason": "new_entitlement",
+          "meanings": [
+            "financial_right",
+            "nonfinancial_counter"
+          ],
+          "effects": [
+            "w_cade7805ded6d6dea5eb"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E7",
+            "E46"
+          ],
+          "tied_queries": {
+            "local_premises_feasible/sat": 1,
+            "direct_effect/sat": 1
+          }
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_a8cb43c76edc3b72e314"
+          ],
+          "id": "gap_0ec5c1f25c5433f9",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 4135,
+            "length": 608,
+            "ast_id": 564
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_412ee6df574c4da985ba"
+          ],
+          "id": "gap_aa22164f10156475",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 4135,
+            "length": 608,
+            "ast_id": 564
+          }
+        }
+      ],
+      "obligation_bases": {
+        "source_task_reading": 14,
+        "no_effect_in_scope": 17,
+        "external_dependency": 2,
+        "necessary_effect_absent": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_3831798cbc4307909326",
+          "object_or_effect": "w_a571e54ab4587e54ee2c",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_a571e54ab4587e54ee2c",
+          "grounded": true
+        },
+        {
+          "id": "fact_669c5790aedbd27290b2",
+          "object_or_effect": "w_5560d793c1a1d3840930",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_5560d793c1a1d3840930",
+          "grounded": true
+        },
+        {
+          "id": "fact_68c117c58bfc3640d5b0",
+          "object_or_effect": "w_d6044f69695b8c0eba08",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_d6044f69695b8c0eba08",
+          "grounded": true
+        },
+        {
+          "id": "fact_707bac984bb70fa155ce",
+          "object_or_effect": "o_b23a2f2a9cb4c4c38857",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_7fcec6f3d2d933dd9161",
+          "object_or_effect": "w_0f28b1e473f9017c6fdf",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_0f28b1e473f9017c6fdf",
+          "grounded": true
+        },
+        {
+          "id": "fact_821132b098087ababadf",
+          "object_or_effect": "o_e51c7ca8af0ed9176df0",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_9b55a533a6ccdcfd5177",
+          "object_or_effect": "w_cd502960d23441ab2538",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_cd502960d23441ab2538",
+          "grounded": true
+        },
+        {
+          "id": "fact_a04651a3e33cf23e90e7",
+          "object_or_effect": "o_37a89d8ec1aa95c3327a",
+          "meaning": "nonfinancial_counter",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_a236a9f18894f4067111",
+          "object_or_effect": "w_c0485a93aa646a414810",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_c0485a93aa646a414810",
+          "grounded": true
+        },
+        {
+          "id": "fact_b7da84283b85079c5142",
+          "object_or_effect": "w_741a7c5ad38f879e88cc",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": "w_741a7c5ad38f879e88cc",
+          "grounded": true
+        },
+        {
+          "id": "fact_cd55e36815d2c16544dc",
+          "object_or_effect": "w_511c2033d66a0c743717",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_511c2033d66a0c743717",
+          "grounded": true
+        },
+        {
+          "id": "fact_d73aafbf0c99a7459067",
+          "object_or_effect": "w_ae12286629a97413e84a",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_ae12286629a97413e84a",
+          "grounded": true
+        },
+        {
+          "id": "fact_e38b5ad31e213b9fb230",
+          "object_or_effect": "w_fb5455608042a53ca5c0",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_fb5455608042a53ca5c0",
+          "grounded": true
+        },
+        {
+          "id": "fact_e4538d0a2f057f47e672",
+          "object_or_effect": "w_6b65492c184b52b71404",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": "w_6b65492c184b52b71404",
+          "grounded": true
+        },
+        {
+          "id": "fact_eb6adb580678897d5a00",
+          "object_or_effect": "o_c932f2ff88e6ba55b85a",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_f15626bed32b2d932934",
+          "object_or_effect": "o_c0bbc5e3d69da910674b",
+          "meaning": "price",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_f8d12683057c187802f4",
+          "object_or_effect": "o_3c4fec7d3086e78b16b2",
+          "meaning": "authorization_quantity",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_370f8f829bb0d8bc2708",
+          "fact": "fact_821132b098087ababadf",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_5f96a12934df0b880ca2",
+          "fact": "fact_f15626bed32b2d932934",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_6b19b0a10dbb29754247",
+          "fact": "fact_707bac984bb70fa155ce",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_8f6d86b6fd59dfb77ce1",
+          "fact": "fact_a04651a3e33cf23e90e7",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_9de0cd79832c4d59893d",
+          "fact": "fact_f8d12683057c187802f4",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_fb43707f19896d73928b",
+          "fact": "fact_eb6adb580678897d5a00",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 3,
+        "action_slice_exhausted": 5,
+        "program_investigation_budget_exhausted": 1,
+        "program_investigation_seconds": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 3
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 33,
+        "select/basic_source_read": 12,
+        "read/shared_source_fact_acquired": 12,
+        "stop/decision_already_resolved": 7,
+        "reuse/existing_same_source_fact": 8,
+        "select/check_effect_or_refute_same_scope": 9
+      },
+      "projected_queries": 164,
+      "actual_solver_calls": 186,
+      "program_seconds": 299.412,
+      "pending_actions": 121,
+      "report_sha256": "9ccd1f005cf9f71feccfa29a79e8e609a5de38cde5140954fa96fa2964fba8ba"
+    },
+    "actual": {
+      "model_analysis_available": false,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        },
+        "report": {
+          "FCR-TRANSFER": "alarm",
+          "FCR-MINT": "alarm",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "alarm"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": false,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "d1336340726b6ba030892450731cf9505bb03e29cec0e82536203832aefd47d7"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_8c73271fce5d63bd9393",
+          "entry": "mintToken(address,uint256)",
+          "operation": "op_e5334d4a1e082c25b6aa",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6653,
+            "length": 33,
+            "ast_id": 821
+          },
+          "target": "units/program.sol:MyAdvancedToken",
+          "reason": "new_entitlement",
+          "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 6653. A qualified controller changes an actual financial position by a positive issuance for a controlled beneficiary.",
+          "effects": [
+            "w_cade7805ded6d6dea5eb"
+          ],
+          "meanings": [],
+          "supports": [],
+          "origins": [
+            "source_observation"
+          ],
+          "property": "property_4ef1203adb6a66e1d51c",
+          "issue_ids": [
+            "scope_b6a2ad71f79b9fc5a6cc"
+          ],
+          "evidence": [
+            "E10"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_7deaf11df31a4f428993::FCR-MINT",
+          "op": "op_aef97f28f815421b0c5d",
+          "entry": "setPrices(uint256,uint256)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_48098265e0c993dcbd82",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E19",
+            "E30",
+            "E47",
+            "E49",
+            "E51",
+            "E53",
+            "E55",
+            "E57",
+            "E59",
+            "E77"
+          ],
+          "tied_queries": {
+            "financial_value/unsat": 5,
+            "financial_value_post_exclusion/unsat": 2,
+            "same_request_amount_change/sat": 1,
+            "same_request_amount_change/unsat": 1
+          }
+        },
+        {
+          "issue": "scope_b6a2ad71f79b9fc5a6cc",
+          "op": "op_e5334d4a1e082c25b6aa",
+          "entry": "mintToken(address,uint256)",
+          "target": "units/program.sol:MyAdvancedToken",
+          "property": "property_4ef1203adb6a66e1d51c",
+          "state": "risk",
+          "reason": "new_entitlement",
+          "meanings": [],
+          "effects": [
+            "w_cade7805ded6d6dea5eb"
+          ],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E10"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_a8cb43c76edc3b72e314"
+          ],
+          "id": "gap_0ec5c1f25c5433f9",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 4135,
+            "length": 608,
+            "ast_id": 564
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_412ee6df574c4da985ba"
+          ],
+          "id": "gap_aa22164f10156475",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 4135,
+            "length": 608,
+            "ast_id": 564
+          }
+        }
+      ],
+      "obligation_bases": {
+        "source_task_reading": 14,
+        "no_effect_in_scope": 17,
+        "external_dependency": 2,
+        "necessary_effect_absent": 3
+      },
+      "accepted_semantic_facts": [],
+      "supports": [],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 4,
+        "action_slice_exhausted": 2
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 4
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 14,
+        "select/basic_source_read": 7,
+        "read/shared_source_fact_acquired": 7,
+        "select/check_effect_or_refute_same_scope": 52,
+        "select/distinguish_bound_interpretations": 2,
+        "reuse/cached_evidence_for_independent_consumer": 3
+      },
+      "projected_queries": 271,
+      "actual_solver_calls": 291,
+      "program_seconds": 282.336,
+      "pending_actions": 0,
+      "report_sha256": "083a3b8bf5e3d977af1df434801eff0365167faa709a511574759bab88b00946"
+    },
+    "extra_alarms": [
+      "FCR-TRANSFER",
+      "FCR-FREEZE"
+    ],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_4169c528c5e4/attempt_1/"
+  },
+  {
+    "member": "RQ1_475c7d9ec738",
+    "input_sha256": [
+      "95560d80f9592567cc7e556d5b481dbbc84fa482437ba1c42640de293b324004"
+    ],
+    "actual_targets": [
+      "units/program.sol:Token"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-repair60/RQ1_475c7d9ec738.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-PAUSE",
+    "side_evaluation_only": "repair",
+    "prior_changes": {
+      "recallbudget200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "chatpatch200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "protocol200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "decision_only": [
+        "unsupported",
+        "not_detected"
+      ],
+      "prev200": [
+        "not_detected",
+        "not_detected"
+      ],
+      "last1164": [
+        "not_detected",
+        "not_detected"
+      ],
+      "b5": [
+        "not_detected",
+        "not_detected"
+      ],
+      "v32": [
+        "not_detected",
+        "not_detected"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 4,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "eb2585f2c2eedfa65e3eddafc997579b7b2079671d4fe106bfe7179acd20d7a1"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [],
+      "obligation_bases": {
+        "necessary_effect_absent": 3,
+        "no_effect_in_scope": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_34c1cd5ab22e111a44a9",
+          "object_or_effect": "o_48361f5add0421bc9923",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_6da568d8634d333dbdff",
+          "object_or_effect": "o_a0a071798e3434f52959",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_77289c8d175ef101be32",
+          "object_or_effect": "o_d99ca2f0aa9d2acab68a",
+          "meaning": "amount_role",
+          "role": "original_request",
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_a16b52111c4c72569cfa",
+          "object_or_effect": "w_0922c68aeb25f15f63f8",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_0922c68aeb25f15f63f8",
+          "grounded": true
+        },
+        {
+          "id": "fact_a9fb19d1e56f5e382815",
+          "object_or_effect": "o_a51dfd72aa925e0aa897",
+          "meaning": "eligibility_state",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_1d9d65f79d1776a926ad",
+          "fact": "fact_6da568d8634d333dbdff",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_47a24795b8b1c45e00a8",
+          "fact": "fact_a9fb19d1e56f5e382815",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_ed1f61bc12aa16d82c19",
+          "fact": "fact_77289c8d175ef101be32",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_f1aba1654466b066afdd",
+          "fact": "fact_34c1cd5ab22e111a44a9",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 5
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 5
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 1,
+        "select/basic_source_read": 2,
+        "read/shared_source_fact_acquired": 2,
+        "select/check_effect_or_refute_same_scope": 1,
+        "skip/no_remaining_decision_impact": 1,
+        "select/distinguish_bound_interpretations": 1
+      },
+      "projected_queries": 0,
+      "actual_solver_calls": 0,
+      "program_seconds": 0.218,
+      "pending_actions": 0,
+      "report_sha256": "94b56c683c9e08213888f4e70960150a4715dd5164dac705dea8c1349deb0e8c"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        },
+        "report": {
+          "FCR-TRANSFER": "not_detected",
+          "FCR-MINT": "not_detected",
+          "FCR-DESTROY": "not_detected",
+          "FCR-PAUSE": "not_detected",
+          "FCR-FREEZE": "not_detected"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 5,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "3923562860fcdbbc89f690f667a2e7004a7fb0298c144d7ca6bbcdd3494be6fb"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [],
+      "target_gaps": [],
+      "obligation_bases": {
+        "necessary_effect_absent": 3,
+        "no_effect_in_scope": 3
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_3735076af4afb8409b17",
+          "object_or_effect": "w_0922c68aeb25f15f63f8",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_0922c68aeb25f15f63f8",
+          "grounded": true
+        },
+        {
+          "id": "fact_3cd74c97c3a1f5e29389",
+          "object_or_effect": "o_a0a071798e3434f52959",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_a9cc283a04595139d687",
+          "object_or_effect": "o_48361f5add0421bc9923",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_ba5906a36337e0d877f3",
+          "object_or_effect": "o_a51dfd72aa925e0aa897",
+          "meaning": "transfer_condition",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_e6dd67d841712e69744b",
+          "object_or_effect": "o_673d607ce9b218a5de1b",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_f27c96c52339d7dd3add",
+          "object_or_effect": "o_d99ca2f0aa9d2acab68a",
+          "meaning": "other_source_meaning",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_1209ed9f7e2aaf954d24",
+          "fact": "fact_a9cc283a04595139d687",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_2dbccb1c86fd0562c3e2",
+          "fact": "fact_e6dd67d841712e69744b",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_9a25a5b231322d6318c5",
+          "fact": "fact_ba5906a36337e0d877f3",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_9ecdb2451e3768270add",
+          "fact": "fact_f27c96c52339d7dd3add",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_f8519c8cb26c193665ca",
+          "fact": "fact_3cd74c97c3a1f5e29389",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {},
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 7
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 7
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 1,
+        "select/basic_source_read": 3,
+        "read/shared_source_fact_acquired": 3,
+        "select/check_effect_or_refute_same_scope": 2,
+        "skip/no_remaining_decision_impact": 1,
+        "select/distinguish_bound_interpretations": 1
+      },
+      "projected_queries": 0,
+      "actual_solver_calls": 0,
+      "program_seconds": 2.632,
+      "pending_actions": 0,
+      "report_sha256": "d71ceeb1c757984bd793946574c6a151ac0b5552fc21fe77d7c5d0d29c31e40b"
+    },
+    "extra_alarms": [],
+    "review": "",
+    "raw_member_prefix": "run/members/RQ1_475c7d9ec738/attempt_1/"
+  },
+  {
+    "member": "RQ1_30c29cd44cad",
+    "input_sha256": [
+      "3881dfa93c8bac66f65f41c65481c166ee4a14c7c10e851b61cf2bff7114743c"
+    ],
+    "actual_targets": [
+      "units/program.sol:BANK_SAFE",
+      "units/program.sol:LogFile"
+    ],
+    "source": "https://github.com/anderson608203-sudo/permission-risks-evidence/blob/9a43eacf7cb8ea74903736b53cfb8216a9a3806f/same200-contract-inputs/FCR-risk60/RQ1_30c29cd44cad.sol",
+    "task": "FCR",
+    "target_category_evaluation_only": "FCR-DESTROY",
+    "side_evaluation_only": "risk",
+    "prior_changes": {
+      "recallbudget200": [
+        "unsupported",
+        "alarm"
+      ],
+      "chatpatch200": [
+        "unsupported",
+        "alarm"
+      ],
+      "protocol200": [
+        "unsupported",
+        "alarm"
+      ],
+      "decision_only": [
+        "alarm",
+        "alarm"
+      ],
+      "prev200": [
+        "unsupported",
+        "alarm"
+      ],
+      "last1164": [
+        "unsupported",
+        "alarm"
+      ],
+      "b5": [
+        "not_detected",
+        "alarm"
+      ],
+      "v32": [
+        "alarm",
+        "alarm"
+      ]
+    },
+    "root_scope": [],
+    "old_fp": [],
+    "history_FP_groups": null,
+    "prior": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_feedback": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 2,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "657b6cbefca4c45c423946bf0d0cff369cefa9cc2ade93676aa09e9309894707"
+        },
+        {
+          "index": 1,
+          "phase": "focused_revision",
+          "status": "analysis_received",
+          "usable": false,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "862e2ea2d2b6bf3c5423033c88f1cddfd8398fcd834ac4d6a3b9c7bb374cbb68"
+        }
+      ],
+      "target_findings": [],
+      "target_judgments": [
+        {
+          "issue": "scope_72bc991c981a54a74eb8",
+          "op": "op_76305b1abeecc17f8237",
+          "entry": "destroy(address,uint256)",
+          "target": "units/program.sol:BANK_SAFE",
+          "property": "property_41d4fd633b9b079dfdbb",
+          "state": "open",
+          "reason": "scope_missing",
+          "meanings": [],
+          "effects": [],
+          "origins": [
+            "source_observation"
+          ],
+          "evidence": [
+            "E4",
+            "E5"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_95afadfe9d702945d53a"
+          ],
+          "id": "gap_1fe760c5d4befa29",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1202,
+            "length": 303,
+            "ast_id": 178
+          }
+        },
+        {
+          "reason": "source_unit_missing",
+          "ops": [
+            "op_76305b1abeecc17f8237"
+          ],
+          "id": "gap_6da8e904c6b0ec99",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 971,
+            "length": 225,
+            "ast_id": 132
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_4a0df62773eed72e2849"
+          ],
+          "id": "gap_c356294b2e719416",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 591,
+            "length": 138,
+            "ast_id": 77
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c0ff20023a7793a059b4"
+          ],
+          "id": "gap_09690eef9ff58d46",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1511,
+            "length": 158,
+            "ast_id": 201
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 4,
+        "necessary_effect_absent": 4,
+        "external_dependency": 3,
+        "source_unit_missing": 1
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_309727e389d794129674",
+          "object_or_effect": "w_717cd877fb3012d10a61",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_717cd877fb3012d10a61",
+          "grounded": true
+        },
+        {
+          "id": "fact_858bd6b2f599d658cc78",
+          "object_or_effect": "o_27e3dd838313b9bd662a",
+          "meaning": "transfer_condition",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        },
+        {
+          "id": "fact_a10908f71c134fcca984",
+          "object_or_effect": "w_4642e60400dbba6b9b33",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": "w_4642e60400dbba6b9b33",
+          "grounded": true
+        },
+        {
+          "id": "fact_e5e3fedf98cf4743483d",
+          "object_or_effect": "o_10ded92b986eaf369b34",
+          "meaning": "management_role",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_bf0afd5c3986c28f6bdf",
+          "fact": "fact_858bd6b2f599d658cc78",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        },
+        {
+          "support": "support_d0bd940c0b5199ee847f",
+          "fact": "fact_e5e3fedf98cf4743483d",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {
+        "sent": 1,
+        "parsed": 1
+      },
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 3,
+        "unrelated_or_secondary_graph_pairs_deferred": 2,
+        "semantic_meaning_or_explanation_polarity_unresolved": 1
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 3
+      },
+      "refinement_actions": {
+        "join/shared_prerequisite": 1,
+        "select/basic_source_read": 4,
+        "read/shared_source_fact_acquired": 4,
+        "select/check_effect_or_refute_same_scope": 1,
+        "select/distinguish_bound_interpretations": 6,
+        "select/joint_prerequisite": 2
+      },
+      "projected_queries": 11,
+      "actual_solver_calls": 8,
+      "program_seconds": 0.455,
+      "pending_actions": 0,
+      "report_sha256": "97db30331296680c3f588e2ceec35b9a1d7df387f217eb028c0140e5e5d12d5c"
+    },
+    "actual": {
+      "model_analysis_available": true,
+      "stages": {
+        "checkpoint_basic": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_initial": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "unsupported",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "checkpoint_feedback": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        },
+        "report": {
+          "FCR-TRANSFER": "unsupported",
+          "FCR-MINT": "unsupported",
+          "FCR-DESTROY": "alarm",
+          "FCR-PAUSE": "unsupported",
+          "FCR-FREEZE": "unsupported"
+        }
+      },
+      "attempts": [
+        {
+          "index": 0,
+          "phase": "initial",
+          "status": "analysis_received",
+          "usable": false,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 0,
+          "committed_update_count": 0,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "1a168a8a02c3f725ea60095f364887ae97dd40331bed8a97cd8357611e33130b"
+        },
+        {
+          "index": 1,
+          "phase": "focused_revision",
+          "status": "analysis_received",
+          "usable": true,
+          "response_kind": "substantive",
+          "normalization_diagnostics": [],
+          "accepted_support_count": 0,
+          "committed_update_count": 1,
+          "located_issue_count": 0,
+          "located_read_count": 0,
+          "messages_sha256": "70ddbe7ccccbbc7478d1f6644b78c894e596bab6d7c96296d09e6d4a5a39dada"
+        }
+      ],
+      "target_findings": [
+        {
+          "id": "finding_0085a326cf81fc71f0ea",
+          "entry": "destroy(address,uint256)",
+          "operation": "op_76305b1abeecc17f8237",
+          "location": {
+            "file": "units/program.sol",
+            "start": 1127,
+            "length": 30,
+            "ast_id": 125
+          },
+          "target": "units/program.sol:BANK_SAFE",
+          "reason": "uncompensated_debit",
+          "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 1127 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+          "effects": [
+            "w_adc915952732599a18e0"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "supports": [
+            "support_ae842aad3a85cfbc1b8c"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "property": "property_d8c5588e1988b730dfb6",
+          "issue_ids": [
+            "scope_394ada48d14854e13d61"
+          ],
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        }
+      ],
+      "target_judgments": [
+        {
+          "issue": "scope_394ada48d14854e13d61",
+          "op": "op_76305b1abeecc17f8237",
+          "entry": "destroy(address,uint256)",
+          "target": "units/program.sol:BANK_SAFE",
+          "property": "property_d8c5588e1988b730dfb6",
+          "state": "risk",
+          "reason": "uncompensated_debit",
+          "meanings": [
+            "financial_right"
+          ],
+          "effects": [
+            "w_adc915952732599a18e0"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ],
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "tied_queries": {}
+        }
+      ],
+      "target_gaps": [
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_95afadfe9d702945d53a"
+          ],
+          "id": "gap_1fe760c5d4befa29",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1202,
+            "length": 303,
+            "ast_id": 178
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_4a0df62773eed72e2849"
+          ],
+          "id": "gap_c356294b2e719416",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 591,
+            "length": 138,
+            "ast_id": 77
+          }
+        },
+        {
+          "reason": "external_dependency",
+          "ops": [
+            "op_c0ff20023a7793a059b4"
+          ],
+          "id": "gap_09690eef9ff58d46",
+          "loc": {
+            "file": "units/program.sol",
+            "start": 1511,
+            "length": 158,
+            "ast_id": 201
+          }
+        }
+      ],
+      "obligation_bases": {
+        "no_effect_in_scope": 4,
+        "necessary_effect_absent": 4,
+        "external_dependency": 3,
+        "source_task_reading": 1
+      },
+      "accepted_semantic_facts": [
+        {
+          "id": "fact_c95bce783317194dfdb1",
+          "object_or_effect": "o_9e0784c2aa4089e9a804",
+          "meaning": "financial_right",
+          "role": null,
+          "subject": null,
+          "scope": null,
+          "grounded": true
+        }
+      ],
+      "supports": [
+        {
+          "support": "support_ae842aad3a85cfbc1b8c",
+          "fact": "fact_c95bce783317194dfdb1",
+          "origin": "verified_service",
+          "field": "annotations",
+          "version": 1
+        }
+      ],
+      "revisions": [],
+      "feedback_events": {
+        "sent": 1,
+        "parsed": 1,
+        "consumed": 1,
+        "changed_finding": 1
+      },
+      "diagnostics": {
+        "unbound_or_inapplicable_seed": 2
+      },
+      "row_rejection_reasons": {
+        "unbound_or_inapplicable_seed/source_binding": 2
+      },
+      "refinement_actions": {
+        "select/basic_source_read": 1,
+        "read/shared_source_fact_acquired": 1,
+        "select/check_effect_or_refute_same_scope": 1
+      },
+      "projected_queries": 0,
+      "actual_solver_calls": 0,
+      "program_seconds": 2.467,
+      "pending_actions": 0,
+      "report_sha256": "b4e890525c9e6238800ab1af462f2700c81e627fa6da907185a605794e4702fd"
+    },
+    "extra_alarms": [],
+    "review": "上批同一类别的原始依据为 依赖未能闭合的外部行为、账本单位缺少依据。 下方列出本批依据。",
+    "raw_member_prefix": "run/members/RQ1_30c29cd44cad/attempt_1/"
+  }
+]

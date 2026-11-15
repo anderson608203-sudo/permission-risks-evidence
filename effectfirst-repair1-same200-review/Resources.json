@@ -1,0 +1,173 @@
+{
+  "ledger": {
+    "requests": 291,
+    "real_model_calls": 291,
+    "simulated_service_requests": 0,
+    "unknown_or_inflight_upper_usd": 0.0,
+    "unknown_cost_upper_usd": 0.0,
+    "inflight": 0,
+    "unknown": 0,
+    "settled_cost_usd_upper": 1.9285859999999995,
+    "settled_cost_usd_lower": 0.9642929999999997,
+    "simulated_cost_usd_upper": 0,
+    "prompt_tokens": 905468,
+    "completion_tokens": 1398036,
+    "service_models": [
+      "deepseek-flash"
+    ],
+    "actual_provider_billed_usd": null,
+    "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+    "per_request_money_reservation": false,
+    "halt": "",
+    "nature": "real_service",
+    "unknown_fee_is_not_zero": true
+  },
+  "ledger_sha256": "1ad51cfddb1fb8427ce7f7038dea5fb7374b8df240922fa78b9f26507250f2d4",
+  "reasoning_tokens": 1355361,
+  "cached_input_tokens": 70400,
+  "phase_counts": {
+    "initial": 200,
+    "focused_revision": 91
+  },
+  "finish_counts": {
+    "stop": 291
+  },
+  "usable_requests": 208,
+  "wall_seconds": 3084.4965908527374,
+  "prep_seconds": 77.94297480583191,
+  "collection_seconds": 1.9599933000281453,
+  "peak_workers_observed": 8,
+  "peak_owned_rss_gib_sampled": 5.72,
+  "release_gate": {
+    "passed": true,
+    "unusable_protocol_or_consumption": [],
+    "uncaught_error_groups": {},
+    "checks_only_technical_chain_not_findings_or_scores": true
+  },
+  "solver_and_budget": {
+    "current": {
+      "queries": 8586,
+      "solver_calls": 8634,
+      "solver_seconds": 2997.8617432056926,
+      "program_seconds": 8962.910421035718,
+      "pending_actions": 1275,
+      "solver_budget_exhausted": 0,
+      "program_over_120": 31,
+      "program_over_295": 10,
+      "members_with_pending": 22,
+      "members_with_model_analysis": 164,
+      "members_with_budget_diagnostic": 5
+    },
+    "previous": {
+      "queries": 8117,
+      "solver_calls": 8070,
+      "solver_seconds": 3024.1636909204535,
+      "program_seconds": 7114.578982832842,
+      "pending_actions": 1503,
+      "solver_budget_exhausted": 0,
+      "program_over_120": 23,
+      "program_over_295": 10,
+      "members_with_pending": 28,
+      "members_with_model_analysis": 177,
+      "members_with_budget_diagnostic": 8
+    }
+  },
+  "comparable_prior": {
+    "source_sha256": "fa926ed737a3925c09affe96021781839c3592de1717481eb66fca6b717366df",
+    "requests": 303,
+    "usd_upper": 2.4325185360000003,
+    "wall_seconds": 3106.5329146385193
+  },
+  "carry": {
+    "receipt": "D:\\PR-Next\\work\\research_execution_20261113_r1\\recall_focused_budget_r1\\same200\\review\\Resources.json",
+    "sha256": "fa926ed737a3925c09affe96021781839c3592de1717481eb66fca6b717366df",
+    "previous_cumulative_requests": 946,
+    "previous_cumulative_usd_upper": 8.428531019999998,
+    "latest_provider_actual_usd": null,
+    "last_batch_ledger": {
+      "requests": 303,
+      "real_model_calls": 303,
+      "simulated_service_requests": 0,
+      "unknown_or_inflight_upper_usd": 0.0,
+      "unknown_cost_upper_usd": 0.0,
+      "inflight": 0,
+      "unknown": 0,
+      "settled_cost_usd_upper": 2.4325185360000003,
+      "settled_cost_usd_lower": 1.2162592680000002,
+      "simulated_cost_usd_upper": 0,
+      "prompt_tokens": 921810,
+      "completion_tokens": 1820229,
+      "service_models": [
+        "deepseek-flash"
+      ],
+      "actual_provider_billed_usd": null,
+      "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+      "per_request_money_reservation": false,
+      "halt": "",
+      "nature": "real_service",
+      "unknown_fee_is_not_zero": true
+    },
+    "prior_history": {
+      "carried_from": "D:\\PR-Next\\work\\research_execution_20261113_r1\\sp200_simplification_r2\\chat_patch_f01_repair_r2\\same200\\review\\Resources.json",
+      "sha256": "fd668c809d280c1f52c6a6697785a21f2ee9d5cb0b43e7dc845d8ed026e3b4c9",
+      "previous_cumulative_requests": 643,
+      "previous_cumulative_usd_upper": 5.996012483999998,
+      "last_batch_requests": 303,
+      "last_batch_usd_upper": 2.427644939999999,
+      "last_batch_supplier_actual": null,
+      "prior_history_reference": {
+        "path": "D:\\PR-Next\\work\\research_execution_20261113_r1\\sp200_simplification_r2\\chat_patch_f01_repair_r2\\same200\\review\\evidence\\HISTORY.json",
+        "sha256": "79c1af782a6d6bca6d55413a25fcaf5859fdcf803fe7f7392ba84746368e6c41"
+      },
+      "previous_preparation": {
+        "used_seconds": 8.091116905212402,
+        "initial_time_basis": "batch-specific instance setup time; manual upload separate, no prior inventory time attributed",
+        "runs": [
+          {
+            "start_epoch": 1794664721.728467,
+            "end_epoch": 1794664729.8195918,
+            "seconds": 8.091116905212402,
+            "resume": false
+          }
+        ]
+      },
+      "previous_end_reference": {
+        "path": "D:\\PR-Next\\work\\research_execution_20261113_r1\\sp200_simplification_r2\\chat_patch_f01_repair_r2\\same200\\review\\evidence\\run\\ENDED.json",
+        "sha256": "4a84468baccd7314d8889d8485db6e345a5d4e3f4e89e6f5f9ef2fd2c4646225"
+      },
+      "provider_unsettled_by_reference": true,
+      "new_api_calls_during_prep": 0,
+      "new_AutoDL_seconds_during_local_prep": 0
+    },
+    "prior_preparation_seconds": 8.561413526535034,
+    "prior_collection_seconds": 2.3872769861482084,
+    "local_new_API": 0,
+    "local_new_AutoDL_seconds": 0
+  },
+  "new_cumulative_requests": 1237,
+  "new_cumulative_upper_usd": 10.357117019999997,
+  "same_old_message_at_same_slot": 0,
+  "same_old_response_at_same_slot": 0,
+  "status": {
+    "phase": "ended",
+    "reports_saved": 200,
+    "with_gaps": 190,
+    "technical_errors": 0,
+    "not_yet_reported": 0,
+    "findings": 185,
+    "active": 0,
+    "parallel": 6,
+    "elapsed_seconds": 3084,
+    "model_requests": 291,
+    "settled_upper_usd": 1.9285859999999995,
+    "inflight_requests": 0,
+    "unknown_requests": 0,
+    "inflight_or_unknown_upper_usd": 0.0,
+    "money_reservations": false,
+    "dispatch_halt": "",
+    "owned_RSS_GiB": 0.0,
+    "available_GiB": 419.16,
+    "run_disk_GiB": 0.09
+  },
+  "no_new_review_requests": true
+}
