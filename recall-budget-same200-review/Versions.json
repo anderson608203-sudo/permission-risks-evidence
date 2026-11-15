@@ -1,0 +1,95 @@
+{
+  "new": {
+    "method": "96d1c6aa412bd8f4bb8be93d78263e724836e2e3c1766afbb5b88090cddd0052",
+    "config": "94bf6ea8bb21efb26e63c0f43d476382e5e87ad4b90fdfbe891ea18843dbc898",
+    "budget_parent": "e6291102450cfddadf40d8b6485a6e482861ebdd9a0a4a783e1cce70dbf3aa13",
+    "files": 109,
+    "method_files": 97,
+    "dependency_versions": {
+      "z3-solver": "4.15.3.0",
+      "eth-keys": "0.7.0",
+      "pycryptodome": "3.24.1",
+      "tokenizers": "0.22.2"
+    },
+    "model": {
+      "model": "deepseek-flash",
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "max_tokens": 32768
+    }
+  },
+  "chatpatch200": {
+    "method": "73a43ce6ef9ccf750a8f81a03a6257a62a63e054726752065486d744164da5d4",
+    "files": 97,
+    "config": "2ab0557132adf3b6c12a145ab9cef71bc1b1ef39d5cdc5f76bf8660d5e2ca783"
+  },
+  "protocol200": {
+    "method": "01fe5ca16438e5c3348357613050a02609a62ba583725db68009d0fb9922b6fb",
+    "files": 97,
+    "config": "dd08d856d35677cdbda1652a846182bc48ee855c0aca26b9b9962e5c153e8c0a"
+  },
+  "v32": {
+    "name": "joint-rights-settlement-rq1-v32-20261104",
+    "freeze_file": "v32_completed_review_r1/FROZEN_RUN.jsonl.gz",
+    "sha256": "241afdbf8eaff15201cc55ea60783e4d0f4dd32997f47664f546d8362f05c9f9",
+    "source_manifest": "d7328f3803a470676c2bcf0abb31fa8380e45a842c43c63d3a7888097328c6a8",
+    "selected_200_reports_verified": true
+  },
+  "v32_AC_original_sha256": "e60ff39d28cf03b40f006a664396edad1112c3b0ab5acec8a519696e14a40966",
+  "v32_FCR_original_sha256": "aa391c00910418d2f3e953cc866dceb9a3931d4b0cee0b5e7dafcf93ec88886e",
+  "prior200": {
+    "parent": "4974d5706d1c78a4caf9eb28dfd6ff380419faea9549252e2e8c37b66f53efe7",
+    "technical_successor": "6328276e5c9c7793baac31341811ce31b7a85ad9457d2a1afad217f66f42b812",
+    "reused_source_record": "198+2 technical corrections, including a mixed-source continuation"
+  },
+  "b5": {
+    "b5c58fd28304f986b170636c2754a781f305847e9f18be2279c4e27898a6c44c": 1162,
+    "aabbc29b6e9c54233abc175e42e5a8d0f1069e88d6f226594b1870511f9d2669": 2
+  },
+  "last1164": {
+    "round": "permission-risks-rel-revision-full1164-20261111-r1",
+    "method_sha256": "b4f98eff6faa4a911e94888a391da2111bd2c1f892ac5717e7adcce820cd9f36",
+    "config_sha256": "1395a5e713a907a9b3f3a10c075fd398543e5cc4aecbc2eed1d2bf4acd579a29"
+  },
+  "decision_only": {
+    "": {
+      "implementation": "12dd0f22574beae66784bab10a8fad378de1a7ddac026c30b9ccfc82972a8f12",
+      "config": "319f25579ec87154b040f913ef6fb5b9e1ed16798babebc21d4a1d1d36e9793c",
+      "runtime_files": {
+        "common.py": "bf32e4663b5b3025a14654c9f028bfc80c40301fc012abe885f6e5fe6410e4bd",
+        "input_links.py": "b1b8b6d4b9895c66869fbd3d4451f7e8dfb8207f79d5bfe3f4fe00898af9e3af",
+        "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+        "live_client.py": "ae247ea6ea77d281defb2fc74c3742c2b7c4196d8c8011bc50c6bec94a364b43",
+        "start.py": "81bda67b6a4022d3a42ac22e42917560791d3b26d232e4d5793e68f4f53a0fac",
+        "supervisor.py": "88a121da62bf00b319eba575da14e720e5531e35353083de4406a30e6ef12193",
+        "worker.py": "50e9babe331a0860ec0080d69aca09e13d636d3e514960087874c6ad602109a9"
+      },
+      "method_files": 95,
+      "actual_source_file_count": 106
+    },
+    "run/technical_two/": {
+      "implementation": "221ed063b0e14c7f6abadf58725eeaa6ae11e5470f6d64bd9fc011577281f19d",
+      "config": "319f25579ec87154b040f913ef6fb5b9e1ed16798babebc21d4a1d1d36e9793c",
+      "runtime_files": {
+        "common.py": "bf32e4663b5b3025a14654c9f028bfc80c40301fc012abe885f6e5fe6410e4bd",
+        "input_links.py": "b1b8b6d4b9895c66869fbd3d4451f7e8dfb8207f79d5bfe3f4fe00898af9e3af",
+        "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+        "live_client.py": "ae247ea6ea77d281defb2fc74c3742c2b7c4196d8c8011bc50c6bec94a364b43",
+        "start.py": "81bda67b6a4022d3a42ac22e42917560791d3b26d232e4d5793e68f4f53a0fac",
+        "supervisor.py": "88a121da62bf00b319eba575da14e720e5531e35353083de4406a30e6ef12193",
+        "worker.py": "50e9babe331a0860ec0080d69aca09e13d636d3e514960087874c6ad602109a9"
+      },
+      "method_files": 95,
+      "actual_source_file_count": 106
+    }
+  },
+  "external_comparisons": "JANUS540 作者全量资料；未得到能核对的三工具本批逐对运行记录，不换算120份成绩。",
+  "input_commit": "9a43eacf7cb8ea74903736b53cfb8216a9a3806f",
+  "input_git_manifest_blob": "10067f4b4bf0c3371b50adac98e9b1de3fdc54d0",
+  "input_local_manifest_sha256": "55deeaabefe39be9e79ca0b73621c3e8295ee5f1656b56df2e945c1780664779",
+  "frozen_current_roster": "1120162358293db585ac38144264582bc6aab07fb3f88abaaed42aed4d3f820f",
+  "same_input_and_targets_verified": 200,
+  "new_paid_experiments_for_review": 0
+}

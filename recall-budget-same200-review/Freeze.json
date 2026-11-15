@@ -1,0 +1,64 @@
+{
+  "archive": "PR_RecallBudget_Same200_Results.tar.gz",
+  "archive_bytes": 14073650,
+  "archive_sha256": "57bd77ce41826f9c92a794b1c47441a35cfc8322e8dae3099260245a319d21ba",
+  "sidecar_sha256": "d21cdd4880d4f3699387d276fc535ca1431d03dbfc2507ecc0478b3d045d80d3",
+  "archive_files": 6073,
+  "frozen_files": 5931,
+  "frozen_manifest_sha256": "6882ae945d021ebad8481a2074165475726cf5495e0200ac4cf8e7778129afca",
+  "selected_sha256": "b92cee4e1fe549db642851d98cecbb3173c544ee28e389dadc46e3b735e9587b",
+  "source": {
+    "method": "96d1c6aa412bd8f4bb8be93d78263e724836e2e3c1766afbb5b88090cddd0052",
+    "files": 97,
+    "config": "94bf6ea8bb21efb26e63c0f43d476382e5e87ad4b90fdfbe891ea18843dbc898"
+  },
+  "full_source_files": 109,
+  "config": "94bf6ea8bb21efb26e63c0f43d476382e5e87ad4b90fdfbe891ea18843dbc898",
+  "dependency_versions": {
+    "z3-solver": "4.15.3.0",
+    "eth-keys": "0.7.0",
+    "pycryptodome": "3.24.1",
+    "tokenizers": "0.22.2"
+  },
+  "model_parameters": {
+    "model": "deepseek-flash",
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768
+  },
+  "order_sha256": "1120162358293db585ac38144264582bc6aab07fb3f88abaaed42aed4d3f820f",
+  "run_end": "normal_completion",
+  "status": {
+    "phase": "ended",
+    "reports_saved": 200,
+    "with_gaps": 199,
+    "technical_errors": 0,
+    "not_yet_reported": 0,
+    "findings": 148,
+    "active": 0,
+    "parallel": 6,
+    "elapsed_seconds": 3106,
+    "model_requests": 303,
+    "settled_upper_usd": 2.4325185360000003,
+    "inflight_requests": 0,
+    "unknown_requests": 0,
+    "inflight_or_unknown_upper_usd": 0.0,
+    "money_reservations": false,
+    "dispatch_halt": "",
+    "owned_RSS_GiB": 0.0,
+    "available_GiB": 415.63,
+    "run_disk_GiB": 0.09
+  },
+  "members": {
+    "AC": 80,
+    "FCR": 120
+  },
+  "checked": "all archive SHA; runtime/launch identities; all frozen files; identical 200 original jobs and all actual intake compiler, source and selected targets; per-member report, decision, route, CLI projection and canonical digest; independent local scores start after this receipt",
+  "technical_errors": 0,
+  "member_analysis_available": {
+    "AC": 67,
+    "FCR": 110
+  }
+}

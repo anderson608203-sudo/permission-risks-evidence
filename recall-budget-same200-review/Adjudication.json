@@ -1,0 +1,993 @@
+[
+  {
+    "member": "RQ1_2c07fdcf80d4",
+    "finding": "finding_70334ba992a214cdcca0",
+    "application_target": "units/program.sol:Asset",
+    "operation": "op_21238fb999df6940a39a",
+    "function": "setAllowedAddress(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1075,
+      "length": 20,
+      "ast_id": 118
+    },
+    "line": 29,
+    "source_sha256": "bb8444804847b45e8c79c1d401f7e8f9a25aedb58df31ed0a9f366766231af59",
+    "span_sha256": "0ab43cfedd5bcf621dd8e9cb2ec04896d72f78c38f8ed11bf0efc94ffd9ec3a8",
+    "group": "ref:D2:458:author:1",
+    "status": "TP",
+    "reference": "D2:458:author:1",
+    "possible_reference": null,
+    "basis": "原资格表公开写入，两个应用目标均从同一 setAllowedAddress 声明取得资格。",
+    "decision": "source_role_reassignment",
+    "property": "property_2facb05b2b571fd878a9",
+    "evidence": [
+      "E1"
+    ],
+    "issues": [
+      "AC-setAllowedAddress-public@0873590b88a1"
+    ]
+  },
+  {
+    "member": "RQ1_2c07fdcf80d4",
+    "finding": "finding_2a99d1a6a02cfdc5343c",
+    "application_target": "units/program.sol:ERC20Token",
+    "operation": "op_359e88d7340e27a0698a",
+    "function": "setAllowedAddress(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1075,
+      "length": 20,
+      "ast_id": 118
+    },
+    "line": 29,
+    "source_sha256": "bb8444804847b45e8c79c1d401f7e8f9a25aedb58df31ed0a9f366766231af59",
+    "span_sha256": "0ab43cfedd5bcf621dd8e9cb2ec04896d72f78c38f8ed11bf0efc94ffd9ec3a8",
+    "group": "ref:D2:458:author:1",
+    "status": "TP",
+    "reference": "D2:458:author:1",
+    "possible_reference": null,
+    "basis": "原资格表公开写入，两个应用目标均从同一 setAllowedAddress 声明取得资格。",
+    "decision": "source_role_reassignment",
+    "property": "property_988b16494d835cf34a69",
+    "evidence": [
+      "E2"
+    ],
+    "issues": [
+      "AC-setAllowedAddress-public@514e40d6aa13"
+    ]
+  },
+  {
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_310e6a24a711f9b9ec79",
+    "application_target": "units/program.sol:StandardToken",
+    "operation": "op_739716327e8f0d3b50fd",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:157:author:1",
+    "status": "TP",
+    "reference": "D2:157:author:1",
+    "possible_reference": null,
+    "basis": "普通 Constructor 写入 owner，多目标复用同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_3745b83be3e110ecbbd6",
+    "evidence": [
+      "E1",
+      "E16"
+    ],
+    "issues": [
+      "scope_2c117afc1128a7903ddc"
+    ]
+  },
+  {
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_4d7f196d51d46d06cb8f",
+    "application_target": "units/program.sol:Owned",
+    "operation": "op_7423cb8a9629e9135ee3",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:157:author:1",
+    "status": "TP",
+    "reference": "D2:157:author:1",
+    "possible_reference": null,
+    "basis": "普通 Constructor 写入 owner，多目标复用同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_a85add6f87366e0cbc49",
+    "evidence": [
+      "E19",
+      "E2"
+    ],
+    "issues": [
+      "scope_9cafca3c01225761d9fd"
+    ]
+  },
+  {
+    "member": "RQ1_ce214e96568d",
+    "finding": "finding_705b7a2a54331a062fa0",
+    "application_target": "units/program.sol:T0XToken",
+    "operation": "op_e9d1cb5345bc0b091df1",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "c12e4e8677a0b6166d2c97d234c3c5d1c556315809f0a3c948da8fcbe61790d5",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:157:author:1",
+    "status": "TP",
+    "reference": "D2:157:author:1",
+    "possible_reference": null,
+    "basis": "普通 Constructor 写入 owner，多目标复用同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_6cc21f4e1f29f973a899",
+    "evidence": [
+      "E20",
+      "E3"
+    ],
+    "issues": [
+      "scope_d02ca476d1397f6c8b77"
+    ]
+  },
+  {
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_60754993236fe15a9681",
+    "application_target": "units/program.sol:StandardToken",
+    "operation": "op_739716327e8f0d3b50fd",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:111:author:1",
+    "status": "TP",
+    "reference": "D2:111:author:1",
+    "possible_reference": null,
+    "basis": "同成员的公开 Constructor 重配 owner，三个应用目标同根。",
+    "decision": "source_role_reassignment",
+    "property": "property_1d2f2107aec76a9c9191",
+    "evidence": [
+      "E19",
+      "E2"
+    ],
+    "issues": [
+      "scope_242e42ac59a91de45176"
+    ]
+  },
+  {
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_20caf500b578efa2ba51",
+    "application_target": "units/program.sol:ToxbtcToken",
+    "operation": "op_4242d5beba306acb0f7f",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:111:author:1",
+    "status": "TP",
+    "reference": "D2:111:author:1",
+    "possible_reference": null,
+    "basis": "同成员的公开 Constructor 重配 owner，三个应用目标同根。",
+    "decision": "source_role_reassignment",
+    "property": "property_5f2f56a568887cede853",
+    "evidence": [
+      "E1",
+      "E16"
+    ],
+    "issues": [
+      "scope_6a678f8e3724b49ca376"
+    ]
+  },
+  {
+    "member": "RQ1_62bedd2d4a5a",
+    "finding": "finding_0c537d709aefcc959957",
+    "application_target": "units/program.sol:Owned",
+    "operation": "op_7423cb8a9629e9135ee3",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "ed87c2eaa79394961c84a7951f8d76973729d330ab9af73a1ba2d7b039c778c3",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:111:author:1",
+    "status": "TP",
+    "reference": "D2:111:author:1",
+    "possible_reference": null,
+    "basis": "同成员的公开 Constructor 重配 owner，三个应用目标同根。",
+    "decision": "source_role_reassignment",
+    "property": "property_8cdbbae88e39744b9ce8",
+    "evidence": [
+      "E20",
+      "E3"
+    ],
+    "issues": [
+      "scope_9a468f5d6889dc0e90d6"
+    ]
+  },
+  {
+    "member": "RQ1_868007cf433c",
+    "finding": "finding_59e00342f50aa75eb5eb",
+    "application_target": "units/program.sol:PiggyBank",
+    "operation": "op_402ea5ec813225caef4a",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 799,
+      "length": 248,
+      "ast_id": 120
+    },
+    "line": 29,
+    "source_sha256": "badc0414b07f66107777e04ade897e277d858ea20c517ec98b34cf46dc5701d1",
+    "span_sha256": "fb89e911af8cb3c99489d2c6e46c838c4b9df37930d2d0279c991944bc1a66e8",
+    "group": "ref:D2:222:original:1",
+    "status": "TP",
+    "reference": "D2:222:original:1",
+    "possible_reference": null,
+    "basis": "PiggyBank 的中性候选来自未命名入口的独立终止效果，另一个线索指明 sensitive-exit。未达阈值只发事件；可提交净写入 complete 与销毁同处达阈值分支。E3/E4 各有一条 authorization_violation SAT 和一条 UNSAT。零目标金额导致回滚，不能解释已提交权益效果。两条报警同根；自动按设计执行与脆弱性的业务争议保留。",
+    "decision": "program_support",
+    "property": "property_1fead90e8202a72fe770",
+    "evidence": [
+      "E1",
+      "E3"
+    ],
+    "issues": [
+      "fallback-independent-sensitive-exit"
+    ]
+  },
+  {
+    "member": "RQ1_868007cf433c",
+    "finding": "finding_41f953dbe6a61e3485d7",
+    "application_target": "units/program.sol:PiggyBank",
+    "operation": "op_402ea5ec813225caef4a",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 799,
+      "length": 248,
+      "ast_id": 120
+    },
+    "line": 29,
+    "source_sha256": "badc0414b07f66107777e04ade897e277d858ea20c517ec98b34cf46dc5701d1",
+    "span_sha256": "fb89e911af8cb3c99489d2c6e46c838c4b9df37930d2d0279c991944bc1a66e8",
+    "group": "ref:D2:222:original:1",
+    "status": "TP",
+    "reference": "D2:222:original:1",
+    "possible_reference": null,
+    "basis": "PiggyBank 的中性候选来自未命名入口的独立终止效果，另一个线索指明 sensitive-exit。未达阈值只发事件；可提交净写入 complete 与销毁同处达阈值分支。E3/E4 各有一条 authorization_violation SAT 和一条 UNSAT。零目标金额导致回滚，不能解释已提交权益效果。两条报警同根；自动按设计执行与脆弱性的业务争议保留。",
+    "decision": "program_support",
+    "property": "property_45a6e18cabb6b1a1a0cf",
+    "evidence": [
+      "E2",
+      "E4"
+    ],
+    "issues": [
+      "host_candidate_990133cf6fd11eb9"
+    ]
+  },
+  {
+    "member": "RQ1_6674f42c37b9",
+    "finding": "finding_e9db0a65723c8a31ffec",
+    "application_target": "units/program.sol:kn0Token",
+    "operation": "op_0ee1d6daf4e2bf92934f",
+    "function": "Ownable()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3214,
+      "length": 18,
+      "ast_id": 406
+    },
+    "line": 86,
+    "source_sha256": "735cd00265b10b7541a98fb75205dbda3295bc529d6d70c4d1f04747bb6f47a4",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:113:author:1",
+    "status": "TP",
+    "reference": "D2:113:author:1",
+    "possible_reference": null,
+    "basis": "实际 kn0Token 上暴露 Ownable 资格写入，命中标定的所有权取得。",
+    "decision": "source_role_reassignment",
+    "property": "property_a48471731be527e6ab1b",
+    "evidence": [
+      "E17",
+      "E5"
+    ],
+    "issues": [
+      "scope_5010737a865574abee41"
+    ]
+  },
+  {
+    "member": "RQ1_2a3f29f582b8",
+    "finding": "finding_7c8019d09836d71dda58",
+    "application_target": "units/program.sol:PPBC_Ether_Claim",
+    "operation": "op_e6cbf7961afe7ab97b3d",
+    "function": "end_redeem_period()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3948,
+      "length": 134,
+      "ast_id": 379
+    },
+    "line": 65,
+    "source_sha256": "a198a551d6ea80743de507e73577d266da7802d4b85d7d39a958ec1df91471e1",
+    "span_sha256": "1d0fd825a2674af8ead2547e251d295e307dd7be9b834e4340b29fdfa783090b",
+    "group": "ref:D2:412:author:1",
+    "status": "TP",
+    "reference": "D2:412:author:1",
+    "possible_reference": null,
+    "basis": "业务区块/领取数量条件控制赎回结束，报警指向同一终止操作。",
+    "decision": "program_support",
+    "property": "property_f83e85115e8b2f25e447",
+    "evidence": [
+      "E1",
+      "E2"
+    ],
+    "issues": [
+      "AC-1"
+    ]
+  },
+  {
+    "member": "RQ1_053265dda42e",
+    "finding": "finding_6a5edf771a437ce045e7",
+    "application_target": "units/program.sol:Matthew",
+    "operation": "op_66a433e711a5cee8fed4",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 649,
+      "length": 714,
+      "ast_id": 159
+    },
+    "line": 22,
+    "source_sha256": "fd0090415eb98ee048de2fee8083d61743a02237e32ce21967fd34573aa416cf",
+    "span_sha256": "4faf38cc216ea4979f53cef45c691e6684612d0dfd3a2f1ebc8b9f67cb30da73",
+    "group": "extra:units/program.sol:649",
+    "status": "FP",
+    "reference": null,
+    "possible_reference": null,
+    "basis": "该成员作者参考为空；参考外报警，独立安全性未裁定。",
+    "decision": "program_support",
+    "property": "property_833b289b28d240779a31",
+    "evidence": [
+      "E1",
+      "E7"
+    ],
+    "issues": [
+      "host_candidate_57293d563c8046e7"
+    ]
+  },
+  {
+    "member": "RQ1_1007b4fc52ca",
+    "finding": "finding_6f338bc7b1a61e426db8",
+    "application_target": "units/program.sol:EncryptedToken",
+    "operation": "op_b14d1bc2940e244b134e",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4952,
+      "length": 74,
+      "ast_id": 602
+    },
+    "line": 119,
+    "source_sha256": "644289eda397c8a2bd67a571d9112c91fb3eaf49542c16002a1ffa690c32da29",
+    "span_sha256": "b6dcfd16fd6cf10ab20fa88a4ca0ba9991c5f593b69c754828e3bb4cdf94e059",
+    "group": "ref:D2:236:S1",
+    "status": "TP",
+    "reference": "D2:236:S1",
+    "possible_reference": null,
+    "basis": "selfdestructs 的唯一敏感操作为资产终止，匹配作者根因。",
+    "decision": "program_support",
+    "property": "property_3d4575bfd045d86e92dd",
+    "evidence": [
+      "E3",
+      "E8"
+    ],
+    "issues": [
+      "host_candidate_6f3d83e1da4979b4"
+    ]
+  },
+  {
+    "member": "RQ1_e5e40ec6feca",
+    "finding": "finding_03ae3243ac1389e6ac71",
+    "application_target": "units/program.sol:ReverseBugBounty",
+    "operation": "op_a63cbe7a4471a8283ba7",
+    "function": "destroy()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 194,
+      "length": 54,
+      "ast_id": 27
+    },
+    "line": 10,
+    "source_sha256": "2756ed6f4df948c9c34dbf8e57241e05ecc33a5caa1503b3fb1e71e7959e5165",
+    "span_sha256": "dd5c30752f0e68f2eaba3a7a47c7424cadc33999fc2655a3dfbb7d7538c45966",
+    "group": "ref:D2:572:author:1",
+    "status": "TP",
+    "reference": "D2:572:author:1",
+    "possible_reference": null,
+    "basis": "destroy 的终止效果与作者根因相符；v32 原冻结台账为 FN。",
+    "decision": "program_support",
+    "property": "property_75760c1c3ed8095e0e8d",
+    "evidence": [
+      "E1",
+      "E2"
+    ],
+    "issues": [
+      "AC-1"
+    ]
+  },
+  {
+    "member": "RQ1_2e5ccd7b4bd2",
+    "finding": "finding_b40371967b30312c617a",
+    "application_target": "units/program.sol:DonutChain",
+    "operation": "op_27c4d28e9144fed934b2",
+    "function": "fallback()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3628,
+      "length": 872,
+      "ast_id": 628
+    },
+    "line": 121,
+    "source_sha256": "d81e112bfe11e29995c7b694c17ebff17594ba22687919d10d843f95cc38f137",
+    "span_sha256": "c9689973a479ad5d4a9151ed68b80e6684731c1a42855658ba8142b3edb29548",
+    "group": "extra:units/program.sol:3628",
+    "status": "pending",
+    "reference": null,
+    "possible_reference": "D2:363:original:1",
+    "basis": "DonutChain 的宿主候选确由终止线索进入，但整个 fallback 同时有购买增发、找零、受益人写入和到期终止。E21 三条授权违反 SAT 仅指向整入口性质，E4 留有分支缺边，E8 是数量核查。公开决策的 effects 为空，缺少可把具体阳性唯一归给到期终止的绑定。保守口径计参考外一组和参考未命中，另报若确认的敏感性。",
+    "decision": "program_support",
+    "property": "property_2b36683da1437e2d98b3",
+    "evidence": [
+      "E21",
+      "E4",
+      "E8"
+    ],
+    "issues": [
+      "host_candidate_f4bb9c7206e85646"
+    ]
+  },
+  {
+    "member": "RQ1_e6f04047bff4",
+    "finding": "finding_f84c0904a1f01266fdc7",
+    "application_target": "units/program.sol:CafeMaker",
+    "operation": "op_3dc592936116dc5574c9",
+    "function": "RegisterDevice()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 249,
+      "length": 23,
+      "ast_id": 22
+    },
+    "line": 9,
+    "source_sha256": "5c6a307b3121b20be1580fba3bba19129f77a33da27eab1b44d844de40941e5b",
+    "span_sha256": "2c28f715972d4cd6bd6dacac1f3eceb8be669f101e8203232dca1765f5d9d311",
+    "group": "ref:D2:37:original:1",
+    "status": "TP",
+    "reference": "D2:37:original:1",
+    "possible_reference": null,
+    "basis": "RegisterDevice 改写 DeviceAddr 的资格取得对应原参考；独立 CollectMoney 未报。",
+    "decision": "source_role_reassignment",
+    "property": "property_40550110a163ef51c0b8",
+    "evidence": [
+      "E1",
+      "E4"
+    ],
+    "issues": [
+      "scope_dce48f9551f5f47a75f9"
+    ]
+  },
+  {
+    "member": "RQ1_c9a2d9b618a7",
+    "finding": "finding_af0ee1ece34f3be16ea0",
+    "application_target": "units/program.sol:GooglierToken",
+    "operation": "op_7e8ee3807f5bf2b214ef",
+    "function": "FirstBloodToken(address,address,uint256,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3827,
+      "length": 22,
+      "ast_id": 468
+    },
+    "line": 88,
+    "source_sha256": "fc06a0d67768aa374430d543efa148592b6356296282652000837d51995f7438",
+    "span_sha256": "e5094a61b9c862243743b88222b3d4a8361c3d0a5b5c8f0d3b75fc30a4b3d33e",
+    "group": "ref:D2:93:author:1",
+    "status": "TP",
+    "reference": "D2:93:author:1",
+    "possible_reference": null,
+    "basis": "FirstBloodToken 写入 founder 的实际应用目标和资格根与参考对应。",
+    "decision": "source_role_reassignment",
+    "property": "property_3c1ee492cfc7f842c348",
+    "evidence": [
+      "E10",
+      "E4"
+    ],
+    "issues": [
+      "scope_af44c377461512f4bacc"
+    ]
+  },
+  {
+    "member": "RQ1_fc71e6703f0d",
+    "finding": "finding_f6505ed38885bffed31b",
+    "application_target": "units/program.sol:WeekendPay",
+    "operation": "op_cc26dce499cd00f213ce",
+    "function": "fin()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 250,
+      "length": 106,
+      "ast_id": 44
+    },
+    "line": 11,
+    "source_sha256": "bf43b6ed5ca2b625a9de217ac06e7ea4ddf63acadeee0d64d0c562d6ce1710e5",
+    "span_sha256": "778f6c1bafa31e1977099d5ddbfb0848c474ae3885bb4ba164fe68d311ff7f17",
+    "group": "ref:D2:253:original:2",
+    "status": "TP",
+    "reference": "D2:253:original:2",
+    "possible_reference": null,
+    "basis": "fin 的唯一敏感提交为 tx.origin 条件下的终止；独立 pay 根未报。",
+    "decision": "program_support",
+    "property": "property_dbce0038276ca4acb20a",
+    "evidence": [
+      "E1",
+      "E4"
+    ],
+    "issues": [
+      "host_candidate_3f624ca61b642b17"
+    ]
+  },
+  {
+    "member": "RQ1_947273fa2eef",
+    "finding": "finding_93703d71e86480adfb70",
+    "application_target": "units/program.sol:MyAdvancedToken",
+    "operation": "op_9951be9449a989b6b2ff",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 5342,
+      "length": 74,
+      "ast_id": 644
+    },
+    "line": 132,
+    "source_sha256": "5858aa841b01556733b6d06756cafe3a3e49090aeaeabd79d7f88b533eadce9e",
+    "span_sha256": "b6dcfd16fd6cf10ab20fa88a4ca0ba9991c5f593b69c754828e3bb4cdf94e059",
+    "group": "ref:D2:20:S1",
+    "status": "TP",
+    "reference": "D2:20:S1",
+    "possible_reference": null,
+    "basis": "selfdestructs 入口仅有对应的终止操作。",
+    "decision": "program_support",
+    "property": "property_3e292c0041cbad44e9c5",
+    "evidence": [
+      "E10",
+      "E2"
+    ],
+    "issues": [
+      "host_candidate_7f3e387faceb4182"
+    ]
+  },
+  {
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_c37548a5c72dad586fac",
+    "application_target": "units/program.sol:TOBToken",
+    "operation": "op_03e2c085ccab8960f32b",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:334:author:1",
+    "status": "TP",
+    "reference": "D2:334:author:1",
+    "possible_reference": null,
+    "basis": "公开 Constructor 改写 owner，多个派发命中同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_5b3be50e56da68c02ea6",
+    "evidence": [
+      "E1",
+      "E8"
+    ],
+    "issues": [
+      "scope_361b22415902ef9311d0"
+    ]
+  },
+  {
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_d6bdc951f965e96c4a2a",
+    "application_target": "units/program.sol:Owned",
+    "operation": "op_7423cb8a9629e9135ee3",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:334:author:1",
+    "status": "TP",
+    "reference": "D2:334:author:1",
+    "possible_reference": null,
+    "basis": "公开 Constructor 改写 owner，多个派发命中同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_92e0431a7660da0f939f",
+    "evidence": [
+      "E14",
+      "E3"
+    ],
+    "issues": [
+      "scope_59cd1a8d6f257657085c"
+    ]
+  },
+  {
+    "member": "RQ1_679bfbe1c927",
+    "finding": "finding_b4a0e85ccdccf1444fa2",
+    "application_target": "units/program.sol:StandardToken",
+    "operation": "op_739716327e8f0d3b50fd",
+    "function": "Constructor()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 793,
+      "length": 18,
+      "ast_id": 113
+    },
+    "line": 29,
+    "source_sha256": "5108c847a2dc4ed5cf5a072eeb5dea89c841310045fb9e35979d15e3569eaf42",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:334:author:1",
+    "status": "TP",
+    "reference": "D2:334:author:1",
+    "possible_reference": null,
+    "basis": "公开 Constructor 改写 owner，多个派发命中同一声明。",
+    "decision": "source_role_reassignment",
+    "property": "property_642697029968919dfca4",
+    "evidence": [
+      "E12",
+      "E2"
+    ],
+    "issues": [
+      "scope_f4799ad1b84afbb23bce"
+    ]
+  },
+  {
+    "member": "RQ1_ae0fe8386d33",
+    "finding": "finding_cd7717fa89ae033c58bc",
+    "application_target": "units/program.sol:Goodfellas",
+    "operation": "op_12b2c572ea659db6ab7f",
+    "function": "LittleCactus()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 337,
+      "length": 18,
+      "ast_id": 34
+    },
+    "line": 14,
+    "source_sha256": "30df33484a411071835ea33614c7ac847b0832f9ec738ad86ab5310479266d5a",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:224:author:1",
+    "status": "TP",
+    "reference": "D2:224:author:1",
+    "possible_reference": null,
+    "basis": "LittleCactus 入口实际写入 owner。",
+    "decision": "source_role_reassignment",
+    "property": "property_ca831fbca981a20e1812",
+    "evidence": [
+      "E1"
+    ],
+    "issues": [
+      "scope_1cdeea9cc483b58225ed"
+    ]
+  },
+  {
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_3154cbc995cfb17df16f",
+    "application_target": "units/program.sol:RBC",
+    "operation": "op_4a32ae00fa73a4365de2",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "line": 37,
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:310:author:1",
+    "status": "TP",
+    "reference": "D2:310:author:1",
+    "possible_reference": null,
+    "basis": "Owned2 的 owner 资格取得；两个目标共享同一根。",
+    "decision": "source_role_reassignment",
+    "property": "property_e07fa2f118829eb5671a",
+    "evidence": [
+      "E1",
+      "E9"
+    ],
+    "issues": [
+      "scope_669e536fc6f4fa64f6e6"
+    ]
+  },
+  {
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_cf3040bd8e7a344dac2e",
+    "application_target": "units/program.sol:Owned",
+    "operation": "op_76b7dd672d4b8b35bb08",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "line": 37,
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:310:author:1",
+    "status": "TP",
+    "reference": "D2:310:author:1",
+    "possible_reference": null,
+    "basis": "Owned2 的 owner 资格取得；两个目标共享同一根。",
+    "decision": "source_role_reassignment",
+    "property": "property_efccfc7d8863f121c7d1",
+    "evidence": [
+      "E10",
+      "E2"
+    ],
+    "issues": [
+      "scope_b2cf350edbb4ce78336f"
+    ]
+  },
+  {
+    "member": "RQ1_9d9d397fa18e",
+    "finding": "finding_558bad391d8551bba643",
+    "application_target": "units/program.sol:RBC",
+    "operation": "op_f3884308394a065080e2",
+    "function": "transferFrom(address,address,uint256)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 3199,
+      "length": 347,
+      "ast_id": 457
+    },
+    "line": 85,
+    "source_sha256": "6f8800094bb34e63c53a50208626b55ae95600e91fb06768e67416c0daf48bb7",
+    "span_sha256": "2639804e81c47afe108b1704bfda4f60a5528b14a172c00d487d246b16498730",
+    "group": "extra:units/program.sol:3199",
+    "status": "FP",
+    "reference": null,
+    "possible_reference": null,
+    "basis": "transferFrom 涉及余额与授权扣除，与作者标出的 Owned2 取得资格根不同。",
+    "decision": "program_support",
+    "property": "property_42635c8a937ad437cb82",
+    "evidence": [
+      "E11",
+      "E12",
+      "E3",
+      "E4"
+    ],
+    "issues": [
+      "scope_c3b3f15998b85758e87c",
+      "scope_fe3929571ca34e46539c"
+    ]
+  },
+  {
+    "member": "RQ1_2be3e9b98fac",
+    "finding": "finding_5dec3cb9537474e94368",
+    "application_target": "units/program.sol:IstriumICO",
+    "operation": "op_cacf90c3088d9919c26b",
+    "function": "IstriumToken(address)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 755,
+      "length": 18,
+      "ast_id": 71
+    },
+    "line": 25,
+    "source_sha256": "38adbb5e3f84bace1ea40d1788615289615a4f78aa5e08a65e78c32fc736f795",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:30:author:1",
+    "status": "TP",
+    "reference": "D2:30:author:1",
+    "possible_reference": null,
+    "basis": "IstriumToken 的资格写入与标定根吻合。",
+    "decision": "source_role_reassignment",
+    "property": "property_4591fbfb30ce43ac6a6f",
+    "evidence": [
+      "E1",
+      "E13"
+    ],
+    "issues": [
+      "scope_8f2cfeb1ac90886f8636"
+    ]
+  },
+  {
+    "member": "RQ1_0bcbefea1890",
+    "finding": "finding_d3f654a5b113455ab7b2",
+    "application_target": "units/program.sol:EncryptedToken",
+    "operation": "op_b14d1bc2940e244b134e",
+    "function": "selfdestructs()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 4954,
+      "length": 74,
+      "ast_id": 602
+    },
+    "line": 119,
+    "source_sha256": "7638d6aaa273b279daeea22fee5118c9635e31c99901d028fe3eb15c4a184350",
+    "span_sha256": "b6dcfd16fd6cf10ab20fa88a4ca0ba9991c5f593b69c754828e3bb4cdf94e059",
+    "group": "ref:D2:614:S1",
+    "status": "TP",
+    "reference": "D2:614:S1",
+    "possible_reference": null,
+    "basis": "实际 selfdestructs 终止，上一批的 burnFrom 不能顶替。",
+    "decision": "program_support",
+    "property": "property_0229b49489bc711612ef",
+    "evidence": [
+      "E2",
+      "E6"
+    ],
+    "issues": [
+      "selfdestructs-no-owner"
+    ]
+  },
+  {
+    "member": "RQ1_9fea8632716d",
+    "finding": "finding_7df848f8315f3f97a83e",
+    "application_target": "units/program.sol:BTC666",
+    "operation": "op_13366f9b58fd2fda3971",
+    "function": "Ballot(uint8)",
+    "location": {
+      "file": "units/program.sol",
+      "start": 354,
+      "length": 24,
+      "ast_id": 30
+    },
+    "line": 16,
+    "source_sha256": "9999f8d00a6605a7e77310106a8a37abde3b5cca04bf74b0f015ed04d3b07dfc",
+    "span_sha256": "87e66f6d7ab3f53847afd7d8c525a8923d7c17faae5d333972b096f44a59e9fe",
+    "group": "ref:D2:510:author:1",
+    "status": "TP",
+    "reference": "D2:510:author:1",
+    "possible_reference": null,
+    "basis": "在 BTC666 实际应用对象上 Ballot 写入 chairperson，匹配取得投票资格根。",
+    "decision": "source_role_reassignment",
+    "property": "property_0c43fc0d31452d169163",
+    "evidence": [
+      "E1",
+      "E4"
+    ],
+    "issues": [
+      "scope_cb729cb30331722d78e0"
+    ]
+  },
+  {
+    "member": "RQ1_9aafb6cd1add",
+    "finding": "finding_ffbd725eb48f345f01ea",
+    "application_target": "units/program.sol:Owned",
+    "operation": "op_76b7dd672d4b8b35bb08",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "line": 37,
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:587:author:1",
+    "status": "TP",
+    "reference": "D2:587:author:1",
+    "possible_reference": null,
+    "basis": "Owned2 的 owner 改写实际进入报警，并非同文件的 transferFrom；多目标同根。",
+    "decision": "source_role_reassignment",
+    "property": "property_d2091c4e9313550ba80d",
+    "evidence": [
+      "E12",
+      "E2"
+    ],
+    "issues": [
+      "scope_97081061eae3faaffcb9"
+    ]
+  },
+  {
+    "member": "RQ1_9aafb6cd1add",
+    "finding": "finding_39efd0079a9401f2559b",
+    "application_target": "units/program.sol:PRTL",
+    "operation": "op_5370583b6c420ef036e8",
+    "function": "Owned2()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1508,
+      "length": 18,
+      "ast_id": 190
+    },
+    "line": 37,
+    "source_sha256": "4b4e272b8d05e1c1b91df389c10e17302bed089e48431b11802adf51e2c1dfa8",
+    "span_sha256": "e0c310cb86dc70f928f7e125fe9dcac22f5cf215677fc26e9e384c18372ae5af",
+    "group": "ref:D2:587:author:1",
+    "status": "TP",
+    "reference": "D2:587:author:1",
+    "possible_reference": null,
+    "basis": "Owned2 的 owner 改写实际进入报警，并非同文件的 transferFrom；多目标同根。",
+    "decision": "source_role_reassignment",
+    "property": "property_d67858da578ac16cec7c",
+    "evidence": [
+      "E1",
+      "E8"
+    ],
+    "issues": [
+      "scope_d90623e1e2bcd21bab80"
+    ]
+  },
+  {
+    "member": "RQ1_84ed7052a606",
+    "finding": "finding_80ebaf887a07e478283e",
+    "application_target": "units/program.sol:DepositContract",
+    "operation": "op_84560d6fa6253a34689e",
+    "function": "init()",
+    "location": {
+      "file": "units/program.sol",
+      "start": 1588,
+      "length": 19,
+      "ast_id": 177
+    },
+    "line": 67,
+    "source_sha256": "5508c1c2fdd37ff8679263626af7420ce7dfc2e8c6c5b92b6ef3c66c48a35b03",
+    "span_sha256": "0e493de39a184af23f1262a1963b8c318eea6f8e07b2de5d30674d984b537a37",
+    "group": "ref:D2:418:author:1",
+    "status": "TP",
+    "reference": "D2:418:author:1",
+    "possible_reference": null,
+    "basis": "DepositContract.init 公开重配 Holder，匹配作者资格根。",
+    "decision": "source_role_reassignment",
+    "property": "property_0fc7c0417bc1f25ba116",
+    "evidence": [
+      "E1",
+      "E5"
+    ],
+    "issues": [
+      "scope_d122896aae89973839e8"
+    ]
+  }
+]
