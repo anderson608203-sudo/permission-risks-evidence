@@ -1,0 +1,104 @@
+{
+ "AC": {
+  "TP": 198,
+  "FP": 20,
+  "FN": 283,
+  "Precision": 0.908256880733945,
+  "Recall": 0.41164241164241167,
+  "F1": 0.5665236051502146
+ },
+ "BG": {
+  "TP": 161,
+  "FP": 24,
+  "FN": 320,
+  "Precision": 0.8702702702702703,
+  "Recall": 0.33471933471933474,
+  "F1": 0.48348348348348347
+ },
+ "last1164": {
+  "TP": 389,
+  "FP": 246,
+  "FN": 92,
+  "Precision": 0.6125984251968504,
+  "Recall": 0.8087318087318087,
+  "F1": 0.6971326164874552,
+  "reference_count": 481
+ },
+ "b5": {
+  "TP": 377,
+  "FP": 188,
+  "FN": 104,
+  "Precision": 0.6672566371681415,
+  "Recall": 0.7837837837837838,
+  "F1": 0.7208413001912046,
+  "reference_count": 481
+ },
+ "v32": {
+  "TP": 404,
+  "FP": 103,
+  "FN": 77,
+  "Precision": 0.796844181459566,
+  "Recall": 0.83991683991684,
+  "F1": 0.8178137651821862
+ },
+ "AC80": {
+  "TP": 16,
+  "FP": 1,
+  "FN": 48,
+  "Precision": 0.9411764705882353,
+  "Recall": 0.25,
+  "F1": 0.3950617283950617
+ },
+ "BG80": {
+  "TP": 14,
+  "FP": 4,
+  "FN": 50,
+  "Precision": 0.7777777777777778,
+  "Recall": 0.21875,
+  "F1": 0.34146341463414637
+ },
+ "changes": {
+  "BG": {
+   "still_missed": 273,
+   "gained": 47,
+   "kept": 151,
+   "lost": 10
+  },
+  "v32": {
+   "lost": 209,
+   "still_missed": 74,
+   "kept": 195,
+   "gained": 3
+  },
+  "previous1164": {
+   "still_missed": 78,
+   "lost": 205,
+   "kept": 184,
+   "gained": 14
+  },
+  "b5": {
+   "lost": 190,
+   "kept": 187,
+   "still_missed": 93,
+   "gained": 11
+  }
+ },
+ "outcomes": {
+  "unsupported": 420,
+  "alarm": 204
+ },
+ "FN_stage": {
+  "aligned_inspection_without_matching_alarm": 233,
+  "no_listed_obligation_at_reference": 8,
+  "no_aligned_inspection_in_obligations": 41,
+  "no_bound_window": 1
+ },
+ "FN_member_outcome": {
+  "unsupported": 264,
+  "alarm": 19
+ },
+ "model_unavailable": 6,
+ "old_failures_in_AC": 9,
+ "old_FP_removed": 22,
+ "new_FP": 18
+}

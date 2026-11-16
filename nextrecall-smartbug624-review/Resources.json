@@ -1,0 +1,95 @@
+{
+ "current": {
+  "requests": 1222,
+  "real_model_calls": 1222,
+  "simulated_service_requests": 0,
+  "unknown_or_inflight_upper_usd": 0.0,
+  "unknown_cost_upper_usd": 0.0,
+  "inflight": 0,
+  "unknown": 0,
+  "settled_cost_usd_upper": 6.848877071999999,
+  "settled_cost_usd_lower": 3.4244385359999994,
+  "simulated_cost_usd_upper": 0,
+  "prompt_tokens": 3404634,
+  "completion_tokens": 5332865,
+  "service_models": [
+   "deepseek-flash"
+  ],
+  "actual_provider_billed_usd": null,
+  "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+  "per_request_money_reservation": false,
+  "halt": "user_stop",
+  "nature": "real_service",
+  "unknown_fee_is_not_zero": true
+ },
+ "history": {
+  "previous_cumulative_requests": 3152,
+  "previous_cumulative_usd_upper": 21.462543528,
+  "provider_unsettled_by_reference": true,
+  "instance_unsettled_by_reference": true,
+  "sha256": "8655d943e90410bd99ccb11d1bb1f470fe4481873de66fb48dde69f1deb887db",
+  "previous_round": "bg_full1164_r1",
+  "previous_grant_not_transferred": true
+ },
+ "cumulative_requests": 4374,
+ "cumulative_estimated_upper_usd": 28.311420599999998,
+ "wall_seconds": 8086.77837562561,
+ "preparation": {
+  "used_seconds": 326.06201522937045,
+  "initial_time_basis": "batch-specific instance setup time; manual upload separate, no prior inventory time attributed",
+  "runs": [
+   {
+    "start_epoch": 1794819181.5312297,
+    "end_epoch": 1794819203.186197,
+    "seconds": 21.654961585998535,
+    "resume": false
+   }
+  ]
+ },
+ "instance_invoice": null,
+ "solver_calls": 18860,
+ "members_program_ge_900": [
+  "RQ1_bc34a2568a3c",
+  "RQ1_413bb3e13ee0",
+  "RQ1_3858ff02d02c",
+  "RQ1_ffbee73ba561",
+  "RQ1_77486f861519",
+  "RQ1_3d5f2e705184",
+  "RQ1_4580c60aec2d",
+  "RQ1_4f65b1060e4d"
+ ],
+ "member_with_solver_timeout": {
+  "RQ1_0f9d3ee5b5c5": {
+   "timeout": 1
+  },
+  "RQ1_2d6f1639f8f5": {
+   "timeout": 4
+  },
+  "RQ1_faed8e9e25ab": {
+   "timeout": 1
+  },
+  "RQ1_77486f861519": {
+   "timeout": 11
+  },
+  "RQ1_49c5d59e37d5": {
+   "timeout": 3
+  },
+  "RQ1_3f952af67006": {
+   "timeout": 19
+  },
+  "RQ1_72646c925fa6": {
+   "timeout": 6
+  }
+ },
+ "former_technical_failures": {
+  "RQ1_9bf7892a772d": "unsupported",
+  "RQ1_5f2ca3273ff3": "unsupported",
+  "RQ1_2f73df659ad6": "unsupported",
+  "RQ1_465b9382179b": "unsupported",
+  "RQ1_cb75c28366fa": "unsupported",
+  "RQ1_032ffa20eb40": "unsupported",
+  "RQ1_31450a049444": "unsupported",
+  "RQ1_82ebda7c26e1": "unsupported",
+  "RQ1_de08a43a1826": "unsupported"
+ }
+}
