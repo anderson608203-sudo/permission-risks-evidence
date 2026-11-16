@@ -1,0 +1,1583 @@
+"""Typed semantic supports over the existing source summaries. No graph edge or model label is a verdict."""
+from collections import defaultdict, deque
+import copy
+import re
+from pr_next_joint.core import digest
+from pr_next_joint.frontend.path_ir import key,walk
+from pr_next_joint.frontend.storage import keys, value_type
+from .summary import local_delta, holder, has_basis
+from .initial_state import domain
+from .key_roles import relation as key_relation
+from .protocol import role_error
+
+RESOURCE={'financial_right','nonfinancial_counter'}
+CONSENT={'gross_debit_bound','net_request_with_fee'}
+AUTH={'current_authority_required','holder_authorization_applies','initialization_stage'}
+def loc_key(loc):
+    return (loc.get('file'),loc.get('start'),loc.get('length'))
+def field_node(cell):
+    return next((seg['field'] for seg in reversed(cell.get('segments',())) if 'field' in seg),cell['root'])
+
+
+class SupportIndex:
+    """Input and derived facts share identities. Re-ground only descendants of edited roots."""
+    def __init__(self, remaining):
+        self.remaining=remaining
+        self.roots=defaultdict(set)
+        self.edges=defaultdict(set)
+        self.children=defaultdict(set)
+        self.live=set()
+        self.pending=set()
+        self.cut=False
+        self.visits=0
+        self.certificates={};self.proof_rules={}
+
+    def rule(self, conclusion, inputs, rule):
+        clause=(rule,tuple(sorted(set(inputs))))
+        if not clause[1] or clause in self.edges[conclusion]:return
+        self.edges[conclusion].add(clause)
+        for fact in clause[1]:self.children[fact].add(conclusion)
+        self.pending.add(conclusion)
+
+    def update(self, fact, support, active):
+        changed=(support in self.roots[fact])!=bool(active)
+        if active:self.roots[fact].add(support)
+        else:self.roots[fact].discard(support)
+        if changed:self.pending.add(fact)
+
+    def valid(self,fact):
+        if self.roots.get(fact):return True
+        certificate=self.certificates.get(fact)
+        return fact in self.live and bool(certificate) and all(sid in self.roots.get(node,()) for node,sid in certificate)
+
+    def settle(self):
+        if not self.pending:return set()
+        self.cut=False
+        affected=set(self.pending); todo=deque(sorted(affected))
+        before={node for node in affected if node in self.live}
+        while todo:
+            node=todo.popleft()
+            for child in self.children[node]:
+                if child not in affected:
+                    affected.add(child);todo.append(child)
+                    if child in self.live:before.add(child)
+            if self.remaining()<=0:
+                # A stale positive must never survive an incomplete retraction.
+                self.cut=True
+                return {x for x in affected if (x in before)!=self.valid(x)}
+        self.live.difference_update(affected)
+        ready=deque(sorted(affected))
+        while ready:
+            if self.remaining()<=0:
+                self.cut=True;break
+            node=ready.popleft();self.visits+=1
+            if node in self.live:continue
+            roots=self.roots.get(node)
+            proof=None;used_rules=set()
+            if roots:proof=frozenset(((node,min(roots)),))
+            else:
+                for rule,terms in sorted(self.edges.get(node,())):
+                    if all(x in self.live and self.valid(x) for x in terms):
+                        proof=frozenset().union(*(self.certificates[x] for x in terms))
+                        used_rules={rule}.union(*(self.proof_rules.get(x,()) for x in terms))
+                        break
+            if proof:
+                self.certificates[node]=proof;self.proof_rules[node]=used_rules;self.live.add(node)
+                ready.extend(n for n in self.children[node] if n in affected and n not in self.live)
+        if not self.cut:self.pending.clear()
+        return before.symmetric_difference({x for x in affected if self.valid(x)})
+
+    def basis(self, fact):
+        # Already grounded provenance stays readable even at the cutoff; no rule runs here.
+        if not self.valid(fact):return [],[]
+        origins=set(self.roots.get(fact,()));rules=set()
+        cert=self.certificates.get(fact,())
+        if cert and all(sid in self.roots.get(node,()) for node,sid in cert):
+            origins.update(sid for _,sid in cert);rules.update(self.proof_rules.get(fact,()))
+        todo=[fact];seen=set()
+        while todo and self.remaining()>0:
+            n=todo.pop()
+            if n in seen or not self.valid(n):continue
+            seen.add(n);origins.update(self.roots[n])
+            for rule,terms in self.edges[n]:
+                if all(self.valid(x) for x in terms):rules.add(rule);todo.extend(terms)
+        return sorted(origins),sorted(rules)
+
+
+class ScopedRules:
+    """Indexes refer to compiler-selected declarations and individual applied source writes."""
+    def __init__(self,inv):
+        self.inv=inv;self.f=inv.f;self.logic=SupportIndex(inv.program_remaining)
+        self.objects={};self.effects={};self.aliases=defaultdict(set);self.used=defaultdict(set)
+        self.by_decl=defaultdict(set);self.by_operation=defaultdict(set);self.routes=defaultdict(list)
+        self.local_readers=defaultdict(set)
+        self.supports={};self.facts={};self.by_handle=defaultdict(set)
+        self.built=False;self.incomplete=set();self.declaration_lookups=set()
+        self.events=[];self.history=[];self.last_changes=set();self.epoch=0
+
+    def remaining(self):
+        return self.inv.program_remaining()>0
+
+    def obj(self,target,rid,oid=None):
+        return 'o_'+digest([self.f.bundle['build_id'],target,rid,oid])[:20]
+
+    def index(self):
+        if self.built:return
+        self.built=True
+        from pr_next_joint.frontend.storage import selectors
+        self.guard_declarations=set()
+        for oid,operation in self.f.operations.items():
+            if not self.remaining():self.incomplete.update(set(self.f.operations)-set(self.by_operation));break
+            if operation.get('generated_getter'):continue
+            target=operation['target'];lookup=self.f.lookup(oid)
+            for row in self.f.summaries.rows(oid):
+                if not self.remaining():self.incomplete.add(oid);break
+                self.guard_declarations.update((target,c['root']) for c in selectors(row['guards']))
+                self.index_observed_effects(oid,row)
+                raw=self.f.paths[row['path']]['raw']
+                for wi,w in enumerate(row['ordered_writes']):
+                    if not self.remaining():self.incomplete.add(oid);break
+                    cell=w['path'];rid=field_node(cell);loc=w['source']
+                    effect='w_'+digest([self.f.bundle['build_id'],target,oid,row['path'],wi,loc,cell])[:20]
+                    desc=dict(oid=oid,target=target,path=row['path'],where=loc,cell=cell,
+                              version=wi,conditions=digest(row['guards']),write=w,clean=not row['residuals'])
+                    self.effects[effect]=desc;self.by_operation[oid].add(effect)
+                    name=lookup.nodes.get(rid,{}).get('name')
+                    if not name:continue
+                    obj=self._declare(target,rid,None,lookup)
+                    self.by_decl[obj].add(effect)
+                    fn=operation['function']
+                    self._names(effect,target,fn+'#'+name)
+                    sign,_=local_delta(w)
+                    if sign:self._names(effect,target,fn+'#'+name+('~debit' if sign=='-' else '~credit'))
+                    self._names(effect,target,fn)
+                    self.aliases['effect:'+effect[2:]].add(effect)
+                    self.used[obj].add(oid)
+                    sign,qty=local_delta(w)
+                    # Edges retain evaluated subterms; effects depending on opaque values remain open at consumption.
+                    # Read provenance comes from the evaluated, substituted expression; a shared root is insufficient.
+                    for kind,expr in [('value',qty if qty is not None else w['value']),('key',keys(cell)),('guard',row['guards'])]:
+                        for term in walk(expr):
+                            if not self.remaining():self.incomplete.add(oid);break
+                            if term.get('kind') not in ('parameter','storage'):continue
+                            pid=term['id'] if term['kind']=='parameter' else field_node(term)
+                            source=self._declare(target,pid,oid if term['kind']=='parameter' else None,lookup)
+                            self.used[source].add(oid)
+                            rules=['P03'] if term['kind']=='storage' else []
+                            if kind=='guard':rules.append('P05')
+                            if row['guards']:rules.append('P06')
+                            if kind=='value':
+                                if qty is not None:rules.append('P04')
+                                if any(k.get('kind')=='parameter' and k.get('id')==pid for k in walk(raw.get('copy_origins',[]))):rules.append('P01')
+                                for call in raw.get('read_calls',[]):
+                                    if call.get('binding') not in ('compiler_internal_declaration','compiler_bound_qualified_ancestor','compiler_bound_internal_pure_library'):continue
+                                    if key(call.get('return_value'))==key(term) and any(key(a)==key(term) for a in call.get('arguments',[])):
+                                        rules.append('P02')
+                                        if any(key(x.get('value'))==key(term) for x in call.get('copies',[])):rules.append('P01')
+                            route=(effect,kind,tuple(dict.fromkeys(rules)),key(expr)==key(term))
+                            if route not in self.routes[source]:self.routes[source].append(route)
+
+
+    def index_observed_effects(self,oid,row):
+        """Index a compiler-located effect as an occurrence, never as an inferred write.
+        Distinct branches share the source occurrence and keep their own conditions."""
+        target=self.f.operations[oid]['target'];fn=self.f.operations[oid]['function']
+        for term in row['effects']:
+            if not self.remaining():self.incomplete.add(oid);return
+            loc=term.get('source') or {};kind=term.get('kind')
+            if not kind or not loc.get('file') or loc.get('start') is None:continue
+            effect='e_'+digest([self.f.bundle['build_id'],target,oid,loc_key(loc),kind,
+                                term.get('to') or term.get('recipient'),term.get('amount'),term.get('callpoint_guards',row['guards'])])[:20]
+            d=self.effects.setdefault(effect,dict(oid=oid,target=target,where=loc,kind=kind,branches={}))
+            d['branches'][row['path']]={'conditions':digest(row['guards']),'has_residuals':bool(row['residuals'])}
+            self.by_operation[oid].add(effect)
+            self._names(effect,target,fn);self._names(effect,target,fn+'#'+kind)
+
+    def declaration_by_ref(self,reference):
+        # Bind a uniquely named declaration in the actual applied inheritance scope on demand.
+        if reference in self.declaration_lookups:return
+        self.declaration_lookups.add(reference)
+        for target in self.inv.catalog.targets:
+            aliases=(target+'.',target.rsplit(':',1)[-1]+'.')
+            name=next((reference[len(prefix):] for prefix in aliases if reference.startswith(prefix)),None)
+            if not name or not re.fullmatch(r'[\w$]+',name):continue
+            lookup=self.f.lookups[target]
+            bases=lookup.contract_node.get('linearizedBaseContracts',[lookup.contract_node['id']])
+            for base in bases:
+                if not self.remaining():return
+                for node in lookup.nodes[base].get('nodes',()):
+                    if node.get('stateVariable') and node.get('name')==name:
+                        self._declare(target,node['id'],None,lookup)
+
+    def _names(self,h,target,name):
+        for t in (target,target.rsplit(':',1)[-1]):self.aliases[t+'.'+name].add(h)
+
+    def _declare(self,target,rid,oid,lookup):
+        handle=self.obj(target,rid,oid)
+        if handle in self.objects:return handle
+        node=lookup.nodes.get(rid,{})
+        name=node.get('name','')
+        self.objects[handle]=dict(target=target,decl=rid,oid=oid,where=lookup.anchor(node) if node.get('src') else {},name=name)
+        if name:
+            self._names(handle,target,self.f.operations[oid]['function']+'#'+name if oid else name)
+        self.aliases['obj:'+handle[2:]].add(handle)
+        return handle
+
+    def visible(self,handle,manifest):
+        rec=self.objects.get(handle) or self.effects.get(handle)
+        if not rec:return False
+        where=rec['where']
+        if where.get('file') in manifest.get('complete_source_files',[]):return True
+        for a in manifest.get('visible_spans',()):
+            if where.get('file')==a.get('file') and a['start']<=where['start'] and where['start']+where['length']<=a['start']+a['length']:return True
+        return False
+
+    def bind(self,ref,manifest,kind=None):
+        if not isinstance(ref,str):return None
+        if ref.startswith(('obj:','effect:')):
+            hs={manifest.get('typed_index',{}).get(ref)}
+        else:
+            if kind!='effect':self.declaration_by_ref(ref)
+            hs=self.aliases.get(ref,set())
+        if not hs and isinstance(ref,str) and not ref.startswith(('obj:','effect:','sem:')):
+            # A source span may denote a declaration or a write if there is a unique applied identity.
+            m=re.fullmatch(r'(.+[.]sol)@(\d+)\+(\d+)',ref)
+            if m:
+                at=(m[1],int(m[2]),int(m[3]))
+                pool=self.objects if kind=='obj' else self.effects if kind=='effect' else {**self.objects,**self.effects}
+                hs={hh for hh,r in pool.items() if loc_key(r['where'])==at}
+        hs={v for v in hs if v and ((kind!='effect' and v in self.objects) or (kind!='obj' and v in self.effects)) and self.visible(v,manifest)}
+        # A declaration/entry label cannot arbitrarily pick one of its writes.
+        return next(iter(hs)) if len(hs)==1 else None
+
+    def effect_focus(self,e):
+        # Index actual applied occurrences, including compiler-resolved helper effects.
+        d=self.effects[e]
+        if 'write' not in d:
+            return {'native_selfdestruct': 'termination', 'native_transfer':'funds',
+                    'dangerous_external_call':'call_authority'}.get(d['kind'])
+        from .summary import holder
+        w=d['write'];cell=d['cell'];lookup=self.f.lookup(d['oid'])
+        if holder(cell,lookup) and local_delta(w)[0]:
+            row=self.f.summaries.paths[d['path']]
+            if local_delta(w)[0]=='+' and not any(local_delta(v)[0]=='-' for v in row['ordered_writes']):
+                return 'credit'
+            return 'account_movement'
+        if (d['target'],cell['root']) in self.guard_declarations:
+            return 'qualification'
+        return None
+
+    def overwritten(self,e):
+        d=self.effects[e]
+        if 'write' not in d:return False
+        later=self.f.summaries.paths[d['path']]['ordered_writes'][d['version']+1:]
+        return any(key(w['path'])==key(d['cell']) for w in later)
+
+    def occurrence(self,e):
+        d=self.effects[e]
+        return (d['target'],d['oid'],loc_key(d['where']),d.get('kind','write'),
+                key(d.get('cell')),d.get('conditions') or (e if 'branches' in d else None),d.get('version'))
+
+    def cards_for(self,manifest,focus):
+        self.index()
+        if not hasattr(self,'sensitive_effects'):
+            self.sensitive_effects={}
+            self.occurrences=defaultdict(list)
+            for e,d in self.effects.items():
+                if not self.remaining():self.incomplete.add(d['oid']);continue
+                kind=self.effect_focus(e)
+                if kind:
+                    self.sensitive_effects[e]=kind
+                    self.occurrences[self.occurrence(e)].append(e)
+        focused=set(focus)
+        wanted=set(manifest.get('disputed_effects',()))
+        buckets=defaultdict(deque)
+        def rank(e):
+            d=self.effects[e]
+            return (e not in wanted,d['oid'] not in focused,d['where']['start'],e)
+        for e in sorted((g[0] for g in self.occurrences.values()),key=rank):
+            d=self.effects[e]
+            if manifest.get('mode')=='focused_evidence' and d['oid'] not in focused:continue
+            if self.visible(e,manifest):buckets[(d['target'],self.sensitive_effects[e])].append(e)
+        order=('qualification','funds','termination','call_authority','credit','account_movement')
+        queues=[buckets[k] for k in sorted(buckets,key=lambda k:(rank(buckets[k][0])[:2],order.index(k[1]),k[0]))]
+        handles=[]
+        while queues:
+            for q in queues:handles.append(q.popleft())
+            queues=[q for q in queues if q]
+        if self.f.options.scope=='FCR':
+            objs=[]
+            for e in handles:
+                d=self.effects[e]
+                if 'cell' in d and self.sensitive_effects[e] in ('credit','account_movement'):
+                    h=self.obj(d['target'],field_node(d['cell']))
+                    if h in self.objects and self.visible(h,manifest):objs.append(h)
+            handles=list(dict.fromkeys(objs))+handles
+        for oid in focus:
+            for e in sorted(self.by_operation.get(oid,())):
+                d=self.effects[e]
+                if 'cell' in d:
+                    h=self.obj(d['target'],field_node(d['cell']))
+                    if h in self.objects and self.visible(h,manifest):handles.append(h)
+        cards=[];index={}
+        for h in dict.fromkeys(handles):
+            d=self.effects.get(h) or self.objects[h]
+            ref=('effect:' if h in self.effects else 'obj:')+h[2:14]
+            if ref in index:ref+=h[14:]
+            if h in self.effects:
+                name=self.f.lookup(d['oid']).nodes[field_node(d['cell'])]['name'] if 'cell' in d else d['kind']
+                card=[ref,self.inv.catalog.name(d['oid'])+'#'+name,self.sensitive_effects[h]]
+                if 'write' in d:
+                    direction=local_delta(d['write'])[0]
+                    if direction and keys(d['cell']):
+                        party=holder(d['cell'],self.f.lookup(d['oid'])) or {}
+                        label='caller' if party.get('kind')=='actual_sender' else self.f.lookup(d['oid']).nodes.get(party.get('id'),{}).get('name','account')
+                        card.append(('debit ' if direction=='-' else 'credit ')+label)
+            else:
+                name=(self.inv.catalog.name(d['oid'])+'#' if d.get('oid') else d['target'].rsplit(':',1)[-1]+'.')+d['name']
+                card=[ref,name]
+            cards.append(card);index[ref]=h
+        return cards,index
+
+    def issue_effect(self,item,manifest):
+        """Bind a model locator to the authenticated applied occurrence for this message."""
+        anchors=item.get('anchors',[])
+        oid=None
+        if anchors:
+            bind=self.inv.catalog.bind(anchors,core=item.get('root'))
+            oid=bind.get('core_operation') if bind.get('core_exact') else None
+        named=item.get('effect')
+        if named is not None:
+            e=self.bind(named,manifest,'effect')
+            if not e:return None,'unknown_or_unshown_effect'
+            d=self.effects[e]
+            if anchors and (oid!=d['oid'] or bind.get('unresolved') or bind.get('ambiguous')):
+                return None,'explicit_effect_anchor_conflict'
+            if item.get('root') and d['oid'] not in self.inv.catalog.resolve(item['root']):
+                return None,'explicit_effect_root_conflict'
+        else:
+            if not oid:return None,None
+            choices={self.occurrence(e):e for e in self.by_operation[oid] if e in self.sensitive_effects and self.visible(e,manifest)}
+            if len(choices)!=1:return None,None
+            e=next(iter(choices.values()));d=self.effects[e]
+        matches=self.occurrences.get(self.occurrence(e),[e])
+        return (d['oid'],list(matches)),None
+
+    def scoped_issue(self,item,manifest):
+        located,error=self.issue_effect(item,manifest)
+        if error or not located:return item,error
+        oid,effects=located
+        row=dict(item,_scope_effects=effects,_opinion_message=manifest['messages_sha256'])
+        if not row['anchors']:row['anchors']=[self.inv.catalog.name(oid)]
+        if item.get('subject'):
+            subject=self.bind(item['subject'],manifest,'obj')
+            if not subject or self.objects[subject]['target']!=self.effects[effects[0]]['target']:return item,'explicit_principal_not_bound'
+            row['_opinion_subject']=subject
+        return row,None
+
+    def fact(self,h,meaning,subject=None,scope=None,role=None,payment_policy=None):
+        identity=[self.f.identity,h,meaning,subject,scope,role]
+        if payment_policy is not None:identity.append(payment_policy)
+        fid='fact_'+digest(identity)[:20]
+        if fid not in self.facts:
+            self.facts[fid]=dict(handle=h,meaning=meaning,subject=subject,scope=scope,role=role)
+            if payment_policy is not None:self.facts[fid]['payment_policy']=payment_policy
+            self.by_handle[h].add(fid)
+        return fid
+
+    def row_scope(self,field,row,manifest,previous=None):
+        meaning=row.get('meaning',previous and previous['meaning'])
+        if not isinstance(meaning,str):return None
+        locator,kind=('on','obj') if field=='annotations' else ('effect','effect')
+        h=previous['handle'] if previous else None
+        if locator in row:
+            named=self.bind(row[locator],manifest,kind)
+            if named is None or h is not None and named!=h:return None
+            h=named
+        if not h:return None
+        def qualifier(name):
+            if name in row:return self.bind(row[name],manifest)
+            return previous.get(name) if previous else None
+        subject=qualifier('subject');scope=qualifier('scope')
+        if any(name in row and not val for name,val in [('subject',subject),('scope',scope)]):return None
+        d=self.effects.get(h) or self.objects[h]
+        if any((self.effects.get(v) or self.objects[v])['target']!=d['target'] for v in (subject,scope) if v):return None
+        if subject and meaning in RESOURCE|CONSENT and subject not in self.objects:return None
+        if scope and scope!=h and scope not in self.by_decl.get(h,set()) and not any(e==scope for e,_,_,_ in self.routes.get(h,())):return None
+        if meaning in AUTH|CONSENT|RESOURCE and subject and subject not in self.objects:return None
+        if meaning in CONSENT and not list(self.quantity_scopes(h)):return None
+        role=row.get('role',previous.get('role') if previous else None)
+        if h in self.effects and meaning in CONSENT and subject:
+            decl=self.objects[subject]['decl']
+            if not all(any(t.get('id')==decl for t in walk(keys(route['grant'])[route['issuer_key']])) for route in self.quantity_scopes(h)):return None
+        proposal=dict(handle=h,meaning=meaning,subject=subject,scope=scope,role=role)
+        if meaning=='current_authority_required' and h in self.effects:
+            cell=self.authority_cell(h,subject)
+            if cell:
+                from .policy_binding import payment_policy
+                lookup=self.f.lookup(d['oid'])
+                names={self.f.operations[d['oid']]['function'].split('(')[0]}
+                if 'cell' in d:names.add(lookup.nodes.get(field_node(d['cell']),{}).get('name'))
+                stated=payment_policy(row.get('basis',''),lookup.nodes[cell['root']]['name'],names)
+                inherited=(previous or {}).get('payment_policy')
+                if stated or inherited:proposal['payment_policy']=stated or inherited
+        return proposal
+
+    def quantity_scopes(self,e):
+        d=self.effects.get(e)
+        if not d or 'write' not in d:return
+        for a in self.f.summaries.dependencies.amounts_for(d['oid']):
+            if a['path']!=d['path']:continue
+            for dec in a['deltas']:
+                if dec['sign']!='-' or dec['write_index']!=d['version'] or dec.get('key_role')=='authorization_quantity':continue
+                for gate in a['allowance_gates']:
+                    grant=gate['grant'];issuer=keys(grant)[gate['issuer_key']]
+                    if key(issuer)!=key(dec.get('holder')):continue
+                    yield {'path':a['path'],'grant':grant,'issuer_key':gate['issuer_key'],'spender_key':gate['spender_key'],
+                           'debit_expression':dec['amount_expression'],'checked_quantity_expression':gate['quantity_expression'],'ledger':dec['cell']}
+
+    def register(self,fid,sid,origin,field):
+        if sid in self.supports and (self.supports[sid]['active'] or self.supports[sid].get('withdrawn')):return False
+        self.supports[sid]=dict(fact=fid,origin=origin,field=field,active=True,version=1+self.supports.get(sid,{}).get('version',0))
+        self.logic.update(fid,sid,True)
+        return True
+
+    @staticmethod
+    def revision_reason(row,proposed):
+        """Location is authenticated separately. Discard output instructions and bare labels,
+        leaving the model's own semantic explanation (in any source vocabulary)."""
+        reason=row.get('basis','')
+        if not has_basis(reason):return False
+        clauses=re.split(r'[.;!?。；！？\n]+|\b(?:because|since)\b|因为|由于',reason,flags=re.I)
+        directive=r'^(?:(?:please|just|kindly|we should|you should)\s+)*(?:remove|withdraw|cancel|drop|suppress|change|relabel|mark|classify|report|delete|downgrade|upgrade|dismiss|ignore)\b'
+        for clause in clauses:
+            clause=clause.strip()
+            if not clause or re.match(directive,clause,re.I) or re.match(r'^(?:请|应当|应该|仅需|只要)*(?:撤回|删除|取消|改为|标记|移除|忽略)',clause):continue
+            words=re.findall(r'[^\W_]+',clause.casefold())
+            meta={'the','this','is','a','an','of','as','only','it','should','be','alarm','warning','finding','risk','safe','not','false','positive','wrong','correct','label','incorrect','unsupported'}
+            meta.update(re.findall(r'[^\W_]+',proposed['meaning']))
+            supplied={word for word in words if word not in meta}
+            if len(supplied)>=2 or re.search(r'[\u3400-\u9fff]{4,}',clause):return True
+        return False
+
+    def hard_unit_conflict(self,proposal):
+        if proposal['meaning']!='nonfinancial_counter':return False
+        from .ledger import _unit_origin
+        h=proposal['handle']
+        candidates=self.by_decl.get(h,set())|{e for e,k,_,exact in self.routes.get(h,()) if k=='value' and exact}
+        for e in candidates:
+            if not self.remaining():return 'semantic_budget'
+            if proposal['scope'] and proposal['scope']!=e:continue
+            d=self.effects[e]
+            if proposal['subject']:
+                declared=self.objects[proposal['subject']]['decl']
+                if not any(t.get('id')==declared for t in walk(keys(d['cell']))):continue
+            if d['clean'] and holder(d['cell'],self.f.lookup(d['oid'])) and _unit_origin(self.inv.backend,d['oid'],d['cell']):return 'scoped_source_unit_conflict'
+        return False
+
+    def apply(self,value,manifest,revision=False):
+        """Stage unrelated updates separately; an ambiguous alias can never displace a valid support."""
+        rows=[(field,r) for field in ('annotations','policies') for r in value.get(field,())]
+        requests=defaultdict(list)
+        for field,row in rows:
+            identity=row.get('ref') or row.get('id')
+            if isinstance(identity,str):requests[identity].append((field,row))
+        conflicting={k for k,items in requests.items() if len({digest(x) for x in items})>1}
+        accepted=[];rejected=[];changed=set();row_results=[];self.submission=manifest.get('messages_sha256')
+        errors_with_rows=[]
+        ordinals=defaultdict(int)
+        for field,row in rows:
+            pos=ordinals[field];ordinals[field]+=1
+            wire_positions=value.get('row_positions',{}).get(field,())
+            pos=wire_positions[pos] if pos<len(wire_positions) else pos
+            outcome={'field':field,'index':pos,'ref':row.get('ref'),'accepted':False}
+            row_results.append(outcome)
+            def committed(support, fact):
+                accepted.append(support)
+                outcome.update(accepted=True,support=support,fact=fact)
+            def reject(reason,detail=None):
+                rejected.append(reason)
+                errors_with_rows.append({'reason':reason,'stage':'focused_revision' if revision else (self.inv.session.attempts[-1]['phase'] if self.inv.session.attempts else 'initial'),'list':field,'index':pos,'field':'ref' if row.get('ref') else 'effect' if field=='policies' else 'on','subreason':'source_binding',**(detail or {})})
+            if not self.remaining():reject('semantic_budget');break
+            ref=row.get('ref');name=ref or row.get('id')
+            if name is not None and (not isinstance(name,str) or name in conflicting):reject('ambiguous_seed_id');continue
+            old=None;sid=None;action=row.get('action','add')
+            current=None
+            if ref:
+                wire=manifest.get('shown_supports',{}).get(ref,{})
+                sid=wire.get('support');old=self.supports.get(sid)
+                if not revision or not old or not old['active'] or old['origin'] not in ('fixture','verified_service') or old['version']!=wire.get('version') or old['fact']!=wire.get('fact'):
+                    reject('stale_or_undisplayed_support');continue
+                if field!=old['field'] or field!=wire.get('field'):
+                    reject('wrong_semantic_facet');continue
+                current=self.facts[old['fact']]
+                locator,kind=('on','obj') if field=='annotations' else ('effect','effect')
+                if locator in row and self.bind(row[locator],manifest,kind)!=current['handle']:
+                    reject('revision_object_mismatch');continue
+            issue=role_error(row,row.get('meaning',(current or {}).get('meaning')),(current or {}).get('role'))
+            if issue:
+                actual=row.get('role')
+                reject('invalid_semantic_row',{'field':'role','subreason':issue,'actual_type':type(actual).__name__,
+                    'value_length':len(actual) if isinstance(actual,str) else None,'value_sha256':digest(actual)})
+                continue
+            if row.get('meaning',(current or {}).get('meaning'))=='initialization_stage' and 'subject' not in row and not (current or {}).get('subject'):
+                reject('invalid_semantic_row',{'field':'subject','subreason':'field_absent','actual_type':'NoneType'})
+                continue
+            proposed=self.row_scope(field,row,manifest,current)
+            if not proposed:
+                reject('unbound_or_inapplicable_seed');continue
+            if current:
+                if action in ('confirm','withdraw') and proposed!=current:
+                    reject('revision_conflicts_with_displayed_support');continue
+                if action=='confirm':
+                    committed(sid,old['fact']);continue
+                if action=='narrow':
+                    if current['scope'] or proposed['scope'] not in self.effects or proposed['scope']==current['handle'] or any(proposed[k]!=current[k] for k in ('meaning','subject','role')):
+                        reject('scope_not_strictly_narrower');continue
+                elif proposed['scope']!=current['scope']:
+                    reject('scope_change_requires_narrow');continue
+                if not self.revision_reason(row,proposed):
+                    reject('revision_without_scoped_reason');continue
+                if action=='correct':
+                    conflict=self.hard_unit_conflict(proposed)
+                    if conflict:
+                        reject(conflict);continue
+            fid=None if action=='withdraw' else self.fact(proposed['handle'],proposed['meaning'],proposed['subject'],
+                proposed['scope'],proposed['role'],proposed.get('payment_policy'))
+            if old:
+                if fid==old['fact']:committed(sid,fid);continue
+                self.history.append({'action':action,'support':sid,'before':old['fact'],'after':fid,'from_version':old['version'],'to_version':old['version']+1})
+                self.logic.update(old['fact'],sid,False);changed.add(old['fact'])
+                old.update(active=False,withdrawn=True,version=old['version']+1)
+            if fid:
+                sid=sid or 'support_'+digest([value['origin'],manifest.get('messages_sha256'),fid])[:20]
+                if old:
+                    old.update(active=True,withdrawn=False,fact=fid);self.logic.update(fid,sid,True)
+                else:self.register(fid,sid,value['origin'],field)
+                self.derive(fid);changed.add(fid)
+            committed(sid,fid or old['fact'])
+        value['semantic_binding_events']=row_results
+        live_delta=self.logic.settle()
+        self.last_changes={self.facts[f]['handle'] for f in live_delta if f in self.facts}
+        self.epoch+=bool(live_delta)
+        for fid in changed:self.events.append({'fact':fid,'active':self.logic.valid(fid),'sources':len(self.logic.roots[fid])})
+        value['binding_diagnostics']=errors_with_rows
+        return accepted,rejected
+
+    def derive(self,fid):
+        queue=deque([fid]);visited=set()
+        while queue and self.remaining():
+            source=queue.popleft()
+            if source in visited:continue
+            visited.add(source)
+            queue.extend(self._derive_one(source))
+        for source in queue:self.incomplete.update(self.related_ops(self.facts[source]['handle']))
+
+    def _derive_one(self,fid):
+        src=self.facts[fid];h=src['handle']
+        if h not in self.objects:return
+        meaning=src['meaning']; role=src['role']
+        if meaning in ('unknown','other_source_meaning','other_source_policy'):return
+        for e,k,rules,exact in self.routes.get(h,()):
+            if not self.remaining():self.incomplete.add(self.effects[e]['oid']);break
+            if not self.effects[e]['clean']:continue
+            if src['subject'] and src['subject']!=h:
+                # A bound subject is never generalized to an entire mapping family.
+                ref=self.objects.get(src['subject'],{})
+                relevant=keys(self.effects[e]['cell'])
+                if not any(t.get('id')==ref.get('decl') for t in walk(relevant) if 'id' in t):continue
+            if src['scope'] and e!=src['scope']:continue
+            if meaning=='transfer_condition' and k!='guard':continue
+            if meaning in RESOURCE|{'fee_rule','price','amount_role'} and k!='value':continue
+            if meaning in RESOURCE and (not exact or h in self.objects and self.objects[h]['oid'] is None):continue
+            if meaning in {'management_role','eligibility_state'} and k not in ('guard','value','key'):continue
+            if meaning=='authorization_quantity' and k!='guard':continue
+            if meaning not in RESOURCE|{'fee_rule','price','amount_role','transfer_condition','authorization_quantity','management_role','eligibility_state'}:continue
+            dest=self.fact(e,meaning,src['subject'],e,role)
+            pre=fid
+            # Intermediate facts carry the exact applied path. They are never global node labels.
+            for rule in rules:
+                link='der_'+digest([fid,e,k,rule,pre])[:20]
+                self.logic.rule(link,[pre],rule);pre=link
+            # The semantic interpretation and the committing source expression are independent premises.
+            observed='sourcefact_'+digest([e,k,self.effects[e]['conditions'],self.effects[e]['version']])[:20]
+            self.logic.update(observed,'source_'+observed[11:],True)
+            self.logic.rule(dest,[pre,observed],{'key':'P03','value':'P04','guard':'P05'}[k])
+            if k=='value' and exact and not src['scope'] and not src['subject']:
+                following=self.index_transfer(h,e,fid,pre,'P07')
+                if following:yield following
+
+    def for_effect(self,e):
+        d=self.effects[e]
+        if 'cell' not in d:
+            return sorted(fid for fid in self.by_handle[e] if self.logic.valid(fid) and self.facts[fid]['scope'] in (None,e))
+        obj=self.obj(d['target'],field_node(d['cell']))
+        def applicable(fid):
+            f=self.facts[fid]
+            if f['scope'] not in (None,e):return False
+            if f['handle']==e:return True
+            if f['subject']:
+                ident=self.objects.get(f['subject'],{}).get('decl')
+                if not any(t.get('id')==ident for t in walk(keys(d['cell'])) if 'id' in t):return False
+            return True
+        return sorted(f for f in self.by_handle[e]|self.by_handle[obj] if self.logic.valid(f) and applicable(f))
+
+    def resource(self,oid,cell):
+        """A source-level family reading or an exact, uniform reading of the committing writes."""
+        target=self.f.operations[oid]['target'];obj=self.obj(target,field_node(cell))
+        roots=[f for f in self.by_handle.get(obj,()) if self.logic.valid(f) and self.facts[f]['meaning'] in RESOURCE and not self.facts[f]['scope'] and not self.facts[f]['subject']]
+        es=[e for e in self.by_operation.get(oid,()) if 'cell' in self.effects[e] and key(self.effects[e]['cell'])==key(cell)]
+        local=[]
+        for e in es:
+            rows=[f for f in self.for_effect(e) if self.facts[f]['meaning'] in RESOURCE]
+            if not rows:local=[];break
+            local.extend(rows)
+        effective=roots+local
+        meanings={self.facts[f]['meaning'] for f in effective}
+        if len(meanings)!=1:return None
+        return {'meaning':meanings.pop(),'id':digest(sorted(set(effective))),'target':target,'operation':oid,
+                'family':key(cell),'source':'scoped_semantic_support','business_policy_formally_proved':False}
+
+    def managed_resource(self,oid,cell):
+        obj=self.obj(self.f.operations[oid]['target'],field_node(cell))
+        return any(self.facts[f]['meaning'] in RESOURCE for f in self.by_handle.get(obj,()) if not self.facts[f]['subject'] and not self.facts[f]['scope'])
+
+    def support_inputs(self,effects):
+        """All active source supports feeding these actual effects, including equivalent independent roots."""
+        todo=[f for e in effects for f in self.for_effect(e)]
+        seen=set();sids=set()
+        while todo and self.remaining():
+            fid=todo.pop()
+            if fid in seen:continue
+            seen.add(fid);sids.update(self.logic.roots.get(fid,()))
+            for _,premises in self.logic.edges.get(fid,()):
+                if all(self.logic.valid(pr) for pr in premises):todo.extend(premises)
+        return sids
+
+    def signature(self,oid):
+        return sorted({f for e in self.by_operation.get(oid,()) for f in self.for_effect(e)})
+
+    def public(self):
+        return {'source_effect_readings':[{'effect':e,'kind':k,'operation':self.effects[e]['oid'],
+                 'where':self.effects[e]['where'],'stage':'constructor' if self.f.lookup(self.effects[e]['oid']).function(self.f.operations[self.effects[e]['oid']]['function']).get('kind')=='constructor' else 'applied_entry',
+                 'shown_followup':e in (self.inv.context.last_manifest or {}).get('displayed_effect_handles',()) and (self.inv.context.last_manifest or {}).get('mode')=='focused_evidence',
+                 'opinion_consumers':sorted(getattr(self,'local_readers',{}).get(e,())),
+                 'shown':e in (self.inv.initial_manifest or {}).get('displayed_effect_handles',()),
+                 'bound_facts':sorted(self.for_effect(e)),
+                 'scoped_consumers':sorted(getattr(self,'effect_consumers',{}).get(e,()))}
+                 for e,k in getattr(self,'sensitive_effects',{}).items()],
+                'retired_supports':[{'support':sid,'fact':s['fact'],'field':s['field'],'version':s['version']} for sid,s in self.supports.items() if not s['active']], 'active_supports':[{'support':sid,'fact':row['fact'],'origin':row['origin'],'field':row['field'],'version':row['version']} for sid,row in sorted(self.supports.items()) if row['active']],
+                'updates':list(self.events),'revisions':list(self.history),
+                'referenced_abstract_effects':[{'effect':h,'operation':self.effects[h]['oid'],'target':self.effects[h]['target'],
+                         'kind':self.effects[h]['kind'],'location':self.effects[h]['where'],'committing_branches':len(self.effects[h]['branches']),
+                         'dependent_residual':any(b['has_residuals'] for b in self.effects[h]['branches'].values())}
+                    for h in sorted({f['handle'] for f in self.facts.values() if f['handle'] in self.effects and 'kind' in self.effects[f['handle']]})],
+                'facts':[{'id':fid,'object_or_effect':f['handle'],'meaning':f['meaning'],'role':f['role'],
+                          'subject':f['subject'],'scope':f['scope'],'grounded':self.logic.valid(fid)}
+                         for fid,f in sorted(self.facts.items())],
+                'rule_visits':self.logic.visits,'budget_cut':self.logic.cut,
+                'unfinished_operations':sorted(self.incomplete)}
+
+    def related_ops(self, h):
+        if h in self.effects:return {self.effects[h]['oid']}
+        return set(self.used.get(h,()))
+
+    def focused_consent(self,row):
+        """A displayed quantity answer joins the same support as a seed on that debit."""
+        origin=getattr(self,'input_origin',None);submission=getattr(self,'submission',None)
+        if origin not in ('fixture','verified_service') or not submission or row['meaning'] not in CONSENT:return
+        if row['scope'].get('phase') or row['scope'].get('assumptions'):return
+        applicable={key(route) for route in row['quantity_scope']};facts=set()
+        for e in self.by_operation.get(row['operation'],()):
+            if not self.remaining():self.incomplete.add(row['operation']);break
+            known={key(route) for route in self.quantity_scopes(e)}
+            if not known or not known<=applicable:continue
+            fid=self.fact(e,row['meaning'])
+            sid='support_'+digest([origin,submission,fid])[:20]
+            self.register(fid,sid,origin,'policies');facts.add(fid)
+        if facts:
+            row['fact_ids']=sorted(facts)
+            delta=self.logic.settle()
+            self.epoch+=bool(delta)
+
+    def financial_consent(self,oid,route):
+        found=set()
+        for e in self.by_operation.get(oid,()):
+            if self.effects[e].get('path')!=route['path'] or key(self.effects[e]['cell'])!=key(route['ledger']):continue
+            for f in self.for_effect(e):
+                if self.facts[f]['meaning'] in CONSENT and any(key(s)==key(route) for s in self.quantity_scopes(e)):
+                    found.add(f)
+        if not found:return None
+        modes={self.facts[f]['meaning'] for f in found}
+        return {'id':'consent_'+digest(sorted(found))[:20],'meaning':next(iter(modes)) if len(modes)==1 else 'unknown',
+                'target':self.f.operations[oid]['target'],'operation':oid,'family':key(route['ledger']),
+                'quantity_scope':[route],'scope':{},'source':'scoped_supports','fact_ids':sorted(found)}
+
+    def consumers_for(self,h):
+        """Instantiate only operations with a matching source effect, then let compile_property select categories."""
+        f=self.f
+        effects={h} if h in self.effects else set(self.by_decl.get(h,()))|{t[0] for t in self.routes.get(h,())}
+        result=defaultdict(set)
+        for e in effects:
+            if not self.remaining():self.incomplete.add(self.effects[e]['oid']);break
+            d=self.effects[e];oid=d['oid'];facts=self.for_effect(e)
+            for fact in facts:
+                seed=self.facts[fact];meaning=seed['meaning']
+                if f.options.scope=='AC':
+                    if meaning in AUTH|{'management_role','eligibility_state','authorization_quantity','other_source_policy','unknown'}:result[(oid,'AC')].add(e)
+                    continue
+                if meaning in CONSENT:
+                    # Intervening controls are structural candidates; the financial consumer still tests the actual effect.
+                    for x in f.summaries.dependencies.amounts_for(oid):
+                        if x['path']!=d['path']:continue
+                        for delta in x['deltas']:
+                            if key(delta['cell'])!=key(d['cell']):continue
+                            for gate in x['allowance_gates']:
+                                for woid in self.writers_for_amount(oid,gate['quantity_expression']):
+                                    result[(woid,None)].add(e)
+                    continue
+                if meaning in RESOURCE|{'price','fee_rule','amount_role','transfer_condition','authorization_quantity','management_role','eligibility_state','unknown','other_source_meaning'}:
+                    if meaning=='transfer_condition':
+                        for writer in self.by_decl.get(h,()):
+                            result[(self.effects[writer]['oid'],None)].add(writer)
+                    else:result[(oid,None)].add(e)
+        return result
+
+    def writers_for_amount(self,oid,expr):
+        dep=self.f.summaries.dependencies
+        term=dep.expressions.get(expr,{})
+        target=self.f.operations[oid]['target']
+        for t in walk(term):
+            if t.get('kind')!='storage':continue
+            for e in self.by_decl.get(self.obj(target,field_node(t)),()):
+                if not self.remaining():return
+                wid=self.effects[e]['oid']
+                if wid!=oid:yield wid
+
+    def inspect_untyped_amount(self,locator,manifest):
+        """Only carry the located value use, never the rejected model meaning."""
+        if self.f.options.scope!='FCR':return
+        handle=self.bind(locator,manifest,'obj')
+        if not handle:return
+        by_entry=defaultdict(set)
+        for eid,kind,_,exact in self.routes.get(handle,()):
+            if not self.remaining():return
+            if kind!='value' or not exact:continue
+            d=self.effects[eid]
+            if 'write' not in d or not d['clean']:continue
+            oid=d['oid']
+            dependencies=self.f.summaries.dependencies.forward(oid)['uses']
+            if any('value' in kinds and self.f.summaries.positions(use) for use,kinds in dependencies.items()):
+                by_entry[oid].add(eid)
+        for oid,effects in by_entry.items():
+            if any(self.inv.root(q)==oid and effects<=self.route_scopes(q) and
+                   set((q.get('property') or {}).get('possible_categories',()))=={(q.get('property') or {}).get('category')}
+                   for q in self.inv.issues.values()):
+                continue
+            qid='scope_'+digest([self.f.identity,oid,None,sorted(effects)])[:20]
+            if qid in self.inv.issues:continue
+            question=self.create_consumer(oid,None,effects)
+            if question:question['source_only_amount_read']=True
+
+    def seed_consumers(self,changed):
+        relevant=defaultdict(set)
+        for h in changed:
+            for dest,es in self.consumers_for(h).items():relevant[dest].update(es)
+        for (oid,category),es in sorted(relevant.items(),key=lambda r:str(r[0])):
+            question=self.create_consumer(oid,category,es)
+            if question:question.pop('source_only_amount_read',None)
+
+    def create_consumer(self,oid,cat,effects):
+        inv=self.inv
+        qid='scope_'+digest([self.f.identity,oid,cat,sorted(effects)])[:20]
+        if qid in inv.issues:return inv.issues[qid]
+        item={'id':qid,'anchors':[inv.catalog.name(oid)],'assessment':'investigate','category':cat,
+              'claim':'Review the applicable source effect and bound meaning.',
+              '_scope_effects':sorted(effects),'_host_source_question':True,'_semantic_consumer':True}
+        inv.accept({'issues':[item],'answers':[],'reviewed':[],'diagnostics':[],'usable_analysis':False},host_target=self.f.operations[oid]['target'])
+        consumer=inv.issues.get(qid)
+        if consumer:
+            if not hasattr(self,'effect_consumers'):self.effect_consumers=defaultdict(set)
+            for e in effects:self.effect_consumers[e].add(qid)
+        return consumer
+
+    def wire_name(self,h,manifest):
+        if not self.visible(h,manifest):return None
+        entry=self.effects.get(h) or self.objects[h]
+        if h in self.effects:
+            if 'cell' in entry:
+                name=self.f.lookup(entry['oid']).nodes[field_node(entry['cell'])]['name']
+                candidate=self.inv.catalog.name(entry['oid'])+'#'+name
+            else:candidate=self.inv.catalog.name(entry['oid'])+'#'+entry['kind']
+        elif entry.get('oid'):
+            candidate=self.inv.catalog.name(entry['oid'])+'#'+entry['name']
+        else:candidate=entry['target'].rsplit(':',1)[-1]+'.'+entry['name']
+        if self.bind(candidate,manifest)==h:return candidate
+        direct=next((r for r,k in manifest.get('typed_index',{}).items() if k==h),None)
+        if direct:return direct
+        loc=entry['where']
+        span=f"{loc['file']}@{loc['start']}+{loc['length']}"
+        return span if self.bind(span,manifest)==h else None
+
+    def labels_for(self,oid,manifest):
+        result={}
+        for sid,s in self.supports.items():
+            if not s['active'] or s['origin'] not in ('fixture','verified_service'):continue
+            fact=self.facts[s['fact']];h=fact['handle']
+            if oid not in self.related_ops(h) and not any(self.effects[e]['oid']==oid for e in self.by_decl.get(h,())):continue
+            name=self.wire_name(h,manifest)
+            if not name:continue
+            tag='sem:'+sid.split('_')[-1][:12]
+            qualifiers={}
+            for k in ('scope','subject'):
+                qualifier=fact.get(k)
+                if qualifier:qualifiers[k]=self.wire_name(qualifier,manifest)
+            if any(v is None for v in qualifiers.values()):continue
+            result[tag]={'source':name,'support':sid,'version':s['version'],'fact':s['fact'],
+                         'field':s['field'],'meaning':fact['meaning'],**qualifiers}
+            if fact['role']:result[tag]['role']=fact['role']
+            if fact.get('payment_policy'):result[tag]['payment_policy']=fact['payment_policy']
+        return result
+
+    def describe(self,oid,cat,reason,locations,decision):
+        from .source_opinion import DETAIL,EFFECT
+        matching={loc_key(loc) for loc in locations}
+        es=[e for e in self.by_operation.get(oid,()) if loc_key(self.effects[e]['where']) in matching]
+        ids=set()
+        for e in es:ids.update(self.for_effect(e))
+        att=self.inv.issues.get(decision,{}).get('property') or {}
+        for c in att.get('consent_rows',[]):
+            for fact in c.get('fact_ids',[]):
+                ids.add(fact)
+                effect=self.facts[fact]['handle']
+                if effect in self.effects and effect not in es:es.append(effect)
+        if self.inv.issues.get(decision,{}).get('current',{}).get('_semantic_consumer'):
+            for e in self.inv.issues[decision]['current'].get('_scope_effects',()):ids.update(self.for_effect(e))
+        origins=set();rules=set();types=set()
+        for fid in ids:
+            roots,applied=self.logic.basis(fid);origins.update(roots);rules.update(applied)
+            types.add(self.facts[fid]['meaning'])
+        statement=next(iter(sorted(matching,key=str)),None)
+        position=' at source offset '+str(statement[1]) if statement and isinstance(statement[1],int) else ''
+        kind=EFFECT.get(cat,'the scoped program effect')
+        basis=DETAIL.get(reason,DETAIL['scope_missing'])
+        if cat=='AC' and reason in ('source_role_reassignment','applicable_role_guard','guarded_state_change','guarded_source_effect','unguarded_governed_effect') and 'current_authority_required' in types:rules.add('P09')
+        interprets=sorted({c['meaning'] for c in att.get('consent_rows',[])})
+        if interprets:types.update(interprets)
+        lead='The assessment concerns '+kind+position
+        if types:lead+=' under '+', '.join(sorted(types))
+        wording=lead+'. '+basis
+        return {'explanation':wording,'facts':sorted(ids),'rules':sorted(rules),'supports':sorted(origins),'effects':sorted(es),
+                'meanings':sorted(types)}
+
+    def source_offices(self,oid):
+        from .source_opinion import office_use, replacement_status
+        from .policy_binding import conjuncts
+        from .initial_state import initial_for_lookup
+        lookup=self.f.lookup(oid)
+        state=initial_for_lookup(lookup)
+        found={}
+        for e in sorted(self.by_operation.get(oid,())):
+            if not self.remaining():self.incomplete.add(oid);break
+            d=self.effects[e]
+            if 'write' not in d:continue
+            cell=d['cell'];w=d['write'];rid=cell['root']
+            from .roles import _is_table
+            table=_is_table(lookup.nodes.get(rid,{}))
+            grant=w['value']
+            if not d['clean']:continue
+            if table:
+                if len(keys(cell))!=1 or grant.get('kind')!='literal' or grant.get('value') is not True:continue
+            elif keys(cell) or value_type(cell,lookup) not in ('address','address payable') or grant.get('kind') not in ('parameter','actual_sender'):continue
+            established=(state or {}).get('declarations',{}).get(rid,{})
+            use=office_use(self.inv,oid,cell)
+            if not use:continue
+            startup=bool(established.get('constructor_writes') or established.get('explicit_initializer'))
+            # A separate, actually guarded replacement of the same office is
+            # independent incumbent-policy evidence even without a constructor.
+            from .source_opinion import office_guard,feasible_source_guards
+            protected_peer=False
+            for peer in self.by_decl.get(self.obj(d['target'],rid),()):
+                pd=self.effects[peer]
+                if not self.remaining():break
+                if pd['oid']==oid or 'write' not in pd or not pd['clean']:continue
+                pr=self.f.paths[pd['path']]['raw']
+                if not feasible_source_guards(pr['guards']):continue
+                if any(office_guard(g,cell) for g in pr['guards']):
+                    protected_peer=True;break
+                nominee=pd['write']['value']
+                if nominee.get('kind')!='storage' or keys(nominee) or nominee['root']==rid:continue
+                if not any(office_guard(g,nominee) for g in pr['guards']):continue
+                # An accepted nominee may replace the incumbent, but only after an
+                # independent incumbent-authorized nomination. Account for every
+                # real positive writer to that applied slot; a public nomination
+                # route would invalidate this source policy inference.
+                nominations=[a for a in self.f.writes.values() if self.f.operations[a['operation']]['target']==d['target']
+                    and key(a['raw']['path'])==key(nominee) and not (a['raw']['value'].get('kind')=='literal' and a['raw']['value'].get('value')==0)]
+                if nominations and all(a['raw']['value'].get('kind') in ('parameter','actual_sender') and
+                    any(office_guard(g,cell) for g in self.f.paths[a['path']]['raw']['guards']) for a in nominations):
+                    protected_peer=True;break
+            applied_policy=any(self.facts[f]['meaning']=='current_authority_required' for f in self.for_effect(e))
+            # A repeatable installation of the caller into the very office that alone
+            # governs another committing use supplies lifecycle evidence in its own right.
+            # A protected switch can also define a narrower, conditional exemption.
+            from .source_opinion import exception_authority
+            branch=self.f.paths[d['path']]['raw']
+            repeatable_self=(not table and grant.get('kind')=='actual_sender' and not branch['guards']
+                             and any(office_guard(g,cell) for r in self.f.summaries.rows(use)
+                                     if r['ordered_writes'] and not r['residuals'] for g in r['guards']))
+            governors=set().union(*(exception_authority(self.inv,use,cell,g)
+                                    for r in self.f.summaries.rows(use) for g in r['guards']))
+            if not (startup or protected_peer or applied_policy or repeatable_self or governors):continue
+            row=self.f.paths[d['path']]['raw']
+            status=replacement_status(self.inv,oid,cell,row)
+            if status=='open':continue
+            subject=self.obj(d['target'],rid)
+            fid=self.fact(e,'current_authority_required',subject)
+            sid='source_'+digest([self.f.identity,e,use,'incumbent_role_use'])[:20]
+            self.register(fid,sid,'source_policy_deduction','policies')
+            found[e]=(status,fid)
+            self.__dict__.setdefault('office_uses',{})[e]=use
+        self.logic.settle()
+        return found
+
+    def scope_offices(self):
+        if self.f.options.scope!='AC':return
+        inv=self.inv
+        self.index()
+        for oid in sorted(self.by_operation):
+            if not self.remaining():self.incomplete.add(oid);continue
+            offices=self.source_offices(oid)
+            if not offices:continue
+            for q in list(inv.issues.values()):
+                if inv.root(q)!=oid:continue
+                locs=q['current'].get('_scope_effects',[])
+                if locs:
+                    q['office_effects']={e:v for e,v in offices.items() if e in locs}
+                    continue
+                from .source_opinion import statement_focus
+                focus=statement_focus(inv,q,self.f.summaries.rows(oid))
+                if focus:
+                    matches=[e for e in self.by_operation[oid] if loc_key(self.effects[e]['where'])==loc_key(focus[1]['source'])]
+                    q['effect_scope']=matches
+                    q['office_effects']={e:v for e,v in offices.items() if e in matches}
+                else:q['office_effects']=dict(offices)
+            for e in offices:
+                if not any(e in q.get('office_effects',{}) for q in inv.issues.values() if inv.root(q)==oid):
+                    q=self.create_consumer(oid,'AC',{e})
+                    if q:q['office_effects']={e:offices[e]}
+            for q in inv.issues.values():
+                if inv.root(q)==oid:q.pop('_source_opinion',None)
+
+    def office_opinion(self,q,rows):
+        from .source_opinion import opinion,blocked_positive
+        lookup=self.f.lookup(self.inv.root(q))
+        explicit=set(q['current'].get('_scope_effects',()))
+        candidates={e:v for e,v in q.get('office_effects',{}).items() if not explicit or e in explicit}
+        es=explicit or q.get('effect_scope') or ()
+        for e in es:
+            d=self.effects[e]
+            if 'write' not in d:continue
+            for fid in self.for_effect(e):
+                f=self.facts[fid]
+                if f['meaning']!='current_authority_required':continue
+                subject=f.get('subject')
+                if subject and self.objects.get(subject,{}).get('decl')!=d['cell']['root']:continue
+                if self.f.operations[d['oid']]['target']!=d['target']:continue
+                from .source_opinion import office_use,replacement_status
+                from .policy_binding import conjuncts
+                if not d['clean'] or not office_use(self.inv,d['oid'],d['cell']):continue
+                path=self.f.paths[d['path']]['raw'];guards=[g for t in path['guards'] for g in conjuncts(t)]
+                status=replacement_status(self.inv,d['oid'],d['cell'],path)
+                if status!='open':candidates[e]=(status,fid)
+        if not candidates:return None
+        for e,(status,fid) in candidates.items():
+            d=self.effects[e]
+            if status=='risk' and not blocked_positive(self.inv,q,d['path'],'AC'):
+                result=opinion('risk','source_role_reassignment',[d['where']])
+                use=getattr(self,'office_uses',{}).get(e)
+                if use:result['protected_use']=self.f.operations[use]['source']
+                return result
+        covered={d['path'] for e,(status,_) in candidates.items() if status=='normal' for d in [self.effects[e]]}
+        if covered and {r['path'] for r in rows}<=covered:
+            return opinion('normal','applicable_role_guard',[self.effects[e]['where'] for e in candidates])
+        return None
+
+
+    def disputed(self,q):
+        oid=self.inv.root(q)
+        if not oid:return False
+        groups=defaultdict(set)
+        for e in self.by_operation.get(oid,()):
+            for fid in self.for_effect(e):
+                m=self.facts[fid]['meaning']
+                if m in RESOURCE:groups[e,'unit'].add(m)
+                if m in CONSENT:groups[e,'consent'].add(m)
+                if m=='unknown':return True
+        return any(len(ms)>1 for ms in groups.values())
+
+    def route_scopes(self,q):
+        oid=self.inv.root(q)
+        item=q['current']
+        explicit=item.get('_scope_effects',()) or q.get('effect_scope',())
+        if explicit:return set(explicit)
+        from .source_opinion import statement_focus
+        if not oid:return set()
+        focus=statement_focus(self.inv,q,self.f.summaries.rows(oid))
+        if focus:return {e for e in self.by_operation[oid] if loc_key(self.effects[e]['where'])==loc_key(focus[1]['source'])}
+        return set(self.by_operation.get(oid,()))
+
+    def authority_cell(self,e,subject):
+        d=self.effects[e];lk=self.f.lookup(d['oid'])
+        if subject:
+            obj=self.objects.get(subject)
+            if not obj or obj['target']!=d['target'] or obj['oid'] is not None:return None
+            cell={'kind':'storage','root':obj['decl'],'segments':[]}
+        else:
+            cell=d.get('cell')
+        if cell and not cell.get('segments') and value_type(cell,lk) in ('address','address payable'):return cell
+        return None
+
+    def authority_binding(self,e,subject):
+        """Locate a principal in the actual effect context before judging guard strength."""
+        from .source_opinion import identity_guard
+        d=self.effects[e]
+        cell=self.authority_cell(e,subject)
+        if not cell:return None
+        if 'write' in d:
+            row=self.f.summaries.paths[d['path']]
+            changed=any(key(w['path'])==key(cell) for w in row['ordered_writes'][:d['version']])
+            # Equality within a disjunction identifies a role operand, not an
+            # authorization proof. The backend retains the full committing guard.
+            guarded_subject=any(identity_guard(term,{cell['root']}) for term in walk(row['guards']))
+            if not changed and (cell==d['cell'] or subject and guarded_subject):
+                return cell
+        # The existing independent peer-policy and callpoint checks can also
+        # establish a role. Being an address or receiving funds cannot do so.
+        authority,_=self.authority_effect(e,subject)
+        if authority in ('guarded_state_change','unguarded_governed_effect','guarded_source_effect'):
+            return cell
+        return None
+
+    def authority_effect(self,e,subject):
+        """Assess only the located action and the stated principal. Never assume a
+        declared address is the policy for every write to a different position."""
+        from .policy_binding import conjuncts
+        from .source_opinion import identity_guard
+        d=self.effects[e];role=self.authority_cell(e,subject)
+        if 'cell' not in d:
+            if d['kind']=='dangerous_external_call':return 'external_dependency',role
+            if not role:return 'policy_scope_unsubstantiated',None
+            # Check the guard at the actual effect, before returning to the caller.
+            for pid in d['branches']:
+                if not self.remaining():return 'policy_effect_unresolved',role
+                branch=self.f.summaries.paths[pid]
+                occurrences=[term for term in branch['effects'] if term.get('kind')==d['kind'] and loc_key(term['source'])==loc_key(d['where'])]
+                if branch['residuals'] or not occurrences:return 'policy_effect_unresolved',role
+                for term in occurrences:
+                    guards=[g for x in term.get('callpoint_guards',()) for g in conjuncts(x)]
+                    if any(key(w['path'])==key(role) for w in term.get('callpoint_writes',())) or not any(identity_guard(g,{role['root']}) for g in guards):
+                        return 'policy_scope_unsubstantiated',role
+            return 'guarded_source_effect',role
+        if role==d['cell']:return 'office',role
+        if not role:return 'policy_scope_unsubstantiated',None
+        row=self.f.summaries.paths[d['path']]
+        def guarded(r):
+            # A guard on a prior version cannot authenticate a newly replaced authority.
+            return any(identity_guard(g,{role['root']}) for term in r['guards'] for g in conjuncts(term))
+        if not d['clean'] or row['effects'] or any(key(w['path'])==key(role) for w in row['ordered_writes'][:d['version']]):
+            return 'policy_effect_unresolved',role
+        if guarded(row):return 'guarded_state_change',role
+        if row['guards']:return 'policy_effect_unresolved',role
+        obj=self.obj(d['target'],field_node(d['cell']))
+        for other in self.by_decl[obj]:
+            if not self.remaining():return 'policy_effect_unresolved',role
+            peer=self.effects[other]
+            if peer['oid']==d['oid'] or not peer['clean'] or key(peer['cell'])!=key(d['cell']):continue
+            # Cross-entry consent for keyed state requires additional holder/key evidence.
+            if d['cell'].get('segments') or value_type(d['cell'],self.f.lookup(d['oid']))!='bool':continue
+            now,other_value=d['write']['value'],peer['write']['value']
+            if not all(x.get('kind')=='literal' and type(x.get('value')) is bool for x in (now,other_value)) or now['value']==other_value['value']:continue
+            comp=self.f.summaries.paths[peer['path']]
+            if comp['effects'] or any(key(w['path'])==key(role) for w in comp['ordered_writes'][:peer['version']]) or not guarded(comp):continue
+            # A known public writer of the same applied setting and same outcome
+            # is a normal alternative to the claimed control over that outcome.
+            for writer in self.by_decl[obj]:
+                if not self.remaining():return 'policy_effect_unresolved',role
+                other=self.effects[writer]
+                if other['oid']==d['oid'] or key(other['cell'])!=key(d['cell']) or key(other['write']['value'])!=key(now):continue
+                other_row=self.f.summaries.paths[other['path']]
+                if other['clean'] and not other_row['effects'] and not other_row['guards']:return 'policy_scope_unsubstantiated',role
+            return 'unguarded_governed_effect',role
+        return 'policy_scope_unsubstantiated',role
+
+    def issuance_control(self,d,row,guards):
+        """Read the selected final credit, its funding and who controls the quantity."""
+        from .ledger import unit_origin
+        from .prestate import state_facts
+        from .source_opinion import paid_credit,quantity_forced_zero,sourced_quantity
+        oid=d['oid'];lookup=self.f.lookup(oid);w=d['write'];cell=d['cell']
+        who=holder(cell,lookup);sign,qty=local_delta(w)
+        if sign!='+' or not qty or not who or who.get('kind') not in ('parameter','actual_sender'):
+            return None
+        if not unit_origin(self.inv.backend,oid,cell):return None
+        # Another write in this storage family could replace or fund the credit,
+        # including via a differently spelled but aliasing key.
+        if any(v['path']['root']==cell['root'] for i,v in enumerate(row['ordered_writes']) if i!=d['version']):
+            return None
+        if row['effects']:return None
+        if paid_credit(self.inv,oid,row):return 'ordinary_paid_credit'
+        if quantity_forced_zero(guards,qty,lookup):return 'zero_quantity'
+        # Any independently consumed asset/claim needs its own normal explanation.
+        # Scalar supply/accounting increments do not finance the selected credit.
+        for i,peer in enumerate(row['ordered_writes']):
+            if i==d['version']:continue
+            direction,_=local_delta(peer)
+            if keys(peer['path']) or direction!='+':return None
+        fixed=state_facts(lookup)
+        def forced_zero(term):
+            kind=term.get('kind')
+            if kind=='literal':return term.get('value')==0
+            if kind=='storage' and not keys(term):
+                decl=fixed.get(term['root'],{})
+                return decl.get('encoded') and decl.get('value')==0
+            args=term.get('args',())
+            if args and term.get('op')=='*':return any(forced_zero(v) for v in args)
+            if args and term.get('op')=='+':return all(forced_zero(v) for v in args)
+            return False
+        if forced_zero(qty):return 'zero_quantity'
+        if not sourced_quantity(qty,lookup):return None
+        inputs={key(t) for t in walk(qty) if t.get('kind')=='parameter'}
+        if not inputs:return None
+        # A caller-supplied argument constrained to an accrued or fixed amount
+        # is not a free choice. Strict positive lower bounds retain discretion.
+        for guard in guards:
+            if not any(key(t) in inputs for t in walk(guard)):continue
+            args=guard.get('args',())
+            if len(args)==2:
+                left,right=args
+                if guard.get('op') in ('<','<='):left,right=right,left
+                if guard.get('op') in ('<','<=','>','>=','!=') and key(left) in inputs and right.get('kind')=='literal' and right.get('value')==0:
+                    continue
+            return None
+        return 'discretionary_credit'
+
+    def contextual_authority(self,e,q,subject=None):
+        """Apply a located normative responsibility to the actor at the actual effect."""
+        from .source_opinion import blocked_positive,feasible_source_guards,role_ids,identity_guard
+        from .policy_binding import conjuncts
+        d=self.effects[e];oid=d['oid']
+        if self.effect_focus(e) not in ('termination','credit','funds'):return None
+        role=self.authority_cell(e,subject) if subject else None
+        if subject and role is None:return None
+        normal={}
+        if d.get('kind') in ('native_selfdestruct','native_transfer'):
+            branches=d['branches']
+        elif 'write' in d:
+            branches=[d['path']]
+        else:return None
+        for pid in branches:
+            row=self.f.summaries.paths[pid]
+            if not row['committing'] or row['residuals'] or blocked_positive(self.inv,q,pid,'AC'):continue
+            guards=[g for term in row['guards'] for g in conjuncts(term)]
+            at_effect=guards
+            if 'write' in d:
+                before=row['ordered_writes'][:d['version']]
+            else:
+                occurrences=[t for t in row['effects'] if t['kind']==d['kind'] and loc_key(t['source'])==loc_key(d['where'])]
+                if not occurrences or any('callpoint_guards' not in t for t in occurrences):continue
+                points=[[g for term in t['callpoint_guards'] for g in conjuncts(term)] for t in occurrences]
+                if any(key(point)!=key(points[0]) for point in points[1:]):continue
+                at_effect=points[0]
+                before=[w for t in occurrences for w in t.get('callpoint_writes',())]
+            if role:
+                if any(w['path']['root']==role['root'] for w in before):continue
+                roles={role['root']}
+            else:
+                roles=role_ids(self.inv,oid,row)
+            if any(identity_guard(g,roles) for g in at_effect):
+                normal[pid]='guarded_source_effect'
+                continue
+            if 'write' in d:
+                reading=self.issuance_control(d,row,guards)
+                if reading in ('ordinary_paid_credit','zero_quantity'):
+                    normal[pid]=reading
+                    continue
+                if reading!='discretionary_credit':continue
+            # A guard on a different principal or a mixed payment branch needs
+            # its own comparison. Neither establishes this role's authorization.
+            if 'write' not in d and {key(g) for g in guards}!={key(g) for g in at_effect}:continue
+            if any(t.get('kind') not in ('op','literal','parameter','transaction_origin','storage')
+                   for t in walk(guards)):continue
+            if any(t.get('kind')=='storage' for t in walk(guards)) and not all(
+                    g.get('op')=='==' and any(t.get('kind') in ('transaction_origin','tx_origin') for t in g.get('args',()))
+                    for g in guards):continue
+            if not feasible_source_guards(guards):continue
+            if d.get('kind')=='native_transfer':continue
+            if any(t.get('kind')=='transaction_origin' for t in walk(guards)):
+                return 'origin_only_decider'
+            return 'unrestricted_termination_decision' if 'branches' in d else 'unrestricted_issuance_decision'
+        if set(normal)==set(branches) and len(set(normal.values()))==1:return next(iter(normal.values()))
+        return None
+
+    def local_opinion(self, q):
+        from .policy_binding import conjuncts, effect_duty
+        from .relations import opinion_principals
+        from .roles import _roots
+        from .source_opinion import opinion, blocked_positive, feasible_source_guards, covered_delegation, role_ids
+        from pr_next_joint.frontend.path_ir import conditions_possible, op
+
+        item = q['current']
+        scopes = item.get('_scope_effects', ())
+        if not item.get('_opinion_message') or not scopes or item.get('assessment') not in ('risk','normal'):
+            return None
+        expected = (q.get('property') or {}).get('expected_authorization') or {}
+        compiled = expected.get('compiled_authorization') or {}
+        if (expected.get('unresolved_relations') or compiled.get('necessary_only') or compiled.get('competing_interpretations')
+                or compiled.get('kind') == 'source_role_payment_policy'):
+            return None
+        if expected.get('source') == 'focused_model_answer':
+            duty = effect_duty(expected.get('basis',''))
+        else:
+            duty = effect_duty(item.get('policy_basis') or item['claim'])
+            if not duty and item.get('policy_basis'):
+                duty = effect_duty(item['claim'])
+        if not duty:
+            # Descriptive text may locate a useful effect. Its source facts and
+            # independently established policies still have their own consumers.
+            return None
+        oid = self.inv.root(q)
+        actor = {'kind':'actual_sender'}
+        statuses, locations = [], []
+        for eid in scopes:
+            effect = self.effects[eid]
+            if effect['oid'] != oid:
+                continue
+            principals = opinion_principals(self.inv, item, effect, duty)
+            for pid in ([effect['path']] if 'path' in effect else effect['branches']):
+                row = self.f.summaries.paths[pid]
+                conditions = [g for guard in row['guards'] for g in conjuncts(guard)]
+                if not row['committing'] or not feasible_source_guards(conditions):
+                    continue
+                locations.append(effect['where'])
+                if self.f.call_summaries.effect_dependencies(row, effect, initiation=True):
+                    statuses.append('open')
+                    continue
+                if 'write' in effect and any(key(w['path']) == key(effect['cell'])
+                        for w in row['ordered_writes'][effect['version']+1:]):
+                    statuses.append('open')
+                    continue
+                if duty['qualified'] or any(kind == 'conflict' for kind, _ in principals):
+                    statuses.append('open')
+                    continue
+                proofs = []
+                for kind, term in principals:
+                    if term is None or kind == 'conflict':
+                        # An abstract duty can govern a publicly selectable action.
+                        # It cannot by itself identify a different source guard.
+                        proofs.append(False if kind == 'abstract' and not role_ids(self.inv,oid,row) else None)
+                        continue
+                    if (kind == 'holder' and 'write' in effect and local_delta(effect['write'])[0] == '-'
+                            and covered_delegation(self.inv,oid,[row])):
+                        proofs.append(True)
+                    elif kind == 'office' and value_type(term,self.f.lookup(oid)) not in ('address','address payable'):
+                        recognized = role_ids(self.inv,oid,row) & {term['root']}
+                        proofs.append(any(_roots(g,recognized) for g in conditions) if recognized else None)
+                    else:
+                        try:
+                            proofs.append(key(actor)==key(term) or not conditions_possible(conditions,op('==',actor,term)))
+                        except (ValueError,RecursionError):
+                            proofs.append(None)
+                sufficient = any(proof is True for proof in proofs) if duty['alternative'] else all(proof is True for proof in proofs)
+                missing = all(proof is False for proof in proofs) if duty['alternative'] else any(proof is False for proof in proofs)
+                if (duty['alternative'] and not sufficient and all(term is not None and (
+                        kind == 'holder' or kind == 'office' and value_type(term,self.f.lookup(oid)) in ('address','address payable'))
+                        for kind,term in principals)):
+                    # Each allowed identity can occupy a different disjunct of the guard.
+                    allowed = op('or', *[op('==',actor,term) for _,term in principals])
+                    try:
+                        sufficient = not conditions_possible(conditions,allowed)
+                    except (ValueError,RecursionError):
+                        missing = False
+                if (not sufficient and compiled.get('binding_effect') == eid and compiled.get('source_bound_alternatives')
+                        and compiled.get('predicate') and not compiled.get('necessary_only')):
+                    try:
+                        sufficient = not conditions_possible(conditions, compiled['predicate'])
+                    except (ValueError,RecursionError):
+                        missing = False
+                if sufficient:
+                    statuses.append('normal')
+                elif not missing or blocked_positive(self.inv,q,pid,'AC'):
+                    statuses.append('open')
+                elif 'write' in effect and self.issuance_control(effect,row,conditions) in ('ordinary_paid_credit','zero_quantity'):
+                    # Let the independently recorded source alternative speak for itself.
+                    return None
+                else:
+                    statuses.append('risk' if item['assessment']=='risk' else 'open')
+        if not statuses:
+            return None
+        status = 'risk' if 'risk' in statuses else 'normal' if all(v=='normal' for v in statuses) else 'open'
+        reason = {'risk':'scoped_semantic_conflict','normal':'scoped_semantic_normal','open':'scope_missing'}[status]
+        result = opinion(status,reason,{loc_key(loc):loc for loc in locations}.values())
+        result['semantic_local'] = True
+        result['same_scope_authorized'] = status == 'normal'
+        return result
+
+    def effect_policy_opinion(self,q):
+        if self.f.options.scope!='AC':return None
+        from .source_opinion import opinion,blocked_positive
+        out=[];located=[];policy_sources=set()
+        if not q['current'].get('_semantic_consumer'):
+            return self.local_opinion(q)
+        for e in self.route_scopes(q):
+            d=self.effects[e]
+            if d['oid']!=self.inv.root(q):continue
+            for fid in self.for_effect(e):
+                fact=self.facts[fid]
+                if fact['meaning']=='current_authority_required':
+                    status,role=self.authority_effect(e,fact['subject'])
+                    compiled=((q.get('property') or {}).get('expected_authorization') or {}).get('compiled_authorization') or {}
+                    if not compiled and status in ('policy_scope_unsubstantiated','policy_effect_unresolved'):
+                        status=self.contextual_authority(e,q,fact['subject']) or status
+                    if status=='office' or compiled.get('kind')=='source_role_payment_policy' and compiled.get('binding_effect')==e:
+                        continue
+                    if status=='unguarded_governed_effect' and blocked_positive(self.inv,q,d['path'],'AC'):status='policy_effect_unresolved'
+                    out.append(status);located.append(d['where']);policy_sources.add(fact['subject'])
+                elif 'cell' not in d and fact['meaning'] in ('unknown','other_source_policy'):
+                    out.append('external_dependency' if d['kind']=='dangerous_external_call' else 'policy_missing')
+                    located.append(d['where'])
+        if not out:return None
+        if len(policy_sources)>1:return opinion('open','policy_scope_unsubstantiated',located)
+        for supported in ('unguarded_governed_effect','unrestricted_termination_decision','unrestricted_issuance_decision','origin_only_decider'):
+            if supported in out:return opinion('risk',supported,located)
+        protected={'guarded_state_change','guarded_source_effect','ordinary_paid_credit','zero_quantity'}
+        if set(out)<=protected:return opinion('normal',out[0],located)
+        reason=next(v for v in out if v not in protected)
+        return opinion('open',reason,located)
+
+    def policy(self,q):
+        if not self.inv.root(q):return None
+        fs=[(self.facts[f],f,e) for e in sorted(self.route_scopes(q)) for f in self.for_effect(e) if self.facts[f]['meaning'] in AUTH]
+        if not fs:return None
+        if len({(r['meaning'],r['subject'],r.get('payment_policy'),e) for r,f,e in fs})!=1:return None
+        r,fid,e=fs[0];d=self.effects[e];lookup=self.f.lookup(d['oid'])
+        if r['meaning']=='holder_authorization_applies':
+            if 'cell' not in d:return None
+            grant=key_relation(d['cell'],lookup);ordered=keys(d['cell'])
+            if not grant or grant.get('kind')!='authorization_quantity' or len(ordered)!=2:return None
+            subject=ordered[grant['holder_key']]
+            if r['subject'] and self.objects[r['subject']]['decl']!=subject.get('id',subject.get('root')):return None
+            return {'meaning':'required_authorization','polarity':'asserted','level':'H','semantic_fact':fid,
+                    'explicit_policy_kind':r['meaning'],'qualified_cell':subject,'binding_effect':e,
+                    'text':'The actual holder issues this grant.','source_anchors':q['current']['anchors']}
+        if r['meaning']=='initialization_stage':
+            if not r.get('subject'):return None
+            flag={'kind':'storage','root':self.objects[r['subject']]['decl'],'segments':[]}
+            if value_type(flag,lookup)!='bool':return None
+            if not any(key(w['path'])==key(flag) and w['value'].get('value') is True for row in self.f.summaries.rows(d['oid']) for w in row['ordered_writes']):return None
+            return {'meaning':'required_authorization','polarity':'asserted','level':'H','semantic_fact':fid,'explicit_policy_kind':r['meaning'],
+                    'qualified_cell':flag,'binding_effect':e,'text':'The located one-time stage limits this effect.','source_anchors':q['current']['anchors']}
+        if r['meaning']=='current_authority_required':
+            sub=self.authority_binding(e,r['subject'])
+            if not sub:return None
+            return {'meaning':'required_authorization','polarity':'asserted','level':'H','semantic_fact':fid,
+                    'explicit_policy_kind':r['meaning'],'qualified_cell':sub,'binding_effect':e,
+                    'payment_policy':r.get('payment_policy'),'text':'The incumbent qualifies the recorded change.','source_anchors':q['current']['anchors']}
+        return None
+
+
+    def disputed_effects(self,q):
+        oid=self.inv.root(q)
+        if not oid:return set()
+        pairs=[]
+        effects=set(q['current'].get('_scope_effects',())) or self.by_operation.get(oid,set())
+        for e in effects:
+            groups=defaultdict(set)
+            for fid in self.for_effect(e):
+                meaning=self.facts[fid]['meaning']
+                if meaning in RESOURCE:groups['resource'].add(meaning)
+                if meaning in CONSENT:groups['consent'].add(meaning)
+            if any(len(s)>1 for s in groups.values()):pairs.append(e)
+        return set(pairs)
+
+    def describe_source(self,oid,cat,reason,locations,qid):
+        row=self.describe(oid,cat,reason,locations,qid)
+        q=self.inv.issues[qid]
+        evidence=[self.inv.evidence[e] for e in q['evidence']]
+        prop=q.get('property') or {}
+        modes={v['meaning'] for v in prop.get('consent_rows',[])}
+        if reason=='program_support':
+            usable=[v for record in evidence for v in record.get('queries',())
+                    if v.get('bounded_condition_confirmed') and v.get('details',{}).get('property_validated')
+                    and (v['details'].get('property_identity')==prop.get('id') or record.get('property_validation_key')==q.get('changed_validation_key') and q.get('changed_validation_key'))]
+            labels={v.get('label') for v in usable}
+            anchor=self.f.operations.get(oid,{}).get('function','this entry')
+            if cat=='AC' and 'authorization_violation' in labels:
+                expected=prop.get('expected_authorization') or {}
+                row['explanation']=('At '+anchor+', the committing effect admits a requester outside the applicable source-bound qualification. '+
+                    ('The policy concerns acquisition and subsequent protected use.' if expected.get('property_family')=='acquire' else
+                     'The check compares the effective guard with the bound authorization requirement, including any alternative qualification.'))
+                paid=(expected.get('compiled_authorization') or {}).get('source_requirement') or {}
+                if paid.get('kind')=='source_role_payment_policy' and not paid.get('permits_payment'):
+                    if paid.get('payment_relation')=='joint':
+                        row['explanation']='At '+anchor+', the policy requires both the incumbent role and the qualifying payment. The effective guard admits a committing change without that combination.'
+                    else:
+                        row['explanation']='At '+anchor+', the incumbent role is necessary for this effect. The payment branch can commit the change without that role.'
+            elif cat=='FCR-MINT' and labels & {'direct_effect','financial_value'}:
+                row['explanation']=('At '+anchor+', the checked privilege permits positive additional rights for the controller or a beneficiary it can select. '+
+                    ('The intervention can enable a new same-request outcome; baseline commitment is not established.' if any(v['details'].get('baseline_commit_not_assumed') for v in usable) else
+                     'A balance increase for an independent ordinary buyer alone does not satisfy this condition.'))
+            elif cat=='FCR-DESTROY' and labels & {'direct_effect','financial_value'}:
+                row['explanation']='At '+anchor+', a privileged effect leaves another holder with fewer rights in the same unit after attributed transfers and applicable settlement.'
+            elif cat=='FCR-TRANSFER' and labels & {'direct_effect','financial_value'}:
+                row['explanation']='At '+anchor+', the scoped change moves another holder’s existing rights to a separate position without the applicable holder-issued consent.'
+            elif cat in ('FCR-PAUSE','FCR-FREEZE') and 'financial_block' in labels:
+                group='the designated holder' if cat=='FCR-FREEZE' else 'ordinary holders'
+                row['explanation']='At '+anchor+', the checked privileged change restricts the outgoing right of '+group+' for an otherwise usable request within the recorded domain.'
+        if reason=='source_check_excluded' and cat=='FCR-MINT' and prop.get('value_dependence',{}).get('value_uses'):
+            uses=prop['value_dependence']['value_uses']
+            actual_paid_use=any(any(n.get('kind')=='transaction_value' for n in walk([r['guards'],r['ordered_writes']])) for o in uses for r in self.f.summaries.rows(o))
+            if actual_paid_use:
+                row['explanation']='The price or amount control reaches a paid credit. The applicable source check excludes positive additional rights for the controller or a beneficiary it selects; a separate buyer receiving its own purchase does not establish this capability.'
+        if modes=={'net_request_with_fee'} and cat=='FCR-DESTROY' and reason in ('scope_missing','scoped_fee_consent','program_support'):
+            row['explanation']=('The matched holder allowance uses the net request and its disclosed fee. '+
+               ('The applicable check excludes an uncompensated debit under that effective grant.' if reason=='scoped_fee_consent' else
+                'The authorization may be zero on the pertinent debit; the recorded net interpretation alone cannot exclude loss.' if reason=='scope_missing' else
+                'The matched debit still has a source-supported loss after applicable consent.'))
+        if modes=={'gross_debit_bound'} and cat in ('FCR-TRANSFER','FCR-DESTROY') and reason in ('program_support','source_certificate'):
+            row['explanation']=('The holder-issued bound applies to the gross debit of this request. '+
+                ('The check finds an unauthorized debit with credit to a separate position; the credit itself need not exceed the grant.'
+                 if cat=='FCR-TRANSFER' else 'The check finds a positive uncompensated loss under that gross bound.'))
+        if reason=='program_support' and cat in ('FCR-TRANSFER','FCR-DESTROY','FCR-MINT'):
+            uses={ev.get('observe') for ev in evidence if ev.get('change')==oid and ev.get('observe')!=oid and
+                  any(v.get('label')=='financial_value' and v in usable for v in ev.get('queries',()))}
+            if len(uses)==1 and (use:=next(iter(uses))) in self.f.operations:
+                before=self.f.operations[oid]['function'];after=self.f.operations[use]['function']
+                row['explanation']=('The change at '+before+' affects the same holder request at '+after+'. '+
+                        {'FCR-TRANSFER':'The checked difference is a movement of existing rights to a separate position outside applicable consent.',
+                         'FCR-DESTROY':'The checked difference is an uncompensated reduction of existing rights under the applicable consent.',
+                         'FCR-MINT':'The checked difference is a new positive entitlement for a controlled beneficiary.'}[cat])
+        if any(v.get('kind')=='source_inspection' for v in evidence):row['origins']=['source_observation']
+        else:row['origins']=[]
+        row['origins']+=sorted({self.supports[s]['origin'] for s in row['supports'] if s in self.supports})
+        if row['rules']:row['origins'].append('rule_derivation')
+        if reason in ('program_support','source_check_excluded') and any(v.get('queries') for v in evidence):row['origins'].append('scoped_program_check')
+        if modes:
+            if any(c.get('source')=='focused_source_bound_semantic_answer' for c in prop.get('consent_rows',[])):row['origins'].append('source_bound_semantic_answer')
+        return row
+
+    def matching_dispute(self,q):
+        """A source-typed financial interpretation stays unresolved only when its two meanings matter."""
+        es=self.disputed_effects(q)
+        if not es:
+            why=self.unresolved(q)
+            if why:return dict(status='open',reason=why,locations=[self.f.operations[self.inv.root(q)]['source']])
+            if self.f.options.scope=='FCR' and q['current'].get('_semantic_consumer') and not q['current'].get('category'):
+                effects=self.route_scopes(q)
+                if effects and all('write' in self.effects[e] and self.effects[e]['clean'] and local_delta(self.effects[e]['write'])[0] and
+                        {self.facts[f]['meaning'] for f in self.for_effect(e)}=={'nonfinancial_counter'} and
+                        self.local_counter(e) for e in effects):
+                    return dict(status='normal',reason='scoped_counter',locations=[self.effects[e]['where'] for e in sorted(effects)])
+            return None
+        return {'status':'open','reason':'conflicting_scoped_meanings','locations':[self.effects[e]['where'] for e in sorted(es)]}
+
+
+
+    def local_counter(self,e):
+        # Use the already registered dependency summary. An unfinished search cannot close a use.
+        d=self.effects[e]
+        summary=self.f.summaries.dependencies.forward_cache.get(d['oid'])
+        if not summary or not summary['fixed_point_over_indexed_definitions'] or summary['residuals']:return False
+        uses=summary['uses']
+        if any(not self.f.operations[u].get('generated_getter') for u in uses):return False
+        from .ledger import _unit_origin
+        return not _unit_origin(self.inv.backend,d['oid'],d['cell'])
+
+    def legacy_resource(self,oid,cell,meaning,scope):
+        receipt=getattr(self,'legacy_receipt',None)
+        if not receipt or not self.built or scope.get('phase') or scope.get('assumptions'):return
+        target=self.f.operations[oid]['target'];obj=self.obj(target,field_node(cell))
+        if obj not in self.objects:return
+        source,submission=receipt
+        if source not in ('verified_service','fixture') or not submission:return
+        fid=self.fact(obj,meaning)
+        sid='support_'+digest([source,submission,fid])[:20]
+        if self.register(fid,sid,source,'annotations'):
+            self.derive(fid);self.logic.settle()
+
+    def planning_read(self,q):
+        if not q['current'].get('_semantic_consumer'):return
+        for e in q['current'].get('_scope_effects',()):
+            if e not in self.effects:continue
+            d=self.effects[e]
+            for fid in self.for_effect(e):
+                meaning=self.facts[fid]['meaning']
+                if not self.remaining():self.incomplete.add(d['oid']);return
+                if meaning in ('price','fee_rule','amount_role') and 'cell' in d:
+                    obj=self.obj(d['target'],field_node(d['cell']))
+                    for sink,k,rs,exact in self.routes.get(obj,()):
+                        if not self.remaining():self.incomplete.add(d['oid']);return
+                        use=self.effects[sink]['oid']
+                        if k=='value' and use!=d['oid']:
+                            q.setdefault('semantic_read_dependencies',set()).add(use)
+                            self.inv.enqueue(q['id'],'inspect',{'operation':use,'enhance':False},2,'source_quantity_consumer')
+                if meaning in ('authorization_quantity','eligibility_state','transfer_condition'):
+                    self.inv.enqueue(q['id'],'inspect',{'operation':d['oid'],'enhance':False},1,'condition_subject_and_use')
+
+
+    def withdrawn_dependency(self,e):
+        d=self.effects[e]
+        if any(self.facts[f]['meaning'] in RESOURCE for f in self.for_effect(e)):return False
+        for support in self.supports.values():
+            if support['active'] or not support.get('withdrawn'):continue
+            row=self.facts[support['fact']];h=row['handle']
+            if row['meaning'] not in RESOURCE:continue
+            if h==e or h==self.obj(d['target'],field_node(d['cell'])) or any(dest==e and kind=='value' for dest,kind,_,_ in self.routes.get(h,())):return True
+        return False
+
+    def index_transfer(self,src,e,fid,pre,rule):
+        dest=self.facts[fid]
+        obj=self.obj(self.effects[e]['target'],field_node(self.effects[e]['cell']))
+        if self.objects.get(src,{}).get('oid') is not None or src==obj or not self.effects[e]['clean']:return
+        w=self.effects[e]['write']
+        if keys(w['path']) or w['value'].get('kind')!='storage' or keys(w['value']):return
+        # Only cells whose every committing writer copies this very source may export that interpretation.
+        # It describes a value family, not the existence of a reachable transition or consent.
+        writers=self.by_decl[obj]
+        if any(not self.effects[q]['clean'] or key(self.effects[q]['write']['value'])!=key(w['value']) for q in writers):return
+        if dest['meaning'] not in ('price','fee_rule','amount_role','eligibility_state','management_role'):return
+        nxt=self.fact(obj,dest['meaning'],None,None,dest['role'])
+        self.logic.rule(nxt,[pre],rule)
+        return nxt
+
+    def semantic_questions_for(self,q):
+        oid=self.inv.root(q)
+        if not oid:return []
+        effects=q['current'].get('_scope_effects') or self.by_operation.get(oid,set())
+        await_more=set()
+        for e in effects:
+            if e not in self.effects:continue
+            fs=self.for_effect(e)
+            for fid in fs:
+                m=self.facts[fid]['meaning']
+                if m in ('unknown','other_source_meaning','other_source_policy'):
+                    await_more.add(e)
+        await_more.update(self.disputed_effects(q))
+        if not await_more:return []
+        return [{'kind':'scoped_support_dispute','affected_effects':sorted(await_more),'id':'dispute_'+digest([oid,sorted(await_more)])[:12],
+                 'question':'Clarify the shown meaning on this effect. Correct, narrow or withdraw its support using an applicable source reason.'}]
+
+    def unresolved(self,q):
+        if self.disputed_effects(q):return 'conflicting_scoped_meanings'
+        for e in self.route_scopes(q):
+            if e not in self.effects:continue
+            d=self.effects[e]
+            if 'cell' not in d:continue
+            lookup=self.f.lookup(d['oid']);roots=self.for_effect(e)
+            labels={self.facts[f]['meaning'] for f in roots}
+            quantity_only='amount_role' in labels and not labels.intersection(RESOURCE) and q['current'].get('_semantic_consumer')
+            if self.withdrawn_dependency(e) or quantity_only or 'unknown' in labels and not labels-{'unknown','other_source_meaning','other_source_policy'}:
+                if keys(d['cell']) and holder(d['cell'],lookup) is not None:
+                    from .ledger import _unit_origin
+                    if _unit_origin(self.inv.backend,d['oid'],d['cell']) is None:return 'source_unit_missing'
+        return None

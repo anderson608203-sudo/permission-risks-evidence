@@ -1,0 +1,44 @@
+{
+  "current": {
+    "requests": 1915,
+    "real_model_calls": 1915,
+    "simulated_service_requests": 0,
+    "unknown_or_inflight_upper_usd": 0.0,
+    "unknown_cost_upper_usd": 0.0,
+    "inflight": 0,
+    "unknown": 0,
+    "settled_cost_usd_upper": 11.10542650799999,
+    "settled_cost_usd_lower": 5.552713253999995,
+    "simulated_cost_usd_upper": 0,
+    "prompt_tokens": 5306321,
+    "completion_tokens": 8041810,
+    "service_models": [
+      "deepseek-flash"
+    ],
+    "actual_provider_billed_usd": null,
+    "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+    "per_request_money_reservation": false,
+    "halt": "",
+    "nature": "real_service",
+    "unknown_fee_is_not_zero": true
+  },
+  "cumulative_requests": 3152,
+  "historical_upper_usd": 10.35711702,
+  "cumulative_upper_usd": 21.46254352799999,
+  "actual_supplier_invoice": null,
+  "actual_instance_fee_cny": null,
+  "full_seconds": 10903.669276475906,
+  "preparation_accounted_seconds": 252.59169220924377,
+  "collection_seconds": 18.917939118109643,
+  "sum_solver_calls_in_reports": 34394,
+  "request_count_distribution": {
+    "2": 752,
+    "1": 411,
+    "0": 1
+  },
+  "phases": {
+    "initial": 1163,
+    "focused_revision": 752
+  },
+  "reasoning_tokens": 7449930
+}

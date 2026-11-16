@@ -1,0 +1,6548 @@
+[
+  {
+    "member": "RQ1_4d0224e0d6e1",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "repair",
+    "partner": "RQ1_0e93114762d7",
+    "source": {
+      "units/program.sol": "eef625d07a196a366e16527579beed15ddfe80b3937f4a2a280d598f4cb354d4"
+    },
+    "target": [
+      "units/program.sol:GoldenTime",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "41504a10060c16fa02556fe2269f589ad034ad3d9c3bd752ee2a622fda31f08e",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "necessary_effect_absent": 18,
+      "no_effect_in_scope": 17
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_b0bbc9632025324f1252",
+        "category": "FCR-TRANSFER",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 6771,
+          "length": 222,
+          "ast_id": 862
+        },
+        "operation": "op_9edf93d15addbd79ccda",
+        "reason": "program_support",
+        "evidence": [
+          "E15",
+          "E19",
+          "E23",
+          "E26",
+          "E27",
+          "E28",
+          "E29",
+          "E30",
+          "E33",
+          "E5"
+        ]
+      }
+    ],
+    "queries": {
+      "prefix_reachability/sat": 2,
+      "baseline_usable/sat": 3,
+      "financial_block/unknown": 1,
+      "financial_block/sat": 1,
+      "financial_value/unsat": 13,
+      "financial_value_post_exclusion/unsat": 5,
+      "same_request_amount_change/unsat": 3,
+      "same_request_amount_change/sat": 2,
+      "financial_consent_unresolved/unsat": 4,
+      "financial_value_post_exclusion/sat": 1,
+      "financial_value/sat": 1,
+      "opened_by_change/sat": 1,
+      "both_usable/sat": 1
+    },
+    "solver_calls": 36,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "361759b10f51a813937b92a7085bb8071b20994153e145e3452fd0441200093e"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [
+      "FCR-TRANSFER"
+    ],
+    "scoped_inspections": [
+      {
+        "id": "scope_296fe41bbf6e3b59608b",
+        "prop": {
+          "id": "property_33aed236cfd037fbe673",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_9edf93d15addbd79ccda",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "13a2a389f9e4d71035af76080706903a1d07ccd3ed38bfa9771a929272c33015"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E2",
+          "E6"
+        ]
+      },
+      {
+        "id": "scope_296fe41bbf6e3b59608b::FCR-DESTROY",
+        "prop": {
+          "id": "property_202eec8c1bd4cd8c573b",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_9edf93d15addbd79ccda",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "87c6322e3e365989193cc6cd34bd5f6443fe5b427e690e4f3b39819154b0ffbb"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E7",
+          "E8",
+          "E9",
+          "E10",
+          "E12",
+          "E13",
+          "E14",
+          "E16",
+          "E31"
+        ]
+      },
+      {
+        "id": "scope_296fe41bbf6e3b59608b::FCR-MINT",
+        "prop": {
+          "id": "property_6ed45a49eb649aed875c",
+          "category": "FCR-MINT",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_9edf93d15addbd79ccda",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "d45594cdc9e9de1876c2aaf566f06e1fd8f92c94691e22d75b56b76d3b44113e"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E11",
+          "E17",
+          "E18",
+          "E20",
+          "E21",
+          "E22",
+          "E24",
+          "E25",
+          "E32"
+        ]
+      },
+      {
+        "id": "scope_296fe41bbf6e3b59608b::FCR-TRANSFER",
+        "prop": {
+          "id": "property_5153a187db3a5cbb5f02",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_9edf93d15addbd79ccda",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "caeed80f06b05e6b8ce5ec4e57511d8e856195483194baa16bf2a65e0152da50"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E15",
+          "E19",
+          "E23",
+          "E26",
+          "E27",
+          "E28",
+          "E29",
+          "E30",
+          "E33"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "investigate": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "913863ddee08c07b342e798447dcb616bbc17140c22eef50ed540a8c0a636fea"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_3421c09bc85c",
+    "task": "FCR",
+    "category": "FCR-MINT",
+    "side": "risk",
+    "partner": "RQ1_7cc11a697bd2",
+    "source": {
+      "units/program.sol": "989c718bac246af1c5426ebe4a3abdd7ad05727b79561e851ed4aaafc6f25dc3"
+    },
+    "target": [
+      "units/program.sol:AGGToken",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "0d5f440a7317206c5e598290990dfb75c9832036283233fb0400656bf6e0ea96",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 19,
+      "source_task_reading": 6,
+      "effect_range_decided": 2,
+      "necessary_effect_absent": 7,
+      "external_dependency": 1,
+      "ordinary_paid_credit": 1
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_e1b6e55054766f0196a3",
+        "category": "FCR-MINT",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 10118,
+          "length": 1620,
+          "ast_id": 1230
+        },
+        "operation": "op_1846b5cd490a3596d32a",
+        "reason": "program_support",
+        "evidence": [
+          "E29",
+          "E31",
+          "E33",
+          "E35",
+          "E4",
+          "E7"
+        ]
+      },
+      {
+        "id": "finding_140778627c45a02f3076",
+        "category": "FCR-MINT",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 5232,
+          "length": 373,
+          "ast_id": 594
+        },
+        "operation": "op_10f20d68fc821801b4a3",
+        "reason": "program_support",
+        "evidence": [
+          "E1",
+          "E16",
+          "E24",
+          "E32",
+          "E36",
+          "E38",
+          "E39",
+          "E44"
+        ]
+      }
+    ],
+    "queries": {
+      "local_premises_feasible/sat": 1,
+      "direct_effect/sat": 1,
+      "financial_value/unsat": 22,
+      "financial_consent_unresolved/unsat": 4,
+      "financial_value_post_exclusion/unsat": 6,
+      "same_request_amount_change/unsat": 7,
+      "financial_value_post_exclusion/sat": 3,
+      "financial_value/sat": 2,
+      "baseline_usable/sat": 1,
+      "opened_by_change/sat": 1,
+      "both_usable/sat": 1
+    },
+    "solver_calls": 53,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "b2590ef4cb03f3b40b88085d09b5ba3b729dfcfd86a0b7c60afccff5ff76a0a7"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_646bddbe842c607271ba",
+        "prop": {
+          "id": "property_e546fb3b5128b01b6399",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_1846b5cd490a3596d32a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "05f861ee95686c2fe02e69fc871334f22aee9e9ee461d3288332c16bf7766b8e"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E7",
+          "E29",
+          "E31",
+          "E33",
+          "E35"
+        ]
+      },
+      {
+        "id": "scope_646bddbe842c607271ba::FCR-DESTROY",
+        "prop": {
+          "id": "property_49d081009a507efb2b41",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_1846b5cd490a3596d32a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "9675d28206550f921bf32b1647cc038676e28e9fb572404ab37e0503df507134"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E9",
+          "E11",
+          "E13",
+          "E15",
+          "E17",
+          "E40"
+        ]
+      },
+      {
+        "id": "scope_646bddbe842c607271ba::FCR-TRANSFER",
+        "prop": {
+          "id": "property_e3e54ef3e9947fff0937",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_1846b5cd490a3596d32a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c14280be172198767a68893575b1b1dfee125c3e8185546f5122697ad0d986f8"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6",
+          "E19",
+          "E21",
+          "E23",
+          "E25",
+          "E27",
+          "E42"
+        ]
+      },
+      {
+        "id": "scope_bc79b32e21b720b8d6b2",
+        "prop": {
+          "id": "property_31372aceb4f5b6edde5d",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_10f20d68fc821801b4a3",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "149df1f834796954d4107672705e74b96fb8df553e83d1e49f8335150eeea073"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E16",
+          "E24",
+          "E32",
+          "E36",
+          "E38",
+          "E39",
+          "E44"
+        ]
+      },
+      {
+        "id": "scope_bc79b32e21b720b8d6b2::FCR-DESTROY",
+        "prop": {
+          "id": "property_c1baa802f4b1170c2eb1",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_10f20d68fc821801b4a3",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "f544b4b02ee85d1644fccedb4b0e02afd034fc759a9d1e8127314fa08ea2504a"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E8",
+          "E10",
+          "E14",
+          "E18",
+          "E22",
+          "E26",
+          "E41"
+        ]
+      },
+      {
+        "id": "scope_bc79b32e21b720b8d6b2::FCR-TRANSFER",
+        "prop": {
+          "id": "property_5097eb954a4fb91eb159",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_10f20d68fc821801b4a3",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "2b94d9f4e55ff9887c5a757f9f02860795dc000041af8c529a123d5cbc3ce686"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E12",
+          "E20",
+          "E28",
+          "E30",
+          "E34",
+          "E37",
+          "E43"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_09793408559c9d779a47",
+          "function": "allocateToken(address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 10118,
+            "length": 1620,
+            "ast_id": 1230
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，报警 → 报警。本次接纳了 program_support；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "bce4ef811d78d06891245366137c4d6d0bba69fbe06c6c21d490936ac3eb8874"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_d967ae07a958",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "risk",
+    "partner": "RQ1_9171531dd52d",
+    "source": {
+      "units/program.sol": "7ae4b5384d42a6807d492c44759a5ba563c919b58a0730c598f36cffc86f73c7"
+    },
+    "target": [
+      "units/program.sol:CarTaxiToken",
+      "units/program.sol:SafeMath",
+      "units/program.sol:StandardToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "alarm"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "15921b8a42cf0b3d6323f747f40a2a6ca22ae8834ffd47e6123965b099b9119b",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 14,
+      "source_task_reading": 6,
+      "effect_range_decided": 2
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_79869f3472c5bbc23e60",
+        "category": "FCR-FREEZE",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 9415,
+          "length": 844,
+          "ast_id": 1100
+        },
+        "operation": "op_4784a94523d762d2e16e",
+        "reason": "program_support",
+        "evidence": [
+          "E1",
+          "E14",
+          "E17",
+          "E3",
+          "E5"
+        ]
+      },
+      {
+        "id": "finding_5658b86a62b1efbcdfb7",
+        "category": "FCR-DESTROY",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 9415,
+          "length": 844,
+          "ast_id": 1100
+        },
+        "operation": "op_4784a94523d762d2e16e",
+        "reason": "program_support",
+        "evidence": [
+          "E21",
+          "E23",
+          "E25",
+          "E27",
+          "E43",
+          "E45",
+          "E54",
+          "E55",
+          "E6"
+        ]
+      },
+      {
+        "id": "finding_03d864f643be7e9f9037",
+        "category": "FCR-MINT",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 9415,
+          "length": 844,
+          "ast_id": 1100
+        },
+        "operation": "op_4784a94523d762d2e16e",
+        "reason": "program_support",
+        "evidence": [
+          "E19",
+          "E29",
+          "E31",
+          "E33",
+          "E47",
+          "E49",
+          "E56",
+          "E57",
+          "E7"
+        ]
+      },
+      {
+        "id": "finding_79021d29f25f60201a5f",
+        "category": "FCR-DESTROY",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 8766,
+          "length": 643,
+          "ast_id": 1002
+        },
+        "operation": "op_a1d10f68b091b69f777e",
+        "reason": "program_support",
+        "evidence": [
+          "E10",
+          "E18",
+          "E28",
+          "E36",
+          "E38",
+          "E44",
+          "E50"
+        ]
+      },
+      {
+        "id": "finding_af6b542557e452628133",
+        "category": "FCR-MINT",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 8766,
+          "length": 643,
+          "ast_id": 1002
+        },
+        "operation": "op_a1d10f68b091b69f777e",
+        "reason": "program_support",
+        "evidence": [
+          "E11",
+          "E20",
+          "E22",
+          "E26",
+          "E30",
+          "E40",
+          "E46",
+          "E52"
+        ]
+      }
+    ],
+    "queries": {
+      "control_transition_preservation/sat": 4,
+      "prefix_reachability/sat": 4,
+      "baseline_usable/sat": 7,
+      "financial_block/sat": 4,
+      "local_premises_feasible/sat": 4,
+      "direct_effect/unsat": 1,
+      "direct_effect/sat": 3,
+      "financial_value_post_exclusion/unsat": 38,
+      "same_request_amount_change/unsat": 38,
+      "financial_value_post_exclusion/sat": 2,
+      "financial_value/sat": 2,
+      "opened_by_change/sat": 2,
+      "both_usable/sat": 3,
+      "opened_by_change/unsat": 1
+    },
+    "solver_calls": 84,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "0b703636ad2c2e74867a0180ebb362fb64050be2023189a1a34d09f47ddfb2ad"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [
+      "FCR-MINT",
+      "FCR-FREEZE"
+    ],
+    "scoped_inspections": [
+      {
+        "id": "scope_3a721f693f98e30dde56",
+        "prop": {
+          "id": "property_f91a1c12d7017ca9fab5",
+          "category": "FCR-FREEZE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_4784a94523d762d2e16e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b6af2b28deb5d9cd8d4a9559d4c6c4b0ea98e6f44d4757d1d7d925dc7b151d46"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E3",
+          "E5",
+          "E14",
+          "E17"
+        ]
+      },
+      {
+        "id": "scope_3a721f693f98e30dde56::FCR-DESTROY",
+        "prop": {
+          "id": "property_3889c78fb014d5c9b959",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_4784a94523d762d2e16e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "59c5950208904fda24d84d9720c87a0c630fa3d2df1aae9e854d2990b48fb1b6"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E6",
+          "E21",
+          "E23",
+          "E25",
+          "E27",
+          "E43",
+          "E45",
+          "E54",
+          "E55"
+        ]
+      },
+      {
+        "id": "scope_3a721f693f98e30dde56::FCR-MINT",
+        "prop": {
+          "id": "property_b1da3cff17a9044fb242",
+          "category": "FCR-MINT",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_4784a94523d762d2e16e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "afbee192fe56c3ec382c36bd469750d3320c0df82da2dd8c46f74b736a18cb04"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E7",
+          "E19",
+          "E29",
+          "E31",
+          "E33",
+          "E47",
+          "E49",
+          "E56",
+          "E57"
+        ]
+      },
+      {
+        "id": "scope_3a721f693f98e30dde56::FCR-PAUSE",
+        "prop": {
+          "id": "property_e5ff2c0939178887d37c",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_4784a94523d762d2e16e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b44ea5bf257deab8a2d09f728c4ccf55c91f3fc99613a8629d1b7a65cb2dfcb0"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E4",
+          "E8",
+          "E13",
+          "E15"
+        ]
+      },
+      {
+        "id": "scope_3a721f693f98e30dde56::FCR-TRANSFER",
+        "prop": {
+          "id": "property_a6582ebcd7fa38fa2fa8",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_4784a94523d762d2e16e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "ad95c85c2317334759721a3d8bca204dc65a52e5d3e510a2d1ba0b1b50a06cb6"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E9",
+          "E35",
+          "E37",
+          "E39",
+          "E41",
+          "E51",
+          "E53",
+          "E58",
+          "E59"
+        ]
+      },
+      {
+        "id": "scope_f6b10f93cca6bd84b2f5",
+        "prop": {
+          "id": "property_9560a2c3c79cb1881afc",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_a1d10f68b091b69f777e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "919ca7097864a0541ba224d3b18aacf70a9f03b8703e2062a9e25d867fff9298"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E10",
+          "E18",
+          "E28",
+          "E36",
+          "E38",
+          "E44",
+          "E50"
+        ]
+      },
+      {
+        "id": "scope_f6b10f93cca6bd84b2f5::FCR-MINT",
+        "prop": {
+          "id": "property_bc026c8977093d54988a",
+          "category": "FCR-MINT",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_a1d10f68b091b69f777e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4204744b26f7805500f8c53f50ae6042c835d09ac9addaadaf2fef38eb945938"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E11",
+          "E20",
+          "E22",
+          "E26",
+          "E30",
+          "E40",
+          "E46",
+          "E52"
+        ]
+      },
+      {
+        "id": "scope_f6b10f93cca6bd84b2f5::FCR-TRANSFER",
+        "prop": {
+          "id": "property_f862dce1af329069d72d",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_a1d10f68b091b69f777e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4759ccb1f92382869c810c6a2497b165fcf36ff5f874f3e3b02e16b83e868924"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E12",
+          "E16",
+          "E24",
+          "E32",
+          "E34",
+          "E42",
+          "E48"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_5e716d8043b30f433f86",
+          "function": "burnTokens(address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 8766,
+            "length": 643,
+            "ast_id": 1002
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，报警 → 报警。本次接纳了 program_support；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "b7b62eb16da043826716817e4c34848b941646d201f8f767f37ff2cc81b07330"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_6239598c387b",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "risk",
+    "partner": "RQ1_661b0064ae6b",
+    "source": {
+      "units/program.sol": "55143654c5ccbaea775b46e5fd8d494ef9fb2f632687399b59e78c0bd40aa2ab"
+    },
+    "target": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "alarm"
+    },
+    "prior200": null,
+    "report_sha256": "51ced998c99c350f011d265ef2d08512fa6ed8701bb948bc55930f75423aa54e",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "necessary_effect_absent": 16,
+      "no_effect_in_scope": 17,
+      "source_task_reading": 2,
+      "scope_missing": 1
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 1
+    },
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "ce490eb59b4bba9a99dec1d39571679e05da5c6bca85e59172e962d5de18508d"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_007ab4c20c04757bbe04",
+        "prop": {
+          "id": "property_0817751b8f9ce4890d70",
+          "category": "FCR-FREEZE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_d88303dfcefe67d66df5",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "a908443efb52bbfb0bb6faa277936711680608e0b4910374a5ad1ada5859763c"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E3",
+          "E4"
+        ]
+      },
+      {
+        "id": "scope_6c6e2f258390bf496b46",
+        "prop": {
+          "id": "property_111893cef785b1be6cdc",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_aef97f28f815421b0c5d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c1a21c5983022302b00d2fa12268b952f08e082bcfabc0ac1f45994a25509fb2"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E5",
+          "E6"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_ae109b84178ac71476e7",
+          "function": "freezeAccount(address,bool)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 6517,
+            "length": 223,
+            "ast_id": 844
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 未决。未取得足以导出指定判断的依据。已定位检查登记 financial_property_conditions_not_established。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "83796c3e33b2728c2930d1b181cfe10a4d1b307e68b09ba5181bfa200f407145"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_684f1de50e1a",
+    "task": "FCR",
+    "category": "FCR-MINT",
+    "side": "repair",
+    "partner": "RQ1_c3bf1a81ff5a",
+    "source": {
+      "units/program.sol": "97def9a925b2f61dc7ed801b162a26c1dbc43fad3339438eb1c4eb7ce9c356c5"
+    },
+    "target": [
+      "units/program.sol:ERC20",
+      "units/program.sol:LEVToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "bdc3d91720be369f28926354968480df4459e74a03ae5d06f4866961cb828138",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 14,
+      "source_task_reading": 11,
+      "necessary_effect_absent": 2
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "99cff55207ee840600738b7facdcc1155776191ad9b43b248ef791ae52d8b5f0"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "d53acb1c86729a7ff8f197d1df1a47f73a44b92d2ed45ef161b73176fd57b122"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_f1bb587376e8",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "risk",
+    "partner": "RQ1_35646ded2a70",
+    "source": {
+      "units/program.sol": "c7cd64586ec06c65502674d2922e8ba01dfc413337c7f56823cb8d3c5884e183"
+    },
+    "target": [
+      "units/program.sol:DEP_BANK",
+      "units/program.sol:LogFile"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "95249e5b38ff5329e51759c2492dd52b1dd7fcd01247ff99cda8c8f13a1b64d5",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_feedback": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 4,
+      "necessary_effect_absent": 7,
+      "source_unit_missing": 1
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 1
+    },
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "3ad2971b26f7b9465f779eb1cdcff4ded546a1d26cf76c42754df4d5843d75bc"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "94bf878e63de09dd29103d95a1100159b09da9fcd0d6f666b0aff01f3a578f67"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_4407e13936f510dbaba0",
+        "prop": {
+          "id": "property_f2dbddafa7c00e3fcd72",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_883e5f2b03fe4a8d0c33",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "e3e3c8ba97a336c77360b43d5672350623148295c2964691032ea939fbd21b24"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 未决。未取得足以导出指定判断的依据。已定位检查登记 financial_property_conditions_not_established。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "b869275f94d6ab1ba9cb980705699890d0e3875ad2a1a03b0c3c05d14f42b8f0"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "ce895c8cda173c96425955f0702d277e7767073f38b22d1b1ee3b43d749b5d55"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_6c3522e11e92",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "repair",
+    "partner": "RQ1_9a61667124cf",
+    "source": {
+      "units/program.sol": "a438b81405fb582cec32605b8d8fd8548c81de345fea50a3a23745b4c702114a"
+    },
+    "target": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:BecToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "report_sha256": "9d7e4b3d490dcba8b4d4eaf6527ecad40d9002702aa3d65d401dbcdfbacde072",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 27,
+      "necessary_effect_absent": 14,
+      "source_task_reading": 10,
+      "external_dependency": 2
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "441304227dc7fb30da3da3fce72111803c48d7c13284d1234377dc1a664b2628"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "unsupported",
+        "report": "unsupported"
+      },
+      "available": true,
+      "findings": [],
+      "reasons": {},
+      "solver_calls": 2
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 未决。未取得足以导出指定判断的依据。未见本类已绑定检查形成阳性。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "c58e7bf324ae232f2ec352d5665d86db0b1cc6b1be8514a508138814d145705c"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_0b0fd05c544c",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "risk",
+    "partner": "RQ1_22ff3dc40c99",
+    "source": {
+      "units/program.sol": "ef4c3503841783692ed5d0ef2e332e2e1c991c02ee505355b08a34b63a175047"
+    },
+    "target": [
+      "units/program.sol:Ownable",
+      "units/program.sol:Token",
+      "units/program.sol:TokenBank"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "prior200": null,
+    "report_sha256": "887037a4d9d10b280b5dfdf0fc82a749a06e7ca00df4847a6d38b8ac898cb6ba",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_feedback": "alarm",
+      "checkpoint_initial": "unsupported",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 5,
+      "effect_range_decided": 1,
+      "necessary_effect_absent": 13,
+      "source_unit_missing": 2
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 2
+    },
+    "findings": [
+      {
+        "id": "finding_ef19ba8a894ee31f4122",
+        "category": "FCR-DESTROY",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 885,
+          "length": 30,
+          "ast_id": 93
+        },
+        "operation": "op_828bc73d5751404747e8",
+        "reason": "uncompensated_debit",
+        "evidence": [
+          "E3",
+          "E6"
+        ]
+      }
+    ],
+    "queries": {
+      "baseline_usable/sat": 2,
+      "opened_by_change/unsat": 2,
+      "both_usable/sat": 2
+    },
+    "solver_calls": 7,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 2,
+        "messages_sha256": "b89a4e9298da50bcc36a1b5706d23a2ec60b59c99edb260d410bc1e9ad3ca6ee"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 1,
+        "located_issue_count": 0,
+        "messages_sha256": "04a2237404c53f160411923b125fda0c6205c019d5c9c04752ac7a0effd77eaa"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_9fd5f078412682967ab7",
+        "prop": {
+          "id": "property_f8c1712c0c09eef454dd",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_97f7afb605b3e3826055",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "523851373ed6fc286187567e9686186ef65a9db7ae84b312ba24c9f61381f3a8"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E9",
+          "E11"
+        ]
+      },
+      {
+        "id": "issue_ecf305989dab3944a04d",
+        "prop": {
+          "id": "property_f8c1712c0c09eef454dd",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_97f7afb605b3e3826055",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "523851373ed6fc286187567e9686186ef65a9db7ae84b312ba24c9f61381f3a8"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E10",
+          "E12"
+        ]
+      },
+      {
+        "id": "scope_595717dc7d6228451167",
+        "prop": {
+          "id": "property_279a7591b3cfb4810f9d",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_828bc73d5751404747e8",
+          "semantic_version": "cb9840e018ec18fdfa0deee170771b117342ddbfaaf4e421c5a1dc20521fee72",
+          "task": "FCR",
+          "content_sha256": "a3e8b263e5dc83d7c6be09b745eca6e3b9a4b04fc041350c816d8df3474167f4"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "uncompensated_debit",
+          "effects": [
+            "w_26c87d027b5d7f558753"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E6"
+        ]
+      },
+      {
+        "id": "scope_a5dcd6435df3dfba22bb",
+        "prop": {
+          "id": "property_dc24930c9321fe0a182f",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_795e137c9779c834cc8e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "7d36604879227265ec4d03cf9a350015ffae1cf9a2c2e11476f43e000387c299"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E7"
+        ]
+      },
+      {
+        "id": "scope_db3d13eb542fe3197906",
+        "prop": {
+          "id": "property_3f3650640c070e1d0ded",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_364d1721226095eadab7",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "a417c82f6dc632a089149d72311c3dadafe50185c3217799c9f784930967d7ae"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E8"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 4
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 报警。本次接纳了 uncompensated_debit；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "9d9d88f2f846ffda995ca06fff9e3f4720d2537f80e4f9378514150a85d025d7"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "0a46f476d53c553207c9660bc141fae15001c6e984f3c6369a021f502930628a"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_4eb968a3f9ed",
+    "task": "FCR",
+    "category": "FCR-TRANSFER",
+    "side": "risk",
+    "partner": "RQ1_17311ea9d8e7",
+    "source": {
+      "units/program.sol": "e54caa9d9449008650b40b61199eaecc8098d0ff2cf481330c2f62a3b45b0eca"
+    },
+    "target": [
+      "units/program.sol:IntegerOverflowMappingSym1"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "8590988cce31fc828bb04e65ec8b868c70467f1656787d3c9bc8c8fe1eb9f7d1",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "alarm",
+      "checkpoint_feedback": "alarm",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "source_task_reading": 1,
+      "no_effect_in_scope": 1,
+      "necessary_effect_absent": 1
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_e62f6712b528225b916f",
+        "category": "FCR-TRANSFER",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 807,
+          "length": 31,
+          "ast_id": 93
+        },
+        "operation": "op_9d086d4658cc640e1ff6",
+        "reason": "existing_rights_moved",
+        "evidence": [
+          "E2"
+        ]
+      }
+    ],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 2,
+        "messages_sha256": "4687ac8ff027b8dd02f3363d3cf6185873084bc076aec8d2021ec6a81360267f"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "invalid_protocol",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "a3b86c3b4961eca47b23108a44adaa9baf19e10d431090edb8f5e6c42c6944d4"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_56c3badab0c06c8acc23",
+        "prop": {
+          "id": "property_58b972d2552627586770",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_34f87299c733ab88a927",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "e7b51c4a4d5add8c92de175d2f4eac4bfedf5b2271307002fb48a6105becd442"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E3"
+        ]
+      },
+      {
+        "id": "issue_5fb79d9cc7a73e40e72d",
+        "prop": {
+          "id": "property_25111730b03beed57acf",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_9d086d4658cc640e1ff6",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "19f300f6bb7d51effc0b730bbc6822d97e8084bf219644ce8cead7784992d8e7"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_ad5612c5912c2f11aea3"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_be6846239a9827851ade",
+          "function": "zero_fee_transaction(address,address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 490,
+            "length": 476,
+            "ast_id": 109
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 报警。本次接纳了 existing_rights_moved；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "1bff4a71e28187582e2084546b84f4ec5a83e7965c8510788b0de944e18a6679"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "4cf2aef65472487997757fb5df3bf99e59e06d428222aa07089c8a5d33def398"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_7405f0959142",
+    "task": "FCR",
+    "category": "FCR-PAUSE",
+    "side": "repair",
+    "partner": "RQ1_afb609e0053e",
+    "source": {
+      "units/program.sol": "0708c45e3ed86e13203e97172efdc9fdc31c6284e554968a3e61190835b5a860"
+    },
+    "target": [
+      "units/program.sol:CryptoRoulette"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "report_sha256": "fa6b4f3df9b08e34731d7b66c41a77c04dacda72b65151bca8bf90f0efb4056b",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "necessary_effect_absent": 4,
+      "no_effect_in_scope": 6
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 6,
+        "messages_sha256": "1351585373a225a2848524587b8dbc7391ad9f58b4b98a7ae678f1199d79088c"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_40c70503b6631027f7c5",
+        "prop": {
+          "id": "property_0b305f36c73c04d72553",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_5235a321d1d5c2e3bc0d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4455230dfc43edc04cbbddabaeed05529cedb698d44643a5d062e0435f841f18"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E8",
+          "E12",
+          "E15"
+        ]
+      },
+      {
+        "id": "issue_5bbcb16653acc5601e78",
+        "prop": {
+          "id": "property_0b305f36c73c04d72553",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_5235a321d1d5c2e3bc0d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4455230dfc43edc04cbbddabaeed05529cedb698d44643a5d062e0435f841f18"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E9",
+          "E14",
+          "E17"
+        ]
+      },
+      {
+        "id": "issue_98a366fee7486d18d73e",
+        "prop": {
+          "id": "property_5302e951872c6833b72b",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8cb95d06f09773081335",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "fdb61ff1022428b62afef3d3acf22065c24948d2da9d5cdd5347789ceeb312c0"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "id": "issue_bbad3ab00b58e965af20",
+        "prop": {
+          "id": "property_0b305f36c73c04d72553",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_5235a321d1d5c2e3bc0d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4455230dfc43edc04cbbddabaeed05529cedb698d44643a5d062e0435f841f18"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E11",
+          "E13",
+          "E16"
+        ]
+      },
+      {
+        "id": "issue_bc330983a8b729673d7d",
+        "prop": {
+          "id": "property_dd3ad64d87091c3b0a4b",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0d38242c5dd8c2fcce23",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4df877e1826d3241b074feaa075aac685c6adef4e314c449ba3a76cc9c8df316"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E7"
+        ]
+      },
+      {
+        "id": "issue_ca4604ef9c93068cfce5",
+        "prop": {
+          "id": "property_a555a9491e7f70c352c6",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8a9bb401cc80d66c247b",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "1431faff21387cb974366bc87ca09acecd1ad562d6af39b88bfdebf743ba66ac"
+        },
+        "reasons": [
+          "matched_direct_effect_impossible_on_all_applicable_positions_and_paths"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "source_check_excluded",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E10"
+        ]
+      }
+    ],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "unsupported",
+        "report": "unsupported"
+      },
+      "available": true,
+      "findings": [],
+      "reasons": {},
+      "solver_calls": 0
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "d8178889c155d2dc436a10a7664286eb17b94154691c99e146cae640cde42e74"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_7cd121e3acec",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "repair",
+    "partner": "RQ1_a68ae7d1761d",
+    "source": {
+      "units/program.sol": "7e55af9db596cacbe2889f7dd481a5bd2835dc0d5a6ec85b45e1a6f61a54cc82"
+    },
+    "target": [
+      "units/program.sol:AdvancedToken",
+      "units/program.sol:BasicToken",
+      "units/program.sol:Ownable",
+      "units/program.sol:Pausable",
+      "units/program.sol:PausableToken",
+      "units/program.sol:StandardToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "ddd21198d0672857bef53a73ad5a87d43e00cd43dfa1dc3ae14bfa09c6806ef3",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 25,
+      "necessary_effect_absent": 19,
+      "external_dependency": 4
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {
+      "productive_control_transition/unsat": 14,
+      "control_transition_preservation/unsat": 4
+    },
+    "solver_calls": 1,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "63414fc4b26cab26aa17080f38eee816e7f4139b8906ae7a6fb46d99517586b4"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_50b22ab2101d3bd3ed34",
+        "prop": {
+          "id": "property_6e1e1fe7fd2dd9b46200",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_d1c5fff2a0070e968a89",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c874441e0b3d9651fda06cdb4c9920ae2a283d874b8ada56c1272e88d5d84a05"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E3",
+          "E5",
+          "E6",
+          "E7"
+        ]
+      },
+      {
+        "id": "scope_c8dd50d7e42ce5a3b87b",
+        "prop": {
+          "id": "property_5939c6919c1a9ce7584f",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3b28acc1d1e24dbfa7ee",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "01dcfaa11b3b455c1dfc956797a75585727db211681ca3da56185e0b5c79bc10"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E4",
+          "E8",
+          "E9",
+          "E10"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 未决。未取得足以导出指定判断的依据。未见本类已绑定检查形成阳性。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "332152213432729bd30daeffd51704d5bc557f6478c6a08e11646aeb3f6f0282"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_b84042e6eefd",
+    "task": "FCR",
+    "category": "FCR-PAUSE",
+    "side": "risk",
+    "partner": "RQ1_475c7d9ec738",
+    "source": {
+      "units/program.sol": "9419e1bd0b9183d99f7b1fbf82c2a95f0b5df283c6619a88d35dd110a94f1529"
+    },
+    "target": [
+      "units/program.sol:Token"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "alarm",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "report_sha256": "d82f61547f795b71fecb6d645f05e58282aad88adcfdb266735f89f46816f0c2",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "effect_range_decided": 1,
+      "no_effect_in_scope": 3,
+      "source_task_reading": 1,
+      "necessary_effect_absent": 1
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_c3232d5b4573c5c9e2ba",
+        "category": "FCR-PAUSE",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 1191,
+          "length": 28,
+          "ast_id": 137
+        },
+        "operation": "op_8d6a103e67fa80417907",
+        "reason": "productive_outgoing_control",
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      }
+    ],
+    "queries": {
+      "productive_control_transition/unsat": 1,
+      "productive_control_transition/sat": 1
+    },
+    "solver_calls": 2,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "4b276499bb9647feea4a207656e443d11ea86c74ffd0bba6a55857fd4797884b"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_ae8b06a8ec135e2c0dd7",
+        "prop": {
+          "id": "property_26c4795e770eaa2bf213",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8d6a103e67fa80417907",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b4f5f70b8291689125b6d152df85c203c7770e44633a9e335535c74ad9558835"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "productive_outgoing_control",
+          "effects": [
+            "w_8f0d2218eb1b7bac7335"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      }
+    ],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "alarm",
+        "report": "alarm"
+      },
+      "available": true,
+      "findings": [
+        {
+          "id": "finding_5184eac4cccb208a4386",
+          "entry": "disableTransfers(bool)",
+          "reason": "productive_outgoing_control",
+          "location": {
+            "file": "units/program.sol",
+            "start": 1191,
+            "length": 28,
+            "ast_id": 137
+          },
+          "property": "property_2669307ae7736968d324",
+          "evidence": [
+            "E1",
+            "E3",
+            "E4"
+          ]
+        }
+      ],
+      "reasons": {
+        "productive_outgoing_control": 1
+      },
+      "solver_calls": 7
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 报警。本次接纳了 productive_outgoing_control；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "c35fd7f042ee1108052dd3f86452ff4e412e3d63bc0285ac2c57a4412c6707fe"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_88258f6d823d",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "repair",
+    "partner": "RQ1_16adbcc82eed",
+    "source": {
+      "units/program.sol": "9ab0e69df47b1686a57e89c270d6901d84c52116bfd2d9a8ff8a6e76c85335b5"
+    },
+    "target": [
+      "units/program.sol:BasicToken",
+      "units/program.sol:CanReclaimToken",
+      "units/program.sol:HasNoContracts",
+      "units/program.sol:HasNoEther",
+      "units/program.sol:HasNoTokens",
+      "units/program.sol:LockableToken",
+      "units/program.sol:NoOwner",
+      "units/program.sol:Ownable",
+      "units/program.sol:PLGToken",
+      "units/program.sol:StandardToken"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "df808bf0206ea6023e55a6b07169189727987e0bfb8b51a7c11f72edbff9068e",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 35,
+      "necessary_effect_absent": 37,
+      "external_dependency": 1
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {
+      "control_transition_preservation/unsat": 4
+    },
+    "solver_calls": 8,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "8165bec2abab8a4cb876c967e3f2bc9fcb46c2259d53dd5209501e8aa7e504a4"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "scope_22908c56183214e0208a",
+        "prop": {
+          "id": "property_79885ac442b2ad6b51e9",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cd193682d8d48dced82a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "a9413663f1e24e49c9426c0e8feb2ea96b116b0d0a9a286a362462e408fcc515"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E3",
+          "E5",
+          "E6",
+          "E7"
+        ]
+      },
+      {
+        "id": "scope_c5804401e4c5b3558886",
+        "prop": {
+          "id": "property_e8b684a0f7e2979fc4ea",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_1f2403467c70a4e1a48f",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c65ac462358266e1de4a042c5d0ff640694b6001a2f971e2372adf13a655378a"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E4",
+          "E8",
+          "E9",
+          "E10"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 未决。未取得足以导出指定判断的依据。未见本类已绑定检查形成阳性。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "02c8b90e004a211a10ab0d93b7317f669266df620ac29c44ee69eefba906bf97"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_39fb6e7197c4",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "risk",
+    "partner": "RQ1_7450d39da940",
+    "source": {
+      "units/program.sol": "c833646e88f0652f1715688b5c37a27ae17338375a1416774b0bf713188ee87c"
+    },
+    "target": [
+      "units/program.sol:ETJ",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "report_sha256": "dfd03f1ef3959ed627a4e980f6e221367ea07c3d60ec4d6df4760e21ab46d81a",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 15,
+      "necessary_effect_absent": 15,
+      "detached_local_holder_switch": 1
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "d62921d8df6609fd33b7572d8a5f17159bd357ba09d5f5df6e5a1e4716e571c2"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "unsupported",
+        "checkpoint_feedback": "unsupported",
+        "report": "unsupported"
+      },
+      "available": true,
+      "findings": [],
+      "reasons": {},
+      "solver_calls": 3
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "investigate": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "70c0733f2dbaf6b4cc8506c117e8f9eb376efb96878094774d4896549e4c5ccf"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_5905f594ee2c",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "repair",
+    "partner": "RQ1_493871f89451",
+    "source": {
+      "units/program.sol": "997e74d7e80278250df02a95b843070a6d02b89815ea5946b296bbc69c1ce386"
+    },
+    "target": [
+      "units/program.sol:Log",
+      "units/program.sol:U_BANK"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "prior200": null,
+    "report_sha256": "41ea93de7aa9b802095f6aec236afa498e65d1fd1d964e8f0f9f96e2e9b8a8e5",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "necessary_effect_absent": 4,
+      "no_effect_in_scope": 4,
+      "external_dependency": 1
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 1
+    },
+    "findings": [],
+    "queries": {
+      "original_path_commit/sat": 1
+    },
+    "solver_calls": 1,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 2,
+        "messages_sha256": "f1f7161ddee424cc4dbbf68d359899dcf91051f043de031993f43c998c9804ff"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_0e7108c1bc05b23c27ba",
+        "prop": {
+          "id": "property_7ac340af0a0f7ca32259",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_e4c9c54b1f01916f9e3c",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "2f1eb3b5de59794684b59649b79ad3ce3ec116ae17cc1af4e500c0a582c032e7"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E11",
+          "E19",
+          "E24"
+        ]
+      },
+      {
+        "id": "issue_0e7108c1bc05b23c27ba::FCR-DESTROY",
+        "prop": {
+          "id": "property_0b42f186743ea5c82545",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_e4c9c54b1f01916f9e3c",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "408db8d43f97d8a2914dc9f594b4799d10b4635cfc07ccf208360a5aeed30782"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6",
+          "E9",
+          "E15",
+          "E22",
+          "E25",
+          "E33"
+        ]
+      },
+      {
+        "id": "issue_0e7108c1bc05b23c27ba::FCR-TRANSFER",
+        "prop": {
+          "id": "property_1db878173f7a7e0bccd7",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_e4c9c54b1f01916f9e3c",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "519da1acdef17f8482e2f5316f4fe0eaf6eda65e97aac238d8207cbe18925ad9"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E7",
+          "E13",
+          "E17",
+          "E27",
+          "E31",
+          "E35"
+        ]
+      },
+      {
+        "id": "issue_28b8353f199ae73e9a1a",
+        "prop": {
+          "id": "property_cb8179ded043d8c43a94",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8c27081cf521e0ac514e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "d3e20af8e0cf00835932686242671642bda0d7bb8da870a1baa779422d949a65"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E8",
+          "E21",
+          "E29"
+        ]
+      },
+      {
+        "id": "issue_28b8353f199ae73e9a1a::FCR-FREEZE",
+        "prop": {
+          "id": "property_a8331419e7678e7921c6",
+          "category": "FCR-FREEZE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8c27081cf521e0ac514e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "9451397cc828ba66fb8cae4271dc1e1773cb95c73228cd918ca3ba7c8971cd29"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E10",
+          "E20",
+          "E36"
+        ]
+      },
+      {
+        "id": "issue_28b8353f199ae73e9a1a::FCR-MINT",
+        "prop": {
+          "id": "property_d1711b223a2674f0d91b",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8c27081cf521e0ac514e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "fa4152b4b9d034a7b437dddfc24cf129fa9045d99b06d85d1b7fc96aa6597824"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E12",
+          "E16",
+          "E23",
+          "E26",
+          "E30"
+        ]
+      },
+      {
+        "id": "issue_28b8353f199ae73e9a1a::FCR-TRANSFER",
+        "prop": {
+          "id": "property_d0b6a5e41bbbf6713623",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8c27081cf521e0ac514e",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "0d0793676db6feb6cadccba7a2e5cab3b7bfafc2d8ec7592e6e66b9844fe3611"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E14",
+          "E18",
+          "E28",
+          "E32",
+          "E34"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_db20d78bc15a7e9e86c5",
+          "function": "destroy(address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 1133,
+            "length": 135,
+            "ast_id": 164
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 未决。未取得足以导出指定判断的依据。已定位检查登记 financial_property_conditions_not_established。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "afe22a76d9556244f07be356408f2587efa9ece33563d1c2bce5fd3df640225c"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_4e36475bca23",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "repair",
+    "partner": "RQ1_6eeaddaeac8f",
+    "source": {
+      "units/program.sol": "258b66f1595b0d618b13967f7bda7fa8d5311f0dfb146b09536e8abf35abc1c9"
+    },
+    "target": [
+      "units/program.sol:Context",
+      "units/program.sol:MetaMoonMars"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "f5955850d7f8b90aa785f71823ce5aeddaf5ef24afc5c5b791df5299ec60bec8",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 8,
+      "source_task_reading": 5,
+      "necessary_effect_absent": 1
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "a85e8b728b6c1e1572fb5ac0d08d81727178d07c631eeb9130648789f2e4f2f8"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "411f99aae960560b4c28f27f4112a2fdff565338c6abe6fda5606463ba24200b"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_49ef001521e5",
+    "task": "FCR",
+    "category": "FCR-PAUSE",
+    "side": "repair",
+    "partner": "RQ1_ba0ef60ed8a6",
+    "source": {
+      "units/program.sol": "f2f8a6df1308df3df28daa8a80c5d14a764d5f7125a1d282aa67c4cac31a4ae9"
+    },
+    "target": [
+      "units/program.sol:GuessTheRandomNumberChallenge"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "23fa03fd7c0285b1cb9a10b4d034ff5383d2548f390f1152cb44af0817c57d36",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_feedback": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "necessary_effect_absent": 2,
+      "no_effect_in_scope": 2
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 4,
+        "messages_sha256": "8e6824647b525693af7ae5aaeb0fc7256f043614f76e20b8b01e426536a13233"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "invalid_protocol",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "ead361baede54a6b44b37040107b8d6f3a31f17d15ad0d7b14f1252371ecd4e3"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_407424d941328b53b073",
+        "prop": {
+          "id": "property_b6bc4d4905c1168c68f8",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_a7be883075b468ff86c4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "27c395278e6db7803a13b928ab027ed65d541489f633d857004ba98181d9b626"
+        },
+        "reasons": [
+          "source_check_excluded"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "source_check_excluded",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3"
+        ]
+      },
+      {
+        "id": "issue_78cb4f3c33e695f908ba",
+        "prop": {
+          "id": "property_8c032b94b6066cf41e8f",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8fe7647ebb54f295b093",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "d7ccca0a321637a5ac7999e9ea59f4c3af68fa437c1a95639901e275cb061a62"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E6"
+        ]
+      },
+      {
+        "id": "issue_ea3db4221beb7276f21f",
+        "prop": {
+          "id": "property_b6bc4d4905c1168c68f8",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_a7be883075b468ff86c4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "27c395278e6db7803a13b928ab027ed65d541489f633d857004ba98181d9b626"
+        },
+        "reasons": [
+          "source_check_excluded"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "source_check_excluded",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "id": "issue_eab84cd95de4467f9c77",
+        "prop": {
+          "id": "property_c11e0eb78551774769f4",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_b811a71d24e75d9bb9d6",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "985303852ecd91e67a261af172e2acedd9a901adb3547ea3fd1fcf6990638a13"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E5"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "078149cf82921249bada4bf556c76ee3bf8b5fee512ec98b7461733be1047a8f"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "5cfde34ffd959db375e62fbb14c05cde846751c1a96ad213ceb06dc2c2610fd5"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_2d22977434b5",
+    "task": "FCR",
+    "category": "FCR-MINT",
+    "side": "repair",
+    "partner": "RQ1_4169c528c5e4",
+    "source": {
+      "units/program.sol": "ee02fc90d8d1d86a0a9da06b5778eef246b893551326793ec7731f4f256148b6"
+    },
+    "target": [
+      "units/program.sol:MyAdvancedToken",
+      "units/program.sol:TokenERC20",
+      "units/program.sol:owned"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "b5": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "alarm",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "report_sha256": "ee21e28baf33651483783589d7bcac705c3054bf39669445558fed893124953e",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "source_task_reading": 13,
+      "no_effect_in_scope": 17,
+      "external_dependency": 2,
+      "necessary_effect_absent": 3
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_504ba79b53a4468af0a0",
+        "category": "FCR-TRANSFER",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 6591,
+          "length": 222,
+          "ast_id": 836
+        },
+        "operation": "op_aef97f28f815421b0c5d",
+        "reason": "program_support",
+        "evidence": [
+          "E10",
+          "E14",
+          "E15",
+          "E16",
+          "E17",
+          "E18",
+          "E19",
+          "E21",
+          "E4"
+        ]
+      }
+    ],
+    "queries": {
+      "prefix_reachability/sat": 2,
+      "baseline_usable/sat": 3,
+      "financial_block/unknown": 1,
+      "financial_block/sat": 1,
+      "financial_consent_unresolved/unsat": 4,
+      "financial_value/unsat": 8,
+      "financial_value_post_exclusion/unsat": 3,
+      "same_request_amount_change/sat": 1,
+      "same_request_amount_change/unsat": 2,
+      "financial_value_post_exclusion/sat": 1,
+      "financial_value/sat": 1,
+      "opened_by_change/sat": 1,
+      "both_usable/sat": 1
+    },
+    "solver_calls": 23,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "f17497d85954e962a1f35b85e2670d4a9c1dbca0450983df17a4895e6e59fd05"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [
+      "FCR-TRANSFER"
+    ],
+    "scoped_inspections": [
+      {
+        "id": "scope_5acf9e7ebdf06a3e0007",
+        "prop": {
+          "id": "property_7b3a3e2e2b9e530dd22b",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_aef97f28f815421b0c5d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "8595949c9a95092e0194eb9d23d43bdd969430d9472875d3f92998fe02352bf3"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E2",
+          "E5"
+        ]
+      },
+      {
+        "id": "scope_5acf9e7ebdf06a3e0007::FCR-DESTROY",
+        "prop": {
+          "id": "property_0dd941ee3796c04cfd6c",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_aef97f28f815421b0c5d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "684e4fbcd7a181b3605dd483d3cb0d54a7967b375dd0e3e8dd3eade867bb1854"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E6",
+          "E7",
+          "E8",
+          "E9",
+          "E11",
+          "E12",
+          "E13",
+          "E20"
+        ]
+      },
+      {
+        "id": "scope_5acf9e7ebdf06a3e0007::FCR-TRANSFER",
+        "prop": {
+          "id": "property_f08c03fa3c39f39f86ec",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_aef97f28f815421b0c5d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "f7a15c6ab42d4eaf497d67ff27824e7a3f34f3f6d08b734356eb7b77c92c005c"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E10",
+          "E14",
+          "E15",
+          "E16",
+          "E17",
+          "E18",
+          "E19",
+          "E21"
+        ]
+      }
+    ],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "unsupported",
+        "report": "unsupported"
+      },
+      "available": true,
+      "findings": [],
+      "reasons": {},
+      "solver_calls": 201
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 未决。未取得足以导出指定判断的依据。未见本类已绑定检查形成阳性。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "6e8348e81229670bc1ac2846b3eed4956c41fc08adc627599e57fcd4d488d178"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_69def43bede4",
+    "task": "FCR",
+    "category": "FCR-TRANSFER",
+    "side": "repair",
+    "partner": "RQ1_708a354d4471",
+    "source": {
+      "units/program.sol": "bca51f2957f99f8861f5534a84d6c1ea06fc53bd920deb915ee984a961d0404a"
+    },
+    "target": [
+      "units/program.sol:ETH_VAULT",
+      "units/program.sol:Log"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "prior200": null,
+    "report_sha256": "bb3906233c7caa3b0982c35e5f2c998715963a6b3b0678ffc4d35762240184ea",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_feedback": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 5,
+      "source_task_reading": 1,
+      "external_dependency": 2,
+      "necessary_effect_absent": 1
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 2,
+      "matched_direct_effect_impossible_on_all_applicable_positions_and_paths": 1
+    },
+    "findings": [],
+    "queries": {
+      "original_path_commit/sat": 2,
+      "direct_callback_influence/unsat": 2,
+      "callback_influence/unsat": 2,
+      "baseline_usable/sat": 2,
+      "opened_by_change/unsat": 1,
+      "both_usable/sat": 2,
+      "blocked_by_change/unsat": 1
+    },
+    "solver_calls": 9,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 6,
+        "messages_sha256": "90ad1080f626851eebd76533f880bced1e5bacee4a7cf3c64b44e2b6cc51489e"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "invalid_protocol",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "fb73bdc7538e646c80823f8b1c2d42e27c16c146a607bb5bf7081fec2c3285c4"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_1ef71302ae9b2979162f",
+        "prop": {
+          "id": "property_78708f31fbeea160a410",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_fedd7260509f85aacd28",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c63553679f1e0d2ebcca3e0636d7baae7918fe9e043e484a7403679567fa8058"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E15"
+        ]
+      },
+      {
+        "id": "issue_4cc40f986eb429d056c4",
+        "prop": {
+          "id": "property_0b4a94d6b74f9819820e",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_19181097f7aea37d3839",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "749e55e3d1a50bdc2b42cd46ffec04ee2d41e4ac7f502ab00d6c7b14024ef5d9"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E14"
+        ]
+      },
+      {
+        "id": "issue_5fb3fa2653440d1bf7fb",
+        "prop": {
+          "id": "property_34dea202fb7317641822",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b649c7178c75a008dd594b13b6c5fb60e0a51b3a077fbf9bf3a8535bca00d63a"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E9",
+          "E19",
+          "E28",
+          "E32"
+        ]
+      },
+      {
+        "id": "issue_5fb3fa2653440d1bf7fb::FCR-DESTROY",
+        "prop": {
+          "id": "property_e5d6a209edf0a1efe106",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b88faefa62176f9bddb7155f3f95152a48d2974302ffd5a71432f908655d2f10"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E10",
+          "E17",
+          "E23",
+          "E30",
+          "E33"
+        ]
+      },
+      {
+        "id": "issue_5fb3fa2653440d1bf7fb::FCR-TRANSFER",
+        "prop": {
+          "id": "property_52f2acdad2c22a4fbfab",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "80ebcf270b324f725e227cc8048556fa4918c20c4492380e39eb2d6bfcaeae0e"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E11",
+          "E21",
+          "E25",
+          "E35",
+          "E39"
+        ]
+      },
+      {
+        "id": "issue_7110695ce2c62e1ed906",
+        "prop": {
+          "id": "property_12ccd328e7375c8d3dda",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_3af733f7e2c0d7e80e82",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "372988295359082371174cb459da4089d736d6b24555294ffc313fb842966925"
+        },
+        "reasons": [
+          "matched_direct_effect_impossible_on_all_applicable_positions_and_paths"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "source_check_excluded",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E13"
+        ]
+      },
+      {
+        "id": "issue_80583851ae5dbd3ea566",
+        "prop": {
+          "id": "property_336146c5c7e7dc2a0db5",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "a1d134f9a4eb0efbabe517732a972323d15f26ef012b3bfb2fa5928059d57a07"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E16",
+          "E27",
+          "E36"
+        ]
+      },
+      {
+        "id": "issue_80583851ae5dbd3ea566::FCR-FREEZE",
+        "prop": {
+          "id": "property_8b15324295344a51396c",
+          "category": "FCR-FREEZE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "55591081941ef7725f134f2944b2dcec8914a42fcc2372cc0bedcaf280338e4e"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6",
+          "E18",
+          "E26",
+          "E40"
+        ]
+      },
+      {
+        "id": "issue_80583851ae5dbd3ea566::FCR-MINT",
+        "prop": {
+          "id": "property_ef92ed2feccddf68e2b4",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "3f8b967258b2996f38a0a182d591c4e6ad0dbd9a399f6fd9ceb69b6f321939d9"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E7",
+          "E20",
+          "E24",
+          "E29",
+          "E34"
+        ]
+      },
+      {
+        "id": "issue_80583851ae5dbd3ea566::FCR-TRANSFER",
+        "prop": {
+          "id": "property_a9362efbb9317c9468e9",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "d3e6fdc3de22d095b0e7e614480e3329958b95b7cafec366a801af655c665098"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E8",
+          "E22",
+          "E31",
+          "E37",
+          "E38"
+        ]
+      },
+      {
+        "id": "issue_910a404e4f07d6dfc884",
+        "prop": {
+          "id": "property_bb36bf0943e6747fb0f5",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_ec9abf305bb3f41b7231",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "05f79e612b21b11a3d288b3194fe3cc0605b09cd308d75f395f4ba4a272a7822"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E12"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 未决。未取得足以导出指定判断的依据。已定位检查登记 financial_property_conditions_not_established, matched_direct_effect_impossible_on_all_applicable_positions_and_paths。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "9df650701a3060f3eeb31f8f36b60fe9af645e021db2c92a77e28315e7e9f776"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "91cd2720fa942e8bff6ec19f6629e60f37d6adc9155ab0be99f1c73adfd1586f"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_05ad9d6a9255",
+    "task": "FCR",
+    "category": "FCR-PAUSE",
+    "side": "repair",
+    "partner": "RQ1_a38c8e0b4785",
+    "source": {
+      "units/program.sol": "08d7522e71502cdd64aa979ef2f9a83c1373f93b57d02f0cb95f56190d5c0130"
+    },
+    "target": [
+      "units/program.sol:ETH_VAULT",
+      "units/program.sol:Log"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "unsupported"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "605801e98bdae00429d6f362ee81f439d005188d4dc2cc383738fd8a56baf5a6",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_feedback": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 5,
+      "necessary_effect_absent": 4
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {
+      "original_path_commit/sat": 2,
+      "direct_callback_influence/unsat": 2,
+      "callback_influence/unsat": 2,
+      "baseline_usable/sat": 2,
+      "opened_by_change/unsat": 1,
+      "both_usable/sat": 2,
+      "blocked_by_change/unsat": 1
+    },
+    "solver_calls": 9,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 4,
+        "messages_sha256": "97c7278a4b29e76cd5d8cf1fb78c0994fa9b4b7b9099cbaba3f02d1d7b8f23fa"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "invalid_protocol",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "d74fe761059e9482914ca2ee57431b25769f4f70af4e4aeab08745f464f7efbb"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_4db7f4702fa6c1a92749",
+        "prop": {
+          "id": "property_a33b5172dc2f727d919d",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4c3cda4b2cf38cd1d2c6f2b480b066545c73c83bf9853c4bfc29e1e2b9a06ffd"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E11",
+          "E21",
+          "E29"
+        ]
+      },
+      {
+        "id": "issue_4db7f4702fa6c1a92749::FCR-FREEZE",
+        "prop": {
+          "id": "property_70baff615f43c2f0e996",
+          "category": "FCR-FREEZE",
+          "original_category": "FCR-FREEZE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "7a70a2740f796554c001fbb0ba9dfab0d6da4bdef7a191e3b6322e57f88371ca"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E12",
+          "E22",
+          "E30"
+        ]
+      },
+      {
+        "id": "issue_4db7f4702fa6c1a92749::FCR-MINT",
+        "prop": {
+          "id": "property_c903deecea6d60f1be63",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "5de0c63bca8512636df35a82cc8961f3d96245e6483ab7c1c54d99a50be8d133"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E14",
+          "E18",
+          "E24",
+          "E26"
+        ]
+      },
+      {
+        "id": "issue_4db7f4702fa6c1a92749::FCR-TRANSFER",
+        "prop": {
+          "id": "property_1df2ac52925d42782969",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_239c1f35c72f37b4cd50",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "9c80d18da1b8f4ff774f61030c23445b572fcfb1a11572bb4bed83c240c81b2b"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6",
+          "E16",
+          "E32",
+          "E34",
+          "E35"
+        ]
+      },
+      {
+        "id": "issue_a35b5c6ac6008117c547",
+        "prop": {
+          "id": "property_9c7dacd4236511246d26",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "8ca773380c9b482d235ce0e058820d3b5a5e4acbb3606360da7337075b6cce38"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E7",
+          "E15",
+          "E23",
+          "E25"
+        ]
+      },
+      {
+        "id": "issue_a35b5c6ac6008117c547::FCR-DESTROY",
+        "prop": {
+          "id": "property_46cf2a7c4679427ab2a9",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "0a49f654d3f5e0701eada65909293f4374a2d28c4274180cc08d1dda5f83fb41"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E8",
+          "E13",
+          "E19",
+          "E27",
+          "E31"
+        ]
+      },
+      {
+        "id": "issue_a35b5c6ac6008117c547::FCR-TRANSFER",
+        "prop": {
+          "id": "property_9b4b64d67a5f43c7c3b1",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_629d455c446492b573c2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "0d89bc7fc20fd210318fa7175e16fa9ee56d3e6ef30eea3d80f57256cd08b06d"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "external_dependency",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E9",
+          "E17",
+          "E20",
+          "E28",
+          "E33"
+        ]
+      },
+      {
+        "id": "issue_a6aefb5a9258d89e519f",
+        "prop": {
+          "id": "property_96551ab5f01d72f2c674",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_fedd7260509f85aacd28",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "66ef2d33a2b529878363016b758002d54c57d9a498846393ec26ecadaddb33b2"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E10"
+        ]
+      },
+      {
+        "id": "issue_a9cfadef9b7dc057e44b",
+        "prop": {
+          "id": "property_91128e9e6414450ab006",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_44db86e9c6843bebcef3",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "e7d2041116cdc25c368b909163fd9c985b5882b1f0fbcb64b11a44572765d414"
+        },
+        "reasons": [
+          "source_check_excluded"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "source_check_excluded",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "d57b76eb77fd375f9c3d37762093fbef343b4dd1e2b5ef35b396502cc9393210"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "8b37ef5594b80d230798f2d18bb31a91ef570d4e16e9779f69f737d3471fa24b"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_55d45a664e73",
+    "task": "FCR",
+    "category": "FCR-TRANSFER",
+    "side": "risk",
+    "partner": "RQ1_26d74b856242",
+    "source": {
+      "units/program.sol": "6978e513c59a12f23275cafe212e611a3a962b72121f372add5a9cfc0a0c1ad7"
+    },
+    "target": [
+      "units/program.sol:CryptoRoulette"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "1961e89a83aae6ebad7c0ee3775ecf091192e85cee130b579ce8aaf69be7f5a6",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "alarm",
+      "checkpoint_feedback": "alarm",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 6,
+      "necessary_effect_absent": 2,
+      "source_task_reading": 1
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_9a789bb3b889ab11035a",
+        "category": "FCR-TRANSFER",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 1718,
+          "length": 31,
+          "ast_id": 226
+        },
+        "operation": "op_647b3357dc3bda9968f4",
+        "reason": "existing_rights_moved",
+        "evidence": [
+          "E2",
+          "E4",
+          "E6",
+          "E7"
+        ]
+      },
+      {
+        "id": "finding_971b139377aab4180ea4",
+        "category": "FCR-DESTROY",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 1416,
+          "length": 461,
+          "ast_id": 242
+        },
+        "operation": "op_647b3357dc3bda9968f4",
+        "reason": "program_support",
+        "evidence": [
+          "E12",
+          "E5"
+        ]
+      }
+    ],
+    "queries": {
+      "local_premises_feasible/sat": 2,
+      "direct_effect/sat": 1,
+      "direct_effect/unsat": 1
+    },
+    "solver_calls": 3,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 4,
+        "messages_sha256": "3885ef603ee5de616f503b212f76264870a520fe37cfdc0b50f14fd04a1f38d7"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "invalid_protocol",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "b0586ba2eeb5ac620d4205fd68d382be47acc2bbf3053cd158aa91e7d82f4e98"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [
+      "FCR-DESTROY"
+    ],
+    "scoped_inspections": [
+      {
+        "id": "issue_56eeaeafee6f1d553c12",
+        "prop": {
+          "id": "property_c8b8dce95caccdc3e6f1",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_5235a321d1d5c2e3bc0d",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "2e008489c5ffb16db1b33e4fc756163bed222263c5127a22e8d9640530796e93"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E8",
+          "E11"
+        ]
+      },
+      {
+        "id": "issue_8a09f12fe0e5ac73abd0",
+        "prop": {
+          "id": "property_225f22c47a0c90b102ce",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "79e624111a227718585e2c4f30f9bbe5478f499830eb253fc2524d682780c331"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_e54edb1d86e91cc2751c"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2"
+        ]
+      },
+      {
+        "id": "issue_93db6845fc113d2f53bb",
+        "prop": {
+          "id": "property_0d060ede40183dfd4a3f",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8cb95d06f09773081335",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "d6726fe0212ad245d04d43a90a9895e2fcac0b050be0dffd2769ce4bcaf47749"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E9"
+        ]
+      },
+      {
+        "id": "issue_b0dbc536ecc41a24a93b",
+        "prop": {
+          "id": "property_b84ee13ca86a4f43ec25",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_77b13c7c0abe1e37684b",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "bb189ba7dd01c6010f71dceac98994c6b8354f375a77280027b3a2a322ed8b38"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E10"
+        ]
+      },
+      {
+        "id": "scope_42ae0b85d74bfbd3d499",
+        "prop": {
+          "id": "property_5c80673099298b951a39",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "ec2eebf72696bc03681e91af548ab595e465296d1eed11d755216de3284564d7"
+        },
+        "reasons": [
+          "intra_ledger_transfer"
+        ],
+        "decision": {
+          "status": "normal",
+          "reason": "intra_ledger_transfer",
+          "effects": [
+            "w_e54edb1d86e91cc2751c"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3"
+        ]
+      },
+      {
+        "id": "scope_42ae0b85d74bfbd3d499::FCR-TRANSFER",
+        "prop": {
+          "id": "property_0e5dfd09b46ea0fa3f8c",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "4c551ec242e3fcc5088ba59ff3ffebd3653084195fe754913c21484a59b1de35"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_e54edb1d86e91cc2751c"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "id": "scope_ea50550ad90388edee0a",
+        "prop": {
+          "id": "property_281c1f4f5ded96fc6adb",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "c12e00aada35dae255fcc4b300af8d046616390ceac04c767091cbe8827ef8fc"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "program_support",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation",
+            "scoped_program_check"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E12"
+        ]
+      },
+      {
+        "id": "scope_ea50550ad90388edee0a::FCR-TRANSFER",
+        "prop": {
+          "id": "property_ea1f01a3afc4a3d6dc8b",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "0849519fa0452e7b34e80b75972200a11971b25b2c6eb678d30ae6c7d459cc5a"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_e54edb1d86e91cc2751c"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "id": "scope_f25386251ebd22a6fbb2",
+        "prop": {
+          "id": "property_6f252a104e2e992f38bf",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_647b3357dc3bda9968f4",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "3bf1d9d6d17827499878ac71940bb3ded10613387d14d43fd7d3b6412d6279a9"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_e54edb1d86e91cc2751c"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E7"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {},
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 报警。本次接纳了 existing_rights_moved；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "32f3051bd728b5511259e9a33d2d9c0eb723da6b6b42044f07285323b8cc2200"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "740ea61f40d40caa880a0b70bc0ebfa035982732ce164fd2e7196e23e875532c"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_aa31074756ae",
+    "task": "FCR",
+    "category": "FCR-TRANSFER",
+    "side": "risk",
+    "partner": "RQ1_1861e7f6c2ff",
+    "source": {
+      "units/program.sol": "274e25e47ce0fd9d22bfe06d1588ad9efba36eb16fbab665ec45ba7e7313b7ec"
+    },
+    "target": [
+      "units/program.sol:IntegerOverflowBenign1"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "alarm",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "b9700a9685c8c09d62df37c19268314916b7213776fd8a4d8ec6e81415a4ad03",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_initial": "alarm",
+      "report": "alarm"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 3,
+      "effect_range_decided": 1
+    },
+    "inspection_reasons": {},
+    "findings": [
+      {
+        "id": "finding_13acf8b284521267df86",
+        "category": "FCR-TRANSFER",
+        "scope": "main",
+        "loc": {
+          "file": "units/program.sol",
+          "start": 795,
+          "length": 31,
+          "ast_id": 90
+        },
+        "operation": "op_0a73e772e3c20d897e8f",
+        "reason": "existing_rights_moved",
+        "evidence": [
+          "E3"
+        ]
+      }
+    ],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 1,
+        "messages_sha256": "52ed12c7d40ca610869c0adc403c6ab666e5b612c4c49c55134e1ab8c1fd7019"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_b3250af321e255d20d70",
+        "prop": {
+          "id": "property_1a975672cacd583cf7ea",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_e08421ca4a764ab52b92",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "100abd0bbfc56c777ffdb0eda3703575f6b0415970b8b803845e39808af0bd21"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "core_mismatch",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      {
+        "id": "scope_b53a90e60611de43ea30",
+        "prop": {
+          "id": "property_c05e03dd735e60894108",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0a73e772e3c20d897e8f",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "cae4051a3f1a878dc4793a27cf3278f65786eb91e210c32c85722578cf411075"
+        },
+        "reasons": [],
+        "decision": {
+          "status": "risk",
+          "reason": "existing_rights_moved",
+          "effects": [
+            "w_ec06d8cd3b3d79a377c8"
+          ],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_f396835428881a0a0cee",
+          "function": "zero_fee_transaction(address,address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 478,
+            "length": 476,
+            "ast_id": 106
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 报警。本次接纳了 existing_rights_moved；逐条位置与证据编号见 findings。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "7358eb43ee35939da3487b0986f446a311c70737ff02e8e1700360edf567eb4b"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_4e90985cd65a",
+    "task": "FCR",
+    "category": "FCR-FREEZE",
+    "side": "repair",
+    "partner": "RQ1_128716025193",
+    "source": {
+      "units/program.sol": "605187d0b12681baf987a9296c633ceb18c38cc61398385035e742a12517e68a"
+    },
+    "target": [
+      "units/program.sol:ERC20Token",
+      "units/program.sol:ExpERC20Token",
+      "units/program.sol:Ownable"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": null,
+    "report_sha256": "8f955fbe8d2f82544b6132282c2e632093f0c997e7caade323931102c683d76c",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 20,
+      "necessary_effect_absent": 20,
+      "detached_local_holder_switch": 1
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {
+      "prefix_reachability/sat": 21,
+      "baseline_usable/sat": 91,
+      "financial_block/unsat": 70,
+      "financial_block/unknown": 28,
+      "baseline_usable/unknown": 1
+    },
+    "solver_calls": 280,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 3,
+        "messages_sha256": "6625e907ab3864cec340082725bc25775be2075d1503d3c665cd3581594fd8f4"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_28df55d0d4404b994f72",
+        "prop": {
+          "id": "property_180f54f35d35e162ff43",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "837491cbe8a31b8f806601aa7e5675415bb9cafc54136fba2e7032be34840964"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E13"
+        ]
+      },
+      {
+        "id": "issue_4e06382ec6e86183b910",
+        "prop": {
+          "id": "property_3aa7aa4db7c2729bc093",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "49e7e12cafecc1eba205d703ba3ea282337a042ae28614b6d7b790e0ae34c118"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E31"
+        ]
+      },
+      {
+        "id": "issue_de40a62957b201af6ae2",
+        "prop": {
+          "id": "property_aa6eed5b3c072b5e3f73",
+          "category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "f2800ba6e327a32be270a1fb7c53ba977dc415af0a2d57a7a99eef60942e8ef8"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2"
+        ]
+      },
+      {
+        "id": "scope_098e4e23d948bcadf3d9",
+        "prop": {
+          "id": "property_ebe82cb918d8d79a9868",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "8cb5a2f1961202b279622ff169d355c83f7229517e9fbf032a272c77cabcc7b9"
+        },
+        "reasons": [
+          "intra_ledger_transfer"
+        ],
+        "decision": {
+          "status": "normal",
+          "reason": "intra_ledger_transfer",
+          "effects": [
+            "w_811e756964a265dc2e4a"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E3"
+        ]
+      },
+      {
+        "id": "scope_098e4e23d948bcadf3d9::FCR-TRANSFER",
+        "prop": {
+          "id": "property_193a4dda3e6807c4cf71",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "aadefba3185c7285573f6944fff462631f686af009a9617d41a909a78f265ea2"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "id": "scope_231b74ea8e611a1e43fa",
+        "prop": {
+          "id": "property_ebe82cb918d8d79a9868",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "8cb5a2f1961202b279622ff169d355c83f7229517e9fbf032a272c77cabcc7b9"
+        },
+        "reasons": [
+          "intra_ledger_transfer"
+        ],
+        "decision": {
+          "status": "normal",
+          "reason": "intra_ledger_transfer",
+          "effects": [
+            "w_811e756964a265dc2e4a"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E5"
+        ]
+      },
+      {
+        "id": "scope_231b74ea8e611a1e43fa::FCR-TRANSFER",
+        "prop": {
+          "id": "property_193a4dda3e6807c4cf71",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "aadefba3185c7285573f6944fff462631f686af009a9617d41a909a78f265ea2"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "id": "scope_35a734735bb2a72b6e4e",
+        "prop": {
+          "id": "property_a11332a26f9ffa82d1d9",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "e01fa14583cc4e23b3e9643d1d02cb41ffd662548555064cdfc299353886a1a9"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E14"
+        ]
+      },
+      {
+        "id": "scope_66d644438df47cff203f",
+        "prop": {
+          "id": "property_738a681d690b4b2ddaea",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "ed5209adc06a78ce057bb7605bd1e06571c6bb83969b1f4da8331c9ad209a7fa"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E7",
+          "E21"
+        ]
+      },
+      {
+        "id": "scope_66d644438df47cff203f::FCR-TRANSFER",
+        "prop": {
+          "id": "property_acec6e511873df8bf2ed",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "fb36cd913c11c3040a35e456899a38a01cf93cf82f2464cd8a2c2965f779a643"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E8"
+        ]
+      },
+      {
+        "id": "scope_68ac0b3fb25352484145",
+        "prop": {
+          "id": "property_0947f78ac5cfafd2351e",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "f507ffa67fe0d55aa2583cc48514130cd253e8c01eae105656adb521fc9fb6b9"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E9"
+        ]
+      },
+      {
+        "id": "scope_888a4d79379675b6ab87",
+        "prop": {
+          "id": "property_0947f78ac5cfafd2351e",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "f507ffa67fe0d55aa2583cc48514130cd253e8c01eae105656adb521fc9fb6b9"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E10"
+        ]
+      },
+      {
+        "id": "scope_c2263dbf3db2218a5bc2",
+        "prop": {
+          "id": "property_091786474b0d7a83fda9",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "e2c681e9d32d3d3acb37a341bfcf73e37d98f6025063254023a7d09262d98c77"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E15"
+        ]
+      },
+      {
+        "id": "scope_c2263dbf3db2218a5bc2::FCR-TRANSFER",
+        "prop": {
+          "id": "property_f40c9fca426ce31d77ab",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "955e7c5798767d59079a203499f932ed839ffe02b387cff0da69c418f3b9a852"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E16",
+          "E27"
+        ]
+      },
+      {
+        "id": "scope_d648a3ca024ae8790b65",
+        "prop": {
+          "id": "property_121dd18c25c15136d1b0",
+          "category": "FCR-MINT",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "572d8708f490d0c63b46235e57b129d942ee42e30a4ecdb5e9a235d3046aa53f"
+        },
+        "reasons": [
+          "intra_ledger_transfer"
+        ],
+        "decision": {
+          "status": "normal",
+          "reason": "intra_ledger_transfer",
+          "effects": [
+            "w_3442c3ae177139fae1d5"
+          ],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E17"
+        ]
+      },
+      {
+        "id": "scope_d648a3ca024ae8790b65::FCR-TRANSFER",
+        "prop": {
+          "id": "property_54f81f1ce47b0e17f49b",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-MINT",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_cc035c348c25a228e70a",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "223479b812ef8cc6d699d391063d93a1ef4477d850cc37e5be9e41b9f3de732d"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E18"
+        ]
+      },
+      {
+        "id": "scope_ddadc6c52e6fc5e6d51f",
+        "prop": {
+          "id": "property_738a681d690b4b2ddaea",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "ed5209adc06a78ce057bb7605bd1e06571c6bb83969b1f4da8331c9ad209a7fa"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E11",
+          "E20"
+        ]
+      },
+      {
+        "id": "scope_ddadc6c52e6fc5e6d51f::FCR-TRANSFER",
+        "prop": {
+          "id": "property_acec6e511873df8bf2ed",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_2e8617a3867c401ff806",
+          "semantic_version": "04980e223fc76f50e4051ac25ac1fe8c685c485c59502b3483405ab1640f601b",
+          "task": "FCR",
+          "content_sha256": "fb36cd913c11c3040a35e456899a38a01cf93cf82f2464cd8a2c2965f779a643"
+        },
+        "reasons": [
+          "covered_holder_grant"
+        ],
+        "decision": {
+          "status": "excluded",
+          "reason": "covered_holder_grant",
+          "effects": [],
+          "meanings": [
+            "financial_right"
+          ],
+          "origins": [
+            "source_observation",
+            "verified_service"
+          ]
+        },
+        "evidence": [
+          "E12"
+        ]
+      },
+      {
+        "id": "scope_e10ee54321470f79fe3e",
+        "prop": {
+          "id": "property_af3bd9860a38c8470ed4",
+          "category": "FCR-PAUSE",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8552b210d56fe4a4f411",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "aeff856e9f06cebebe5f10842fc18b7676b265ca168520d5702b329f38646cb4"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E19",
+          "E22",
+          "E25",
+          "E26",
+          "E28",
+          "E29",
+          "E30",
+          "E32"
+        ]
+      },
+      {
+        "id": "scope_e10ee54321470f79fe3e::FCR-DESTROY",
+        "prop": {
+          "id": "property_75a1175e35cfe60498f0",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8552b210d56fe4a4f411",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "782fcbe24bba86aa1fa4dbd2089fc4f871ac486dca917bdfd78467c1827461a0"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E23"
+        ]
+      },
+      {
+        "id": "scope_e10ee54321470f79fe3e::FCR-TRANSFER",
+        "prop": {
+          "id": "property_c38259f07f6b047c8315",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-PAUSE",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_8552b210d56fe4a4f411",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "da3d6fc70382407f68d846416bc46403fd544a152b9b88da534a0ec56aff87ad"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E24"
+        ]
+      }
+    ],
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "normal": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "2db73578788b7d44b432f2dcda88cb7a4e5a347669995fffbeb893dbdf669793"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_8456d2957fff",
+    "task": "FCR",
+    "category": "FCR-DESTROY",
+    "side": "risk",
+    "partner": "RQ1_776a6b98d18f",
+    "source": {
+      "units/program.sol": "25a534b087e53d5414cdf7b250bfe9ebeffea5ffdca97ca70c69d98545c7836d"
+    },
+    "target": [
+      "units/program.sol:IntegerOverflowMul"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "alarm",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "report_sha256": "971689b46d9a6706ddef23625e91ccaee26689119bc8890bf83cd90e036e1aaa",
+    "error": null,
+    "local_gaps": true,
+    "available": true,
+    "stages": {
+      "checkpoint_basic": "unsupported",
+      "checkpoint_feedback": "unsupported",
+      "checkpoint_initial": "unsupported",
+      "report": "unsupported"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 2,
+      "source_unit_missing": 1,
+      "necessary_effect_absent": 1
+    },
+    "inspection_reasons": {
+      "financial_property_conditions_not_established": 3
+    },
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": true,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 1,
+        "messages_sha256": "6f7c1012846d3c3a7a1bf3c0b137b546d3e9a963a3a126f03d3769f54f163091"
+      },
+      {
+        "index": 1,
+        "phase": "focused_revision",
+        "usable": false,
+        "response_kind": "unbound_content",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "3c45c51e4e283265dcffda9c1157038a1c86818f5c34c90a679f29d42eeb1f65"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [
+      {
+        "id": "issue_ae4a66456ba23d738402",
+        "prop": {
+          "id": "property_e34652d64342b4a05f6b",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0224f82c4135e542c1e2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "0ac182820b9b54ed9716ab361f4d2c9b642e695023844554019025a684df8a2c"
+        },
+        "reasons": [
+          "property_task_meaning_unresolved"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E1",
+          "E10"
+        ]
+      },
+      {
+        "id": "issue_ae4a66456ba23d738402::FCR-DESTROY",
+        "prop": {
+          "id": "property_0e1ce8e0779d52ee9dc4",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0224f82c4135e542c1e2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "20b5f9eb703ac8aac75fb19fd74bfd70710adc0745acd1649bf2902efcd880ab"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E2",
+          "E7"
+        ]
+      },
+      {
+        "id": "issue_ae4a66456ba23d738402::FCR-TRANSFER",
+        "prop": {
+          "id": "property_6073366ebfacfe04de63",
+          "category": "FCR-TRANSFER",
+          "original_category": "FCR-TRANSFER",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0224f82c4135e542c1e2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "b923ea3b46eaf7749c20d83157a1bd2678b654a5f99a79b55166fae78b38e5a3"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E3",
+          "E8"
+        ]
+      },
+      {
+        "id": "scope_b96a9e84a9de792c0c0f",
+        "prop": {
+          "id": "property_6dd3fdc1d9b9c2a6aa25",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0224f82c4135e542c1e2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "bf5fa24ab6351c912aba54cfa27fcfd7ff993fee4834569ab282ac1eb48c13e3"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E4",
+          "E6"
+        ]
+      },
+      {
+        "id": "scope_be9b76139017b2315900",
+        "prop": {
+          "id": "property_4aede0add25ce8b01ba5",
+          "category": "FCR-DESTROY",
+          "original_category": "FCR-DESTROY",
+          "domain": "fcr_conditional_capability_r1",
+          "operation": "op_0224f82c4135e542c1e2",
+          "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "task": "FCR",
+          "content_sha256": "59e1f2bebf354ef8dd864c21dcff1b87a70474904f8923f773d39978645258ee"
+        },
+        "reasons": [
+          "financial_property_conditions_not_established"
+        ],
+        "decision": {
+          "status": "open",
+          "reason": "scope_missing",
+          "effects": [],
+          "meanings": [],
+          "origins": [
+            "source_observation"
+          ]
+        },
+        "evidence": [
+          "E5",
+          "E9"
+        ]
+      }
+    ],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "alarm",
+        "checkpoint_initial": "alarm",
+        "report": "alarm"
+      },
+      "available": true,
+      "findings": [
+        {
+          "id": "finding_e9872570285a33c5e253",
+          "entry": "destroy(address,uint256)",
+          "reason": "uncompensated_debit",
+          "location": {
+            "file": "units/program.sol",
+            "start": 649,
+            "length": 30,
+            "ast_id": 68
+          },
+          "property": "property_928c3434b308fe2baa72",
+          "evidence": [
+            "E1"
+          ]
+        }
+      ],
+      "reasons": {
+        "uncompensated_debit": 1
+      },
+      "solver_calls": 0
+    },
+    "prior_full_evidence": {
+      "findings": [
+        {
+          "id": "finding_b1d3b16281a08e0b2b43",
+          "function": "destroy(address,uint256)",
+          "location": {
+            "file": "units/program.sol",
+            "start": 493,
+            "length": 225,
+            "ast_id": 75
+          }
+        }
+      ],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，未决 → 未决。未取得足以导出指定判断的依据。已定位检查登记 financial_property_conditions_not_established。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "a327584a46b10afc7889fad32b730b61d3d4e9cb66a30691ce1be49627163568"
+      },
+      {
+        "index": 1,
+        "receipt_sha256": "22a5de0793715dca09a14a7999bbd40279f77f745d314cc8e86415f04e88100b"
+      }
+    ]
+  },
+  {
+    "member": "RQ1_32dbc2fa2433",
+    "task": "FCR",
+    "category": "FCR-PAUSE",
+    "side": "repair",
+    "partner": "RQ1_c24c6c95ccbd",
+    "source": {
+      "units/program.sol": "4c51bbb942a859b4560af6d6bd4aebb2f5c575cc3efe64f727c644858f16ecf3"
+    },
+    "target": [
+      "units/program.sol:ACCURAL_DEPOSIT",
+      "units/program.sol:LogFile"
+    ],
+    "predictions": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "last1164": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "b5": {
+      "FCR-TRANSFER": "not_detected",
+      "FCR-MINT": "not_detected",
+      "FCR-DESTROY": "not_detected",
+      "FCR-PAUSE": "not_detected",
+      "FCR-FREEZE": "not_detected"
+    },
+    "prior200": {
+      "FCR-TRANSFER": "unsupported",
+      "FCR-MINT": "unsupported",
+      "FCR-DESTROY": "unsupported",
+      "FCR-PAUSE": "unsupported",
+      "FCR-FREEZE": "unsupported"
+    },
+    "report_sha256": "a5bf42495f2df810f4bbee2f4a474c35ad28ec5c45862a9f8a2acf2bab9124bf",
+    "error": null,
+    "local_gaps": true,
+    "available": false,
+    "stages": {
+      "checkpoint_basic": "not_detected",
+      "checkpoint_initial": "not_detected",
+      "report": "not_detected"
+    },
+    "scoped_obligation_bases": {
+      "no_effect_in_scope": 4,
+      "necessary_effect_absent": 8
+    },
+    "inspection_reasons": {},
+    "findings": [],
+    "queries": {},
+    "solver_calls": 0,
+    "attempts": [
+      {
+        "index": 0,
+        "phase": "initial",
+        "usable": false,
+        "response_kind": "substantive",
+        "committed_update_count": 0,
+        "located_issue_count": 0,
+        "messages_sha256": "536228de9a239f28e1371a86d61b98bd8d6e9647910ccf208f8a33864eea6bba"
+      }
+    ],
+    "root_changes": {
+      "b5": {
+        "TP": [],
+        "FN": []
+      },
+      "last1164": {
+        "TP": [],
+        "FN": []
+      },
+      "v32": {
+        "TP": [],
+        "FN": []
+      },
+      "prior200": {
+        "TP": [],
+        "FN": []
+      }
+    },
+    "other_alarms": [],
+    "scoped_inspections": [],
+    "prior200_mechanism": {
+      "stages": {
+        "checkpoint_basic": "unsupported",
+        "checkpoint_initial": "unsupported",
+        "report": "unsupported"
+      },
+      "available": false,
+      "findings": [],
+      "reasons": {},
+      "solver_calls": 0
+    },
+    "prior_full_evidence": {
+      "findings": [],
+      "scoped_issue_states": {
+        "risk": 1
+      },
+      "source": "D:\\PR-Next\\work\\research_execution_20261111_r1\\rel_revision_full1164_review_r1\\PR_RelRevision_FullReview.zip!analysis/LLM_Trace.json,analysis/Findings.json"
+    },
+    "work_case_reading": "相对上次全量，有效未检出 → 有效未检出。实际读取后允许本类阴性；局部排除的作用范围见 scoped_obligation_bases。",
+    "requested_receipts": [
+      {
+        "index": 0,
+        "receipt_sha256": "b45d95a05344aa7908a5c08b1811e0be5484a418481fd3bac0e814f5090002f4"
+      }
+    ]
+  }
+]

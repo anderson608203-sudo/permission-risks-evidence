@@ -1,0 +1,45 @@
+本次新增真实行（其余来源说明见下方原文，原文中的PrivWeave为旧b5）：
+AC：PrivWeave本次389/246/92，Precision0.6126、Recall0.8087、F1 0.6971；旧b5 377/188/104、0.7208。
+FCR指定类别FP/主FN（含未覆盖阳性）：TRANSFER0/38，MINT0/4，DESTROY0/52，PAUSE0/46，FREEZE0/46；Macro-F1 0.4380。相应U+/U-见Report，0FP不能等同所有修复版已正确。
+来源：本次真实Full冻结输出和本机独立评价；Work本人审阅，待讨论Chat复核。
+本次未重跑任何外部baseline，不能将作者论文行称作本轮同条件结果。
+
+以下保留原历史来源说明：
+Baseline来源与公平性核查（本人审阅）
+
+本包没有新增baseline运行。ACTaint是已保存的历史DeepSeek实跑；AChecker及FCR三工具为作者报告。它们不得统一称作本Work本轮同条件复现。
+
+AC，单位为作者481处独立根因（624份）：
+方法                  TP    FP    FN    Precision  Recall   F1      来源
+PrivWeave            377   188   104   0.667      0.784    0.721   本批真实输出，独立评价侧匹配；Work本人根因裁决
+ACTaint-DeepSeek     448   258   33    0.635      0.931    0.755   历史真实API实跑608+16；非论文GPT-4o那一行
+AChecker             369   315   112   0.539      0.767    0.633   作者报告，ACTaint所列SmartBug表
+v32强参照               404   103   77    0.797      0.840    0.818   封存旧完整方法，同1164成员源码
+
+PrivWeave的Precision高于历史ACTaint，但Recall和F1较低；相对作者报告AChecker三项较高。相对旧强参照，Precision、Recall和F1均低。不能据此笼统声称优于现有方法。
+
+FCR，指定类别FP/FN；Total含风险/修复两端：
+类别         Total   Pied-Piper   Tokeer     JANUS    PrivWeave
+TRANSFER     80      [0, 3]        [0, 0]      [0, 0]    1/36
+MINT         70      [1, 4]        [27, 5]     [0, 0]    5/1
+DESTROY      116     [4, 3]        [14, 7]     [1, 0]    4/41
+PAUSE        124     [7, 3]        N/A         [0, 0]    4/38
+FREEZE       150     [56, 4]       [6, 14]     [0, 0]    1/26
+
+由冻结作者表换算的F1（不是本轮运行/评分原件）：
+Pied-Piper: TRANSFER=0.9610, MINT=0.9254, DESTROY=0.9402, PAUSE=0.9219, FREEZE=0.7030; 可用类别均值=0.8903
+Tokeer: TRANSFER=1.0000, MINT=0.6522, DESTROY=0.8293, PAUSE=N/A, FREEZE=0.8592; 可用类别均值=0.8351
+JANUS: TRANSFER=1.0000, MINT=1.0000, DESTROY=0.9915, PAUSE=1.0000, FREEZE=1.0000; 可用类别均值=0.9983
+
+Tokeer的PAUSE为N/A，四类均值不能冒称五类Macro-F1。本方法MINT优于表中Tokeer，FREEZE优于表中Pied-Piper；其余应逐格看，尤其TRANSFER/DESTROY/PAUSE明显弱于作者JANUS数字。上述只是带来源比较，不是严格等环境、等输入目标、等前态和等模型预算的因果或公平性结论。
+
+精确身份与缺项：
+1. evaluation_only/Tools.json记录版本/入口/环境。ACTaint上游归档及入口SHA已保存，历史Slither0.11.3、Python3.11.17、OpenAI1.37.2。其历史deepseek-flash/high与当前别名相同，但旧默认输出参考65536、temperature0/top_p0.9；当前显式32768。相同别名不能证明同checkpoint，最终适配源码和全部逐调用身份尚不足以建立严格同期同预算比较。
+2. AChecker历史本地pin=e4e47efb7f39bc15425fca5568528386abe3cadc；旧608尝试有FSignatures部署缺件，未用作准确率；pin不证明论文评估就是该commit。
+3. JANUS历史本地pin=3d540eb66c450ad6340a0e69360ba2e559b49ca9，入口validate.py的--sol/可选--fvars。论文逐例compiler/target/fvars/前态和逐例工具输出未齐；本机pin不能替代论文执行身份。
+4. Pied-Piper具体论文执行commit/参数未齐。Tokeer本地artifact pin与SHA已记，但不是已证明的论文运行身份。未自行换成当前主分支。
+5. Finite/Destroy/Scope.json承接已约定10份材料核查：两对DESTROY、五份FREEZE、一份TRANSFER。作者归档inline源、准备源、编译源和先前M1/M2一致；没有由本Work换文本的证据。缺五份FREEZE可核非inline原件、全部逐例baseline调用参数。两对DESTROY未修改函数上的额外报警、TRANSFER中独立balances_test/owner_test继续保留，不据此换样或改Gold。
+6. 已有v32与本批1164份分析源码摘要逐一一致；当前runtime、职责、提示、输出预算、开发接触史不同，比较不是消融。旧源码/原成绩不倒改。
+7. 论文可陈述“在作者发布比较材料与固定作者标签上的结果”及“带来源的历史/作者报告对照”；目前不能把所有工具写成同条件重现实验，更不能用这批开发接触数据证明未见泛化。
+
+文件对应：PaperRows.json为既存作者表；ACTaIndex.json为历史真实结果索引；Tools.json为身份与缺项；stats/History.json为同成员旧强参照差异。本轮没有为改善成绩改匹配、标签、配对、分母或baseline。

@@ -1,0 +1,104 @@
+[
+  {
+    "member": "RQ1_032ffa20eb40",
+    "error": "ValueError:3ffd4c02bd1712bbc0896b8c9216c6925d5f610189b9c2e9c21768a3ee49550c",
+    "traceback_sha256": "ae6de5c9b85f58bb7094c0cd04615a4a57a7e080790e8202550970314e57ba3f",
+    "not_a_safe_prediction": true,
+    "diagnosis": "相同五份编译文件、本机原版 load_program 复现相同异常摘要。path_ir.py visit 触发 SOURCE_EXPRESSION_EXPANSION_LIMIT，节点/深度界限 50000/100。",
+    "requests": 0,
+    "report": false,
+    "earliest_saved": "before intake receipt",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_2f73df659ad6",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "bc83e06bde5d8d37a42b47b4f6e7698143c3a6d61c7e6f188b2a993c9fb611d7",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_31450a049444",
+    "error": "TypeError:997a6ec9fc6ae48762d4c8e1950bb78bca4afe434ce71d05d8b1212e131d8719",
+    "traceback_sha256": "0711f257a3954ffe3bbe166496ce740726229cdd836c4c8de6e7578b34d8958b",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配要求字符串/字节却传入 list",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": [
+      "D2:360:original:1",
+      "D2:360:original:2"
+    ]
+  },
+  {
+    "member": "RQ1_465b9382179b",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "bc83e06bde5d8d37a42b47b4f6e7698143c3a6d61c7e6f188b2a993c9fb611d7",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_5f2ca3273ff3",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "4e83f028263da68fb171c7982dce8b350eb6f54bc8223b7199b40c22821c5f7c",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_82ebda7c26e1",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "4e83f028263da68fb171c7982dce8b350eb6f54bc8223b7199b40c22821c5f7c",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_9bf7892a772d",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "bc83e06bde5d8d37a42b47b4f6e7698143c3a6d61c7e6f188b2a993c9fb611d7",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_cb75c28366fa",
+    "error": "AttributeError:bbd1d0133cb667060a4ba1ad26cc50f24684e51a3302f98f2dfe656ff9daf892",
+    "traceback_sha256": "bc83e06bde5d8d37a42b47b4f6e7698143c3a6d61c7e6f188b2a993c9fb611d7",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配 str 对象没有 get 方法",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  },
+  {
+    "member": "RQ1_de08a43a1826",
+    "error": "TypeError:997a6ec9fc6ae48762d4c8e1950bb78bca4afe434ce71d05d8b1212e131d8719",
+    "traceback_sha256": "0711f257a3954ffe3bbe166496ce740726229cdd836c4c8de6e7578b34d8958b",
+    "not_a_safe_prediction": true,
+    "diagnosis": "规范异常摘要匹配要求字符串/字节却传入 list",
+    "requests": 1,
+    "report": false,
+    "earliest_saved": "after initial reply receipts, before basic checkpoint",
+    "reference_roots": []
+  }
+]

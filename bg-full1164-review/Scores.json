@@ -1,0 +1,1901 @@
+{
+  "AC": {
+    "TP": 161,
+    "FP": 24,
+    "FN": 320,
+    "Precision": 0.8702702702702703,
+    "Recall": 0.33471933471933474,
+    "F1": 0.48348348348348347
+  },
+  "FCR": {
+    "categories": {
+      "FCR-TRANSFER": {
+        "TP": 40,
+        "FN_dec": 0,
+        "U+": 0,
+        "FP": 0,
+        "TN": 25,
+        "U-": 15,
+        "pairs": 40,
+        "both": 25,
+        "F1": 1.0,
+        "Total": 80,
+        "FN": 0,
+        "effective": 65,
+        "failures": 0
+      },
+      "FCR-MINT": {
+        "TP": 35,
+        "FN_dec": 0,
+        "U+": 0,
+        "FP": 3,
+        "TN": 5,
+        "U-": 27,
+        "pairs": 35,
+        "both": 5,
+        "F1": 0.958904109589041,
+        "Total": 70,
+        "FN": 0,
+        "effective": 43,
+        "failures": 0
+      },
+      "FCR-DESTROY": {
+        "TP": 21,
+        "FN_dec": 2,
+        "U+": 35,
+        "FP": 0,
+        "TN": 34,
+        "U-": 24,
+        "pairs": 58,
+        "both": 17,
+        "F1": 0.5316455696202531,
+        "Total": 116,
+        "FN": 37,
+        "effective": 57,
+        "failures": 0
+      },
+      "FCR-PAUSE": {
+        "TP": 56,
+        "FN_dec": 0,
+        "U+": 6,
+        "FP": 0,
+        "TN": 47,
+        "U-": 15,
+        "pairs": 62,
+        "both": 45,
+        "F1": 0.9491525423728814,
+        "Total": 124,
+        "FN": 6,
+        "effective": 103,
+        "failures": 0
+      },
+      "FCR-FREEZE": {
+        "TP": 60,
+        "FN_dec": 4,
+        "U+": 11,
+        "FP": 0,
+        "TN": 64,
+        "U-": 11,
+        "pairs": 75,
+        "both": 51,
+        "F1": 0.8888888888888888,
+        "Total": 150,
+        "FN": 15,
+        "effective": 128,
+        "failures": 0
+      }
+    },
+    "macro_F1": 0.8657182220942129,
+    "risk_hits": 212,
+    "repair_correct": 175,
+    "pair_correct": 143,
+    "pairs": 270,
+    "valid_targets": 396,
+    "targets": 540,
+    "unknown_by_reason": [
+      [
+        "FCR-DESTROY",
+        "U+",
+        "unsupported",
+        35
+      ],
+      [
+        "FCR-DESTROY",
+        "U-",
+        "unsupported",
+        24
+      ],
+      [
+        "FCR-FREEZE",
+        "U+",
+        "unsupported",
+        11
+      ],
+      [
+        "FCR-FREEZE",
+        "U-",
+        "unsupported",
+        11
+      ],
+      [
+        "FCR-MINT",
+        "U-",
+        "unsupported",
+        27
+      ],
+      [
+        "FCR-PAUSE",
+        "U+",
+        "unsupported",
+        6
+      ],
+      [
+        "FCR-PAUSE",
+        "U-",
+        "unsupported",
+        15
+      ],
+      [
+        "FCR-TRANSFER",
+        "U-",
+        "unsupported",
+        15
+      ]
+    ]
+  },
+  "subset_AC": {
+    "TP": 14,
+    "FP": 4,
+    "FN": 50,
+    "Precision": 0.7777777777777778,
+    "Recall": 0.21875,
+    "F1": 0.34146341463414637
+  },
+  "subset_FCR": {
+    "categories": {
+      "FCR-TRANSFER": {
+        "TP": 12,
+        "FN_dec": 0,
+        "U+": 0,
+        "FP": 0,
+        "TN": 7,
+        "U-": 5,
+        "pairs": 12,
+        "both": 7,
+        "F1": 1.0,
+        "Total": 24,
+        "FN": 0,
+        "effective": 19,
+        "failures": 0
+      },
+      "FCR-MINT": {
+        "TP": 12,
+        "FN_dec": 0,
+        "U+": 0,
+        "FP": 1,
+        "TN": 3,
+        "U-": 8,
+        "pairs": 12,
+        "both": 3,
+        "F1": 0.96,
+        "Total": 24,
+        "FN": 0,
+        "effective": 16,
+        "failures": 0
+      },
+      "FCR-DESTROY": {
+        "TP": 5,
+        "FN_dec": 0,
+        "U+": 7,
+        "FP": 0,
+        "TN": 6,
+        "U-": 6,
+        "pairs": 12,
+        "both": 4,
+        "F1": 0.5882352941176471,
+        "Total": 24,
+        "FN": 7,
+        "effective": 11,
+        "failures": 0
+      },
+      "FCR-PAUSE": {
+        "TP": 12,
+        "FN_dec": 0,
+        "U+": 0,
+        "FP": 0,
+        "TN": 9,
+        "U-": 3,
+        "pairs": 12,
+        "both": 9,
+        "F1": 1.0,
+        "Total": 24,
+        "FN": 0,
+        "effective": 21,
+        "failures": 0
+      },
+      "FCR-FREEZE": {
+        "TP": 7,
+        "FN_dec": 3,
+        "U+": 2,
+        "FP": 0,
+        "TN": 9,
+        "U-": 3,
+        "pairs": 12,
+        "both": 6,
+        "F1": 0.7368421052631579,
+        "Total": 24,
+        "FN": 5,
+        "effective": 19,
+        "failures": 0
+      }
+    },
+    "macro_F1": 0.857015479876161,
+    "risk_hits": 48,
+    "repair_correct": 34,
+    "pair_correct": 29,
+    "pairs": 60,
+    "valid_targets": 86,
+    "targets": 120,
+    "unknown_by_reason": [
+      [
+        "FCR-DESTROY",
+        "U+",
+        "unsupported",
+        7
+      ],
+      [
+        "FCR-DESTROY",
+        "U-",
+        "unsupported",
+        6
+      ],
+      [
+        "FCR-FREEZE",
+        "U+",
+        "unsupported",
+        2
+      ],
+      [
+        "FCR-FREEZE",
+        "U-",
+        "unsupported",
+        3
+      ],
+      [
+        "FCR-MINT",
+        "U-",
+        "unsupported",
+        8
+      ],
+      [
+        "FCR-PAUSE",
+        "U-",
+        "unsupported",
+        3
+      ],
+      [
+        "FCR-TRANSFER",
+        "U-",
+        "unsupported",
+        5
+      ]
+    ]
+  },
+  "historical_AC": {
+    "last1164": {
+      "TP": 389,
+      "FP": 246,
+      "FN": 92,
+      "Precision": 0.6125984251968504,
+      "Recall": 0.8087318087318087,
+      "F1": 0.6971326164874552,
+      "reference_count": 481
+    },
+    "b5": {
+      "TP": 377,
+      "FP": 188,
+      "FN": 104,
+      "Precision": 0.6672566371681415,
+      "Recall": 0.7837837837837838,
+      "F1": 0.7208413001912046,
+      "reference_count": 481
+    },
+    "v32": {
+      "TP": 404,
+      "FP": 103,
+      "FN": 77,
+      "Precision": 0.796844181459566,
+      "Recall": 0.83991683991684,
+      "F1": 0.8178137651821862
+    }
+  },
+  "historical_FCR": {
+    "last1164": {
+      "categories": {
+        "FCR-TRANSFER": {
+          "TP": 2,
+          "FN_dec": 10,
+          "U+": 28,
+          "FP": 0,
+          "TN": 31,
+          "U-": 9,
+          "pairs": 40,
+          "both": 0,
+          "F1": 0.09523809523809523
+        },
+        "FCR-MINT": {
+          "TP": 31,
+          "FN_dec": 0,
+          "U+": 4,
+          "FP": 0,
+          "TN": 25,
+          "U-": 10,
+          "pairs": 35,
+          "both": 23,
+          "F1": 0.9393939393939394
+        },
+        "FCR-DESTROY": {
+          "TP": 6,
+          "FN_dec": 8,
+          "U+": 44,
+          "FP": 0,
+          "TN": 28,
+          "U-": 30,
+          "pairs": 58,
+          "both": 3,
+          "F1": 0.1875
+        },
+        "FCR-PAUSE": {
+          "TP": 16,
+          "FN_dec": 9,
+          "U+": 37,
+          "FP": 0,
+          "TN": 50,
+          "U-": 12,
+          "pairs": 62,
+          "both": 10,
+          "F1": 0.41025641025641024
+        },
+        "FCR-FREEZE": {
+          "TP": 29,
+          "FN_dec": 10,
+          "U+": 36,
+          "FP": 0,
+          "TN": 58,
+          "U-": 17,
+          "pairs": 75,
+          "both": 24,
+          "F1": 0.5576923076923077
+        }
+      },
+      "macro_F1": 0.4380161505161505,
+      "risk_hits": 84,
+      "repair_correct": 192,
+      "pair_correct": 60,
+      "pairs": 270,
+      "valid_targets": 313,
+      "targets": 540,
+      "unknown_by_reason": [
+        [
+          "FCR-DESTROY",
+          "U+",
+          "unsupported",
+          44
+        ],
+        [
+          "FCR-DESTROY",
+          "U-",
+          "unsupported",
+          30
+        ],
+        [
+          "FCR-FREEZE",
+          "U+",
+          "unsupported",
+          36
+        ],
+        [
+          "FCR-FREEZE",
+          "U-",
+          "unsupported",
+          17
+        ],
+        [
+          "FCR-MINT",
+          "U+",
+          "unsupported",
+          4
+        ],
+        [
+          "FCR-MINT",
+          "U-",
+          "unsupported",
+          10
+        ],
+        [
+          "FCR-PAUSE",
+          "U+",
+          "unsupported",
+          37
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "not_run",
+          1
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "unsupported",
+          11
+        ],
+        [
+          "FCR-TRANSFER",
+          "U+",
+          "unsupported",
+          28
+        ],
+        [
+          "FCR-TRANSFER",
+          "U-",
+          "unsupported",
+          9
+        ]
+      ]
+    },
+    "b5": {
+      "categories": {
+        "FCR-TRANSFER": {
+          "TP": 4,
+          "FN_dec": 34,
+          "U+": 2,
+          "FP": 1,
+          "TN": 35,
+          "U-": 4,
+          "pairs": 40,
+          "both": 3,
+          "F1": 0.17777777777777778
+        },
+        "FCR-MINT": {
+          "TP": 34,
+          "FN_dec": 1,
+          "U+": 0,
+          "FP": 5,
+          "TN": 30,
+          "U-": 0,
+          "pairs": 35,
+          "both": 30,
+          "F1": 0.918918918918919
+        },
+        "FCR-DESTROY": {
+          "TP": 17,
+          "FN_dec": 39,
+          "U+": 2,
+          "FP": 4,
+          "TN": 53,
+          "U-": 1,
+          "pairs": 58,
+          "both": 16,
+          "F1": 0.43037974683544306
+        },
+        "FCR-PAUSE": {
+          "TP": 24,
+          "FN_dec": 33,
+          "U+": 5,
+          "FP": 4,
+          "TN": 55,
+          "U-": 3,
+          "pairs": 62,
+          "both": 23,
+          "F1": 0.5333333333333333
+        },
+        "FCR-FREEZE": {
+          "TP": 49,
+          "FN_dec": 26,
+          "U+": 0,
+          "FP": 1,
+          "TN": 74,
+          "U-": 0,
+          "pairs": 75,
+          "both": 48,
+          "F1": 0.784
+        }
+      },
+      "macro_F1": 0.5688819553730946,
+      "risk_hits": 128,
+      "repair_correct": 247,
+      "pair_correct": 120,
+      "pairs": 270,
+      "valid_targets": 523,
+      "targets": 540,
+      "unknown_by_reason": [
+        [
+          "FCR-DESTROY",
+          "U+",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-DESTROY",
+          "U-",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-PAUSE",
+          "U+",
+          "unsupported",
+          5
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "not_run",
+          1
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-TRANSFER",
+          "U+",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-TRANSFER",
+          "U-",
+          "not_run",
+          3
+        ],
+        [
+          "FCR-TRANSFER",
+          "U-",
+          "unsupported",
+          1
+        ]
+      ]
+    },
+    "v32": {
+      "TP": 262,
+      "FP": 1,
+      "FN": 8,
+      "Precision": 0.9961977186311787,
+      "Recall": 0.9703703703703703,
+      "F1": 0.9831144465290806,
+      "TN": 269,
+      "macro_F1": 0.9860859044162129,
+      "pairs_correct": 261,
+      "pairs_total": 270
+    }
+  },
+  "subset_prior": {
+    "AC": {
+      "TP": 26,
+      "FP": 5,
+      "FN": 38,
+      "Precision": 0.8387096774193549,
+      "Recall": 0.40625,
+      "F1": 0.5473684210526316
+    },
+    "FCR": {
+      "categories": {
+        "FCR-TRANSFER": {
+          "TP": 12,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 0,
+          "TN": 4,
+          "U-": 8,
+          "pairs": 12,
+          "both": 4,
+          "F1": 1.0,
+          "Total": 24,
+          "FN": 0,
+          "valid": 16,
+          "unknown": 8
+        },
+        "FCR-MINT": {
+          "TP": 12,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 1,
+          "TN": 3,
+          "U-": 8,
+          "pairs": 12,
+          "both": 3,
+          "F1": 0.96,
+          "Total": 24,
+          "FN": 0,
+          "valid": 16,
+          "unknown": 8
+        },
+        "FCR-DESTROY": {
+          "TP": 8,
+          "FN_dec": 0,
+          "U+": 4,
+          "FP": 0,
+          "TN": 3,
+          "U-": 9,
+          "pairs": 12,
+          "both": 3,
+          "F1": 0.8,
+          "Total": 24,
+          "FN": 4,
+          "valid": 11,
+          "unknown": 13
+        },
+        "FCR-PAUSE": {
+          "TP": 10,
+          "FN_dec": 0,
+          "U+": 2,
+          "FP": 0,
+          "TN": 6,
+          "U-": 6,
+          "pairs": 12,
+          "both": 6,
+          "F1": 0.9090909090909091,
+          "Total": 24,
+          "FN": 2,
+          "valid": 16,
+          "unknown": 8
+        },
+        "FCR-FREEZE": {
+          "TP": 6,
+          "FN_dec": 2,
+          "U+": 4,
+          "FP": 0,
+          "TN": 8,
+          "U-": 4,
+          "pairs": 12,
+          "both": 6,
+          "F1": 0.6666666666666666,
+          "Total": 24,
+          "FN": 6,
+          "valid": 16,
+          "unknown": 8
+        }
+      },
+      "macro_F1": 0.8671515151515151,
+      "risk_hits": 48,
+      "repair_correct": 24,
+      "pair_correct": 22,
+      "pairs": 60,
+      "valid_targets": 75,
+      "targets": 120,
+      "unknown_by_reason": [
+        [
+          "FCR-DESTROY",
+          "U+",
+          "unsupported",
+          4
+        ],
+        [
+          "FCR-DESTROY",
+          "U-",
+          "unsupported",
+          9
+        ],
+        [
+          "FCR-FREEZE",
+          "U+",
+          "unsupported",
+          4
+        ],
+        [
+          "FCR-FREEZE",
+          "U-",
+          "unsupported",
+          4
+        ],
+        [
+          "FCR-MINT",
+          "U-",
+          "unsupported",
+          8
+        ],
+        [
+          "FCR-PAUSE",
+          "U+",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "unsupported",
+          6
+        ],
+        [
+          "FCR-TRANSFER",
+          "U-",
+          "unsupported",
+          8
+        ]
+      ]
+    },
+    "AC_history": {
+      "prev200": {
+        "TP": 36,
+        "FP": 43,
+        "FN": 28,
+        "Precision": 0.45569620253164556,
+        "Recall": 0.5625,
+        "F1": 0.5034965034965035
+      },
+      "v32": {
+        "TP": 33,
+        "FP": 43,
+        "FN": 31,
+        "Precision": 0.4342105263157895,
+        "Recall": 0.515625,
+        "F1": 0.4714285714285714
+      },
+      "last1164": {
+        "TP": 38,
+        "FP": 42,
+        "FN": 26,
+        "Precision": 0.475,
+        "Recall": 0.59375,
+        "F1": 0.5277777777777778
+      },
+      "b5": {
+        "TP": 41,
+        "FP": 28,
+        "FN": 23,
+        "Precision": 0.5942028985507246,
+        "Recall": 0.640625,
+        "F1": 0.6165413533834586
+      },
+      "ACTaint_DeepSeek": {
+        "TP": 50,
+        "FP": 43,
+        "FN": 14,
+        "Precision": 0.5376344086021505,
+        "Recall": 0.78125,
+        "F1": 0.6369426751592356
+      },
+      "AChecker_author": {
+        "TP": 49,
+        "FP": 40,
+        "FN": 15,
+        "Precision": 0.550561797752809,
+        "Recall": 0.765625,
+        "F1": 0.6405228758169934,
+        "reference_total": 64,
+        "source": "作者按成员发布的独立计数，仅求和，未重新运行或重裁根因。"
+      },
+      "ACTaint_GPT4o_author": {
+        "TP": 48,
+        "FP": 33,
+        "FN": 16,
+        "Precision": 0.5925925925925926,
+        "Recall": 0.75,
+        "F1": 0.6620689655172414,
+        "reference_total": 64,
+        "source": "作者按成员发布的独立计数，仅求和，未重新运行或重裁根因。"
+      },
+      "protocol200": {
+        "TP": 14,
+        "FP": 12,
+        "FN": 50,
+        "Precision": 0.5384615384615384,
+        "Recall": 0.21875,
+        "F1": 0.3111111111111111
+      },
+      "chatpatch200": {
+        "TP": 13,
+        "FP": 7,
+        "FN": 51,
+        "Precision": 0.65,
+        "Recall": 0.203125,
+        "F1": 0.30952380952380953
+      },
+      "decision_only_sensitivity": [
+        {
+          "ambiguous_matches_confirmed": 0,
+          "TP": 30,
+          "FP": 29,
+          "FN": 34,
+          "Precision": 0.5084745762711864,
+          "Recall": 0.46875,
+          "F1": 0.4878048780487805
+        },
+        {
+          "ambiguous_matches_confirmed": 1,
+          "TP": 31,
+          "FP": 28,
+          "FN": 33,
+          "Precision": 0.5254237288135594,
+          "Recall": 0.484375,
+          "F1": 0.5040650406504065
+        },
+        {
+          "ambiguous_matches_confirmed": 2,
+          "TP": 32,
+          "FP": 27,
+          "FN": 32,
+          "Precision": 0.5423728813559322,
+          "Recall": 0.5,
+          "F1": 0.5203252032520326
+        }
+      ],
+      "recallbudget200": {
+        "TP": 20,
+        "FP": 3,
+        "FN": 44,
+        "Precision": 0.8695652173913043,
+        "Recall": 0.3125,
+        "F1": 0.45977011494252873
+      }
+    },
+    "FCR_history": {
+      "last1164": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 1,
+            "FN_dec": 2,
+            "U+": 9,
+            "FP": 0,
+            "TN": 9,
+            "U-": 3,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.15384615384615385,
+            "FN": 11,
+            "unknown": 12,
+            "valid": 12,
+            "denominator": 24
+          },
+          "FCR-MINT": {
+            "TP": 10,
+            "FN_dec": 0,
+            "U+": 2,
+            "FP": 0,
+            "TN": 10,
+            "U-": 2,
+            "pairs": 12,
+            "both": 9,
+            "F1": 0.9090909090909091,
+            "FN": 2,
+            "unknown": 4,
+            "valid": 20,
+            "denominator": 24
+          },
+          "FCR-DESTROY": {
+            "TP": 1,
+            "FN_dec": 4,
+            "U+": 7,
+            "FP": 0,
+            "TN": 6,
+            "U-": 6,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.15384615384615385,
+            "FN": 11,
+            "unknown": 13,
+            "valid": 11,
+            "denominator": 24
+          },
+          "FCR-PAUSE": {
+            "TP": 4,
+            "FN_dec": 2,
+            "U+": 6,
+            "FP": 0,
+            "TN": 11,
+            "U-": 1,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.5,
+            "FN": 8,
+            "unknown": 7,
+            "valid": 17,
+            "denominator": 24
+          },
+          "FCR-FREEZE": {
+            "TP": 4,
+            "FN_dec": 4,
+            "U+": 4,
+            "FP": 0,
+            "TN": 10,
+            "U-": 2,
+            "pairs": 12,
+            "both": 2,
+            "F1": 0.5,
+            "FN": 8,
+            "unknown": 6,
+            "valid": 18,
+            "denominator": 24
+          }
+        },
+        "macro_F1": 0.4433566433566434,
+        "risk_hits": 20,
+        "repair_correct": 46,
+        "pair_correct": 14,
+        "pairs": 60,
+        "valid_targets": 78,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            7
+          ],
+          [
+            "FCR-DESTROY",
+            "U-",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-FREEZE",
+            "U-",
+            "unsupported",
+            2
+          ],
+          [
+            "FCR-MINT",
+            "U+",
+            "unsupported",
+            2
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            2
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            3
+          ]
+        ]
+      },
+      "v32": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 12,
+            "F1": 1.0,
+            "FN": 0,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-MINT": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 12,
+            "F1": 1.0,
+            "FN": 0,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-DESTROY": {
+            "TP": 9,
+            "FN_dec": 3,
+            "U+": 0,
+            "FP": 1,
+            "TN": 11,
+            "U-": 0,
+            "pairs": 12,
+            "both": 8,
+            "F1": 0.8181818181818182,
+            "FN": 3,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-PAUSE": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 12,
+            "F1": 1.0,
+            "FN": 0,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-FREEZE": {
+            "TP": 7,
+            "FN_dec": 5,
+            "U+": 0,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 7,
+            "F1": 0.7368421052631579,
+            "FN": 5,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          }
+        },
+        "macro_F1": 0.9110047846889953,
+        "risk_hits": 52,
+        "repair_correct": 59,
+        "pair_correct": 51,
+        "pairs": 60,
+        "valid_targets": 120,
+        "targets": 120,
+        "unknown_by_reason": []
+      },
+      "b5": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 1,
+            "FN_dec": 10,
+            "U+": 1,
+            "FP": 0,
+            "TN": 11,
+            "U-": 1,
+            "pairs": 12,
+            "both": 1,
+            "F1": 0.15384615384615385,
+            "FN": 11,
+            "unknown": 2,
+            "valid": 22,
+            "denominator": 24
+          },
+          "FCR-MINT": {
+            "TP": 11,
+            "FN_dec": 1,
+            "U+": 0,
+            "FP": 3,
+            "TN": 9,
+            "U-": 0,
+            "pairs": 12,
+            "both": 9,
+            "F1": 0.8461538461538461,
+            "FN": 1,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-DESTROY": {
+            "TP": 3,
+            "FN_dec": 9,
+            "U+": 0,
+            "FP": 1,
+            "TN": 11,
+            "U-": 0,
+            "pairs": 12,
+            "both": 2,
+            "F1": 0.375,
+            "FN": 9,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          },
+          "FCR-PAUSE": {
+            "TP": 6,
+            "FN_dec": 5,
+            "U+": 1,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 6,
+            "F1": 0.6666666666666666,
+            "FN": 6,
+            "unknown": 1,
+            "valid": 23,
+            "denominator": 24
+          },
+          "FCR-FREEZE": {
+            "TP": 6,
+            "FN_dec": 6,
+            "U+": 0,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 6,
+            "F1": 0.6666666666666666,
+            "FN": 6,
+            "unknown": 0,
+            "valid": 24,
+            "denominator": 24
+          }
+        },
+        "macro_F1": 0.5416666666666666,
+        "risk_hits": 27,
+        "repair_correct": 55,
+        "pair_correct": 24,
+        "pairs": 60,
+        "valid_targets": 117,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            1
+          ]
+        ]
+      },
+      "prev200": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 11,
+            "FN_dec": 0,
+            "U+": 1,
+            "FP": 0,
+            "TN": 11,
+            "U-": 1,
+            "pairs": 12,
+            "both": 10,
+            "F1": 0.9565217391304348,
+            "FN": 1,
+            "unknown": 2,
+            "valid": 22,
+            "denominator": 24
+          },
+          "FCR-MINT": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 0,
+            "TN": 11,
+            "U-": 1,
+            "pairs": 12,
+            "both": 11,
+            "F1": 1.0,
+            "FN": 0,
+            "unknown": 1,
+            "valid": 23,
+            "denominator": 24
+          },
+          "FCR-DESTROY": {
+            "TP": 5,
+            "FN_dec": 3,
+            "U+": 4,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 5,
+            "F1": 0.5882352941176471,
+            "FN": 7,
+            "unknown": 4,
+            "valid": 20,
+            "denominator": 24
+          },
+          "FCR-PAUSE": {
+            "TP": 8,
+            "FN_dec": 1,
+            "U+": 3,
+            "FP": 0,
+            "TN": 11,
+            "U-": 1,
+            "pairs": 12,
+            "both": 8,
+            "F1": 0.8,
+            "FN": 4,
+            "unknown": 4,
+            "valid": 20,
+            "denominator": 24
+          },
+          "FCR-FREEZE": {
+            "TP": 4,
+            "FN_dec": 5,
+            "U+": 3,
+            "FP": 0,
+            "TN": 12,
+            "U-": 0,
+            "pairs": 12,
+            "both": 4,
+            "F1": 0.5,
+            "FN": 8,
+            "unknown": 3,
+            "valid": 21,
+            "denominator": 24
+          }
+        },
+        "macro_F1": 0.7689514066496164,
+        "risk_hits": 40,
+        "repair_correct": 57,
+        "pair_correct": 38,
+        "pairs": 60,
+        "valid_targets": 106,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            1
+          ]
+        ]
+      },
+      "decision_only": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 11,
+            "FN_dec": 0,
+            "U+": 1,
+            "FP": 0,
+            "TN": 1,
+            "U-": 11,
+            "pairs": 12,
+            "both": 1,
+            "F1": 0.9565217391304348,
+            "FN": 1,
+            "unknown": 12,
+            "valid": 12,
+            "denominator": 24
+          },
+          "FCR-MINT": {
+            "TP": 6,
+            "FN_dec": 0,
+            "U+": 6,
+            "FP": 1,
+            "TN": 0,
+            "U-": 11,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.631578947368421,
+            "FN": 6,
+            "unknown": 17,
+            "valid": 7,
+            "denominator": 24
+          },
+          "FCR-DESTROY": {
+            "TP": 6,
+            "FN_dec": 0,
+            "U+": 6,
+            "FP": 0,
+            "TN": 0,
+            "U-": 12,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.6666666666666666,
+            "FN": 6,
+            "unknown": 18,
+            "valid": 6,
+            "denominator": 24
+          },
+          "FCR-PAUSE": {
+            "TP": 8,
+            "FN_dec": 0,
+            "U+": 4,
+            "FP": 0,
+            "TN": 0,
+            "U-": 12,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.8,
+            "FN": 4,
+            "unknown": 16,
+            "valid": 8,
+            "denominator": 24
+          },
+          "FCR-FREEZE": {
+            "TP": 7,
+            "FN_dec": 0,
+            "U+": 5,
+            "FP": 0,
+            "TN": 0,
+            "U-": 12,
+            "pairs": 12,
+            "both": 0,
+            "F1": 0.7368421052631579,
+            "FN": 5,
+            "unknown": 17,
+            "valid": 7,
+            "denominator": 24
+          }
+        },
+        "macro_F1": 0.758321891685736,
+        "risk_hits": 38,
+        "repair_correct": 1,
+        "pair_correct": 1,
+        "pairs": 60,
+        "valid_targets": 40,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-DESTROY",
+            "U-",
+            "unsupported",
+            12
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            5
+          ],
+          [
+            "FCR-FREEZE",
+            "U-",
+            "unsupported",
+            12
+          ],
+          [
+            "FCR-MINT",
+            "U+",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            11
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            12
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            11
+          ]
+        ]
+      },
+      "protocol200": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 4,
+            "FN_dec": 0,
+            "U+": 8,
+            "FP": 0,
+            "TN": 4,
+            "U-": 8,
+            "pairs": 12,
+            "both": 2,
+            "F1": 0.5,
+            "Total": 24,
+            "FN": 8,
+            "unknown": 16,
+            "valid": 8
+          },
+          "FCR-MINT": {
+            "TP": 9,
+            "FN_dec": 0,
+            "U+": 3,
+            "FP": 1,
+            "TN": 2,
+            "U-": 9,
+            "pairs": 12,
+            "both": 1,
+            "F1": 0.8181818181818182,
+            "Total": 24,
+            "FN": 3,
+            "unknown": 12,
+            "valid": 12
+          },
+          "FCR-DESTROY": {
+            "TP": 2,
+            "FN_dec": 1,
+            "U+": 9,
+            "FP": 0,
+            "TN": 3,
+            "U-": 9,
+            "pairs": 12,
+            "both": 1,
+            "F1": 0.2857142857142857,
+            "Total": 24,
+            "FN": 10,
+            "unknown": 18,
+            "valid": 6
+          },
+          "FCR-PAUSE": {
+            "TP": 5,
+            "FN_dec": 0,
+            "U+": 7,
+            "FP": 0,
+            "TN": 5,
+            "U-": 7,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.5882352941176471,
+            "Total": 24,
+            "FN": 7,
+            "unknown": 14,
+            "valid": 10
+          },
+          "FCR-FREEZE": {
+            "TP": 6,
+            "FN_dec": 4,
+            "U+": 2,
+            "FP": 0,
+            "TN": 9,
+            "U-": 3,
+            "pairs": 12,
+            "both": 5,
+            "F1": 0.6666666666666666,
+            "Total": 24,
+            "FN": 6,
+            "unknown": 5,
+            "valid": 19
+          }
+        },
+        "macro_F1": 0.5717596129360836,
+        "risk_hits": 26,
+        "repair_correct": 23,
+        "pair_correct": 12,
+        "pairs": 60,
+        "valid_targets": 55,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-DESTROY",
+            "U-",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            2
+          ],
+          [
+            "FCR-FREEZE",
+            "U-",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-MINT",
+            "U+",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            7
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            7
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            8
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            8
+          ]
+        ]
+      },
+      "chatpatch200": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 6,
+            "FN_dec": 1,
+            "U+": 5,
+            "FP": 0,
+            "TN": 4,
+            "U-": 8,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.6666666666666666,
+            "Total": 24,
+            "FN": 6,
+            "unknown": 13,
+            "valid": 11
+          },
+          "FCR-MINT": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 0,
+            "TN": 4,
+            "U-": 8,
+            "pairs": 12,
+            "both": 4,
+            "F1": 1.0,
+            "Total": 24,
+            "FN": 0,
+            "unknown": 8,
+            "valid": 16
+          },
+          "FCR-DESTROY": {
+            "TP": 2,
+            "FN_dec": 2,
+            "U+": 8,
+            "FP": 0,
+            "TN": 3,
+            "U-": 9,
+            "pairs": 12,
+            "both": 1,
+            "F1": 0.2857142857142857,
+            "Total": 24,
+            "FN": 10,
+            "unknown": 17,
+            "valid": 7
+          },
+          "FCR-PAUSE": {
+            "TP": 8,
+            "FN_dec": 0,
+            "U+": 4,
+            "FP": 0,
+            "TN": 6,
+            "U-": 6,
+            "pairs": 12,
+            "both": 5,
+            "F1": 0.8,
+            "Total": 24,
+            "FN": 4,
+            "unknown": 10,
+            "valid": 14
+          },
+          "FCR-FREEZE": {
+            "TP": 7,
+            "FN_dec": 2,
+            "U+": 3,
+            "FP": 0,
+            "TN": 8,
+            "U-": 4,
+            "pairs": 12,
+            "both": 6,
+            "F1": 0.7368421052631579,
+            "Total": 24,
+            "FN": 5,
+            "unknown": 7,
+            "valid": 17
+          }
+        },
+        "macro_F1": 0.697844611528822,
+        "risk_hits": 35,
+        "repair_correct": 25,
+        "pair_correct": 19,
+        "pairs": 60,
+        "valid_targets": 65,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            8
+          ],
+          [
+            "FCR-DESTROY",
+            "U-",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-FREEZE",
+            "U-",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            8
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            5
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            8
+          ]
+        ]
+      },
+      "recallbudget200": {
+        "categories": {
+          "FCR-TRANSFER": {
+            "TP": 7,
+            "FN_dec": 0,
+            "U+": 5,
+            "FP": 0,
+            "TN": 4,
+            "U-": 8,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.7368421052631579,
+            "Total": 24,
+            "FN": 5,
+            "valid": 11,
+            "unknown": 13
+          },
+          "FCR-MINT": {
+            "TP": 12,
+            "FN_dec": 0,
+            "U+": 0,
+            "FP": 1,
+            "TN": 3,
+            "U-": 8,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.96,
+            "Total": 24,
+            "FN": 0,
+            "valid": 16,
+            "unknown": 8
+          },
+          "FCR-DESTROY": {
+            "TP": 4,
+            "FN_dec": 0,
+            "U+": 8,
+            "FP": 0,
+            "TN": 3,
+            "U-": 9,
+            "pairs": 12,
+            "both": 3,
+            "F1": 0.5,
+            "Total": 24,
+            "FN": 8,
+            "valid": 7,
+            "unknown": 17
+          },
+          "FCR-PAUSE": {
+            "TP": 11,
+            "FN_dec": 0,
+            "U+": 1,
+            "FP": 0,
+            "TN": 6,
+            "U-": 6,
+            "pairs": 12,
+            "both": 6,
+            "F1": 0.9565217391304348,
+            "Total": 24,
+            "FN": 1,
+            "valid": 17,
+            "unknown": 7
+          },
+          "FCR-FREEZE": {
+            "TP": 7,
+            "FN_dec": 2,
+            "U+": 3,
+            "FP": 0,
+            "TN": 8,
+            "U-": 4,
+            "pairs": 12,
+            "both": 6,
+            "F1": 0.7368421052631579,
+            "Total": 24,
+            "FN": 5,
+            "valid": 17,
+            "unknown": 7
+          }
+        },
+        "macro_F1": 0.7780411899313501,
+        "risk_hits": 41,
+        "repair_correct": 24,
+        "pair_correct": 21,
+        "pairs": 60,
+        "valid_targets": 68,
+        "targets": 120,
+        "unknown_by_reason": [
+          [
+            "FCR-DESTROY",
+            "U+",
+            "unsupported",
+            8
+          ],
+          [
+            "FCR-DESTROY",
+            "U-",
+            "unsupported",
+            9
+          ],
+          [
+            "FCR-FREEZE",
+            "U+",
+            "unsupported",
+            3
+          ],
+          [
+            "FCR-FREEZE",
+            "U-",
+            "unsupported",
+            4
+          ],
+          [
+            "FCR-MINT",
+            "U-",
+            "unsupported",
+            8
+          ],
+          [
+            "FCR-PAUSE",
+            "U+",
+            "unsupported",
+            1
+          ],
+          [
+            "FCR-PAUSE",
+            "U-",
+            "unsupported",
+            6
+          ],
+          [
+            "FCR-TRANSFER",
+            "U+",
+            "unsupported",
+            5
+          ],
+          [
+            "FCR-TRANSFER",
+            "U-",
+            "unsupported",
+            8
+          ]
+        ]
+      }
+    }
+  },
+  "subset_prior_fp_followup": {
+    "unsupported": 3,
+    "alarm": 1
+  },
+  "AC_valid_members": 173,
+  "reference_identity": {
+    "AC_Refs.json": "0a8ccf23728bf0c8b59e12226b8d418651c715fee707ccb77653d71a7925d377",
+    "FCR_Refs.json": "d2c9191ca4bfb942f262712aeb62699041c39ef7f899def7cd1028cab6569356",
+    "score_fcr.py": "b09c2975bb55aaa0c34047eeb0d3356e043b10ee5ca167eb11c9dd6305445283"
+  },
+  "scored_frozen_selection": "8ba45775a1150d126db1db94813f0addc9e00c42bedf65838f78e7d6a137a3ca"
+}

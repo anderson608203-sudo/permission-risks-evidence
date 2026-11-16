@@ -1,0 +1,92 @@
+{
+  "archive_sha256": "43995fda5acd2d77a48c220ee21775967e21a4fdf0990585a55422d85292677d",
+  "archive_size": 93241830,
+  "frozen_files": 36080,
+  "frozen_manifest_sha256": "4f878780324fa03956960514fd038e3b3262b2ee0b9bbae2ad5024c2c20e9539",
+  "selected_sha256": "8ba45775a1150d126db1db94813f0addc9e00c42bedf65838f78e7d6a137a3ca",
+  "method": {
+    "method": "6e9a59b58d2ef1c9b863d8f5fa0ebb78be0ad752a49c7d4a1f12c2d6424190c4",
+    "files": 97,
+    "config": "94bf6ea8bb21efb26e63c0f43d476382e5e87ad4b90fdfbe891ea18843dbc898"
+  },
+  "runtime": {
+    "z3-solver": "4.15.3.0",
+    "eth-keys": "0.7.0",
+    "pycryptodome": "3.24.1",
+    "tokenizers": "0.22.2"
+  },
+  "model": {
+    "model": "deepseek-flash",
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768
+  },
+  "status": {
+    "phase": "ended",
+    "reports_saved": 1155,
+    "with_gaps": 1142,
+    "technical_errors": 9,
+    "not_yet_reported": 9,
+    "findings": 892,
+    "active": 0,
+    "parallel": 6,
+    "elapsed_seconds": 10899,
+    "model_requests": 1915,
+    "settled_upper_usd": 11.10542650799999,
+    "inflight_requests": 0,
+    "unknown_requests": 0,
+    "inflight_or_unknown_upper_usd": 0.0,
+    "money_reservations": false,
+    "dispatch_halt": "",
+    "owned_RSS_GiB": 0.0,
+    "available_GiB": 402.61,
+    "run_disk_GiB": 0.57
+  },
+  "reason": "normal_completion",
+  "wall_seconds": 10903.669276475906,
+  "ledger": {
+    "requests": 1915,
+    "real_model_calls": 1915,
+    "simulated_service_requests": 0,
+    "unknown_or_inflight_upper_usd": 0.0,
+    "unknown_cost_upper_usd": 0.0,
+    "inflight": 0,
+    "unknown": 0,
+    "settled_cost_usd_upper": 11.10542650799999,
+    "settled_cost_usd_lower": 5.552713253999995,
+    "simulated_cost_usd_upper": 0,
+    "prompt_tokens": 5306321,
+    "completion_tokens": 8041810,
+    "service_models": [
+      "deepseek-flash"
+    ],
+    "actual_provider_billed_usd": null,
+    "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+    "per_request_money_reservation": false,
+    "halt": "",
+    "nature": "real_service",
+    "unknown_fee_is_not_zero": true
+  },
+  "prep": {
+    "used_seconds": 252.59169220924377,
+    "initial_time_basis": "batch-specific instance setup time; manual upload separate, no prior inventory time attributed",
+    "runs": [
+      {
+        "start_epoch": 1794762907.1958518,
+        "end_epoch": 1794762919.787552,
+        "seconds": 12.591692209243774,
+        "resume": false
+      }
+    ]
+  },
+  "first_six": {
+    "passed": true,
+    "unusable_protocol_or_consumption": [],
+    "uncaught_error_groups": {},
+    "checks_only_technical_chain_not_findings_or_scores": true
+  },
+  "source_of_billing": "supplier invoice unavailable",
+  "ledger_sha": "e345c79f984e6e089fcae195f14e377a6d8e38c3c29fb227da2ca969de52d4bc"
+}
