@@ -1,0 +1,281 @@
+[
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_8e204d2b1e1d4f464392",
+  "label": "same_request_amount_change",
+  "answer": "unsat",
+  "formula_sha256": "f2b27571a4c016a3e636527ff09cc6816e990607352ff2ed883623578516c58c",
+  "bounded_condition_confirmed": false,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "f686ae061ea590536cb2f9397c396779b4ce204d3533b42bc76c20a90e667120",
+  "model_extracted": false,
+  "formula_saved": false,
+  "math_reuse": {
+   "probe": "probe_c0c8487c485c3f25d832",
+   "property": "property_56fd7436cc538cbc8f15",
+   "to_property": "property_871f12b92751c213d623",
+   "math_key": "3a4e93c44526440e04d3a2893611d5a5e262f2c53d7128fbca7f620003cb90d8",
+   "binding_sha256": "029e19089bbcc44b809241a42f70e5f47d9114f770c3d5373491fb34f803fe8b",
+   "domain": "fcr_conditional_capability_r1"
+  },
+  "criteria": {
+   "property_validated": true,
+   "measurement_only": true,
+   "no_universal_gross_allowance_policy": true,
+   "category_hypothesis": "FCR-TRANSFER",
+   "property_identity": "property_871f12b92751c213d623"
+  },
+  "credential_status": {
+   "status": "not_applicable"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_9cb39f2060ed88924efc",
+  "label": "financial_value_post_exclusion",
+  "answer": "unsat",
+  "formula_sha256": "69b0c4d9f3f50c5eacb27058d055a3d61bfdffa992b1ab25bb62f49ae922e3c4",
+  "bounded_condition_confirmed": false,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "6fe1ed120c310ee8a8e85cbda64d718e4f608b9a77a6133110bc24d14e829b8a",
+  "model_extracted": false,
+  "formula_saved": false,
+  "math_reuse": {
+   "probe": "probe_ebcdae2ae6436889d5a9",
+   "property": "property_0778fb7244e069c3ae46",
+   "to_property": "property_871f12b92751c213d623",
+   "math_key": "977272acb1c47c9755bacd9a73babb999f7fc4726c366e3f79b8f3484baad50c",
+   "binding_sha256": "938d5a253be3cacb08b746e8702181dece0a8bfd20b12d4793bd4760ba1657ed",
+   "domain": "fcr_conditional_capability_r1"
+  },
+  "criteria": {
+   "property_validated": true,
+   "category_hypothesis": "FCR-TRANSFER",
+   "property_identity": "property_871f12b92751c213d623"
+  },
+  "credential_status": {
+   "status": "not_applicable"
+  },
+  "hash_status": {
+   "status": "not_required"
+  },
+  "exclusion_check": {
+   "answer": "unsat",
+   "formula_ref": "69b0c4d9f3f50c5eacb27058d055a3d61bfdffa992b1ab25bb62f49ae922e3c4",
+   "all_runtime_states_overapproximated": true,
+   "excludes_only_this_formula": true,
+   "positive_result_usable": false
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_367b1e459ad70ccb117d",
+  "label": "same_request_amount_change",
+  "answer": "unsat",
+  "formula_sha256": "69b0c4d9f3f50c5eacb27058d055a3d61bfdffa992b1ab25bb62f49ae922e3c4",
+  "bounded_condition_confirmed": false,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "6957ca2aa47fc5fae9e8a446f582f8dd48a8ecb1e20b7e598d1740bdff904524",
+  "model_extracted": false,
+  "formula_saved": false,
+  "math_reuse": {
+   "probe": "probe_bcf8381bde6170aa8e1d",
+   "property": "property_0778fb7244e069c3ae46",
+   "to_property": "property_871f12b92751c213d623",
+   "math_key": "f7b803061cc9cdf26f7eacbabb8f4696651f96f1417d9943dd77b175598518d5",
+   "binding_sha256": "32eef50589f5dede3817db258409e19cf4854d81d8cb26194ee01003a79d2980",
+   "domain": "fcr_conditional_capability_r1"
+  },
+  "criteria": {
+   "property_validated": true,
+   "measurement_only": true,
+   "no_universal_gross_allowance_policy": true,
+   "category_hypothesis": "FCR-TRANSFER",
+   "property_identity": "property_871f12b92751c213d623"
+  },
+  "credential_status": {
+   "status": "not_applicable"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_60e8f776d1c5b6d54814",
+  "label": "baseline_usable",
+  "answer": "sat",
+  "formula_sha256": "afb26844d2ca1bfef08a7c8c8ddc05d5d77444e1b79fec783fd84ea5679df0e5",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "e95d84bfb49a0866d24d1dc2e9754353b3bcdab6be9f95acd3e98fb8160824e8",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {},
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_953320806e8bfdb8774d",
+  "label": "opened_by_change",
+  "answer": "sat",
+  "formula_sha256": "5ee2f5635e7bd2f5ed43ecafc535470000fddf3bcbfa727d210ff8fccc04989a",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "e95d84bfb49a0866d24d1dc2e9754353b3bcdab6be9f95acd3e98fb8160824e8",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {},
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_290b23a2a8e5189fc449",
+  "label": "both_usable",
+  "answer": "sat",
+  "formula_sha256": "6a92467ffb4cbdda564343b16de28971b58dc1444b8ec78e092dad025666e4f9",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "e95d84bfb49a0866d24d1dc2e9754353b3bcdab6be9f95acd3e98fb8160824e8",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {},
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_adc461bce5f0d8aa68d1",
+  "label": "baseline_usable",
+  "answer": "sat",
+  "formula_sha256": "cbdbb1203f20a6d084d9dd9a626acf5518dfedc43d5a7025277031bb11ff792a",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "bd0b30161dba55e1afbc7f9115a00e5902c005129540e6ce45f2ebdc3a13d65c",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {},
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_f12fedb5f5b5322359ed",
+  "label": "opened_by_change",
+  "answer": "unsat",
+  "formula_sha256": "a6dd54c29863372ed38259addd119ad6310d0bf9490fe5d9f3a7faf4c30b9031",
+  "bounded_condition_confirmed": false,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "bd0b30161dba55e1afbc7f9115a00e5902c005129540e6ce45f2ebdc3a13d65c",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {},
+  "credential_status": {
+   "status": "not_applicable"
+  },
+  "hash_status": {
+   "status": "not_required"
+  },
+  "exclusion_check": {
+   "answer": "unsat",
+   "formula_ref": "0ac1eb3fc3904e981bdf6bf044eb0114b7ba7786b906c12460d9c274de7b76b4",
+   "all_runtime_states_overapproximated": true,
+   "excludes_only_this_formula": true,
+   "positive_result_usable": false
+  }
+ },
+ {
+  "member": "RQ1_8e4c324fa1c9",
+  "id": "probe_01f7ef9dcdf5b0cad519",
+  "label": "both_usable",
+  "answer": "sat",
+  "formula_sha256": "cbdbb1203f20a6d084d9dd9a626acf5518dfedc43d5a7025277031bb11ff792a",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "bd0b30161dba55e1afbc7f9115a00e5902c005129540e6ce45f2ebdc3a13d65c",
+  "model_extracted": false,
+  "formula_saved": false,
+  "math_reuse": {
+   "probe": "probe_adc461bce5f0d8aa68d1",
+   "math_key": "8be83ce505b0f939c430d8365b67a7577b7e06b7e8e10564b73017ae015b615b",
+   "binding_sha256": "15c4fda9c4d48e55af1234b483028eb0f73142f8e04140dc297869b9799b296e",
+   "domain": "fcr_conditional_capability_r1"
+  },
+  "criteria": {},
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_c24c6c95ccbd",
+  "id": "probe_eb762514b4ab02881dd3",
+  "label": "productive_control_transition",
+  "answer": "unsat",
+  "formula_sha256": "69b0c4d9f3f50c5eacb27058d055a3d61bfdffa992b1ab25bb62f49ae922e3c4",
+  "bounded_condition_confirmed": false,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "dbeaef5d6f17ae1327aa036b58c2d83b6ba364b8447ac5da998a27e5e467ab32",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {
+   "measurement_only": true,
+   "same_request": true,
+   "effect_required": true,
+   "baseline_commit_not_assumed": true
+  },
+  "credential_status": {
+   "status": "not_applicable"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ },
+ {
+  "member": "RQ1_c24c6c95ccbd",
+  "id": "probe_794530747d6f7975c487",
+  "label": "productive_control_transition",
+  "answer": "sat",
+  "formula_sha256": "3da731b6349f427b5e826bc35da103d146f4e0f44f761560efbcb5300fc95004",
+  "bounded_condition_confirmed": true,
+  "evidence_kind": "bounded_condition_check_without_assignment_extraction",
+  "condition_identity": "2432a73704c1ded1e495dd3f43fd97037b244a2908939c622f3734022afea638",
+  "model_extracted": false,
+  "formula_saved": false,
+  "criteria": {
+   "measurement_only": true,
+   "same_request": true,
+   "effect_required": true,
+   "baseline_commit_not_assumed": true
+  },
+  "credential_status": {
+   "status": "not_required"
+  },
+  "hash_status": {
+   "status": "not_required"
+  }
+ }
+]

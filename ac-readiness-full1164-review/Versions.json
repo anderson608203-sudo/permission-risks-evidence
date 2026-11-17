@@ -1,0 +1,95 @@
+{
+ "current": {
+  "method": "2e0fcbed9cc0d530e7e3591f6bee6e1cba70a79bad01167c2381b43637debe17",
+  "files": 99,
+  "config": "40ca33d909fef65652dd9e956d33639b05adb464dd2c7f0a82c140e8d421c7c4"
+ },
+ "config_sha256": "40ca33d909fef65652dd9e956d33639b05adb464dd2c7f0a82c140e8d421c7c4",
+ "dependencies": {
+  "z3-solver": "4.15.3.0",
+  "eth-keys": "0.7.0",
+  "pycryptodome": "3.24.1",
+  "tokenizers": "0.22.2"
+ },
+ "model": {
+  "model": "deepseek-flash",
+  "thinking": {
+   "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_tokens": 32768
+ },
+ "v32": {
+  "version": "v32 historical real Full",
+  "members": 1164,
+  "AC": 624,
+  "FCR": 540,
+  "source_zip": "D:\\PR-Next\\work\\research_execution_20261104_r1\\v32_full_run_r1\\delivery\\Permission_Risks_v32.zip",
+  "source_zip_sha256": "482cda849d8d20222e6b03f4d8b6410e0055bcdd271ea11496ab868e4154f8b2",
+  "method_manifest_sha256": "d7328f3803a470676c2bcf0abb31fa8380e45a842c43c63d3a7888097328c6a8",
+  "python_source_digest": "0be63723edc6ba2435ba654b81be77c9963655b6c3a6e219279e9544b6d1afa1",
+  "python_files": 219,
+  "actual_record": "D:\\PR-Next\\work\\research_execution_20261104_r1\\v32_completed_review_r1\\FROZEN_RUN.jsonl.gz",
+  "actual_model_requests": 1168,
+  "model_returned": "deepseek-flash",
+  "thinking": true,
+  "reasoning_effort": "high",
+  "output_max_tokens_explicit": null,
+  "output_limit_note": "old transport explicitly requires max_tokens=None; historical service default reference65536, not authenticated same checkpoint as current",
+  "semantic_feedback": false,
+  "protocol_recovery_requests": 4,
+  "effective_method_parameters_sample": {
+   "arithmetic_query_scope": "explicit nonwrapping uint256 subcases; typed narrow/signed arithmetic encoded separately",
+   "call_depth_max": 8,
+   "constant_loop_max": 32,
+   "dependency_closure_nodes_max": 4096,
+   "expression_depth_max": 100,
+   "expression_key_characters_max": 262144,
+   "expression_nodes_max": 50000,
+   "expression_string_bytes_max": 1048576,
+   "external_sequence_max": 3,
+   "fcr_execution_environment": "janus_comparison_pre_eip_6780",
+   "max_source_paths": 48,
+   "normalization_visits_per_operation_max": 150000,
+   "sequence_checks_per_sample_max": 24,
+   "sequence_paths_per_stage_max": 8,
+   "solver_sample_seconds": 120,
+   "solver_timeout_ms": 3000,
+   "solver_timeout_upgrade_ms": 10000,
+   "source_evaluations_per_operation_max": 2048,
+   "variable_loop_frontier": 2
+  }
+ },
+ "recent_SmartBug": {
+  "method": "3f20bbbf7e93d21d671a35143a841f311d4c0551d7e7307f532ae3f311c8783d",
+  "AC": 624,
+  "FCR_run": 0
+ },
+ "BG": {
+  "method": "6e9a59b58d2ef1c9b863d8f5fa0ebb78be0ad752a49c7d4a1f12c2d6424190c4",
+  "AC": 624,
+  "FCR": 540
+ },
+ "original_parent": {
+  "round": "ac_readiness_full1164_r1",
+  "run_id": "ac_readiness_full1164_r1",
+  "method_sha256": "2e0fcbed9cc0d530e7e3591f6bee6e1cba70a79bad01167c2381b43637debe17",
+  "parent_method_sha256": "39263ce923da62bc005dc2a3f961bdfca778221ec18a45d2cc329b80847aeddf",
+  "method_python_files": 99,
+  "config_sha256": "40ca33d909fef65652dd9e956d33639b05adb464dd2c7f0a82c140e8d421c7c4",
+  "active_config": "configs/full_expanded_900s_20s.json",
+  "previous_full_config_sha256": "2ab0557132adf3b6c12a145ab9cef71bc1b1ef39d5cdc5f76bf8660d5e2ca783",
+  "input_index_sha256": "b7d5c0465146713f032a621740b8111c8f3a9b6be6fa96fbc5cc982e6aa8c275",
+  "roster_order_sha256": "287d5421722409dad585182da546016a4ea12b69419b0e8e159bcbdc0485bf38",
+  "runtime_files": {
+   "common.py": "cc6b8f04edbcecb3a5bfa5e758ca888c88b7d86dce23d7345ef8dd1f9380dcc3",
+   "input_links.py": "b126ceba835af33e1cf9532bd58f007f2c9ec6a7ac3c2d095005b6f609ca8478",
+   "ledger.py": "e43fabb1c3b749bf4523bead2b67512e2ada9769990f7bbfffb280941168f824",
+   "live_client.py": "d85c3e1be02a42cb367a7bca6dea7b4cc88ae994f00bd0202e6426417e7cdeda",
+   "start.py": "0254bc18325b764502845062721f551bdc4cc271f9418b59d04d6df19762861f",
+   "supervisor.py": "dfe213ab2336d19af8a4ecd4940e7700619d7ccdb73562db3297760f209f79d3",
+   "worker.py": "f5052930ad1296e4fddb53af42bb39260902b356cccaf574627e7041d6e0456a"
+  }
+ },
+ "comparison_scope": "historical frozen same members; no new baseline or ablation"
+}

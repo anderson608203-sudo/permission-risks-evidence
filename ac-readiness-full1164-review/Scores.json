@@ -1,0 +1,774 @@
+{
+ "AC": {
+  "TP": 194,
+  "FP": 8,
+  "FN": 287,
+  "Precision": 0.9603960396039604,
+  "Recall": 0.40332640332640335,
+  "F1": 0.568081991215227
+ },
+ "FCR": {
+  "categories": {
+   "FCR-TRANSFER": {
+    "TP": 40,
+    "FN_dec": 0,
+    "U+": 0,
+    "FP": 0,
+    "TN": 27,
+    "U-": 13,
+    "pairs": 40,
+    "both": 27,
+    "F1": 1.0,
+    "Total": 80,
+    "FN": 0,
+    "effective": 67,
+    "failures": 0
+   },
+   "FCR-MINT": {
+    "TP": 35,
+    "FN_dec": 0,
+    "U+": 0,
+    "FP": 3,
+    "TN": 5,
+    "U-": 27,
+    "pairs": 35,
+    "both": 5,
+    "F1": 0.958904109589041,
+    "Total": 70,
+    "FN": 0,
+    "effective": 43,
+    "failures": 0
+   },
+   "FCR-DESTROY": {
+    "TP": 45,
+    "FN_dec": 1,
+    "U+": 12,
+    "FP": 0,
+    "TN": 35,
+    "U-": 23,
+    "pairs": 58,
+    "both": 33,
+    "F1": 0.8737864077669902,
+    "Total": 116,
+    "FN": 13,
+    "effective": 81,
+    "failures": 0
+   },
+   "FCR-PAUSE": {
+    "TP": 60,
+    "FN_dec": 0,
+    "U+": 2,
+    "FP": 0,
+    "TN": 47,
+    "U-": 15,
+    "pairs": 62,
+    "both": 45,
+    "F1": 0.9836065573770492,
+    "Total": 124,
+    "FN": 2,
+    "effective": 107,
+    "failures": 0
+   },
+   "FCR-FREEZE": {
+    "TP": 60,
+    "FN_dec": 4,
+    "U+": 11,
+    "FP": 0,
+    "TN": 64,
+    "U-": 11,
+    "pairs": 75,
+    "both": 51,
+    "F1": 0.8888888888888888,
+    "Total": 150,
+    "FN": 15,
+    "effective": 128,
+    "failures": 0
+   }
+  },
+  "macro_F1": 0.9410371927243939,
+  "risk_hits": 240,
+  "repair_correct": 178,
+  "pair_correct": 161,
+  "pairs": 270,
+  "valid_targets": 426,
+  "targets": 540,
+  "unknown_by_reason": [
+   [
+    "FCR-DESTROY",
+    "U+",
+    "unsupported",
+    12
+   ],
+   [
+    "FCR-DESTROY",
+    "U-",
+    "unsupported",
+    23
+   ],
+   [
+    "FCR-FREEZE",
+    "U+",
+    "unsupported",
+    11
+   ],
+   [
+    "FCR-FREEZE",
+    "U-",
+    "unsupported",
+    11
+   ],
+   [
+    "FCR-MINT",
+    "U-",
+    "unsupported",
+    27
+   ],
+   [
+    "FCR-PAUSE",
+    "U+",
+    "unsupported",
+    2
+   ],
+   [
+    "FCR-PAUSE",
+    "U-",
+    "unsupported",
+    15
+   ],
+   [
+    "FCR-TRANSFER",
+    "U-",
+    "unsupported",
+    13
+   ]
+  ]
+ },
+ "AC80": {
+  "TP": 17,
+  "FP": 1,
+  "FN": 47,
+  "Precision": 0.9444444444444444,
+  "Recall": 0.265625,
+  "F1": 0.4146341463414634
+ },
+ "FCR120": {
+  "categories": {
+   "FCR-TRANSFER": {
+    "TP": 12,
+    "FN_dec": 0,
+    "U+": 0,
+    "FP": 0,
+    "TN": 8,
+    "U-": 4,
+    "pairs": 12,
+    "both": 8,
+    "F1": 1.0,
+    "Total": 24,
+    "FN": 0
+   },
+   "FCR-MINT": {
+    "TP": 12,
+    "FN_dec": 0,
+    "U+": 0,
+    "FP": 1,
+    "TN": 3,
+    "U-": 8,
+    "pairs": 12,
+    "both": 3,
+    "F1": 0.96,
+    "Total": 24,
+    "FN": 0
+   },
+   "FCR-DESTROY": {
+    "TP": 8,
+    "FN_dec": 0,
+    "U+": 4,
+    "FP": 0,
+    "TN": 6,
+    "U-": 6,
+    "pairs": 12,
+    "both": 6,
+    "F1": 0.8,
+    "Total": 24,
+    "FN": 4
+   },
+   "FCR-PAUSE": {
+    "TP": 12,
+    "FN_dec": 0,
+    "U+": 0,
+    "FP": 0,
+    "TN": 9,
+    "U-": 3,
+    "pairs": 12,
+    "both": 9,
+    "F1": 1.0,
+    "Total": 24,
+    "FN": 0
+   },
+   "FCR-FREEZE": {
+    "TP": 7,
+    "FN_dec": 3,
+    "U+": 2,
+    "FP": 0,
+    "TN": 9,
+    "U-": 3,
+    "pairs": 12,
+    "both": 6,
+    "F1": 0.7368421052631579,
+    "Total": 24,
+    "FN": 5
+   }
+  },
+  "macro_F1": 0.8993684210526316,
+  "risk_hits": 51,
+  "repair_correct": 35,
+  "pair_correct": 32,
+  "pairs": 60,
+  "valid_targets": 90,
+  "targets": 120,
+  "unknown_by_reason": [
+   [
+    "FCR-DESTROY",
+    "U+",
+    "unsupported",
+    4
+   ],
+   [
+    "FCR-DESTROY",
+    "U-",
+    "unsupported",
+    6
+   ],
+   [
+    "FCR-FREEZE",
+    "U+",
+    "unsupported",
+    2
+   ],
+   [
+    "FCR-FREEZE",
+    "U-",
+    "unsupported",
+    3
+   ],
+   [
+    "FCR-MINT",
+    "U-",
+    "unsupported",
+    8
+   ],
+   [
+    "FCR-PAUSE",
+    "U-",
+    "unsupported",
+    3
+   ],
+   [
+    "FCR-TRANSFER",
+    "U-",
+    "unsupported",
+    4
+   ]
+  ]
+ },
+ "historical_AC": {
+  "latest_SmartBug": {
+   "TP": 198,
+   "FP": 20,
+   "FN": 283,
+   "Precision": 0.908256880733945,
+   "Recall": 0.41164241164241167,
+   "F1": 0.5665236051502146
+  },
+  "BG": {
+   "TP": 161,
+   "FP": 24,
+   "FN": 320,
+   "Precision": 0.8702702702702703,
+   "Recall": 0.33471933471933474,
+   "F1": 0.48348348348348347
+  },
+  "last1164": {
+   "TP": 389,
+   "FP": 246,
+   "FN": 92,
+   "Precision": 0.6125984251968504,
+   "Recall": 0.8087318087318087,
+   "F1": 0.6971326164874552,
+   "reference_count": 481
+  },
+  "b5": {
+   "TP": 377,
+   "FP": 188,
+   "FN": 104,
+   "Precision": 0.6672566371681415,
+   "Recall": 0.7837837837837838,
+   "F1": 0.7208413001912046,
+   "reference_count": 481
+  },
+  "v32": {
+   "TP": 404,
+   "FP": 103,
+   "FN": 77,
+   "Precision": 0.796844181459566,
+   "Recall": 0.83991683991684,
+   "F1": 0.8178137651821862
+  }
+ },
+ "historical_FCR": {
+  "BG": {
+   "categories": {
+    "FCR-TRANSFER": {
+     "TP": 40,
+     "FN_dec": 0,
+     "U+": 0,
+     "FP": 0,
+     "TN": 25,
+     "U-": 15,
+     "pairs": 40,
+     "both": 25,
+     "F1": 1.0,
+     "Total": 80,
+     "FN": 0,
+     "effective": 65,
+     "failures": 0
+    },
+    "FCR-MINT": {
+     "TP": 35,
+     "FN_dec": 0,
+     "U+": 0,
+     "FP": 3,
+     "TN": 5,
+     "U-": 27,
+     "pairs": 35,
+     "both": 5,
+     "F1": 0.958904109589041,
+     "Total": 70,
+     "FN": 0,
+     "effective": 43,
+     "failures": 0
+    },
+    "FCR-DESTROY": {
+     "TP": 21,
+     "FN_dec": 2,
+     "U+": 35,
+     "FP": 0,
+     "TN": 34,
+     "U-": 24,
+     "pairs": 58,
+     "both": 17,
+     "F1": 0.5316455696202531,
+     "Total": 116,
+     "FN": 37,
+     "effective": 57,
+     "failures": 0
+    },
+    "FCR-PAUSE": {
+     "TP": 56,
+     "FN_dec": 0,
+     "U+": 6,
+     "FP": 0,
+     "TN": 47,
+     "U-": 15,
+     "pairs": 62,
+     "both": 45,
+     "F1": 0.9491525423728814,
+     "Total": 124,
+     "FN": 6,
+     "effective": 103,
+     "failures": 0
+    },
+    "FCR-FREEZE": {
+     "TP": 60,
+     "FN_dec": 4,
+     "U+": 11,
+     "FP": 0,
+     "TN": 64,
+     "U-": 11,
+     "pairs": 75,
+     "both": 51,
+     "F1": 0.8888888888888888,
+     "Total": 150,
+     "FN": 15,
+     "effective": 128,
+     "failures": 0
+    }
+   },
+   "macro_F1": 0.8657182220942129,
+   "risk_hits": 212,
+   "repair_correct": 175,
+   "pair_correct": 143,
+   "pairs": 270,
+   "valid_targets": 396,
+   "targets": 540,
+   "unknown_by_reason": [
+    [
+     "FCR-DESTROY",
+     "U+",
+     "unsupported",
+     35
+    ],
+    [
+     "FCR-DESTROY",
+     "U-",
+     "unsupported",
+     24
+    ],
+    [
+     "FCR-FREEZE",
+     "U+",
+     "unsupported",
+     11
+    ],
+    [
+     "FCR-FREEZE",
+     "U-",
+     "unsupported",
+     11
+    ],
+    [
+     "FCR-MINT",
+     "U-",
+     "unsupported",
+     27
+    ],
+    [
+     "FCR-PAUSE",
+     "U+",
+     "unsupported",
+     6
+    ],
+    [
+     "FCR-PAUSE",
+     "U-",
+     "unsupported",
+     15
+    ],
+    [
+     "FCR-TRANSFER",
+     "U-",
+     "unsupported",
+     15
+    ]
+   ]
+  },
+  "last1164": {
+   "categories": {
+    "FCR-TRANSFER": {
+     "TP": 2,
+     "FN_dec": 10,
+     "U+": 28,
+     "FP": 0,
+     "TN": 31,
+     "U-": 9,
+     "pairs": 40,
+     "both": 0,
+     "F1": 0.09523809523809523
+    },
+    "FCR-MINT": {
+     "TP": 31,
+     "FN_dec": 0,
+     "U+": 4,
+     "FP": 0,
+     "TN": 25,
+     "U-": 10,
+     "pairs": 35,
+     "both": 23,
+     "F1": 0.9393939393939394
+    },
+    "FCR-DESTROY": {
+     "TP": 6,
+     "FN_dec": 8,
+     "U+": 44,
+     "FP": 0,
+     "TN": 28,
+     "U-": 30,
+     "pairs": 58,
+     "both": 3,
+     "F1": 0.1875
+    },
+    "FCR-PAUSE": {
+     "TP": 16,
+     "FN_dec": 9,
+     "U+": 37,
+     "FP": 0,
+     "TN": 50,
+     "U-": 12,
+     "pairs": 62,
+     "both": 10,
+     "F1": 0.41025641025641024
+    },
+    "FCR-FREEZE": {
+     "TP": 29,
+     "FN_dec": 10,
+     "U+": 36,
+     "FP": 0,
+     "TN": 58,
+     "U-": 17,
+     "pairs": 75,
+     "both": 24,
+     "F1": 0.5576923076923077
+    }
+   },
+   "macro_F1": 0.4380161505161505,
+   "risk_hits": 84,
+   "repair_correct": 192,
+   "pair_correct": 60,
+   "pairs": 270,
+   "valid_targets": 313,
+   "targets": 540,
+   "unknown_by_reason": [
+    [
+     "FCR-DESTROY",
+     "U+",
+     "unsupported",
+     44
+    ],
+    [
+     "FCR-DESTROY",
+     "U-",
+     "unsupported",
+     30
+    ],
+    [
+     "FCR-FREEZE",
+     "U+",
+     "unsupported",
+     36
+    ],
+    [
+     "FCR-FREEZE",
+     "U-",
+     "unsupported",
+     17
+    ],
+    [
+     "FCR-MINT",
+     "U+",
+     "unsupported",
+     4
+    ],
+    [
+     "FCR-MINT",
+     "U-",
+     "unsupported",
+     10
+    ],
+    [
+     "FCR-PAUSE",
+     "U+",
+     "unsupported",
+     37
+    ],
+    [
+     "FCR-PAUSE",
+     "U-",
+     "not_run",
+     1
+    ],
+    [
+     "FCR-PAUSE",
+     "U-",
+     "unsupported",
+     11
+    ],
+    [
+     "FCR-TRANSFER",
+     "U+",
+     "unsupported",
+     28
+    ],
+    [
+     "FCR-TRANSFER",
+     "U-",
+     "unsupported",
+     9
+    ]
+   ]
+  },
+  "b5": {
+   "categories": {
+    "FCR-TRANSFER": {
+     "TP": 4,
+     "FN_dec": 34,
+     "U+": 2,
+     "FP": 1,
+     "TN": 35,
+     "U-": 4,
+     "pairs": 40,
+     "both": 3,
+     "F1": 0.17777777777777778
+    },
+    "FCR-MINT": {
+     "TP": 34,
+     "FN_dec": 1,
+     "U+": 0,
+     "FP": 5,
+     "TN": 30,
+     "U-": 0,
+     "pairs": 35,
+     "both": 30,
+     "F1": 0.918918918918919
+    },
+    "FCR-DESTROY": {
+     "TP": 17,
+     "FN_dec": 39,
+     "U+": 2,
+     "FP": 4,
+     "TN": 53,
+     "U-": 1,
+     "pairs": 58,
+     "both": 16,
+     "F1": 0.43037974683544306
+    },
+    "FCR-PAUSE": {
+     "TP": 24,
+     "FN_dec": 33,
+     "U+": 5,
+     "FP": 4,
+     "TN": 55,
+     "U-": 3,
+     "pairs": 62,
+     "both": 23,
+     "F1": 0.5333333333333333
+    },
+    "FCR-FREEZE": {
+     "TP": 49,
+     "FN_dec": 26,
+     "U+": 0,
+     "FP": 1,
+     "TN": 74,
+     "U-": 0,
+     "pairs": 75,
+     "both": 48,
+     "F1": 0.784
+    }
+   },
+   "macro_F1": 0.5688819553730946,
+   "risk_hits": 128,
+   "repair_correct": 247,
+   "pair_correct": 120,
+   "pairs": 270,
+   "valid_targets": 523,
+   "targets": 540,
+   "unknown_by_reason": [
+    [
+     "FCR-DESTROY",
+     "U+",
+     "unsupported",
+     2
+    ],
+    [
+     "FCR-DESTROY",
+     "U-",
+     "unsupported",
+     1
+    ],
+    [
+     "FCR-PAUSE",
+     "U+",
+     "unsupported",
+     5
+    ],
+    [
+     "FCR-PAUSE",
+     "U-",
+     "not_run",
+     1
+    ],
+    [
+     "FCR-PAUSE",
+     "U-",
+     "unsupported",
+     2
+    ],
+    [
+     "FCR-TRANSFER",
+     "U+",
+     "unsupported",
+     2
+    ],
+    [
+     "FCR-TRANSFER",
+     "U-",
+     "not_run",
+     3
+    ],
+    [
+     "FCR-TRANSFER",
+     "U-",
+     "unsupported",
+     1
+    ]
+   ]
+  },
+  "v32": {
+   "TP": 262,
+   "FP": 1,
+   "FN": 8,
+   "Precision": 0.9961977186311787,
+   "Recall": 0.9703703703703703,
+   "F1": 0.9831144465290806,
+   "TN": 269,
+   "macro_F1": 0.9860859044162129,
+   "pairs_correct": 261,
+   "pairs_total": 270
+  }
+ },
+ "AC_changes": {
+  "latest_SmartBug": {
+   "still_missed": 276,
+   "retained": 187,
+   "lost": 11,
+   "gained": 7
+  },
+  "BG": {
+   "still_missed": 273,
+   "gained": 47,
+   "retained": 147,
+   "lost": 14
+  },
+  "v32": {
+   "lost": 212,
+   "still_missed": 75,
+   "retained": 192,
+   "gained": 2
+  },
+  "previous1164": {
+   "still_missed": 78,
+   "lost": 209,
+   "retained": 180,
+   "gained": 14
+  },
+  "b5": {
+   "lost": 194,
+   "retained": 183,
+   "still_missed": 93,
+   "gained": 11
+  }
+ },
+ "AC_outcomes": {
+  "unsupported": 432,
+  "alarm": 192
+ },
+ "AC_FN_stage": {
+  "aligned_inspection_without_matching_alarm": 274,
+  "no_listed_obligation_at_reference": 8,
+  "no_aligned_inspection_in_obligations": 4,
+  "no_bound_window": 1
+ },
+ "AC_FN_member_outcome": {
+  "unsupported": 276,
+  "alarm": 11
+ },
+ "model_unavailable_by_task": {
+  "AC": 9,
+  "FCR": 255
+ },
+ "reference_identity": {
+  "AC_Refs.json": "0a8ccf23728bf0c8b59e12226b8d418651c715fee707ccb77653d71a7925d377",
+  "FCR_Refs.json": "d2c9191ca4bfb942f262712aeb62699041c39ef7f899def7cd1028cab6569356",
+  "score_fcr.py": "b09c2975bb55aaa0c34047eeb0d3356e043b10ee5ca167eb11c9dd6305445283"
+ },
+ "frozen_selection": "c86ce2af82948ca0be80375fe99686e4cef2b0f8a169e7628ac941597003e37c"
+}

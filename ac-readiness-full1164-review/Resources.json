@@ -1,0 +1,95 @@
+{
+ "current": {
+  "requests": 1879,
+  "real_model_calls": 1879,
+  "simulated_service_requests": 0,
+  "unknown_or_inflight_upper_usd": 0.0,
+  "unknown_cost_upper_usd": 0.0,
+  "inflight": 0,
+  "unknown": 0,
+  "settled_cost_usd_upper": 12.643304202000008,
+  "settled_cost_usd_lower": 6.321652101000004,
+  "simulated_cost_usd_upper": 0,
+  "prompt_tokens": 5624030,
+  "completion_tokens": 9293621,
+  "service_models": [
+   "deepseek-flash"
+  ],
+  "actual_provider_billed_usd": null,
+  "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+  "per_request_money_reservation": false,
+  "halt": "",
+  "nature": "real_service",
+  "unknown_fee_is_not_zero": true
+ },
+ "history": {
+  "previous_cumulative_requests": 4374,
+  "previous_cumulative_usd_upper": 28.3114206,
+  "provider_unsettled_by_reference": true,
+  "instance_unsettled_by_reference": true,
+  "sha256": "941104095a5a4fa1754c18350484c18bcce8eb48a57cb9bd8a90e25266c79854",
+  "previous_round": "next_recall_expanded1164_r1",
+  "previous_grant_not_transferred": true
+ },
+ "cumulative_requests": 6253,
+ "cumulative_upper_usd": 40.95472480200001,
+ "actual_provider_invoice_usd": null,
+ "actual_instance_bill_cny": null,
+ "full_seconds": 21901.248901367188,
+ "prep": {
+  "used_seconds": 382.8197666667402,
+  "initial_time_basis": "batch-specific instance setup time; manual upload separate, no prior inventory time attributed",
+  "runs": [
+   {
+    "start_epoch": 1794849960.8819723,
+    "end_epoch": 1794849977.7184374,
+    "seconds": 16.836453199386597,
+    "resume": false
+   }
+  ]
+ },
+ "collection_seconds": 18.18295555282384,
+ "reasoning_tokens": 8669206,
+ "per_task": {
+  "AC": {
+   "members": 624,
+   "reported_actions_including_cached": 77863,
+   "solver_calls": 29046,
+   "query_projections": 36365,
+   "program_seconds_sum": 60605.4317296613,
+   "solver_seconds_sum": 1418.3896467480808,
+   "program_seconds_median": 11.549869022797793,
+   "program_seconds_max": 1210.6625472540036,
+   "model_wait_seconds_sum": 30407.57427932881,
+   "diagnostic_members": {
+    "program_investigation_seconds": 28,
+    "noncached_action_limit": 16,
+    "action_slice_exhausted": 1,
+    "program_investigation_budget_exhausted": 1,
+    "program_encoding_budget_exhausted": 0
+   }
+  },
+  "FCR": {
+   "members": 540,
+   "reported_actions_including_cached": 14554,
+   "solver_calls": 24797,
+   "query_projections": 27481,
+   "program_seconds_sum": 24785.878381997813,
+   "solver_seconds_sum": 10162.873686770443,
+   "program_seconds_median": 4.585666920058429,
+   "program_seconds_max": 980.5012086369097,
+   "model_wait_seconds_sum": 20941.97678443836,
+   "diagnostic_members": {
+    "program_investigation_seconds": 14,
+    "noncached_action_limit": 1,
+    "action_slice_exhausted": 31,
+    "program_investigation_budget_exhausted": 8,
+    "program_encoding_budget_exhausted": 1
+   }
+  }
+ },
+ "request_count_distribution": {
+  "2": 715,
+  "1": 449
+ }
+}

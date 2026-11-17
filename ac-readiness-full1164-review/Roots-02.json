@@ -1,0 +1,4066 @@
+[
+ {
+  "member": "RQ1_e440a75a1c8a",
+  "reference": "D2:530:author:1",
+  "function": "VTTR",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    5124,
+    5272
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_f88fe59a161b",
+  "reference": "D2:531:author:1",
+  "function": "Owned2",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1473,
+    1533
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_2f05b4baded880d37b43",
+   "finding_46c9fe8dc153cf9aed09"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_ed250fd054c9",
+  "reference": "D2:533:author:1",
+  "function": "Constructor",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "gained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    761,
+    814
+   ]
+  ],
+  "source_obligations": 3,
+  "inspections": 3,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 3
+  },
+  "matched_findings": [
+   "finding_7f6cd64de7151cf5e1e8",
+   "finding_c9adfa5ffcf281cd8978",
+   "finding_8243935a92baf87e67f7"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_254bfee03840",
+  "reference": "D2:534:S1",
+  "function": "owned",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1503,
+    1562
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_eb1d8d74a7390b391b92",
+   "finding_43845b68c5214b236d01"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_254bfee03840",
+  "reference": "D2:534:S2",
+  "function": "bitexlive",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2206,
+    2542
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "policy_missing": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_4c2921d39474",
+  "reference": "D2:535:author:1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1571,
+    1681
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_913e18f76600",
+  "reference": "D2:536:author:1",
+  "function": "setAllowedAddress",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1020,
+    1129
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_31ea47f8a384e60b174c",
+   "finding_e1dfa8433acaf4844115"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_03a271e0c36c",
+  "reference": "D2:538:S1",
+  "function": "initialize",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1733,
+    1956
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "external_dependency": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_a533300b98f5",
+  "reference": "D2:539:author:1",
+  "function": "die",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "TP",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": "TP",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "lost",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    47,
+    110
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_3c95d2f0314b",
+  "reference": "D2:540:author:1",
+  "function": "MADToken",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2516,
+    2731
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 3
+  },
+  "matched_findings": [
+   "finding_92efcadb03879b0ad2b8"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_2d9b7fbe78a5",
+  "reference": "D2:541:author:1",
+  "function": "Owned2",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1473,
+    1533
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_cf6469a772240aacc8b5",
+   "finding_4132d2e17f28ee98f7ea"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_b45fd17eae9d",
+  "reference": "D2:544:S1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1305,
+    1418
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 10,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 10
+  },
+  "decisions": {
+   "policy_missing": 10
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b45fd17eae9d",
+  "reference": "D2:544:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1952,
+    2049
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b45fd17eae9d",
+  "reference": "D2:544:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2349,
+    2411
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b45fd17eae9d",
+  "reference": "D2:544:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2485,
+    2560
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_76fc25a4f6a8",
+  "reference": "D2:550:author:1",
+  "function": "NETM",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2834,
+    2936
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1,
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_2f9277a786934e5e28c0"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_63bf9791ac38",
+  "reference": "D2:551:author:1",
+  "function": "withdraw",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1849,
+    2259
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 6,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 6
+  },
+  "decisions": {
+   "external_dependency": 5,
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_c9b9d9ecb7bb",
+  "reference": "D2:554:author:1",
+  "function": "initEthMultiplicator",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "lost",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1603,
+    1729
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b9012ed6ff89",
+  "reference": "D2:555:author:1",
+  "function": "mintTo",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2145,
+    2328
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "unbacked_source_issuance": 1
+  },
+  "matched_findings": [
+   "finding_5ec1deb1b6f046c147ba"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_9c985fb01894",
+  "reference": "D2:561:S1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1308,
+    1447
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 13,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 13
+  },
+  "decisions": {
+   "policy_missing": 13
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_9c985fb01894",
+  "reference": "D2:561:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1981,
+    2078
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_9c985fb01894",
+  "reference": "D2:561:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2378,
+    2440
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_9c985fb01894",
+  "reference": "D2:561:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2514,
+    2589
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_a47200b36eb7",
+  "reference": "D2:562:original:1",
+  "function": "Vault",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    463,
+    542
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "policy_missing": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_a47200b36eb7",
+  "reference": "D2:562:original:2",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    763,
+    863
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_85a74cdc030d",
+  "reference": "D2:564:author:1",
+  "function": "DynamicPyramid",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    280,
+    355
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_d24ec8aea5bbfd873a72"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_81d27b74b2b8",
+  "reference": "D2:565:author:1",
+  "function": "ownerOf",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    4231,
+    4384
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_306aa53f1e15",
+  "reference": "D2:566:author:1",
+  "function": "SelfDesctruction",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    3491,
+    3557
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_974fe7788b1dbf2e12f5",
+   "finding_ae5023310197d555862d"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_934ccafdf988",
+  "reference": "D2:567:S1",
+  "function": "mortal",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    56,
+    97
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_4621bba3609d2f6fa450",
+   "finding_6f745dac73f26d321419"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_934ccafdf988",
+  "reference": "D2:567:S2",
+  "function": "thing",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    417,
+    708
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 0,
+  "stage": "no_aligned_inspection_in_obligations",
+  "reasons": {},
+  "decisions": {},
+  "matched_findings": [],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_5a32d57754dd",
+  "reference": "D2:569:author:1",
+  "function": "ENTS",
+  "current": "TP",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "gained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2610,
+    2744
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 5,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "program_support": 1,
+   "policy_missing": 4
+  },
+  "matched_findings": [
+   "finding_1a2b9acf384b378bcf61"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_bc14311821a2",
+  "reference": "D2:571:S1",
+  "function": "selfdestructs",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "lost",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    5339,
+    5413
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_e5e40ec6feca",
+  "reference": "D2:572:author:1",
+  "function": "destroy",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "TP",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    194,
+    248
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7fcdff67fecb",
+  "reference": "D2:574:S1",
+  "function": "initVault",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1181,
+    1326
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 11,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 11
+  },
+  "decisions": {
+   "policy_missing": 11
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7fcdff67fecb",
+  "reference": "D2:574:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2155,
+    2252
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7fcdff67fecb",
+  "reference": "D2:574:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2257,
+    2298
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7fcdff67fecb",
+  "reference": "D2:574:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2378,
+    2446
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_3d5f2e705184",
+  "reference": "D2:577:author:1",
+  "function": "TokenERC20",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1167,
+    1509
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7c1aa3f1640a",
+  "reference": "D2:579:author:1",
+  "function": "destroycontract",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2094,
+    2166
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_3daa3272da3f",
+  "reference": "D2:580:S1",
+  "function": "selfdestructs",
+  "current": "FN",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "lost",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    4954,
+    5028
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_e052d3aaca16",
+  "reference": "D2:582:author:1",
+  "function": "LUVIToken",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2799,
+    2906
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 1
+  },
+  "matched_findings": [
+   "finding_5121a6825c86e0a8e61c"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_baecb1a287ec",
+  "reference": "D2:584:S1",
+  "function": "initVault",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1311,
+    1431
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 10,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 10
+  },
+  "decisions": {
+   "policy_missing": 10
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_baecb1a287ec",
+  "reference": "D2:584:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1965,
+    2062
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_baecb1a287ec",
+  "reference": "D2:584:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2362,
+    2424
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_baecb1a287ec",
+  "reference": "D2:584:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2498,
+    2573
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_30b4e48b4f5c",
+  "reference": "D2:585:author:1",
+  "function": "mintTo",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2127,
+    2310
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "unbacked_source_issuance": 1
+  },
+  "matched_findings": [
+   "finding_bd7cca5fedc6c4851e26"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_991cdff3e261",
+  "reference": "D2:586:author:1",
+  "function": "Legendary",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2621,
+    2729
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_9aafb6cd1add",
+  "reference": "D2:587:author:1",
+  "function": "Owned2",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "TP",
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1473,
+    1533
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_db0bd64648c3d3308a22",
+   "finding_059505c9a99c79e67209"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_fa317176bacc",
+  "reference": "D2:588:S1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1181,
+    1320
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 11,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 11
+  },
+  "decisions": {
+   "policy_missing": 11
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_fa317176bacc",
+  "reference": "D2:588:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1854,
+    1951
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_fa317176bacc",
+  "reference": "D2:588:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2251,
+    2292
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_fa317176bacc",
+  "reference": "D2:588:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2370,
+    2445
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_8b881d18ff63",
+  "reference": "D2:589:author:1",
+  "function": "WorldSafetySecurityToken",
+  "current": "FN",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "lost",
+   "BG": "lost",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    3718,
+    3920
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_f3cc38f76a37",
+  "reference": "D2:591:author:1",
+  "function": "OOREDOOCHAIN",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2811,
+    2921
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 1
+  },
+  "matched_findings": [
+   "finding_089d2d62a1f45570d9e7"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_e4dcc6d46656",
+  "reference": "D2:592:author:1",
+  "function": "BITDINERO",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2816,
+    2923
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 1
+  },
+  "matched_findings": [
+   "finding_c7efa65c464220f69ca4"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_b914559c9307",
+  "reference": "D2:593:author:1",
+  "function": "Owned2",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1473,
+    1533
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_7a935eb68a27f9c17675",
+   "finding_40edbcf095c5c5e308cc"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_50afc53073f9",
+  "reference": "D2:594:author:1",
+  "function": "initialWittness",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1161,
+    1219
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_45ce1fe8110b",
+  "reference": "D2:596:author:1",
+  "function": "IotaGoldToken",
+  "current": "FN",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "lost",
+   "BG": "lost",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    705,
+    929
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_be17ecaef698",
+  "reference": "D2:597:author:1",
+  "function": "clearBlockchain",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    4386,
+    4717
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_5ee0702dae51",
+  "reference": "D2:598:author:1",
+  "function": "destroy",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2825,
+    2883
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_5a5b1c1896e1",
+  "reference": "D2:599:author:1",
+  "function": "SAC",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2810,
+    2911
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 1
+  },
+  "matched_findings": [
+   "finding_1ca98d881ee658c3d337"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_52d5c754a744",
+  "reference": "D2:601:original:1",
+  "function": "BlocksureInfo",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    144,
+    203
+   ]
+  ],
+  "source_obligations": 0,
+  "inspections": 0,
+  "stage": "no_listed_obligation_at_reference",
+  "reasons": {},
+  "decisions": {},
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_52d5c754a744",
+  "reference": "D2:601:original:2",
+  "function": "onlyowner",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [],
+  "source_obligations": 0,
+  "inspections": 0,
+  "stage": "no_bound_window",
+  "reasons": {},
+  "decisions": {},
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7534bc78dfc0",
+  "reference": "D2:603:author:1",
+  "function": "UpgradeAgentEnabledToken",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    4400,
+    4499
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_7549ebffe3bcae68977d",
+   "finding_fec502e9bc94bd4ff21a"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_f1e26706fa55",
+  "reference": "D2:604:author:1",
+  "function": "execute",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    49,
+    754
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "external_dependency": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_e3be5dad4539",
+  "reference": "D2:606:author:1",
+  "function": "nexus",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    2605,
+    2740
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_1ca2e002ea0d",
+  "reference": "D2:607:author:1",
+  "function": "AirdropBeggarsCommunity",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    778,
+    894
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "source_role_reassignment": 1,
+   "policy_missing": 1
+  },
+  "matched_findings": [
+   "finding_979a35e8680aad3033ce"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_af0f1c0fc521",
+  "reference": "D2:611:author:1",
+  "function": "press",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1150,
+    1997
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 37,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 37
+  },
+  "decisions": {
+   "external_dependency": 29,
+   "policy_missing": 8
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_0bcbefea1890",
+  "reference": "D2:614:S1",
+  "function": "selfdestructs",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "TP",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    4954,
+    5028
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_d2682a2dcafe",
+  "reference": "D2:615:S1",
+  "function": "Owned",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1505,
+    1564
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_dcd4e8ae6af78b92a220",
+   "finding_5747667130f0b64b4ae0"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_d2682a2dcafe",
+  "reference": "D2:615:S2",
+  "function": "Relay",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1988,
+    2098
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 5,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "source_role_reassignment": 3,
+   "policy_missing": 2
+  },
+  "matched_findings": [
+   "finding_020d15bf272e17ed81da",
+   "finding_a4b59517dfa5527fa308"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_0e3c3362706f",
+  "reference": "D2:616:author:1",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1360,
+    1452
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_6215ad5e2727",
+  "reference": "D2:617:author:1",
+  "function": "constuctor",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "gained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    65,
+    129
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_b1ae844e1f9b59f7325f"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_e198c7d6beaf",
+  "reference": "D2:618:author:1",
+  "function": "VPC0x",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "gained"
+  },
+  "reference_windows": [
+   [
+    2813,
+    2916
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1,
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_99b0a01a7e28b9aedd55"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_4580c60aec2d",
+  "reference": "D2:619:author:1",
+  "function": "TokenERC20",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1227,
+    1569
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_117582aaa497",
+  "reference": "D2:620:author:1",
+  "function": "Owned2",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    1473,
+    1533
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_9f8f9ee09dfaa133b903",
+   "finding_c9651ec98fcaec3fc59c"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_dee4a75fd1b4",
+  "reference": "D2:622:author:1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1490,
+    1622
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_52d017b96965",
+  "reference": "D2:623:author:1",
+  "function": "mintTo",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "gained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    2141,
+    2324
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "unbacked_source_issuance": 1
+  },
+  "matched_findings": [
+   "finding_1b9a169f87ddb9b36071"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_b392b57fa617",
+  "reference": "D2:624:author:1",
+  "function": "BIMI_0001",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    87,
+    154
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_5a38b5f2655dc6c097b5"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_5e9adf3cda8c",
+  "reference": "D2:625:original:1",
+  "function": "constructor",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1203,
+    1608
+   ]
+  ],
+  "source_obligations": 0,
+  "inspections": 0,
+  "stage": "no_listed_obligation_at_reference",
+  "reasons": {},
+  "decisions": {},
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_247865e5ab88",
+  "reference": "D2:626:S1",
+  "function": "init",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    692,
+    831
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 11,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 11
+  },
+  "decisions": {
+   "policy_missing": 11
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_247865e5ab88",
+  "reference": "D2:626:S2",
+  "function": "setRelease",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1365,
+    1462
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_247865e5ab88",
+  "reference": "D2:626:S3",
+  "function": "lock",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1762,
+    1803
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_247865e5ab88",
+  "reference": "D2:626:S4",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1881,
+    1956
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_13f2a43e4b12",
+  "reference": "D2:322:original:1",
+  "function": "owned",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    72,
+    124
+   ]
+  ],
+  "source_obligations": 3,
+  "inspections": 3,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 3
+  },
+  "matched_findings": [
+   "finding_aa2875b27d7d6b7fc60f",
+   "finding_b699310b922ba8b1080a",
+   "finding_0039e90994f123defc74"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_13f2a43e4b12",
+  "reference": "D2:322:original:2",
+  "function": "requestNumber",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    3203,
+    4073
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 49,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 49
+  },
+  "decisions": {
+   "policy_missing": 49
+  },
+  "matched_findings": [],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_2e5ccd7b4bd2",
+  "reference": "D2:363:original:1",
+  "function": "fallback",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    3628,
+    4500
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 30,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 30
+  },
+  "decisions": {
+   "external_dependency": 24,
+   "policy_missing": 6
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_2f01be3ebc82",
+  "reference": "D2:94:original:1",
+  "function": "kill",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    169,
+    212
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_2f01be3ebc82",
+  "reference": "D2:94:original:2",
+  "function": "withdraw",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    214,
+    275
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_3dba1c8c9669",
+  "reference": "D2:72:original:1",
+  "function": "Play",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    125,
+    396
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "external_dependency": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_3dba1c8c9669",
+  "reference": "D2:72:original:2",
+  "function": "StartRoulette",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    401,
+    585
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_4f65b1060e4d",
+  "reference": "D2:313:original:1",
+  "function": "TokenERC20",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    1156,
+    1498
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 4,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 4
+  },
+  "decisions": {
+   "policy_missing": 4
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_4f65b1060e4d",
+  "reference": "D2:313:original:2",
+  "function": "initialize",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    1503,
+    1811
+   ]
+  ],
+  "source_obligations": 0,
+  "inspections": 0,
+  "stage": "no_listed_obligation_at_reference",
+  "reasons": {},
+  "decisions": {},
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_5ef9f46acd2e",
+  "reference": "D2:54:original:1",
+  "function": "fallback",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    626,
+    729
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_5ef9f46acd2e",
+  "reference": "D2:54:original:2",
+  "function": "debugDestruct",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    732,
+    802
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "policy_missing": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7623b2a26a25",
+  "reference": "D2:450:original:1",
+  "function": "StartRoulette",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    409,
+    593
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_7623b2a26a25",
+  "reference": "D2:450:original:2",
+  "function": "Play",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    132,
+    404
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "external_dependency": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_771e49570272",
+  "reference": "D2:421:original:1",
+  "function": "StartRoulette",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    405,
+    589
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_771e49570272",
+  "reference": "D2:421:original:2",
+  "function": "Play",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    129,
+    400
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "external_dependency": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_868007cf433c",
+  "reference": "D2:222:original:1",
+  "function": "fallback",
+  "current": "TP",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "gained",
+   "BG": "gained",
+   "v32": "gained",
+   "previous1164": "gained",
+   "b5": "gained"
+  },
+  "reference_windows": [
+   [
+    799,
+    1047
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "matched",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "policy_missing": 2,
+   "program_support": 1
+  },
+  "matched_findings": [
+   "finding_fb4d801f76c543787f2e"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_999f460049c5",
+  "reference": "D2:523:original:1",
+  "function": "Play",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    139,
+    412
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 2,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 2
+  },
+  "decisions": {
+   "external_dependency": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_999f460049c5",
+  "reference": "D2:523:original:2",
+  "function": "StartRoulette",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    417,
+    601
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 3,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 3
+  },
+  "decisions": {
+   "policy_missing": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_ad8d0ac6a104",
+  "reference": "D2:90:original:1",
+  "function": "fallback",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    103,
+    528
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "external_dependency": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b6fc6e31e760",
+  "reference": "D2:537:original:1",
+  "function": "payout",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    4046,
+    4776
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 31,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 31
+  },
+  "decisions": {
+   "external_dependency": 24,
+   "policy_missing": 7
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_b6fc6e31e760",
+  "reference": "D2:537:original:2",
+  "function": "payoutSelf",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    4781,
+    5348
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 5,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 5
+  },
+  "decisions": {
+   "external_dependency": 3,
+   "policy_missing": 2
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_c60bf13e0ef3",
+  "reference": "D2:176:original:1",
+  "function": "payout",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    2202,
+    3065
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 30,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 30
+  },
+  "decisions": {
+   "external_dependency": 23,
+   "policy_missing": 7
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_c60bf13e0ef3",
+  "reference": "D2:176:original:2",
+  "function": "payoutSelf",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    3070,
+    3701
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 5,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 5
+  },
+  "decisions": {
+   "policy_missing": 2,
+   "external_dependency": 3
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_d639862f5b71",
+  "reference": "D2:427:original:1",
+  "function": "setOwner",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    6511,
+    6629
+   ]
+  ],
+  "source_obligations": 5,
+  "inspections": 5,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 5
+  },
+  "decisions": {
+   "policy_missing": 5
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_d639862f5b71",
+  "reference": "D2:427:original:2",
+  "function": "setExecutor",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "lost",
+   "previous1164": "lost",
+   "b5": "lost"
+  },
+  "reference_windows": [
+   [
+    6634,
+    6784
+   ]
+  ],
+  "source_obligations": 5,
+  "inspections": 5,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 5
+  },
+  "decisions": {
+   "policy_missing": 5
+  },
+  "matched_findings": [],
+  "member_prediction": "unsupported"
+ },
+ {
+  "member": "RQ1_e6f04047bff4",
+  "reference": "D2:37:original:1",
+  "function": "RegisterDevice",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": "TP",
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    219,
+    276
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 1
+  },
+  "matched_findings": [
+   "finding_f274c51e1056d85b7a7d"
+  ],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_e6f04047bff4",
+  "reference": "D2:37:original:2",
+  "function": "CollectMoney",
+  "current": "FN",
+  "latest_SmartBug": "FN",
+  "BG": "FN",
+  "v32": "FN",
+  "previous1164": "FN",
+  "b5": "FN",
+  "prior200": "FN",
+  "changes": {
+   "latest_SmartBug": "still_missed",
+   "BG": "still_missed",
+   "v32": "still_missed",
+   "previous1164": "still_missed",
+   "b5": "still_missed"
+  },
+  "reference_windows": [
+   [
+    419,
+    514
+   ]
+  ],
+  "source_obligations": 1,
+  "inspections": 1,
+  "stage": "aligned_inspection_without_matching_alarm",
+  "reasons": {
+   "expected_authorization_not_established": 1
+  },
+  "decisions": {
+   "external_dependency": 1
+  },
+  "matched_findings": [],
+  "member_prediction": "alarm"
+ },
+ {
+  "member": "RQ1_29c15f926dbe",
+  "reference": "D2:242:original:1",
+  "function": "owned",
+  "current": "TP",
+  "latest_SmartBug": "TP",
+  "BG": "TP",
+  "v32": "TP",
+  "previous1164": "TP",
+  "b5": "TP",
+  "prior200": null,
+  "changes": {
+   "latest_SmartBug": "retained",
+   "BG": "retained",
+   "v32": "retained",
+   "previous1164": "retained",
+   "b5": "retained"
+  },
+  "reference_windows": [
+   [
+    739,
+    791
+   ]
+  ],
+  "source_obligations": 2,
+  "inspections": 2,
+  "stage": "matched",
+  "reasons": {},
+  "decisions": {
+   "source_role_reassignment": 2
+  },
+  "matched_findings": [
+   "finding_e4dea61c1fc823014db2",
+   "finding_d1773389a2915c957cf8"
+  ],
+  "member_prediction": "alarm"
+ }
+]
