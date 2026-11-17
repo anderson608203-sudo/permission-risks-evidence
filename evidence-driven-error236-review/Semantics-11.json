@@ -1,0 +1,7383 @@
+[
+ {
+  "member": "RQ1_f922252cd038",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "aa45a6d37401620bd21312313c697c47994f9dfe69b8d57144b697e0eaf1a544",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "w_cd3a1c638d94d4fa3977",
+      "kind": "qualification",
+      "operation": "op_10d6ef42d1a50976932d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6589,
+       "length": 41,
+       "ast_id": 653
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_cdb87ae2b7b00c0c6d55",
+      "kind": "termination",
+      "operation": "op_ecbcbcd617667ab2799d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 11826,
+       "length": 19,
+       "ast_id": 1169
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_a534e437a7f74e37c8a6",
+      "kind": "account_movement",
+      "operation": "op_1608a9ae52f5a74f9f09",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8267,
+       "length": 48,
+       "ast_id": 826
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_d94dd7289c21a9e9a400",
+      "kind": "account_movement",
+      "operation": "op_1608a9ae52f5a74f9f09",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8834,
+       "length": 46,
+       "ast_id": 870
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_0a0a73db993345c68a21",
+      "kind": "account_movement",
+      "operation": "op_1608a9ae52f5a74f9f09",
+      "where": {
+       "file": "units/program.sol",
+       "start": 9215,
+       "length": 62,
+       "ast_id": 909
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_ad7e2b722f823293fc90",
+      "kind": "qualification",
+      "operation": "op_8b1be4c8125438e4e45b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 9919,
+       "length": 39,
+       "ast_id": 979
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4e665101113fce2c62f5"
+      ]
+     },
+     {
+      "effect": "w_999f8abda8061105ff29",
+      "kind": "credit",
+      "operation": "op_8b1be4c8125438e4e45b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 10293,
+       "length": 46,
+       "ast_id": 1014
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4e665101113fce2c62f5"
+      ]
+     },
+     {
+      "effect": "w_800515ac2f8d02959c23",
+      "kind": "account_movement",
+      "operation": "op_9dbf914cdc885bbb9fea",
+      "where": {
+       "file": "units/program.sol",
+       "start": 10985,
+       "length": 53,
+       "ast_id": 1077
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_5f16aa3632194b1ca82b",
+      "kind": "qualification",
+      "operation": "op_9dbf914cdc885bbb9fea",
+      "where": {
+       "file": "units/program.sol",
+       "start": 11303,
+       "length": 39,
+       "ast_id": 1102
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_764034b03a21dc18a872",
+      "kind": "qualification",
+      "operation": "op_0cecc0beac3b224ec267",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1594,
+       "length": 22,
+       "ast_id": 183
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_59ea07097feec6ed15e3",
+      "kind": "qualification",
+      "operation": "op_0cecc0beac3b224ec267",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1626,
+       "length": 29,
+       "ast_id": 189
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_9cee775fe25d5db88bab",
+      "kind": "account_movement",
+      "operation": "op_c886c3aae3da90baf911",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5710,
+       "length": 52,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_b58f69a015fd963221c3",
+      "kind": "account_movement",
+      "operation": "op_c886c3aae3da90baf911",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6275,
+       "length": 46,
+       "ast_id": 612
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_39711d5861a60c746b10",
+      "kind": "qualification",
+      "operation": "op_8bb42b4cd008af032f6e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2399,
+       "length": 30,
+       "ast_id": 269
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_e47030f9ce1a0ef72ca4"
+      ]
+     },
+     {
+      "effect": "w_6291f63a24e4f6cb88ed",
+      "kind": "qualification",
+      "operation": "op_4bb2e684f6f33384ffe3",
+      "where": {
+       "file": "units/program.sol",
+       "start": 7188,
+       "length": 41,
+       "ast_id": 716
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_efffe788cd5bbf6afdf8",
+      "kind": "qualification",
+      "operation": "op_463bbc3dcac263df6ed0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1388,
+       "length": 26,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_28340dd0ad07488d41b2",
+      "kind": "qualification",
+      "operation": "op_c86b1bf891f710fbe1f3",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6589,
+       "length": 41,
+       "ast_id": 653
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_784a7664a6f15b9db8ed",
+      "kind": "termination",
+      "operation": "op_ad99358ccd0a9b9fe068",
+      "where": {
+       "file": "units/program.sol",
+       "start": 11826,
+       "length": 19,
+       "ast_id": 1169
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_bcc8da62190834279cd6",
+      "kind": "account_movement",
+      "operation": "op_2e8617a3867c401ff806",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8267,
+       "length": 48,
+       "ast_id": 826
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_157b703d15d206dedebe",
+      "kind": "account_movement",
+      "operation": "op_2e8617a3867c401ff806",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8834,
+       "length": 46,
+       "ast_id": 870
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_ef5d4964c849eaeee76d",
+      "kind": "account_movement",
+      "operation": "op_2e8617a3867c401ff806",
+      "where": {
+       "file": "units/program.sol",
+       "start": 9215,
+       "length": 62,
+       "ast_id": 909
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_9bc8d35b8bb980364329",
+      "kind": "qualification",
+      "operation": "op_0c9f7bc86a64f71e4279",
+      "where": {
+       "file": "units/program.sol",
+       "start": 9919,
+       "length": 39,
+       "ast_id": 979
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1fc4c0b9e28b675a9403"
+      ]
+     },
+     {
+      "effect": "w_d1b9291df07ed743a184",
+      "kind": "credit",
+      "operation": "op_0c9f7bc86a64f71e4279",
+      "where": {
+       "file": "units/program.sol",
+       "start": 10293,
+       "length": 46,
+       "ast_id": 1014
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1fc4c0b9e28b675a9403"
+      ]
+     },
+     {
+      "effect": "w_64f70e9682c84ae7d1dc",
+      "kind": "account_movement",
+      "operation": "op_07fb5422e08c5205605a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 10985,
+       "length": 53,
+       "ast_id": 1077
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_6fac5072bc75367f96ae",
+      "kind": "qualification",
+      "operation": "op_07fb5422e08c5205605a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 11303,
+       "length": 39,
+       "ast_id": 1102
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_b731e95060cd1588dcf6",
+      "kind": "qualification",
+      "operation": "op_4d91c8ebe1c7cc144d8e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1594,
+       "length": 22,
+       "ast_id": 183
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_8de522680048351bf197",
+      "kind": "qualification",
+      "operation": "op_4d91c8ebe1c7cc144d8e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1626,
+       "length": 29,
+       "ast_id": 189
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_3bb5d35bbf0cb93c0cd9",
+      "kind": "account_movement",
+      "operation": "op_cc035c348c25a228e70a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5710,
+       "length": 52,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_5591e6763de92d84c26a",
+      "kind": "account_movement",
+      "operation": "op_cc035c348c25a228e70a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6275,
+       "length": 46,
+       "ast_id": 612
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_ee5144de4e27ab3d5798",
+      "kind": "qualification",
+      "operation": "op_250e06ac4a0e6835d1cb",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2399,
+       "length": 30,
+       "ast_id": 269
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_c6e92fc18c854b4408c1"
+      ]
+     },
+     {
+      "effect": "w_66f87633096511d5a873",
+      "kind": "qualification",
+      "operation": "op_8ffbf1b2598b97d8f213",
+      "where": {
+       "file": "units/program.sol",
+       "start": 7188,
+       "length": 41,
+       "ast_id": 716
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_cdece3f5c93cda225c6f",
+      "kind": "qualification",
+      "operation": "op_c493d314002d99f91f5e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1388,
+       "length": 26,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_56290ee5b3d4f9f6b239",
+      "kind": "qualification",
+      "operation": "op_75e877133978ea22a5a2",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1594,
+       "length": 22,
+       "ast_id": 183
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_e4a4a43839e073677ff6",
+      "kind": "qualification",
+      "operation": "op_75e877133978ea22a5a2",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1626,
+       "length": 29,
+       "ast_id": 189
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_6385d557a14946bbf92a",
+      "kind": "qualification",
+      "operation": "op_d4260ec2ef02c40aac88",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1388,
+       "length": 26,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_af043515d42a6e119d09",
+      "kind": "qualification",
+      "operation": "op_fef6e577a7a10980b8a8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1594,
+       "length": 22,
+       "ast_id": 183
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_597828b35f3d01afd844",
+      "kind": "qualification",
+      "operation": "op_fef6e577a7a10980b8a8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1626,
+       "length": 29,
+       "ast_id": 189
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_59ec63738d680231c8df",
+      "kind": "qualification",
+      "operation": "op_7641f7c7a883d60d20fc",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1388,
+       "length": 26,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ },
+ {
+  "member": "RQ1_fa317176bacc",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "79d1e577328e9da039a5861659484657855c099064e07542ef96938cd313ddda",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "w_8c6744e3852988ba6dc6",
+      "kind": "qualification",
+      "operation": "op_1ab5d275021bb4a079be",
+      "where": {
+       "file": "units/program.sol",
+       "start": 353,
+       "length": 10,
+       "ast_id": 40
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0604a6aef29b6d240dab"
+      ]
+     },
+     {
+      "effect": "w_d23edc74b7683cd6a3e3",
+      "kind": "qualification",
+      "operation": "op_14fb8261e9d15851ec0f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 353,
+       "length": 10,
+       "ast_id": 40
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_bed3b1bfc336426d0480"
+      ]
+     },
+     {
+      "effect": "e_dae4ff7fdaebda513b94",
+      "kind": "termination",
+      "operation": "op_29a1b87242dfdd9f673d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2423,
+       "length": 19,
+       "ast_id": 322
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3f7c01b30040844f5c7f"
+      ]
+     },
+     {
+      "effect": "w_8b34e3517582c395c638",
+      "kind": "qualification",
+      "operation": "op_0359b15db350c4e86cc8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1906,
+       "length": 14,
+       "ast_id": 240
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "scope_cea883a2ace117e2ed5b"
+      ],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_cea883a2ace117e2ed5b"
+      ]
+     },
+     {
+      "effect": "w_b81d27a3fa02fe2a0519",
+      "kind": "credit",
+      "operation": "op_57e6927a690a10a31dfc",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1755,
+       "length": 33,
+       "ast_id": 220
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ef73ea61844c1ed416ed"
+      ]
+     },
+     {
+      "effect": "w_4dbc2e20a17f27f464c7",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1220,
+       "length": 18,
+       "ast_id": 151
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_10c56e073a819c5d3d84",
+       "scope_2f2d0db4404cce6d68ec"
+      ]
+     },
+     {
+      "effect": "w_6ca3188c82904fd3ed3e",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1248,
+       "length": 22,
+       "ast_id": 155
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_51e1cf279f479c7ee59a"
+      ]
+     },
+     {
+      "effect": "w_0af23c4c2ff6585d33e0",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1280,
+       "length": 14,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_e760782ea63b527bd06a"
+      ]
+     },
+     {
+      "effect": "w_6bb90933cd028f552319",
+      "kind": "credit",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1755,
+       "length": 33,
+       "ast_id": 220
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2f2d0db4404cce6d68ec",
+       "scope_8205997b673b6c9c6bc5"
+      ]
+     },
+     {
+      "effect": "w_4ee7a6f6aefe6b2ce5c0",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1220,
+       "length": 18,
+       "ast_id": 151
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1d74a719358793068750",
+       "scope_2f2d0db4404cce6d68ec"
+      ]
+     },
+     {
+      "effect": "w_257d9dd46b778e2efaac",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1248,
+       "length": 22,
+       "ast_id": 155
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_13ae8f5618b418223ddc"
+      ]
+     },
+     {
+      "effect": "w_35303bde27d09e18b48b",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1280,
+       "length": 14,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_52bd0e1c5147d361191d"
+      ]
+     },
+     {
+      "effect": "w_2f6f21151d2e149a22e8",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1220,
+       "length": 18,
+       "ast_id": 151
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2f2d0db4404cce6d68ec",
+       "scope_aefe29bc93fb3569429a"
+      ]
+     },
+     {
+      "effect": "w_2382c47eb7c7a7a64b02",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1248,
+       "length": 22,
+       "ast_id": 155
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_6aabec32a9e5d224d5f2"
+      ]
+     },
+     {
+      "effect": "w_64ed8d366e9c16c74229",
+      "kind": "qualification",
+      "operation": "op_4f2aafbf89df8e398103",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1280,
+       "length": 14,
+       "ast_id": 159
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ed4323509f0c92705efd"
+      ]
+     },
+     {
+      "effect": "w_3afbb3450e38b2806e45",
+      "kind": "qualification",
+      "operation": "op_07f2f3779de529d3fd8f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 353,
+       "length": 10,
+       "ast_id": 40
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_89e8d8721ab6c65fb595"
+      ]
+     },
+     {
+      "effect": "e_6ec441aecb4ba1bf8e38",
+      "kind": "funds",
+      "operation": "op_b39a026f8b6b4c14514f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2156,
+       "length": 19,
+       "ast_id": 276
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_20efb123f612c7429fb7"
+      ]
+     },
+     {
+      "effect": "w_a45f144941305644be88",
+      "kind": "qualification",
+      "operation": "op_eabeb2e95326088fa1da",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2276,
+       "length": 13,
+       "ast_id": 293
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_bc5b633fbbfd719f298b"
+      ]
+     },
+     {
+      "effect": "w_e88fdba45d27302ca5c9",
+      "kind": "credit",
+      "operation": "op_bc9e90f0d1b058db6037",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1755,
+       "length": 33,
+       "ast_id": 220
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1188d591b369415dccc1"
+      ]
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ },
+ {
+  "member": "RQ1_fb0f325e2800",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "d6a4b6d37fd96e2c22ea17fd4e5d0252fd2e1a4b8605e495197d7ac5266602e5",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "w_e5b7cecd5f8f687199f8",
+      "kind": "qualification",
+      "operation": "op_4ca40eb2bad9ddb1cc32",
+      "where": {
+       "file": "units/program.sol",
+       "start": 7270,
+       "length": 38,
+       "ast_id": 967
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": "holder_issued_grant",
+      "source_support_location": {
+       "file": "units/program.sol",
+       "start": 6850,
+       "length": 46,
+       "ast_id": 896
+      },
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_29c5072fc8a269498216"
+      ]
+     },
+     {
+      "effect": "w_9d55e67f5ade41e893fc",
+      "kind": "account_movement",
+      "operation": "op_414a4231efe42dba6a89",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6850,
+       "length": 46,
+       "ast_id": 896
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_09dc4a546740cbe82cae",
+       "scope_5c8a5a22e6477e7f50f6"
+      ]
+     },
+     {
+      "effect": "w_0557d0fad02fa42076d5",
+      "kind": "account_movement",
+      "operation": "op_414a4231efe42dba6a89",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6906,
+       "length": 68,
+       "ast_id": 913
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5c8a5a22e6477e7f50f6",
+       "scope_fb79f666b0602feb1fef"
+      ]
+     },
+     {
+      "effect": "w_18e6c4127fc94b14968c",
+      "kind": "account_movement",
+      "operation": "op_414a4231efe42dba6a89",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6984,
+       "length": 42,
+       "ast_id": 924
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5c8a5a22e6477e7f50f6",
+       "scope_9c04624225deb682c08d"
+      ]
+     },
+     {
+      "effect": "e_028c1e336908827edbe5",
+      "kind": "funds",
+      "operation": "op_0eefb14e7f031733fb4c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 7834,
+       "length": 28,
+       "ast_id": 1034
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_cce78ab7cdcfe8fbc0e4"
+      ]
+     },
+     {
+      "effect": "w_5c4bb010d29dad5b7eb5",
+      "kind": "account_movement",
+      "operation": "op_d67e03f651a892d22779",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8017,
+       "length": 47,
+       "ast_id": 1067
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_8cecda1de80d353835a0"
+      ]
+     },
+     {
+      "effect": "w_339f5cf5d7b878d83241",
+      "kind": "qualification",
+      "operation": "op_d67e03f651a892d22779",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8074,
+       "length": 37,
+       "ast_id": 1074
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_00fd78be435d3fbd9b84",
+       "scope_87bb1fd927a9a4e3cdcf"
+      ]
+     },
+     {
+      "effect": "w_acc6a9befcdbd308b6f7",
+      "kind": "qualification",
+      "operation": "op_d67e03f651a892d22779",
+      "where": {
+       "file": "units/program.sol",
+       "start": 8121,
+       "length": 47,
+       "ast_id": 1081
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_49136bfaca9ea70c3acf",
+       "scope_87bb1fd927a9a4e3cdcf"
+      ]
+     },
+     {
+      "effect": "w_4121d3c6b26a9810963b",
+      "kind": "qualification",
+      "operation": "op_0057077ee4c8cf95c7c8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3422,
+       "length": 30,
+       "ast_id": 404
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_a47ac1650fbbcd926b3f"
+      ]
+     },
+     {
+      "effect": "w_20df4ee7a75159e192c0",
+      "kind": "qualification",
+      "operation": "op_0057077ee4c8cf95c7c8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3422,
+       "length": 30,
+       "ast_id": 404
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_bffc9bb31bdab7f14c6e"
+      ]
+     },
+     {
+      "effect": "w_d8e66677e48a9854aeda",
+      "kind": "qualification",
+      "operation": "op_0057077ee4c8cf95c7c8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3422,
+       "length": 30,
+       "ast_id": 404
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2d09d4781adff9b267d9"
+      ]
+     },
+     {
+      "effect": "w_c5e3367c1c6301cc11c4",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4444,
+       "length": 27,
+       "ast_id": 543
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3a7ee7d2e469ceb6250d"
+      ]
+     },
+     {
+      "effect": "w_66ed0a0cb48252958739",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_579b9c42ef35ca6f80f2"
+      ]
+     },
+     {
+      "effect": "w_445d798bef6925ec0076",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_567b6410d63d19dfd23d"
+      ]
+     },
+     {
+      "effect": "w_5b1fce77a3e0232e719b",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_6984613bad81316bb4a0"
+      ]
+     },
+     {
+      "effect": "w_1306154cd3a72589503d",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4444,
+       "length": 27,
+       "ast_id": 543
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_8c933714f69d1be6492c"
+      ]
+     },
+     {
+      "effect": "w_1e54ea523cde108c765b",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_8bde7007ee4a804c7ca1"
+      ]
+     },
+     {
+      "effect": "w_367a943343775a49d5be",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_239b863a008503f3f464"
+      ]
+     },
+     {
+      "effect": "w_c89ba89a104d3e811933",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_a5c130508e386bcfa109"
+      ]
+     },
+     {
+      "effect": "w_401ad304b4a96b5d830c",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5af54bfa35feb393a0e0"
+      ]
+     },
+     {
+      "effect": "w_692489fb6bf418b528f8",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b1b4708ea5d41a5d8b68"
+      ]
+     },
+     {
+      "effect": "w_c4897159d7fd76e57b20",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f4baf534cf40d0b13020"
+      ]
+     },
+     {
+      "effect": "w_712ae856c673da715fce",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_c9b2c1125a48917efbef"
+      ]
+     },
+     {
+      "effect": "w_564859086233fb4a33f6",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_664a716cb93ca3848df4"
+      ]
+     },
+     {
+      "effect": "w_13cf5096a219caeb1413",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_e0b4a54cd33733eb2cf5"
+      ]
+     },
+     {
+      "effect": "w_f5d14c7d51ac951d6376",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4444,
+       "length": 27,
+       "ast_id": 543
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_a0f40b71c996846763f7"
+      ]
+     },
+     {
+      "effect": "w_4e2649e7c136907ae2a6",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_04bbac3b8b6fdec1584f"
+      ]
+     },
+     {
+      "effect": "w_a44f7f0fd48b3b816c44",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ac400aa6caa763dd18ad"
+      ]
+     },
+     {
+      "effect": "w_bdfd15853d215d239e71",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_70317118836c74be6bfd"
+      ]
+     },
+     {
+      "effect": "w_6ff7f6f7a2169429f04f",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b7c4f18bca66f8aa6f48"
+      ]
+     },
+     {
+      "effect": "w_827fec102ddb7b251d58",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4ee1e665df486c405043"
+      ]
+     },
+     {
+      "effect": "w_22f65b000be21f485ee9",
+      "kind": "qualification",
+      "operation": "op_d4f943b982bd643cc93f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_72e296fa642b8d830959"
+      ]
+     },
+     {
+      "effect": "w_95718d54a22e6b80eeea",
+      "kind": "qualification",
+      "operation": "op_5f1a8ddd7bf6777a7669",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3555,
+       "length": 27,
+       "ast_id": 420
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_e642313b32a32f0bbed3"
+      ]
+     },
+     {
+      "effect": "w_3174b21537413638fe4e",
+      "kind": "qualification",
+      "operation": "op_da672debf2da2244ef53",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3237,
+       "length": 31,
+       "ast_id": 374
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "scope_2168e683578349712499"
+      ],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2168e683578349712499"
+      ]
+     },
+     {
+      "effect": "w_6ec87cf897f9dc91272d",
+      "kind": "qualification",
+      "operation": "op_da672debf2da2244ef53",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3237,
+       "length": 31,
+       "ast_id": 374
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7e74170e641d3192fe76"
+      ]
+     },
+     {
+      "effect": "w_f30af1c212df4cba6ae0",
+      "kind": "qualification",
+      "operation": "op_da672debf2da2244ef53",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3237,
+       "length": 31,
+       "ast_id": 374
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_d00a1ff956f13e3af27c"
+      ]
+     },
+     {
+      "effect": "w_2dd0ee4d3ca713f109fa",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0554619c7f95e3d1c556"
+      ]
+     },
+     {
+      "effect": "w_9aa9b1070a574a0b976a",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0e4dff1a50ded34e6027"
+      ]
+     },
+     {
+      "effect": "w_14c14dca753bf3dfadb8",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_6f2403343dca099a6019"
+      ]
+     },
+     {
+      "effect": "w_9cfd733cb2a314682028",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5333,
+       "length": 27,
+       "ast_id": 670
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_58de7bfe7ed864b98b65"
+      ]
+     },
+     {
+      "effect": "w_f4b9a71dcb5cb9191bf4",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1e62b66dad801709c657"
+      ]
+     },
+     {
+      "effect": "w_0d679e593725cf5ce07e",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_94bcf5503247c3dcc55d"
+      ]
+     },
+     {
+      "effect": "w_a52b7acb6a91831b89ce",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f99091f27484cd4f1aad"
+      ]
+     },
+     {
+      "effect": "w_6def5112d081d013bae2",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_17c6efda86b50a81df2f"
+      ]
+     },
+     {
+      "effect": "w_ec662a97a4e4ab652295",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_9afc1112b0ac92951d61"
+      ]
+     },
+     {
+      "effect": "w_3445d6f139afdc6b73f1",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_9e6304699ace77fe601f"
+      ]
+     },
+     {
+      "effect": "w_48e9c52e6ca42b2dc655",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_63f8f6f95ab9ac40fb98"
+      ]
+     },
+     {
+      "effect": "w_00f8552665e3b8dca780",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5b71a14a91f34d33380e"
+      ]
+     },
+     {
+      "effect": "w_561c9ee9800ccaf9b562",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_83b85fa2d9baca8878a4"
+      ]
+     },
+     {
+      "effect": "w_ccf8a8e665c3d9a6ee72",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5333,
+       "length": 27,
+       "ast_id": 670
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_413072288c408bf12ce3"
+      ]
+     },
+     {
+      "effect": "w_294b11ce882ca5695fcd",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_55a2b37128126f0a2987"
+      ]
+     },
+     {
+      "effect": "w_5187e9fdb8873344ef66",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_39f45938d4cc5fae8fd9"
+      ]
+     },
+     {
+      "effect": "w_df13d61f1d49d813d126",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_dd2573ca4b3fdfc13bf3"
+      ]
+     },
+     {
+      "effect": "w_17c04f9728f05c93533f",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_757a164baf7a49bb0429"
+      ]
+     },
+     {
+      "effect": "w_d2008588d6cee7ba57aa",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_c6dce163a609a811f41c"
+      ]
+     },
+     {
+      "effect": "w_d6dc111c7b4cd54c37bb",
+      "kind": "qualification",
+      "operation": "op_4f0de1565148e89674e0",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3c56e5bd4ffe036859d4"
+      ]
+     },
+     {
+      "effect": "w_9bf0f6d1ffe270625a3e",
+      "kind": "account_movement",
+      "operation": "op_144e551264e0e85f3cad",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6397,
+       "length": 56,
+       "ast_id": 821
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b50e23e843b55a40c2a0"
+      ]
+     },
+     {
+      "effect": "w_99ff1c18cb22030a9171",
+      "kind": "account_movement",
+      "operation": "op_144e551264e0e85f3cad",
+      "where": {
+       "file": "units/program.sol",
+       "start": 6463,
+       "length": 42,
+       "ast_id": 832
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_a905a95193e39e55b759"
+      ]
+     },
+     {
+      "effect": "w_ac649de0f317d535c7dc",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_d0cf8e54e2023ebc0085"
+      ]
+     },
+     {
+      "effect": "w_b030eb4c0b7263d13a6c",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0a1a1466aa60780c5856",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_0a32c812751b28e469fa",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_ecf248ff687efc1cfa3a"
+      ]
+     },
+     {
+      "effect": "w_d6422339f4e4abd10343",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_be679994900be034fcdd"
+      ]
+     },
+     {
+      "effect": "w_8d7924bdd96447c81cc3",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_7c80c6350031df03ebbc"
+      ]
+     },
+     {
+      "effect": "w_9b6a4e72c566b67873cc",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_ee392ecc3f237681591d"
+      ]
+     },
+     {
+      "effect": "w_da5f46ebf5370d8db587",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_19623ca7f1cdc3fc08da",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_92f208123515c74aa859",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_d55d6dda6d1892827aa0"
+      ]
+     },
+     {
+      "effect": "w_4083b8dd0126abbdaf5e",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_6bc3cd1f192e5112af43"
+      ]
+     },
+     {
+      "effect": "w_ced8d195458785a1c173",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_ea5aa213018e136de2ce"
+      ]
+     },
+     {
+      "effect": "w_053e73d3bb334667d65b",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_6eec9b6b835e71894736"
+      ]
+     },
+     {
+      "effect": "w_2444df995fbcb80b60aa",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_06410882debb7c30484e",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_12ad3bdb9b8851d89483",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_48799d796399e553df1b",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_cb652c167e24f97d058b",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_65cda8d00d432eaceaf3"
+      ]
+     },
+     {
+      "effect": "w_2ffd7bedd428b5b0fff1",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_7d4c7124e6f311573687"
+      ]
+     },
+     {
+      "effect": "w_65f58940a689d59a4d28",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_6d691f32eea3247ca273"
+      ]
+     },
+     {
+      "effect": "w_a361bbfeec610715beba",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3e7148b36c43669cbbe4",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_f1e258ced6632e54b125",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_add174ea3600a49fe6b7"
+      ]
+     },
+     {
+      "effect": "w_a704faee4ef29649aa2d",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_c2cbe523de8c4736d486"
+      ]
+     },
+     {
+      "effect": "w_a8d52cd061c1c5122b2b",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_ba95bcd9e61dc852011c"
+      ]
+     },
+     {
+      "effect": "w_b72155479e76141506f3",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4edaa61966119df468a1",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_c4b7f0c11b384f139bf8",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1a0539c645b5d8975d73",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_293396e9e21cd7084c3f",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5703c3b5f21b55b6012f",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_23732bb09ed7770d82e2",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_74e6e4e9478d62ca9741"
+      ]
+     },
+     {
+      "effect": "w_995ff48707097df14df6",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_36a4921bc89200a98337",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_7345be8f68706403db0c",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_7bc5c939174dd665e7dd"
+      ]
+     },
+     {
+      "effect": "w_01a2c72e2699f5287b3e",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_d2b9b1836e063d302f88"
+      ]
+     },
+     {
+      "effect": "w_ddc55654fbfcb9d62956",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_08112c00f7b157556d75",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_d0a4155af1d8a01a011b",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_fddb5a830241eebe3ba9"
+      ]
+     },
+     {
+      "effect": "w_d1cf539d8a39a2735fd2",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_64379c7c1ffeaf202dcf"
+      ]
+     },
+     {
+      "effect": "w_849aa7d79e6b60508338",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_d76bfe9814b4e97251a2"
+      ]
+     },
+     {
+      "effect": "w_94383c05e11b047d734b",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1b2dcb8c9a35f8e59eee",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_9b15c468b5da6768e9ce",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2d33fba543e1a544d63e",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_30cd0c00e622869ff789",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_882d3773cebc96d15ee9"
+      ]
+     },
+     {
+      "effect": "w_5ed5c24b46d88aacff63",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4dbf7698004f5d33db5e",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_1497440b71f74f59737e",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_b0a389e66156218601e1"
+      ]
+     },
+     {
+      "effect": "w_4ad3f192d106f7b65cf7",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_6380aec2dc4870fcf4c6"
+      ]
+     },
+     {
+      "effect": "w_a993336ea49922375b3a",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_b830bce1636a80e20310"
+      ]
+     },
+     {
+      "effect": "w_647397989b0a240733f3",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_a74b81ccadc55daa2408"
+      ]
+     },
+     {
+      "effect": "w_912b436cc12302910baf",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_19512cb293605ac6c337",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_ae1e8e52c874978ba43d",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_6e0ef1923c06c5cfb6bb"
+      ]
+     },
+     {
+      "effect": "w_5f74c1a0991dbcb1c772",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59bd57522338e66af34f",
+       "scope_c65efac2905331a1fbed"
+      ]
+     },
+     {
+      "effect": "w_64b6496a4f6b36300a1b",
+      "kind": "account_movement",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_33565d0c02acbaa6949f",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_13c0e5ce48c941ced33a",
+      "kind": "qualification",
+      "operation": "op_2d38d3d15536aa40632c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_290b558c71861ccf59b7",
+       "scope_59bd57522338e66af34f"
+      ]
+     },
+     {
+      "effect": "w_2962990a96e2a34329f7",
+      "kind": "qualification",
+      "operation": "op_3d505e10502ad284147b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2859,
+       "length": 18,
+       "ast_id": 318
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0dfc08130947789e7403",
+       "scope_f4fe3773d810e1a7c1ce"
+      ]
+     },
+     {
+      "effect": "w_bc32883f363df427ebd2",
+      "kind": "qualification",
+      "operation": "op_3d505e10502ad284147b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2887,
+       "length": 15,
+       "ast_id": 322
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0dfc08130947789e7403",
+       "scope_e63e0d8f7ba9bb193b24"
+      ]
+     },
+     {
+      "effect": "w_413364b2254c5c1f3709",
+      "kind": "qualification",
+      "operation": "op_3d505e10502ad284147b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0dfc08130947789e7403",
+       "scope_1485afd3167e791e764d"
+      ]
+     },
+     {
+      "effect": "w_d89cdd3cacbbaf17dbc5",
+      "kind": "qualification",
+      "operation": "op_3d505e10502ad284147b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0dfc08130947789e7403",
+       "scope_9a3b4608073a3737aadd"
+      ]
+     },
+     {
+      "effect": "w_6b0027a16e30f84b6ca4",
+      "kind": "account_movement",
+      "operation": "op_3d505e10502ad284147b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0dfc08130947789e7403",
+       "scope_55b7187b3f04aba64789"
+      ]
+     },
+     {
+      "effect": "w_de4ea12848efc8a8fca5",
+      "kind": "qualification",
+      "operation": "op_4748394fdca12a8a32ba",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3068,
+       "length": 16,
+       "ast_id": 344
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_04a77d5a026fc46dfe17"
+      ]
+     },
+     {
+      "effect": "w_8a8f34c09aa4fc398971",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4876,
+       "length": 27,
+       "ast_id": 604
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ae37e582cc8c9b0ef972"
+      ]
+     },
+     {
+      "effect": "w_3f252d1fbf9e7da3b805",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3aaac8c0ed2d8fa8fc63"
+      ]
+     },
+     {
+      "effect": "w_b592d70034e0d0d7e3cd",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_347ff2e4dbf742d3d135"
+      ]
+     },
+     {
+      "effect": "w_b7ff78dbcd66ac83157f",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4eb6b4e23a89a4401cae"
+      ]
+     },
+     {
+      "effect": "w_407daabd2024695812ac",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4876,
+       "length": 27,
+       "ast_id": 604
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5be120c6e3e97370f144"
+      ]
+     },
+     {
+      "effect": "w_c579b6da979be4c4a15d",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_83a3c7bb4110e67869ce"
+      ]
+     },
+     {
+      "effect": "w_63c558c2969fffb4f1f9",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_83c03ef6c746427bcf58"
+      ]
+     },
+     {
+      "effect": "w_ef9e008f9feae6ff82fd",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1e17043b12c38833b84a"
+      ]
+     },
+     {
+      "effect": "w_c01aa4cef283d97e1c8e",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2c3d9c59a43fc0c3f6f6"
+      ]
+     },
+     {
+      "effect": "w_17305cbead76d680828f",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_62aec42220d5d607999c"
+      ]
+     },
+     {
+      "effect": "w_b4a0dc675e25c9a62a8e",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59e41c025788bbaad80e"
+      ]
+     },
+     {
+      "effect": "w_13a971e197e891f21598",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4c928f8e0c1fdbde6aae"
+      ]
+     },
+     {
+      "effect": "w_f16a4ae3d83dfb855c5b",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_afb49784c12e90560261"
+      ]
+     },
+     {
+      "effect": "w_6df2fbfddd5b0f729236",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_15293f9053ee701b73ac"
+      ]
+     },
+     {
+      "effect": "w_f983c17bd7616359360f",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4876,
+       "length": 27,
+       "ast_id": 604
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7de2f7bed06167e25d72"
+      ]
+     },
+     {
+      "effect": "w_ad1661f98cd200fbeda9",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ad4bf97f53971cab8804"
+      ]
+     },
+     {
+      "effect": "w_204596b8c92cb8ba3504",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7e6b3b058c9141c6539c"
+      ]
+     },
+     {
+      "effect": "w_3b7febfb81a1f3045e0d",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3c1f4a40caa4daaf75e2"
+      ]
+     },
+     {
+      "effect": "w_6af4412630f0552a6bc2",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_c8546c4f02b1b1359248"
+      ]
+     },
+     {
+      "effect": "w_e4cdb4c6cd2bd04dfb51",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b18c55b9924a636bf822"
+      ]
+     },
+     {
+      "effect": "w_33d836cd1d8346a96f1d",
+      "kind": "qualification",
+      "operation": "op_24394b76cf0fbf704b3a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_07edf72829759ded21c2"
+      ]
+     },
+     {
+      "effect": "w_b75f4fd03a5953f95114",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_c705997ea84ab7861aaf"
+      ]
+     },
+     {
+      "effect": "w_27ec309fe4a958707946",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_ba48cf0787b082abfa42"
+      ]
+     },
+     {
+      "effect": "w_010f8c97124fa193d4f6",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_bf5fa6a847eae73e8ae3"
+      ]
+     },
+     {
+      "effect": "w_8c5bd7f4846cf0dbbd78",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_e77a5d85e2209ba12cd0"
+      ]
+     },
+     {
+      "effect": "w_569f92709bc9aef8c443",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_3a828b526f5493c2725a"
+      ]
+     },
+     {
+      "effect": "w_1c43b2e2b6299017cb95",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_8e555b2d3318f9c5331d"
+      ]
+     },
+     {
+      "effect": "w_d97324520fa1b9b32946",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_6b5f03d03e61e284daa4"
+      ]
+     },
+     {
+      "effect": "w_8021ebfdb7f62169a646",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_a04f73091658fa7304e4"
+      ]
+     },
+     {
+      "effect": "w_7729ee06b026ab064a1e",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_93f820d7d2743e0d0172"
+      ]
+     },
+     {
+      "effect": "w_9d6659f1f29588d13a73",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_72927f2d3335f6a16bcb"
+      ]
+     },
+     {
+      "effect": "w_db7f44d780e0a7558532",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_6f6ac3de8cfacdd8fd56"
+      ]
+     },
+     {
+      "effect": "w_932e703dfffe99dffba2",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_5a1cbdd44a2b94b653ad"
+      ]
+     },
+     {
+      "effect": "w_f18d511a87ce13945bfc",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_5133a464a52a96aa5837"
+      ]
+     },
+     {
+      "effect": "w_d7fef33606b09f39243c",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_889d92706c1f77d96439"
+      ]
+     },
+     {
+      "effect": "w_62e97d9000d130761c2c",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_b2c0a1152795975bc449"
+      ]
+     },
+     {
+      "effect": "w_f1aca44cfb0b2bda7848",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_06d89f2ff129f97755d7",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_47a56d3e4d67cf5ea29f",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_9e9fd36bbd9586e88ce8"
+      ]
+     },
+     {
+      "effect": "w_f20561e7c5d717de587d",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_530b47dc87fa25e0aea9"
+      ]
+     },
+     {
+      "effect": "w_ee79d2b29ce85542d460",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_08b2f992d86ffcadde8d",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_c726459d6a607516b9b2",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5574,
+       "length": 22,
+       "ast_id": 696
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_dba3baff1beac87b60e7"
+      ]
+     },
+     {
+      "effect": "w_72e20d12e41bf178d2fc",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_26fd0d69c45b217e24b8"
+      ]
+     },
+     {
+      "effect": "w_cef6d2d2183178f4a4d0",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_46603ab2a107580d7beb"
+      ]
+     },
+     {
+      "effect": "w_ba268173037e2f8fc7db",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0bd4fa99a4cb2beabc53",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_a58224251ca5e725d002",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_d5ea141ef85ed9606b69"
+      ]
+     },
+     {
+      "effect": "w_a5dcf92c32d78ce933b3",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_9caf92bd1d4d362cb5d8"
+      ]
+     },
+     {
+      "effect": "w_39e0de43de4e37e1bdea",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_470137b6c1327361b434"
+      ]
+     },
+     {
+      "effect": "w_230cda50991662393f10",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_77393cdb800341e71cb9"
+      ]
+     },
+     {
+      "effect": "w_51cc1858651539a2c6f8",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_999710ebd8957aadc507"
+      ]
+     },
+     {
+      "effect": "w_db55ec2bdd83f7a61b41",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_5e46b4ae8d1535d8899f"
+      ]
+     },
+     {
+      "effect": "w_5eb1b2014b457da4472b",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_9e52707084312f51d9b2"
+      ]
+     },
+     {
+      "effect": "w_8ee64056c0d523b8bf78",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_14e5a8e78c9ee1be428a",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_0c427071a0ca38e17751",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0eebe49c462545d73de8",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_e75ee38bb65e4d1aedb0",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_f741f80c223423813b5e"
+      ]
+     },
+     {
+      "effect": "w_cb557e43c1742ae35f46",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5792,
+       "length": 26,
+       "ast_id": 727
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_c7415cabc97c31b040d9"
+      ]
+     },
+     {
+      "effect": "w_2baf840bf84a24ea411a",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_43493d4dfacd7a5c9948"
+      ]
+     },
+     {
+      "effect": "w_23eb1ab8a754453dd34e",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_bee36acd70a8197e6ee3"
+      ]
+     },
+     {
+      "effect": "w_9067eec2f0f61fb96f85",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_78f338d490b9729a8bfb"
+      ]
+     },
+     {
+      "effect": "w_8263dc89b901da80ca84",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_a709a86f5038a449cf93"
+      ]
+     },
+     {
+      "effect": "w_488d2162822d06b27fb0",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5889,
+       "length": 27,
+       "ast_id": 736
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_8402354ada2616fd8ad5"
+      ]
+     },
+     {
+      "effect": "w_f9942e8f6543ab9f85f8",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_21917425e8d57894784b",
+       "scope_260aa95300ed7d70c1b7"
+      ]
+     },
+     {
+      "effect": "w_bb26908bbac5c3259422",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3727,
+       "length": 48,
+       "ast_id": 444
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_2ee7238ebfb52bb054ba"
+      ]
+     },
+     {
+      "effect": "w_a6a598c31a497b14a9fd",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3785,
+       "length": 44,
+       "ast_id": 451
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_5c60a77878c1c35c2ab8"
+      ]
+     },
+     {
+      "effect": "w_c80ac5cf0a3ea211c4ab",
+      "kind": "account_movement",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3839,
+       "length": 42,
+       "ast_id": 462
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_423cfd9b99a422cfa09a"
+      ]
+     },
+     {
+      "effect": "w_6eddfc23ac962bd2bcae",
+      "kind": "qualification",
+      "operation": "op_644c5749d84e06faca0a",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5936,
+       "length": 36,
+       "ast_id": 748
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_260aa95300ed7d70c1b7",
+       "scope_787489ff315fa55c3481"
+      ]
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ },
+ {
+  "member": "RQ1_fc71e6703f0d",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "73c9653f232111b1877f1cf281c442980a3a34385cf5b96e90d977162866578b",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "e_7ee304922bbf048dbfdb",
+      "kind": "termination",
+      "operation": "op_cc26dce499cd00f213ce",
+      "where": {
+       "file": "units/program.sol",
+       "start": 316,
+       "length": 23,
+       "ast_id": 39
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_995657e1ed048f58ec0a"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_9cd8ba5ecab954168d1e",
+      "kind": "funds",
+      "operation": "op_61a8eea0add5e9fd7dd8",
+      "where": {
+       "file": "units/program.sol",
+       "start": 196,
+       "length": 32,
+       "ast_id": 24
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_7b48158d17c441e92deb"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ },
+ {
+  "member": "RQ1_fdd2bcee346e",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "add7d9437e657e4a0b709ddf210382ed4a593c79fa5fc27ea1223980f2afb50b",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "w_0d5ffdaa730e9f39a99e",
+      "kind": "qualification",
+      "operation": "op_fe35752a21fb0690c132",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1070,
+       "length": 20,
+       "ast_id": 121
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_228afd88d37efd170f51@3ecaacc58717",
+       "issue_228afd88d37efd170f51@b50b091bcf3b"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_c776a3bc7a8ec42e8486",
+      "kind": "qualification",
+      "operation": "op_fe35752a21fb0690c132",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1070,
+       "length": 20,
+       "ast_id": 121
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_3fc200f1eff71f08410d@3ecaacc58717",
+       "issue_3fc200f1eff71f08410d@b50b091bcf3b"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_2831beb4dd125855244e",
+      "kind": "termination",
+      "operation": "op_72a63e0a033c4c55a75f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1366,
+       "length": 24,
+       "ast_id": 157
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_2f11fc1855cc3a5fb036@3ecaacc58717",
+       "issue_2f11fc1855cc3a5fb036@b50b091bcf3b"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_6de9852117447d6c3b85",
+      "kind": "qualification",
+      "operation": "op_7903721dc3313b97a491",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1191,
+       "length": 17,
+       "ast_id": 136
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_ab6ab9b20591da47247a@3ecaacc58717",
+       "issue_ab6ab9b20591da47247a@b50b091bcf3b"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_669b25ec48ad489ac974",
+      "kind": "qualification",
+      "operation": "op_8235068418c82d7b04f4",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2350,
+       "length": 30,
+       "ast_id": 279
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_ff47fe7be0487a6e42cf"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_f3b53183ab4570407263",
+      "kind": "qualification",
+      "operation": "op_18709fc9e186fc1dae53",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4035,
+       "length": 36,
+       "ast_id": 453
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5e94a80b958450d2d4fb"
+      ]
+     },
+     {
+      "effect": "w_9522bce40c084a36506f",
+      "kind": "qualification",
+      "operation": "op_18709fc9e186fc1dae53",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4035,
+       "length": 36,
+       "ast_id": 453
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "scope_68288fd2f1e94db7bb69"
+      ],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_68288fd2f1e94db7bb69"
+      ]
+     },
+     {
+      "effect": "w_648b914ff23b1b0ef637",
+      "kind": "qualification",
+      "operation": "op_8ed9ef4523d036cbea79",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4500,
+       "length": 27,
+       "ast_id": 512
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_468cb929bdb3e3ac84d1"
+      ]
+     },
+     {
+      "effect": "w_4c17c0855789c442f1f2",
+      "kind": "qualification",
+      "operation": "op_8ed9ef4523d036cbea79",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4500,
+       "length": 27,
+       "ast_id": 512
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ee62e445650e87dfcd85"
+      ]
+     },
+     {
+      "effect": "w_3439c8e3a5bbc121b964",
+      "kind": "qualification",
+      "operation": "op_e0a820d2cfa120619d2d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1070,
+       "length": 20,
+       "ast_id": 121
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_0cc713648d648efd0064"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_f2b21b487ebd33fdb13d",
+      "kind": "qualification",
+      "operation": "op_e0a820d2cfa120619d2d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1070,
+       "length": 20,
+       "ast_id": 121
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_61ac7f6d3a7dcac491b3"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_c64faa86bc64545da624",
+      "kind": "termination",
+      "operation": "op_c9044aac0fdbcbe1d52d",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1366,
+       "length": 24,
+       "ast_id": 157
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_8f2727f471fe31a6c36f"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_d88250a30cb14cabca03",
+      "kind": "qualification",
+      "operation": "op_463c826f46aef4a03ed3",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1191,
+       "length": 17,
+       "ast_id": 136
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_3542983550d47c259f04"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_f4546b435c998f30c0d5",
+      "kind": "call_authority",
+      "operation": "op_9d32d174f0dae5458242",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4766,
+       "length": 40,
+       "ast_id": 552
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_878a4ca729effaa199ff"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "e_764feccd2aa0ea593cee",
+      "kind": "call_authority",
+      "operation": "op_9d32d174f0dae5458242",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4766,
+       "length": 40,
+       "ast_id": 552
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_1980c7fb1e0bb5598e3e"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     },
+     {
+      "effect": "w_9fa13db3088f7af21b52",
+      "kind": "qualification",
+      "operation": "op_af364b533a834830b277",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2350,
+       "length": 30,
+       "ast_id": 279
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_3cf0f603a652cdde1b76@78973de738b3",
+       "issue_3cf0f603a652cdde1b76@b50b091bcf3b"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ },
+ {
+  "member": "RQ1_ffbee73ba561",
+  "status": {
+   "profile": "risk_decision_only_v1",
+   "purpose": "source_bound_semantic_interpretations",
+   "content_sha256": "68bed0f98819a87d915369ee9271dcbb2bf4ac728d442066631832524ebc86dd",
+   "body_retained": false,
+   "scoped_support": {
+    "source_effect_readings": [
+     {
+      "effect": "w_54283c0e74ec14ef7b86",
+      "kind": "qualification",
+      "operation": "op_af2a393d89cbada6c88b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4075,
+       "length": 24,
+       "ast_id": 498
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f5954c429b6878c8ac8f",
+       "scope_fcb28abd319a0ebaf3f2"
+      ]
+     },
+     {
+      "effect": "w_189053e23e7f01b37e1a",
+      "kind": "qualification",
+      "operation": "op_af2a393d89cbada6c88b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4109,
+       "length": 22,
+       "ast_id": 502
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_fc5e9443e55e9b0b23c0",
+       "scope_fcb28abd319a0ebaf3f2"
+      ]
+     },
+     {
+      "effect": "w_feccc9e582217d59af23",
+      "kind": "qualification",
+      "operation": "op_bfd118f7b3d25fb8ff38",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3517,
+       "length": 40,
+       "ast_id": 442
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": "holder_issued_grant",
+      "source_support_location": {
+       "file": "units/program.sol",
+       "start": 3308,
+       "length": 38,
+       "ast_id": 415
+      },
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2a9b17bdbaa859fb60d1"
+      ]
+     },
+     {
+      "effect": "w_c12aa8c9b264d9fd0787",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3308,
+       "length": 38,
+       "ast_id": 415
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_becfa3da33313214084f"
+      ]
+     },
+     {
+      "effect": "w_73028dd910bf83102172",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2ea8180fbd2af7b681e4",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_95a33162c17237fa02a0",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3ac42cad3a667b2c8d19",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_9c0b72585d12bdbf1124",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_20c63f58a6828a21878f",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_5ff0ff8f0c63089db4d5",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "scope_902a672622187bd5273e"
+      ],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_902a672622187bd5273e"
+      ]
+     },
+     {
+      "effect": "w_2d781ad1c5f74936695d",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_ba3090c74a89b6e0369d"
+      ]
+     },
+     {
+      "effect": "w_926b6001469f0be83d6a",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_40abfe64693b0120dbcf",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_16cf7d1f655874ca6936",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_8a5c32d5e832a17e95e2"
+      ]
+     },
+     {
+      "effect": "w_22a9accb08710763800e",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_19d8a969314185294043",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_78a546ffb46b2ccbff70",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3308,
+       "length": 38,
+       "ast_id": 415
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_a8d734b6710890d89187"
+      ]
+     },
+     {
+      "effect": "w_f6a9228fa2e20031df95",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_8454843b21c9fc151422"
+      ]
+     },
+     {
+      "effect": "w_f986d8b3f49ffe0aff0f",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4a4b9e7f94b74465d856",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_86f016b8774e9f84e681",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_f807fc76a370abea9962"
+      ]
+     },
+     {
+      "effect": "w_e84c9a6a5735bce6867f",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_134f2c9ec5ec4465de6c",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_48486144a5889dd74aa6",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_d2985b702f82f1543381"
+      ]
+     },
+     {
+      "effect": "w_ffe6f151f4d7b5e2ea92",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3308,
+       "length": 38,
+       "ast_id": 415
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_330a8aac4fe3f867c103",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_dc6912b802e37974ff3b",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_db2deed9155d253bb56e"
+      ]
+     },
+     {
+      "effect": "w_061bf957d945ee94fe6d",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_9e9ee12bcd1f4b93f1fe"
+      ]
+     },
+     {
+      "effect": "w_afeb2515d97ecce168a9",
+      "kind": "qualification",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2e1d32f6913b6ec5af50",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_7caac9f6cbd3dede8563",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_ec4309407cfb9ddfa802"
+      ]
+     },
+     {
+      "effect": "w_3dfab64205e210d5ff4b",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_b28f894af2bb8e05ae4f"
+      ]
+     },
+     {
+      "effect": "w_9c33b8501e799b478e70",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3308,
+       "length": 38,
+       "ast_id": 415
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5d23c0f340c36d5fab2b",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_75873759f57b630b6cf8",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": true,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7021874fe338ade84af0",
+       "scope_f8cd99bcbe3018aa6199"
+      ]
+     },
+     {
+      "effect": "w_23a480daacdc69472162",
+      "kind": "account_movement",
+      "operation": "op_657b40c961c683c66c7e",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5bf7df7f16c062cded71",
+       "scope_7021874fe338ade84af0"
+      ]
+     },
+     {
+      "effect": "w_be307500c99978d6b9f6",
+      "kind": "qualification",
+      "operation": "op_92d7b1f5f41913c1c21b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1323,
+       "length": 37,
+       "ast_id": 143
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_891b593f9ed355d40b50",
+       "scope_8ec096bba5bc0380e139"
+      ]
+     },
+     {
+      "effect": "w_12d7c5e0eb17510904e7",
+      "kind": "qualification",
+      "operation": "op_92d7b1f5f41913c1c21b",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1363,
+       "length": 30,
+       "ast_id": 150
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0c8bdaedb16193401e9d",
+       "scope_8ec096bba5bc0380e139"
+      ]
+     },
+     {
+      "effect": "w_c939679d40907cbb9a5b",
+      "kind": "account_movement",
+      "operation": "op_a6d7ce5bfd63439a0612",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4315,
+       "length": 31,
+       "ast_id": 530
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4f861987961e6d9895d8",
+       "scope_5a98d8156d07d2487c1d"
+      ]
+     },
+     {
+      "effect": "w_3d5baf102dbd5bfb5303",
+      "kind": "account_movement",
+      "operation": "op_a6d7ce5bfd63439a0612",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4374,
+       "length": 25,
+       "ast_id": 536
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0591c9dab87318476d36",
+       "scope_5a98d8156d07d2487c1d"
+      ]
+     },
+     {
+      "effect": "e_fea94205e18a660fb6f5",
+      "kind": "funds",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4827,
+       "length": 28,
+       "ast_id": 589
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_41bd3444a0c74a5b2f02"
+      ]
+     },
+     {
+      "effect": "w_8565433a83782e4c3ada",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4671,
+       "length": 25,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3953c9de91f87a25a322"
+      ]
+     },
+     {
+      "effect": "w_45d0986d83c1050295e0",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4730,
+       "length": 31,
+       "ast_id": 575
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59d935fe2270a855c135"
+      ]
+     },
+     {
+      "effect": "w_9cabced29972af4ddbb2",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f4999fe1f4c1b34af6a8"
+      ]
+     },
+     {
+      "effect": "w_802e0116fef1e6de98d8",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_6cd5c2e382c2dc0c6f6e"
+      ]
+     },
+     {
+      "effect": "w_f053bdd53c3143bda03d",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_6281f7ed485309c19b78"
+      ]
+     },
+     {
+      "effect": "w_997c2e443914f5804900",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_fbd743dd86c0b948b26e"
+      ]
+     },
+     {
+      "effect": "w_e4d691c1181b64f1bd96",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_1d835b44bd2a7e829799"
+      ]
+     },
+     {
+      "effect": "w_9a29ce555d5d61ac8070",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_77f8a1885a21ce55543a"
+      ]
+     },
+     {
+      "effect": "w_f7621806117630fb2377",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_bd1d97024cf7922dbc64"
+      ]
+     },
+     {
+      "effect": "w_2524cb074d1f4aaf5719",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ad30d7c100e612b19b39"
+      ]
+     },
+     {
+      "effect": "w_73981feef26b4d4bf2fd",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4671,
+       "length": 25,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f2355d3036e46bb7e6b2"
+      ]
+     },
+     {
+      "effect": "w_e656cc2032780090b096",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4730,
+       "length": 31,
+       "ast_id": 575
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_98ee372e3609535237da"
+      ]
+     },
+     {
+      "effect": "w_ac989e6b5f418ca4ceb9",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2f37e9cc22b88dfbf47d"
+      ]
+     },
+     {
+      "effect": "w_d9e438c77cd90a869a54",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_d90e5c2647d015958ef9"
+      ]
+     },
+     {
+      "effect": "w_8a5a02980dbcdb975680",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_e11a1958927b5039f25c"
+      ]
+     },
+     {
+      "effect": "w_963eb0465f4455fb84e5",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7dbb1fba1e9d72e0911f"
+      ]
+     },
+     {
+      "effect": "w_e804d9fc0e37f8f9ef91",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_232c0ea0218fcde4c944"
+      ]
+     },
+     {
+      "effect": "w_c1c0377533d1f2e35ea8",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4671,
+       "length": 25,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_68c99a0f91701640c92c"
+      ]
+     },
+     {
+      "effect": "w_11246db711caf50bdd71",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4730,
+       "length": 31,
+       "ast_id": 575
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0b572113992954b60ac4"
+      ]
+     },
+     {
+      "effect": "w_242d579fab8d7c3530e1",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_90db74e9a0d011fda7a1"
+      ]
+     },
+     {
+      "effect": "w_6977b5e60931afc8aad4",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_d723399340e3b4b063af"
+      ]
+     },
+     {
+      "effect": "w_67cb0cc080db0372959e",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_ee94869150388e91df1c"
+      ]
+     },
+     {
+      "effect": "w_a2f23dd5be3d23be2f68",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_09d7ffb5842332d549ff"
+      ]
+     },
+     {
+      "effect": "w_72709819e58404299aed",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_2b4bddad95ea72b627be"
+      ]
+     },
+     {
+      "effect": "w_2e7a1251d422c8f3c58c",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4671,
+       "length": 25,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f5b4b9a37d0b829ddb70"
+      ]
+     },
+     {
+      "effect": "w_7ee6436d3a1516ef37e5",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4730,
+       "length": 31,
+       "ast_id": 575
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_649b246e67bb5c61524e"
+      ]
+     },
+     {
+      "effect": "w_25f8cea071d2b19753f8",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_927dad6e0cbbbdc5c2b4"
+      ]
+     },
+     {
+      "effect": "w_5fb6a6363206b84c17dd",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3f66b055840bb420307d"
+      ]
+     },
+     {
+      "effect": "w_c2e19d393ad94fe3bf36",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_feef8de5ada111a64697"
+      ]
+     },
+     {
+      "effect": "w_926f3366a1a5c31d4808",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_56661e50516dbf1f450f"
+      ]
+     },
+     {
+      "effect": "w_c27300f406c0b6e0d604",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_82e28948f3f8305dd3b9"
+      ]
+     },
+     {
+      "effect": "w_4bf408f960a5bccb84c5",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_31c8a4193e1a7a440271"
+      ]
+     },
+     {
+      "effect": "w_cd3e37625a98971a91ee",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_70f1cadb80f770bdd60b"
+      ]
+     },
+     {
+      "effect": "w_25c2ac8e22a1f7a87815",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_4c87a4d7d335163949de"
+      ]
+     },
+     {
+      "effect": "w_4c20fb32fd0440f2d0f8",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_463f8ea62e3b799cee45"
+      ]
+     },
+     {
+      "effect": "w_5ea3ce9d8d1245b03bb8",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3a022be9d00a019f2c34"
+      ]
+     },
+     {
+      "effect": "w_942fb6bd969de1aa0f0b",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_042eb3bdf1b5ad946cd0"
+      ]
+     },
+     {
+      "effect": "w_54c254eb7e0ccdce1eec",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b68e21d8b16bc0ec5103"
+      ]
+     },
+     {
+      "effect": "w_11e5d6befb0295cacf4b",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_7a48d715279f74170331"
+      ]
+     },
+     {
+      "effect": "w_ac0dce930a6d4532aeb6",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0355bfc8a4d76e189b37"
+      ]
+     },
+     {
+      "effect": "w_49525b6bc302d4049dd7",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_55600d3c708ee8c6da03"
+      ]
+     },
+     {
+      "effect": "w_cc552948d4b76338b81b",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1822,
+       "length": 28,
+       "ast_id": 203
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_3168cfb094728e9b58b2"
+      ]
+     },
+     {
+      "effect": "w_9d2c8203e46f7c2d48c6",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1865,
+       "length": 35,
+       "ast_id": 209
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_b20870ff9c8cb68f34e4"
+      ]
+     },
+     {
+      "effect": "w_797cb1c2a885b19a1e28",
+      "kind": "qualification",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 1914,
+       "length": 28,
+       "ast_id": 213
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_54c66ecbfd4f9c95d3dd"
+      ]
+     },
+     {
+      "effect": "w_abe353092fac1d753049",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_f10b3ab3da7940203b52"
+      ]
+     },
+     {
+      "effect": "w_f90490fb79d87c0e5af5",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_70d0e6e5fedd05b69230"
+      ]
+     },
+     {
+      "effect": "w_0f1f03e09568b8002405",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2725,
+       "length": 26,
+       "ast_id": 327
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_aba2a64c5a93aa15dbc1"
+      ]
+     },
+     {
+      "effect": "w_38f4036960d43511ca86",
+      "kind": "account_movement",
+      "operation": "op_250e19d6e83d33a3900f",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2761,
+       "length": 24,
+       "ast_id": 333
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_0576809b69572ade041e"
+      ]
+     },
+     {
+      "effect": "w_add39708379a70e866b9",
+      "kind": "qualification",
+      "operation": "op_0db72647f31abac2ef27",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2129,
+       "length": 28,
+       "ast_id": 239
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59a7311f91d15f31032a",
+       "scope_e98838682a538295f208"
+      ]
+     },
+     {
+      "effect": "w_b739bd8371c5c66d8c27",
+      "kind": "qualification",
+      "operation": "op_0db72647f31abac2ef27",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2171,
+       "length": 35,
+       "ast_id": 245
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_40269498264b6dd666ec",
+       "scope_59a7311f91d15f31032a"
+      ]
+     },
+     {
+      "effect": "w_9e5655601fd1c42ce2e6",
+      "kind": "qualification",
+      "operation": "op_0db72647f31abac2ef27",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2220,
+       "length": 28,
+       "ast_id": 249
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_59a7311f91d15f31032a",
+       "scope_7d945109f7fa0fb94a3d"
+      ]
+     },
+     {
+      "effect": "w_b160af0f4b128d7f7e68",
+      "kind": "qualification",
+      "operation": "op_4cc659a3dd2d31e7039c",
+      "where": {
+       "file": "units/program.sol",
+       "start": 5111,
+       "length": 57,
+       "ast_id": 614
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_8c039df7540f7672134a"
+      ]
+     },
+     {
+      "effect": "w_1cd4ee02567dd5644ab6",
+      "kind": "qualification",
+      "operation": "op_0cc7043ae9dbb5014c43",
+      "where": {
+       "file": "units/program.sol",
+       "start": 3517,
+       "length": 40,
+       "ast_id": 442
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_5a8a9e71bc1f1fe69d62"
+      ]
+     },
+     {
+      "effect": "w_079341e89da7df2f4d26",
+      "kind": "qualification",
+      "operation": "op_fb55b809b800c4e844b4",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2129,
+       "length": 28,
+       "ast_id": 239
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_03ad9091bb138eebbcb1",
+       "scope_925d950c263aa63ee800"
+      ]
+     },
+     {
+      "effect": "w_fde1b68c5aff734cdf3a",
+      "kind": "qualification",
+      "operation": "op_fb55b809b800c4e844b4",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2171,
+       "length": 35,
+       "ast_id": 245
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_925d950c263aa63ee800",
+       "scope_c298dd4c259e94cfdcae"
+      ]
+     },
+     {
+      "effect": "w_720d7c5885ed46306229",
+      "kind": "qualification",
+      "operation": "op_fb55b809b800c4e844b4",
+      "where": {
+       "file": "units/program.sol",
+       "start": 2220,
+       "length": 28,
+       "ast_id": 249
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_925d950c263aa63ee800",
+       "scope_c9bba99c9aad0d2f7089"
+      ]
+     },
+     {
+      "effect": "e_9fec1f810c074f8aefa5",
+      "kind": "funds",
+      "operation": "op_adc4ad47874efbb31ad7",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4827,
+       "length": 28,
+       "ast_id": 589
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_73f22e77ef7d3a835001"
+      ]
+     },
+     {
+      "effect": "w_67b5dd39c90b1e3b506c",
+      "kind": "account_movement",
+      "operation": "op_adc4ad47874efbb31ad7",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4671,
+       "length": 25,
+       "ast_id": 568
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_222364f32b531799dad4"
+      ]
+     },
+     {
+      "effect": "w_be1a9822cc045d3839ec",
+      "kind": "account_movement",
+      "operation": "op_adc4ad47874efbb31ad7",
+      "where": {
+       "file": "units/program.sol",
+       "start": 4730,
+       "length": 31,
+       "ast_id": 575
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [],
+      "shown": false,
+      "bound_facts": [],
+      "scoped_consumers": [
+       "scope_49988f059b52124a925f"
+      ]
+     },
+     {
+      "effect": "w_1fcdfe9da265cd646572",
+      "kind": "qualification",
+      "operation": "op_dd509dc52a710dd8eaf6",
+      "where": {
+       "file": "units/program.sol",
+       "start": 787,
+       "length": 30,
+       "ast_id": 83
+      },
+      "stage": "applied_entry",
+      "shown_followup": false,
+      "source_duty": null,
+      "source_support_location": null,
+      "opinion_consumers": [
+       "issue_0ebfd3a4f2e187c7edf0"
+      ],
+      "shown": true,
+      "bound_facts": [],
+      "scoped_consumers": []
+     }
+    ],
+    "retired_supports": [],
+    "active_supports": [],
+    "updates": [],
+    "revisions": [],
+    "referenced_abstract_effects": [],
+    "facts": [],
+    "rule_visits": 0,
+    "budget_cut": false,
+    "unfinished_operations": []
+   },
+   "answer_dispositions": [],
+   "financial_consents": []
+  }
+ }
+]
