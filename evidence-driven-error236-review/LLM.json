@@ -1,0 +1,41 @@
+{
+ "initial_request_precedes_basic_checkpoint": true,
+ "production_source": "source/src/pr_next_joint/investigation/engine.py Investigation.run",
+ "not_a_minus_LLM_control": true,
+ "same_basic_final_finding_ids": {
+  "AC": 65,
+  "FCR": 7
+ },
+ "final_finding_counts": {
+  "AC": 65,
+  "FCR": 56
+ },
+ "normalization_diagnostics": {
+  "AC": {
+   "unknown_assessment_vocabulary": 115,
+   "semantic_answer_outside_sent_scope": 10,
+   "invalid_semantic_row": 13,
+   "audit_card_text": 7,
+   "ambiguous_confirmation_not_a_risk_judgment": 31,
+   "invalid_top_level_or_duplicate_key": 18,
+   "missing_claim_or_source_anchor": 53,
+   "audit_card_issue_kind": 3,
+   "invalid_issue_field_shape": 5,
+   "audit_card_check_kind": 1
+  },
+  "FCR": {
+   "missing_claim_or_source_anchor": 3,
+   "audit_card_text": 5,
+   "audit_card_fields": 4,
+   "invalid_top_level_or_duplicate_key": 5
+  }
+ },
+ "feedback_flags": {
+  "selected": 206,
+  "sent": 206,
+  "parsed": 171,
+  "consumed": 168,
+  "changed_finding": 0
+ },
+ "note": "Stage equality only bounds later refinement effects. Initial model input was already accepted; neither equality nor source_observation proves zero marginal LLM benefit."
+}

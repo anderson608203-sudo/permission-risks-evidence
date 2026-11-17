@@ -1,0 +1,95 @@
+{
+ "archive_sha256": "9f59f4777fd3a358ed65e5c0d6f934d14e93ccb0432a1ade74c6362570e66364",
+ "archive_size": 33593689,
+ "frozen_files": 8880,
+ "frozen_manifest_sha256": "9eea607de2e25d1b381e000da4861925185c554f72452a5b55a58085c9b34177",
+ "selected_sha256": "aac819993f442c9ae0f392c1510808cb17ed5dfb1b91b39ba85ad9d11f5b8b2a",
+ "method": {
+  "method": "fb113462e5d4a7170877357ffad4fef3fe9e16a749cb3a723cf2f85e4d2110fc",
+  "files": 99,
+  "config": "40ca33d909fef65652dd9e956d33639b05adb464dd2c7f0a82c140e8d421c7c4"
+ },
+ "runtime": {
+  "z3-solver": "4.15.3.0",
+  "eth-keys": "0.7.0",
+  "pycryptodome": "3.24.1",
+  "tokenizers": "0.22.2"
+ },
+ "model": {
+  "model": "deepseek-flash",
+  "thinking": {
+   "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_tokens": 32768
+ },
+ "status": {
+  "phase": "ended",
+  "reports_saved": 235,
+  "with_gaps": 235,
+  "technical_errors": 1,
+  "not_yet_reported": 1,
+  "findings": 121,
+  "active": 0,
+  "parallel": 6,
+  "elapsed_seconds": 5345,
+  "model_requests": 443,
+  "settled_upper_usd": 2.579596704,
+  "inflight_requests": 0,
+  "unknown_requests": 0,
+  "inflight_or_unknown_upper_usd": 0.0,
+  "money_reservations": false,
+  "dispatch_halt": "",
+  "owned_RSS_GiB": 0.0,
+  "available_GiB": 420.32,
+  "run_disk_GiB": 0.23
+ },
+ "reason": "normal_completion",
+ "wall_seconds": 5346.7361307144165,
+ "ledger": {
+  "requests": 443,
+  "real_model_calls": 443,
+  "simulated_service_requests": 0,
+  "unknown_or_inflight_upper_usd": 0.0,
+  "unknown_cost_upper_usd": 0.0,
+  "inflight": 0,
+  "unknown": 0,
+  "settled_cost_usd_upper": 2.579596704,
+  "settled_cost_usd_lower": 1.289798352,
+  "simulated_cost_usd_upper": 0,
+  "prompt_tokens": 1134045,
+  "completion_tokens": 2032761,
+  "service_models": [
+   "deepseek-flash"
+  ],
+  "actual_provider_billed_usd": null,
+  "cost_basis": "actual usage × public peak/off-peak prices; not supplier invoice",
+  "per_request_money_reservation": false,
+  "halt": "",
+  "nature": "real_service",
+  "unknown_fee_is_not_zero": true
+ },
+ "prep": {
+  "used_seconds": 572.1517648696899,
+  "initial_time_basis": "batch-specific instance setup time; manual upload separate, no prior inventory time attributed",
+  "runs": [
+   {
+    "start_epoch": 1794913713.7557948,
+    "end_epoch": 1794913875.6217299,
+    "seconds": 161.86592936515808,
+    "resume": false
+   }
+  ]
+ },
+ "first_six": {
+  "passed": true,
+  "unusable_protocol_or_consumption": [],
+  "uncaught_error_groups": {},
+  "checks_only_technical_chain_not_findings_or_scores": true
+ },
+ "source_of_billing": "actual usage and price interval, invoice unavailable",
+ "ledger_sha": "20546c8470432f42ccc88c9e5a6b293fa6c01931c13ccc7325be114890a2359f",
+ "population": 236,
+ "reports_verified": 235,
+ "before_reference_loading": true
+}

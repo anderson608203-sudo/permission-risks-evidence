@@ -1,0 +1,6160 @@
+[
+ {
+  "current_review": "原指定MINT报警撤回，但当前仍scope_missing，未得到有效阴性；同次购买反证尚未使整类别完成判断，不能计TN或有效FP纠正。",
+  "prior_source_review_reused_after_input_hash_match": "7cc11a697bd2｜AGGToken，op_10f20d68fc821801b4a3，字节5232/373｜probe_7a653634f52d62f2b78a及probe_72855ee598a0602b8aaf分别为上述两类SAT查询。同一通用修复，保留独立回执。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_0cf15add41fcb5194d6c",
+    "prop": {
+     "id": "property_54123f021e585582b2f9",
+     "category": "FCR-MINT",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_10f20d68fc821801b4a3",
+     "semantic_version": "143c5dbb8221b2eb1ccee14272791d814f68e6aca5d6dddfef8fa348f8076373",
+     "task": "FCR",
+     "content_sha256": "1ee1910bcc08293320712445d7a7decf13592a151488645944192509b05d8d30"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 5232. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5232,
+       "length": 373,
+       "ast_id": 594
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5232,
+      "length": 373,
+      "ast_id": 594
+     }
+    },
+    "evidence": [
+     "E3",
+     "E15",
+     "E22",
+     "E24",
+     "E25",
+     "E28"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "financial_value/unsat": 12,
+   "financial_consent_unresolved/unsat": 2,
+   "baseline_usable/sat": 5,
+   "opened_by_change/sat": 3,
+   "both_usable/sat": 5,
+   "opened_by_change/unsat": 2,
+   "financial_value_post_exclusion/sat": 1,
+   "same_request_amount_change/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_7cc11a697bd2"
+ },
+ {
+  "current_review": "原指定MINT报警撤回，但当前仍scope_missing，未得到有效阴性；同次购买反证尚未使整类别完成判断，不能计TN或有效FP纠正。",
+  "prior_source_review_reused_after_input_hash_match": "81a85f242b60｜DappToken，op_4e1c20df49c8b5b987a8，字节5099/361｜post_exclusion的probe_1711bf7f32532c659ed1及financial_value的probe_af0a41756ff206c4cc09均SAT。修同次付款购买与自由发行的适用边界。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_1480ca6677fd5f7c8980",
+    "prop": {
+     "id": "property_e11e70496a11ca63202d",
+     "category": "FCR-MINT",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_4e1c20df49c8b5b987a8",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "cb8ae8d70f8e0d43d7c43c8342a1c19480a57c3badede56432c84fa89321b0d1"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 5099. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5099,
+       "length": 361,
+       "ast_id": 582
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5099,
+      "length": 361,
+      "ast_id": 582
+     }
+    },
+    "evidence": [
+     "E1",
+     "E10",
+     "E13",
+     "E14",
+     "E15",
+     "E18"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "financial_value/unsat": 12,
+   "financial_consent_unresolved/unsat": 2,
+   "financial_value_post_exclusion/sat": 1,
+   "same_request_amount_change/sat": 1,
+   "baseline_usable/sat": 1,
+   "opened_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_81a85f242b60"
+ },
+ {
+  "current_review": "原指定MINT报警撤回，但当前仍scope_missing，未得到有效阴性；同次购买反证尚未使整类别完成判断，不能计TN或有效FP纠正。",
+  "prior_source_review_reused_after_input_hash_match": "cbb6e67b8b81｜ETKSToken，op_50bc6666dd89b70b41ef，字节5091/361｜probe_be31a1bb17fb60ada98f及probe_51e74b80dbca56d7a311分别为上述两类SAT查询。同一通用修复，不按名称或修复身份排除。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_f882f2be3098b1308a43",
+    "prop": {
+     "id": "property_082632bb373a8bff724b",
+     "category": "FCR-MINT",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_50bc6666dd89b70b41ef",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "3147b041835baf30a91a418ef7fa6062e135187ff437e6f0eada61fa6a1be5d6"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a positive new entitlement for a controlled beneficiary at source offset 5091. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5091,
+       "length": 361,
+       "ast_id": 582
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5091,
+      "length": 361,
+      "ast_id": 582
+     }
+    },
+    "evidence": [
+     "E1",
+     "E10",
+     "E13",
+     "E14",
+     "E15",
+     "E18"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "financial_value/unsat": 12,
+   "financial_consent_unresolved/unsat": 2,
+   "financial_value_post_exclusion/sat": 1,
+   "same_request_amount_change/sat": 1,
+   "baseline_usable/sat": 1,
+   "opened_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_cbb6e67b8b81"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "328c13393c2c｜U/67｜RoxToken；burn第323行扣caller自身；salvageTokensFromContract及killContract分别涉及外部资产/终止；scope_missing与外调缺口共存｜隔离无关回调可以修，但自身burn不能升级为他人销毁；终止/外部资产须按已批准实际权益语义另核，未确认可追回。",
+  "current_gap_reasons": {
+   "external_dependency": 4
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_76cf0832a768d563bb66::FCR-DESTROY",
+    "prop": {
+     "id": "property_4329ceab60cb013cc038",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0c9f7bc86a64f71e4279",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "a6ded60155f0e3fc445116e53c4517016ac1ffbb84a7f8e04adf31f9e3a372e2"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 9544. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 9544,
+       "length": 928,
+       "ast_id": 1032
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 9544,
+      "length": 928,
+      "ast_id": 1032
+     }
+    },
+    "evidence": [
+     "E8",
+     "E29",
+     "E31",
+     "E33",
+     "E35"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d1d0d20a1900131a3bff::FCR-DESTROY",
+    "prop": {
+     "id": "property_fff3ebbcf1d4014b7fe6",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_60b1d70f3dbf087a4a83",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "d97a1335e587a489e858191431c32025aa0b2b9de2f13db691ed602928a1f2ec"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 9544. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 9544,
+       "length": 928,
+       "ast_id": 1032
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 9544,
+      "length": 928,
+      "ast_id": 1032
+     }
+    },
+    "evidence": [
+     "E12",
+     "E30",
+     "E32",
+     "E36",
+     "E40"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 7,
+   "prefix_reachability/sat": 4,
+   "baseline_usable/sat": 6,
+   "financial_block/sat": 4,
+   "local_premises_feasible/sat": 2,
+   "direct_effect/sat": 2,
+   "opened_by_change/sat": 2,
+   "both_usable/sat": 2,
+   "financial_value_post_exclusion/unsat": 16,
+   "same_request_amount_change/unsat": 16
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_328c13393c2c"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "33d48945207e｜U/0｜CREDITS；burn第196行本人销毁，burnFrom第209行核并消耗allowance[from][caller]，复杂Frozen路径同在｜角色/复合路径可修，但已有自愿/额度反证不能丢。PAUSE成立也不能顶替DESTROY；未确认该参考FN可追回。",
+  "current_gap_reasons": {
+   "external_dependency": 1,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_ad82d517dc27c7fb455a",
+    "prop": {
+     "id": "property_0fa5d8554d97df93c3e5",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f4deccf12304686f6b0",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "193f23b165dc86a95e8b47ea8793385f1a1453c6e3ca5d63044055317ebe0870"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5038. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5038,
+       "length": 765,
+       "ast_id": 697
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5038,
+      "length": 765,
+      "ast_id": 697
+     }
+    },
+    "evidence": [
+     "E12",
+     "E55",
+     "E56",
+     "E57"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_33d48945207e"
+ },
+ {
+  "current_review": "程序预算耗尽异常逸出，未保存最终报告；错误摘要与program_investigation_budget_exhausted的规范JSON SHA精确匹配。保留三个检查点；不把其中PAUSE报警代作DESTROY结果。",
+  "prior_source_review_reused_after_input_hash_match": "353a9b0b5006｜U/189｜Token中名为burn的函数增加余额与供应；费用/第三方入账的同意另未闭合；43次timeout，程序约901.06秒｜增记不是DESTROY正证；费用需独立核净损及同意。可优化无收益查询，但不以名字追标签，不把超时当唯一归因。",
+  "current_gap_reasons": {},
+  "scoped_checks": [],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_353a9b0b5006"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "440857b3df3c｜U/126｜MyAdvancedToken；burnFrom第265行有holder额度，sell有原生币结算；covered_holder_grant与其他scope_missing并存，6次timeout及1次other｜保留有效grant和真实本人结算。只有具体作用仍缺同意/补偿时保留未知，不将合约其他未知抹掉已核正常。",
+  "current_gap_reasons": {
+   "role_provenance_unresolved": 1,
+   "scope_missing": 1,
+   "external_dependency": 2
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_11ee67224220d93804db::FCR-DESTROY",
+    "prop": {
+     "id": "property_50e7ed09670f2ab841d5",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_27c324843ee6503867ed",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "23a7bb75d90bb90420670e0835d95169a833312e33723ade123134f6a4dc7612"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8802. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     ],
+     "effects": [
+      "w_4c1d525c0462dfd1229d"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8467,
+      "length": 502,
+      "ast_id": 1141
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 8802,
+      "length": 26,
+      "ast_id": 1118
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "be61f191cc65a91e46f88e11acb169127a7701096f4e6d78f5a10a9034178f11"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     }
+    },
+    "evidence": [
+     "E20",
+     "E45",
+     "E147",
+     "E155",
+     "E161",
+     "E164",
+     "E167",
+     "E170"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_75b6f1fdde5b873a2a90",
+    "prop": {
+     "id": "property_ecdaa2557e50b81450bd",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_576e587a8aee984ccce6",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "6f2547fff1c1ee9f4a359822aeb193b6fb59a1c968b407bb26d6f509beb9bbf3"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2182. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2182,
+       "length": 791,
+       "ast_id": 353
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 2182,
+      "length": 791,
+      "ast_id": 353
+     }
+    },
+    "evidence": [
+     "E23",
+     "E42",
+     "E91",
+     "E96",
+     "E101",
+     "E106",
+     "E111",
+     "E116",
+     "E191"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_7e68951a6095b67633c7::FCR-DESTROY",
+    "prop": {
+     "id": "property_b2fdb197df236d87f997",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_e5334d4a1e082c25b6aa",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "0019e2dcb631c178bf3c35b5ef66bcd9035368e3088e251ce2044babefa05f75"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5757. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5757,
+       "length": 328,
+       "ast_id": 735
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5757,
+      "length": 328,
+      "ast_id": 735
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "efa9d2bdfefc1f58cd2ce844d7962719a9452e8412b2e6af5c776a508366854e"
+     ]
+    },
+    "evidence": [
+     "E2",
+     "E37",
+     "E63",
+     "E68",
+     "E73",
+     "E78",
+     "E83",
+     "E88",
+     "E129"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_889b874d87de223edaf2",
+    "prop": {
+     "id": "property_ecdaa2557e50b81450bd",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_576e587a8aee984ccce6",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "6f2547fff1c1ee9f4a359822aeb193b6fb59a1c968b407bb26d6f509beb9bbf3"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2182. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2182,
+       "length": 791,
+       "ast_id": 353
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 2182,
+      "length": 791,
+      "ast_id": 353
+     }
+    },
+    "evidence": [
+     "E16",
+     "E41",
+     "E90",
+     "E95",
+     "E100",
+     "E105",
+     "E110",
+     "E115",
+     "E190"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_a80f23bd0d3b0b32b06f::FCR-DESTROY",
+    "prop": {
+     "id": "property_50e7ed09670f2ab841d5",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_27c324843ee6503867ed",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "23a7bb75d90bb90420670e0835d95169a833312e33723ade123134f6a4dc7612"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8802. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     ],
+     "effects": [
+      "w_4c1d525c0462dfd1229d"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8467,
+      "length": 502,
+      "ast_id": 1141
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 8802,
+      "length": 26,
+      "ast_id": 1118
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     }
+    },
+    "evidence": [
+     "E6",
+     "E44",
+     "E148",
+     "E154",
+     "E160",
+     "E163",
+     "E166",
+     "E169"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_dee150d69bee08ff88cf::FCR-DESTROY",
+    "prop": {
+     "id": "property_c408b39cedc4b559f016",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_aef97f28f815421b0c5d",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "e9a97c68537e3674c804bd9483900a018afa02b978af6cffab7634bf2be7ca89"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 6325. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6325,
+       "length": 222,
+       "ast_id": 796
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6325,
+      "length": 222,
+      "ast_id": 796
+     }
+    },
+    "evidence": [
+     "E28",
+     "E43",
+     "E67",
+     "E82",
+     "E97",
+     "E112",
+     "E125",
+     "E128",
+     "E133",
+     "E157"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_f67d7c3e1eda907b91f4",
+    "prop": {
+     "id": "property_54dd67da00f5e288a2a9",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_27c324843ee6503867ed",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "44edccfa80213d9a18204ad5f48c3062f546697e4307cbda70b7d26b4ae56973"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8802. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     ],
+     "effects": [
+      "w_4c1d525c0462dfd1229d"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8467,
+      "length": 502,
+      "ast_id": 1141
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 8802,
+      "length": 26,
+      "ast_id": 1118
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 8802,
+       "length": 26,
+       "ast_id": 1118
+      }
+     }
+    },
+    "evidence": [
+     "E9",
+     "E40",
+     "E126",
+     "E131",
+     "E138",
+     "E141",
+     "E144",
+     "E151"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 11,
+   "prefix_reachability/sat": 6,
+   "baseline_usable/sat": 19,
+   "financial_block/unknown": 9,
+   "financial_block/sat": 2,
+   "local_premises_feasible/sat": 4,
+   "direct_effect/unsat": 4,
+   "financial_value_post_exclusion/unsat": 42,
+   "same_request_amount_change/unsat": 40,
+   "financial_consent_unresolved/unsat": 4,
+   "blocked_by_change/sat": 2,
+   "both_usable/sat": 8,
+   "two_distinct_holders_blocked_same_change/sat": 1,
+   "same_right_alternative_after_change/sat": 5,
+   "financial_value/unsat": 13,
+   "same_request_amount_change/sat": 2,
+   "financial_value_post_exclusion/sat": 6,
+   "financial_value/sat": 6,
+   "opened_by_change/sat": 6
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-TRANSFER",
+   "FCR-MINT",
+   "FCR-FREEZE"
+  ],
+  "member": "RQ1_440857b3df3c"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "4b4775267823｜U/61｜B2BCoinContract；burn第307行为caller自身，killContract第346行，salvage涉及外部资产｜同328c族。可修依赖隔离，不能用终止名称或外部余额替代本账本毁损证明。",
+  "current_gap_reasons": {
+   "external_dependency": 4
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_2f1f06935e97569c371a::FCR-DESTROY",
+    "prop": {
+     "id": "property_62db1bcc774b326adf1c",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_494ecad52b0b0d7ef113",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "8815bad980df5c4bb4013a5a55df966a5d9e3389e1d8c8fd7e057cc726306309"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8836. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8836,
+       "length": 1004,
+       "ast_id": 994
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8836,
+      "length": 1004,
+      "ast_id": 994
+     },
+     "source_edge_ids": [
+      "bae198a9ae13f281212b0c8ffe089552532daeeebff6d0f245c8b2466ff688f5",
+      "f36dda1afe188f347815307e3ce78343d63e4bffcdaf24cca7e19b5e402e2c50"
+     ]
+    },
+    "evidence": [
+     "E16",
+     "E44",
+     "E56",
+     "E58",
+     "E86",
+     "E95"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_763321bdd4577645e412::FCR-DESTROY",
+    "prop": {
+     "id": "property_c36659a5fcdafc572a01",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_a18c26ba468ffecc7042",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "10c06c2f20f01f823dfd5474182e4795f4b82fbe759fecb950305200320f4553"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8836. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8836,
+       "length": 1004,
+       "ast_id": 994
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8836,
+      "length": 1004,
+      "ast_id": 994
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "ee166d26775f0f94d9b7f01c47aae5531ba08c3095d069395c1809fe30364895"
+     ]
+    },
+    "evidence": [
+     "E6",
+     "E37",
+     "E49",
+     "E53",
+     "E57",
+     "E89"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b80711223903d284da12::FCR-DESTROY",
+    "prop": {
+     "id": "property_62db1bcc774b326adf1c",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_494ecad52b0b0d7ef113",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "8815bad980df5c4bb4013a5a55df966a5d9e3389e1d8c8fd7e057cc726306309"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8836. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8836,
+       "length": 1004,
+       "ast_id": 994
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8836,
+      "length": 1004,
+      "ast_id": 994
+     },
+     "source_edge_ids": [
+      "bae198a9ae13f281212b0c8ffe089552532daeeebff6d0f245c8b2466ff688f5",
+      "f36dda1afe188f347815307e3ce78343d63e4bffcdaf24cca7e19b5e402e2c50"
+     ]
+    },
+    "evidence": [
+     "E2",
+     "E43",
+     "E55",
+     "E59",
+     "E62",
+     "E93"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_ecb670ad1197ae77255e::FCR-DESTROY",
+    "prop": {
+     "id": "property_c36659a5fcdafc572a01",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_a18c26ba468ffecc7042",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "10c06c2f20f01f823dfd5474182e4795f4b82fbe759fecb950305200320f4553"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8836. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8836,
+       "length": 1004,
+       "ast_id": 994
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8836,
+      "length": 1004,
+      "ast_id": 994
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "ee166d26775f0f94d9b7f01c47aae5531ba08c3095d069395c1809fe30364895"
+     ]
+    },
+    "evidence": [
+     "E12",
+     "E38",
+     "E50",
+     "E54",
+     "E85",
+     "E91"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 12,
+   "local_premises_feasible/sat": 2,
+   "direct_effect/sat": 2,
+   "prefix_reachability/sat": 4,
+   "baseline_usable/sat": 10,
+   "financial_block/sat": 4,
+   "financial_value_post_exclusion/unsat": 16,
+   "same_request_amount_change/unsat": 16,
+   "opened_by_change/sat": 4,
+   "both_usable/sat": 6,
+   "blocked_by_change/sat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_4b4775267823"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "55a1e2ef0f09｜U/47｜FuelToken；finalizeCrowdfund第379行由crowdfundAddress调用，将其余额移至platformAddress；并非“余额清零且总供应减少”；分配/解锁还含其他残余｜优先区分caller自有处分、募集储备转付及持有人真正损失。不能把这一转付写成销毁；其余作用尚未闭合，保留未核范围。",
+  "current_gap_reasons": {
+   "scope_missing": 2,
+   "external_dependency": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "audit_489ca3be0e9b284dfb::FCR-DESTROY",
+    "prop": {
+     "id": "property_0b50631f814ce20289d4",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "0e7de27432811ebd044045e6c76010aa92c6da13e3b462e38416f38c61f1a3cc",
+     "task": "FCR",
+     "content_sha256": "b049de93dda051700476e91cfbd86d0efc76d76221c55dbde0f26d4b59b5171c"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ],
+     "audit_card": {
+      "kind": "new_sink",
+      "check": "control_change_vs_outgoing",
+      "bound_effects": [
+       "w_bdc82fa6dcbedcea0adf"
+      ],
+      "source_relation_independent": false,
+      "semantic_reading_used": false
+     }
+    },
+    "evidence": [
+     "E2",
+     "E164",
+     "E175",
+     "E176",
+     "E177",
+     "E201"
+    ],
+    "version": 0
+   },
+   {
+    "id": "issue_89930f726aa192ffa2d8::FCR-DESTROY",
+    "prop": {
+     "id": "property_f8e6dd5c1898f931daa2",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "a4723b0f47eb67fe002b9139d5fd38218d1a64cb6a78c78b7186043be7761022"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ]
+    },
+    "evidence": [
+     "E7",
+     "E102",
+     "E105",
+     "E108",
+     "E160",
+     "E199"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_088f9545b9ffaf255e27",
+    "prop": {
+     "id": "property_0a19f2039aa69ab9fdb9",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_7d2a8507fb9f6168c2e2",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "8e158933083cd6d49bd8cce1f48f5e4f1c37019fb8d90c836b9ce48fb83e1447"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5163 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5163,
+       "length": 666,
+       "ast_id": 645
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5163,
+      "length": 666,
+      "ast_id": 645
+     }
+    },
+    "evidence": [
+     "E25",
+     "E51",
+     "E90",
+     "E93",
+     "E98",
+     "E167"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_4486ad203801b1b45bf2",
+    "prop": {
+     "id": "property_e65d04a9c321ea843985",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_7d2a8507fb9f6168c2e2",
+     "semantic_version": "0e7de27432811ebd044045e6c76010aa92c6da13e3b462e38416f38c61f1a3cc",
+     "task": "FCR",
+     "content_sha256": "e38011c7eb3cb22ad2c9f7cfc2f6792b31a0a1d0a817fb3052001fe9d2d065e1"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5163 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5163,
+       "length": 666,
+       "ast_id": 645
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5163,
+      "length": 666,
+      "ast_id": 645
+     }
+    },
+    "evidence": [
+     "E30",
+     "E61",
+     "E111",
+     "E138",
+     "E140",
+     "E170"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_6f1aae78d4d674aa80c2::FCR-DESTROY",
+    "prop": {
+     "id": "property_64c1a5a48ce5479d2699",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "f9573e5bad9502abf7036cb323bde8dd081d8d7c0f939c7379880190993f665d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ]
+    },
+    "evidence": [
+     "E12",
+     "E135",
+     "E137",
+     "E139",
+     "E141",
+     "E209"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_84f1bf959a9aff47c329::FCR-DESTROY",
+    "prop": {
+     "id": "property_61ca5dc15a27c467c87d",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "2e02d8c4c24cf659cd903cc0145dd83a398521f227c46864852317a57a750178"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ]
+    },
+    "evidence": [
+     "E16",
+     "E92",
+     "E112",
+     "E114",
+     "E116",
+     "E207"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_8731bacd52d348eeecf7::FCR-DESTROY",
+    "prop": {
+     "id": "property_6826404f77d0f32869fb",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "c99ecd5350a49322365335e4e306b34aba91b872fa588aba8010f5eef695383a",
+     "task": "FCR",
+     "content_sha256": "a8a1efa84015d1e9370fd2ded5f67daf4b73a5a9c0f2a892472535741c961fcb"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ]
+    },
+    "evidence": [
+     "E36",
+     "E188",
+     "E189",
+     "E191",
+     "E192",
+     "E211"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b5389632d1e6f789ec95",
+    "prop": {
+     "id": "property_f8e6dd5c1898f931daa2",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8f6da2021349eeb90dbe",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "a4723b0f47eb67fe002b9139d5fd38218d1a64cb6a78c78b7186043be7761022"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8249 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8249,
+       "length": 503,
+       "ast_id": 995
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8249,
+      "length": 503,
+      "ast_id": 995
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bc9e0ff0c757ca9e8f681aa62822a0ae599a40c65ade8b8c57b528e973001173"
+     ]
+    },
+    "evidence": [
+     "E19",
+     "E101",
+     "E104",
+     "E107",
+     "E110",
+     "E206"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_c43dfd1d49805aa8835e",
+    "prop": {
+     "id": "property_c948648c406d8b75718d",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_7d2a8507fb9f6168c2e2",
+     "semantic_version": "c99ecd5350a49322365335e4e306b34aba91b872fa588aba8010f5eef695383a",
+     "task": "FCR",
+     "content_sha256": "3a656a1d2786156686d375551f9036b43fb4da88501286356dd2e80087087a4d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5163 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5163,
+       "length": 666,
+       "ast_id": 645
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5163,
+      "length": 666,
+      "ast_id": 645
+     }
+    },
+    "evidence": [
+     "E39",
+     "E72",
+     "E134",
+     "E161",
+     "E163",
+     "E174"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d1e0868e4ae3fd02569d::FCR-DESTROY",
+    "prop": {
+     "id": "property_8687a91bd2eaafd5b324",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_3df0acff25f334b7632a",
+     "semantic_version": "c99ecd5350a49322365335e4e306b34aba91b872fa588aba8010f5eef695383a",
+     "task": "FCR",
+     "content_sha256": "e0c84e0871b3e319d248dcbfb8b62a1652b9afacc54050fc296d9daadd87a444"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 8758 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 8758,
+       "length": 876,
+       "ast_id": 1101
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_30231c053ba264a6d792"
+     ],
+     "facts": [
+      "fact_6934a8398cfaf030338c"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 8758,
+      "length": 876,
+      "ast_id": 1101
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E42",
+     "E46",
+     "E56",
+     "E79",
+     "E82"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 12,
+   "local_premises_feasible/sat": 8,
+   "direct_effect/sat": 6,
+   "direct_effect/unsat": 2,
+   "financial_value_post_exclusion/unsat": 37,
+   "same_request_amount_change/unsat": 37,
+   "baseline_usable/sat": 10,
+   "blocked_by_change/sat": 3,
+   "both_usable/sat": 8,
+   "blocked_by_change/unsat": 1,
+   "financial_value_post_exclusion/sat": 5,
+   "financial_value/sat": 5,
+   "opened_by_change/sat": 4,
+   "both_usable/unsat": 2,
+   "opened_by_change/unsat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT"
+  ],
+  "member": "RQ1_55a1e2ef0f09"
+ },
+ {
+  "current_review": "本批实际scoped_final_holder_loss得到SAT且uncompensated_debit被compose消费，最终指定DESTROY报警。原owner受控、同holder余额/供应下降的源码相同，是本批唯一指定FCR风险端新增命中。",
+  "prior_source_review_reused_after_input_hash_match": "5b3469baa447｜N/12｜CSC burnFrom第45行，owner守卫，指定holder余额与总供应下降，同时清lockedBalances；op_0f5bb77df0045e5c93bb、源码字节1755/382；多项DESTROY检查仍scope_missing，覆盖却reviewed/source_task_reading｜优先工程修复。确认阴性依据不足；直接扣减、角色和金额guard需一起接通，不能只将N改U算完成。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "audit_b3cf46f6d87540d921::FCR-DESTROY",
+    "prop": {
+     "id": "property_4fc6ccf86d47a6fef9e6",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b45dc580fc8f0217951bb65d08d915515933bbe7888357eba65ec116544efcad"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "audit_card": {
+      "kind": "holder_consent_scope",
+      "check": "allowance_scope",
+      "bound_effects": [
+       "w_2c2c33d0f9d63dcaa738"
+      ],
+      "source_relation_independent": true,
+      "semantic_reading_used": false
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E15"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_2170a7fe9e36e0081d2e",
+    "prop": {
+     "id": "property_f4dfc3aae1a7a9d35a3c",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_3461f970ced06b402b92",
+     "semantic_version": "719ccf40f6c2017e3dd5f9bc51c9a9556c4e9e590d2f93fd7cfe3dcb0632b590",
+     "task": "FCR",
+     "content_sha256": "b61df1215a50ec6e7b90434da8aa9bff3f5d83a52f7737c1f280203eb33eedd9"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 1069 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1069,
+       "length": 680,
+       "ast_id": 218
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1069,
+      "length": 680,
+      "ast_id": 218
+     }
+    },
+    "evidence": [
+     "E35",
+     "E57",
+     "E73",
+     "E85"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_596f42f34aad93a918b2",
+    "prop": {
+     "id": "property_4fc6ccf86d47a6fef9e6",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b45dc580fc8f0217951bb65d08d915515933bbe7888357eba65ec116544efcad"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E18"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_8878e79e5e8c4edd4fd4",
+    "prop": {
+     "id": "property_d0adec3c4237bfdddeb8",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_3461f970ced06b402b92",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "7b3d988111897ea3d11ae3f426b36ef042e7b90f42562449d7ac20dcf530ee3d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 1069 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1069,
+       "length": 680,
+       "ast_id": 218
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1069,
+      "length": 680,
+      "ast_id": 218
+     }
+    },
+    "evidence": [
+     "E6",
+     "E45",
+     "E61",
+     "E79"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_cd16d8fcd19316975716::FCR-DESTROY",
+    "prop": {
+     "id": "property_162df1c2d578c64775b1",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "5cd2350f43459a79d06242d90113ae48d995f7970f559b83ad4ef90ec7516415"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E22"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d25cbb726e32caf40790::FCR-DESTROY",
+    "prop": {
+     "id": "property_e543cf39081cdf59e885",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "719ccf40f6c2017e3dd5f9bc51c9a9556c4e9e590d2f93fd7cfe3dcb0632b590",
+     "task": "FCR",
+     "content_sha256": "d55a2bd60be26069cb7287270d2cf313159cb687073b136cecb201bfbdb6214c"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E32"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_dd423e161b5f4a57347e::FCR-DESTROY",
+    "prop": {
+     "id": "property_b583e44343567369dea4",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "ca3448a1781ee111dc76db0604bec7ff73999818c3908ae37801b42ed1caecca"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E26"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_eb02fa4d52afd46661a1::FCR-DESTROY",
+    "prop": {
+     "id": "property_5f849e3a749323759f15",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0f5bb77df0045e5c93bb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b9eefdff0c96b073c43a2cbacd58682b60c9fcd9756470ff9bd1a3fbf21d8394"
+    },
+    "reasons": [],
+    "decision": {
+     "status": "risk",
+     "reason": "uncompensated_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 2011 under financial_right. The qualified operation reduces another holder's position without a matching credit on this source branch.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     ],
+     "effects": [
+      "w_2c2c33d0f9d63dcaa738"
+     ],
+     "rules": [],
+     "supports": [
+      "support_e427483ff38c7ac714d4"
+     ],
+     "facts": [
+      "fact_325349b5f935e66f7561"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1755,
+      "length": 382,
+      "ast_id": 279
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 2011,
+      "length": 24,
+      "ast_id": 258
+     },
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "same_holder_unit_final_loss_and_applicable_consent",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 2011,
+       "length": 24,
+       "ast_id": 258
+      }
+     }
+    },
+    "evidence": [
+     "E29"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "scoped_final_holder_loss/sat": 5,
+   "control_transition_preservation/sat": 16,
+   "prefix_reachability/sat": 13,
+   "local_premises_feasible/sat": 5,
+   "direct_effect/unsat": 5,
+   "financial_value_post_exclusion/unsat": 12,
+   "same_request_amount_change/unsat": 14,
+   "baseline_usable/sat": 4,
+   "opened_by_change/unsat": 2,
+   "both_usable/sat": 4,
+   "opened_by_change/sat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_5b3469baa447"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "6eeaddaeac8f｜U/162｜MetaMoonMars；实际转账扣gross并以变化后的net检查许可，费用/同意basis未闭合；44次solver timeout，程序约900.25秒｜有计算和语义双重缺口。先复用同一grant签发/核查/消耗的数量，定向查询，不增加gross公理或预算；不能全归因为时间不足。",
+  "current_gap_reasons": {
+   "holder_consent_basis_unresolved": 1,
+   "role_provenance_unresolved": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_73c6a0cab48b3e594745::FCR-DESTROY",
+    "prop": {
+     "id": "property_a43fb5aef2a01fa49489",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_25e0bb5f1e4aef223f77",
+     "semantic_version": "9a567453dd77e5c8fced2a610925b12b98e79230218b4994619463fa2ce5d527",
+     "task": "FCR",
+     "content_sha256": "61605fc54e726358080ac7be5489b4c1cba3e7bddd8fcc0aba0ce1f469bd806d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The matched holder allowance uses the net request and its disclosed fee. The authorization may be zero on the pertinent debit; the recorded net interpretation alone cannot exclude loss.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5077,
+       "length": 363,
+       "ast_id": 506
+      }
+     ],
+     "effects": [
+      "w_5728669f1f79afbb9c1d"
+     ],
+     "rules": [],
+     "supports": [
+      "support_f00e0d0d6f7df9ee719b"
+     ],
+     "facts": [
+      "fact_83022b83abab8e242906"
+     ],
+     "meanings": [
+      "net_request_with_fee"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5077,
+      "length": 363,
+      "ast_id": 506
+     }
+    },
+    "evidence": [
+     "E11",
+     "E22",
+     "E25",
+     "E27",
+     "E28",
+     "E34",
+     "E37",
+     "E39",
+     "E50"
+    ],
+    "version": 1
+   },
+   {
+    "id": "scope_82bcf8e5f036cd4e1ee5",
+    "prop": {
+     "id": "property_d19bbd7ebbc8437d608f",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d8800a8226a13150014d",
+     "semantic_version": "9a567453dd77e5c8fced2a610925b12b98e79230218b4994619463fa2ce5d527",
+     "task": "FCR",
+     "content_sha256": "f59c58afa1ec31d27e066e8d1429f02c0bf3326b2dcb1b3736a7a81bde983f16"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "scoped_fee_consent",
+     "explanation": "The matched holder allowance uses the net request and its disclosed fee. The applicable check excludes an uncompensated debit under that effective grant.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5446,
+       "length": 1905,
+       "ast_id": 696
+      }
+     ],
+     "effects": [
+      "w_5728669f1f79afbb9c1d"
+     ],
+     "rules": [],
+     "supports": [
+      "support_f00e0d0d6f7df9ee719b"
+     ],
+     "facts": [
+      "fact_83022b83abab8e242906"
+     ],
+     "meanings": [
+      "net_request_with_fee"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5446,
+      "length": 1905,
+      "ast_id": 696
+     }
+    },
+    "evidence": [
+     "E4",
+     "E19",
+     "E29",
+     "E40",
+     "E44",
+     "E59"
+    ],
+    "version": 1
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/unsat": 10,
+   "control_transition_preservation/sat": 7,
+   "prefix_reachability/unsat": 9,
+   "prefix_reachability/sat": 3,
+   "baseline_usable/sat": 14,
+   "financial_block/unknown": 9,
+   "financial_block/sat": 1,
+   "financial_value/unsat": 6,
+   "financial_value_post_exclusion/unsat": 4,
+   "same_request_amount_change/sat": 3,
+   "opened_by_change/sat": 3,
+   "both_usable/sat": 4,
+   "financial_value_post_exclusion/sat": 2,
+   "financial_consent_unresolved/sat": 2,
+   "blocked_by_change/sat": 1,
+   "two_distinct_holders_blocked_same_change/sat": 1,
+   "same_right_alternative_after_change/sat": 1,
+   "same_request_amount_change/unsat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_6eeaddaeac8f"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "8e4c324fa1c9｜U/80｜LcsChain burnFrom第201行有owner守卫，并核/消耗holder同键allowance；已有covered_holder_grant局部依据，另有scope_missing/external缺口｜保护同范围许可，补真实未决的定位。不能因为指定类参考为风险就取消有效授权反证。",
+  "current_gap_reasons": {
+   "external_dependency": 1,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "issue_2f439899d44853cfa1c1::FCR-DESTROY",
+    "prop": {
+     "id": "property_4110a7612fce3dfe26cb",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d2fdfe0fc09b2cfe45a5",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "6affd0d7e6f055d10b39172c75b182caed1ce0a93091d9d6a6bfea288daf6a29"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5919 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     ],
+     "effects": [
+      "w_976fc6dcd2421f74072b"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5584,
+      "length": 502,
+      "ast_id": 828
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 5919,
+      "length": 26,
+      "ast_id": 805
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bb75f4cccc1ae41ac8685a45db69dd03671ea3e71f83d0065abfa77d024a20ae"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     }
+    },
+    "evidence": [
+     "E20",
+     "E109",
+     "E199",
+     "E205",
+     "E214",
+     "E219",
+     "E340"
+    ],
+    "version": 0
+   },
+   {
+    "id": "issue_d85c198db5b6b170d098::FCR-DESTROY",
+    "prop": {
+     "id": "property_8fd7ece71738c20b670e",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_c31c2612aa53b9a908bf",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "bf9073eeada5ad584487f6cb14bcfc107b74312c1c2776bd345bd33f2219a85c"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5449 under financial_right. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5449,
+       "length": 31,
+       "ast_id": 737
+      }
+     ],
+     "effects": [
+      "w_51198bc5f0e87ed4bf0c"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5217,
+      "length": 361,
+      "ast_id": 752
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E3",
+     "E106",
+     "E353",
+     "E356",
+     "E358",
+     "E360",
+     "E362"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_2772dc92a618b588e14c::FCR-DESTROY",
+    "prop": {
+     "id": "property_4b36bd7265d4efdc6752",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_c31c2612aa53b9a908bf",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "0d5bab7684b962bd3b7d85457d980755fd13a79af6509b79bb73f7ba535cabb3"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5449 under financial_right. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5449,
+       "length": 31,
+       "ast_id": 737
+      }
+     ],
+     "effects": [
+      "w_51198bc5f0e87ed4bf0c"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5217,
+      "length": 361,
+      "ast_id": 752
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E8",
+     "E94",
+     "E297",
+     "E315",
+     "E317",
+     "E321",
+     "E324"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_29bf09832c4158705baa::FCR-DESTROY",
+    "prop": {
+     "id": "property_c98c15d776a0ba2e6a82",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d2fdfe0fc09b2cfe45a5",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "7921cb8971e227eb46cf338d0157c3dca7e21fed72066f709fc3aceea6c3b013"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5919 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     ],
+     "effects": [
+      "w_976fc6dcd2421f74072b"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5584,
+      "length": 502,
+      "ast_id": 828
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 5919,
+      "length": 26,
+      "ast_id": 805
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bb75f4cccc1ae41ac8685a45db69dd03671ea3e71f83d0065abfa77d024a20ae"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     }
+    },
+    "evidence": [
+     "E25",
+     "E97",
+     "E277",
+     "E295",
+     "E299",
+     "E302",
+     "E305"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_35fb4ce2f947be820427::FCR-DESTROY",
+    "prop": {
+     "id": "property_c98c15d776a0ba2e6a82",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d2fdfe0fc09b2cfe45a5",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "7921cb8971e227eb46cf338d0157c3dca7e21fed72066f709fc3aceea6c3b013"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5919 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     ],
+     "effects": [
+      "w_976fc6dcd2421f74072b"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5584,
+      "length": 502,
+      "ast_id": 828
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 5919,
+      "length": 26,
+      "ast_id": 805
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "unclassified_diagnostic",
+      "bb75f4cccc1ae41ac8685a45db69dd03671ea3e71f83d0065abfa77d024a20ae"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     }
+    },
+    "evidence": [
+     "E61",
+     "E98",
+     "E276",
+     "E296",
+     "E303",
+     "E306",
+     "E357"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_7124d771b8b465d3b12d",
+    "prop": {
+     "id": "property_f435e08283591a6470c1",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_c31c2612aa53b9a908bf",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b5e402f26349bb10412a7e9f8f1ce97644c8ab53014f5eb4d59a94c30a1bd2f9"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5449 under financial_right. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5449,
+       "length": 31,
+       "ast_id": 737
+      }
+     ],
+     "effects": [
+      "w_51198bc5f0e87ed4bf0c"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5217,
+      "length": 361,
+      "ast_id": 752
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E11",
+     "E84",
+     "E210",
+     "E215",
+     "E220",
+     "E224",
+     "E232"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_8f4b55e3c4f12a8cdf86::FCR-DESTROY",
+    "prop": {
+     "id": "property_b3e2330deff2f4f5f576",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d2fdfe0fc09b2cfe45a5",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "d74566d86cf1cb9d6610b0acbe540b1769daf62c914cdc45e79c3e4e54eecbf4"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5919 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     ],
+     "effects": [
+      "w_976fc6dcd2421f74072b"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5584,
+      "length": 502,
+      "ast_id": 828
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 5919,
+      "length": 26,
+      "ast_id": 805
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bb75f4cccc1ae41ac8685a45db69dd03671ea3e71f83d0065abfa77d024a20ae"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     }
+    },
+    "evidence": [
+     "E29",
+     "E87",
+     "E223",
+     "E231",
+     "E240",
+     "E244",
+     "E247"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_97b851516af86dcd80c2::FCR-DESTROY",
+    "prop": {
+     "id": "property_eed3022fd2ecd29b31d2",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_e8012618283f99842059",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "4c60bf25edc4332347d441cc94abd3e9ac4b03b404702711ab360879c23f9c31"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 6092 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6092,
+       "length": 333,
+       "ast_id": 875
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6092,
+      "length": 333,
+      "ast_id": 875
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E37",
+     "E85",
+     "E102",
+     "E142",
+     "E147",
+     "E153",
+     "E158",
+     "E227"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_a38e1b6bb4c618636624",
+    "prop": {
+     "id": "property_7e11a65bfb69cf2e7768",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_7a0a7b95ed83d2f3c10c",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "1ab271d694016ad720159fc1ef69f0ea556f1424dff3077b568d026d90a7bf18"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 3293 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 3293,
+       "length": 779,
+       "ast_id": 543
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 3293,
+      "length": 779,
+      "ast_id": 543
+     }
+    },
+    "evidence": [
+     "E64",
+     "E83",
+     "E143",
+     "E191",
+     "E203",
+     "E239",
+     "E243",
+     "E310"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_baa5bbb214100ddf6bf1",
+    "prop": {
+     "id": "property_4110a7612fce3dfe26cb",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d2fdfe0fc09b2cfe45a5",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "6affd0d7e6f055d10b39172c75b182caed1ce0a93091d9d6a6bfea288daf6a29"
+    },
+    "reasons": [
+     "covered_holder_grant"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "covered_holder_grant",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5919 under financial_right. The issuer key belongs to the debited holder and the same spender consumes an allowance covering the actual debit.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     ],
+     "effects": [
+      "w_976fc6dcd2421f74072b"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right",
+      "dependency_proved_irrelevant"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5584,
+      "length": 502,
+      "ast_id": 828
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 5919,
+      "length": 26,
+      "ast_id": 805
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "bb75f4cccc1ae41ac8685a45db69dd03671ea3e71f83d0065abfa77d024a20ae"
+     ],
+     "source_relation": {
+      "family": "final_holder_debit",
+      "duty": "ordered_holder_cap_and_same_ledger_net_loss",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5919,
+       "length": 26,
+       "ast_id": 805
+      }
+     }
+    },
+    "evidence": [
+     "E32",
+     "E81",
+     "E198",
+     "E204",
+     "E209",
+     "E213",
+     "E218"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_bd417242acad3dc58d34::FCR-DESTROY",
+    "prop": {
+     "id": "property_02f05ec427ad41b25a74",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_c31c2612aa53b9a908bf",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "5a91a3cc2d9078a82e9800e8c28f5695a1381ef123f0fb4c77f8028650caa5d2"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5449 under financial_right. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5449,
+       "length": 31,
+       "ast_id": 737
+      }
+     ],
+     "effects": [
+      "w_51198bc5f0e87ed4bf0c"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5217,
+      "length": 361,
+      "ast_id": 752
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E16",
+     "E80",
+     "E237",
+     "E245",
+     "E248",
+     "E252",
+     "E258"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_c76cfa4bfe0bcba1f5b3::FCR-DESTROY",
+    "prop": {
+     "id": "property_bcee91c8fdb7408d0d5a",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_c31c2612aa53b9a908bf",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "d83d99448260b86a504e440939cbde2340109f6cffcd89c48c29a8b0934a5b95"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5449 under financial_right. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5449,
+       "length": 31,
+       "ast_id": 737
+      }
+     ],
+     "effects": [
+      "w_51198bc5f0e87ed4bf0c"
+     ],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5217,
+      "length": 361,
+      "ast_id": 752
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E51",
+     "E115",
+     "E379",
+     "E384",
+     "E386",
+     "E387",
+     "E388"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_dc2dc4678118b3035bc9",
+    "prop": {
+     "id": "property_7e11a65bfb69cf2e7768",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_7a0a7b95ed83d2f3c10c",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "1ab271d694016ad720159fc1ef69f0ea556f1424dff3077b568d026d90a7bf18"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 3293 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 3293,
+       "length": 779,
+       "ast_id": 543
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 3293,
+      "length": 779,
+      "ast_id": 543
+     }
+    },
+    "evidence": [
+     "E48",
+     "E82",
+     "E144",
+     "E155",
+     "E202",
+     "E238",
+     "E242",
+     "E309"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_fac1fd4bb69a590fe4f4::FCR-DESTROY",
+    "prop": {
+     "id": "property_eed3022fd2ecd29b31d2",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_e8012618283f99842059",
+     "semantic_version": "7e8bc4df07b5007934e632dd98fffe534fb4c46e6820ece5c84a570b25a0b8e1",
+     "task": "FCR",
+     "content_sha256": "4c60bf25edc4332347d441cc94abd3e9ac4b03b404702711ab360879c23f9c31"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 6092 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6092,
+       "length": 333,
+       "ast_id": 875
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_c805b07018e69001d5aa"
+     ],
+     "facts": [
+      "fact_7e7ae042e4b251787f31"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6092,
+      "length": 333,
+      "ast_id": 875
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E57",
+     "E86",
+     "E101",
+     "E148",
+     "E154",
+     "E201",
+     "E207",
+     "E229"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 15,
+   "productive_control_transition/sat": 2,
+   "local_premises_feasible/sat": 17,
+   "direct_effect/unsat": 16,
+   "direct_effect/sat": 1,
+   "financial_value_post_exclusion/unsat": 71,
+   "same_request_amount_change/unsat": 71,
+   "baseline_usable/sat": 18,
+   "blocked_by_change/sat": 6,
+   "both_usable/sat": 18,
+   "blocked_by_change/unsat": 3,
+   "two_distinct_holders_blocked_same_change/sat": 2,
+   "same_right_alternative_after_change/sat": 7,
+   "two_distinct_holders_blocked_same_change/unsat": 5,
+   "same_right_alternative_after_change/unsat": 7,
+   "opened_by_change/sat": 5,
+   "financial_value_post_exclusion/sat": 8,
+   "financial_value/sat": 8,
+   "opened_by_change/unsat": 4,
+   "prefix_reachability/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-PAUSE",
+   "FCR-FREEZE"
+  ],
+  "member": "RQ1_8e4c324fa1c9"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "b472a9a0647e｜U/463｜ColorCoin；balance用途聚合accounts与investors.lockedAmount；distribute/doUnlock_Admin包含锁仓与可用账目迁移，循环残余｜最终权益必须合并同人可得余额，不能把lockedAmount单降当净毁损。存在实现范围缺口，尚未确认具体无补偿损失。",
+  "current_gap_reasons": {
+   "external_dependency": 13,
+   "scope_missing": 2
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_1d83bb5f56e14ca18d7a::FCR-DESTROY",
+    "prop": {
+     "id": "property_737867285a75c2232b8b",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0d6be8b3922aac35947b",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "f45ebd036adc1bf702ee8a04dffc22c2c8b63cdf62cd44ca8cd8d57520e9f9c7"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 34852. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 34852,
+       "length": 545,
+       "ast_id": 3310
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 34852,
+      "length": 545,
+      "ast_id": 3310
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E58",
+     "E135",
+     "E159",
+     "E174",
+     "E181",
+     "E188",
+     "E226",
+     "E228",
+     "E242",
+     "E244",
+     "E254",
+     "E256",
+     "E266",
+     "E268",
+     "E278",
+     "E280",
+     "E290",
+     "E292",
+     "E302",
+     "E304"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_5b2295f6407c54957e67::FCR-DESTROY",
+    "prop": {
+     "id": "property_93fa13cc6c34dca08c2a",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_b017a923516e41db3b74",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "f638c055fa199992c6cb84d5e78c08c3f4eb3ad629fdab026565c6d2f3518540"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 34512. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 34512,
+       "length": 227,
+       "ast_id": 3229
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 34512,
+      "length": 227,
+      "ast_id": 3229
+     }
+    },
+    "evidence": [
+     "E78",
+     "E143",
+     "E177",
+     "E184",
+     "E196",
+     "E201",
+     "E205",
+     "E236"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b6500a152fc73b762273::FCR-DESTROY",
+    "prop": {
+     "id": "property_d04d5b5ffddeb6b8aec1",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0b77f511032d692051f8",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "0ae94ecd2818ef4c6d437f2eb4fa92f17b2208c82c5c7a4304e987192d567fa6"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 34512. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 34512,
+       "length": 227,
+       "ast_id": 3229
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 34512,
+      "length": 227,
+      "ast_id": 3229
+     }
+    },
+    "evidence": [
+     "E65",
+     "E139",
+     "E176",
+     "E190",
+     "E194",
+     "E200",
+     "E204",
+     "E231"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b696e3c6f499bb1d9bfa::FCR-DESTROY",
+    "prop": {
+     "id": "property_b2e0d6547a7dbd241d39",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0d8cd80b1903f6ae91d5",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "7e123491957be857f0d4d5c6ff1e5add970fea5a257b5b9316c367658dabf9f5"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 34852. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 34852,
+       "length": 545,
+       "ast_id": 3310
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 34852,
+      "length": 545,
+      "ast_id": 3310
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ]
+    },
+    "evidence": [
+     "E68",
+     "E136",
+     "E160",
+     "E182",
+     "E189",
+     "E193",
+     "E207",
+     "E219",
+     "E239",
+     "E243",
+     "E249",
+     "E255",
+     "E261",
+     "E267",
+     "E273",
+     "E279",
+     "E285",
+     "E291",
+     "E297",
+     "E303",
+     "E309"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 9,
+   "local_premises_feasible/sat": 6,
+   "direct_effect/unsat": 4,
+   "direct_effect/sat": 2,
+   "baseline_usable/sat": 18,
+   "opened_by_change/sat": 8,
+   "both_usable/sat": 18,
+   "financial_value_post_exclusion/unsat": 300,
+   "same_request_amount_change/unsat": 332,
+   "financial_value/unsat": 332,
+   "blocked_by_change/unsat": 4,
+   "blocked_by_change/sat": 6,
+   "financial_value_post_exclusion/sat": 12,
+   "financial_consent_unresolved/unsat": 8
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT"
+  ],
+  "member": "RQ1_b472a9a0647e"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "eb22e4884871｜U/52｜EligmaTokenContract；burn第349行为caller自身，killContract第388行，approve/callback等外部残余｜同族处理。源码反例与未决外部作用分别保留，不预估为纯工程TP。",
+  "current_gap_reasons": {
+   "external_dependency": 4,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_0da3d1b599152ae912a6::FCR-DESTROY",
+    "prop": {
+     "id": "property_3830db13afc9c184722d",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0c9f7bc86a64f71e4279",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "102b9cb8bc6ae8846f44647787065522262e61655dd0d4737c96245c4b255e27"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 10428. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 10428,
+       "length": 928,
+       "ast_id": 1099
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 10428,
+      "length": 928,
+      "ast_id": 1099
+     }
+    },
+    "evidence": [
+     "E26",
+     "E64",
+     "E68",
+     "E73",
+     "E78"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_7c4978635ef8cdd0f04f",
+    "prop": {
+     "id": "property_e08e0d0d03588a44e5d7",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_54caca82e4ed5cc8a91f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b186ee7e78ee349efac1775b4db1ada25199b72c228c426e26953419aed4e5f7"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5844. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5844,
+       "length": 1472,
+       "ast_id": 693
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5844,
+      "length": 1472,
+      "ast_id": 693
+     }
+    },
+    "evidence": [
+     "E19",
+     "E47",
+     "E86",
+     "E91",
+     "E96",
+     "E134"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d4f5d59862ed4792f717",
+    "prop": {
+     "id": "property_e08e0d0d03588a44e5d7",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_54caca82e4ed5cc8a91f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b186ee7e78ee349efac1775b4db1ada25199b72c228c426e26953419aed4e5f7"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5844. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5844,
+       "length": 1472,
+       "ast_id": 693
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5844,
+      "length": 1472,
+      "ast_id": 693
+     }
+    },
+    "evidence": [
+     "E13",
+     "E46",
+     "E85",
+     "E89",
+     "E95",
+     "E133"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_f7d2c1cce685621f97a3::FCR-DESTROY",
+    "prop": {
+     "id": "property_0d9549f8e9b127289b67",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_fec8fc233e6edcb6afee",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "10fac6911963145c58cb0e42af3d5bb26a1f5808b3084e125e13d73a0453bf27"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 10428. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 10428,
+       "length": 928,
+       "ast_id": 1099
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 10428,
+      "length": 928,
+      "ast_id": 1099
+     }
+    },
+    "evidence": [
+     "E30",
+     "E59",
+     "E67",
+     "E72",
+     "E82"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_fc5f25b3c68dc9a9889e",
+    "prop": {
+     "id": "property_e08e0d0d03588a44e5d7",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_54caca82e4ed5cc8a91f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "b186ee7e78ee349efac1775b4db1ada25199b72c228c426e26953419aed4e5f7"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 5844. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 5844,
+       "length": 1472,
+       "ast_id": 693
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5844,
+      "length": 1472,
+      "ast_id": 693
+     }
+    },
+    "evidence": [
+     "E15",
+     "E45",
+     "E84",
+     "E90",
+     "E94",
+     "E132"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 6,
+   "prefix_reachability/sat": 4,
+   "baseline_usable/sat": 9,
+   "financial_block/sat": 4,
+   "local_premises_feasible/sat": 2,
+   "direct_effect/sat": 2,
+   "opened_by_change/sat": 4,
+   "both_usable/sat": 5,
+   "financial_value_post_exclusion/unsat": 16,
+   "same_request_amount_change/unsat": 16,
+   "blocked_by_change/sat": 1,
+   "two_distinct_holders_blocked_same_change/sat": 1,
+   "same_right_alternative_after_change/unsat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_eb22e4884871"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "eb30c6dee989｜U/33｜Dragon burnDragons第110行扣caller自身；burnFrom第254行有同键额度检查及消耗；局部voluntary_holder_debit，另有外调缺口｜保留这些正常依据。没有发现可直接替代为无同意第三方销毁的证据，整份未知不得强制报警。",
+  "current_gap_reasons": {
+   "external_dependency": 2
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_ee200052bfa462294721::FCR-DESTROY",
+    "prop": {
+     "id": "property_479abf13c77be206a03e",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_a26dcb449803ad6097fb",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "03a66b699ffc791fa484ff7a418fb4469f13d2354d9e7f6c6aaf27f94e9820e6"
+    },
+    "reasons": [
+     "voluntary_holder_debit"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "voluntary_holder_debit",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 3607. The caller reduces their own account on this committing path; this does not establish a privileged loss for another holder.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 3607,
+       "length": 32,
+       "ast_id": 368
+      }
+     ],
+     "effects": [
+      "w_7480550527b989ec52a4"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 3205,
+      "length": 595,
+      "ast_id": 387
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "d3e57f616d62d0001af2748b64c20873d42c62d7c687208865dc3f57d8ef7f1b"
+     ]
+    },
+    "evidence": [
+     "E2",
+     "E4",
+     "E8",
+     "E9",
+     "E11",
+     "E12"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 3,
+   "local_premises_feasible/sat": 2,
+   "direct_effect/unsat": 2,
+   "baseline_usable/sat": 1,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 1,
+   "two_distinct_holders_blocked_same_change/unsat": 1,
+   "same_right_alternative_after_change/sat": 2,
+   "financial_value_post_exclusion/sat": 4,
+   "financial_value/unsat": 8,
+   "same_request_amount_change/unsat": 8,
+   "financial_value_post_exclusion/unsat": 3,
+   "financial_value/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-TRANSFER"
+  ],
+  "member": "RQ1_eb30c6dee989"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "f922252cd038｜U/101｜ApodTokenContract；burn第322行仍为caller自身，killContract第361行终止，外部资产回调未闭合｜与328c同族处理。未证明存在可按当前定义报告的独立第三方净毁损，不承诺报警。",
+  "current_gap_reasons": {
+   "external_dependency": 4
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_1fc4c0b9e28b675a9403::FCR-DESTROY",
+    "prop": {
+     "id": "property_4795314703f4c8c5db77",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_0c9f7bc86a64f71e4279",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "27b017503866b2aa2da617a5ea85549790379e478ae725681f442e172b23d06e"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 9509. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 9509,
+       "length": 921,
+       "ast_id": 1030
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 9509,
+      "length": 921,
+      "ast_id": 1030
+     }
+    },
+    "evidence": [
+     "E12",
+     "E30",
+     "E32",
+     "E36",
+     "E40"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_4e665101113fce2c62f5::FCR-DESTROY",
+    "prop": {
+     "id": "property_ab4d45f216f59665613c",
+     "category": "FCR-DESTROY",
+     "original_category": "FCR-MINT",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_8b1be4c8125438e4e45b",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "997e7c65eaee5c4eb8e248a75e3685ddf6bf84d3c6d3aca64f1a4a0a12b4d6d0"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns an uncompensated loss of another holder's entitlement at source offset 9509. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 9509,
+       "length": 921,
+       "ast_id": 1030
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 9509,
+      "length": 921,
+      "ast_id": 1030
+     }
+    },
+    "evidence": [
+     "E8",
+     "E29",
+     "E31",
+     "E33",
+     "E35"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 10,
+   "prefix_reachability/sat": 4,
+   "baseline_usable/sat": 6,
+   "financial_block/sat": 4,
+   "local_premises_feasible/sat": 2,
+   "direct_effect/sat": 2,
+   "opened_by_change/sat": 2,
+   "both_usable/sat": 2,
+   "financial_value_post_exclusion/unsat": 16,
+   "same_request_amount_change/unsat": 16
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_f922252cd038"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "185a84436c18｜U/0｜CREDITS。setFrozen第79行；transfer第144行与transferFrom第169行有Frozen、个体豁免和日期的真实AND/OR，后续还登记持有人数组。当前检查scope_missing，solver=0。优先修ordinary_control_uses/ledger_routes的形状与角色来源，随后在同holder同请求上处理普通可得豁免和提交。数组记账若能引起回滚仍须保留，不能见到余额扣记就删其后果。当前证据不支持再增solver时限来解决。",
+  "current_gap_reasons": {
+   "external_dependency": 5,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_d43710407c163a9c55cf",
+    "prop": {
+     "id": "property_93c8c6c8461d09f2295b",
+     "category": "FCR-PAUSE",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_ca5661015a55e11bc96f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "c0f010be8e6f54219f927306b13b74993506f34d53001c810726a578e39352e2"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a common restriction on ordinary outgoing transfers at source offset 2684. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2684,
+       "length": 213,
+       "ast_id": 304
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 2684,
+      "length": 213,
+      "ast_id": 304
+     }
+    },
+    "evidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_185a84436c18"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "e390407a4c29｜U/0｜PrivateDeposit。disableTransfers第37行控制transfer_test第44行的balance_test；原生币Deposit/CashOut使用另一balances表。必须分账，但不能新要求真实部署存款或已初始化owner_test才分析。roles.py第97—99行已允许FCR条件域中的未显式初始化地址作abstract_initial_role；初态合同不因函数名test改变。transfersEnabled是显式false，须有合法启用前态，不可直接假定true。推荐用同账本转账用途与条件正额余额验证单位/基线，并以显式零角色或确实无法启用的结构作反对照。结果仍须离线消费者证明，不能本审核先判TP。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "audit_cf551fcae16e640042",
+    "prop": {
+     "id": "property_9a8c78b94fe9b096e136",
+     "category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_b071911c2fc67252df36",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "f412995bc04c1dd75989454c774217222561e42f520b85956882f35efbc48826"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a common restriction on ordinary outgoing transfers at source offset 879. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 879,
+       "length": 183,
+       "ast_id": 108
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 879,
+      "length": 183,
+      "ast_id": 108
+     },
+     "audit_card": {
+      "kind": "authorization_scope",
+      "check": "actual_call_reachability",
+      "bound_effects": [
+       "w_3f293368acb815581a5b"
+      ],
+      "source_relation_independent": false,
+      "semantic_reading_used": false
+     }
+    },
+    "evidence": [
+     "E2",
+     "E7",
+     "E12"
+    ],
+    "version": 0
+   },
+   {
+    "id": "issue_784af3fcc1ef9087bd55",
+    "prop": {
+     "id": "property_9a8c78b94fe9b096e136",
+     "category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_b071911c2fc67252df36",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "f412995bc04c1dd75989454c774217222561e42f520b85956882f35efbc48826"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a common restriction on ordinary outgoing transfers at source offset 879. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 879,
+       "length": 183,
+       "ast_id": 108
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 879,
+      "length": 183,
+      "ast_id": 108
+     }
+    },
+    "evidence": [
+     "E3",
+     "E8",
+     "E11"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_224d51ed33e4296a43c0",
+    "prop": {
+     "id": "property_4e3ab0d2a0d98b9ccffb",
+     "category": "FCR-PAUSE",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_b071911c2fc67252df36",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "7f4f968d501c3162a717c0f0998a4d48b0bff0b4909f25b15aa236b5187b01d1"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a common restriction on ordinary outgoing transfers at source offset 879. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 879,
+       "length": 183,
+       "ast_id": 108
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 879,
+      "length": 183,
+      "ast_id": 108
+     }
+    },
+    "evidence": [
+     "E4",
+     "E9",
+     "E14"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_c49581ba85b0d33cace1",
+    "prop": {
+     "id": "property_773ff786b1cf0d05a5a4",
+     "category": "FCR-PAUSE",
+     "original_category": "FCR-PAUSE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_ef1ff796b6311737dc54",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "410ccda44a4904a53729606bd48f04cf883f29104da264d026da38e01e5343c4"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a common restriction on ordinary outgoing transfers at source offset 1068 under financial_right. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1068,
+       "length": 489,
+       "ast_id": 181
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [
+      "support_aab8178325ae7afe6d1d"
+     ],
+     "facts": [
+      "fact_0c7dbc32ee0eff32e544"
+     ],
+     "meanings": [
+      "financial_right"
+     ],
+     "origins": [
+      "source_observation",
+      "verified_service"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1068,
+      "length": 489,
+      "ast_id": 181
+     }
+    },
+    "evidence": [
+     "E5",
+     "E17",
+     "E18",
+     "E21"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_e390407a4c29"
+ },
+ {
+  "current_review": "指定FREEZE仍未报警。已核的incoming_only、脱接helper或普通同权益旁路不能为了参考标签造边；保留参考FN，源码结论与作者标签的分歧单列。",
+  "prior_source_review_reused_after_input_hash_match": "0c8823eed851｜N/0｜CalorieCoin实际检查当前为incoming_only｜未确认同holder普通出账受阻，不强报FREEZE。若有其他真实出账条件需分别核。",
+  "current_gap_reasons": {},
+  "scoped_checks": [
+   {
+    "id": "scope_e0a71718707478e6d0a3",
+    "prop": {
+     "id": "property_aac4bacedacd1151680f",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_464719fac5615a681677",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "c5e381e6dcc5215d8a5f3fb4448391d5eb2fd545265b695544db0f4307f69644"
+    },
+    "reasons": [
+     "incoming_only"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "incoming_only",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 7233. The control is applied to the recipient, not to the holder of the debited position.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 7233,
+       "length": 30,
+       "ast_id": 901
+      }
+     ],
+     "effects": [
+      "w_226c88440ff1867b8cd0"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 7084,
+      "length": 223,
+      "ast_id": 909
+     }
+    },
+    "evidence": [
+     "E1"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_0c8823eed851"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "23abf434df32｜U/6｜ClipperCoin三参数transfer第216行才读freeze；基类两参数第113行、transferFrom第134行不读｜与FAC同类旁路，禁止按名字造覆盖。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_19f77bc029e3436afe5d",
+    "prop": {
+     "id": "property_a909a9be8f5da137c4f8",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_dd23c23a0b6c57d3fd9e",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "9bc81fbe2946b935d517a7fcc765210733673f1a3850fb051cb1ec3d77a8619d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 7440. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 7440,
+       "length": 223,
+       "ast_id": 1015
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 7440,
+      "length": 223,
+      "ast_id": 1015
+     }
+    },
+    "evidence": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 3,
+   "baseline_usable/sat": 1,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_23abf434df32"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "32e1e7ce1240｜U/0｜CREDITS实际出账读AccountIsFrozen、豁免及日期；构造/持有人数组残余共存，未进查询｜具有应接通的真实控制路径，优先角色、路由、提交和豁免，尚无新阳性证明。",
+  "current_gap_reasons": {
+   "external_dependency": 6
+  },
+  "scoped_checks": [],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_32e1e7ce1240"
+ },
+ {
+  "current_review": "指定FREEZE仍未报警。已核的incoming_only、脱接helper或普通同权益旁路不能为了参考标签造边；保留参考FN，源码结论与作者标签的分歧单列。",
+  "prior_source_review_reused_after_input_hash_match": "39fb6e7197c4｜N/0｜ETJ普通转账与冻结helper脱接｜保留源码反证及参考FN。",
+  "current_gap_reasons": {},
+  "scoped_checks": [],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_39fb6e7197c4"
+ },
+ {
+  "current_review": "指定FREEZE仍未报警。已核的incoming_only、脱接helper或普通同权益旁路不能为了参考标签造边；保留参考FN，源码结论与作者标签的分歧单列。",
+  "prior_source_review_reused_after_input_hash_match": "58de46f081ec｜N/14｜KDA基类公开transfer/transferFrom内联扣记，派生带freeze的_transfer未被调用，独立MINT存在｜维持脱接作用反证，保护MINT。不造边。",
+  "current_gap_reasons": {},
+  "scoped_checks": [],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 1,
+   "financial_value_post_exclusion/unsat": 8,
+   "same_request_amount_change/unsat": 8,
+   "baseline_usable/sat": 2,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 2,
+   "opened_by_change/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT"
+  ],
+  "member": "RQ1_58de46f081ec"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "5ab05cf437b3｜U/41｜BimCoin基类transfer第75行/transferFrom第96行不读冻结，派生_transfer第167行读冻结；另有buy/oracle依赖｜分开普通旁路与购买外部依赖，不因oracle未知否决已核旁路，也不据此宣称整合约安全。",
+  "current_gap_reasons": {
+   "external_dependency": 2,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_287443ff187fdaa52440",
+    "prop": {
+     "id": "property_a7614b813f0d9965bc20",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_f956f824e75c696ba451",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "d2cfa83cf433adfff5e990984354901709171b9c5d6ac7d5a931fb807f07523d"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6202. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6202,
+       "length": 228,
+       "ast_id": 768
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6202,
+      "length": 228,
+      "ast_id": 768
+     }
+    },
+    "evidence": [
+     "E7",
+     "E14",
+     "E20"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "baseline_usable/sat": 7,
+   "blocked_by_change/sat": 5,
+   "both_usable/sat": 7,
+   "direct_callback_influence/sat": 8,
+   "callback_influence/sat": 8,
+   "opened_by_change/sat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_5ab05cf437b3"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "5b3c7cbe3d9d｜U/83｜AdvanceToken基类transfer第171行/transferFrom第191行不读冻结状态，派生_transfer第253行才读；当前source_unit_missing来自局部管理作用｜普通同账本旁路已可见。修索引/作用范围可改善解释与覆盖，不保证转为TP。",
+  "current_gap_reasons": {
+   "source_unit_missing": 2
+  },
+  "scoped_checks": [
+   {
+    "id": "audit_84f6542e6344a67caa::FCR-FREEZE",
+    "prop": {
+     "id": "property_c3f43ac25a312cec040b",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_6cae02d637c868a9802f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "215657de6e00a4d05ecf642eeb8bcdc3e9fe48dc04290aa7801edc721a248788"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 1860. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1860,
+       "length": 175,
+       "ast_id": 253
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1860,
+      "length": 175,
+      "ast_id": 253
+     },
+     "audit_card": {
+      "kind": "potential_normal_counterexample",
+      "check": "none",
+      "bound_effects": [
+       "w_1ee7da531ecb605d6b7b"
+      ],
+      "source_relation_independent": false,
+      "semantic_reading_used": false
+     }
+    },
+    "evidence": [
+     "E14",
+     "E57",
+     "E72"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_9e5dcc0e2d02492a4463",
+    "prop": {
+     "id": "property_c3f43ac25a312cec040b",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_6cae02d637c868a9802f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "215657de6e00a4d05ecf642eeb8bcdc3e9fe48dc04290aa7801edc721a248788"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 1860. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1860,
+       "length": 175,
+       "ast_id": 253
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1860,
+      "length": 175,
+      "ast_id": 253
+     }
+    },
+    "evidence": [
+     "E16",
+     "E56",
+     "E74"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_e3917eaa5bc8d9e63374",
+    "prop": {
+     "id": "property_bfe9356e127cb4b8059f",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_09bbe3b9516308b14556",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "c42289f09a2b10081c5fe90501e455b3df9856c5b0e76776c279a5d0d0108983"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 2041. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 2041,
+       "length": 176,
+       "ast_id": 278
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 2041,
+      "length": 176,
+      "ast_id": 278
+     }
+    },
+    "evidence": [
+     "E39",
+     "E62",
+     "E76"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "scoped_final_holder_loss/sat": 3,
+   "control_transition_preservation/sat": 16,
+   "control_transition_preservation/unsat": 4,
+   "productive_control_transition/sat": 2,
+   "productive_control_transition/unsat": 14,
+   "local_premises_feasible/sat": 6,
+   "direct_effect/sat": 1,
+   "direct_effect/unsat": 5,
+   "financial_value_post_exclusion/unsat": 31,
+   "same_request_amount_change/unsat": 32,
+   "baseline_usable/sat": 9,
+   "blocked_by_change/sat": 5,
+   "both_usable/sat": 9,
+   "two_distinct_holders_blocked_same_change/unsat": 1,
+   "same_right_alternative_after_change/sat": 4,
+   "two_distinct_holders_blocked_same_change/sat": 1,
+   "opened_by_change/sat": 4,
+   "financial_value_post_exclusion/sat": 6,
+   "financial_value/sat": 5,
+   "financial_value/unsat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-DESTROY",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_5b3c7cbe3d9d"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "6239598c387b｜U/0｜MyAdvancedToken派生_transfer及sell读freeze，但普通两参数transfer第69行、transferFrom第90行不读｜sell局部受限不自动等于该token权益冻结；E1及普通旁路分别核，不强制报警。",
+  "current_gap_reasons": {
+   "external_dependency": 1,
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "audit_30a8255c0c39600924::FCR-FREEZE",
+    "prop": {
+     "id": "property_c2265e273d0edc30f89d",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d88303dfcefe67d66df5",
+     "semantic_version": "6a7dae2ac3f68481e6acf7bb75ddde809541ddd6022662bbc4e24b0c7c91ed6b",
+     "task": "FCR",
+     "content_sha256": "0259a45755b31c41538dd6764315c5695978313e69b9827a3decdac4304dc518"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6517. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6517,
+       "length": 223,
+       "ast_id": 844
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6517,
+      "length": 223,
+      "ast_id": 844
+     },
+     "audit_card": {
+      "kind": "privileged_state_difference",
+      "check": "guard_scope",
+      "bound_effects": [
+       "w_5cee4260964f01f428d3"
+      ],
+      "source_relation_independent": false,
+      "semantic_reading_used": false
+     }
+    },
+    "evidence": [
+     "E2",
+     "E22",
+     "E29"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_507e62bf798a15160875",
+    "prop": {
+     "id": "property_e9daab484b83253e161b",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_bb99aa1343b4c15c2712",
+     "semantic_version": "ca32bf0720f4dd961a10aca369df53c88c4487123ccd2445e21077180e3adafb",
+     "task": "FCR",
+     "content_sha256": "4101f598555b8270e0d5a770220f3d2009545f01b07b5b9a9311655428ab5f86"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "external_dependency",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 7680. A missing implementation or return condition can determine whether this effect commits or has the claimed meaning.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 7680,
+       "length": 786,
+       "ast_id": 1085
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 7680,
+      "length": 786,
+      "ast_id": 1085
+     }
+    },
+    "evidence": [
+     "E1",
+     "E6",
+     "E15",
+     "E30",
+     "E33",
+     "E34"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d34b6dabbca736be2bf4",
+    "prop": {
+     "id": "property_c2265e273d0edc30f89d",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_d88303dfcefe67d66df5",
+     "semantic_version": "6a7dae2ac3f68481e6acf7bb75ddde809541ddd6022662bbc4e24b0c7c91ed6b",
+     "task": "FCR",
+     "content_sha256": "0259a45755b31c41538dd6764315c5695978313e69b9827a3decdac4304dc518"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6517. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6517,
+       "length": 223,
+       "ast_id": 844
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6517,
+      "length": 223,
+      "ast_id": 844
+     }
+    },
+    "evidence": [
+     "E13",
+     "E24",
+     "E28"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_6239598c387b"
+ },
+ {
+  "current_review": "未进入实际求解，指定类候选/检查与权益或普通出账消费者仍有结构接线缺口；增加solver时间不能解决零查询本身。",
+  "prior_source_review_reused_after_input_hash_match": "65379f53b3ab｜U/0｜SadeIT公开transfer/transferFrom真实消费_Sfiyy及_marketajcount等费率/豁免，非简单bool；0次solver｜工程上需数值控制/正额可用基线及豁免消费。高费是否阻断所有适用正额请求仍未核，不能把费率变化直接当FREEZE。",
+  "current_gap_reasons": {
+   "scope_missing": 2,
+   "external_dependency": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_8b7b309b432ae04d0eb7",
+    "prop": {
+     "id": "property_257ffea3353e19098441",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_248fc7acbf166fe3f1b7",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "7be6e445ec309e7329ed79bef963e90200eb80f6b3d7d9223725509756180b13"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 23894. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 23894,
+       "length": 377,
+       "ast_id": 2326
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 23894,
+      "length": 377,
+      "ast_id": 2326
+     }
+    },
+    "evidence": [
+     "E1",
+     "E8",
+     "E9"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b379e05af6bc13703524",
+    "prop": {
+     "id": "property_0c9d858c7ba47826dc17",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_6c3df9b3298c0813efc4",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "e554e0ba6d89acf37521caf47c96461342aac4f40ce05a51875ec8f40e567b81"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 23096. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 23096,
+       "length": 421,
+       "ast_id": 2256
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 23096,
+      "length": 421,
+      "ast_id": 2256
+     }
+    },
+    "evidence": [
+     "E2",
+     "E6",
+     "E7"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {},
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_65379f53b3ab"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "6a278772c4f3｜U/84｜同族基类transfer第164行/transferFrom第184行不读冻结，派生_transfer第228行才读｜同上，不能把读者索引关联当真实调用。",
+  "current_gap_reasons": {
+   "source_unit_missing": 2
+  },
+  "scoped_checks": [
+   {
+    "id": "issue_51dda514c196fdd7715e::FCR-FREEZE",
+    "prop": {
+     "id": "property_55455976030d5a870fc8",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_6cae02d637c868a9802f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "1a4b7e370204a8700ba66ae210e31c485923c72a3c762f572d8373a9b5fa7976"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 1661. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1661,
+       "length": 175,
+       "ast_id": 230
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1661,
+      "length": 175,
+      "ast_id": 230
+     }
+    },
+    "evidence": [
+     "E14",
+     "E57",
+     "E72"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_1055373ad512f6f45256",
+    "prop": {
+     "id": "property_12bbf5bada5de20630fa",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_09bbe3b9516308b14556",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "54ea1c0716e2d6e8ab09e54dcb79e8d6fc87e51238c994c2fafb10e62e4d7b56"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 1842. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1842,
+       "length": 176,
+       "ast_id": 255
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1842,
+      "length": 176,
+      "ast_id": 255
+     }
+    },
+    "evidence": [
+     "E38",
+     "E62",
+     "E74"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_bb0f465d931a16a8300e",
+    "prop": {
+     "id": "property_55455976030d5a870fc8",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_6cae02d637c868a9802f",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "1a4b7e370204a8700ba66ae210e31c485923c72a3c762f572d8373a9b5fa7976"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 1661. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 1661,
+       "length": 175,
+       "ast_id": 230
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 1661,
+      "length": 175,
+      "ast_id": 230
+     }
+    },
+    "evidence": [
+     "E17",
+     "E56",
+     "E83"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "scoped_final_holder_loss/sat": 3,
+   "control_transition_preservation/sat": 18,
+   "control_transition_preservation/unsat": 4,
+   "productive_control_transition/sat": 2,
+   "productive_control_transition/unsat": 14,
+   "local_premises_feasible/sat": 6,
+   "direct_effect/sat": 1,
+   "direct_effect/unsat": 5,
+   "financial_value_post_exclusion/unsat": 31,
+   "same_request_amount_change/unsat": 32,
+   "baseline_usable/sat": 10,
+   "blocked_by_change/unsat": 1,
+   "both_usable/sat": 10,
+   "blocked_by_change/sat": 5,
+   "two_distinct_holders_blocked_same_change/unsat": 1,
+   "same_right_alternative_after_change/sat": 4,
+   "two_distinct_holders_blocked_same_change/sat": 1,
+   "opened_by_change/sat": 4,
+   "financial_value_post_exclusion/sat": 6,
+   "financial_value/sat": 5,
+   "financial_value/unsat": 2
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT",
+   "FCR-DESTROY",
+   "FCR-PAUSE"
+  ],
+  "member": "RQ1_6a278772c4f3"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "8921e5cc1831｜U/3｜FAC派生transfer(from,to,value)第174行是三参数重载；继承两参数第70行与transferFrom第93行无冻结读取｜真实普通旁路明确，三参数受限不能替代整个权益冻结。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_6c82e244735166f89c5a",
+    "prop": {
+     "id": "property_b3696dc71d2058f8ee45",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_127625f68ec66f25d686",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "9fc4bea27653919d008d68d04ce243b4d47f066ca99029aea5010fc61c01e890"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6394. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6394,
+       "length": 228,
+       "ast_id": 825
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6394,
+      "length": 228,
+      "ast_id": 825
+     }
+    },
+    "evidence": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 7,
+   "baseline_usable/sat": 1,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_8921e5cc1831"
+ },
+ {
+  "current_review": "指定FREEZE仍未报警。已核的incoming_only、脱接helper或普通同权益旁路不能为了参考标签造边；保留参考FN，源码结论与作者标签的分歧单列。",
+  "prior_source_review_reused_after_input_hash_match": "95cf7213c86a｜U/162｜TOSC普通两参数transfer第114行不读freeze；派生_transfer第160行读冻结/额度，sendTransfer另有管理员限制｜检查同holder普通旁路，不能用管理出账或部分额度失败代替FREEZE。",
+  "current_gap_reasons": {},
+  "scoped_checks": [
+   {
+    "id": "scope_209729d9e7a78cbce863::FCR-FREEZE",
+    "prop": {
+     "id": "property_230bf60184295b56bdd7",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-TRANSFER",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_86326057d958f73a37fe",
+     "semantic_version": "73d26bf807dd14bec76cb06c033eccbb7df5cbd1d296591841c65facc1f29223",
+     "task": "FCR",
+     "content_sha256": "0edf96e04ad943f733cdd6b2fcb85576d36eae4081badcc2e6cfbc3cb7edcc19"
+    },
+    "reasons": [
+     "same_request_preserved"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "same_request_preserved",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6624. The actual control transition preserves the inspected positive holder request; the conclusion is limited to that source use.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6624,
+       "length": 36,
+       "ast_id": 884
+      },
+      {
+       "file": "units/program.sol",
+       "start": 6670,
+       "length": 32,
+       "ast_id": 890
+      }
+     ],
+     "effects": [
+      "w_1f45a0eb5fd33ca0133b",
+      "w_b216fa651ec1cd9bd34e"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6484,
+      "length": 266,
+      "ast_id": 897
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 6624,
+      "length": 36,
+      "ast_id": 884
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ],
+     "source_relation": {
+      "family": "source_transition_preserves_request",
+      "duty": "same_request_preserved",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 6484,
+       "length": 266,
+       "ast_id": 897
+      }
+     }
+    },
+    "evidence": [
+     "E9"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_ab00b7956d0582c3ea27::FCR-FREEZE",
+    "prop": {
+     "id": "property_07d17a59eb4af5bf6646",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_86326057d958f73a37fe",
+     "semantic_version": "73d26bf807dd14bec76cb06c033eccbb7df5cbd1d296591841c65facc1f29223",
+     "task": "FCR",
+     "content_sha256": "f48be11a12feeab206ccc238cf529d0c33ff8d11c76cfd566016989ce761c6c3"
+    },
+    "reasons": [
+     "same_request_preserved"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "same_request_preserved",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6624. The actual control transition preserves the inspected positive holder request; the conclusion is limited to that source use.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6624,
+       "length": 36,
+       "ast_id": 884
+      },
+      {
+       "file": "units/program.sol",
+       "start": 6670,
+       "length": 32,
+       "ast_id": 890
+      }
+     ],
+     "effects": [
+      "w_1f45a0eb5fd33ca0133b",
+      "w_b216fa651ec1cd9bd34e"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6484,
+      "length": 266,
+      "ast_id": 897
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 6624,
+      "length": 36,
+      "ast_id": 884
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ],
+     "source_relation": {
+      "family": "source_transition_preserves_request",
+      "duty": "same_request_preserved",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 6484,
+       "length": 266,
+       "ast_id": 897
+      }
+     }
+    },
+    "evidence": [
+     "E11"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b3dc1201d78168bb6c90",
+    "prop": {
+     "id": "property_1b2a01c8b9428c498c2f",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_e4d1017c45f7be8dd322",
+     "semantic_version": "73d26bf807dd14bec76cb06c033eccbb7df5cbd1d296591841c65facc1f29223",
+     "task": "FCR",
+     "content_sha256": "f854b472576b1925f5deada41832eb64d31d6ee1b5af004dc2b9fcbdc2231f9e"
+    },
+    "reasons": [
+     "same_request_bypass"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "same_request_bypass",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6072. Another ordinary entry remains available for the same holder, asset and positive transfer request.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6072,
+       "length": 30,
+       "ast_id": 813
+      }
+     ],
+     "effects": [
+      "w_6f340be857cf0edbbd42"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 5923,
+      "length": 228,
+      "ast_id": 821
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 6072,
+      "length": 30,
+      "ast_id": 813
+     },
+     "source_relation": {
+      "family": "same_request_actual_alternate",
+      "duty": "same_asset_holder_request_available",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 5923,
+       "length": 228,
+       "ast_id": 821
+      }
+     }
+    },
+    "evidence": [
+     "E39"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_b666866a62a5efe11302",
+    "prop": {
+     "id": "property_f5cb80085be8ebe2fee8",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_78959a2766557c5c2b1c",
+     "semantic_version": "73d26bf807dd14bec76cb06c033eccbb7df5cbd1d296591841c65facc1f29223",
+     "task": "FCR",
+     "content_sha256": "541bfb31e89a23b2cf12480b596f128fd65c580bb786fcc4cac85e69c9d1379a"
+    },
+    "reasons": [
+     "same_request_bypass"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "same_request_bypass",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6327. Another ordinary entry remains available for the same holder, asset and positive transfer request.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6327,
+       "length": 35,
+       "ast_id": 847
+      },
+      {
+       "file": "units/program.sol",
+       "start": 6372,
+       "length": 40,
+       "ast_id": 853
+      }
+     ],
+     "effects": [
+      "w_9630940508ae4b6f9f77",
+      "w_9f9a64a69fb3e3a86387"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6157,
+      "length": 321,
+      "ast_id": 862
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 6327,
+      "length": 35,
+      "ast_id": 847
+     },
+     "source_relation": {
+      "family": "same_request_actual_alternate",
+      "duty": "same_asset_holder_request_available",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 6157,
+       "length": 321,
+       "ast_id": 862
+      }
+     }
+    },
+    "evidence": [
+     "E36"
+    ],
+    "version": 0
+   },
+   {
+    "id": "scope_d45e3fe4e01c4cb21921::FCR-FREEZE",
+    "prop": {
+     "id": "property_c199b130b4ce4518857b",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-DESTROY",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_86326057d958f73a37fe",
+     "semantic_version": "73d26bf807dd14bec76cb06c033eccbb7df5cbd1d296591841c65facc1f29223",
+     "task": "FCR",
+     "content_sha256": "188930d6f13c57a671d6718e20c6e68573b4723a470cab0ad0d39ab2ffa22da0"
+    },
+    "reasons": [
+     "same_request_preserved"
+    ],
+    "decision": {
+     "status": "normal",
+     "reason": "same_request_preserved",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6624. The actual control transition preserves the inspected positive holder request; the conclusion is limited to that source use.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6624,
+       "length": 36,
+       "ast_id": 884
+      },
+      {
+       "file": "units/program.sol",
+       "start": 6670,
+       "length": 32,
+       "ast_id": 890
+      }
+     ],
+     "effects": [
+      "w_1f45a0eb5fd33ca0133b",
+      "w_b216fa651ec1cd9bd34e"
+     ],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6484,
+      "length": 266,
+      "ast_id": 897
+     },
+     "causal_root": {
+      "file": "units/program.sol",
+      "start": 6624,
+      "length": 36,
+      "ast_id": 884
+     },
+     "source_edge_ids": [
+      "unclassified_diagnostic",
+      "unclassified_diagnostic"
+     ],
+     "source_relation": {
+      "family": "source_transition_preserves_request",
+      "duty": "same_request_preserved",
+      "support_location": {
+       "file": "units/program.sol",
+       "start": 6484,
+       "length": 266,
+       "ast_id": 897
+      }
+     }
+    },
+    "evidence": [
+     "E28"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "scoped_final_holder_loss/sat": 4,
+   "control_transition_preservation/unsat": 7,
+   "control_transition_preservation/sat": 2,
+   "local_premises_feasible/sat": 36,
+   "direct_effect/unsat": 28,
+   "direct_effect/sat": 8,
+   "financial_value_post_exclusion/sat": 13,
+   "financial_value/sat": 10,
+   "financial_value_post_exclusion/unsat": 36,
+   "same_request_amount_change/unsat": 39,
+   "financial_value/unsat": 6,
+   "baseline_usable/sat": 3,
+   "opened_by_change/sat": 3,
+   "both_usable/unsat": 2,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-TRANSFER",
+   "FCR-DESTROY"
+  ],
+  "member": "RQ1_95cf7213c86a"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "abb48ccfac75｜U/3｜ICBB派生三参数transfer第174行读freeze，继承两参数第70行/transferFrom第93行不读｜同重载旁路组。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_6070905b57d0d1d6dc2c",
+    "prop": {
+     "id": "property_9c823d373c3a0c4ebf3c",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_9c5805f2bfb9ad4bfdda",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "e684aa253c6d22005f5c715176cca3de48bb17b3ac81e2c5626cb6bb21dadb02"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6412. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6412,
+       "length": 228,
+       "ast_id": 825
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6412,
+      "length": 228,
+      "ast_id": 825
+     }
+    },
+    "evidence": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 6,
+   "baseline_usable/sat": 1,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_abb48ccfac75"
+ },
+ {
+  "current_review": "已有查询或其他类别报警，但指定类检查仍未形成可接纳判断；需区分实际同意/补偿/旁路反证与尚未绑定作用范围，不由SAT数量推定指定类TP。",
+  "prior_source_review_reused_after_input_hash_match": "b7fd0e26135f｜U/9｜ICBB同结构三参数重载与两参数普通旁路｜同上；保持对象实际身份，不能合并成一个可用样本计算收益。",
+  "current_gap_reasons": {
+   "scope_missing": 1
+  },
+  "scoped_checks": [
+   {
+    "id": "scope_f0b19f38b4061db7a500",
+    "prop": {
+     "id": "property_dd0d9f1f4a19692ac5f2",
+     "category": "FCR-FREEZE",
+     "original_category": "FCR-FREEZE",
+     "domain": "fcr_conditional_capability_r1",
+     "operation": "op_9c5805f2bfb9ad4bfdda",
+     "semantic_version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+     "task": "FCR",
+     "content_sha256": "7211440c28e215a2acde507a50ebb0c5f6ac24552917dcddfa00cffb89ffb4fc"
+    },
+    "reasons": [
+     "financial_property_conditions_not_established"
+    ],
+    "decision": {
+     "status": "open",
+     "reason": "scope_missing",
+     "explanation": "The assessment concerns a restriction on the designated holder's outgoing transfer at source offset 6424. The available source does not distinguish the claimed effect from the applicable normal explanation in this scope.",
+     "locations": [
+      {
+       "file": "units/program.sol",
+       "start": 6424,
+       "length": 228,
+       "ast_id": 825
+      }
+     ],
+     "effects": [],
+     "rules": [],
+     "supports": [],
+     "facts": [],
+     "meanings": [],
+     "origins": [
+      "source_observation"
+     ],
+     "application_location": {
+      "file": "units/program.sol",
+      "start": 6424,
+      "length": 228,
+      "ast_id": 825
+     }
+    },
+    "evidence": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "version": 0
+   }
+  ],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 6,
+   "baseline_usable/sat": 1,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [],
+  "member": "RQ1_b7fd0e26135f"
+ },
+ {
+  "current_review": "指定FREEZE仍未报警。已核的incoming_only、脱接helper或普通同权益旁路不能为了参考标签造边；保留参考FN，源码结论与作者标签的分歧单列。",
+  "prior_source_review_reused_after_input_hash_match": "c80f7a639e42｜N/23｜ERC20ext普通转账不经派生冻结helper，另有锁定/残余范围｜保留已核脱接结论，其他控制不靠这一局部反证批量关闭。",
+  "current_gap_reasons": {},
+  "scoped_checks": [],
+  "all_query_label_counts": {
+   "control_transition_preservation/sat": 1,
+   "local_premises_feasible/sat": 1,
+   "direct_effect/sat": 1,
+   "financial_value_post_exclusion/unsat": 10,
+   "same_request_amount_change/unsat": 10,
+   "baseline_usable/sat": 2,
+   "blocked_by_change/sat": 1,
+   "both_usable/sat": 2,
+   "opened_by_change/sat": 1
+  },
+  "other_alarms_do_not_cancel_designated_FN": [
+   "FCR-MINT"
+  ],
+  "member": "RQ1_c80f7a639e42"
+ }
+]
