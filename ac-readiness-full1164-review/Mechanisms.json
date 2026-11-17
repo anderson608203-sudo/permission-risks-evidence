@@ -1,0 +1,361 @@
+{
+ "AC_FN_reference_windows_with_expected_authorization": 274,
+ "AC_FN_reference_windows_with_policy_missing": 246,
+ "AC_FN_reference_windows_with_external_dependency": 41,
+ "AC_FN_coincident_limit_diagnostics": {
+  "program_investigation_seconds": 15,
+  "noncached_action_limit": 2,
+  "action_slice_exhausted": 1
+ },
+ "AC_raw_finding_reasons": {
+  "source_role_reassignment": 245,
+  "unbacked_source_issuance": 30,
+  "program_support": 10,
+  "scoped_semantic_conflict": 4
+ },
+ "old_reference_external_alarms_withdrawn": 20,
+ "new_reference_external_alarms": 8,
+ "retained_reference_external_alarms": 0,
+ "withdrawn_alarm_member_current_states": {
+  "unsupported": 12,
+  "alarm": 8
+ },
+ "FCR_BG_transitions": {
+  "FCR-TRANSFER": {
+   "risk": [
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 40
+    }
+   ],
+   "repair": [
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 24
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 12
+    },
+    {
+     "previous": "not_detected",
+     "current": "unsupported",
+     "count": 1
+    },
+    {
+     "previous": "unsupported",
+     "current": "not_detected",
+     "count": 3
+    }
+   ],
+   "pairs": [
+    {
+     "previous": true,
+     "current": true,
+     "count": 24
+    },
+    {
+     "previous": false,
+     "current": false,
+     "count": 12
+    },
+    {
+     "previous": true,
+     "current": false,
+     "count": 1
+    },
+    {
+     "previous": false,
+     "current": true,
+     "count": 3
+    }
+   ]
+  },
+  "FCR-MINT": {
+   "risk": [
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 35
+    }
+   ],
+   "repair": [
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 5
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 27
+    },
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 3
+    }
+   ],
+   "pairs": [
+    {
+     "previous": true,
+     "current": true,
+     "count": 5
+    },
+    {
+     "previous": false,
+     "current": false,
+     "count": 30
+    }
+   ]
+  },
+  "FCR-DESTROY": {
+   "risk": [
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 12
+    },
+    {
+     "previous": "unsupported",
+     "current": "alarm",
+     "count": 23
+    },
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 21
+    },
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 1
+    },
+    {
+     "previous": "not_detected",
+     "current": "alarm",
+     "count": 1
+    }
+   ],
+   "repair": [
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 22
+    },
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 33
+    },
+    {
+     "previous": "not_detected",
+     "current": "unsupported",
+     "count": 1
+    },
+    {
+     "previous": "unsupported",
+     "current": "not_detected",
+     "count": 2
+    }
+   ],
+   "pairs": [
+    {
+     "previous": false,
+     "current": false,
+     "count": 24
+    },
+    {
+     "previous": false,
+     "current": true,
+     "count": 17
+    },
+    {
+     "previous": true,
+     "current": true,
+     "count": 16
+    },
+    {
+     "previous": true,
+     "current": false,
+     "count": 1
+    }
+   ]
+  },
+  "FCR-PAUSE": {
+   "risk": [
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 56
+    },
+    {
+     "previous": "unsupported",
+     "current": "alarm",
+     "count": 4
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 2
+    }
+   ],
+   "repair": [
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 47
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 15
+    }
+   ],
+   "pairs": [
+    {
+     "previous": true,
+     "current": true,
+     "count": 45
+    },
+    {
+     "previous": false,
+     "current": false,
+     "count": 17
+    }
+   ]
+  },
+  "FCR-FREEZE": {
+   "risk": [
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 4
+    },
+    {
+     "previous": "alarm",
+     "current": "alarm",
+     "count": 60
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 11
+    }
+   ],
+   "repair": [
+    {
+     "previous": "not_detected",
+     "current": "not_detected",
+     "count": 64
+    },
+    {
+     "previous": "unsupported",
+     "current": "unsupported",
+     "count": 11
+    }
+   ],
+   "pairs": [
+    {
+     "previous": false,
+     "current": false,
+     "count": 24
+    },
+    {
+     "previous": true,
+     "current": true,
+     "count": 51
+    }
+   ]
+  }
+ },
+ "resources": {
+  "AC": {
+   "members": 624,
+   "reported_actions_including_cached": 77863,
+   "solver_calls": 29046,
+   "query_projections": 36365,
+   "program_seconds_sum": 60605.4317296613,
+   "solver_seconds_sum": 1418.3896467480808,
+   "program_seconds_median": 11.549869022797793,
+   "program_seconds_max": 1210.6625472540036,
+   "model_wait_seconds_sum": 30407.57427932881,
+   "diagnostic_members": {
+    "program_investigation_seconds": 28,
+    "noncached_action_limit": 16,
+    "action_slice_exhausted": 1,
+    "program_investigation_budget_exhausted": 1,
+    "program_encoding_budget_exhausted": 0
+   }
+  },
+  "FCR": {
+   "members": 540,
+   "reported_actions_including_cached": 14554,
+   "solver_calls": 24797,
+   "query_projections": 27481,
+   "program_seconds_sum": 24785.878381997813,
+   "solver_seconds_sum": 10162.873686770443,
+   "program_seconds_median": 4.585666920058429,
+   "program_seconds_max": 980.5012086369097,
+   "model_wait_seconds_sum": 20941.97678443836,
+   "diagnostic_members": {
+    "program_investigation_seconds": 14,
+    "noncached_action_limit": 1,
+    "action_slice_exhausted": 31,
+    "program_investigation_budget_exhausted": 8,
+    "program_encoding_budget_exhausted": 1
+   }
+  }
+ },
+ "LLM": {
+  "report_model_unavailable": {
+   "AC": 9,
+   "FCR": 255
+  },
+  "root_with_verified_service_origin": [
+   "D2:77:author:1",
+   "D2:105:author:1",
+   "D2:134:author:1",
+   "D2:188:author:1",
+   "D2:258:author:1",
+   "D2:305:author:1",
+   "D2:315:author:1",
+   "D2:585:author:1"
+  ],
+  "AC_basic_to_final": {
+   "unsupported -> unsupported": 432,
+   "alarm -> alarm": 187,
+   "unsupported -> alarm": 5
+  },
+  "basic_is_after_initial_request": true,
+  "verified_service_does_not_prove_marginal_benefit": true,
+  "FCR_risk_hits_without_consumed_service_analysis": 105,
+  "normalization_reasons": {
+   "semantic_answer_outside_sent_scope": 21,
+   "unknown_assessment_vocabulary": 450,
+   "invalid_top_level_or_duplicate_key": 104,
+   "missing_claim_or_source_anchor": 155,
+   "unparseable_top_level": 1,
+   "audit_card_text": 47,
+   "audit_card_issue_kind": 10,
+   "invalid_semantic_row": 29,
+   "ambiguous_confirmation_not_a_risk_judgment": 58,
+   "audit_card_check_kind": 2,
+   "invalid_issue_field_shape": 9,
+   "audit_card_fields": 1,
+   "empty_response_body": 1,
+   "audit_card_source_refs": 1
+  },
+  "feedback_trace": {
+   "selected": 714,
+   "sent": 714,
+   "parsed": 581,
+   "consumed": 572,
+   "changed_finding": 12
+  },
+  "public_diagnostics_omit_free_text_and_some_internal_candidate_fields": true
+ }
+}
