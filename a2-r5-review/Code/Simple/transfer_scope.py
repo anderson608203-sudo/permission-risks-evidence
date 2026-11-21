@@ -1,0 +1,148 @@
+"""Bind a model use-property to all actual debits on the applied operation.
+
+This module only identifies operands and scope. It never decides authorization.
+"""
+import re
+from pr_next_joint.core import digest
+from pr_next_joint.frontend.path_ir import key
+from pr_next_joint.frontend.storage import keys, selector_relation
+from .initial_state import initial_for_lookup
+from .key_roles import relation
+from .ledger import unit_origin
+from .summary import holder, local_delta
+
+
+def is_model_use(inv, q, result):
+    item = q['current']
+    return (result.get('category') == 'AC' and (q.get('property') or {}).get('category') == 'AC' and result.get('root') is not None
+            and q['binding'].get('core_exact') and not q.get('task_conflict')
+            and not q.get('retired_property_parent') and not item.get('_host_source_question')
+            and (q['id'] in inv.initial_proposals.values() or bool(item.get('_opinion_message'))))
+
+
+def transfer_request(q):
+    prop = q.get('property') or {}
+    policy = prop.get('expected_authorization') or {}
+    auth = policy.get('compiled_authorization') or {}
+    from .policy_binding import effect_duty
+    # An independently stated policy or a second necessary actor cannot be
+    # dismissed by demonstrating that the holder issued a spending allowance.
+    if any(effect_duty(q['current'].get(k,'')) for k in ('claim','policy_basis','alternative')):
+        return False
+    return (q['current'].get('assessment') == 'normal' and not q.get('authorization_alternatives')
+            and auth.get('kind') in ('source_grant_issuer', 'entitlement_holder')
+            and auth.get('property_family') == 'use' and not auth.get('necessary_only')
+            and not auth.get('competing_interpretations') and not policy.get('unresolved_relations')
+            and (auth.get('subject') or {}).get('kind') == 'parameter')
+
+
+def issued_by_holder(inv, oid, grant, index):
+    """Account for applied runtime writer sites and construction. Even an unchecked
+    unsigned decrement could increase a quota by wraparound, so require its guard."""
+    from .source_opinion import conjuncts
+    initial = initial_for_lookup(inv.f.lookup(oid)) or {}
+    writers = initial.get('runtime_writers', {})
+    if not writers or writers.get('opaque_storage_writes') or writers.get('unresolved_calls'):
+        return False
+    root = grant['root']
+    if any(not w['complete'] and w['flow'] != 'reverted'
+           for w in writers.get('paths',{}).get(root,())):
+        return False
+    declaration = initial.get('declarations', {}).get(root, {})
+    if (not declaration or declaration.get('explicit_initializer') or declaration.get('explicit_constructor_sites')
+            or declaration.get('constructor_writes') or any(
+                p.get('issues') or p.get('evaluation_gaps') for p in initial.get('constructor_paths', ()))):
+        return False
+    seen, issuers = set(), set()
+    target = inv.f.operations[oid]['target']
+    for writer in inv.f.writes.values():
+        w = writer['raw']
+        dst = w['path']
+        if inv.f.operations[writer['operation']]['target'] != target or dst['root'] != root:
+            continue
+        row = inv.f.summaries.paths[writer['path']]
+        if not row['committing']:
+            continue
+        if (dst.get('instance') or selector_relation(dst,grant) != 'same_shape'
+                or row['residuals'] or len(keys(dst)) != 2):
+            return False
+        seen.add(w['source']['ast_id'])
+        if keys(dst)[index].get('kind') == 'actual_sender' and keys(dst)[1-index].get('kind') == 'parameter':
+            issuers.add(w['source']['ast_id'])
+            continue
+        sign, amount = local_delta(w)
+        guards = [g for term in row['guards'] for g in conjuncts(term)]
+        if sign != '-' or sum(x['path']['root']==root for x in row['ordered_writes']) != 1:
+            return False
+        # The consumer checks this very spend on every effectful branch.
+        # Other spending operations need their own independent guard.
+        if writer['operation'] != oid and not any(bound_test(g,dst,amount) for g in guards):
+            return False
+    identified = set(writers.get('sites',{}).get(root,[]))
+    return bool(issuers and identified and identified <= seen)
+
+
+def bound_test(expr, cell, amount):
+    args = list(map(key,expr.get('args', ())))
+    return ((expr.get('op') in ('>=','>') and args == [key(cell),key(amount)])
+            or (expr.get('op') in ('<=','<') and args == [key(amount),key(cell)]))
+
+
+def bind_transfers(inv,q):
+    oid = inv.root(q)
+    lookup = inv.f.lookup(oid)
+    if not inv.backend.complete(oid):
+        return [], 'incomplete_operation'
+    subject = q['property']['expected_authorization']['compiled_authorization']['subject']
+    scopes = set(q['current'].get('_scope_effects', ()))
+    supports = []
+    for row in inv.f.summaries.rows(oid):
+        moves = [(w,*local_delta(w)) for w in row['ordered_writes']]
+        if row['residuals'] or row['effects']:
+            return [], 'independent_or_unresolved_effect'
+        if not moves:
+            continue  # A return with no storage or other effect cannot be a holder debit.
+        if len(moves) != 3:
+            return [], 'additional_or_missing_write'
+        grants = [w for w,s,_ in moves if s == '-' and (relation(w['path'],lookup) or {}).get('kind') == 'authorization_quantity']
+        if len(grants) != 1:
+            return [], 'ambiguous_or_missing_allowance'
+        grant = grants[0]['path']
+        debits = [(w,n) for w,s,n in moves if s == '-' and w is not grants[0]]
+        credits = [(w,n) for w,s,n in moves if s == '+']
+        if len(debits) != 1 or len(credits) != 1:
+            return [], 'missing_transfer_pair'
+        debit,amount = debits[0]
+        credit,received = credits[0]
+        cell = debit['path']
+        idx = keys(grant)
+        h = relation(grant,lookup)['holder_key']
+        if (not amount or len(idx) != 2 or cell.get('instance') or grant.get('instance')
+                or selector_relation(cell,credit['path']) != 'same_shape' or key(cell)==key(credit['path'])
+                or key(received) != key(amount) or key(local_delta(grants[0])[1]) != key(amount)
+                or key(holder(cell,lookup)) != key(subject) or key(subject) != key(idx[h])
+                or idx[1-h].get('kind') != 'actual_sender' or not unit_origin(inv.backend,oid,cell)):
+            return [], 'holder_spender_ledger_or_quantity_mismatch'
+        if not issued_by_holder(inv,oid,grant,h):
+            return [], 'issuer_provenance_incomplete'
+        # Resolve the model's actual named allowance declaration, not a topic word.
+        symbol = lookup.nodes[grant['root']].get('name')
+        text = q['current'].get('claim','')
+        if not symbol or not re.search(r'(?<![\w$])'+re.escape(symbol)+r'(?![\w$])',text):
+            return [], 'proposal_not_bound_to_this_grant'
+        writes = {key(x['source']) for x,_,_ in moves}
+        binding={'operation':oid,'target':row['target'],'ledger_declaration':cell['root'],
+                 'grant_declaration':grant['root'],'holder_key_index':h,
+                 'holder_term_sha256':digest(subject),'caller_term_sha256':digest(idx[1-h]),
+                 'quantity_term_sha256':digest(amount),'credit_location':credit['source'],
+                 'grant_use_location':grants[0]['source']}
+        supports.append({'row':row,'debit':debit,'amount':amount,'grant':grant,'sites':writes,'binding':binding})
+    if not supports:
+        return [], 'no_committing_debit'
+    rules=inv.semantics.rules
+    if scopes and any(e not in rules.effects or rules.effects[e]['oid'] != oid or
+                      not any(key(rules.effects[e]['where']) in v['sites'] and
+                              rules.effects[e].get('path') == v['row']['path'] for v in supports) for e in scopes):
+        return [], 'other_effect_selected'
+    return supports, None
+

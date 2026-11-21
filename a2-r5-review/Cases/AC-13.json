@@ -1,0 +1,3635 @@
+[
+  {
+    "member": "RQ1_a35262246ed5",
+    "family": "RQ1_a35262246ed5",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "bc72586bada93f79ed9228a34ba047b2aa9db2d17b617b7e80fb304b7ae4ea64",
+    "program_id": "d46165fc891835aa82e374f43aab62172acab6e7b7ee2377d41e420c8d776c84",
+    "build_id": "4657cce443fb70050f6b9159c3bc904cf22ccfe11ac9f858496254b338169a9a",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "8db50388383aa8fa7743c4825376cfdeddc020b76a218be168c60900b4bc50b8",
+        "archive_response_sha256": "de7005f71a5b01de5e215ca7dd791f2bba2939715984aab37918b6511c52ea81",
+        "raw_run": "runs/RQ1_a35262246ed5/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.9005,
+        "initial_tokens": 1998,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "8db50388383aa8fa7743c4825376cfdeddc020b76a218be168c60900b4bc50b8",
+        "archive_response_sha256": "de7005f71a5b01de5e215ca7dd791f2bba2939715984aab37918b6511c52ea81",
+        "raw_run": "runs/RQ1_a35262246ed5/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.857,
+        "initial_tokens": 1998,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_45ce1fe8110b",
+    "family": "RQ1_45ce1fe8110b",
+    "stratum": "near_exposed",
+    "family_size": 3,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "2293b77c7dfe8899170a184cb3f0e4ae1e2f100c2f93a61b4e46515ee23bc76f",
+    "program_id": "0d22bf8b4bb0e50d3759e27612a48c43581eea8bafa4011d55e1a18824897e19",
+    "build_id": "7a97d3e2f5645497d6a68fd832e40531046f22f29aa536ed74746454a2968418",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:596:author:1",
+        "function": "IotaGoldToken"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "2caa0fb83d50db43fc04d062d7ea94cd92ca5fb08a5c149d3e204be412ad5529",
+        "archive_response_sha256": "c7c1053b2d54252fcfc21b8ee4d71e5bb8d7e0b5e8ac4573a57366532453149b",
+        "raw_run": "runs/RQ1_45ce1fe8110b/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 15,
+        "seconds": 5.7496,
+        "initial_tokens": 1910,
+        "action_count": 34,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:596:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "2caa0fb83d50db43fc04d062d7ea94cd92ca5fb08a5c149d3e204be412ad5529",
+        "archive_response_sha256": "c7c1053b2d54252fcfc21b8ee4d71e5bb8d7e0b5e8ac4573a57366532453149b",
+        "raw_run": "runs/RQ1_45ce1fe8110b/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 15,
+        "seconds": 5.8215,
+        "initial_tokens": 1910,
+        "action_count": 34,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:596:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_be17ecaef698",
+    "family": "RQ1_be17ecaef698",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "fb2d1259da3891ac9a42ce4b15eb321f4e64d520f0e5bac89661f2b2e2ec3d7c",
+    "program_id": "27dd074878e871710bdbb7328318c78afce83c41a9b8b6838e2e8a728435a8a8",
+    "build_id": "d54991ff5fc3311c219a6ae4a334dbc7fa06863b54d6de829a173c52386ede78",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:597:author:1",
+        "function": "clearBlockchain"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "7377004ab409f9d0d09e545d41b35fd9678c52cac53d5343949eaf690e2a6e9b",
+        "archive_response_sha256": "7306a243e44711f204f87fb6bfe72a1f0e71901dc7e6c522dcc57e784179e6d3",
+        "raw_run": "runs/RQ1_be17ecaef698/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 76,
+        "seconds": 19.1625,
+        "initial_tokens": 2740,
+        "action_count": 143,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:597:author:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "7377004ab409f9d0d09e545d41b35fd9678c52cac53d5343949eaf690e2a6e9b",
+        "archive_response_sha256": "7306a243e44711f204f87fb6bfe72a1f0e71901dc7e6c522dcc57e784179e6d3",
+        "raw_run": "runs/RQ1_be17ecaef698/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 76,
+        "seconds": 19.0798,
+        "initial_tokens": 2740,
+        "action_count": 143,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:597:author:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_5ee0702dae51",
+    "family": "RQ1_5ee0702dae51",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "1b1bce71615dcaa1578c25b66253f5e82a9d96977a8d29f7783fadbded8cea48",
+    "program_id": "2f6812ae2db74ea89b9a4a6259f9e73ed5c6580780a4df0a6c8b1c8c5a2055d2",
+    "build_id": "494648e616835bfdbd0b06003eebcf1ae2ec7989fbb603fc4a0b69713eefae5b",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:598:author:1",
+        "function": "destroy"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "21c6f587ab118c715d77ad6dd1e25066fadf3cd386ef885a1f870daec62bfba2",
+        "archive_response_sha256": "7c339fb762d774d239d003d3549a65e5b4dfb513fe9654d5a3e62666d44d58e9",
+        "raw_run": "runs/RQ1_5ee0702dae51/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 16,
+        "seconds": 3.4908,
+        "initial_tokens": 1836,
+        "action_count": 17,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 2,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:598:author:1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            1674
+          ],
+          [
+            "units/program.sol",
+            2647
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "21c6f587ab118c715d77ad6dd1e25066fadf3cd386ef885a1f870daec62bfba2",
+        "archive_response_sha256": "7c339fb762d774d239d003d3549a65e5b4dfb513fe9654d5a3e62666d44d58e9",
+        "raw_run": "runs/RQ1_5ee0702dae51/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 16,
+        "seconds": 3.6163,
+        "initial_tokens": 1836,
+        "action_count": 17,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:598:author:1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2647
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_5a5b1c1896e1",
+    "family": "RQ1_0ff5d2904232",
+    "stratum": "heldout_family",
+    "family_size": 24,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "6edcbf11b6af642982448f21c227a1fb6177ffb125ee35d3976287dd7cec6aea",
+    "program_id": "b051b05d881cf431048a7639d95eaff361ffdd7c84a55330ce8dac07816bdae3",
+    "build_id": "25a2d3ea50cbe6c13e3b6e2edad2c28b81ebb7ebdb869930fa81e58b58b5976d",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:599:author:1",
+        "function": "SAC"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ef5ed2f32e8614874c09770ca694f1c94dd45f7761e360a48f212107f3e04ff1",
+        "archive_response_sha256": "2b3041e8554a54eb190eacd30fed781ee2cfade51f4763996310ec5339e3ef16",
+        "raw_run": "runs/RQ1_5a5b1c1896e1/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 56,
+        "seconds": 136.845,
+        "initial_tokens": 3184,
+        "action_count": 306,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:599:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3757
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ef5ed2f32e8614874c09770ca694f1c94dd45f7761e360a48f212107f3e04ff1",
+        "archive_response_sha256": "2b3041e8554a54eb190eacd30fed781ee2cfade51f4763996310ec5339e3ef16",
+        "raw_run": "runs/RQ1_5a5b1c1896e1/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 56,
+        "seconds": 136.9511,
+        "initial_tokens": 3184,
+        "action_count": 306,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:599:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3757
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_293812debd13",
+    "family": "RQ1_293812debd13",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "53c3179ff3a970606d5c3379e2d601a860fa51e307f236a417395ffd39e92b9e",
+    "program_id": "b484fa7480f545d0afe7560eae332e48c4d8dad8adc0cad7b5da5edf02531363",
+    "build_id": "5713a8bf9b5c90ac0f95ff9c38a05d1d33b69e05371964e6336403436a82136e",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "37a35a0a3db89520cdbc57f83aa67c09827c7cce0059356ae34e51a19b6157c8",
+        "archive_response_sha256": "f59b985142aeac61fa2a40f154ff93f5c8d13a70bfc5ac1cba00634f8207fb57",
+        "raw_run": "runs/RQ1_293812debd13/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 87,
+        "seconds": 96.9996,
+        "initial_tokens": 6404,
+        "action_count": 308,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 2,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            8213
+          ],
+          [
+            "units/program.sol",
+            12862
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "37a35a0a3db89520cdbc57f83aa67c09827c7cce0059356ae34e51a19b6157c8",
+        "archive_response_sha256": "f59b985142aeac61fa2a40f154ff93f5c8d13a70bfc5ac1cba00634f8207fb57",
+        "raw_run": "runs/RQ1_293812debd13/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 87,
+        "seconds": 97.0508,
+        "initial_tokens": 6404,
+        "action_count": 308,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 2,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            8213
+          ],
+          [
+            "units/program.sol",
+            12862
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_52d5c754a744",
+    "family": "RQ1_52d5c754a744",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "5e1a502bd5495a1a5a2cc21e12390065465c721e68086a91039b0ccf8643b885",
+    "program_id": "8a80c96a3cd480b2b54b69567bb780cd9117c35c92840e2d3805ab5303e39fc2",
+    "build_id": "46b5631a1d8138e0af996567508b5a21d5c09f39b76102e463d2cb1182abb552",
+    "reference_role_groups": {
+      "initialization": 1,
+      "other": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:601:original:1",
+        "function": "BlocksureInfo"
+      },
+      {
+        "id": "D2:601:original:2",
+        "function": "onlyowner"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "f3dc3378e46d350b663d683fa81b32178d2b8aa5a81602a9f14ab59c3b03e09b",
+        "archive_response_sha256": "2f38404f86a34a6a4b65b8b747586102d9b1fd5028d077ea90662606b883b94f",
+        "raw_run": "runs/RQ1_52d5c754a744/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 10,
+        "seconds": 1.5907,
+        "initial_tokens": 949,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:601:original:1",
+          "D2:601:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "f3dc3378e46d350b663d683fa81b32178d2b8aa5a81602a9f14ab59c3b03e09b",
+        "archive_response_sha256": "2f38404f86a34a6a4b65b8b747586102d9b1fd5028d077ea90662606b883b94f",
+        "raw_run": "runs/RQ1_52d5c754a744/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 10,
+        "seconds": 1.7002,
+        "initial_tokens": 949,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:601:original:1",
+          "D2:601:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_447e629016cc",
+    "family": "RQ1_447e629016cc",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "70387a04151ff10c00b379dfda7c4a77b77f19a6f9247820fc2a630b60523532",
+    "program_id": "2330e09b5939e09c30c1e085d9a6d4689a24e0927fad181eb2c2799012a79493",
+    "build_id": "f4fb9f710d8c06388805dc8abfb8f3c971df5690cf927da81dc5390fb9e48115",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "01afdd5a305b1b87c96050369884a6b709c6337308881b6a2939efd2ddd0bc7a",
+        "archive_response_sha256": "9f12135793097d4a4449a6637dc255800223bce1ccea715fd2aba457204de90f",
+        "raw_run": "runs/RQ1_447e629016cc/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 5,
+        "seconds": 7.6543,
+        "initial_tokens": 2825,
+        "action_count": 19,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2289
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "476eef9549102686b8ec0ecfbd475d7f3ce7bb76d486496b5a1ec9f79885b058",
+        "archive_response_sha256": "9f12135793097d4a4449a6637dc255800223bce1ccea715fd2aba457204de90f",
+        "raw_run": "runs/RQ1_447e629016cc/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 5,
+        "seconds": 7.6017,
+        "initial_tokens": 2825,
+        "action_count": 19,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_7534bc78dfc0",
+    "family": "RQ1_7534bc78dfc0",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "de29d8438748e88ae4db677417d2612533823394104b06efab43e184834c076a",
+    "program_id": "922e33a459b19f7566d1d851334215e736ef602f1394ffd40624f9183d52dbda",
+    "build_id": "7c2bddb0a98d50299d9cb66e7407ed129211ccf89bb337d28c6a4912043d5452",
+    "reference_role_groups": {
+      "other": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:603:author:1",
+        "function": "UpgradeAgentEnabledToken"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a700cad0cb784dc4a5cc504ca837c2604cec63be1a81b388ef2a7e6d51bdc264",
+        "archive_response_sha256": "ac7b730d6c0ef4be2bbc773f3c213938345e4155c2f1becff150a0e7d3ad7fd0",
+        "raw_run": "runs/RQ1_7534bc78dfc0/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 100,
+        "seconds": 18.2884,
+        "initial_tokens": 4119,
+        "action_count": 153,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:603:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a700cad0cb784dc4a5cc504ca837c2604cec63be1a81b388ef2a7e6d51bdc264",
+        "archive_response_sha256": "ac7b730d6c0ef4be2bbc773f3c213938345e4155c2f1becff150a0e7d3ad7fd0",
+        "raw_run": "runs/RQ1_7534bc78dfc0/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 100,
+        "seconds": 17.8815,
+        "initial_tokens": 4119,
+        "action_count": 153,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:603:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_f1e26706fa55",
+    "family": "RQ1_5870f63d1ec3",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "fd61daee340215d9bb66db847ae9350ce9aae7e3082092427c7c947ec6a06989",
+    "program_id": "e6a520f8ba3bd5eafc80659317d294df0611b6d9e469609c7fcaad54766ec603",
+    "build_id": "28dcbb806bed284ab7922d9b38bae5df2cb99392839c8c28f5f2857ad692c3d0",
+    "reference_role_groups": {
+      "role_or_state_guard": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:604:author:1",
+        "function": "execute"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "30a428d51e99f53bb55c73f7e35315b943cc3852c7eb145d3a613cdf064e9d81",
+        "archive_response_sha256": "20bf82d01620d1af9cdc2b91311ef73120b5a2f2c8253a7b80169388da8ba138",
+        "raw_run": "runs/RQ1_f1e26706fa55/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.348,
+        "initial_tokens": 846,
+        "action_count": 2,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:604:author:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "30a428d51e99f53bb55c73f7e35315b943cc3852c7eb145d3a613cdf064e9d81",
+        "archive_response_sha256": "20bf82d01620d1af9cdc2b91311ef73120b5a2f2c8253a7b80169388da8ba138",
+        "raw_run": "runs/RQ1_f1e26706fa55/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.38,
+        "initial_tokens": 846,
+        "action_count": 2,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:604:author:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_5e152e91f401",
+    "family": "RQ1_1a1efa9534de",
+    "stratum": "heldout_family",
+    "family_size": 3,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "1f3895de8f0f4f18ef4a4ac57895694a807dbf38178225f61e6c3ca8eb10cd98",
+    "program_id": "3ef2e87746200859638f07f6672a6ccdf01432eeb094c8bbf446d19e5a06ad01",
+    "build_id": "3403f148d0a9ef09ba9de04c0b834a27f0fe9eade00f1f79f38b17b276171c7e",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a3157f45d0560a988830209dacac5bf5cfdb0f716da4cf975cb263ad0df29c2b",
+        "archive_response_sha256": "6bbb3f46ceed9d2a58ba2fab1761998a4b262e1417e21ba387c3673b4c436348",
+        "raw_run": "runs/RQ1_5e152e91f401/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 103,
+        "seconds": 19.0128,
+        "initial_tokens": 2944,
+        "action_count": 120,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a3157f45d0560a988830209dacac5bf5cfdb0f716da4cf975cb263ad0df29c2b",
+        "archive_response_sha256": "6bbb3f46ceed9d2a58ba2fab1761998a4b262e1417e21ba387c3673b4c436348",
+        "raw_run": "runs/RQ1_5e152e91f401/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 103,
+        "seconds": 19.0761,
+        "initial_tokens": 2944,
+        "action_count": 120,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_e3be5dad4539",
+    "family": "RQ1_0930870e6f17",
+    "stratum": "near_exposed",
+    "family_size": 32,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "93458e0991d3cf3e53400bc0328950d3ebe6ca9525353fbe44c7a90fa98ce1b9",
+    "program_id": "f9317c12256e3a9f2c257ec376d1b229aea0b20ecc97a34e611f0f4dd1b8f601",
+    "build_id": "790661de13911f1881a7f4f78716d206747c3c37ff69c65ab72cd7d0cb2530b4",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:606:author:1",
+        "function": "nexus"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "68a578a9e2fb98a017d3663c1fcef86a48504a79ea1f9cf7ffba5aa630ac9066",
+        "archive_response_sha256": "23bfe20780de9ae488c94e6c20bf4c04259a8a60b64fb3e29217066d7ec4c37c",
+        "raw_run": "runs/RQ1_e3be5dad4539/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 56,
+        "seconds": 33.9219,
+        "initial_tokens": 3466,
+        "action_count": 147,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:606:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "68a578a9e2fb98a017d3663c1fcef86a48504a79ea1f9cf7ffba5aa630ac9066",
+        "archive_response_sha256": "23bfe20780de9ae488c94e6c20bf4c04259a8a60b64fb3e29217066d7ec4c37c",
+        "raw_run": "runs/RQ1_e3be5dad4539/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 56,
+        "seconds": 33.9742,
+        "initial_tokens": 3466,
+        "action_count": 147,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:606:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_1ca2e002ea0d",
+    "family": "RQ1_1ca2e002ea0d",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "9efe943d878c9219d6bd4013f8a9f237250b0953291ab3c37c59fe3cde4b07e0",
+    "program_id": "10dc1d676f3beb4133e4e87ed5f97acb5d5c300017ac515c023f958ed37404fb",
+    "build_id": "75572a02bee88b476cd5a4bedf915146a347265188603824b8ea33d1dbdd0f77",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:607:author:1",
+        "function": "AirdropBeggarsCommunity"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "e56896de8206aaeba1a6fdd418a59b42c2200e1889294ce2bb0d141274185cdf",
+        "archive_response_sha256": "5d182828f536e15ff3562ad87ee91c1369933187f6e05e72fbffae7d67d94ac6",
+        "raw_run": "runs/RQ1_1ca2e002ea0d/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 26,
+        "seconds": 3.5818,
+        "initial_tokens": 1747,
+        "action_count": 25,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:607:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            899
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "e56896de8206aaeba1a6fdd418a59b42c2200e1889294ce2bb0d141274185cdf",
+        "archive_response_sha256": "5d182828f536e15ff3562ad87ee91c1369933187f6e05e72fbffae7d67d94ac6",
+        "raw_run": "runs/RQ1_1ca2e002ea0d/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 26,
+        "seconds": 3.5664,
+        "initial_tokens": 1747,
+        "action_count": 25,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:607:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            899
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_769d4c77c6c6",
+    "family": "RQ1_769d4c77c6c6",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "ba70faf20ce8b88b973974a384788b8581de7ee00a6990d3bade89ed5c3fc62c",
+    "program_id": "6bd4e324fd5749c6bf8ee1c74345d855129845dc1bb2db60e72b7f63b6c6d328",
+    "build_id": "d82196784568060be9ed1a5fdd82dc6669d15e9a56a51398bc90a835857a105c",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ff5d5028291ba49ef265f28dd0d24460f7ce815ceb0b01db7e145413c0446436",
+        "archive_response_sha256": "b89650e33be3dc40dacd94977a443703e2e3ce5735535cf47347d611cc781e07",
+        "raw_run": "runs/RQ1_769d4c77c6c6/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 13,
+        "seconds": 6.7204,
+        "initial_tokens": 3147,
+        "action_count": 66,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ff5d5028291ba49ef265f28dd0d24460f7ce815ceb0b01db7e145413c0446436",
+        "archive_response_sha256": "b89650e33be3dc40dacd94977a443703e2e3ce5735535cf47347d611cc781e07",
+        "raw_run": "runs/RQ1_769d4c77c6c6/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 13,
+        "seconds": 6.7892,
+        "initial_tokens": 3147,
+        "action_count": 66,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_a41242596bec",
+    "family": "RQ1_a41242596bec",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "6466cb0732c65d7c9803bb50b431ddda9018d9b96abbf36a89410f39afa4e1c3",
+    "program_id": "f5bf6210ced2552fd5db8ff9134686c5de1ca181e01180f26224fe8177138d01",
+    "build_id": "98ef4a2e43bbc22f9943661ca51f266bf28294ef0767b1bda0ec688b529d29d8",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "7a09471dbb8cac05d3fe8b431316178c702d97c50fb86684e84c47c403cc97cd",
+        "archive_response_sha256": "e7c892dd61731c7ad8a01169aca895f3d8db9324b2d44005c0a31ff4e6b08ce4",
+        "raw_run": "runs/RQ1_a41242596bec/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 2,
+        "seconds": 320.8711,
+        "initial_tokens": 6418,
+        "action_count": 518,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "7a09471dbb8cac05d3fe8b431316178c702d97c50fb86684e84c47c403cc97cd",
+        "archive_response_sha256": "e7c892dd61731c7ad8a01169aca895f3d8db9324b2d44005c0a31ff4e6b08ce4",
+        "raw_run": "runs/RQ1_a41242596bec/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 2,
+        "seconds": 321.6198,
+        "initial_tokens": 6418,
+        "action_count": 518,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_ae7cc350fda4",
+    "family": "RQ1_ae7cc350fda4",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "e0353c828337897b023c3081303847348fa865113f7664d2cc81c0d92668fedb",
+    "program_id": "8b84b14c6748dcb82e5bdc5b30c51c1abb138f3f7881edfee4550ddfa9345447",
+    "build_id": "98513b5a934558622c92d86e864a59f2a25b7862caf8dc47b94b3e679be7a4b0",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "90f6b7cdbb64337596dbc12685ad458b76111ddebb6c0947227c75b67c3cf746",
+        "archive_response_sha256": "6551cb621e37145f9ccb5475f5555ca9dae0a3f520d66f668e0486c781688315",
+        "raw_run": "runs/RQ1_ae7cc350fda4/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 21,
+        "seconds": 4.9104,
+        "initial_tokens": 2363,
+        "action_count": 20,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3104
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "90f6b7cdbb64337596dbc12685ad458b76111ddebb6c0947227c75b67c3cf746",
+        "archive_response_sha256": "6551cb621e37145f9ccb5475f5555ca9dae0a3f520d66f668e0486c781688315",
+        "raw_run": "runs/RQ1_ae7cc350fda4/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 21,
+        "seconds": 4.6558,
+        "initial_tokens": 2363,
+        "action_count": 20,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3104
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_af0f1c0fc521",
+    "family": "RQ1_af0f1c0fc521",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "bbcfdf8f29c457ca15317800adee1781458c8aec42cc4c4182f5cbec0dbc231e",
+    "program_id": "7723c6f3e0ab99bd836824aa683d09359b0def571bc60f19057444ce9f4414b2",
+    "build_id": "cee1f7580ba63ec2188f286a0431a6aba5cd1e49426c8ca7d03618bce740d5ec",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:611:author:1",
+        "function": "press"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "417c21ed9c4855373982821877046ae81a4aeb45c1db6cd2e920c2af0f6316c1",
+        "archive_response_sha256": "7397cabd61327082fbacb9e5afb1e40bb465b73b6bd4093cd21d46796e3c6071",
+        "raw_run": "runs/RQ1_af0f1c0fc521/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 2,
+        "seconds": 22.583,
+        "initial_tokens": 1922,
+        "action_count": 81,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:611:author:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "417c21ed9c4855373982821877046ae81a4aeb45c1db6cd2e920c2af0f6316c1",
+        "archive_response_sha256": "7397cabd61327082fbacb9e5afb1e40bb465b73b6bd4093cd21d46796e3c6071",
+        "raw_run": "runs/RQ1_af0f1c0fc521/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 2,
+        "seconds": 23.1498,
+        "initial_tokens": 1922,
+        "action_count": 81,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:611:author:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_492a45a879ea",
+    "family": "RQ1_492a45a879ea",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "13414585a66dd619170bb862d35515659e5a5bd468b5cebb49e8cd54262a08f9",
+    "program_id": "f71b8c48e22962366d324cc8882b2b3bf02f9337c7774a40f90efa67ada25375",
+    "build_id": "1db0171bd56a8892d1ae81be31f7328bcc6e71145ceab1205d6e7d32b1d33fd3",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ab39127bd35fb27646b447f5e703b91bba7cf7fa5f7a626c5f2efa68344844b4",
+        "archive_response_sha256": "fcce04fb99ec44cb7dfc531a62db93f3d2819d7523b0b01e099566c1cf2e533e",
+        "raw_run": "runs/RQ1_492a45a879ea/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.4311,
+        "initial_tokens": 1077,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "ab39127bd35fb27646b447f5e703b91bba7cf7fa5f7a626c5f2efa68344844b4",
+        "archive_response_sha256": "fcce04fb99ec44cb7dfc531a62db93f3d2819d7523b0b01e099566c1cf2e533e",
+        "raw_run": "runs/RQ1_492a45a879ea/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.5511,
+        "initial_tokens": 1077,
+        "action_count": 7,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_52e0966c0666",
+    "family": "RQ1_403e9f180228",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "fed86c5ca044e8aa83e79aa765fc90c3799d42fa85dade4190f1fd3ccdfa9ad4",
+    "program_id": "8cafcce2facc7eb157b70ef0df49cef1019ce323334eefcee0fe47ca6e097e85",
+    "build_id": "ee3c5044076f5d7c53a45fe0e4f5708dcd8ff06f71f3a26172012b4d3f648416",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "45456db53bf62cb0f61cef823636db0a3fe36ff762cdb73fc716b144b0044c1d",
+        "archive_response_sha256": "5d1e795ae89d1824089ad17f47fe0a238a3dd2c7df096f259dc6015240855f65",
+        "raw_run": "runs/RQ1_52e0966c0666/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 25,
+        "seconds": 7.134,
+        "initial_tokens": 1781,
+        "action_count": 53,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "45456db53bf62cb0f61cef823636db0a3fe36ff762cdb73fc716b144b0044c1d",
+        "archive_response_sha256": "5d1e795ae89d1824089ad17f47fe0a238a3dd2c7df096f259dc6015240855f65",
+        "raw_run": "runs/RQ1_52e0966c0666/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 25,
+        "seconds": 7.1618,
+        "initial_tokens": 1781,
+        "action_count": 53,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_0bcbefea1890",
+    "family": "RQ1_01900f3f9b7c",
+    "stratum": "near_exposed",
+    "family_size": 10,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "ca7a56c66e73a7fb43aeaa4f9dd0fab08e08c20f31a3541c78f45908f634644c",
+    "program_id": "a23f5b438c135ad9353b54993109b02cf22b25aa59c7907f7b8f8e903fa252fb",
+    "build_id": "dfa6a86c59a7811aaba357d8094fea5f6c55f88d669b26cb88812f5f856e9fe0",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:614:S1",
+        "function": "selfdestructs"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "42702ede38fc68eeab3cc178cea3e6cfecc31bd677b8396373835c000a4babc0",
+        "archive_response_sha256": "c9f321588da842276bf2ce2fe3482b90893c3f8af03507c0c6d683a42ec8ab41",
+        "raw_run": "runs/RQ1_0bcbefea1890/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 75,
+        "seconds": 12.9258,
+        "initial_tokens": 2896,
+        "action_count": 98,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 2,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:614:S1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2834
+          ],
+          [
+            "units/program.sol",
+            4814
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "42702ede38fc68eeab3cc178cea3e6cfecc31bd677b8396373835c000a4babc0",
+        "archive_response_sha256": "c9f321588da842276bf2ce2fe3482b90893c3f8af03507c0c6d683a42ec8ab41",
+        "raw_run": "runs/RQ1_0bcbefea1890/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 75,
+        "seconds": 12.8065,
+        "initial_tokens": 2896,
+        "action_count": 98,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 2,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:614:S1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2834
+          ],
+          [
+            "units/program.sol",
+            4814
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_d2682a2dcafe",
+    "family": "RQ1_d2682a2dcafe",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "860d89de63445c3de4f04cc07a8a94f9a2487e274652d6f96580bcc0e4cef0b6",
+    "program_id": "400fef237771ad9a60968b9bf80bb78ecb13f2ea999ef082dcae0bfed9ada70f",
+    "build_id": "7cfe4d8b0c47c00b97282169f29e0e9eb0a03913af8e78b2573138a63d230e1c",
+    "reference_role_groups": {
+      "role_grant_or_change": 2
+    },
+    "reference_roots": [
+      {
+        "id": "D2:615:S1",
+        "function": "Owned"
+      },
+      {
+        "id": "D2:615:S2",
+        "function": "Relay"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "bf06e1838aa9bb883537b9ee291c5a80b8da9333b694fddad9b976773317d347",
+        "archive_response_sha256": "f1e4e28513301fad80d43c2c549cf982f1e3c2676ad332daa019b3b3e8d35cae",
+        "raw_run": "runs/RQ1_d2682a2dcafe/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 21,
+        "seconds": 5.7056,
+        "initial_tokens": 2817,
+        "action_count": 37,
+        "AC_projection": "alarm",
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:615:S1",
+          "D2:615:S2"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3649
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "bf06e1838aa9bb883537b9ee291c5a80b8da9333b694fddad9b976773317d347",
+        "archive_response_sha256": "f1e4e28513301fad80d43c2c549cf982f1e3c2676ad332daa019b3b3e8d35cae",
+        "raw_run": "runs/RQ1_d2682a2dcafe/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 21,
+        "seconds": 5.994,
+        "initial_tokens": 2817,
+        "action_count": 37,
+        "AC_projection": "alarm",
+        "TP": 2,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:615:S1",
+          "D2:615:S2"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3649
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_0e3c3362706f",
+    "family": "RQ1_0e3c3362706f",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "b538608215a5b6d710351747d1a369f5a8bdb9151ea2ce5d1f0987127a6e8e70",
+    "program_id": "1d3d9de3dfb00d402583c0ee16e1bcb1a75a4e9796471738830441a7db795d7c",
+    "build_id": "df4d469bd99e343d5af4c9ce1db9991226a0df31c3900bbaf72565a0ee4a6453",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:616:author:1",
+        "function": "kill"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "4d76a75f2ed43e43f1433725f79f0e23fca5dcaf106b52979840c895e0e9f219",
+        "archive_response_sha256": "b58292d34423cf644551f9ea4810e8daa1d91dfb2d5a330493a956a3c6b899c6",
+        "raw_run": "runs/RQ1_0e3c3362706f/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.9819,
+        "initial_tokens": 1296,
+        "action_count": 12,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:616:author:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "4d76a75f2ed43e43f1433725f79f0e23fca5dcaf106b52979840c895e0e9f219",
+        "archive_response_sha256": "b58292d34423cf644551f9ea4810e8daa1d91dfb2d5a330493a956a3c6b899c6",
+        "raw_run": "runs/RQ1_0e3c3362706f/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.896,
+        "initial_tokens": 1296,
+        "action_count": 12,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:616:author:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_6215ad5e2727",
+    "family": "RQ1_6215ad5e2727",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "9cd2636fd44c2039f2d5febbd1f17fcdf9af504f0480f2f4ca9bfea0b4debdb7",
+    "program_id": "69a3eea3bf006ed248a7628d406310bf1de51ae33b0808d2acf93bddf92482e4",
+    "build_id": "ac22442ff41ffd713bfc99e8ce34a434d5c0ee0a0810a67c35a8161a268b14f2",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:617:author:1",
+        "function": "constuctor"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "691ca555768df217ffd69cee449878da65d90af6ea67832c1c0cfa97284243de",
+        "archive_response_sha256": "476dca5f5e218be6b4e1bce459f173992d6720864c79fd7e7fdb2344fc2314e6",
+        "raw_run": "runs/RQ1_6215ad5e2727/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 2,
+        "seconds": 1.9635,
+        "initial_tokens": 1497,
+        "action_count": 9,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:617:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "691ca555768df217ffd69cee449878da65d90af6ea67832c1c0cfa97284243de",
+        "archive_response_sha256": "476dca5f5e218be6b4e1bce459f173992d6720864c79fd7e7fdb2344fc2314e6",
+        "raw_run": "runs/RQ1_6215ad5e2727/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 2,
+        "seconds": 2.0623,
+        "initial_tokens": 1497,
+        "action_count": 9,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:617:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_e198c7d6beaf",
+    "family": "RQ1_0ff5d2904232",
+    "stratum": "heldout_family",
+    "family_size": 24,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "56abf139c47805ff4907aac828439876b48e5e48e5c4070001b816d63202144c",
+    "program_id": "1d27098cf247df37e0a32ef7c285ebb2d278518bc83a5505cb236af0590393c0",
+    "build_id": "0e137e0ae6fcf271375eab056a589f20e603e850d7dd9ef35da727c5b645e86d",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:618:author:1",
+        "function": "VPC0x"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c20294431c55042441a26b3fa8038b21a534ae24a2fa7eab359b067a5272b70c",
+        "archive_response_sha256": "d7f70587c4d1ca6f8f2b3c7eced7bee1c12d8442ab7350c7c1eef878d9fa6f0a",
+        "raw_run": "runs/RQ1_e198c7d6beaf/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 90,
+        "seconds": 136.309,
+        "initial_tokens": 3264,
+        "action_count": 306,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:618:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3762
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c20294431c55042441a26b3fa8038b21a534ae24a2fa7eab359b067a5272b70c",
+        "archive_response_sha256": "d7f70587c4d1ca6f8f2b3c7eced7bee1c12d8442ab7350c7c1eef878d9fa6f0a",
+        "raw_run": "runs/RQ1_e198c7d6beaf/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 90,
+        "seconds": 137.2071,
+        "initial_tokens": 3264,
+        "action_count": 306,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 1,
+        "FN": 0,
+        "matched_roots": [
+          "D2:618:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            3762
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_4580c60aec2d",
+    "family": "RQ1_3d5f2e705184",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "1ebe9d24e60d88c2d3b0524ddfe250787d98c1067a6b38789bb7543b2cc841c2",
+    "program_id": "f287d3c0908f6500742367a4eb08a2b4948e3cff66b2c44bd88e1f3d43a8fc9f",
+    "build_id": "c510cf0e33a73ba3c8338dba5adc3b32abc307568cc3f028d831a1306fd60a30",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:619:author:1",
+        "function": "TokenERC20"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "166a13bd6f6f5d69f1fe2dafcfd6c64650f3430df888d6b4238be144beac42dc",
+        "archive_response_sha256": "2f77fff0ff1d3f864834ea744c477ffaeb4cf563f9b4c2aaa8f21e925738ea45",
+        "raw_run": "runs/RQ1_4580c60aec2d/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 15,
+        "seconds": 914.7733,
+        "initial_tokens": 2578,
+        "action_count": 413,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:619:author:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "166a13bd6f6f5d69f1fe2dafcfd6c64650f3430df888d6b4238be144beac42dc",
+        "archive_response_sha256": "2f77fff0ff1d3f864834ea744c477ffaeb4cf563f9b4c2aaa8f21e925738ea45",
+        "raw_run": "runs/RQ1_4580c60aec2d/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 15,
+        "seconds": 914.5967,
+        "initial_tokens": 2578,
+        "action_count": 413,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:619:author:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_117582aaa497",
+    "family": "RQ1_0768945844c7",
+    "stratum": "near_exposed",
+    "family_size": 15,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "a8ab0464b4289aff58b98485bccba48eca1adf1ecfb74d6f05fbcb17e0f5d99a",
+    "program_id": "fc145a10c184e135abeb3e5b67ca7de743c815eafd9a43a1ffa45fd83cdb6581",
+    "build_id": "6455ba9634c567d31e1580fec10d1238ecce985249d1003d73f0534148e3a626",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:620:author:1",
+        "function": "Owned2"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "92b97013ddb2b964f392352106921f99731f23f77c2bf4e728d8cebcb8f5676e",
+        "archive_response_sha256": "ab29f873c64fc6427b457253dd859a50e6b8e8dc5e2461dfd0574ec5fb15c1bd",
+        "raw_run": "runs/RQ1_117582aaa497/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 8,
+        "seconds": 4.2988,
+        "initial_tokens": 2581,
+        "action_count": 24,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:620:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "92b97013ddb2b964f392352106921f99731f23f77c2bf4e728d8cebcb8f5676e",
+        "archive_response_sha256": "ab29f873c64fc6427b457253dd859a50e6b8e8dc5e2461dfd0574ec5fb15c1bd",
+        "raw_run": "runs/RQ1_117582aaa497/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 8,
+        "seconds": 4.2972,
+        "initial_tokens": 2581,
+        "action_count": 24,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:620:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_535a126ff8d8",
+    "family": "RQ1_535a126ff8d8",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "7f4066b722ee771d17adb103b30f3261a80872454bb6756cf31a461ec3c50d1d",
+    "program_id": "69f0cf2cd5891d6f1f277e59a82ebb8dfa286bfce4731f2e93b9109dd1df2c75",
+    "build_id": "dc9e6edb52f596f58450a146eff0f51ce8ff1bb25e82eb0f6eac10e340a563a5",
+    "reference_role_groups": {},
+    "reference_roots": [],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "96b01cd5dcfd9909425f25732220442365d97101d90cf50bbd497bf415d43b2d",
+        "archive_response_sha256": "ee975af2f70439932a8de12fda90a30753f74e99afa346f543e1a136131571a9",
+        "raw_run": "runs/RQ1_535a126ff8d8/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.7859,
+        "initial_tokens": 1132,
+        "action_count": 9,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "96b01cd5dcfd9909425f25732220442365d97101d90cf50bbd497bf415d43b2d",
+        "archive_response_sha256": "ee975af2f70439932a8de12fda90a30753f74e99afa346f543e1a136131571a9",
+        "raw_run": "runs/RQ1_535a126ff8d8/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.7312,
+        "initial_tokens": 1132,
+        "action_count": 9,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_dee4a75fd1b4",
+    "family": "RQ1_dee4a75fd1b4",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "6514ee790c125d8fbd69568633454bb0b0d5398329af618b73b7a88b66fcd786",
+    "program_id": "34158b184ec109598b019287091f2068426a55b0dd6299577ca96c392d45dafa",
+    "build_id": "5bb5917031773dd7fc4d1d280e34b181dac67c6d8837ccb261954ddc743acf3d",
+    "reference_role_groups": {
+      "initialization": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:622:author:1",
+        "function": "init"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "6c138d335062769ea5de50bb2dc35b5422ffde04d6ebda40bdf387864d4a4cac",
+        "archive_response_sha256": "c1cb82391289c27226375c5eae0b680acd8dc48a0caf8d172efa3b322f738f89",
+        "raw_run": "runs/RQ1_dee4a75fd1b4/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 63,
+        "seconds": 4.2526,
+        "initial_tokens": 1856,
+        "action_count": 55,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:622:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "6c138d335062769ea5de50bb2dc35b5422ffde04d6ebda40bdf387864d4a4cac",
+        "archive_response_sha256": "c1cb82391289c27226375c5eae0b680acd8dc48a0caf8d172efa3b322f738f89",
+        "raw_run": "runs/RQ1_dee4a75fd1b4/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 63,
+        "seconds": 4.2454,
+        "initial_tokens": 1856,
+        "action_count": 55,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:622:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_52d017b96965",
+    "family": "RQ1_0da822a515f7",
+    "stratum": "near_exposed",
+    "family_size": 32,
+    "r4_exposed_family": true,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "22bb80610f6b70b56250e2eea9b212fc7b2b674c64575b3450642ad4e5b97fd0",
+    "program_id": "4bcc4b9a9d987435c5800f928932acd752f9a1fb8b54256271d5faf1ddf0cfed",
+    "build_id": "da8e04650727133149a30c3f0e1841fa04855c401d0f6f441772271091c82d93",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:623:author:1",
+        "function": "mintTo"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "231eaf1008a9d777c1f52ff6eff0c72ecb55168b7ba795505a93c3f9117dd550",
+        "archive_response_sha256": "b1b82bde0496d8b37f9470cb7843c698935926609d4fc3478c5dc823a65853ea",
+        "raw_run": "runs/RQ1_52d017b96965/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 24,
+        "seconds": 3.5425,
+        "initial_tokens": 2145,
+        "action_count": 23,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:623:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "231eaf1008a9d777c1f52ff6eff0c72ecb55168b7ba795505a93c3f9117dd550",
+        "archive_response_sha256": "b1b82bde0496d8b37f9470cb7843c698935926609d4fc3478c5dc823a65853ea",
+        "raw_run": "runs/RQ1_52d017b96965/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 24,
+        "seconds": 3.5214,
+        "initial_tokens": 2145,
+        "action_count": 23,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:623:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_b392b57fa617",
+    "family": "RQ1_b392b57fa617",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "7034a12b21b01bc97eac616e6641f2a4eace772da86bff612de3e37098ebed75",
+    "program_id": "a2a149d6d6b72e3d9c3fe93102520fc180bec0135f83799786dc8c5a44829f6d",
+    "build_id": "ee5c58f0ba4a7fd13d40a875244d9070e3568f7c018ee28927b9d99c11cfacfb",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:624:author:1",
+        "function": "BIMI_0001"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "0692f0d2862eb78c79346c8b919c024c0c5e5488eda9f16914849d3d90a6a682",
+        "archive_response_sha256": "2b9cdec04c32bbd029dc50748fcb45ea709b86bbfdee7e698b7d1f315be96ca1",
+        "raw_run": "runs/RQ1_b392b57fa617/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 0,
+        "seconds": 24.7551,
+        "initial_tokens": 7240,
+        "action_count": 2,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:624:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "0692f0d2862eb78c79346c8b919c024c0c5e5488eda9f16914849d3d90a6a682",
+        "archive_response_sha256": "2b9cdec04c32bbd029dc50748fcb45ea709b86bbfdee7e698b7d1f315be96ca1",
+        "raw_run": "runs/RQ1_b392b57fa617/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 0,
+        "seconds": 24.6832,
+        "initial_tokens": 7240,
+        "action_count": 2,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:624:author:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_5e9adf3cda8c",
+    "family": "RQ1_5e9adf3cda8c",
+    "stratum": "prior_direction2",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "85b1f65dc33b10179e1ca7171cf6ded338c628fca2a98e633906e8c819454021",
+    "program_id": "3426cc5cab8bea81c3d22c70dfcfceeee423b8f7405c827bbad75590d584dffa",
+    "build_id": "cdb73f24152b1e34759113952dc14b431042433de3bd9a2df2d6f917215e6248",
+    "reference_role_groups": {
+      "initialization": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:625:original:1",
+        "function": "constructor"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c89c6015945445419782f3c8582d39fe1f2f0ac17e9724f1ac1c82980ab27f42",
+        "archive_response_sha256": "6a044e2209259b37fdbfdaba5762df7c962e736e2fadf321d2e63c08603fcb63",
+        "raw_run": "runs/RQ1_5e9adf3cda8c/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 3,
+        "seconds": 19.1168,
+        "initial_tokens": 3045,
+        "action_count": 61,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:625:original:1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2872
+          ]
+        ]
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c89c6015945445419782f3c8582d39fe1f2f0ac17e9724f1ac1c82980ab27f42",
+        "archive_response_sha256": "6a044e2209259b37fdbfdaba5762df7c962e736e2fadf321d2e63c08603fcb63",
+        "raw_run": "runs/RQ1_5e9adf3cda8c/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 3,
+        "seconds": 19.2188,
+        "initial_tokens": 3045,
+        "action_count": 61,
+        "AC_projection": "alarm",
+        "TP": 0,
+        "FP": 1,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:625:original:1"
+        ],
+        "extra_locations": [
+          [
+            "units/program.sol",
+            2872
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "member": "RQ1_247865e5ab88",
+    "family": "RQ1_0b9a9d5a2319",
+    "stratum": "near_exposed",
+    "family_size": 8,
+    "r4_exposed_family": true,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "5960fa981a6d8b7ce0f52385b9663e409abd557293282fda6b83077334c19c8b",
+    "program_id": "dbf589d83228b0eef589305054980f9c47d87aff847747ab4004711a7f4bb26d",
+    "build_id": "db4b33ce5c5652dc356005d995212db1436ef14a8d8b058dfeb4817505b2ffa6",
+    "reference_role_groups": {
+      "initialization": 1,
+      "other": 2,
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:626:S1",
+        "function": "init"
+      },
+      {
+        "id": "D2:626:S2",
+        "function": "setRelease"
+      },
+      {
+        "id": "D2:626:S3",
+        "function": "lock"
+      },
+      {
+        "id": "D2:626:S4",
+        "function": "kill"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "0149a79a6202a2980876cf535dc86943a5b1c458090d119d0105a9cad0ee6658",
+        "archive_response_sha256": "51c8039c499c3a11207f9c6b6128b527f3fbbabf112e5148e835d41c3a0aed75",
+        "raw_run": "runs/RQ1_247865e5ab88/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 86,
+        "seconds": 5.8443,
+        "initial_tokens": 1659,
+        "action_count": 43,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 3,
+        "matched_roots": [
+          "D2:626:S1"
+        ],
+        "missed_roots": [
+          "D2:626:S2",
+          "D2:626:S3",
+          "D2:626:S4"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "0149a79a6202a2980876cf535dc86943a5b1c458090d119d0105a9cad0ee6658",
+        "archive_response_sha256": "51c8039c499c3a11207f9c6b6128b527f3fbbabf112e5148e835d41c3a0aed75",
+        "raw_run": "runs/RQ1_247865e5ab88/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 86,
+        "seconds": 6.054,
+        "initial_tokens": 1659,
+        "action_count": 43,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 3,
+        "matched_roots": [
+          "D2:626:S1"
+        ],
+        "missed_roots": [
+          "D2:626:S2",
+          "D2:626:S3",
+          "D2:626:S4"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_13f2a43e4b12",
+    "family": "RQ1_06fc1aece17b",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "4605a06e9fa3f60ee6024214f5fd5002c3df8d3ebfb6479f859cddc89db1aa0c",
+    "program_id": "b0eb15f77dd5b3c2fbaf0cf80ee5267beb5e82e53b018d0faf574fab092ac641",
+    "build_id": "367775c2d76d21b0a2b10e69a9fe3ce4c6ed3a966bf211212acd3c9ff90cc64d",
+    "reference_role_groups": {
+      "role_grant_or_change": 1,
+      "role_or_state_guard": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:322:original:1",
+        "function": "owned"
+      },
+      {
+        "id": "D2:322:original:2",
+        "function": "requestNumber"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "6450e617fc62bd2049a0afa5d1f75b4e1d8bce8cc30db6a8a55ab31b13c3c5d8",
+        "archive_response_sha256": "344c12808cd808b9190b2a4fafbf67bb4734c737df26750749483c3c2ad2003e",
+        "raw_run": "runs/RQ1_13f2a43e4b12/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 74,
+        "seconds": 229.1037,
+        "initial_tokens": 3372,
+        "action_count": 343,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:322:original:1"
+        ],
+        "missed_roots": [
+          "D2:322:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "6450e617fc62bd2049a0afa5d1f75b4e1d8bce8cc30db6a8a55ab31b13c3c5d8",
+        "archive_response_sha256": "344c12808cd808b9190b2a4fafbf67bb4734c737df26750749483c3c2ad2003e",
+        "raw_run": "runs/RQ1_13f2a43e4b12/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 74,
+        "seconds": 225.2873,
+        "initial_tokens": 3372,
+        "action_count": 343,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:322:original:1"
+        ],
+        "missed_roots": [
+          "D2:322:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_2e5ccd7b4bd2",
+    "family": "RQ1_2e5ccd7b4bd2",
+    "stratum": "prior_direction2",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "efd22af795340804969f23f5cc500c80b41a7e944773b125013e4538cc3fc34a",
+    "program_id": "2cefc8b085fb4731a1eba21de13df939590e2e43ea0c438c5d0bb6be1654ee34",
+    "build_id": "5f89f50793baafeabf289c0520a0c13834455835c09ff1d38cb8f8c08064a237",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:363:original:1",
+        "function": "fallback"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "06083366abe0cd8adbd2d9c4c8368d56689021defc7864ab9e14496da71d915b",
+        "archive_response_sha256": "4f16ccfbb5762005aa67b789d5431756bb9338c82e29feb16171631ef2e92940",
+        "raw_run": "runs/RQ1_2e5ccd7b4bd2/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 82,
+        "seconds": 31.523,
+        "initial_tokens": 3182,
+        "action_count": 146,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:363:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "06083366abe0cd8adbd2d9c4c8368d56689021defc7864ab9e14496da71d915b",
+        "archive_response_sha256": "4f16ccfbb5762005aa67b789d5431756bb9338c82e29feb16171631ef2e92940",
+        "raw_run": "runs/RQ1_2e5ccd7b4bd2/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 82,
+        "seconds": 30.5743,
+        "initial_tokens": 3182,
+        "action_count": 146,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:363:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_2f01be3ebc82",
+    "family": "RQ1_2f01be3ebc82",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "e7da1545c34e07faf47d88680e27a6c3b194bcfa4f46ef1fbca06b51843833ed",
+    "program_id": "e6400cb894acc4b92bdbf62dfb77958d6c846e5bcb84536361c2596adffe7c5e",
+    "build_id": "7074bd793c35cc98e9bf6f8b0a020da67f4dcfe7fcfe55b504c7a7e9a159d8b5",
+    "reference_role_groups": {
+      "termination": 1,
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:94:original:1",
+        "function": "kill"
+      },
+      {
+        "id": "D2:94:original:2",
+        "function": "withdraw"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c131ab4ac2874e10fd7e93825bc73b758321c427654318dee1621c927deac45e",
+        "archive_response_sha256": "ea0fa0f2a34d687a80bfc54baf8580c5a680bb41350ea329d2afb155c5d5c028",
+        "raw_run": "runs/RQ1_2f01be3ebc82/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.4171,
+        "initial_tokens": 794,
+        "action_count": 4,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:94:original:1",
+          "D2:94:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "c131ab4ac2874e10fd7e93825bc73b758321c427654318dee1621c927deac45e",
+        "archive_response_sha256": "ea0fa0f2a34d687a80bfc54baf8580c5a680bb41350ea329d2afb155c5d5c028",
+        "raw_run": "runs/RQ1_2f01be3ebc82/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.4158,
+        "initial_tokens": 794,
+        "action_count": 4,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:94:original:1",
+          "D2:94:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_3dba1c8c9669",
+    "family": "RQ1_3dba1c8c9669",
+    "stratum": "prior_direction2",
+    "family_size": 3,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "1f14a8c908d83eadcaafde1258c6d5411176ca3cb2b2322dcfaafd2dc107de4e",
+    "program_id": "96d1df9266207fe7a3304970fc706e81433c15c66574b1303f72ee4d7b3d42b6",
+    "build_id": "3b1cc38d64cf19f4793c4033c23e04807760260bca1f878993173077785c76bb",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1,
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:72:original:1",
+        "function": "Play"
+      },
+      {
+        "id": "D2:72:original:2",
+        "function": "StartRoulette"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "64a8648e023080067f24f92469960be83fa850b14eef7c49fbb5de721726ffe6",
+        "archive_response_sha256": "712bc456df013cd4f2fa094363fe16e52685f853783247c5146c8a13653eb058",
+        "raw_run": "runs/RQ1_3dba1c8c9669/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 29,
+        "seconds": 2.5688,
+        "initial_tokens": 1134,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:72:original:2"
+        ],
+        "missed_roots": [
+          "D2:72:original:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "64a8648e023080067f24f92469960be83fa850b14eef7c49fbb5de721726ffe6",
+        "archive_response_sha256": "712bc456df013cd4f2fa094363fe16e52685f853783247c5146c8a13653eb058",
+        "raw_run": "runs/RQ1_3dba1c8c9669/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 29,
+        "seconds": 2.7077,
+        "initial_tokens": 1134,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:72:original:2"
+        ],
+        "missed_roots": [
+          "D2:72:original:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_4f65b1060e4d",
+    "family": "RQ1_3858ff02d02c",
+    "stratum": "heldout_family",
+    "family_size": 5,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "c0aa04ff5f2a64f682c4c28c184440f00463042c1e6e6a4135dbc80f8b29e266",
+    "program_id": "1d5cdb22f21ab3f202cbe4a7f94b6e3bfdf641788b2a4ea656f98663da28e3e0",
+    "build_id": "6d84eb9ca31a1ae0c3c935ec34d17aea135b66aa43e7d1a4156f00150bd3594f",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1,
+      "initialization": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:313:original:1",
+        "function": "TokenERC20"
+      },
+      {
+        "id": "D2:313:original:2",
+        "function": "initialize"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a7072d063f92cc5e261da153a8e73ec07e544473b6465e72a425659b10a870b1",
+        "archive_response_sha256": "ca86967a57dd2bc9a027dd3296b9ed1439443510d4292cd1266660ecc6dbccb2",
+        "raw_run": "runs/RQ1_4f65b1060e4d/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 19,
+        "seconds": 904.3925,
+        "initial_tokens": 2487,
+        "action_count": 221,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:313:original:1"
+        ],
+        "missed_roots": [
+          "D2:313:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "a7072d063f92cc5e261da153a8e73ec07e544473b6465e72a425659b10a870b1",
+        "archive_response_sha256": "ca86967a57dd2bc9a027dd3296b9ed1439443510d4292cd1266660ecc6dbccb2",
+        "raw_run": "runs/RQ1_4f65b1060e4d/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 19,
+        "seconds": 904.5167,
+        "initial_tokens": 2487,
+        "action_count": 221,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:313:original:1"
+        ],
+        "missed_roots": [
+          "D2:313:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_5ef9f46acd2e",
+    "family": "RQ1_5ef9f46acd2e",
+    "stratum": "prior_direction2",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "77b28480454dedd7670768da0b823f6225882ef31dfb8a63207b1d6a32b7813a",
+    "program_id": "7620ccb4d199b57ee2666de8b90a6b92ff9d3826b81e9842cd13551eb2a0808d",
+    "build_id": "16bf83d93f97a3ba74e170602f58339385818bf125f8d91d9af2ee1f6169d899",
+    "reference_role_groups": {
+      "termination": 2
+    },
+    "reference_roots": [
+      {
+        "id": "D2:54:original:1",
+        "function": "fallback"
+      },
+      {
+        "id": "D2:54:original:2",
+        "function": "debugDestruct"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "30e9ab3c24bea662033cc20f8a480c871ff1821ebcad60a36aab9fe8d0645fb0",
+        "archive_response_sha256": "f44c219c7e9a9200b6c40459cc9b7eeefdb3ad4f02a96ba93160a153045bfc98",
+        "raw_run": "runs/RQ1_5ef9f46acd2e/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.5408,
+        "initial_tokens": 917,
+        "action_count": 3,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:54:original:1",
+          "D2:54:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "30e9ab3c24bea662033cc20f8a480c871ff1821ebcad60a36aab9fe8d0645fb0",
+        "archive_response_sha256": "f44c219c7e9a9200b6c40459cc9b7eeefdb3ad4f02a96ba93160a153045bfc98",
+        "raw_run": "runs/RQ1_5ef9f46acd2e/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 0,
+        "seconds": 1.4881,
+        "initial_tokens": 917,
+        "action_count": 3,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 2,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:54:original:1",
+          "D2:54:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_7623b2a26a25",
+    "family": "RQ1_3dba1c8c9669",
+    "stratum": "near_exposed",
+    "family_size": 3,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "56a1532a845b75f8c4659035682e5c623c26cc44ad05f88adfe16a5c9f5c7112",
+    "program_id": "749a47ee12c093e66087309681d5d84c979e6b74445ee532584ee2ec6c269205",
+    "build_id": "a8ca3732f35808c704d7f41485d67f13aadf6906383ebf30f145bb246d2e2074",
+    "reference_role_groups": {
+      "role_grant_or_change": 1,
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:450:original:1",
+        "function": "StartRoulette"
+      },
+      {
+        "id": "D2:450:original:2",
+        "function": "Play"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "503123d04edc4ca600127afb6ec97c08879a9900d4191e25a3cda43d48817a7f",
+        "archive_response_sha256": "0850fe80ebeff9a5062e8cfafa86178295388f76d4db39b9a370a21cfdcc139f",
+        "raw_run": "runs/RQ1_7623b2a26a25/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 28,
+        "seconds": 2.4913,
+        "initial_tokens": 1139,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:450:original:1"
+        ],
+        "missed_roots": [
+          "D2:450:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "503123d04edc4ca600127afb6ec97c08879a9900d4191e25a3cda43d48817a7f",
+        "archive_response_sha256": "0850fe80ebeff9a5062e8cfafa86178295388f76d4db39b9a370a21cfdcc139f",
+        "raw_run": "runs/RQ1_7623b2a26a25/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 28,
+        "seconds": 2.623,
+        "initial_tokens": 1139,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:450:original:1"
+        ],
+        "missed_roots": [
+          "D2:450:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_771e49570272",
+    "family": "RQ1_3dba1c8c9669",
+    "stratum": "near_exposed",
+    "family_size": 3,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": false,
+    "normalized_source_sha256": "857bfbd917bee7790ea6e8c4d066e2e0604bdf8a1d0e9ad597eb9b72415b2787",
+    "program_id": "027d9aa824a574fe1e0a206a5929025f95d56f78fda5376b2fcf602c6531d505",
+    "build_id": "ab99e9e4012432a0577e742bcf65b98ee30b81847727df2e0c73174f57bb935c",
+    "reference_role_groups": {
+      "role_grant_or_change": 1,
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:421:original:1",
+        "function": "StartRoulette"
+      },
+      {
+        "id": "D2:421:original:2",
+        "function": "Play"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "90c43ff1299c07285ce56e3221e5caff9ce33b936f6fc8d5d5702dbe4828d1af",
+        "archive_response_sha256": "004860350f7bb2a4ac7ce9d0a14c509faa3c60d5927d54ba3b43652f5317a377",
+        "raw_run": "runs/RQ1_771e49570272/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 19,
+        "seconds": 2.6358,
+        "initial_tokens": 1139,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:421:original:1"
+        ],
+        "missed_roots": [
+          "D2:421:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "90c43ff1299c07285ce56e3221e5caff9ce33b936f6fc8d5d5702dbe4828d1af",
+        "archive_response_sha256": "004860350f7bb2a4ac7ce9d0a14c509faa3c60d5927d54ba3b43652f5317a377",
+        "raw_run": "runs/RQ1_771e49570272/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 19,
+        "seconds": 2.598,
+        "initial_tokens": 1139,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:421:original:1"
+        ],
+        "missed_roots": [
+          "D2:421:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_868007cf433c",
+    "family": "RQ1_868007cf433c",
+    "stratum": "prior_direction2",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "9b7337ea32f624484133161e0a69f6c0c45cda85821d7e15978e4f3e41053ac1",
+    "program_id": "463a940b0f80dc25d86cdec0ea697d1115fa7a059d77a5448837dd059bad5093",
+    "build_id": "ea7ca65adfbd0b9456ecc2f1eb98a823a7839dcbd592d45dbaffea9173a8b580",
+    "reference_role_groups": {
+      "termination": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:222:original:1",
+        "function": "fallback"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "b0954aa9a438924680501407cc47fb761fc0f09023d35e361b686b49502abb9e",
+        "archive_response_sha256": "0f0ccdbab44184db1f39af9ff57bb25ba320f108618ebf6c7ae31a80930f0fd5",
+        "raw_run": "runs/RQ1_868007cf433c/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 6,
+        "seconds": 2.1979,
+        "initial_tokens": 975,
+        "action_count": 8,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:222:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "b0954aa9a438924680501407cc47fb761fc0f09023d35e361b686b49502abb9e",
+        "archive_response_sha256": "0f0ccdbab44184db1f39af9ff57bb25ba320f108618ebf6c7ae31a80930f0fd5",
+        "raw_run": "runs/RQ1_868007cf433c/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 6,
+        "seconds": 2.1175,
+        "initial_tokens": 975,
+        "action_count": 8,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:222:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_999f460049c5",
+    "family": "RQ1_999f460049c5",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "c90f5fd19491dc69cd81ff6284fd91c24ed36702ee52271d8e4c087f64b5e9c2",
+    "program_id": "88ad86a7c199c77bafabba34aa1077ee93a4d5a0a5119b978b0cfe498b40b543",
+    "build_id": "07ac545ace653c4000701845e7681fbe70d73e5ebc75689b9eac78a0ef91ec56",
+    "reference_role_groups": {
+      "issuance_or_fund_disposition": 1,
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:523:original:1",
+        "function": "Play"
+      },
+      {
+        "id": "D2:523:original:2",
+        "function": "StartRoulette"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "f000d03fb0358ef8edc79fd138819cea66d86eafb8cf1f9628e51aa4a90521ee",
+        "archive_response_sha256": "918ddba7ed6aa5dc86f21fd7c4f0c068fb9cf8152e82703993c3121db769f51a",
+        "raw_run": "runs/RQ1_999f460049c5/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 28,
+        "seconds": 2.4889,
+        "initial_tokens": 1149,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:523:original:2"
+        ],
+        "missed_roots": [
+          "D2:523:original:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "f000d03fb0358ef8edc79fd138819cea66d86eafb8cf1f9628e51aa4a90521ee",
+        "archive_response_sha256": "918ddba7ed6aa5dc86f21fd7c4f0c068fb9cf8152e82703993c3121db769f51a",
+        "raw_run": "runs/RQ1_999f460049c5/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 28,
+        "seconds": 2.8588,
+        "initial_tokens": 1149,
+        "action_count": 26,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:523:original:2"
+        ],
+        "missed_roots": [
+          "D2:523:original:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_ad8d0ac6a104",
+    "family": "RQ1_ad8d0ac6a104",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "2db0709ad059f74ff365d702a8a4f5689d91a90589f67a6958ef311f530b6c41",
+    "program_id": "faec4f405934dfcfa223d20d0231ac4b809ecff5308bbd89ea28b679661c67b3",
+    "build_id": "fe6ddb89918fbf3e71f7f0d5ec2e38f87aa7e052a2358fee7e9b6f3551f94040",
+    "reference_role_groups": {
+      "role_or_state_guard": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:90:original:1",
+        "function": "fallback"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "dc93bf20f0a204cd1ff3cec5e4133d1e4e98b05948e9c47f01b72756d9fbc8cc",
+        "archive_response_sha256": "9d2d0008355a0fe2790c290eb5caf4c0b7e6fd986d5b2dcba6b852b99ca6d6d9",
+        "raw_run": "runs/RQ1_ad8d0ac6a104/G",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 24,
+        "seconds": 10.3771,
+        "initial_tokens": 1802,
+        "action_count": 80,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:90:original:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "dc93bf20f0a204cd1ff3cec5e4133d1e4e98b05948e9c47f01b72756d9fbc8cc",
+        "archive_response_sha256": "9d2d0008355a0fe2790c290eb5caf4c0b7e6fd986d5b2dcba6b852b99ca6d6d9",
+        "raw_run": "runs/RQ1_ad8d0ac6a104/Simple",
+        "all_task_projections": {
+          "AC": "unsupported"
+        },
+        "solver_calls": 24,
+        "seconds": 10.2781,
+        "initial_tokens": 1802,
+        "action_count": 80,
+        "AC_projection": "unsupported",
+        "TP": 0,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [],
+        "missed_roots": [
+          "D2:90:original:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_b6fc6e31e760",
+    "family": "RQ1_b6fc6e31e760",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "1b20016b571a3636179618ed064868a09ed91184c2a50781c6e06adfb8a78334",
+    "program_id": "b04cf8974b1f302475434d99147c4ad67ede1ca8b59d4d809b297fda3953fa2d",
+    "build_id": "0870bcd2545f67fb42f95e89db21c1a7349b646d5cd2f36ab86f79f4b6c395f8",
+    "reference_role_groups": {
+      "termination": 2
+    },
+    "reference_roots": [
+      {
+        "id": "D2:537:original:1",
+        "function": "payout"
+      },
+      {
+        "id": "D2:537:original:2",
+        "function": "payoutSelf"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "timeout",
+        "execution_reason": "original_960s_member_watchdog",
+        "platform": "AutoDL Linux",
+        "score_status": "not_scored",
+        "frozen_export_sha256": null,
+        "archive_response_sha256": "02393bc067041042bca9efc5ad9ad390f9289f098004ca314166e0b3c14ce7ac",
+        "raw_run": "runs/RQ1_b6fc6e31e760/G",
+        "all_task_projections": {},
+        "solver_calls": null,
+        "seconds": null,
+        "initial_tokens": null,
+        "action_count": null,
+        "AC_projection": "timeout",
+        "TP": null,
+        "FP": null,
+        "FN": null,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "timeout",
+        "execution_reason": "original_960s_member_watchdog",
+        "platform": "AutoDL Linux",
+        "score_status": "not_scored",
+        "frozen_export_sha256": null,
+        "archive_response_sha256": "02393bc067041042bca9efc5ad9ad390f9289f098004ca314166e0b3c14ce7ac",
+        "raw_run": "runs/RQ1_b6fc6e31e760/Simple",
+        "all_task_projections": {},
+        "solver_calls": null,
+        "seconds": null,
+        "initial_tokens": null,
+        "action_count": null,
+        "AC_projection": "timeout",
+        "TP": null,
+        "FP": null,
+        "FN": null,
+        "matched_roots": [],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_c60bf13e0ef3",
+    "family": "RQ1_c60bf13e0ef3",
+    "stratum": "heldout_family",
+    "family_size": 2,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": false,
+    "normalized_source_sha256": "3c1ecb33e7d61f5bb8399d9b18f7360eba5980c9e252ec221143b3715126e376",
+    "program_id": "520331d9131c8544317e09dc069dd50dae5afc90fc934d815aee393cb35cd9d7",
+    "build_id": "de03478c7b2f8e7cf9041b9e166734c294261c6c5e0cac2fde4134790051000c",
+    "reference_role_groups": {
+      "termination": 2
+    },
+    "reference_roots": [
+      {
+        "id": "D2:176:original:1",
+        "function": "payout"
+      },
+      {
+        "id": "D2:176:original:2",
+        "function": "payoutSelf"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "720026dcdacf1867ec9e825a6c77ba25891c3a7469ed47c8fcc90e0c2aece13d",
+        "archive_response_sha256": "a2eaff046879ad7f995f379e00d6b64628ed856d934d5584a2e04f5f4ec054c1",
+        "raw_run": "runs/RQ1_c60bf13e0ef3/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 45,
+        "seconds": 206.5728,
+        "initial_tokens": 2525,
+        "action_count": 193,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:176:original:2"
+        ],
+        "missed_roots": [
+          "D2:176:original:1"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "720026dcdacf1867ec9e825a6c77ba25891c3a7469ed47c8fcc90e0c2aece13d",
+        "archive_response_sha256": "a2eaff046879ad7f995f379e00d6b64628ed856d934d5584a2e04f5f4ec054c1",
+        "raw_run": "runs/RQ1_c60bf13e0ef3/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 45,
+        "seconds": 205.742,
+        "initial_tokens": 2525,
+        "action_count": 193,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:176:original:2"
+        ],
+        "missed_roots": [
+          "D2:176:original:1"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_d639862f5b71",
+    "family": "RQ1_d639862f5b71",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "7728be531a54a5ef63f1c8d1eb2967a58b2c759a57f83a808a2466be9de73db0",
+    "program_id": "d5b8335ff0463bae4ce1693483dd14b0e34fec93e7739f9767750417b89f3500",
+    "build_id": "b39a7a11fb92176045d2b358512d395d58985c2fc3e58d47c80902e810f077b9",
+    "reference_role_groups": {
+      "role_grant_or_change": 1,
+      "role_or_state_guard": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:427:original:1",
+        "function": "setOwner"
+      },
+      {
+        "id": "D2:427:original:2",
+        "function": "setExecutor"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "189740e23e7103352a4c88329449e26a68d1bfe2154a44e10b2d01622b1c0db9",
+        "archive_response_sha256": "8ff86acd6a9765cbe50877d6c4f3fb33023a9d71b643035f712d37cc752bbeb2",
+        "raw_run": "runs/RQ1_d639862f5b71/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 201,
+        "seconds": 259.1446,
+        "initial_tokens": 12656,
+        "action_count": 326,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:427:original:1"
+        ],
+        "missed_roots": [
+          "D2:427:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "189740e23e7103352a4c88329449e26a68d1bfe2154a44e10b2d01622b1c0db9",
+        "archive_response_sha256": "8ff86acd6a9765cbe50877d6c4f3fb33023a9d71b643035f712d37cc752bbeb2",
+        "raw_run": "runs/RQ1_d639862f5b71/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 201,
+        "seconds": 260.0128,
+        "initial_tokens": 12656,
+        "action_count": 326,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:427:original:1"
+        ],
+        "missed_roots": [
+          "D2:427:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_e6f04047bff4",
+    "family": "RQ1_e6f04047bff4",
+    "stratum": "prior_direction2",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": true,
+    "family_representative": true,
+    "normalized_source_sha256": "edabf64a6199637a682c4816752f06d5f8e6b8380463ecd3b82663e28ece65a0",
+    "program_id": "75a3ac48c539efa3bf060da1065f6c3b3ac5e5de9db081790d612e557d5cf433",
+    "build_id": "4f17d242dd92e1da9e213da66e66ee3b78d5b9f87eae3a0142aba6578e051f21",
+    "reference_role_groups": {
+      "other": 1,
+      "issuance_or_fund_disposition": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:37:original:1",
+        "function": "RegisterDevice"
+      },
+      {
+        "id": "D2:37:original:2",
+        "function": "CollectMoney"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "59a7aef8d3d56c6a123661d317b31b176278dfd3bf3552922e993b38bbb13ee1",
+        "archive_response_sha256": "f99b80c0e8e96a0e5952b1e7f4f31f7e216ada946d388364b8184f8c48051cba",
+        "raw_run": "runs/RQ1_e6f04047bff4/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 18,
+        "seconds": 2.219,
+        "initial_tokens": 1132,
+        "action_count": 17,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:37:original:1"
+        ],
+        "missed_roots": [
+          "D2:37:original:2"
+        ],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "59a7aef8d3d56c6a123661d317b31b176278dfd3bf3552922e993b38bbb13ee1",
+        "archive_response_sha256": "f99b80c0e8e96a0e5952b1e7f4f31f7e216ada946d388364b8184f8c48051cba",
+        "raw_run": "runs/RQ1_e6f04047bff4/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 18,
+        "seconds": 2.2348,
+        "initial_tokens": 1132,
+        "action_count": 17,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 1,
+        "matched_roots": [
+          "D2:37:original:1"
+        ],
+        "missed_roots": [
+          "D2:37:original:2"
+        ],
+        "extra_locations": []
+      }
+    }
+  },
+  {
+    "member": "RQ1_29c15f926dbe",
+    "family": "RQ1_29c15f926dbe",
+    "stratum": "heldout_family",
+    "family_size": 1,
+    "r4_exposed_family": false,
+    "direction2_exposed_family": false,
+    "family_representative": true,
+    "normalized_source_sha256": "2cd59aed134b3d8317f8154cfc641564e607ad9c72d2c1cd5873fcb4bf6cf043",
+    "program_id": "8b164619040c38f1ba955dced46d13e319d8316e3740237d86875bad74188b23",
+    "build_id": "5f5687e8effeffabaf5ad38e95503cf12dc365b2ac86e994ea8d1cfb1aa0023a",
+    "reference_role_groups": {
+      "role_grant_or_change": 1
+    },
+    "reference_roots": [
+      {
+        "id": "D2:242:original:1",
+        "function": "owned"
+      }
+    ],
+    "arms": {
+      "G": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "8662b5e32f1547df69e521a43422fd1b55140c08d7b6ed1c7627108974a3f0bb",
+        "archive_response_sha256": "2e8bce606f333d7d699d4f7ec6bd6fd85159a26666683edbf3c6f5a9c7dae57a",
+        "raw_run": "runs/RQ1_29c15f926dbe/G",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 69,
+        "seconds": 6.381,
+        "initial_tokens": 2360,
+        "action_count": 79,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:242:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      },
+      "Simple": {
+        "run_state": "completed",
+        "execution_reason": "",
+        "platform": "AutoDL Linux",
+        "score_status": "scored",
+        "frozen_export_sha256": "8662b5e32f1547df69e521a43422fd1b55140c08d7b6ed1c7627108974a3f0bb",
+        "archive_response_sha256": "2e8bce606f333d7d699d4f7ec6bd6fd85159a26666683edbf3c6f5a9c7dae57a",
+        "raw_run": "runs/RQ1_29c15f926dbe/Simple",
+        "all_task_projections": {
+          "AC": "alarm"
+        },
+        "solver_calls": 69,
+        "seconds": 6.3789,
+        "initial_tokens": 2360,
+        "action_count": 79,
+        "AC_projection": "alarm",
+        "TP": 1,
+        "FP": 0,
+        "FN": 0,
+        "matched_roots": [
+          "D2:242:original:1"
+        ],
+        "missed_roots": [],
+        "extra_locations": []
+      }
+    }
+  }
+]

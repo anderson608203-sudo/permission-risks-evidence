@@ -1,0 +1,38 @@
+{
+  "policy": {
+    "exact": "identity of sorted Solidity source digests and comment/pragma-stripped normalized text",
+    "near": "undirected edge for exact normalized text or strong whole-source 7-gram Jaccard, then use connected components",
+    "threshold_version": "lexical >=0.80 with length ratio >=0.80, or identifier-normalized >=0.92 AND lexical >=0.62 with length ratio >=0.88",
+    "development": "R4 five main and two additional genuine members; also conservatively record Direction2 48 and R2 holdout members that were actually investigated during R3/R4",
+    "holdout": "no tracked Direction2 exposure in that family; present member-weighted and one source-neutral representative per family; no guarantee of source-level independence outside tracked materials"
+  },
+  "count_members": 624,
+  "source_coverage": 624,
+  "count_families": 374,
+  "family_size_distribution": {
+    "10": 2,
+    "1": 290,
+    "2": 53,
+    "32": 2,
+    "15": 1,
+    "4": 7,
+    "5": 3,
+    "3": 12,
+    "24": 1,
+    "12": 1,
+    "6": 1,
+    "8": 1
+  },
+  "strata": {
+    "prior_direction2": 44,
+    "near_exposed": 104,
+    "heldout_family": 469,
+    "R4_direct": 7
+  },
+  "members_in": "Cases/AC-01.json through Cases/AC-13.json",
+  "link_counts": {
+    "lexical_near": 1434,
+    "same_normalized_source": 3,
+    "renamed_near": 43
+  }
+}

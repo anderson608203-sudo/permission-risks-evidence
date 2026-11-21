@@ -1,0 +1,208 @@
+{
+  "stitch_counts": [
+    {
+      "task": "AC",
+      "arm": "G",
+      "state": "completed",
+      "slots": 610
+    },
+    {
+      "task": "AC",
+      "arm": "G",
+      "state": "timeout",
+      "slots": 14
+    },
+    {
+      "task": "AC",
+      "arm": "Simple",
+      "state": "completed",
+      "slots": 610
+    },
+    {
+      "task": "AC",
+      "arm": "Simple",
+      "state": "timeout",
+      "slots": 14
+    },
+    {
+      "task": "FCR",
+      "arm": "G",
+      "state": "completed",
+      "slots": 30
+    },
+    {
+      "task": "FCR",
+      "arm": "Simple",
+      "state": "completed",
+      "slots": 30
+    }
+  ],
+  "new_api_requests": 0,
+  "runtime_files_and_tokenizer_verified": true,
+  "method_source_diff": [
+    "src/pr_next_joint/investigation/effect_consumption.py",
+    "src/pr_next_joint/investigation/property_model.py",
+    "src/pr_next_joint/investigation/transfer_scope.py"
+  ],
+  "remote_receipt_stream": {
+    "archive_sha256": "f32eb0745766be75d0a5f862ee09692742b5c1eb9df5d3f9e69a1249a957291e",
+    "archive_bytes": 174817384,
+    "verified_files": 30751,
+    "manifest_sha256": "0951392ab004176b1497269160c0dae0249aa771156c74d075c03b25d50accdf",
+    "remote_freeze_sha256": "265105e1133bd53a1e8cf7717223acd81f9ecdd8bc324fc6fd68474eb6a8c8f5"
+  },
+  "full_freeze_sha256": "0a21dfd5e5cb247422cbe83547641c044a844efd95ddf6e09c4b506c34cb064d",
+  "remote_prediction_freeze_sha256": "265105e1133bd53a1e8cf7717223acd81f9ecdd8bc324fc6fd68474eb6a8c8f5",
+  "local_prediction_freeze_sha256": "a961fe5548bae233d6e848d0e7f367c2d759f17a4d499997cecf3cad7383313a",
+  "aligned_population": 654,
+  "retained_timeout_partial_files": 438,
+  "log_files": 1308,
+  "freeze_before_scoring_verified": true,
+  "remote_elapsed_seconds": 11961.184,
+  "remote_finished_utc": "2026-11-21T09:10:11.907278+00:00",
+  "remote_workers": 12,
+  "per_task_per_arm": {
+    "AC": {
+      "G": {
+        "solver_calls": 32304,
+        "seconds": 54219.5478,
+        "initial_tokens": 2179401,
+        "actions": 77189
+      },
+      "Simple": {
+        "solver_calls": 32304,
+        "seconds": 54302.0433,
+        "initial_tokens": 2179401,
+        "actions": 77206
+      }
+    },
+    "FCR": {
+      "G": {
+        "solver_calls": 1920,
+        "seconds": 3037.6563,
+        "initial_tokens": 110891,
+        "actions": 1013
+      },
+      "Simple": {
+        "solver_calls": 1956,
+        "seconds": 3297.807,
+        "initial_tokens": 110891,
+        "actions": 1016
+      }
+    }
+  },
+  "per_platform_per_arm": {
+    "G": [
+      {
+        "task": "AC",
+        "platform": "AutoDL Linux",
+        "seconds_sum": 53553.1338,
+        "seconds_median": 13.8366,
+        "counts": {
+          "slots": 595,
+          "completed": 581,
+          "constructed_input_tokens": 2054799,
+          "solver_calls": 31016,
+          "actions": 73589,
+          "timeout": 14
+        }
+      },
+      {
+        "task": "AC",
+        "platform": "Windows",
+        "seconds_sum": 666.414,
+        "seconds_median": 9.532,
+        "counts": {
+          "slots": 29,
+          "completed": 29,
+          "constructed_input_tokens": 124602,
+          "solver_calls": 1288,
+          "actions": 3600
+        }
+      },
+      {
+        "task": "FCR",
+        "platform": "AutoDL Linux",
+        "seconds_sum": 2075.5433,
+        "seconds_median": 509.2871,
+        "counts": {
+          "slots": 4,
+          "completed": 4,
+          "constructed_input_tokens": 19510,
+          "solver_calls": 1222,
+          "actions": 275
+        }
+      },
+      {
+        "task": "FCR",
+        "platform": "Windows",
+        "seconds_sum": 962.113,
+        "seconds_median": 3.383,
+        "counts": {
+          "slots": 26,
+          "completed": 26,
+          "constructed_input_tokens": 91381,
+          "solver_calls": 698,
+          "actions": 738
+        }
+      }
+    ],
+    "Simple": [
+      {
+        "task": "AC",
+        "platform": "AutoDL Linux",
+        "seconds_sum": 53636.9043,
+        "seconds_median": 13.4017,
+        "counts": {
+          "slots": 595,
+          "completed": 581,
+          "constructed_input_tokens": 2054799,
+          "solver_calls": 31016,
+          "actions": 73606,
+          "timeout": 14
+        }
+      },
+      {
+        "task": "AC",
+        "platform": "Windows",
+        "seconds_sum": 665.139,
+        "seconds_median": 9.016,
+        "counts": {
+          "slots": 29,
+          "completed": 29,
+          "constructed_input_tokens": 124602,
+          "solver_calls": 1288,
+          "actions": 3600
+        }
+      },
+      {
+        "task": "FCR",
+        "platform": "AutoDL Linux",
+        "seconds_sum": 2202.04,
+        "seconds_median": 529.2968,
+        "counts": {
+          "slots": 4,
+          "completed": 4,
+          "constructed_input_tokens": 19510,
+          "solver_calls": 1237,
+          "actions": 276
+        }
+      },
+      {
+        "task": "FCR",
+        "platform": "Windows",
+        "seconds_sum": 1095.767,
+        "seconds_median": 3.43,
+        "counts": {
+          "slots": 26,
+          "completed": 26,
+          "constructed_input_tokens": 91381,
+          "solver_calls": 719,
+          "actions": 740
+        }
+      }
+    ]
+  },
+  "timeouts": "Cases/Timeouts.json",
+  "token_scope": "Local count of rendered initial messages using the frozen tokenizer, for completed slots; no new model billing."
+}

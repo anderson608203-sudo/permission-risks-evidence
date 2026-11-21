@@ -1,0 +1,829 @@
+{
+  "AC_position_and_author_root_changes": {
+    "RQ1_cba197c27f19": {
+      "family": "RQ1_0da822a515f7",
+      "stratum": "R4_direct",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [],
+        "removed_fp": [
+          [
+            "units/program.sol",
+            2546
+          ]
+        ],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "alarm"
+      },
+      "old_and_new_anchors": [
+        {
+          "direction": "removed_fp",
+          "location": [
+            "units/program.sol",
+            2546
+          ],
+          "mechanism": "confirmed_R4_normal_at_this_operation",
+          "source_findings": [
+            {
+              "id": "finding_239201900b218871488f",
+              "file": "units/program.sol",
+              "start": 2546,
+              "length": 531,
+              "function": "transferFrom",
+              "reference": null,
+              "matching": "reference_outside",
+              "source_reason": "program_support",
+              "target": "units/program.sol:UTrustToken",
+              "issue_ids": [
+                "i1"
+              ],
+              "mechanism": "delegated_quota_use"
+            }
+          ],
+          "same_scope_normal_certificates": [
+            {
+              "issue": "i1",
+              "category": "AC",
+              "model_assessment": "normal",
+              "status": "normal",
+              "reason": "holder_issued_transfer_scope",
+              "operation": "op_d82f69605761332311cf",
+              "has_exact_operation": true,
+              "property": "property_9d8a78542c7055d8ca09",
+              "compiled_kind": "source_grant_issuer",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2873,
+                  "length": 26,
+                  "ast_id": 302
+                }
+              ],
+              "certificate": {
+                "method": "direct",
+                "property": "property_9d8a78542c7055d8ca09",
+                "outcome": "refuted_by_normal",
+                "reason": "holder_issued_bound_on_all_debits",
+                "paths": [
+                  {
+                    "path": "path_7d72bc9553a48dcea6db",
+                    "site": {
+                      "file": "units/program.sol",
+                      "start": 2873,
+                      "length": 26,
+                      "ast_id": 302
+                    },
+                    "matched_guard": true,
+                    "binding": {
+                      "operation": "op_d82f69605761332311cf",
+                      "target": "units/program.sol:UTrustToken",
+                      "ledger_declaration": 34,
+                      "grant_declaration": 40,
+                      "holder_key_index": 0,
+                      "holder_term_sha256": "cc2b4173b7cec45612b7ebd2accb0f1e94cdb98f9ffaa51e6200bd8bf71a8dc1",
+                      "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                      "quantity_term_sha256": "9c5ccbb3bcb18980adabbb4a827d4d978252f847726e29aa44ea15d82994eeb2",
+                      "credit_location": {
+                        "file": "units/program.sol",
+                        "start": 2966,
+                        "length": 24,
+                        "ast_id": 317
+                      },
+                      "grant_use_location": {
+                        "file": "units/program.sol",
+                        "start": 2914,
+                        "length": 37,
+                        "ast_id": 311
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": []
+      }
+    },
+    "RQ1_3092779b88eb": {
+      "family": "RQ1_0da822a515f7",
+      "stratum": "near_exposed",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [],
+        "removed_fp": [
+          [
+            "units/program.sol",
+            2547
+          ]
+        ],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "alarm"
+      },
+      "old_and_new_anchors": [
+        {
+          "direction": "removed_fp",
+          "location": [
+            "units/program.sol",
+            2547
+          ],
+          "mechanism": "confirmed_R4_normal_at_this_operation",
+          "source_findings": [
+            {
+              "id": "finding_da2437c1edad19418b73",
+              "file": "units/program.sol",
+              "start": 2547,
+              "length": 531,
+              "function": "transferFrom",
+              "reference": null,
+              "matching": "reference_outside",
+              "source_reason": "program_support",
+              "target": "units/program.sol:CaviarToken",
+              "issue_ids": [
+                "i4"
+              ],
+              "mechanism": "delegated_quota_use"
+            }
+          ],
+          "same_scope_normal_certificates": [
+            {
+              "issue": "i4",
+              "category": "AC",
+              "model_assessment": "normal",
+              "status": "normal",
+              "reason": "holder_issued_transfer_scope",
+              "operation": "op_20e49528b026e68c6e09",
+              "has_exact_operation": true,
+              "property": "property_d942e3a2c35828fcf6fc",
+              "compiled_kind": "source_grant_issuer",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2874,
+                  "length": 26,
+                  "ast_id": 302
+                }
+              ],
+              "certificate": {
+                "method": "direct",
+                "property": "property_d942e3a2c35828fcf6fc",
+                "outcome": "refuted_by_normal",
+                "reason": "holder_issued_bound_on_all_debits",
+                "paths": [
+                  {
+                    "path": "path_03aa0dda0127c2320e95",
+                    "site": {
+                      "file": "units/program.sol",
+                      "start": 2874,
+                      "length": 26,
+                      "ast_id": 302
+                    },
+                    "matched_guard": true,
+                    "binding": {
+                      "operation": "op_20e49528b026e68c6e09",
+                      "target": "units/program.sol:CaviarToken",
+                      "ledger_declaration": 34,
+                      "grant_declaration": 40,
+                      "holder_key_index": 0,
+                      "holder_term_sha256": "cc2b4173b7cec45612b7ebd2accb0f1e94cdb98f9ffaa51e6200bd8bf71a8dc1",
+                      "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                      "quantity_term_sha256": "9c5ccbb3bcb18980adabbb4a827d4d978252f847726e29aa44ea15d82994eeb2",
+                      "credit_location": {
+                        "file": "units/program.sol",
+                        "start": 2967,
+                        "length": 24,
+                        "ast_id": 317
+                      },
+                      "grant_use_location": {
+                        "file": "units/program.sol",
+                        "start": 2915,
+                        "length": 37,
+                        "ast_id": 311
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": []
+      }
+    },
+    "RQ1_9e7faad9335a": {
+      "family": "RQ1_9e7faad9335a",
+      "stratum": "prior_direction2",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [
+          "D2:337:S2"
+        ],
+        "removed_fp": [],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "alarm"
+      },
+      "old_and_new_anchors": [],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": [
+          {
+            "reference": "D2:337:S2",
+            "matched_in_one": [
+              {
+                "id": "finding_6268927d4d12c707cbed",
+                "file": "units/program.sol",
+                "start": 1647,
+                "length": 518,
+                "function": "transferFrom",
+                "reference": "D2:337:S2",
+                "matching": "same_reference_function_source_window",
+                "source_reason": "program_support",
+                "target": "units/program.sol:StandardToken",
+                "issue_ids": [
+                  "i1"
+                ],
+                "mechanism": "delegated_quota_use"
+              }
+            ],
+            "same_scope_normal_certificates": [
+              {
+                "issue": "i1",
+                "category": "AC",
+                "model_assessment": "normal",
+                "status": "normal",
+                "reason": "holder_issued_transfer_scope",
+                "operation": "op_04e19100708ff27aa081",
+                "has_exact_operation": true,
+                "property": "property_e70d976156b6a10a52b5",
+                "compiled_kind": "source_grant_issuer",
+                "locations": [
+                  {
+                    "file": "units/program.sol",
+                    "start": 1906,
+                    "length": 50,
+                    "ast_id": 285
+                  }
+                ],
+                "certificate": {
+                  "method": "direct",
+                  "property": "property_e70d976156b6a10a52b5",
+                  "outcome": "refuted_by_normal",
+                  "reason": "holder_issued_bound_on_all_debits",
+                  "paths": [
+                    {
+                      "path": "path_ea548b54fd88bec40e71",
+                      "site": {
+                        "file": "units/program.sol",
+                        "start": 1906,
+                        "length": 50,
+                        "ast_id": 285
+                      },
+                      "matched_guard": true,
+                      "binding": {
+                        "operation": "op_04e19100708ff27aa081",
+                        "target": "units/program.sol:StandardToken",
+                        "ledger_declaration": 448,
+                        "grant_declaration": 454,
+                        "holder_key_index": 0,
+                        "holder_term_sha256": "0a8a4fa4f41052a14207c8071407bf5e33ebeaccd49402b4268628efa3594e9b",
+                        "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                        "quantity_term_sha256": "c9d84aa9b0dedf571a5c8e92c7ca7e382243f5e0b1f8abc5fbb993d4234412d9",
+                        "credit_location": {
+                          "file": "units/program.sol",
+                          "start": 1966,
+                          "length": 46,
+                          "ast_id": 296
+                        },
+                        "grant_use_location": {
+                          "file": "units/program.sol",
+                          "start": 2022,
+                          "length": 72,
+                          "ast_id": 313
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "RQ1_e4944522697f": {
+      "family": "RQ1_e4944522697f",
+      "stratum": "heldout_family",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [],
+        "removed_fp": [
+          [
+            "units/program.sol",
+            2928
+          ]
+        ],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "alarm"
+      },
+      "old_and_new_anchors": [
+        {
+          "direction": "removed_fp",
+          "location": [
+            "units/program.sol",
+            2928
+          ],
+          "mechanism": "confirmed_R4_normal_at_this_operation",
+          "source_findings": [
+            {
+              "id": "finding_667a02d5a9bd9996f03f",
+              "file": "units/program.sol",
+              "start": 2928,
+              "length": 526,
+              "function": "transferFrom",
+              "reference": null,
+              "matching": "reference_outside",
+              "source_reason": "program_support",
+              "target": "units/program.sol:GlobexCrowdsale",
+              "issue_ids": [
+                "i2"
+              ],
+              "mechanism": "delegated_quota_use"
+            }
+          ],
+          "same_scope_normal_certificates": [
+            {
+              "issue": "i2",
+              "category": "AC",
+              "model_assessment": "normal",
+              "status": "normal",
+              "reason": "holder_issued_transfer_scope",
+              "operation": "op_6f393fb0c44f794e6735",
+              "has_exact_operation": true,
+              "property": "property_d59664f57a47ddbd14a0",
+              "compiled_kind": "source_grant_issuer",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 3215,
+                  "length": 45,
+                  "ast_id": 428
+                }
+              ],
+              "certificate": {
+                "method": "direct",
+                "property": "property_d59664f57a47ddbd14a0",
+                "outcome": "refuted_by_normal",
+                "reason": "holder_issued_bound_on_all_debits",
+                "paths": [
+                  {
+                    "path": "path_5c41e23211465c3e4004",
+                    "site": {
+                      "file": "units/program.sol",
+                      "start": 3215,
+                      "length": 45,
+                      "ast_id": 428
+                    },
+                    "matched_guard": true,
+                    "binding": {
+                      "operation": "op_6f393fb0c44f794e6735",
+                      "target": "units/program.sol:GlobexCrowdsale",
+                      "ledger_declaration": 266,
+                      "grant_declaration": 374,
+                      "holder_key_index": 0,
+                      "holder_term_sha256": "aa80acb630e31192b42baf3421afe7168be0b5af0b067ad97931a1fc8570f3a0",
+                      "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                      "quantity_term_sha256": "c7ba9ca0b52f79a596a8bd28c00a14888dfac2571c9d672f49d4bed3d6644c81",
+                      "credit_location": {
+                        "file": "units/program.sol",
+                        "start": 3270,
+                        "length": 41,
+                        "ast_id": 439
+                      },
+                      "grant_use_location": {
+                        "file": "units/program.sol",
+                        "start": 3321,
+                        "length": 67,
+                        "ast_id": 456
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": []
+      }
+    },
+    "RQ1_5ee0702dae51": {
+      "family": "RQ1_5ee0702dae51",
+      "stratum": "heldout_family",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [],
+        "removed_fp": [
+          [
+            "units/program.sol",
+            1674
+          ]
+        ],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "alarm"
+      },
+      "old_and_new_anchors": [
+        {
+          "direction": "removed_fp",
+          "location": [
+            "units/program.sol",
+            1674
+          ],
+          "mechanism": "confirmed_R4_normal_at_this_operation",
+          "source_findings": [
+            {
+              "id": "finding_58b5ad1735bc46077c9c",
+              "file": "units/program.sol",
+              "start": 1674,
+              "length": 366,
+              "function": "transferFrom",
+              "reference": null,
+              "matching": "reference_outside",
+              "source_reason": "program_support",
+              "target": "units/program.sol:SnailToken",
+              "issue_ids": [
+                "i1"
+              ],
+              "mechanism": "delegated_quota_use"
+            }
+          ],
+          "same_scope_normal_certificates": [
+            {
+              "issue": "i1",
+              "category": "AC",
+              "model_assessment": "normal",
+              "status": "normal",
+              "reason": "holder_issued_transfer_scope",
+              "operation": "op_65addd8a22c5ef3ff2ed",
+              "has_exact_operation": true,
+              "property": "property_b6719e4e318422422154",
+              "compiled_kind": "source_grant_issuer",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 1902,
+                  "length": 25,
+                  "ast_id": 215
+                }
+              ],
+              "certificate": {
+                "method": "direct",
+                "property": "property_b6719e4e318422422154",
+                "outcome": "refuted_by_normal",
+                "reason": "holder_issued_bound_on_all_debits",
+                "paths": [
+                  {
+                    "path": "path_04701d66927056b522e4",
+                    "site": {
+                      "file": "units/program.sol",
+                      "start": 1902,
+                      "length": 25,
+                      "ast_id": 215
+                    },
+                    "matched_guard": true,
+                    "binding": {
+                      "operation": "op_65addd8a22c5ef3ff2ed",
+                      "target": "units/program.sol:SnailToken",
+                      "ledger_declaration": 295,
+                      "grant_declaration": 301,
+                      "holder_key_index": 0,
+                      "holder_term_sha256": "421ae389c0f3a0d3227a1b1ea92a540295b466dd42db4a053395dc8426c5c872",
+                      "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                      "quantity_term_sha256": "ec08128b4302d03a5faaae3b112160e4396cd68c362db1fb43d9d79f5d9e030a",
+                      "credit_location": {
+                        "file": "units/program.sol",
+                        "start": 1869,
+                        "length": 23,
+                        "ast_id": 209
+                      },
+                      "grant_use_location": {
+                        "file": "units/program.sol",
+                        "start": 1938,
+                        "length": 36,
+                        "ast_id": 224
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": []
+      }
+    },
+    "RQ1_447e629016cc": {
+      "family": "RQ1_447e629016cc",
+      "stratum": "heldout_family",
+      "delta": {
+        "new_tp": [],
+        "lost_tp": [],
+        "removed_fp": [
+          [
+            "units/program.sol",
+            2289
+          ]
+        ],
+        "added_fp": []
+      },
+      "projection": {
+        "G": "alarm",
+        "Simple": "unsupported"
+      },
+      "old_and_new_anchors": [
+        {
+          "direction": "removed_fp",
+          "location": [
+            "units/program.sol",
+            2289
+          ],
+          "mechanism": "confirmed_R4_normal_at_this_operation",
+          "source_findings": [
+            {
+              "id": "finding_b35a28108ec060370741",
+              "file": "units/program.sol",
+              "start": 2289,
+              "length": 438,
+              "function": "transferFrom",
+              "reference": null,
+              "matching": "reference_outside",
+              "source_reason": "program_support",
+              "target": "units/program.sol:ERC20",
+              "issue_ids": [
+                "i1"
+              ],
+              "mechanism": "delegated_quota_use"
+            }
+          ],
+          "same_scope_normal_certificates": [
+            {
+              "issue": "i1",
+              "category": "AC",
+              "model_assessment": "normal",
+              "status": "normal",
+              "reason": "holder_issued_transfer_scope",
+              "operation": "op_6b625be3079bdc1df851",
+              "has_exact_operation": true,
+              "property": "property_9169055b8a169deb4ad4",
+              "compiled_kind": "source_grant_issuer",
+              "locations": [
+                {
+                  "file": "units/program.sol",
+                  "start": 2552,
+                  "length": 25,
+                  "ast_id": 369
+                }
+              ],
+              "certificate": {
+                "method": "direct",
+                "property": "property_9169055b8a169deb4ad4",
+                "outcome": "refuted_by_normal",
+                "reason": "holder_issued_bound_on_all_debits",
+                "paths": [
+                  {
+                    "path": "path_bee1bc6453da3880f1e5",
+                    "site": {
+                      "file": "units/program.sol",
+                      "start": 2552,
+                      "length": 25,
+                      "ast_id": 369
+                    },
+                    "matched_guard": true,
+                    "binding": {
+                      "operation": "op_6b625be3079bdc1df851",
+                      "target": "units/program.sol:ERC20",
+                      "ledger_declaration": 469,
+                      "grant_declaration": 475,
+                      "holder_key_index": 0,
+                      "holder_term_sha256": "3b080eaf6d9f7c461f0956c8e943ed428fa24d9fba03ff902cdb731ca565eac0",
+                      "caller_term_sha256": "7e6821f593a958a8c5f66d95f7b709ffb0b020d17c5cfaa71861ca0567000dc6",
+                      "quantity_term_sha256": "d26c5bd0191d2939bbc7b369805399c478e25546f913221652a64ed55438d310",
+                      "credit_location": {
+                        "file": "units/program.sol",
+                        "start": 2515,
+                        "length": 23,
+                        "ast_id": 363
+                      },
+                      "grant_use_location": {
+                        "file": "units/program.sol",
+                        "start": 2591,
+                        "length": 36,
+                        "ast_id": 378
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "changed_reference_roots": {
+        "new_tp": [],
+        "lost_tp": []
+      }
+    }
+  },
+  "AC_extra_with_unique_R4_scope_evidence": 5,
+  "certificate_observations": {
+    "G": [],
+    "Simple": [
+      {
+        "task": "AC",
+        "stratum": "R4_direct",
+        "contracts": 2,
+        "member_ids": [
+          "RQ1_cba197c27f19",
+          "RQ1_30b4e48b4f5c"
+        ],
+        "receipts": [
+          {
+            "outcome": "refuted_by_normal",
+            "detail": "holder_issued_bound_on_all_debits",
+            "n": 2
+          }
+        ]
+      },
+      {
+        "task": "AC",
+        "stratum": "heldout_family",
+        "contracts": 15,
+        "member_ids": [
+          "RQ1_dcc7540cf4bf",
+          "RQ1_0646056d402b",
+          "RQ1_763f48e4e3b3",
+          "RQ1_14897f924798",
+          "RQ1_b0c884fa26df",
+          "RQ1_226d8f357d3f",
+          "RQ1_3d9158f4b24c",
+          "RQ1_371f33f7ff6f",
+          "RQ1_447aa12a3c06",
+          "RQ1_e4944522697f",
+          "RQ1_21b38b688442",
+          "RQ1_306aa53f1e15",
+          "RQ1_5ee0702dae51",
+          "RQ1_447e629016cc",
+          "RQ1_d2682a2dcafe"
+        ],
+        "receipts": [
+          {
+            "outcome": "refuted_by_normal",
+            "detail": "holder_issued_bound_on_all_debits",
+            "n": 8
+          },
+          {
+            "outcome": "unverified",
+            "detail": "bound_not_mandatory_on_every_debit",
+            "n": 1
+          },
+          {
+            "outcome": "unverified",
+            "detail": "issuer_provenance_incomplete",
+            "n": 8
+          },
+          {
+            "outcome": "unverified",
+            "detail": "missing_transfer_pair",
+            "n": 2
+          }
+        ]
+      },
+      {
+        "task": "AC",
+        "stratum": "near_exposed",
+        "contracts": 7,
+        "member_ids": [
+          "RQ1_7ffcfed064a0",
+          "RQ1_eb323d4d8ca9",
+          "RQ1_9d9d397fa18e",
+          "RQ1_3092779b88eb",
+          "RQ1_62f32beb7a0a",
+          "RQ1_2d9b7fbe78a5",
+          "RQ1_b914559c9307"
+        ],
+        "receipts": [
+          {
+            "outcome": "refuted_by_normal",
+            "detail": "holder_issued_bound_on_all_debits",
+            "n": 2
+          },
+          {
+            "outcome": "unverified",
+            "detail": "issuer_provenance_incomplete",
+            "n": 5
+          }
+        ]
+      },
+      {
+        "task": "AC",
+        "stratum": "prior_direction2",
+        "contracts": 3,
+        "member_ids": [
+          "RQ1_597e2ef1991a",
+          "RQ1_9e7faad9335a",
+          "RQ1_9d65bd6a5d25"
+        ],
+        "receipts": [
+          {
+            "outcome": "refuted_by_normal",
+            "detail": "holder_issued_bound_on_all_debits",
+            "n": 2
+          },
+          {
+            "outcome": "unverified",
+            "detail": "issuer_provenance_incomplete",
+            "n": 2
+          }
+        ]
+      }
+    ]
+  },
+  "separate_source_windows": {
+    "member": "RQ1_9e7faad9335a",
+    "source_hash": "e81d7063e3d44f7499064084948eb8d9af96af96a1f017970ce6d4551aef904f",
+    "windows": [
+      {
+        "start": 1647,
+        "end": 2165,
+        "function": "transferFrom"
+      },
+      {
+        "start": 6042,
+        "end": 6216,
+        "function": "transferFrom"
+      }
+    ]
+  },
+  "FCR_position_level_differences": [
+    {
+      "member": "RQ1_353a9b0b5006",
+      "task_projection_equal": true,
+      "designated_category": "FCR-DESTROY",
+      "timing_and_anchors": {
+        "G": {
+          "program_seconds": 900.4827841622755,
+          "action_count": 32,
+          "z3_calls": 204,
+          "solver_timeout_queries": 42,
+          "R4_certificates": 0,
+          "unique_report_anchors": [
+            {
+              "category": "FCR-PAUSE",
+              "location": {
+                "file": "units/program.sol",
+                "start": 4751,
+                "length": 188,
+                "ast_id": 553
+              },
+              "target": "units/program.sol:Token",
+              "reason": "program_support"
+            }
+          ]
+        },
+        "Simple": {
+          "program_seconds": 900.5559546458535,
+          "action_count": 31,
+          "z3_calls": 204,
+          "solver_timeout_queries": 42,
+          "R4_certificates": 0,
+          "unique_report_anchors": []
+        }
+      }
+    }
+  ]
+}

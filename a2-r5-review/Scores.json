@@ -1,0 +1,1049 @@
+{
+  "calibration": {
+    "TP": 194,
+    "FP": 8,
+    "FN": 287
+  },
+  "all_ac": {
+    "eligible_members": 624,
+    "paired_completed": 610,
+    "complete_case": {
+      "G": {
+        "N": 610,
+        "families": 366,
+        "completed": 610,
+        "scored": 610,
+        "roots": 472,
+        "TP": 276,
+        "FP": 113,
+        "FN": 196,
+        "precision": 0.7095115681233933,
+        "recall": 0.5847457627118644,
+        "F1": 0.6411149825783972,
+        "unknown": 280,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      },
+      "Simple": {
+        "N": 610,
+        "families": 366,
+        "completed": 610,
+        "scored": 610,
+        "roots": 472,
+        "TP": 275,
+        "FP": 108,
+        "FN": 197,
+        "precision": 0.7180156657963447,
+        "recall": 0.5826271186440678,
+        "F1": 0.6432748538011696,
+        "unknown": 281,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      }
+    },
+    "population_accounting": {
+      "G": {
+        "N": 624,
+        "families": 374,
+        "completed": 610,
+        "scored": 610,
+        "roots": 481,
+        "TP": 276,
+        "FP": 113,
+        "FN": 205,
+        "precision": 0.7095115681233933,
+        "recall": 0.5738045738045738,
+        "F1": 0.6344827586206897,
+        "unknown": 280,
+        "not_run": 0,
+        "timeout": 14,
+        "error": 0
+      },
+      "Simple": {
+        "N": 624,
+        "families": 374,
+        "completed": 610,
+        "scored": 610,
+        "roots": 481,
+        "TP": 275,
+        "FP": 108,
+        "FN": 206,
+        "precision": 0.7180156657963447,
+        "recall": 0.5717255717255717,
+        "F1": 0.6365740740740741,
+        "unknown": 281,
+        "not_run": 0,
+        "timeout": 14,
+        "error": 0
+      }
+    },
+    "delta": {
+      "new_tp": 0,
+      "lost_tp": 1,
+      "removed_fp": 5,
+      "added_fp": 0
+    },
+    "changed_projections": 1,
+    "families_with_corrected_extra": 4,
+    "changed_covered_status": {
+      "alarm -> unsupported": 1
+    }
+  },
+  "exposures": {
+    "R4_direct": {
+      "eligible_members": 7,
+      "paired_completed": 7,
+      "complete_case": {
+        "G": {
+          "N": 7,
+          "families": 4,
+          "completed": 7,
+          "scored": 7,
+          "roots": 13,
+          "TP": 6,
+          "FP": 1,
+          "FN": 7,
+          "precision": 0.8571428571428571,
+          "recall": 0.46153846153846156,
+          "F1": 0.6,
+          "unknown": 1,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 7,
+          "families": 4,
+          "completed": 7,
+          "scored": 7,
+          "roots": 13,
+          "TP": 6,
+          "FP": 0,
+          "FN": 7,
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "F1": 0.631578947368421,
+          "unknown": 1,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "population_accounting": {
+        "G": {
+          "N": 7,
+          "families": 4,
+          "completed": 7,
+          "scored": 7,
+          "roots": 13,
+          "TP": 6,
+          "FP": 1,
+          "FN": 7,
+          "precision": 0.8571428571428571,
+          "recall": 0.46153846153846156,
+          "F1": 0.6,
+          "unknown": 1,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 7,
+          "families": 4,
+          "completed": 7,
+          "scored": 7,
+          "roots": 13,
+          "TP": 6,
+          "FP": 0,
+          "FN": 7,
+          "precision": 1.0,
+          "recall": 0.46153846153846156,
+          "F1": 0.631578947368421,
+          "unknown": 1,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "delta": {
+        "new_tp": 0,
+        "lost_tp": 0,
+        "removed_fp": 1,
+        "added_fp": 0
+      },
+      "changed_projections": 0,
+      "families_with_corrected_extra": 1,
+      "changed_covered_status": {}
+    },
+    "prior_direction2": {
+      "eligible_members": 44,
+      "paired_completed": 42,
+      "complete_case": {
+        "G": {
+          "N": 42,
+          "families": 37,
+          "completed": 42,
+          "scored": 42,
+          "roots": 49,
+          "TP": 23,
+          "FP": 7,
+          "FN": 26,
+          "precision": 0.7666666666666667,
+          "recall": 0.46938775510204084,
+          "F1": 0.5822784810126582,
+          "unknown": 17,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 42,
+          "families": 37,
+          "completed": 42,
+          "scored": 42,
+          "roots": 49,
+          "TP": 22,
+          "FP": 7,
+          "FN": 27,
+          "precision": 0.7586206896551724,
+          "recall": 0.4489795918367347,
+          "F1": 0.5641025641025641,
+          "unknown": 17,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "population_accounting": {
+        "G": {
+          "N": 44,
+          "families": 38,
+          "completed": 42,
+          "scored": 42,
+          "roots": 51,
+          "TP": 23,
+          "FP": 7,
+          "FN": 28,
+          "precision": 0.7666666666666667,
+          "recall": 0.45098039215686275,
+          "F1": 0.5679012345679012,
+          "unknown": 17,
+          "not_run": 0,
+          "timeout": 2,
+          "error": 0
+        },
+        "Simple": {
+          "N": 44,
+          "families": 38,
+          "completed": 42,
+          "scored": 42,
+          "roots": 51,
+          "TP": 22,
+          "FP": 7,
+          "FN": 29,
+          "precision": 0.7586206896551724,
+          "recall": 0.43137254901960786,
+          "F1": 0.55,
+          "unknown": 17,
+          "not_run": 0,
+          "timeout": 2,
+          "error": 0
+        }
+      },
+      "delta": {
+        "new_tp": 0,
+        "lost_tp": 1,
+        "removed_fp": 0,
+        "added_fp": 0
+      },
+      "changed_projections": 0,
+      "families_with_corrected_extra": 0,
+      "changed_covered_status": {}
+    },
+    "near_exposed": {
+      "eligible_members": 104,
+      "paired_completed": 104,
+      "complete_case": {
+        "G": {
+          "N": 104,
+          "families": 19,
+          "completed": 104,
+          "scored": 104,
+          "roots": 129,
+          "TP": 82,
+          "FP": 21,
+          "FN": 47,
+          "precision": 0.7961165048543689,
+          "recall": 0.6356589147286822,
+          "F1": 0.7068965517241379,
+          "unknown": 14,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 104,
+          "families": 19,
+          "completed": 104,
+          "scored": 104,
+          "roots": 129,
+          "TP": 82,
+          "FP": 20,
+          "FN": 47,
+          "precision": 0.803921568627451,
+          "recall": 0.6356589147286822,
+          "F1": 0.70995670995671,
+          "unknown": 14,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "population_accounting": {
+        "G": {
+          "N": 104,
+          "families": 19,
+          "completed": 104,
+          "scored": 104,
+          "roots": 129,
+          "TP": 82,
+          "FP": 21,
+          "FN": 47,
+          "precision": 0.7961165048543689,
+          "recall": 0.6356589147286822,
+          "F1": 0.7068965517241379,
+          "unknown": 14,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 104,
+          "families": 19,
+          "completed": 104,
+          "scored": 104,
+          "roots": 129,
+          "TP": 82,
+          "FP": 20,
+          "FN": 47,
+          "precision": 0.803921568627451,
+          "recall": 0.6356589147286822,
+          "F1": 0.70995670995671,
+          "unknown": 14,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "delta": {
+        "new_tp": 0,
+        "lost_tp": 0,
+        "removed_fp": 1,
+        "added_fp": 0
+      },
+      "changed_projections": 0,
+      "families_with_corrected_extra": 1,
+      "changed_covered_status": {}
+    },
+    "heldout_family": {
+      "eligible_members": 469,
+      "paired_completed": 457,
+      "complete_case": {
+        "G": {
+          "N": 457,
+          "families": 327,
+          "completed": 457,
+          "scored": 457,
+          "roots": 281,
+          "TP": 165,
+          "FP": 84,
+          "FN": 116,
+          "precision": 0.6626506024096386,
+          "recall": 0.5871886120996441,
+          "F1": 0.6226415094339622,
+          "unknown": 248,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 457,
+          "families": 327,
+          "completed": 457,
+          "scored": 457,
+          "roots": 281,
+          "TP": 165,
+          "FP": 81,
+          "FN": 116,
+          "precision": 0.6707317073170732,
+          "recall": 0.5871886120996441,
+          "F1": 0.6261859582542695,
+          "unknown": 249,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "population_accounting": {
+        "G": {
+          "N": 469,
+          "families": 334,
+          "completed": 457,
+          "scored": 457,
+          "roots": 288,
+          "TP": 165,
+          "FP": 84,
+          "FN": 123,
+          "precision": 0.6626506024096386,
+          "recall": 0.5729166666666666,
+          "F1": 0.6145251396648045,
+          "unknown": 248,
+          "not_run": 0,
+          "timeout": 12,
+          "error": 0
+        },
+        "Simple": {
+          "N": 469,
+          "families": 334,
+          "completed": 457,
+          "scored": 457,
+          "roots": 288,
+          "TP": 165,
+          "FP": 81,
+          "FN": 123,
+          "precision": 0.6707317073170732,
+          "recall": 0.5729166666666666,
+          "F1": 0.6179775280898876,
+          "unknown": 249,
+          "not_run": 0,
+          "timeout": 12,
+          "error": 0
+        }
+      },
+      "delta": {
+        "new_tp": 0,
+        "lost_tp": 0,
+        "removed_fp": 3,
+        "added_fp": 0
+      },
+      "changed_projections": 1,
+      "families_with_corrected_extra": 3,
+      "changed_covered_status": {
+        "alarm -> unsupported": 1
+      }
+    },
+    "family_unverified": {
+      "eligible_members": 0,
+      "paired_completed": 0,
+      "complete_case": {
+        "G": {
+          "N": 0,
+          "families": 0,
+          "completed": 0,
+          "scored": 0,
+          "roots": 0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "precision": null,
+          "recall": null,
+          "F1": null,
+          "unknown": 0,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 0,
+          "families": 0,
+          "completed": 0,
+          "scored": 0,
+          "roots": 0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "precision": null,
+          "recall": null,
+          "F1": null,
+          "unknown": 0,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "population_accounting": {
+        "G": {
+          "N": 0,
+          "families": 0,
+          "completed": 0,
+          "scored": 0,
+          "roots": 0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "precision": null,
+          "recall": null,
+          "F1": null,
+          "unknown": 0,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        },
+        "Simple": {
+          "N": 0,
+          "families": 0,
+          "completed": 0,
+          "scored": 0,
+          "roots": 0,
+          "TP": 0,
+          "FP": 0,
+          "FN": 0,
+          "precision": null,
+          "recall": null,
+          "F1": null,
+          "unknown": 0,
+          "not_run": 0,
+          "timeout": 0,
+          "error": 0
+        }
+      },
+      "delta": {
+        "new_tp": 0,
+        "lost_tp": 0,
+        "removed_fp": 0,
+        "added_fp": 0
+      },
+      "changed_projections": 0,
+      "families_with_corrected_extra": 0,
+      "changed_covered_status": {}
+    }
+  },
+  "r4-family-excluded": {
+    "eligible_members": 579,
+    "paired_completed": 565,
+    "complete_case": {
+      "G": {
+        "N": 565,
+        "families": 362,
+        "completed": 565,
+        "scored": 565,
+        "roots": 394,
+        "TP": 234,
+        "FP": 111,
+        "FN": 160,
+        "precision": 0.6782608695652174,
+        "recall": 0.5939086294416244,
+        "F1": 0.6332882273342354,
+        "unknown": 276,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      },
+      "Simple": {
+        "N": 565,
+        "families": 362,
+        "completed": 565,
+        "scored": 565,
+        "roots": 394,
+        "TP": 233,
+        "FP": 108,
+        "FN": 161,
+        "precision": 0.6832844574780058,
+        "recall": 0.5913705583756346,
+        "F1": 0.6340136054421769,
+        "unknown": 277,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      }
+    },
+    "population_accounting": {
+      "G": {
+        "N": 579,
+        "families": 370,
+        "completed": 565,
+        "scored": 565,
+        "roots": 403,
+        "TP": 234,
+        "FP": 111,
+        "FN": 169,
+        "precision": 0.6782608695652174,
+        "recall": 0.5806451612903226,
+        "F1": 0.6256684491978609,
+        "unknown": 276,
+        "not_run": 0,
+        "timeout": 14,
+        "error": 0
+      },
+      "Simple": {
+        "N": 579,
+        "families": 370,
+        "completed": 565,
+        "scored": 565,
+        "roots": 403,
+        "TP": 233,
+        "FP": 108,
+        "FN": 170,
+        "precision": 0.6832844574780058,
+        "recall": 0.5781637717121588,
+        "F1": 0.6263440860215054,
+        "unknown": 277,
+        "not_run": 0,
+        "timeout": 14,
+        "error": 0
+      }
+    },
+    "delta": {
+      "new_tp": 0,
+      "lost_tp": 1,
+      "removed_fp": 3,
+      "added_fp": 0
+    },
+    "changed_projections": 1,
+    "families_with_corrected_extra": 3,
+    "changed_covered_status": {
+      "alarm -> unsupported": 1
+    }
+  },
+  "untouched_representatives": {
+    "eligible_members": 334,
+    "paired_completed": 327,
+    "complete_case": {
+      "G": {
+        "N": 327,
+        "families": 327,
+        "completed": 327,
+        "scored": 327,
+        "roots": 171,
+        "TP": 91,
+        "FP": 60,
+        "FN": 80,
+        "precision": 0.6026490066225165,
+        "recall": 0.5321637426900585,
+        "F1": 0.5652173913043478,
+        "unknown": 200,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      },
+      "Simple": {
+        "N": 327,
+        "families": 327,
+        "completed": 327,
+        "scored": 327,
+        "roots": 171,
+        "TP": 91,
+        "FP": 58,
+        "FN": 80,
+        "precision": 0.610738255033557,
+        "recall": 0.5321637426900585,
+        "F1": 0.56875,
+        "unknown": 201,
+        "not_run": 0,
+        "timeout": 0,
+        "error": 0
+      }
+    },
+    "population_accounting": {
+      "G": {
+        "N": 334,
+        "families": 334,
+        "completed": 327,
+        "scored": 327,
+        "roots": 176,
+        "TP": 91,
+        "FP": 60,
+        "FN": 85,
+        "precision": 0.6026490066225165,
+        "recall": 0.5170454545454546,
+        "F1": 0.5565749235474006,
+        "unknown": 200,
+        "not_run": 0,
+        "timeout": 7,
+        "error": 0
+      },
+      "Simple": {
+        "N": 334,
+        "families": 334,
+        "completed": 327,
+        "scored": 327,
+        "roots": 176,
+        "TP": 91,
+        "FP": 58,
+        "FN": 85,
+        "precision": 0.610738255033557,
+        "recall": 0.5170454545454546,
+        "F1": 0.56,
+        "unknown": 201,
+        "not_run": 0,
+        "timeout": 7,
+        "error": 0
+      }
+    },
+    "delta": {
+      "new_tp": 0,
+      "lost_tp": 0,
+      "removed_fp": 2,
+      "added_fp": 0
+    },
+    "changed_projections": 1,
+    "families_with_corrected_extra": 2,
+    "changed_covered_status": {
+      "alarm -> unsupported": 1
+    }
+  },
+  "mechanisms": {
+    "termination": {
+      "G": {
+        "roots": 90,
+        "TP": 7,
+        "FN": 83,
+        "FP": 8,
+        "member_has_ref": 88
+      },
+      "Simple": {
+        "roots": 90,
+        "TP": 7,
+        "FN": 83,
+        "FP": 8,
+        "member_has_ref": 88
+      }
+    },
+    "delegated_quota_use": {
+      "G": {
+        "roots": 0,
+        "TP": 0,
+        "FN": 0,
+        "FP": 27,
+        "member_has_ref": 0
+      },
+      "Simple": {
+        "roots": 0,
+        "TP": 0,
+        "FN": 0,
+        "FP": 22,
+        "member_has_ref": 0
+      }
+    },
+    "quota_grant": {
+      "G": {
+        "roots": 0,
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "member_has_ref": 0
+      },
+      "Simple": {
+        "roots": 0,
+        "TP": 0,
+        "FN": 0,
+        "FP": 0,
+        "member_has_ref": 0
+      }
+    },
+    "initialization": {
+      "G": {
+        "roots": 54,
+        "TP": 40,
+        "FN": 14,
+        "FP": 0,
+        "member_has_ref": 54
+      },
+      "Simple": {
+        "roots": 54,
+        "TP": 40,
+        "FN": 14,
+        "FP": 0,
+        "member_has_ref": 54
+      }
+    },
+    "role_grant_or_change": {
+      "G": {
+        "roots": 186,
+        "TP": 168,
+        "FN": 18,
+        "FP": 8,
+        "member_has_ref": 184
+      },
+      "Simple": {
+        "roots": 186,
+        "TP": 168,
+        "FN": 18,
+        "FP": 8,
+        "member_has_ref": 184
+      }
+    },
+    "issuance_or_fund_disposition": {
+      "G": {
+        "roots": 59,
+        "TP": 35,
+        "FN": 24,
+        "FP": 41,
+        "member_has_ref": 59
+      },
+      "Simple": {
+        "roots": 59,
+        "TP": 35,
+        "FN": 24,
+        "FP": 41,
+        "member_has_ref": 59
+      }
+    },
+    "role_or_state_guard": {
+      "G": {
+        "roots": 7,
+        "TP": 0,
+        "FN": 7,
+        "FP": 19,
+        "member_has_ref": 7
+      },
+      "Simple": {
+        "roots": 7,
+        "TP": 0,
+        "FN": 7,
+        "FP": 19,
+        "member_has_ref": 7
+      }
+    },
+    "other": {
+      "G": {
+        "roots": 76,
+        "TP": 26,
+        "FN": 50,
+        "FP": 10,
+        "member_has_ref": 54
+      },
+      "Simple": {
+        "roots": 76,
+        "TP": 25,
+        "FN": 51,
+        "FP": 10,
+        "member_has_ref": 54
+      }
+    }
+  },
+  "fcr": {
+    "G": {
+      "categories": {
+        "FCR-TRANSFER": {
+          "TP": 3,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 0,
+          "TN": 3,
+          "U-": 0,
+          "pairs": 3,
+          "both": 3,
+          "F1": 1.0
+        },
+        "FCR-MINT": {
+          "TP": 3,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 0,
+          "TN": 1,
+          "U-": 2,
+          "pairs": 3,
+          "both": 1,
+          "F1": 1.0
+        },
+        "FCR-DESTROY": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 1,
+          "U-": 2,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        },
+        "FCR-PAUSE": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 2,
+          "U-": 1,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        },
+        "FCR-FREEZE": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 2,
+          "U-": 1,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        }
+      },
+      "macro_F1": 0.88,
+      "risk_hits": 12,
+      "repair_correct": 9,
+      "pair_correct": 7,
+      "pairs": 15,
+      "valid_targets": 21,
+      "targets": 30,
+      "unknown_by_reason": [
+        [
+          "FCR-DESTROY",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-DESTROY",
+          "U-",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-FREEZE",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-FREEZE",
+          "U-",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-MINT",
+          "U-",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-PAUSE",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "unsupported",
+          1
+        ]
+      ]
+    },
+    "Simple": {
+      "categories": {
+        "FCR-TRANSFER": {
+          "TP": 3,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 0,
+          "TN": 3,
+          "U-": 0,
+          "pairs": 3,
+          "both": 3,
+          "F1": 1.0
+        },
+        "FCR-MINT": {
+          "TP": 3,
+          "FN_dec": 0,
+          "U+": 0,
+          "FP": 0,
+          "TN": 1,
+          "U-": 2,
+          "pairs": 3,
+          "both": 1,
+          "F1": 1.0
+        },
+        "FCR-DESTROY": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 1,
+          "U-": 2,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        },
+        "FCR-PAUSE": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 2,
+          "U-": 1,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        },
+        "FCR-FREEZE": {
+          "TP": 2,
+          "FN_dec": 0,
+          "U+": 1,
+          "FP": 0,
+          "TN": 2,
+          "U-": 1,
+          "pairs": 3,
+          "both": 1,
+          "F1": 0.8
+        }
+      },
+      "macro_F1": 0.88,
+      "risk_hits": 12,
+      "repair_correct": 9,
+      "pair_correct": 7,
+      "pairs": 15,
+      "valid_targets": 21,
+      "targets": 30,
+      "unknown_by_reason": [
+        [
+          "FCR-DESTROY",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-DESTROY",
+          "U-",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-FREEZE",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-FREEZE",
+          "U-",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-MINT",
+          "U-",
+          "unsupported",
+          2
+        ],
+        [
+          "FCR-PAUSE",
+          "U+",
+          "unsupported",
+          1
+        ],
+        [
+          "FCR-PAUSE",
+          "U-",
+          "unsupported",
+          1
+        ]
+      ]
+    }
+  }
+}

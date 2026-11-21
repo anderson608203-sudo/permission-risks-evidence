@@ -1,0 +1,1502 @@
+{
+  "FCR-DESTROY": {
+    "original_pairs": 58,
+    "eligible_pairs": 58,
+    "selected": [
+      {
+        "risk": "RQ1_f1bb587376e8",
+        "repair": "RQ1_35646ded2a70",
+        "category": "FCR-DESTROY",
+        "selection_stratum": "previous_both_correct",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "c1bc2a30360619f67a6184e15d97343d1d526530a5038541fb5bab4fb892e916",
+              "archive_response_sha256": "e52affd550601b44835949e724a0c83eccaa904e9d72eed742fe2d05796d9c87",
+              "raw_run": "runs/RQ1_f1bb587376e8/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.062,
+              "initial_tokens": 1694,
+              "action_count": 11
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "c1bc2a30360619f67a6184e15d97343d1d526530a5038541fb5bab4fb892e916",
+              "archive_response_sha256": "e52affd550601b44835949e724a0c83eccaa904e9d72eed742fe2d05796d9c87",
+              "raw_run": "runs/RQ1_f1bb587376e8/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.078,
+              "initial_tokens": 1694,
+              "action_count": 11
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7849df87e490ac5bebcc8ea6683c7537c0b83a332988696440061a91afbd04a2",
+              "archive_response_sha256": "a1b66d97debb0bf7cff627c5cd04408c9036ac51931ef0f10185df10d574ca1f",
+              "raw_run": "runs/RQ1_35646ded2a70/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.094,
+              "initial_tokens": 1669,
+              "action_count": 14
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7849df87e490ac5bebcc8ea6683c7537c0b83a332988696440061a91afbd04a2",
+              "archive_response_sha256": "a1b66d97debb0bf7cff627c5cd04408c9036ac51931ef0f10185df10d574ca1f",
+              "raw_run": "runs/RQ1_35646ded2a70/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.078,
+              "initial_tokens": 1669,
+              "action_count": 14
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_353a9b0b5006",
+        "repair": "RQ1_db11e3e08742",
+        "category": "FCR-DESTROY",
+        "selection_stratum": "previous_risk_miss",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "unsupported",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "a12072561025707b08a8b82ec879416d08b571ea730c64fccd03fd02a0e10c76",
+              "archive_response_sha256": "a316ebdcbeea8b0bc19702b9b8eedde4063a70d6146d096b8c70d0d134be9835",
+              "raw_run": "runs/RQ1_353a9b0b5006/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 204,
+              "seconds": 901.3211,
+              "initial_tokens": 6591,
+              "action_count": 32
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "a12072561025707b08a8b82ec879416d08b571ea730c64fccd03fd02a0e10c76",
+              "archive_response_sha256": "a316ebdcbeea8b0bc19702b9b8eedde4063a70d6146d096b8c70d0d134be9835",
+              "raw_run": "runs/RQ1_353a9b0b5006/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 204,
+              "seconds": 901.3741,
+              "initial_tokens": 6591,
+              "action_count": 31
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "381f65f375a4528ec2e274cb77739c156198fb858cf8b0becf9daa7364420e14",
+              "archive_response_sha256": "2f23d8b7b906d6d39e49a8d79a9aaf18da8c3ec9414a60b98563eaccdc8dcbe9",
+              "raw_run": "runs/RQ1_db11e3e08742/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 277,
+              "seconds": 473.422,
+              "initial_tokens": 6224,
+              "action_count": 51
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "381f65f375a4528ec2e274cb77739c156198fb858cf8b0becf9daa7364420e14",
+              "archive_response_sha256": "2f23d8b7b906d6d39e49a8d79a9aaf18da8c3ec9414a60b98563eaccdc8dcbe9",
+              "raw_run": "runs/RQ1_db11e3e08742/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 263,
+              "seconds": 346.766,
+              "initial_tokens": 6224,
+              "action_count": 49
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_56bac052a93a",
+        "repair": "RQ1_f27cacd5f34a",
+        "category": "FCR-DESTROY",
+        "selection_stratum": "previous_repair_unresolved",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7ef1c23299e914d2a90dcd69e34eaeb14337071a4ff5211ab8e3a1ff500009ca",
+              "archive_response_sha256": "988a60db7cbd0c103f065cc56f67942744ab9d2c55b998367ec517e8c6fdd6e2",
+              "raw_run": "runs/RQ1_56bac052a93a/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 39,
+              "seconds": 16.0,
+              "initial_tokens": 4093,
+              "action_count": 9
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7ef1c23299e914d2a90dcd69e34eaeb14337071a4ff5211ab8e3a1ff500009ca",
+              "archive_response_sha256": "988a60db7cbd0c103f065cc56f67942744ab9d2c55b998367ec517e8c6fdd6e2",
+              "raw_run": "runs/RQ1_56bac052a93a/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 39,
+              "seconds": 15.781,
+              "initial_tokens": 4093,
+              "action_count": 9
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "f159a5f46df1481280147124390b0413100aaf79cf74aeb7b553c6a1ddbe77d5",
+              "archive_response_sha256": "67c9af01ff4a5fb6b919e7b8ada85bac744e96973ccce60380ed02daf56137ab",
+              "raw_run": "runs/RQ1_f27cacd5f34a/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 3,
+              "seconds": 8.062,
+              "initial_tokens": 3956,
+              "action_count": 9
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "f159a5f46df1481280147124390b0413100aaf79cf74aeb7b553c6a1ddbe77d5",
+              "archive_response_sha256": "67c9af01ff4a5fb6b919e7b8ada85bac744e96973ccce60380ed02daf56137ab",
+              "raw_run": "runs/RQ1_f27cacd5f34a/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 3,
+              "seconds": 7.766,
+              "initial_tokens": 3956,
+              "action_count": 9
+            }
+          }
+        }
+      }
+    ]
+  },
+  "FCR-FREEZE": {
+    "original_pairs": 75,
+    "eligible_pairs": 75,
+    "selected": [
+      {
+        "risk": "RQ1_6244da144ced",
+        "repair": "RQ1_90c233777f5e",
+        "category": "FCR-FREEZE",
+        "selection_stratum": "previous_both_correct",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "5803f84f13e950f3375b4dbb583144181acfc10fc22d6a62b9cd72ba54f81022",
+              "archive_response_sha256": "42d29c5725df86c80c905385cdf369fda0cceb897f4f89d73bf6ffc1ab07f478",
+              "raw_run": "runs/RQ1_6244da144ced/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 51,
+              "seconds": 128.938,
+              "initial_tokens": 3927,
+              "action_count": 55
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "5803f84f13e950f3375b4dbb583144181acfc10fc22d6a62b9cd72ba54f81022",
+              "archive_response_sha256": "42d29c5725df86c80c905385cdf369fda0cceb897f4f89d73bf6ffc1ab07f478",
+              "raw_run": "runs/RQ1_6244da144ced/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 84,
+              "seconds": 387.375,
+              "initial_tokens": 3927,
+              "action_count": 59
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "3d7ef4043695152b59c67e42730a48f057517eabac84a4627018e089500caef9",
+              "archive_response_sha256": "b60e523bff484fa003a71e7f7112d64022701d65c59dc8dfdeebf01d89baff0a",
+              "raw_run": "runs/RQ1_90c233777f5e/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 15,
+              "seconds": 4.157,
+              "initial_tokens": 3687,
+              "action_count": 48
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "3d7ef4043695152b59c67e42730a48f057517eabac84a4627018e089500caef9",
+              "archive_response_sha256": "b60e523bff484fa003a71e7f7112d64022701d65c59dc8dfdeebf01d89baff0a",
+              "raw_run": "runs/RQ1_90c233777f5e/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 15,
+              "seconds": 4.25,
+              "initial_tokens": 3687,
+              "action_count": 48
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_32e1e7ce1240",
+        "repair": "RQ1_101079fc6aa8",
+        "category": "FCR-FREEZE",
+        "selection_stratum": "previous_risk_miss",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "unsupported",
+          "repair": "not_detected",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "77c21b8c7610e2c7df4d8f1b7ecf0891c448900078bc01c762f558fc14da8c3d",
+              "archive_response_sha256": "5ced5abec7d90848f214788b4a5c0da54b4d3fa02aa10e8f2bc4d00736c66726",
+              "raw_run": "runs/RQ1_32e1e7ce1240/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 3.547,
+              "initial_tokens": 4780,
+              "action_count": 17
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "77c21b8c7610e2c7df4d8f1b7ecf0891c448900078bc01c762f558fc14da8c3d",
+              "archive_response_sha256": "5ced5abec7d90848f214788b4a5c0da54b4d3fa02aa10e8f2bc4d00736c66726",
+              "raw_run": "runs/RQ1_32e1e7ce1240/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 3.562,
+              "initial_tokens": 4780,
+              "action_count": 17
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "b7c3ff9ee3997581c453588b2659882b8df4e19800e90f7cbb2603831bde36eb",
+              "archive_response_sha256": "e669ba7edcce9a207c2d4e19fb3a3f6b1d1fd022d43c489a2fe042884486c6b7",
+              "raw_run": "runs/RQ1_101079fc6aa8/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 0,
+              "seconds": 3.281,
+              "initial_tokens": 3652,
+              "action_count": 21
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "b7c3ff9ee3997581c453588b2659882b8df4e19800e90f7cbb2603831bde36eb",
+              "archive_response_sha256": "e669ba7edcce9a207c2d4e19fb3a3f6b1d1fd022d43c489a2fe042884486c6b7",
+              "raw_run": "runs/RQ1_101079fc6aa8/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 0,
+              "seconds": 3.375,
+              "initial_tokens": 3652,
+              "action_count": 21
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_9c365cb18f95",
+        "repair": "RQ1_dc06d7bad0d8",
+        "category": "FCR-FREEZE",
+        "selection_stratum": "previous_repair_unresolved",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "63c25104c92f31d1b46826b5abef6f832bc861cdce78efdbd7170a25d0ba719a",
+              "archive_response_sha256": "538bebde73a2d6260d366961324901ada84a8c1ca44cfcbb71ce3daf57058056",
+              "raw_run": "runs/RQ1_9c365cb18f95/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 108,
+              "seconds": 85.25,
+              "initial_tokens": 5486,
+              "action_count": 177
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "63c25104c92f31d1b46826b5abef6f832bc861cdce78efdbd7170a25d0ba719a",
+              "archive_response_sha256": "538bebde73a2d6260d366961324901ada84a8c1ca44cfcbb71ce3daf57058056",
+              "raw_run": "runs/RQ1_9c365cb18f95/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 108,
+              "seconds": 85.156,
+              "initial_tokens": 5486,
+              "action_count": 177
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "7a1c7935ceca13acb32e0e530cd8164b92a2a61996db45d601faf8c1e18866c5",
+              "archive_response_sha256": "713d10d25d2aa2bb448f3d3f2aafbb8d7020b02cd68e85d03ec5c0d926d02f89",
+              "raw_run": "runs/RQ1_dc06d7bad0d8/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 857,
+              "seconds": 716.3615,
+              "initial_tokens": 4630,
+              "action_count": 54
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "7a1c7935ceca13acb32e0e530cd8164b92a2a61996db45d601faf8c1e18866c5",
+              "archive_response_sha256": "713d10d25d2aa2bb448f3d3f2aafbb8d7020b02cd68e85d03ec5c0d926d02f89",
+              "raw_run": "runs/RQ1_dc06d7bad0d8/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 864,
+              "seconds": 715.1656,
+              "initial_tokens": 4630,
+              "action_count": 54
+            }
+          }
+        }
+      }
+    ]
+  },
+  "FCR-MINT": {
+    "original_pairs": 35,
+    "eligible_pairs": 35,
+    "selected": [
+      {
+        "risk": "RQ1_e13bb6580d65",
+        "repair": "RQ1_94d9f2cfc77c",
+        "category": "FCR-MINT",
+        "selection_stratum": "previous_both_correct",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "9467948e843dbc5246c190df89d291cea161034ac056c1cceb60da527e8cd7fe",
+              "archive_response_sha256": "5f2f05ce455eaa2375446a26dac45b7dcd7296c6a5f5df05f62ef986f0481414",
+              "raw_run": "runs/RQ1_e13bb6580d65/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 27,
+              "seconds": 5.594,
+              "initial_tokens": 6785,
+              "action_count": 48
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "9467948e843dbc5246c190df89d291cea161034ac056c1cceb60da527e8cd7fe",
+              "archive_response_sha256": "5f2f05ce455eaa2375446a26dac45b7dcd7296c6a5f5df05f62ef986f0481414",
+              "raw_run": "runs/RQ1_e13bb6580d65/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "alarm",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 27,
+              "seconds": 5.594,
+              "initial_tokens": 6785,
+              "action_count": 48
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7bae7cb6fe964b6faaee05ec62312a8e60f6ce832c2af806188d8cc37a90c0e7",
+              "archive_response_sha256": "3b5a6bf0df63f881f0092984c30bdfee61ef8d4976a69dff75423b40ed34e7a3",
+              "raw_run": "runs/RQ1_94d9f2cfc77c/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 3.062,
+              "initial_tokens": 6516,
+              "action_count": 6
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7bae7cb6fe964b6faaee05ec62312a8e60f6ce832c2af806188d8cc37a90c0e7",
+              "archive_response_sha256": "3b5a6bf0df63f881f0092984c30bdfee61ef8d4976a69dff75423b40ed34e7a3",
+              "raw_run": "runs/RQ1_94d9f2cfc77c/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 3.109,
+              "initial_tokens": 6516,
+              "action_count": 6
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_0858684eb758",
+        "repair": "RQ1_3ec097691998",
+        "category": "FCR-MINT",
+        "selection_stratum": "previous_risk_miss",
+        "matched_stratum": false,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "de6299794bdb5fa6d8d9dd2fb83234a3c20cb441492dd7e6916b56f308664ceb",
+              "archive_response_sha256": "f89329255de4bdd31f5155169743aee9d02c80af4527c3d44c8579751e2879c2",
+              "raw_run": "runs/RQ1_0858684eb758/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 95,
+              "seconds": 155.6481,
+              "initial_tokens": 4288,
+              "action_count": 130
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "de6299794bdb5fa6d8d9dd2fb83234a3c20cb441492dd7e6916b56f308664ceb",
+              "archive_response_sha256": "f89329255de4bdd31f5155169743aee9d02c80af4527c3d44c8579751e2879c2",
+              "raw_run": "runs/RQ1_0858684eb758/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 112,
+              "seconds": 343.428,
+              "initial_tokens": 4288,
+              "action_count": 133
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "2a585c58f3cab9b323966501e7987fc28b10b3100855633b8a293b2a16ddaec2",
+              "archive_response_sha256": "71154acd296ff4544ef2b0cf3402f41038e12f2e76412cf53b5e84e4fdb49f0b",
+              "raw_run": "runs/RQ1_3ec097691998/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 37,
+              "seconds": 69.266,
+              "initial_tokens": 4001,
+              "action_count": 41
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "2a585c58f3cab9b323966501e7987fc28b10b3100855633b8a293b2a16ddaec2",
+              "archive_response_sha256": "71154acd296ff4544ef2b0cf3402f41038e12f2e76412cf53b5e84e4fdb49f0b",
+              "raw_run": "runs/RQ1_3ec097691998/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 37,
+              "seconds": 69.313,
+              "initial_tokens": 4001,
+              "action_count": 41
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_bba85280c610",
+        "repair": "RQ1_f814ab33ae2c",
+        "category": "FCR-MINT",
+        "selection_stratum": "previous_repair_unresolved",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "de6299794bdb5fa6d8d9dd2fb83234a3c20cb441492dd7e6916b56f308664ceb",
+              "archive_response_sha256": "55844a7767a7381415230e659ee6b867f4cf16fe2b5bb5a761c77beb98fbef01",
+              "raw_run": "runs/RQ1_bba85280c610/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 88,
+              "seconds": 133.765,
+              "initial_tokens": 4288,
+              "action_count": 105
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "de6299794bdb5fa6d8d9dd2fb83234a3c20cb441492dd7e6916b56f308664ceb",
+              "archive_response_sha256": "55844a7767a7381415230e659ee6b867f4cf16fe2b5bb5a761c77beb98fbef01",
+              "raw_run": "runs/RQ1_bba85280c610/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "alarm",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "alarm"
+              },
+              "solver_calls": 90,
+              "seconds": 135.375,
+              "initial_tokens": 4288,
+              "action_count": 105
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "2a585c58f3cab9b323966501e7987fc28b10b3100855633b8a293b2a16ddaec2",
+              "archive_response_sha256": "b815979522491dbed6837f880d27f2cf0e5e061295ba599141085f8e236e33ff",
+              "raw_run": "runs/RQ1_f814ab33ae2c/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 66,
+              "seconds": 302.2126,
+              "initial_tokens": 4001,
+              "action_count": 59
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "AutoDL Linux",
+              "score_status": "scored",
+              "frozen_export_sha256": "2a585c58f3cab9b323966501e7987fc28b10b3100855633b8a293b2a16ddaec2",
+              "archive_response_sha256": "b815979522491dbed6837f880d27f2cf0e5e061295ba599141085f8e236e33ff",
+              "raw_run": "runs/RQ1_f814ab33ae2c/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 57,
+              "seconds": 242.0723,
+              "initial_tokens": 4001,
+              "action_count": 58
+            }
+          }
+        }
+      }
+    ]
+  },
+  "FCR-PAUSE": {
+    "original_pairs": 62,
+    "eligible_pairs": 62,
+    "selected": [
+      {
+        "risk": "RQ1_b884bab91ca4",
+        "repair": "RQ1_f82fc055f5dc",
+        "category": "FCR-PAUSE",
+        "selection_stratum": "previous_both_correct",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7e60604110b3fc4833d032aff642b5e7a19d3ada103907fd14e81b88d826bd90",
+              "archive_response_sha256": "e9ca0e375f1bc2e629c3251d62b5aa3f6ea493c51418b5a36d0d3d440a81fb80",
+              "raw_run": "runs/RQ1_b884bab91ca4/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 8,
+              "seconds": 1.266,
+              "initial_tokens": 1727,
+              "action_count": 12
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "7e60604110b3fc4833d032aff642b5e7a19d3ada103907fd14e81b88d826bd90",
+              "archive_response_sha256": "e9ca0e375f1bc2e629c3251d62b5aa3f6ea493c51418b5a36d0d3d440a81fb80",
+              "raw_run": "runs/RQ1_b884bab91ca4/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 8,
+              "seconds": 1.235,
+              "initial_tokens": 1727,
+              "action_count": 12
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "d379188d9825691d75a45b474b161899dc9d6ca4651e23c167b4f1722f8d72de",
+              "archive_response_sha256": "83eb8c20a85aecd6864e76a7a2ec1ea841aaa15c4ffff4626e9a168360b4b3ba",
+              "raw_run": "runs/RQ1_f82fc055f5dc/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.047,
+              "initial_tokens": 1611,
+              "action_count": 5
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "d379188d9825691d75a45b474b161899dc9d6ca4651e23c167b4f1722f8d72de",
+              "archive_response_sha256": "83eb8c20a85aecd6864e76a7a2ec1ea841aaa15c4ffff4626e9a168360b4b3ba",
+              "raw_run": "runs/RQ1_f82fc055f5dc/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 1,
+              "seconds": 1.063,
+              "initial_tokens": 1611,
+              "action_count": 5
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_185a84436c18",
+        "repair": "RQ1_ed58b7d7bfbb",
+        "category": "FCR-PAUSE",
+        "selection_stratum": "previous_risk_miss",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "unsupported",
+          "repair": "not_detected",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "77c21b8c7610e2c7df4d8f1b7ecf0891c448900078bc01c762f558fc14da8c3d",
+              "archive_response_sha256": "5872f3167e65293a342079436146f749d7712255ef08499d5986c16257d6a254",
+              "raw_run": "runs/RQ1_185a84436c18/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 3.485,
+              "initial_tokens": 4780,
+              "action_count": 14
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "77c21b8c7610e2c7df4d8f1b7ecf0891c448900078bc01c762f558fc14da8c3d",
+              "archive_response_sha256": "5872f3167e65293a342079436146f749d7712255ef08499d5986c16257d6a254",
+              "raw_run": "runs/RQ1_185a84436c18/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 3.485,
+              "initial_tokens": 4780,
+              "action_count": 14
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "c3879f37a9f5ed0f6b2d9c200b1fcba5259b50cd2b18969259f622a751d2dbb3",
+              "archive_response_sha256": "1e7cd7181534fff13b4b34b7f214a907c7bb204abd4a13fc98a7e141d4d36621",
+              "raw_run": "runs/RQ1_ed58b7d7bfbb/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 2.563,
+              "initial_tokens": 4380,
+              "action_count": 11
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "c3879f37a9f5ed0f6b2d9c200b1fcba5259b50cd2b18969259f622a751d2dbb3",
+              "archive_response_sha256": "1e7cd7181534fff13b4b34b7f214a907c7bb204abd4a13fc98a7e141d4d36621",
+              "raw_run": "runs/RQ1_ed58b7d7bfbb/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "unsupported",
+                "FCR-MINT": "unsupported",
+                "FCR-DESTROY": "unsupported",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "unsupported"
+              },
+              "solver_calls": 0,
+              "seconds": 2.562,
+              "initial_tokens": 4380,
+              "action_count": 11
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_4530531bee57",
+        "repair": "RQ1_308738db6c81",
+        "category": "FCR-PAUSE",
+        "selection_stratum": "previous_repair_unresolved",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "fb5013d7f744aca16475abe0173fc8b181b7a23c4946a4d17a634d8f44558eb4",
+              "archive_response_sha256": "c513f2790406615d29d3dcab6e884bb4ec3c44a8f262ad06b5688f1c9086cce3",
+              "raw_run": "runs/RQ1_4530531bee57/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 4,
+              "seconds": 4.266,
+              "initial_tokens": 4402,
+              "action_count": 12
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "fb5013d7f744aca16475abe0173fc8b181b7a23c4946a4d17a634d8f44558eb4",
+              "archive_response_sha256": "c513f2790406615d29d3dcab6e884bb4ec3c44a8f262ad06b5688f1c9086cce3",
+              "raw_run": "runs/RQ1_4530531bee57/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "alarm",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 4,
+              "seconds": 4.219,
+              "initial_tokens": 4402,
+              "action_count": 12
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "501820402be5f9c1e05fc95c8268f27ededde1e09ccf6414018245a2d493c99d",
+              "archive_response_sha256": "f124ef0b360ad2bc6d3b3fc9b2977a253bede40a03fc04a5ef267e38390b4755",
+              "raw_run": "runs/RQ1_308738db6c81/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 16,
+              "seconds": 6.36,
+              "initial_tokens": 4314,
+              "action_count": 20
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "501820402be5f9c1e05fc95c8268f27ededde1e09ccf6414018245a2d493c99d",
+              "archive_response_sha256": "f124ef0b360ad2bc6d3b3fc9b2977a253bede40a03fc04a5ef267e38390b4755",
+              "raw_run": "runs/RQ1_308738db6c81/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "unsupported",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 16,
+              "seconds": 6.969,
+              "initial_tokens": 4314,
+              "action_count": 20
+            }
+          }
+        }
+      }
+    ]
+  },
+  "FCR-TRANSFER": {
+    "original_pairs": 40,
+    "eligible_pairs": 40,
+    "selected": [
+      {
+        "risk": "RQ1_53f9777ccdf6",
+        "repair": "RQ1_a7d72c1e4129",
+        "category": "FCR-TRANSFER",
+        "selection_stratum": "previous_both_correct",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "505122021ed6692724cd83dc68523cee50370237b1ec5a8547213d6adab5bd3d",
+              "archive_response_sha256": "d9e53b8c34be8c04519ad26f75f206faa6dacd2c078525a851f6bc251f746073",
+              "raw_run": "runs/RQ1_53f9777ccdf6/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 5,
+              "seconds": 1.203,
+              "initial_tokens": 1836,
+              "action_count": 13
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "505122021ed6692724cd83dc68523cee50370237b1ec5a8547213d6adab5bd3d",
+              "archive_response_sha256": "d9e53b8c34be8c04519ad26f75f206faa6dacd2c078525a851f6bc251f746073",
+              "raw_run": "runs/RQ1_53f9777ccdf6/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 5,
+              "seconds": 1.172,
+              "initial_tokens": 1836,
+              "action_count": 13
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "dce454f980acddea8f4cde18e864deee99e09f065be9a3679081c11204a22b13",
+              "archive_response_sha256": "0a78165e517cfa33c7c2e8b27e172c41d6b8d45c3735fbb3a6b5df32bc38f28c",
+              "raw_run": "runs/RQ1_a7d72c1e4129/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 0,
+              "seconds": 1.219,
+              "initial_tokens": 1803,
+              "action_count": 10
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "dce454f980acddea8f4cde18e864deee99e09f065be9a3679081c11204a22b13",
+              "archive_response_sha256": "0a78165e517cfa33c7c2e8b27e172c41d6b8d45c3735fbb3a6b5df32bc38f28c",
+              "raw_run": "runs/RQ1_a7d72c1e4129/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 0,
+              "seconds": 1.203,
+              "initial_tokens": 1803,
+              "action_count": 10
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_b25ec4a4cd43",
+        "repair": "RQ1_14d06cbbe5a7",
+        "category": "FCR-TRANSFER",
+        "selection_stratum": "previous_risk_miss",
+        "matched_stratum": false,
+        "prior": {
+          "risk": "alarm",
+          "repair": "not_detected",
+          "both": true
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "b356ae156a0de851b4495b8046fe9a0748cf1e11a1ead6a65c00277ab6f457ec",
+              "archive_response_sha256": "9a7a73ae0a7597aedbad74586c24f6dc0476eef1f93f4977b9b9f926a155b919",
+              "raw_run": "runs/RQ1_b25ec4a4cd43/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 1.047,
+              "initial_tokens": 1415,
+              "action_count": 4
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "b356ae156a0de851b4495b8046fe9a0748cf1e11a1ead6a65c00277ab6f457ec",
+              "archive_response_sha256": "9a7a73ae0a7597aedbad74586c24f6dc0476eef1f93f4977b9b9f926a155b919",
+              "raw_run": "runs/RQ1_b25ec4a4cd43/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 1.063,
+              "initial_tokens": 1415,
+              "action_count": 4
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "1610c72729907461c4bf306662f545f23f3010a3ba4c6de3e0890509130ae374",
+              "archive_response_sha256": "bf275589d280a08d40d87c9c37830f442008345dc1759204f4ef9d5694fb0d84",
+              "raw_run": "runs/RQ1_14d06cbbe5a7/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 1.094,
+              "initial_tokens": 1347,
+              "action_count": 6
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "1610c72729907461c4bf306662f545f23f3010a3ba4c6de3e0890509130ae374",
+              "archive_response_sha256": "bf275589d280a08d40d87c9c37830f442008345dc1759204f4ef9d5694fb0d84",
+              "raw_run": "runs/RQ1_14d06cbbe5a7/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 3,
+              "seconds": 1.109,
+              "initial_tokens": 1347,
+              "action_count": 6
+            }
+          }
+        }
+      },
+      {
+        "risk": "RQ1_9451d6dac4de",
+        "repair": "RQ1_e25d32acc1f7",
+        "category": "FCR-TRANSFER",
+        "selection_stratum": "previous_repair_unresolved",
+        "matched_stratum": true,
+        "prior": {
+          "risk": "alarm",
+          "repair": "unsupported",
+          "both": false
+        },
+        "arms": {
+          "risk": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "bee2af8a4bb9fc333ed54f95d0262606e7961e1b2ade49d069ed85101c1239ad",
+              "archive_response_sha256": "34ae86e8306d414f229363a0b636cfccfd9e1aa6c3cebace12d1d9939c28f484",
+              "raw_run": "runs/RQ1_9451d6dac4de/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 2,
+              "seconds": 1.047,
+              "initial_tokens": 1517,
+              "action_count": 8
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "bee2af8a4bb9fc333ed54f95d0262606e7961e1b2ade49d069ed85101c1239ad",
+              "archive_response_sha256": "34ae86e8306d414f229363a0b636cfccfd9e1aa6c3cebace12d1d9939c28f484",
+              "raw_run": "runs/RQ1_9451d6dac4de/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "alarm",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 2,
+              "seconds": 1.062,
+              "initial_tokens": 1517,
+              "action_count": 8
+            }
+          },
+          "repair": {
+            "G": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "51096d63d1067e794bdbba169614504962c8be515e90100eaf2e7e561a5d3593",
+              "archive_response_sha256": "a9102496d82697cd0e3e60c81615216e83aaf7d623c48eeaef2cbc2f6a6fed5b",
+              "raw_run": "runs/RQ1_e25d32acc1f7/G",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 6,
+              "seconds": 1.016,
+              "initial_tokens": 1491,
+              "action_count": 11
+            },
+            "Simple": {
+              "run_state": "completed",
+              "execution_reason": "",
+              "platform": "Windows",
+              "score_status": "scored",
+              "frozen_export_sha256": "51096d63d1067e794bdbba169614504962c8be515e90100eaf2e7e561a5d3593",
+              "archive_response_sha256": "a9102496d82697cd0e3e60c81615216e83aaf7d623c48eeaef2cbc2f6a6fed5b",
+              "raw_run": "runs/RQ1_e25d32acc1f7/Simple",
+              "all_task_projections": {
+                "FCR-TRANSFER": "not_detected",
+                "FCR-MINT": "not_detected",
+                "FCR-DESTROY": "not_detected",
+                "FCR-PAUSE": "not_detected",
+                "FCR-FREEZE": "not_detected"
+              },
+              "solver_calls": 6,
+              "seconds": 1.047,
+              "initial_tokens": 1491,
+              "action_count": 11
+            }
+          }
+        }
+      }
+    ]
+  }
+}

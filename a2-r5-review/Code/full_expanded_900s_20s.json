@@ -1,0 +1,18 @@
+{
+  "method": "permission-risks-sp200-simplification-r2",
+  "options": {
+    "feedback": true,
+    "attempt_limit": 2,
+    "max_paths": 96,
+    "prefix_depth": 2,
+    "max_prefixes": 64,
+    "max_actions": 256,
+    "seconds": 900,
+    "solver_timeout_ms": 20000,
+    "input_target": 16384,
+    "input_limit": 32768,
+    "output_limit": 32768
+  },
+  "live_model_authorized": false,
+  "notes": "Expanded full-population compute profile; early exit, bounded search and two service opportunities."
+}
